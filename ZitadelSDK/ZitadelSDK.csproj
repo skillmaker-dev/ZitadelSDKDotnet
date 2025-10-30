@@ -15,9 +15,9 @@
 		<PackageIcon>zitadel.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>zitadel, sdk, auth, identity provider</PackageTags>
-		<PackageProjectUrl>https://github.com/skillmaker-dev/ZitadelSDK</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/skillmaker-dev/ZitadelSDKDotnet</PackageProjectUrl>
 		<Version>1.1.0</Version>
-		<RepositoryUrl>https://github.com/skillmaker-dev/ZitadelSDK</RepositoryUrl>
+		<RepositoryUrl>https://github.com/skillmaker-dev/ZitadelSDKDotnet</RepositoryUrl>
 		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
 	</PropertyGroup>
 
