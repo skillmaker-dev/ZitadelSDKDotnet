@@ -93,8 +93,7 @@ public static class ZitadelClientExtensions
     /// builder.Services
     ///     .AddZitadelClient&lt;UserService.UserServiceClient&gt;()
     ///     .AddZitadelClient&lt;ManagementService.ManagementServiceClient&gt;();
-    /// </code>
-    /// </example>
+    /// 
     /// public class UserController : ControllerBase
     /// {
     ///     private readonly UserService.UserServiceClient _userClient;
