@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="ZitadelSDK.UnitTests/ZitadelSDK.UnitTests.csproj" Id="43c03ceb-e84b-4d59-a3ca-62828860e1b5" />
   <Project Path="ZitadelSDK/ZitadelSDK.csproj" Id="8a3a45cc-ed50-45fd-9174-848f74f46d7f" />
   <Project Path="ZitadelTest/ZitadelTest.csproj" />
 </Solution>
