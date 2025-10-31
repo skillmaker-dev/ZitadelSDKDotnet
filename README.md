@@ -20,6 +20,7 @@ A comprehensive ASP.NET Core SDK for integrating with ZITADEL, featuring central
 - [🚀 Quick Start](#-quick-start)
 - [⚙️ Configuration](#️-configuration)
 - [💻 SDK Usage](#-sdk-usage)
+- [🏥 Health Checks](#-health-checks)
 - [🔐 Authentication for Web APIs](#-authentication-for-web-apis)
 - [📚 Examples](#-examples)
 - [🐛 Troubleshooting](#-troubleshooting)
@@ -235,6 +236,64 @@ public class UserController : ControllerBase
             new ListUsersRequest());
         return Ok(response.Result);
     }
+}
+```
+
+---
+
+## 🏥 Health Checks
+
+The SDK includes built-in health checks to monitor ZITADEL service availability. Health checks call the `/debug/ready` endpoint to verify ZITADEL is operational.
+
+### Adding Health Checks
+
+```csharp
+// In Program.cs
+builder.Services.AddHealthChecks()
+    .AddZitadel("https://your-instance.zitadel.cloud"); // Authority is required
+
+// Or with custom configuration
+builder.Services.AddHealthChecks()
+    .AddZitadel(
+        authority: "https://your-instance.zitadel.cloud",
+        name: "zitadel-health",
+        failureStatus: HealthStatus.Degraded,
+        tags: new[] { "external", "identity" }
+    );
+```
+
+### Health Check Response
+
+The health check will return:
+
+- **Healthy**: ZITADEL service is responding and ready
+- **Unhealthy**: ZITADEL service is not responding or returned an error status
+- **Degraded**: Can be configured for specific failure scenarios
+
+### Health Check Endpoint
+
+Configure the health check endpoint in your application:
+
+```csharp
+app.MapHealthChecks("/health");
+app.MapHealthChecks("/health/ready", new HealthCheckOptions
+{
+    Predicate = healthCheck => healthCheck.Name == "zitadel"
+});
+```
+
+### Example Response
+
+```json
+{
+  "status": "Healthy",
+  "results": {
+    "zitadel": {
+      "status": "Healthy",
+      "description": "ZITADEL service is healthy",
+      "data": {}
+    }
+  }
 }
 ```
 
