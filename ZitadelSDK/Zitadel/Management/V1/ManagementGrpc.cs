@@ -4527,7 +4527,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List ZITADEL Permissions
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
       /// </summary>
@@ -4549,7 +4549,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization By Domain
       ///
-      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Search an organization by the domain, overall organizations. The domain must match exactly.
       /// </summary>
@@ -4571,7 +4571,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead
+      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
       /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
       /// </summary>
@@ -4587,7 +4587,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization
       ///
-      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-update-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-update-organization.api.mdx) instead.
       ///
       /// Change the name of the organization.
       /// </summary>
@@ -4603,7 +4603,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Organization
       ///
-      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-deactivate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-deactivate-organization.api.mdx) instead.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       /// </summary>
@@ -4619,7 +4619,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Organization
       ///
-      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-activate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-activate-organization.api.mdx) instead.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       /// </summary>
@@ -4635,7 +4635,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes my organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -4651,7 +4651,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint either adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       /// </summary>
@@ -4667,7 +4667,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint sets a list of metadata to the organization. Make sure the values are base64 encoded.
       /// </summary>
@@ -4683,7 +4683,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get the metadata of an organization filtered by your query.
       /// </summary>
@@ -4699,7 +4699,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get a metadata object from an organization by a specific key.
       /// </summary>
@@ -4715,7 +4715,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a metadata object from an organization with a specific key.
       /// </summary>
@@ -4731,7 +4731,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Delete Metadata
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a list of metadata objects from an organization with a list of keys.
       /// </summary>
@@ -4747,7 +4747,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Domain
       ///
-      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-add-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization-domain.api.mdx) instead.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -4763,7 +4763,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Domains
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-domains.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-domains.api.mdx) instead.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -4779,7 +4779,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Domain
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-domain.api.mdx) instead.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       /// </summary>
@@ -4795,7 +4795,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate Domain Verification
       ///
-      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-generate-organization-domain-validation.api.mdx) instead.
+      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-generate-organization-domain-validation.api.mdx) instead.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       /// </summary>
@@ -4811,7 +4811,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Verify Domain
       ///
-      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-verify-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
@@ -4839,7 +4839,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Organization Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -4855,7 +4855,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Organization Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
@@ -4871,7 +4871,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -4887,7 +4887,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Organization Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
@@ -4903,7 +4903,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Project By ID
       ///
-      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-get-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-get-project.api.mdx) instead.
       ///
       /// Returns a project owned by the organization (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -4919,7 +4919,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Granted Project By ID
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project owned by another organization and granted to my organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -4935,7 +4935,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization is the owner of (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -4951,7 +4951,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization got granted from another organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -4967,7 +4967,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Lists the roles a granted projects has. These are the roles, that have been granted by the owner organization to my organization.
       /// </summary>
@@ -4989,7 +4989,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Project
       ///
-      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project.api.mdx) instead.
       ///
       /// Create a new project. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -5005,7 +5005,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project
       ///
-      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project.api.mdx) instead.
       ///
       /// Update a project and its settings. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -5021,7 +5021,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project
       ///
-      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project.api.mdx) instead.
       ///
       /// Set the state of a project to deactivated. Request returns an error if the project is already deactivated.
       /// </summary>
@@ -5037,7 +5037,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project
       ///
-      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -5053,7 +5053,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project
       ///
-      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -5069,7 +5069,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-roles.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-roles.api.mdx) instead.
       ///
       /// Returns all roles of a project matching the search query.
       /// </summary>
@@ -5085,7 +5085,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       /// </summary>
@@ -5101,7 +5101,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a list of roles to a project. The keys must be unique within the project.
       /// </summary>
@@ -5117,7 +5117,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Role
       ///
-      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-role.api.mdx) instead.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       /// </summary>
@@ -5133,7 +5133,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Role
       ///
-      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-remove-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       /// </summary>
@@ -5155,7 +5155,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -5171,7 +5171,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
@@ -5187,7 +5187,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -5203,7 +5203,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
@@ -5219,7 +5219,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application By ID
       ///
-      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application.api.mdx) instead to fetch an app
+      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application.api.mdx) instead to fetch an app
       ///
       /// Get an application of any type (OIDC, API, SAML).
       /// </summary>
@@ -5235,7 +5235,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Applications
       ///
-      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-applications.api.mdx) instead to list applications
+      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-applications.api.mdx) instead to list applications
       ///
       /// Returns all applications within a project, that match the query.
       /// </summary>
@@ -5257,7 +5257,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (OIDC)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an OIDC application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an OIDC application.
       ///
       /// Create a new OIDC client. The client id will be generated and returned in the response. Depending on the chosen configuration also a secret will be returned.
       /// </summary>
@@ -5273,7 +5273,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (SAML)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create a SAML application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create a SAML application.
       ///
       /// Create a new SAML client. Returns an entity ID.
       /// </summary>
@@ -5289,7 +5289,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (API)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an API application
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an API application
       ///
       /// Create a new API client. The client id will be generated and returned in the response.
       /// Depending on the chosen configuration also a secret will be generated and returned.
@@ -5306,7 +5306,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Application
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the generic params of an app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the generic params of an app.
       ///
       /// Update the basic information of an application. This doesn't include information that are dependent on the application type (OIDC, API, SAML)
       /// </summary>
@@ -5322,7 +5322,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update OIDC Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an OIDC app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an OIDC app.
       ///
       /// Update the OIDC specific configuration of an application.
       /// </summary>
@@ -5338,7 +5338,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update SAML Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of a SAML app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of a SAML app.
       ///
       /// Update the SAML specific configuration of an application.
       /// </summary>
@@ -5354,7 +5354,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update API Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an API app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an API app.
       ///
       /// Update the OIDC-specific configuration of an application.
       /// </summary>
@@ -5370,7 +5370,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Application
       ///
-      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-deactivate-application.api.mdx) instead to deactivate an app.
+      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-deactivate-application.api.mdx) instead to deactivate an app.
       ///
       /// Set the state of an application to deactivated. It is not possible to request tokens for deactivated apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -5386,7 +5386,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Application
       ///
-      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-reactivate-application.api.mdx) instead to reactivate an app.
+      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-reactivate-application.api.mdx) instead to reactivate an app.
       ///
       /// Set the state of an application to active. Request returns an error if the application is not deactivated.
       /// </summary>
@@ -5402,7 +5402,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Application
       ///
-      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application.api.mdx) instead to delete an app.
+      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application.api.mdx) instead to delete an app.
       ///
       /// Remove an application. It is not possible to request tokens for removed apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -5418,7 +5418,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New OIDC Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an OIDC app client secret.
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an OIDC app client secret.
       ///
       /// Generates a new client secret for the OIDC application, make sure to save the response.
       /// </summary>
@@ -5434,7 +5434,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New API Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an API app client secret
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an API app client secret
       ///
       /// Generates a new client secret for the API application, make sure to save the response.
       /// </summary>
@@ -5450,7 +5450,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application Key By ID
       ///
-      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application-key.api.mdx) instead to get an application key.
+      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application-key.api.mdx) instead to get an application key.
       ///
       /// Returns an application key. Keys are used for authorizing API Applications.
       /// </summary>
@@ -5466,7 +5466,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Application Keys
       ///
-      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-application-keys.api.mdx) instead to list application keys.
+      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-application-keys.api.mdx) instead to list application keys.
       ///
       /// Search application keys. Keys are used for authorizing API Applications.
       /// </summary>
@@ -5482,7 +5482,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application Key
       ///
-      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application-key.api.mdx) instead to create an application key.
+      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application-key.api.mdx) instead to create an application key.
       ///
       /// Create a new application key, they are used for authorizing API Applications. Key details will be returned in the response, make sure to save it.
       /// </summary>
@@ -5498,7 +5498,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Application Key
       ///
-      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application-key.api.mdx) instead to delete an application key.
+      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application-key.api.mdx) instead to delete an application key.
       ///
       /// Remove an application key. The API application will not be able to authorize with the key anymore.
       /// </summary>
@@ -5520,7 +5520,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Project Grant By ID
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project grant. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -5536,7 +5536,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants from Project
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants for a specific project. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -5552,7 +5552,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -5568,7 +5568,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant
       ///
-      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project-grant.api.mdx) instead.
+      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
       /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -5584,7 +5584,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Grant
       ///
-      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-grant.api.mdx) instead.
+      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
       /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -5600,7 +5600,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project Grant
       ///
-      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to deactivated. The grant has to be active to be able to deactivate.
       /// </summary>
@@ -5616,7 +5616,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project Grant
       ///
-      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project-grant.api.mdx) instead.
+      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to active. The grant has to be deactivated to be able to reactivate.
       /// </summary>
@@ -5632,7 +5632,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant
       ///
-      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
       /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
@@ -5654,7 +5654,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Grant Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -5670,7 +5670,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -5686,7 +5686,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Grant Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -5702,7 +5702,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
@@ -5718,7 +5718,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get User Grant By ID
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and filter by its ID.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
       /// </summary>
@@ -5734,7 +5734,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search User Grants
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
       /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -5750,7 +5750,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add User Grant
       ///
-      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
+      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -5766,7 +5766,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update User Grant
       ///
-      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
+      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -5782,7 +5782,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate User Grant
       ///
-      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
+      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
       /// </summary>
@@ -5798,7 +5798,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate User Grant
       ///
-      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
+      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
       /// </summary>
@@ -5814,7 +5814,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove User Grant
       ///
-      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
+      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -5830,7 +5830,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Remove User Grants
       ///
-      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
+      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
       /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -10589,7 +10589,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List ZITADEL Permissions
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
       /// </summary>
@@ -10606,7 +10606,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List ZITADEL Permissions
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
       /// </summary>
@@ -10621,7 +10621,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List ZITADEL Permissions
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
       /// </summary>
@@ -10638,7 +10638,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List ZITADEL Permissions
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
       /// </summary>
@@ -10673,7 +10673,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization By Domain
       ///
-      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Search an organization by the domain, overall organizations. The domain must match exactly.
       /// </summary>
@@ -10690,7 +10690,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization By Domain
       ///
-      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Search an organization by the domain, overall organizations. The domain must match exactly.
       /// </summary>
@@ -10705,7 +10705,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization By Domain
       ///
-      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Search an organization by the domain, overall organizations. The domain must match exactly.
       /// </summary>
@@ -10722,7 +10722,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization By Domain
       ///
-      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization v2 service ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Search an organization by the domain, overall organizations. The domain must match exactly.
       /// </summary>
@@ -10757,7 +10757,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead
+      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
       /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
       /// </summary>
@@ -10774,7 +10774,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead
+      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
       /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
       /// </summary>
@@ -10789,7 +10789,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead
+      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
       /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
       /// </summary>
@@ -10806,7 +10806,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead
+      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
       /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
       /// </summary>
@@ -10821,7 +10821,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization
       ///
-      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-update-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-update-organization.api.mdx) instead.
       ///
       /// Change the name of the organization.
       /// </summary>
@@ -10838,7 +10838,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization
       ///
-      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-update-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-update-organization.api.mdx) instead.
       ///
       /// Change the name of the organization.
       /// </summary>
@@ -10853,7 +10853,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization
       ///
-      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-update-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-update-organization.api.mdx) instead.
       ///
       /// Change the name of the organization.
       /// </summary>
@@ -10870,7 +10870,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization
       ///
-      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-update-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 UpdateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-update-organization.api.mdx) instead.
       ///
       /// Change the name of the organization.
       /// </summary>
@@ -10885,7 +10885,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Organization
       ///
-      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-deactivate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-deactivate-organization.api.mdx) instead.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       /// </summary>
@@ -10902,7 +10902,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Organization
       ///
-      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-deactivate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-deactivate-organization.api.mdx) instead.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       /// </summary>
@@ -10917,7 +10917,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Organization
       ///
-      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-deactivate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-deactivate-organization.api.mdx) instead.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       /// </summary>
@@ -10934,7 +10934,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Organization
       ///
-      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-deactivate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeactivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-deactivate-organization.api.mdx) instead.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       /// </summary>
@@ -10949,7 +10949,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Organization
       ///
-      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-activate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-activate-organization.api.mdx) instead.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       /// </summary>
@@ -10966,7 +10966,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Organization
       ///
-      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-activate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-activate-organization.api.mdx) instead.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       /// </summary>
@@ -10981,7 +10981,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Organization
       ///
-      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-activate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-activate-organization.api.mdx) instead.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       /// </summary>
@@ -10998,7 +10998,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Organization
       ///
-      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-activate-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ActivateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-activate-organization.api.mdx) instead.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       /// </summary>
@@ -11013,7 +11013,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes my organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -11030,7 +11030,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes my organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -11045,7 +11045,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes my organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -11062,7 +11062,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes my organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -11077,7 +11077,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint either adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       /// </summary>
@@ -11094,7 +11094,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint either adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       /// </summary>
@@ -11109,7 +11109,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint either adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       /// </summary>
@@ -11126,7 +11126,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint either adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       /// </summary>
@@ -11141,7 +11141,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint sets a list of metadata to the organization. Make sure the values are base64 encoded.
       /// </summary>
@@ -11158,7 +11158,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint sets a list of metadata to the organization. Make sure the values are base64 encoded.
       /// </summary>
@@ -11173,7 +11173,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint sets a list of metadata to the organization. Make sure the values are base64 encoded.
       /// </summary>
@@ -11190,7 +11190,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Set Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-set-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 SetOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-set-organization-metadata.api.mdx) instead.
       ///
       /// This endpoint sets a list of metadata to the organization. Make sure the values are base64 encoded.
       /// </summary>
@@ -11205,7 +11205,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get the metadata of an organization filtered by your query.
       /// </summary>
@@ -11222,7 +11222,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get the metadata of an organization filtered by your query.
       /// </summary>
@@ -11237,7 +11237,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get the metadata of an organization filtered by your query.
       /// </summary>
@@ -11254,7 +11254,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Organization Metadata
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get the metadata of an organization filtered by your query.
       /// </summary>
@@ -11269,7 +11269,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get a metadata object from an organization by a specific key.
       /// </summary>
@@ -11286,7 +11286,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get a metadata object from an organization by a specific key.
       /// </summary>
@@ -11301,7 +11301,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get a metadata object from an organization by a specific key.
       /// </summary>
@@ -11318,7 +11318,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-metadata.api.mdx) instead.
       ///
       /// Get a metadata object from an organization by a specific key.
       /// </summary>
@@ -11333,7 +11333,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a metadata object from an organization with a specific key.
       /// </summary>
@@ -11350,7 +11350,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a metadata object from an organization with a specific key.
       /// </summary>
@@ -11365,7 +11365,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a metadata object from an organization with a specific key.
       /// </summary>
@@ -11382,7 +11382,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Organization Metadata By Key
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a metadata object from an organization with a specific key.
       /// </summary>
@@ -11397,7 +11397,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Delete Metadata
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a list of metadata objects from an organization with a list of keys.
       /// </summary>
@@ -11414,7 +11414,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Delete Metadata
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a list of metadata objects from an organization with a list of keys.
       /// </summary>
@@ -11429,7 +11429,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Delete Metadata
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a list of metadata objects from an organization with a list of keys.
       /// </summary>
@@ -11446,7 +11446,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Delete Metadata
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-metadata.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationMetadata](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-metadata.api.mdx) instead.
       ///
       /// Remove a list of metadata objects from an organization with a list of keys.
       /// </summary>
@@ -11461,7 +11461,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Domain
       ///
-      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-add-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization-domain.api.mdx) instead.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11478,7 +11478,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Domain
       ///
-      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-add-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization-domain.api.mdx) instead.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11493,7 +11493,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Domain
       ///
-      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-add-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization-domain.api.mdx) instead.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11510,7 +11510,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Domain
       ///
-      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-add-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization-domain.api.mdx) instead.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11525,7 +11525,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Domains
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-domains.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-domains.api.mdx) instead.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11542,7 +11542,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Domains
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-domains.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-domains.api.mdx) instead.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11557,7 +11557,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Domains
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-domains.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-domains.api.mdx) instead.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11574,7 +11574,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Domains
       ///
-      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-list-organization-domains.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizationDomains](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organization-domains.api.mdx) instead.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
       /// </summary>
@@ -11589,7 +11589,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Domain
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-domain.api.mdx) instead.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       /// </summary>
@@ -11606,7 +11606,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Domain
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-domain.api.mdx) instead.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       /// </summary>
@@ -11621,7 +11621,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Domain
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-domain.api.mdx) instead.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       /// </summary>
@@ -11638,7 +11638,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Domain
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization-domain.api.mdx) instead.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       /// </summary>
@@ -11653,7 +11653,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate Domain Verification
       ///
-      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-generate-organization-domain-validation.api.mdx) instead.
+      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-generate-organization-domain-validation.api.mdx) instead.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       /// </summary>
@@ -11670,7 +11670,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate Domain Verification
       ///
-      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-generate-organization-domain-validation.api.mdx) instead.
+      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-generate-organization-domain-validation.api.mdx) instead.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       /// </summary>
@@ -11685,7 +11685,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate Domain Verification
       ///
-      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-generate-organization-domain-validation.api.mdx) instead.
+      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-generate-organization-domain-validation.api.mdx) instead.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       /// </summary>
@@ -11702,7 +11702,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate Domain Verification
       ///
-      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-generate-organization-domain-validation.api.mdx) instead.
+      /// Deprecated: use [organization service v2 GenerateOrganizationDomainValidation](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-generate-organization-domain-validation.api.mdx) instead.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       /// </summary>
@@ -11717,7 +11717,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Verify Domain
       ///
-      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-verify-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
@@ -11734,7 +11734,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Verify Domain
       ///
-      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-verify-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
@@ -11749,7 +11749,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Verify Domain
       ///
-      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-verify-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
@@ -11766,7 +11766,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Verify Domain
       ///
-      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-verify-organization-domain.api.mdx) instead.
+      /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
@@ -11821,7 +11821,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Organization Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -11838,7 +11838,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Organization Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -11853,7 +11853,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Organization Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -11870,7 +11870,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Organization Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -11885,7 +11885,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Organization Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
@@ -11902,7 +11902,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Organization Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
@@ -11917,7 +11917,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Organization Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
@@ -11934,7 +11934,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Organization Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
@@ -11949,7 +11949,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -11966,7 +11966,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -11981,7 +11981,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -11998,7 +11998,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Organization Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -12013,7 +12013,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Organization Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
@@ -12030,7 +12030,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Organization Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
@@ -12045,7 +12045,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Organization Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
@@ -12062,7 +12062,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Organization Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
@@ -12077,7 +12077,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Project By ID
       ///
-      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-get-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-get-project.api.mdx) instead.
       ///
       /// Returns a project owned by the organization (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12094,7 +12094,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Project By ID
       ///
-      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-get-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-get-project.api.mdx) instead.
       ///
       /// Returns a project owned by the organization (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12109,7 +12109,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Project By ID
       ///
-      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-get-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-get-project.api.mdx) instead.
       ///
       /// Returns a project owned by the organization (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12126,7 +12126,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Project By ID
       ///
-      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-get-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service GetProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-get-project.api.mdx) instead.
       ///
       /// Returns a project owned by the organization (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12141,7 +12141,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Granted Project By ID
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project owned by another organization and granted to my organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12158,7 +12158,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Granted Project By ID
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project owned by another organization and granted to my organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12173,7 +12173,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Granted Project By ID
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project owned by another organization and granted to my organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12190,7 +12190,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Granted Project By ID
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project owned by another organization and granted to my organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12205,7 +12205,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization is the owner of (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12222,7 +12222,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization is the owner of (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12237,7 +12237,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization is the owner of (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12254,7 +12254,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization is the owner of (no granted projects). A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12269,7 +12269,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization got granted from another organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12286,7 +12286,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization got granted from another organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12301,7 +12301,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization got granted from another organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12318,7 +12318,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project
       ///
-      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-projects.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjects](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-projects.api.mdx) instead.
       ///
       /// Lists projects my organization got granted from another organization. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12333,7 +12333,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Lists the roles a granted projects has. These are the roles, that have been granted by the owner organization to my organization.
       /// </summary>
@@ -12350,7 +12350,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Lists the roles a granted projects has. These are the roles, that have been granted by the owner organization to my organization.
       /// </summary>
@@ -12365,7 +12365,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Lists the roles a granted projects has. These are the roles, that have been granted by the owner organization to my organization.
       /// </summary>
@@ -12382,7 +12382,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Granted Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Lists the roles a granted projects has. These are the roles, that have been granted by the owner organization to my organization.
       /// </summary>
@@ -12417,7 +12417,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Project
       ///
-      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project.api.mdx) instead.
       ///
       /// Create a new project. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12434,7 +12434,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Project
       ///
-      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project.api.mdx) instead.
       ///
       /// Create a new project. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12449,7 +12449,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Project
       ///
-      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project.api.mdx) instead.
       ///
       /// Create a new project. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12466,7 +12466,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Project
       ///
-      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service CreateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project.api.mdx) instead.
       ///
       /// Create a new project. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12481,7 +12481,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project
       ///
-      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project.api.mdx) instead.
       ///
       /// Update a project and its settings. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12498,7 +12498,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project
       ///
-      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project.api.mdx) instead.
       ///
       /// Update a project and its settings. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12513,7 +12513,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project
       ///
-      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project.api.mdx) instead.
       ///
       /// Update a project and its settings. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12530,7 +12530,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project
       ///
-      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project.api.mdx) instead.
       ///
       /// Update a project and its settings. A Project is a vessel for different applications sharing the same role context.
       /// </summary>
@@ -12545,7 +12545,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project
       ///
-      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project.api.mdx) instead.
       ///
       /// Set the state of a project to deactivated. Request returns an error if the project is already deactivated.
       /// </summary>
@@ -12562,7 +12562,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project
       ///
-      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project.api.mdx) instead.
       ///
       /// Set the state of a project to deactivated. Request returns an error if the project is already deactivated.
       /// </summary>
@@ -12577,7 +12577,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project
       ///
-      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project.api.mdx) instead.
       ///
       /// Set the state of a project to deactivated. Request returns an error if the project is already deactivated.
       /// </summary>
@@ -12594,7 +12594,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project
       ///
-      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeactivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project.api.mdx) instead.
       ///
       /// Set the state of a project to deactivated. Request returns an error if the project is already deactivated.
       /// </summary>
@@ -12609,7 +12609,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project
       ///
-      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12626,7 +12626,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project
       ///
-      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12641,7 +12641,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project
       ///
-      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12658,7 +12658,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project
       ///
-      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service ActivateProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12673,7 +12673,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project
       ///
-      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12690,7 +12690,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project
       ///
-      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12705,7 +12705,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project
       ///
-      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12722,7 +12722,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project
       ///
-      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project.api.mdx) instead.
+      /// Deprecated: use [project v2 service DeleteProject](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project.api.mdx) instead.
       ///
       /// Set the state of a project to active. Request returns an error if the project is not deactivated.
       /// </summary>
@@ -12737,7 +12737,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-roles.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-roles.api.mdx) instead.
       ///
       /// Returns all roles of a project matching the search query.
       /// </summary>
@@ -12754,7 +12754,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-roles.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-roles.api.mdx) instead.
       ///
       /// Returns all roles of a project matching the search query.
       /// </summary>
@@ -12769,7 +12769,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-roles.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-roles.api.mdx) instead.
       ///
       /// Returns all roles of a project matching the search query.
       /// </summary>
@@ -12786,7 +12786,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Roles
       ///
-      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-roles.api.mdx) instead.
+      /// Deprecated: use [project v2 service ListProjectRoles](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-roles.api.mdx) instead.
       ///
       /// Returns all roles of a project matching the search query.
       /// </summary>
@@ -12801,7 +12801,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       /// </summary>
@@ -12818,7 +12818,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       /// </summary>
@@ -12833,7 +12833,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       /// </summary>
@@ -12850,7 +12850,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       /// </summary>
@@ -12865,7 +12865,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a list of roles to a project. The keys must be unique within the project.
       /// </summary>
@@ -12882,7 +12882,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a list of roles to a project. The keys must be unique within the project.
       /// </summary>
@@ -12897,7 +12897,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a list of roles to a project. The keys must be unique within the project.
       /// </summary>
@@ -12914,7 +12914,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Add Project Role
       ///
-      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-add-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service AddProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-add-project-role.api.mdx) instead.
       ///
       /// Add a list of roles to a project. The keys must be unique within the project.
       /// </summary>
@@ -12929,7 +12929,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Role
       ///
-      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-role.api.mdx) instead.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       /// </summary>
@@ -12946,7 +12946,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Role
       ///
-      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-role.api.mdx) instead.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       /// </summary>
@@ -12961,7 +12961,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Role
       ///
-      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-role.api.mdx) instead.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       /// </summary>
@@ -12978,7 +12978,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Role
       ///
-      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service UpdateProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-role.api.mdx) instead.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       /// </summary>
@@ -12993,7 +12993,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Role
       ///
-      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-remove-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       /// </summary>
@@ -13010,7 +13010,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Role
       ///
-      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-remove-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       /// </summary>
@@ -13025,7 +13025,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Role
       ///
-      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-remove-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       /// </summary>
@@ -13042,7 +13042,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Role
       ///
-      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-remove-project-role.api.mdx) instead.
+      /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       /// </summary>
@@ -13077,7 +13077,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -13094,7 +13094,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -13109,7 +13109,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -13126,7 +13126,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -13141,7 +13141,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
@@ -13158,7 +13158,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
@@ -13173,7 +13173,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
@@ -13190,7 +13190,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
@@ -13205,7 +13205,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -13222,7 +13222,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -13237,7 +13237,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -13254,7 +13254,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -13269,7 +13269,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
@@ -13286,7 +13286,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
@@ -13301,7 +13301,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
@@ -13318,7 +13318,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
@@ -13333,7 +13333,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application By ID
       ///
-      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application.api.mdx) instead to fetch an app
+      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application.api.mdx) instead to fetch an app
       ///
       /// Get an application of any type (OIDC, API, SAML).
       /// </summary>
@@ -13350,7 +13350,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application By ID
       ///
-      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application.api.mdx) instead to fetch an app
+      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application.api.mdx) instead to fetch an app
       ///
       /// Get an application of any type (OIDC, API, SAML).
       /// </summary>
@@ -13365,7 +13365,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application By ID
       ///
-      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application.api.mdx) instead to fetch an app
+      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application.api.mdx) instead to fetch an app
       ///
       /// Get an application of any type (OIDC, API, SAML).
       /// </summary>
@@ -13382,7 +13382,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application By ID
       ///
-      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application.api.mdx) instead to fetch an app
+      /// Deprecated: Use [GetApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application.api.mdx) instead to fetch an app
       ///
       /// Get an application of any type (OIDC, API, SAML).
       /// </summary>
@@ -13397,7 +13397,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Applications
       ///
-      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-applications.api.mdx) instead to list applications
+      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-applications.api.mdx) instead to list applications
       ///
       /// Returns all applications within a project, that match the query.
       /// </summary>
@@ -13414,7 +13414,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Applications
       ///
-      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-applications.api.mdx) instead to list applications
+      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-applications.api.mdx) instead to list applications
       ///
       /// Returns all applications within a project, that match the query.
       /// </summary>
@@ -13429,7 +13429,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Applications
       ///
-      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-applications.api.mdx) instead to list applications
+      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-applications.api.mdx) instead to list applications
       ///
       /// Returns all applications within a project, that match the query.
       /// </summary>
@@ -13446,7 +13446,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Applications
       ///
-      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-applications.api.mdx) instead to list applications
+      /// Deprecated: Use [ListApplications](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-applications.api.mdx) instead to list applications
       ///
       /// Returns all applications within a project, that match the query.
       /// </summary>
@@ -13481,7 +13481,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (OIDC)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an OIDC application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an OIDC application.
       ///
       /// Create a new OIDC client. The client id will be generated and returned in the response. Depending on the chosen configuration also a secret will be returned.
       /// </summary>
@@ -13498,7 +13498,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (OIDC)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an OIDC application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an OIDC application.
       ///
       /// Create a new OIDC client. The client id will be generated and returned in the response. Depending on the chosen configuration also a secret will be returned.
       /// </summary>
@@ -13513,7 +13513,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (OIDC)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an OIDC application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an OIDC application.
       ///
       /// Create a new OIDC client. The client id will be generated and returned in the response. Depending on the chosen configuration also a secret will be returned.
       /// </summary>
@@ -13530,7 +13530,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (OIDC)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an OIDC application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an OIDC application.
       ///
       /// Create a new OIDC client. The client id will be generated and returned in the response. Depending on the chosen configuration also a secret will be returned.
       /// </summary>
@@ -13545,7 +13545,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (SAML)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create a SAML application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create a SAML application.
       ///
       /// Create a new SAML client. Returns an entity ID.
       /// </summary>
@@ -13562,7 +13562,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (SAML)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create a SAML application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create a SAML application.
       ///
       /// Create a new SAML client. Returns an entity ID.
       /// </summary>
@@ -13577,7 +13577,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (SAML)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create a SAML application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create a SAML application.
       ///
       /// Create a new SAML client. Returns an entity ID.
       /// </summary>
@@ -13594,7 +13594,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (SAML)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create a SAML application.
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create a SAML application.
       ///
       /// Create a new SAML client. Returns an entity ID.
       /// </summary>
@@ -13609,7 +13609,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (API)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an API application
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an API application
       ///
       /// Create a new API client. The client id will be generated and returned in the response.
       /// Depending on the chosen configuration also a secret will be generated and returned.
@@ -13627,7 +13627,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (API)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an API application
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an API application
       ///
       /// Create a new API client. The client id will be generated and returned in the response.
       /// Depending on the chosen configuration also a secret will be generated and returned.
@@ -13643,7 +13643,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (API)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an API application
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an API application
       ///
       /// Create a new API client. The client id will be generated and returned in the response.
       /// Depending on the chosen configuration also a secret will be generated and returned.
@@ -13661,7 +13661,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application (API)
       ///
-      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application.api.mdx) instead to create an API application
+      /// Deprecated: Use [CreateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application.api.mdx) instead to create an API application
       ///
       /// Create a new API client. The client id will be generated and returned in the response.
       /// Depending on the chosen configuration also a secret will be generated and returned.
@@ -13677,7 +13677,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Application
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the generic params of an app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the generic params of an app.
       ///
       /// Update the basic information of an application. This doesn't include information that are dependent on the application type (OIDC, API, SAML)
       /// </summary>
@@ -13694,7 +13694,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Application
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the generic params of an app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the generic params of an app.
       ///
       /// Update the basic information of an application. This doesn't include information that are dependent on the application type (OIDC, API, SAML)
       /// </summary>
@@ -13709,7 +13709,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Application
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the generic params of an app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the generic params of an app.
       ///
       /// Update the basic information of an application. This doesn't include information that are dependent on the application type (OIDC, API, SAML)
       /// </summary>
@@ -13726,7 +13726,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Application
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the generic params of an app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the generic params of an app.
       ///
       /// Update the basic information of an application. This doesn't include information that are dependent on the application type (OIDC, API, SAML)
       /// </summary>
@@ -13741,7 +13741,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update OIDC Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an OIDC app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an OIDC app.
       ///
       /// Update the OIDC specific configuration of an application.
       /// </summary>
@@ -13758,7 +13758,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update OIDC Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an OIDC app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an OIDC app.
       ///
       /// Update the OIDC specific configuration of an application.
       /// </summary>
@@ -13773,7 +13773,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update OIDC Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an OIDC app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an OIDC app.
       ///
       /// Update the OIDC specific configuration of an application.
       /// </summary>
@@ -13790,7 +13790,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update OIDC Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an OIDC app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an OIDC app.
       ///
       /// Update the OIDC specific configuration of an application.
       /// </summary>
@@ -13805,7 +13805,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update SAML Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of a SAML app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of a SAML app.
       ///
       /// Update the SAML specific configuration of an application.
       /// </summary>
@@ -13822,7 +13822,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update SAML Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of a SAML app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of a SAML app.
       ///
       /// Update the SAML specific configuration of an application.
       /// </summary>
@@ -13837,7 +13837,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update SAML Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of a SAML app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of a SAML app.
       ///
       /// Update the SAML specific configuration of an application.
       /// </summary>
@@ -13854,7 +13854,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update SAML Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of a SAML app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of a SAML app.
       ///
       /// Update the SAML specific configuration of an application.
       /// </summary>
@@ -13869,7 +13869,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update API Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an API app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an API app.
       ///
       /// Update the OIDC-specific configuration of an application.
       /// </summary>
@@ -13886,7 +13886,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update API Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an API app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an API app.
       ///
       /// Update the OIDC-specific configuration of an application.
       /// </summary>
@@ -13901,7 +13901,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update API Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an API app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an API app.
       ///
       /// Update the OIDC-specific configuration of an application.
       /// </summary>
@@ -13918,7 +13918,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update API Application Config
       ///
-      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-update-application.api.mdx) instead to update the config of an API app.
+      /// Deprecated: Use [PatchApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-update-application.api.mdx) instead to update the config of an API app.
       ///
       /// Update the OIDC-specific configuration of an application.
       /// </summary>
@@ -13933,7 +13933,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Application
       ///
-      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-deactivate-application.api.mdx) instead to deactivate an app.
+      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-deactivate-application.api.mdx) instead to deactivate an app.
       ///
       /// Set the state of an application to deactivated. It is not possible to request tokens for deactivated apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -13950,7 +13950,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Application
       ///
-      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-deactivate-application.api.mdx) instead to deactivate an app.
+      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-deactivate-application.api.mdx) instead to deactivate an app.
       ///
       /// Set the state of an application to deactivated. It is not possible to request tokens for deactivated apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -13965,7 +13965,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Application
       ///
-      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-deactivate-application.api.mdx) instead to deactivate an app.
+      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-deactivate-application.api.mdx) instead to deactivate an app.
       ///
       /// Set the state of an application to deactivated. It is not possible to request tokens for deactivated apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -13982,7 +13982,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Application
       ///
-      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-deactivate-application.api.mdx) instead to deactivate an app.
+      /// Deprecated: Use [DeactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-deactivate-application.api.mdx) instead to deactivate an app.
       ///
       /// Set the state of an application to deactivated. It is not possible to request tokens for deactivated apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -13997,7 +13997,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Application
       ///
-      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-reactivate-application.api.mdx) instead to reactivate an app.
+      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-reactivate-application.api.mdx) instead to reactivate an app.
       ///
       /// Set the state of an application to active. Request returns an error if the application is not deactivated.
       /// </summary>
@@ -14014,7 +14014,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Application
       ///
-      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-reactivate-application.api.mdx) instead to reactivate an app.
+      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-reactivate-application.api.mdx) instead to reactivate an app.
       ///
       /// Set the state of an application to active. Request returns an error if the application is not deactivated.
       /// </summary>
@@ -14029,7 +14029,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Application
       ///
-      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-reactivate-application.api.mdx) instead to reactivate an app.
+      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-reactivate-application.api.mdx) instead to reactivate an app.
       ///
       /// Set the state of an application to active. Request returns an error if the application is not deactivated.
       /// </summary>
@@ -14046,7 +14046,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Application
       ///
-      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-reactivate-application.api.mdx) instead to reactivate an app.
+      /// Deprecated: Use [ReactivateApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-reactivate-application.api.mdx) instead to reactivate an app.
       ///
       /// Set the state of an application to active. Request returns an error if the application is not deactivated.
       /// </summary>
@@ -14061,7 +14061,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Application
       ///
-      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application.api.mdx) instead to delete an app.
+      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application.api.mdx) instead to delete an app.
       ///
       /// Remove an application. It is not possible to request tokens for removed apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -14078,7 +14078,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Application
       ///
-      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application.api.mdx) instead to delete an app.
+      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application.api.mdx) instead to delete an app.
       ///
       /// Remove an application. It is not possible to request tokens for removed apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -14093,7 +14093,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Application
       ///
-      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application.api.mdx) instead to delete an app.
+      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application.api.mdx) instead to delete an app.
       ///
       /// Remove an application. It is not possible to request tokens for removed apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -14110,7 +14110,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Application
       ///
-      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application.api.mdx) instead to delete an app.
+      /// Deprecated: Use [DeleteApplication](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application.api.mdx) instead to delete an app.
       ///
       /// Remove an application. It is not possible to request tokens for removed apps. Request returns an error if the application is already deactivated.
       /// </summary>
@@ -14125,7 +14125,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New OIDC Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an OIDC app client secret.
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an OIDC app client secret.
       ///
       /// Generates a new client secret for the OIDC application, make sure to save the response.
       /// </summary>
@@ -14142,7 +14142,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New OIDC Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an OIDC app client secret.
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an OIDC app client secret.
       ///
       /// Generates a new client secret for the OIDC application, make sure to save the response.
       /// </summary>
@@ -14157,7 +14157,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New OIDC Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an OIDC app client secret.
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an OIDC app client secret.
       ///
       /// Generates a new client secret for the OIDC application, make sure to save the response.
       /// </summary>
@@ -14174,7 +14174,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New OIDC Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an OIDC app client secret.
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an OIDC app client secret.
       ///
       /// Generates a new client secret for the OIDC application, make sure to save the response.
       /// </summary>
@@ -14189,7 +14189,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New API Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an API app client secret
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an API app client secret
       ///
       /// Generates a new client secret for the API application, make sure to save the response.
       /// </summary>
@@ -14206,7 +14206,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New API Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an API app client secret
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an API app client secret
       ///
       /// Generates a new client secret for the API application, make sure to save the response.
       /// </summary>
@@ -14221,7 +14221,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New API Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an API app client secret
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an API app client secret
       ///
       /// Generates a new client secret for the API application, make sure to save the response.
       /// </summary>
@@ -14238,7 +14238,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Generate New API Client Secret
       ///
-      /// Deprecated: Use [RegenerateClientSecret](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-regenerate-client-secret.api.mdx) instead to regenerate an API app client secret
+      /// Deprecated: Use [GenerateClientSecret](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-generate-client-secret.api.mdx) instead to (re-)generate an API app client secret
       ///
       /// Generates a new client secret for the API application, make sure to save the response.
       /// </summary>
@@ -14253,7 +14253,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application Key By ID
       ///
-      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application-key.api.mdx) instead to get an application key.
+      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application-key.api.mdx) instead to get an application key.
       ///
       /// Returns an application key. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14270,7 +14270,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application Key By ID
       ///
-      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application-key.api.mdx) instead to get an application key.
+      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application-key.api.mdx) instead to get an application key.
       ///
       /// Returns an application key. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14285,7 +14285,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application Key By ID
       ///
-      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application-key.api.mdx) instead to get an application key.
+      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application-key.api.mdx) instead to get an application key.
       ///
       /// Returns an application key. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14302,7 +14302,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get Application Key By ID
       ///
-      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-get-application-key.api.mdx) instead to get an application key.
+      /// Deprecated: Use [GetApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-get-application-key.api.mdx) instead to get an application key.
       ///
       /// Returns an application key. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14317,7 +14317,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Application Keys
       ///
-      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-application-keys.api.mdx) instead to list application keys.
+      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-application-keys.api.mdx) instead to list application keys.
       ///
       /// Search application keys. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14334,7 +14334,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Application Keys
       ///
-      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-application-keys.api.mdx) instead to list application keys.
+      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-application-keys.api.mdx) instead to list application keys.
       ///
       /// Search application keys. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14349,7 +14349,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Application Keys
       ///
-      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-application-keys.api.mdx) instead to list application keys.
+      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-application-keys.api.mdx) instead to list application keys.
       ///
       /// Search application keys. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14366,7 +14366,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Application Keys
       ///
-      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-list-application-keys.api.mdx) instead to list application keys.
+      /// Deprecated: Use [ListApplicationKeys](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-list-application-keys.api.mdx) instead to list application keys.
       ///
       /// Search application keys. Keys are used for authorizing API Applications.
       /// </summary>
@@ -14381,7 +14381,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application Key
       ///
-      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application-key.api.mdx) instead to create an application key.
+      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application-key.api.mdx) instead to create an application key.
       ///
       /// Create a new application key, they are used for authorizing API Applications. Key details will be returned in the response, make sure to save it.
       /// </summary>
@@ -14398,7 +14398,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application Key
       ///
-      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application-key.api.mdx) instead to create an application key.
+      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application-key.api.mdx) instead to create an application key.
       ///
       /// Create a new application key, they are used for authorizing API Applications. Key details will be returned in the response, make sure to save it.
       /// </summary>
@@ -14413,7 +14413,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application Key
       ///
-      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application-key.api.mdx) instead to create an application key.
+      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application-key.api.mdx) instead to create an application key.
       ///
       /// Create a new application key, they are used for authorizing API Applications. Key details will be returned in the response, make sure to save it.
       /// </summary>
@@ -14430,7 +14430,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Create Application Key
       ///
-      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-create-application-key.api.mdx) instead to create an application key.
+      /// Deprecated: Use [CreateApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-create-application-key.api.mdx) instead to create an application key.
       ///
       /// Create a new application key, they are used for authorizing API Applications. Key details will be returned in the response, make sure to save it.
       /// </summary>
@@ -14445,7 +14445,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Application Key
       ///
-      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application-key.api.mdx) instead to delete an application key.
+      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application-key.api.mdx) instead to delete an application key.
       ///
       /// Remove an application key. The API application will not be able to authorize with the key anymore.
       /// </summary>
@@ -14462,7 +14462,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Application Key
       ///
-      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application-key.api.mdx) instead to delete an application key.
+      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application-key.api.mdx) instead to delete an application key.
       ///
       /// Remove an application key. The API application will not be able to authorize with the key anymore.
       /// </summary>
@@ -14477,7 +14477,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Application Key
       ///
-      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application-key.api.mdx) instead to delete an application key.
+      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application-key.api.mdx) instead to delete an application key.
       ///
       /// Remove an application key. The API application will not be able to authorize with the key anymore.
       /// </summary>
@@ -14494,7 +14494,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Delete Application Key
       ///
-      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-app-v-2-beta-app-service-delete-application-key.api.mdx) instead to delete an application key.
+      /// Deprecated: Use [DeleteApplicationKey](/apis/resources/application_service_v2/zitadel-application-v-2-application-service-delete-application-key.api.mdx) instead to delete an application key.
       ///
       /// Remove an application key. The API application will not be able to authorize with the key anymore.
       /// </summary>
@@ -14529,7 +14529,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Project Grant By ID
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project grant. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14546,7 +14546,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Project Grant By ID
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project grant. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14561,7 +14561,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Project Grant By ID
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project grant. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14578,7 +14578,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Project Grant By ID
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a project grant. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14593,7 +14593,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants from Project
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants for a specific project. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14610,7 +14610,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants from Project
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants for a specific project. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14625,7 +14625,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants from Project
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants for a specific project. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14642,7 +14642,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants from Project
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants for a specific project. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14657,7 +14657,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14674,7 +14674,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14689,7 +14689,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14706,7 +14706,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search Project Grants
       ///
-      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-list-project-grants.api.mdx) instead.
+      /// Deprecated: use [ListProjectGrants](apis/resources/project_service_v2/zitadel-project-v-2-project-service-list-project-grants.api.mdx) instead.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       /// </summary>
@@ -14721,7 +14721,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant
       ///
-      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project-grant.api.mdx) instead.
+      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
       /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14738,7 +14738,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant
       ///
-      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project-grant.api.mdx) instead.
+      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
       /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14753,7 +14753,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant
       ///
-      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project-grant.api.mdx) instead.
+      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
       /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14770,7 +14770,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant
       ///
-      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-create-project-grant.api.mdx) instead.
+      /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
       /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14785,7 +14785,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Grant
       ///
-      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-grant.api.mdx) instead.
+      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
       /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14802,7 +14802,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Grant
       ///
-      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-grant.api.mdx) instead.
+      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
       /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14817,7 +14817,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Grant
       ///
-      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-grant.api.mdx) instead.
+      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
       /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14834,7 +14834,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Change Project Grant
       ///
-      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-update-project-grant.api.mdx) instead.
+      /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
       /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
@@ -14849,7 +14849,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project Grant
       ///
-      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to deactivated. The grant has to be active to be able to deactivate.
       /// </summary>
@@ -14866,7 +14866,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project Grant
       ///
-      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to deactivated. The grant has to be active to be able to deactivate.
       /// </summary>
@@ -14881,7 +14881,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project Grant
       ///
-      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to deactivated. The grant has to be active to be able to deactivate.
       /// </summary>
@@ -14898,7 +14898,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate Project Grant
       ///
-      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-deactivate-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeactivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-deactivate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to deactivated. The grant has to be active to be able to deactivate.
       /// </summary>
@@ -14913,7 +14913,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project Grant
       ///
-      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project-grant.api.mdx) instead.
+      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to active. The grant has to be deactivated to be able to reactivate.
       /// </summary>
@@ -14930,7 +14930,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project Grant
       ///
-      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project-grant.api.mdx) instead.
+      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to active. The grant has to be deactivated to be able to reactivate.
       /// </summary>
@@ -14945,7 +14945,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project Grant
       ///
-      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project-grant.api.mdx) instead.
+      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to active. The grant has to be deactivated to be able to reactivate.
       /// </summary>
@@ -14962,7 +14962,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate Project Grant
       ///
-      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-activate-project-grant.api.mdx) instead.
+      /// Deprecated: use [ActivateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-activate-project-grant.api.mdx) instead.
       ///
       /// Set the state of the project grant to active. The grant has to be deactivated to be able to reactivate.
       /// </summary>
@@ -14977,7 +14977,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant
       ///
-      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
       /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
@@ -14994,7 +14994,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant
       ///
-      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
       /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
@@ -15009,7 +15009,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant
       ///
-      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
       /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
@@ -15026,7 +15026,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant
       ///
-      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-beta-project-service-delete-project-grant.api.mdx) instead.
+      /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
       /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
@@ -15061,7 +15061,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Grant Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15078,7 +15078,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Grant Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15093,7 +15093,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Grant Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15110,7 +15110,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// List Project Grant Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15125,7 +15125,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15142,7 +15142,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15157,7 +15157,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15174,7 +15174,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add Project Grant Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -15189,7 +15189,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Grant Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -15206,7 +15206,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Grant Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -15221,7 +15221,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Grant Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -15238,7 +15238,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update Project Grant Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -15253,7 +15253,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
@@ -15270,7 +15270,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
@@ -15285,7 +15285,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
@@ -15302,7 +15302,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove Project Grant Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
@@ -15317,7 +15317,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get User Grant By ID
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and filter by its ID.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
       /// </summary>
@@ -15334,7 +15334,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get User Grant By ID
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and filter by its ID.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
       /// </summary>
@@ -15349,7 +15349,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get User Grant By ID
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and filter by its ID.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
       /// </summary>
@@ -15366,7 +15366,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Get User Grant By ID
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and filter by its ID.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
       /// </summary>
@@ -15381,7 +15381,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search User Grants
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
       /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15398,7 +15398,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search User Grants
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
       /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15413,7 +15413,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search User Grants
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
       /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15430,7 +15430,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Search User Grants
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
+      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
       /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15445,7 +15445,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add User Grant
       ///
-      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
+      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15462,7 +15462,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add User Grant
       ///
-      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
+      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15477,7 +15477,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add User Grant
       ///
-      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
+      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15494,7 +15494,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Add User Grant
       ///
-      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
+      /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15509,7 +15509,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update User Grant
       ///
-      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
+      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15526,7 +15526,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update User Grant
       ///
-      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
+      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15541,7 +15541,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update User Grant
       ///
-      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
+      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15558,7 +15558,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Update User Grant
       ///
-      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
+      /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
       /// </summary>
@@ -15573,7 +15573,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate User Grant
       ///
-      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
+      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
       /// </summary>
@@ -15590,7 +15590,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate User Grant
       ///
-      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
+      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
       /// </summary>
@@ -15605,7 +15605,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate User Grant
       ///
-      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
+      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
       /// </summary>
@@ -15622,7 +15622,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Deactivate User Grant
       ///
-      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
+      /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
       /// </summary>
@@ -15637,7 +15637,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate User Grant
       ///
-      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
+      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
       /// </summary>
@@ -15654,7 +15654,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate User Grant
       ///
-      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
+      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
       /// </summary>
@@ -15669,7 +15669,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate User Grant
       ///
-      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
+      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
       /// </summary>
@@ -15686,7 +15686,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Reactivate User Grant
       ///
-      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
+      /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
       /// </summary>
@@ -15701,7 +15701,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove User Grant
       ///
-      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
+      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15718,7 +15718,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove User Grant
       ///
-      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
+      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15733,7 +15733,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove User Grant
       ///
-      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
+      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15750,7 +15750,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Remove User Grant
       ///
-      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
+      /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15765,7 +15765,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Remove User Grants
       ///
-      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
+      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
       /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15782,7 +15782,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Remove User Grants
       ///
-      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
+      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
       /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15797,7 +15797,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Remove User Grants
       ///
-      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
+      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
       /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>
@@ -15814,7 +15814,7 @@ namespace Zitadel.Management.V1 {
       /// <summary>
       /// Bulk Remove User Grants
       ///
-      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-beta-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
+      /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
       /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
       /// </summary>

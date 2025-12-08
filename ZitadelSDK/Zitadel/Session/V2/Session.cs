@@ -28,101 +28,81 @@ namespace Zitadel.Session.V2 {
             "ZXNzaW9uLnYyGhR6aXRhZGVsL29iamVjdC5wcm90bxofZ29vZ2xlL3Byb3Rv",
             "YnVmL3RpbWVzdGFtcC5wcm90bxoucHJvdG9jLWdlbi1vcGVuYXBpdjIvb3B0",
             "aW9ucy9hbm5vdGF0aW9ucy5wcm90bxoXdmFsaWRhdGUvdmFsaWRhdGUucHJv",
-            "dG8iwAYKB1Nlc3Npb24SKAoCaWQYASABKAlCGJJBFTITImlkIG9mIHRoZSBz",
-            "ZXNzaW9uIlICaWQSaQoNY3JlYXRpb25fZGF0ZRgCIAEoCzIaLmdvb2dsZS5w",
-            "cm90b2J1Zi5UaW1lc3RhbXBCKJJBJTIjInRpbWUgd2hlbiB0aGUgc2Vzc2lv",
-            "biB3YXMgY3JlYXRlZCJSDGNyZWF0aW9uRGF0ZRJqCgtjaGFuZ2VfZGF0ZRgD",
-            "IAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCLZJBKjIoInRpbWUg",
-            "d2hlbiB0aGUgc2Vzc2lvbiB3YXMgbGFzdCB1cGRhdGVkIlIKY2hhbmdlRGF0",
-            "ZRI6CghzZXF1ZW5jZRgEIAEoBEIekkEbMhkic2VxdWVuY2Ugb2YgdGhlIHNl",
-            "c3Npb24iUghzZXF1ZW5jZRJ+CgdmYWN0b3JzGAUgASgLMhsueml0YWRlbC5z",
-            "ZXNzaW9uLnYyLkZhY3RvcnNCR5JBRDJCImNoZWNrZWQgZmFjdG9ycyBvZiB0",
-            "aGUgc2Vzc2lvbiwgZS5nLiB0aGUgdXNlciwgcGFzc3dvcmQgYW5kIG1vcmUi",
-            "UgdmYWN0b3JzEmMKCG1ldGFkYXRhGAYgAygLMikueml0YWRlbC5zZXNzaW9u",
-            "LnYyLlNlc3Npb24uTWV0YWRhdGFFbnRyeUIckkEZMhciY3VzdG9tIGtleSB2",
-            "YWx1ZSBsaXN0IlIIbWV0YWRhdGESPAoKdXNlcl9hZ2VudBgHIAEoCzIdLnpp",
-            "dGFkZWwuc2Vzc2lvbi52Mi5Vc2VyQWdlbnRSCXVzZXJBZ2VudBKDAQoPZXhw",
-            "aXJhdGlvbl9kYXRlGAggASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFt",
-            "cEI5kkE2MjQidGltZSB0aGUgc2Vzc2lvbiB3aWxsIGJlIGF1dG9tYXRpY2Fs",
-            "bHkgaW52YWxpZGF0ZWQiSABSDmV4cGlyYXRpb25EYXRliAEBGjsKDU1ldGFk",
-            "YXRhRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAxSBXZh",
-            "bHVlOgI4AUISChBfZXhwaXJhdGlvbl9kYXRlIqEDCgdGYWN0b3JzEjIKBHVz",
-            "ZXIYASABKAsyHi56aXRhZGVsLnNlc3Npb24udjIuVXNlckZhY3RvclIEdXNl",
-            "chI+CghwYXNzd29yZBgCIAEoCzIiLnppdGFkZWwuc2Vzc2lvbi52Mi5QYXNz",
-            "d29yZEZhY3RvclIIcGFzc3dvcmQSQAoKd2ViX2F1dGhfbhgDIAEoCzIiLnpp",
-            "dGFkZWwuc2Vzc2lvbi52Mi5XZWJBdXRoTkZhY3RvclIId2ViQXV0aE4SOAoG",
-            "aW50ZW50GAQgASgLMiAueml0YWRlbC5zZXNzaW9uLnYyLkludGVudEZhY3Rv",
-            "clIGaW50ZW50EjIKBHRvdHAYBSABKAsyHi56aXRhZGVsLnNlc3Npb24udjIu",
-            "VE9UUEZhY3RvclIEdG90cBI2CgdvdHBfc21zGAYgASgLMh0ueml0YWRlbC5z",
-            "ZXNzaW9uLnYyLk9UUEZhY3RvclIGb3RwU21zEjoKCW90cF9lbWFpbBgHIAEo",
-            "CzIdLnppdGFkZWwuc2Vzc2lvbi52Mi5PVFBGYWN0b3JSCG90cEVtYWlsIqID",
-            "CgpVc2VyRmFjdG9yEmcKC3ZlcmlmaWVkX2F0GAEgASgLMhouZ29vZ2xlLnBy",
-            "b3RvYnVmLlRpbWVzdGFtcEIqkkEnMiUidGltZSB3aGVuIHRoZSB1c2VyIHdh",
-            "cyBsYXN0IGNoZWNrZWQiUgp2ZXJpZmllZEF0Ei0KAmlkGAIgASgJQh2SQRoy",
-            "GCJpZCBvZiB0aGUgY2hlY2tlZCB1c2VyIlICaWQSRAoKbG9naW5fbmFtZRgD",
-            "IAEoCUIlkkEiMiAibG9naW4gbmFtZSBvZiB0aGUgY2hlY2tlZCB1c2VyIlIJ",
-            "bG9naW5OYW1lEkoKDGRpc3BsYXlfbmFtZRgEIAEoCUInkkEkMiIiZGlzcGxh",
-            "eSBuYW1lIG9mIHRoZSBjaGVja2VkIHVzZXIiUgtkaXNwbGF5TmFtZRJTCg9v",
-            "cmdhbml6YXRpb25faWQYBiABKAlCKpJBJzIlIm9yZ2FuaXphdGlvbiBpZCBv",
-            "ZiB0aGUgY2hlY2tlZCB1c2VyIlIOb3JnYW5pemF0aW9uSWRKBAgFEAZSD29y",
-            "Z2FuaXNhdGlvbl9pZCJ9Cg5QYXNzd29yZEZhY3RvchJrCgt2ZXJpZmllZF9h",
-            "dBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCLpJBKzIpInRp",
-            "bWUgd2hlbiB0aGUgcGFzc3dvcmQgd2FzIGxhc3QgY2hlY2tlZCJSCnZlcmlm",
-            "aWVkQXQieAoMSW50ZW50RmFjdG9yEmgKC3ZlcmlmaWVkX2F0GAEgASgLMhou",
-            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIrkkEoMiYidGltZSB3aGVuIGFu",
-            "IGludGVudCB3YXMgbGFzdCBjaGVja2VkIlIKdmVyaWZpZWRBdCKrAQoOV2Vi",
-            "QXV0aE5GYWN0b3ISdAoLdmVyaWZpZWRfYXQYASABKAsyGi5nb29nbGUucHJv",
-            "dG9idWYuVGltZXN0YW1wQjeSQTQyMiJ0aW1lIHdoZW4gdGhlIHBhc3NrZXkg",
-            "Y2hhbGxlbmdlIHdhcyBsYXN0IGNoZWNrZWQiUgp2ZXJpZmllZEF0EiMKDXVz",
-            "ZXJfdmVyaWZpZWQYAiABKAhSDHVzZXJWZXJpZmllZCKNAQoKVE9UUEZhY3Rv",
-            "chJ/Cgt2ZXJpZmllZF9hdBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
-            "c3RhbXBCQpJBPzI9InRpbWUgd2hlbiB0aGUgVGltZS1iYXNlZCBPbmUtVGlt",
-            "ZSBQYXNzd29yZCB3YXMgbGFzdCBjaGVja2VkIlIKdmVyaWZpZWRBdCKBAQoJ",
-            "T1RQRmFjdG9yEnQKC3ZlcmlmaWVkX2F0GAEgASgLMhouZ29vZ2xlLnByb3Rv",
-            "YnVmLlRpbWVzdGFtcEI3kkE0MjIidGltZSB3aGVuIHRoZSBPbmUtVGltZSBQ",
-            "YXNzd29yZCB3YXMgbGFzdCBjaGVja2VkIlIKdmVyaWZpZWRBdCLwAwoLU2Vh",
-            "cmNoUXVlcnkSOwoJaWRzX3F1ZXJ5GAEgASgLMhwueml0YWRlbC5zZXNzaW9u",
-            "LnYyLklEc1F1ZXJ5SABSCGlkc1F1ZXJ5EkUKDXVzZXJfaWRfcXVlcnkYAiAB",
-            "KAsyHy56aXRhZGVsLnNlc3Npb24udjIuVXNlcklEUXVlcnlIAFILdXNlcklk",
-            "UXVlcnkSVwoTY3JlYXRpb25fZGF0ZV9xdWVyeRgDIAEoCzIlLnppdGFkZWwu",
-            "c2Vzc2lvbi52Mi5DcmVhdGlvbkRhdGVRdWVyeUgAUhFjcmVhdGlvbkRhdGVR",
-            "dWVyeRJHCg1jcmVhdG9yX3F1ZXJ5GAQgASgLMiAueml0YWRlbC5zZXNzaW9u",
-            "LnYyLkNyZWF0b3JRdWVyeUgAUgxjcmVhdG9yUXVlcnkSTgoQdXNlcl9hZ2Vu",
-            "dF9xdWVyeRgFIAEoCzIiLnppdGFkZWwuc2Vzc2lvbi52Mi5Vc2VyQWdlbnRR",
-            "dWVyeUgAUg51c2VyQWdlbnRRdWVyeRJdChVleHBpcmF0aW9uX2RhdGVfcXVl",
-            "cnkYBiABKAsyJy56aXRhZGVsLnNlc3Npb24udjIuRXhwaXJhdGlvbkRhdGVR",
-            "dWVyeUgAUhNleHBpcmF0aW9uRGF0ZVF1ZXJ5QgwKBXF1ZXJ5EgP4QgEiHAoI",
-            "SURzUXVlcnkSEAoDaWRzGAEgAygJUgNpZHMiHQoLVXNlcklEUXVlcnkSDgoC",
-            "aWQYASABKAlSAmlkIs4BChFDcmVhdGlvbkRhdGVRdWVyeRI/Cg1jcmVhdGlv",
-            "bl9kYXRlGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIMY3Jl",
-            "YXRpb25EYXRlEngKBm1ldGhvZBgCIAEoDjIgLnppdGFkZWwudjEuVGltZXN0",
-            "YW1wUXVlcnlNZXRob2RCPpJBMzIxZGVmaW5lcyB3aGljaCB0aW1lc3RhbXAg",
-            "Y29tcGFyaXNvbiBtZXRob2QgaXMgdXNlZPpCBYIBAhABUgZtZXRob2QiTwoM",
-            "Q3JlYXRvclF1ZXJ5EjgKAmlkGAEgASgJQiOSQRhKEyI2OTYyOTAyMzkwNjQ4",
-            "ODMzNCJ4yAH6QgVyAxjIAUgAUgJpZIgBAUIFCgNfaWQidAoOVXNlckFnZW50",
-            "UXVlcnkSTwoOZmluZ2VycHJpbnRfaWQYASABKAlCI5JBGEoTIjY5NjI5MDIz",
-            "OTA2NDg4MzM0InjIAfpCBXIDGMgBSABSDWZpbmdlcnByaW50SWSIAQFCEQoP",
-            "X2ZpbmdlcnByaW50X2lkItQBChNFeHBpcmF0aW9uRGF0ZVF1ZXJ5EkMKD2V4",
-            "cGlyYXRpb25fZGF0ZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3Rh",
-            "bXBSDmV4cGlyYXRpb25EYXRlEngKBm1ldGhvZBgCIAEoDjIgLnppdGFkZWwu",
-            "djEuVGltZXN0YW1wUXVlcnlNZXRob2RCPpJBMzIxZGVmaW5lcyB3aGljaCB0",
-            "aW1lc3RhbXAgY29tcGFyaXNvbiBtZXRob2QgaXMgdXNlZPpCBYIBAhABUgZt",
-            "ZXRob2Qi7wIKCVVzZXJBZ2VudBIqCg5maW5nZXJwcmludF9pZBgBIAEoCUgA",
-            "Ug1maW5nZXJwcmludElkiAEBEhMKAmlwGAIgASgJSAFSAmlwiAEBEiUKC2Rl",
-            "c2NyaXB0aW9uGAMgASgJSAJSC2Rlc2NyaXB0aW9uiAEBEkEKBmhlYWRlchgE",
-            "IAMoCzIpLnppdGFkZWwuc2Vzc2lvbi52Mi5Vc2VyQWdlbnQuSGVhZGVyRW50",
-            "cnlSBmhlYWRlchomCgxIZWFkZXJWYWx1ZXMSFgoGdmFsdWVzGAEgAygJUgZ2",
-            "YWx1ZXMaZQoLSGVhZGVyRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSQAoFdmFs",
-            "dWUYAiABKAsyKi56aXRhZGVsLnNlc3Npb24udjIuVXNlckFnZW50LkhlYWRl",
-            "clZhbHVlc1IFdmFsdWU6AjgBQhEKD19maW5nZXJwcmludF9pZEIFCgNfaXBC",
-            "DgoMX2Rlc2NyaXB0aW9uKlwKEFNlc3Npb25GaWVsZE5hbWUSIgoeU0VTU0lP",
-            "Tl9GSUVMRF9OQU1FX1VOU1BFQ0lGSUVEEAASJAogU0VTU0lPTl9GSUVMRF9O",
-            "QU1FX0NSRUFUSU9OX0RBVEUQAULIAQoWY29tLnppdGFkZWwuc2Vzc2lvbi52",
-            "MkIMU2Vzc2lvblByb3RvUAFaNmdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVs",
-            "L3BrZy9ncnBjL3Nlc3Npb24vdjI7c2Vzc2lvbqICA1pTWKoCElppdGFkZWwu",
-            "U2Vzc2lvbi5WMsoCElppdGFkZWxcU2Vzc2lvblxWMuICHlppdGFkZWxcU2Vz",
-            "c2lvblxWMlxHUEJNZXRhZGF0YeoCFFppdGFkZWw6OlNlc3Npb246OlYyYgZw",
-            "cm90bzM="));
+            "dG8iigQKB1Nlc3Npb24SDgoCaWQYASABKAlSAmlkEj8KDWNyZWF0aW9uX2Rh",
+            "dGUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgxjcmVhdGlv",
+            "bkRhdGUSOwoLY2hhbmdlX2RhdGUYAyABKAsyGi5nb29nbGUucHJvdG9idWYu",
+            "VGltZXN0YW1wUgpjaGFuZ2VEYXRlEhoKCHNlcXVlbmNlGAQgASgEUghzZXF1",
+            "ZW5jZRI1CgdmYWN0b3JzGAUgASgLMhsueml0YWRlbC5zZXNzaW9uLnYyLkZh",
+            "Y3RvcnNSB2ZhY3RvcnMSRQoIbWV0YWRhdGEYBiADKAsyKS56aXRhZGVsLnNl",
+            "c3Npb24udjIuU2Vzc2lvbi5NZXRhZGF0YUVudHJ5UghtZXRhZGF0YRI8Cgp1",
+            "c2VyX2FnZW50GAcgASgLMh0ueml0YWRlbC5zZXNzaW9uLnYyLlVzZXJBZ2Vu",
+            "dFIJdXNlckFnZW50EkgKD2V4cGlyYXRpb25fZGF0ZRgIIAEoCzIaLmdvb2ds",
+            "ZS5wcm90b2J1Zi5UaW1lc3RhbXBIAFIOZXhwaXJhdGlvbkRhdGWIAQEaOwoN",
+            "TWV0YWRhdGFFbnRyeRIQCgNrZXkYASABKAlSA2tleRIUCgV2YWx1ZRgCIAEo",
+            "DFIFdmFsdWU6AjgBQhIKEF9leHBpcmF0aW9uX2RhdGUioQMKB0ZhY3RvcnMS",
+            "MgoEdXNlchgBIAEoCzIeLnppdGFkZWwuc2Vzc2lvbi52Mi5Vc2VyRmFjdG9y",
+            "UgR1c2VyEj4KCHBhc3N3b3JkGAIgASgLMiIueml0YWRlbC5zZXNzaW9uLnYy",
+            "LlBhc3N3b3JkRmFjdG9yUghwYXNzd29yZBJACgp3ZWJfYXV0aF9uGAMgASgL",
+            "MiIueml0YWRlbC5zZXNzaW9uLnYyLldlYkF1dGhORmFjdG9yUgh3ZWJBdXRo",
+            "ThI4CgZpbnRlbnQYBCABKAsyIC56aXRhZGVsLnNlc3Npb24udjIuSW50ZW50",
+            "RmFjdG9yUgZpbnRlbnQSMgoEdG90cBgFIAEoCzIeLnppdGFkZWwuc2Vzc2lv",
+            "bi52Mi5UT1RQRmFjdG9yUgR0b3RwEjYKB290cF9zbXMYBiABKAsyHS56aXRh",
+            "ZGVsLnNlc3Npb24udjIuT1RQRmFjdG9yUgZvdHBTbXMSOgoJb3RwX2VtYWls",
+            "GAcgASgLMh0ueml0YWRlbC5zZXNzaW9uLnYyLk9UUEZhY3RvclIIb3RwRW1h",
+            "aWwi2wEKClVzZXJGYWN0b3ISOwoLdmVyaWZpZWRfYXQYASABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wUgp2ZXJpZmllZEF0Eg4KAmlkGAIgASgJ",
+            "UgJpZBIdCgpsb2dpbl9uYW1lGAMgASgJUglsb2dpbk5hbWUSIQoMZGlzcGxh",
+            "eV9uYW1lGAQgASgJUgtkaXNwbGF5TmFtZRInCg9vcmdhbml6YXRpb25faWQY",
+            "BiABKAlSDm9yZ2FuaXphdGlvbklkSgQIBRAGUg9vcmdhbmlzYXRpb25faWQi",
+            "TQoOUGFzc3dvcmRGYWN0b3ISOwoLdmVyaWZpZWRfYXQYASABKAsyGi5nb29n",
+            "bGUucHJvdG9idWYuVGltZXN0YW1wUgp2ZXJpZmllZEF0IksKDEludGVudEZh",
+            "Y3RvchI7Cgt2ZXJpZmllZF9hdBgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
+            "aW1lc3RhbXBSCnZlcmlmaWVkQXQicgoOV2ViQXV0aE5GYWN0b3ISOwoLdmVy",
+            "aWZpZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wUgp2",
+            "ZXJpZmllZEF0EiMKDXVzZXJfdmVyaWZpZWQYAiABKAhSDHVzZXJWZXJpZmll",
+            "ZCJJCgpUT1RQRmFjdG9yEjsKC3ZlcmlmaWVkX2F0GAEgASgLMhouZ29vZ2xl",
+            "LnByb3RvYnVmLlRpbWVzdGFtcFIKdmVyaWZpZWRBdCJICglPVFBGYWN0b3IS",
+            "OwoLdmVyaWZpZWRfYXQYASABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0",
+            "YW1wUgp2ZXJpZmllZEF0IvADCgtTZWFyY2hRdWVyeRI7CglpZHNfcXVlcnkY",
+            "ASABKAsyHC56aXRhZGVsLnNlc3Npb24udjIuSURzUXVlcnlIAFIIaWRzUXVl",
+            "cnkSRQoNdXNlcl9pZF9xdWVyeRgCIAEoCzIfLnppdGFkZWwuc2Vzc2lvbi52",
+            "Mi5Vc2VySURRdWVyeUgAUgt1c2VySWRRdWVyeRJXChNjcmVhdGlvbl9kYXRl",
+            "X3F1ZXJ5GAMgASgLMiUueml0YWRlbC5zZXNzaW9uLnYyLkNyZWF0aW9uRGF0",
+            "ZVF1ZXJ5SABSEWNyZWF0aW9uRGF0ZVF1ZXJ5EkcKDWNyZWF0b3JfcXVlcnkY",
+            "BCABKAsyIC56aXRhZGVsLnNlc3Npb24udjIuQ3JlYXRvclF1ZXJ5SABSDGNy",
+            "ZWF0b3JRdWVyeRJOChB1c2VyX2FnZW50X3F1ZXJ5GAUgASgLMiIueml0YWRl",
+            "bC5zZXNzaW9uLnYyLlVzZXJBZ2VudFF1ZXJ5SABSDnVzZXJBZ2VudFF1ZXJ5",
+            "El0KFWV4cGlyYXRpb25fZGF0ZV9xdWVyeRgGIAEoCzInLnppdGFkZWwuc2Vz",
+            "c2lvbi52Mi5FeHBpcmF0aW9uRGF0ZVF1ZXJ5SABSE2V4cGlyYXRpb25EYXRl",
+            "UXVlcnlCDAoFcXVlcnkSA/hCASIcCghJRHNRdWVyeRIQCgNpZHMYASADKAlS",
+            "A2lkcyIdCgtVc2VySURRdWVyeRIOCgJpZBgBIAEoCVICaWQimAEKEUNyZWF0",
+            "aW9uRGF0ZVF1ZXJ5Ej8KDWNyZWF0aW9uX2RhdGUYASABKAsyGi5nb29nbGUu",
+            "cHJvdG9idWYuVGltZXN0YW1wUgxjcmVhdGlvbkRhdGUSQgoGbWV0aG9kGAIg",
+            "ASgOMiAueml0YWRlbC52MS5UaW1lc3RhbXBRdWVyeU1ldGhvZEII+kIFggEC",
+            "EAFSBm1ldGhvZCJPCgxDcmVhdG9yUXVlcnkSOAoCaWQYASABKAlCI5JBGEoT",
+            "IjY5NjI5MDIzOTA2NDg4MzM0InjIAfpCBXIDGMgBSABSAmlkiAEBQgUKA19p",
+            "ZCJ0Cg5Vc2VyQWdlbnRRdWVyeRJPCg5maW5nZXJwcmludF9pZBgBIAEoCUIj",
+            "kkEYShMiNjk2MjkwMjM5MDY0ODgzMzQieMgB+kIFcgMYyAFIAFINZmluZ2Vy",
+            "cHJpbnRJZIgBAUIRCg9fZmluZ2VycHJpbnRfaWQingEKE0V4cGlyYXRpb25E",
+            "YXRlUXVlcnkSQwoPZXhwaXJhdGlvbl9kYXRlGAEgASgLMhouZ29vZ2xlLnBy",
+            "b3RvYnVmLlRpbWVzdGFtcFIOZXhwaXJhdGlvbkRhdGUSQgoGbWV0aG9kGAIg",
+            "ASgOMiAueml0YWRlbC52MS5UaW1lc3RhbXBRdWVyeU1ldGhvZEII+kIFggEC",
+            "EAFSBm1ldGhvZCLvAgoJVXNlckFnZW50EioKDmZpbmdlcnByaW50X2lkGAEg",
+            "ASgJSABSDWZpbmdlcnByaW50SWSIAQESEwoCaXAYAiABKAlIAVICaXCIAQES",
+            "JQoLZGVzY3JpcHRpb24YAyABKAlIAlILZGVzY3JpcHRpb26IAQESQQoGaGVh",
+            "ZGVyGAQgAygLMikueml0YWRlbC5zZXNzaW9uLnYyLlVzZXJBZ2VudC5IZWFk",
+            "ZXJFbnRyeVIGaGVhZGVyGiYKDEhlYWRlclZhbHVlcxIWCgZ2YWx1ZXMYASAD",
+            "KAlSBnZhbHVlcxplCgtIZWFkZXJFbnRyeRIQCgNrZXkYASABKAlSA2tleRJA",
+            "CgV2YWx1ZRgCIAEoCzIqLnppdGFkZWwuc2Vzc2lvbi52Mi5Vc2VyQWdlbnQu",
+            "SGVhZGVyVmFsdWVzUgV2YWx1ZToCOAFCEQoPX2ZpbmdlcnByaW50X2lkQgUK",
+            "A19pcEIOCgxfZGVzY3JpcHRpb24qXAoQU2Vzc2lvbkZpZWxkTmFtZRIiCh5T",
+            "RVNTSU9OX0ZJRUxEX05BTUVfVU5TUEVDSUZJRUQQABIkCiBTRVNTSU9OX0ZJ",
+            "RUxEX05BTUVfQ1JFQVRJT05fREFURRABQsgBChZjb20ueml0YWRlbC5zZXNz",
+            "aW9uLnYyQgxTZXNzaW9uUHJvdG9QAVo2Z2l0aHViLmNvbS96aXRhZGVsL3pp",
+            "dGFkZWwvcGtnL2dycGMvc2Vzc2lvbi92MjtzZXNzaW9uogIDWlNYqgISWml0",
+            "YWRlbC5TZXNzaW9uLlYyygISWml0YWRlbFxTZXNzaW9uXFYy4gIeWml0YWRl",
+            "bFxTZXNzaW9uXFYyXEdQQk1ldGFkYXRh6gIUWml0YWRlbDo6U2Vzc2lvbjo6",
+            "VjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Zitadel.V1.ObjectReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Session.V2.SessionFieldName), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -212,6 +192,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// Unique identifier of the session.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -224,6 +207,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "creation_date" field.</summary>
     public const int CreationDateFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
+    /// <summary>
+    /// The timestamp the session was created.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreationDate {
@@ -236,6 +222,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "change_date" field.</summary>
     public const int ChangeDateFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp changeDate_;
+    /// <summary>
+    /// The timestamp the session was last updated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ChangeDate {
@@ -248,6 +237,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "sequence" field.</summary>
     public const int SequenceFieldNumber = 4;
     private ulong sequence_;
+    /// <summary>
+    /// The sequence of the session represents the change sequence of the session.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong Sequence {
@@ -260,6 +252,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "factors" field.</summary>
     public const int FactorsFieldNumber = 5;
     private global::Zitadel.Session.V2.Factors factors_;
+    /// <summary>
+    /// The factors that have been checked for this session, e.g. the user, password and more.
+    /// If a factor is set, it means it has been checked and is valid.
+    /// If a factor is not set, it means it has not been checked or is invalid.
+    /// If a factor is set, the verified_at timestamp indicates when it was last checked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.Factors Factors {
@@ -274,6 +272,11 @@ namespace Zitadel.Session.V2 {
     private static readonly pbc::MapField<string, pb::ByteString>.Codec _map_metadata_codec
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 50);
     private readonly pbc::MapField<string, pb::ByteString> metadata_ = new pbc::MapField<string, pb::ByteString>();
+    /// <summary>
+    /// Metadata contains custom key value pairs set by the user.
+    /// The metadata is not interpreted by ZITADEL and can be used to store any information
+    /// relevant to the session.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> Metadata {
@@ -283,6 +286,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "user_agent" field.</summary>
     public const int UserAgentFieldNumber = 7;
     private global::Zitadel.Session.V2.UserAgent userAgent_;
+    /// <summary>
+    /// UserAgent contains information about the user agent used to create the session.
+    /// This can include information such as the IP address, browser type, and operating system and
+    /// a fingerprint id.
+    /// This can be used to identify and filter sessions based on the user agent.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.UserAgent UserAgent {
@@ -295,6 +304,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "expiration_date" field.</summary>
     public const int ExpirationDateFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expirationDate_;
+    /// <summary>
+    /// ExpirationDate is the time the session will be automatically invalidated.
+    /// If not set, the session does not expire automatically.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpirationDate {
@@ -1183,6 +1196,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "verified_at" field.</summary>
     public const int VerifiedAtFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp verifiedAt_;
+    /// <summary>
+    /// The timestamp when the user was last verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp VerifiedAt {
@@ -1195,6 +1211,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 2;
     private string id_ = "";
+    /// <summary>
+    /// The unique identifier of the user that was verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -1207,6 +1226,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "login_name" field.</summary>
     public const int LoginNameFieldNumber = 3;
     private string loginName_ = "";
+    /// <summary>
+    /// The login name of the user that was verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LoginName {
@@ -1219,6 +1241,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "display_name" field.</summary>
     public const int DisplayNameFieldNumber = 4;
     private string displayName_ = "";
+    /// <summary>
+    /// The display name of the user that was verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DisplayName {
@@ -1231,6 +1256,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 6;
     private string organizationId_ = "";
+    /// <summary>
+    /// The id of the organization the user belongs to.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrganizationId {
@@ -1534,6 +1562,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "verified_at" field.</summary>
     public const int VerifiedAtFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp verifiedAt_;
+    /// <summary>
+    /// The timestamp when the password was last verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp VerifiedAt {
@@ -1741,6 +1772,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "verified_at" field.</summary>
     public const int VerifiedAtFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp verifiedAt_;
+    /// <summary>
+    /// The timestamp when the intent was last verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp VerifiedAt {
@@ -1949,6 +1983,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "verified_at" field.</summary>
     public const int VerifiedAtFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp verifiedAt_;
+    /// <summary>
+    /// The timestamp when the passkey challenge was last verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp VerifiedAt {
@@ -1961,6 +1998,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "user_verified" field.</summary>
     public const int UserVerifiedFieldNumber = 2;
     private bool userVerified_;
+    /// <summary>
+    /// Indicates if the user presence was verified during the last challenge.
+    /// This can be used to determine if the factor can be considered as multi-factor authentication.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool UserVerified {
@@ -2192,6 +2233,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "verified_at" field.</summary>
     public const int VerifiedAtFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp verifiedAt_;
+    /// <summary>
+    /// The timestamp when the Time-based One-Time Password was last verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp VerifiedAt {
@@ -2399,6 +2443,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "verified_at" field.</summary>
     public const int VerifiedAtFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp verifiedAt_;
+    /// <summary>
+    /// The timestamp when the One-Time Password was last verified either by SMS or Email.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp VerifiedAt {
@@ -2625,6 +2672,9 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "ids_query" field.</summary>
     public const int IdsQueryFieldNumber = 1;
+    /// <summary>
+    /// Search for sessions with the given IDs.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.IDsQuery IdsQuery {
@@ -2637,6 +2687,9 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "user_id_query" field.</summary>
     public const int UserIdQueryFieldNumber = 2;
+    /// <summary>
+    /// Search for sessions of the given user ID.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.UserIDQuery UserIdQuery {
@@ -2649,6 +2702,10 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "creation_date_query" field.</summary>
     public const int CreationDateQueryFieldNumber = 3;
+    /// <summary>
+    /// Search for sessions based on their creation date.
+    /// This can be used to find sessions created before or after a certain date.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CreationDateQuery CreationDateQuery {
@@ -2661,6 +2718,9 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "creator_query" field.</summary>
     public const int CreatorQueryFieldNumber = 4;
+    /// <summary>
+    /// Search for sessions created by a specific user.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CreatorQuery CreatorQuery {
@@ -2673,6 +2733,12 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "user_agent_query" field.</summary>
     public const int UserAgentQueryFieldNumber = 5;
+    /// <summary>
+    /// Search for sessions based on the user agent used to create the session.
+    /// It can be used to find sessions created from a specific device or browser.
+    /// This is typically done for providing a list of active sessions to the user
+    /// in a user interface.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.UserAgentQuery UserAgentQuery {
@@ -2685,6 +2751,10 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "expiration_date_query" field.</summary>
     public const int ExpirationDateQueryFieldNumber = 6;
+    /// <summary>
+    /// Search for sessions based on their expiration date.
+    /// This can be used to find sessions that are set to expire before or after a certain date.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.ExpirationDateQuery ExpirationDateQuery {
@@ -3114,6 +3184,10 @@ namespace Zitadel.Session.V2 {
     private static readonly pb::FieldCodec<string> _repeated_ids_codec
         = pb::FieldCodec.ForString(10);
     private readonly pbc::RepeatedField<string> ids_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// List of session IDs to search for.
+    /// If multiple IDs are provided, sessions matching any of the IDs will be returned.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Ids {
@@ -3299,6 +3373,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// ID of the user whose sessions are being searched for.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -3498,6 +3575,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "creation_date" field.</summary>
     public const int CreationDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
+    /// <summary>
+    /// The creation date to compare the session's creation date against.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreationDate {
@@ -3510,6 +3590,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "method" field.</summary>
     public const int MethodFieldNumber = 2;
     private global::Zitadel.V1.TimestampQueryMethod method_ = global::Zitadel.V1.TimestampQueryMethod.Equals;
+    /// <summary>
+    /// The method of comparison to use for the creation date.
+    /// This defines whether to search for sessions created before, after, or exactly at the specified date.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.V1.TimestampQueryMethod Method {
@@ -4174,6 +4258,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "expiration_date" field.</summary>
     public const int ExpirationDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp expirationDate_;
+    /// <summary>
+    /// The expiration date to compare the session's expiration date against.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp ExpirationDate {
@@ -4186,6 +4273,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "method" field.</summary>
     public const int MethodFieldNumber = 2;
     private global::Zitadel.V1.TimestampQueryMethod method_ = global::Zitadel.V1.TimestampQueryMethod.Equals;
+    /// <summary>
+    /// The method of comparison to use for the expiration date.
+    /// This defines whether to search for sessions expiring before, after, or exactly at the specified date.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.V1.TimestampQueryMethod Method {
@@ -4422,6 +4513,10 @@ namespace Zitadel.Session.V2 {
     private readonly static string FingerprintIdDefaultValue = "";
 
     private string fingerprintId_;
+    /// <summary>
+    /// FingerprintID is a unique identifier for the user agent's fingerprint.
+    /// It can be used to group sessions by device or browser.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FingerprintId {
@@ -4448,6 +4543,9 @@ namespace Zitadel.Session.V2 {
     private readonly static string IpDefaultValue = "";
 
     private string ip_;
+    /// <summary>
+    /// IP is the IP address from which the session was created.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Ip {
@@ -4474,6 +4572,9 @@ namespace Zitadel.Session.V2 {
     private readonly static string DescriptionDefaultValue = "";
 
     private string description_;
+    /// <summary>
+    /// Description is a human-readable description of the user agent.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Description {

@@ -26,22 +26,18 @@ namespace Zitadel.Settings.V2 {
           string.Concat(
             "Cit6aXRhZGVsL3NldHRpbmdzL3YyL3NlY3VyaXR5X3NldHRpbmdzLnByb3Rv",
             "EhN6aXRhZGVsLnNldHRpbmdzLnYyGi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9v",
-            "cHRpb25zL2Fubm90YXRpb25zLnByb3RvItABChBTZWN1cml0eVNldHRpbmdz",
+            "cHRpb25zL2Fubm90YXRpb25zLnByb3RvIpsBChBTZWN1cml0eVNldHRpbmdz",
             "ElQKD2VtYmVkZGVkX2lmcmFtZRgBIAEoCzIrLnppdGFkZWwuc2V0dGluZ3Mu",
-            "djIuRW1iZWRkZWRJZnJhbWVTZXR0aW5nc1IOZW1iZWRkZWRJZnJhbWUSZgoU",
-            "ZW5hYmxlX2ltcGVyc29uYXRpb24YAiABKAhCM5JBMDIoZGVmYXVsdCBsYW5n",
-            "dWFnZSBmb3IgdGhlIGN1cnJlbnQgY29udGV4dEoEImVuIlITZW5hYmxlSW1w",
-            "ZXJzb25hdGlvbiL2AQoWRW1iZWRkZWRJZnJhbWVTZXR0aW5ncxJQCgdlbmFi",
-            "bGVkGAEgASgIQjaSQTMyMXN0YXRlcyBpZiBpZnJhbWUgZW1iZWRkaW5nIGlz",
-            "IGVuYWJsZWQgb3IgZGlzYWJsZWRSB2VuYWJsZWQSiQEKD2FsbG93ZWRfb3Jp",
-            "Z2lucxgCIAMoCUJgkkFdMjhvcmlnaW5zIGFsbG93ZWQgbG9hZGluZyBaSVRB",
-            "REVMIGluIGFuIGlmcmFtZSBpZiBlbmFibGVkLkohWyJmb28uYmFyLmNvbSIs",
-            "ICJsb2NhbGhvc3Q6ODA4MCJdUg5hbGxvd2VkT3JpZ2luc0LYAQoXY29tLnpp",
-            "dGFkZWwuc2V0dGluZ3MudjJCFVNlY3VyaXR5U2V0dGluZ3NQcm90b1ABWjhn",
-            "aXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92",
-            "MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRh",
-            "ZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRh",
-            "ZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
+            "djIuRW1iZWRkZWRJZnJhbWVTZXR0aW5nc1IOZW1iZWRkZWRJZnJhbWUSMQoU",
+            "ZW5hYmxlX2ltcGVyc29uYXRpb24YAiABKAhSE2VuYWJsZUltcGVyc29uYXRp",
+            "b24iWwoWRW1iZWRkZWRJZnJhbWVTZXR0aW5ncxIYCgdlbmFibGVkGAEgASgI",
+            "UgdlbmFibGVkEicKD2FsbG93ZWRfb3JpZ2lucxgCIAMoCVIOYWxsb3dlZE9y",
+            "aWdpbnNC2AEKF2NvbS56aXRhZGVsLnNldHRpbmdzLnYyQhVTZWN1cml0eVNl",
+            "dHRpbmdzUHJvdG9QAVo4Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtn",
+            "L2dycGMvc2V0dGluZ3MvdjI7c2V0dGluZ3OiAgNaU1iqAhNaaXRhZGVsLlNl",
+            "dHRpbmdzLlYyygITWml0YWRlbFxTZXR0aW5nc1xWMuICH1ppdGFkZWxcU2V0",
+            "dGluZ3NcVjJcR1BCTWV0YWRhdGHqAhVaaXRhZGVsOjpTZXR0aW5nczo6VjJi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -102,6 +98,10 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "embedded_iframe" field.</summary>
     public const int EmbeddedIframeFieldNumber = 1;
     private global::Zitadel.Settings.V2.EmbeddedIframeSettings embeddedIframe_;
+    /// <summary>
+    /// EmbeddedIframeSettings defines if the login UI can be embedded in an iframe
+    /// and which origins are allowed to do so.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Settings.V2.EmbeddedIframeSettings EmbeddedIframe {
@@ -114,6 +114,10 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "enable_impersonation" field.</summary>
     public const int EnableImpersonationFieldNumber = 2;
     private bool enableImpersonation_;
+    /// <summary>
+    /// If enabled, users are allowed to impersonate other users.
+    /// The impersonator needs the appropriate `*_IMPERSONATOR` roles assigned as well".
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool EnableImpersonation {
@@ -346,6 +350,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "enabled" field.</summary>
     public const int EnabledFieldNumber = 1;
     private bool enabled_;
+    /// <summary>
+    /// Enabled states if iframe embedding is enabled or disabled.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Enabled {
@@ -360,6 +367,9 @@ namespace Zitadel.Settings.V2 {
     private static readonly pb::FieldCodec<string> _repeated_allowedOrigins_codec
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> allowedOrigins_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// AllowedOrigins defines which origins are allowed to embed ZITADEL in an iframe.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> AllowedOrigins {

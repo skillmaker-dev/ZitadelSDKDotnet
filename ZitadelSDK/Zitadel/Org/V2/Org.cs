@@ -34,19 +34,28 @@ namespace Zitadel.Org.V2 {
             "bHNSB2RldGFpbHMSNwoFc3RhdGUYAyABKA4yIS56aXRhZGVsLm9yZy52Mi5P",
             "cmdhbml6YXRpb25TdGF0ZVIFc3RhdGUSIgoEbmFtZRgEIAEoCUIOkkELSgki",
             "WklUQURFTCJSBG5hbWUSOwoOcHJpbWFyeV9kb21haW4YBSABKAlCFJJBEUoP",
-            "InppdGFkZWwuY2xvdWQiUg1wcmltYXJ5RG9tYWluKpcBChFPcmdhbml6YXRp",
-            "b25TdGF0ZRIiCh5PUkdBTklaQVRJT05fU1RBVEVfVU5TUEVDSUZJRUQQABId",
-            "ChlPUkdBTklaQVRJT05fU1RBVEVfQUNUSVZFEAESHwobT1JHQU5JWkFUSU9O",
-            "X1NUQVRFX0lOQUNUSVZFEAISHgoaT1JHQU5JWkFUSU9OX1NUQVRFX1JFTU9W",
-            "RUQQA0KoAQoSY29tLnppdGFkZWwub3JnLnYyQghPcmdQcm90b1ABWi5naXRo",
-            "dWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9vcmcvdjI7b3JnogID",
-            "Wk9YqgIOWml0YWRlbC5PcmcuVjLKAg5aaXRhZGVsXE9yZ1xWMuICGlppdGFk",
-            "ZWxcT3JnXFYyXEdQQk1ldGFkYXRh6gIQWml0YWRlbDo6T3JnOjpWMmIGcHJv",
-            "dG8z"));
+            "InppdGFkZWwuY2xvdWQiUg1wcmltYXJ5RG9tYWluIoYCCgZEb21haW4SQQoP",
+            "b3JnYW5pemF0aW9uX2lkGAEgASgJQhiSQRVKEyI2OTYyOTAyMzkwNjQ4ODMz",
+            "NCJSDm9yZ2FuaXphdGlvbklkEioKBmRvbWFpbhgCIAEoCUISkkEPSg0ieml0",
+            "YWRlbC5jb20iUgZkb21haW4SHwoLaXNfdmVyaWZpZWQYAyABKAhSCmlzVmVy",
+            "aWZpZWQSHQoKaXNfcHJpbWFyeRgEIAEoCFIJaXNQcmltYXJ5Ek0KD3ZhbGlk",
+            "YXRpb25fdHlwZRgFIAEoDjIkLnppdGFkZWwub3JnLnYyLkRvbWFpblZhbGlk",
+            "YXRpb25UeXBlUg52YWxpZGF0aW9uVHlwZSqXAQoRT3JnYW5pemF0aW9uU3Rh",
+            "dGUSIgoeT1JHQU5JWkFUSU9OX1NUQVRFX1VOU1BFQ0lGSUVEEAASHQoZT1JH",
+            "QU5JWkFUSU9OX1NUQVRFX0FDVElWRRABEh8KG09SR0FOSVpBVElPTl9TVEFU",
+            "RV9JTkFDVElWRRACEh4KGk9SR0FOSVpBVElPTl9TVEFURV9SRU1PVkVEEAMq",
+            "fwoURG9tYWluVmFsaWRhdGlvblR5cGUSJgoiRE9NQUlOX1ZBTElEQVRJT05f",
+            "VFlQRV9VTlNQRUNJRklFRBAAEh8KG0RPTUFJTl9WQUxJREFUSU9OX1RZUEVf",
+            "SFRUUBABEh4KGkRPTUFJTl9WQUxJREFUSU9OX1RZUEVfRE5TEAJCqAEKEmNv",
+            "bS56aXRhZGVsLm9yZy52MkIIT3JnUHJvdG9QAVouZ2l0aHViLmNvbS96aXRh",
+            "ZGVsL3ppdGFkZWwvcGtnL2dycGMvb3JnL3YyO29yZ6ICA1pPWKoCDlppdGFk",
+            "ZWwuT3JnLlYyygIOWml0YWRlbFxPcmdcVjLiAhpaaXRhZGVsXE9yZ1xWMlxH",
+            "UEJNZXRhZGF0YeoCEFppdGFkZWw6Ok9yZzo6VjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Zitadel.Object.V2.ObjectReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Org.V2.OrganizationState), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.Organization), global::Zitadel.Org.V2.Organization.Parser, new[]{ "Id", "Details", "State", "Name", "PrimaryDomain" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Org.V2.OrganizationState), typeof(global::Zitadel.Org.V2.DomainValidationType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.Organization), global::Zitadel.Org.V2.Organization.Parser, new[]{ "Id", "Details", "State", "Name", "PrimaryDomain" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.Domain), global::Zitadel.Org.V2.Domain.Parser, new[]{ "OrganizationId", "Domain_", "IsVerified", "IsPrimary", "ValidationType" }, null, null, null, null)
           }));
     }
     #endregion
@@ -58,6 +67,20 @@ namespace Zitadel.Org.V2 {
     [pbr::OriginalName("ORGANIZATION_STATE_ACTIVE")] Active = 1,
     [pbr::OriginalName("ORGANIZATION_STATE_INACTIVE")] Inactive = 2,
     [pbr::OriginalName("ORGANIZATION_STATE_REMOVED")] Removed = 3,
+  }
+
+  public enum DomainValidationType {
+    [pbr::OriginalName("DOMAIN_VALIDATION_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// HTTP validation requires you to host a specific file on your domain.
+    /// This file is checked by us to verify that you own the domain.
+    /// </summary>
+    [pbr::OriginalName("DOMAIN_VALIDATION_TYPE_HTTP")] Http = 1,
+    /// <summary>
+    /// DNS validation requires you to create a specific TXT record in your domain's DNS settings.
+    /// This record is checked by us to verify that you own the domain.
+    /// </summary>
+    [pbr::OriginalName("DOMAIN_VALIDATION_TYPE_DNS")] Dns = 2,
   }
 
   #endregion
@@ -116,7 +139,7 @@ namespace Zitadel.Org.V2 {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// Unique identifier of the organization.
+    /// ID is the unique identifier of the organization.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -130,6 +153,9 @@ namespace Zitadel.Org.V2 {
     /// <summary>Field number for the "details" field.</summary>
     public const int DetailsFieldNumber = 2;
     private global::Zitadel.Object.V2.Details details_;
+    /// <summary>
+    /// Details about the organizations' creation and change date.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Object.V2.Details Details {
@@ -143,7 +169,7 @@ namespace Zitadel.Org.V2 {
     public const int StateFieldNumber = 3;
     private global::Zitadel.Org.V2.OrganizationState state_ = global::Zitadel.Org.V2.OrganizationState.Unspecified;
     /// <summary>
-    /// Current state of the organization, for example active, inactive and deleted.
+    /// Current state of the organization, for example active, inactive or deleted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -421,6 +447,367 @@ namespace Zitadel.Org.V2 {
           }
           case 42: {
             PrimaryDomain = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class Domain : pb::IMessage<Domain>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Domain> _parser = new pb::MessageParser<Domain>(() => new Domain());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<Domain> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Org.V2.OrgReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Domain() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Domain(Domain other) : this() {
+      organizationId_ = other.organizationId_;
+      domain_ = other.domain_;
+      isVerified_ = other.isVerified_;
+      isPrimary_ = other.isPrimary_;
+      validationType_ = other.validationType_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public Domain Clone() {
+      return new Domain(this);
+    }
+
+    /// <summary>Field number for the "organization_id" field.</summary>
+    public const int OrganizationIdFieldNumber = 1;
+    private string organizationId_ = "";
+    /// <summary>
+    /// OrganizationID is the unique identifier of the organization the domain belongs to.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string OrganizationId {
+      get { return organizationId_; }
+      set {
+        organizationId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "domain" field.</summary>
+    public const int Domain_FieldNumber = 2;
+    private string domain_ = "";
+    /// <summary>
+    /// Domain is the fully qualified domain name.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Domain_ {
+      get { return domain_; }
+      set {
+        domain_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "is_verified" field.</summary>
+    public const int IsVerifiedFieldNumber = 3;
+    private bool isVerified_;
+    /// <summary>
+    /// IsVerified is a boolean flag indicating if the domain has been verified.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsVerified {
+      get { return isVerified_; }
+      set {
+        isVerified_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "is_primary" field.</summary>
+    public const int IsPrimaryFieldNumber = 4;
+    private bool isPrimary_;
+    /// <summary>
+    /// IsPrimary is a boolean flag indicating if the domain is the primary domain of the organization.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool IsPrimary {
+      get { return isPrimary_; }
+      set {
+        isPrimary_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "validation_type" field.</summary>
+    public const int ValidationTypeFieldNumber = 5;
+    private global::Zitadel.Org.V2.DomainValidationType validationType_ = global::Zitadel.Org.V2.DomainValidationType.Unspecified;
+    /// <summary>
+    /// ValidationType indicates the protocol used to validate the domain ownership.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Org.V2.DomainValidationType ValidationType {
+      get { return validationType_; }
+      set {
+        validationType_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as Domain);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(Domain other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (OrganizationId != other.OrganizationId) return false;
+      if (Domain_ != other.Domain_) return false;
+      if (IsVerified != other.IsVerified) return false;
+      if (IsPrimary != other.IsPrimary) return false;
+      if (ValidationType != other.ValidationType) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (OrganizationId.Length != 0) hash ^= OrganizationId.GetHashCode();
+      if (Domain_.Length != 0) hash ^= Domain_.GetHashCode();
+      if (IsVerified != false) hash ^= IsVerified.GetHashCode();
+      if (IsPrimary != false) hash ^= IsPrimary.GetHashCode();
+      if (ValidationType != global::Zitadel.Org.V2.DomainValidationType.Unspecified) hash ^= ValidationType.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (OrganizationId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(OrganizationId);
+      }
+      if (Domain_.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Domain_);
+      }
+      if (IsVerified != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsVerified);
+      }
+      if (IsPrimary != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsPrimary);
+      }
+      if (ValidationType != global::Zitadel.Org.V2.DomainValidationType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) ValidationType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (OrganizationId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(OrganizationId);
+      }
+      if (Domain_.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Domain_);
+      }
+      if (IsVerified != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsVerified);
+      }
+      if (IsPrimary != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsPrimary);
+      }
+      if (ValidationType != global::Zitadel.Org.V2.DomainValidationType.Unspecified) {
+        output.WriteRawTag(40);
+        output.WriteEnum((int) ValidationType);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (OrganizationId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(OrganizationId);
+      }
+      if (Domain_.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Domain_);
+      }
+      if (IsVerified != false) {
+        size += 1 + 1;
+      }
+      if (IsPrimary != false) {
+        size += 1 + 1;
+      }
+      if (ValidationType != global::Zitadel.Org.V2.DomainValidationType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ValidationType);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(Domain other) {
+      if (other == null) {
+        return;
+      }
+      if (other.OrganizationId.Length != 0) {
+        OrganizationId = other.OrganizationId;
+      }
+      if (other.Domain_.Length != 0) {
+        Domain_ = other.Domain_;
+      }
+      if (other.IsVerified != false) {
+        IsVerified = other.IsVerified;
+      }
+      if (other.IsPrimary != false) {
+        IsPrimary = other.IsPrimary;
+      }
+      if (other.ValidationType != global::Zitadel.Org.V2.DomainValidationType.Unspecified) {
+        ValidationType = other.ValidationType;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            OrganizationId = input.ReadString();
+            break;
+          }
+          case 18: {
+            Domain_ = input.ReadString();
+            break;
+          }
+          case 24: {
+            IsVerified = input.ReadBool();
+            break;
+          }
+          case 32: {
+            IsPrimary = input.ReadBool();
+            break;
+          }
+          case 40: {
+            ValidationType = (global::Zitadel.Org.V2.DomainValidationType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            OrganizationId = input.ReadString();
+            break;
+          }
+          case 18: {
+            Domain_ = input.ReadString();
+            break;
+          }
+          case 24: {
+            IsVerified = input.ReadBool();
+            break;
+          }
+          case 32: {
+            IsPrimary = input.ReadBool();
+            break;
+          }
+          case 40: {
+            ValidationType = (global::Zitadel.Org.V2.DomainValidationType) input.ReadEnum();
             break;
           }
         }

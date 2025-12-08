@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Zitadel.Oidc.V2beta {
+  /// <summary>
+  /// Deprecated: use oidc service v2 instead. This service will be removed in the next major version of ZITADEL.
+  /// </summary>
   public static partial class OIDCService
   {
     static readonly string __ServiceName = "zitadel.oidc.v2beta.OIDCService";
@@ -80,12 +83,35 @@ namespace Zitadel.Oidc.V2beta {
     [grpc::BindServiceMethod(typeof(OIDCService), "BindService")]
     public abstract partial class OIDCServiceBase
     {
+      /// <summary>
+      /// Get AuthRequest
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL. Returns details that are parsed from the application's Auth Request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Oidc.V2beta.GetAuthRequestResponse> GetAuthRequest(global::Zitadel.Oidc.V2beta.GetAuthRequestRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Oidc.V2beta.CreateCallbackResponse> CreateCallback(global::Zitadel.Oidc.V2beta.CreateCallbackRequest request, grpc::ServerCallContext context)
       {
@@ -121,41 +147,141 @@ namespace Zitadel.Oidc.V2beta {
       {
       }
 
+      /// <summary>
+      /// Get AuthRequest
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL. Returns details that are parsed from the application's Auth Request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2beta.GetAuthRequestResponse GetAuthRequest(global::Zitadel.Oidc.V2beta.GetAuthRequestRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAuthRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get AuthRequest
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL. Returns details that are parsed from the application's Auth Request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2beta.GetAuthRequestResponse GetAuthRequest(global::Zitadel.Oidc.V2beta.GetAuthRequestRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAuthRequest, null, options, request);
       }
+      /// <summary>
+      /// Get AuthRequest
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL. Returns details that are parsed from the application's Auth Request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2beta.GetAuthRequestResponse> GetAuthRequestAsync(global::Zitadel.Oidc.V2beta.GetAuthRequestRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAuthRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get AuthRequest
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL. Returns details that are parsed from the application's Auth Request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2beta.GetAuthRequestResponse> GetAuthRequestAsync(global::Zitadel.Oidc.V2beta.GetAuthRequestRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAuthRequest, null, options, request);
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2beta.CreateCallbackResponse CreateCallback(global::Zitadel.Oidc.V2beta.CreateCallbackRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateCallback(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2beta.CreateCallbackResponse CreateCallback(global::Zitadel.Oidc.V2beta.CreateCallbackRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateCallback, null, options, request);
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2beta.CreateCallbackResponse> CreateCallbackAsync(global::Zitadel.Oidc.V2beta.CreateCallbackRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateCallbackAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2beta.CreateCallbackResponse> CreateCallbackAsync(global::Zitadel.Oidc.V2beta.CreateCallbackRequest request, grpc::CallOptions options)
       {

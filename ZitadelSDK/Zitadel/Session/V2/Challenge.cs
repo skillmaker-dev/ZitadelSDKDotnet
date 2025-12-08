@@ -28,62 +28,49 @@ namespace Zitadel.Session.V2 {
             "LnNlc3Npb24udjIaH2dvb2dsZS9hcGkvZmllbGRfYmVoYXZpb3IucHJvdG8a",
             "HGdvb2dsZS9wcm90b2J1Zi9zdHJ1Y3QucHJvdG8aLnByb3RvYy1nZW4tb3Bl",
             "bmFwaXYyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8aF3ZhbGlkYXRlL3Zh",
-            "bGlkYXRlLnByb3RvIukJChFSZXF1ZXN0Q2hhbGxlbmdlcxJRCgp3ZWJfYXV0",
+            "bGlkYXRlLnByb3RvIpQHChFSZXF1ZXN0Q2hhbGxlbmdlcxJRCgp3ZWJfYXV0",
             "aF9uGAEgASgLMi4ueml0YWRlbC5zZXNzaW9uLnYyLlJlcXVlc3RDaGFsbGVu",
             "Z2VzLldlYkF1dGhOSABSCHdlYkF1dGhOiAEBEkoKB290cF9zbXMYAiABKAsy",
             "LC56aXRhZGVsLnNlc3Npb24udjIuUmVxdWVzdENoYWxsZW5nZXMuT1RQU01T",
             "SAFSBm90cFNtc4gBARJQCglvdHBfZW1haWwYAyABKAsyLi56aXRhZGVsLnNl",
             "c3Npb24udjIuUmVxdWVzdENoYWxsZW5nZXMuT1RQRW1haWxIAlIIb3RwRW1h",
-            "aWyIAQEajQQKCFdlYkF1dGhOEn0KBmRvbWFpbhgBIAEoCUJlkkFUMlIiRG9t",
-            "YWluIG9uIHdoaWNoIHRoZSBzZXNzaW9uIHdhcyBjcmVhdGVkLiBXaWxsIGJl",
-            "IHVzZWQgaW4gdGhlIFdlYkF1dGhOIGNoYWxsZW5nZS4i4kEBAvpCB3IFEAEY",
-            "yAFSBmRvbWFpbhKBAwoddXNlcl92ZXJpZmljYXRpb25fcmVxdWlyZW1lbnQY",
-            "AiABKA4yLy56aXRhZGVsLnNlc3Npb24udjIuVXNlclZlcmlmaWNhdGlvblJl",
-            "cXVpcmVtZW50QosCkkH5ARpAaHR0cHM6Ly93d3cudzMub3JnL1RSL3dlYmF1",
-            "dGhuLyNlbnVtLXVzZXJWZXJpZmljYXRpb25SZXF1aXJlbWVudDK0ASJVc2Vy",
-            "IHZlcmlmaWNhdGlvbiB0aGF0IGlzIHJlcXVpcmVkIGR1cmluZyB2YWxpZGF0",
-            "aW9uLiBXaGVuIHNldCB0byBgVVNFUl9WRVJJRklDQVRJT05fUkVRVUlSRU1F",
-            "TlRfUkVRVUlSRURgIHRoZSBiZWhhdmlvdXIgaXMgZm9yIHBhc3NrZXkgYXV0",
-            "aGVudGljYXRpb24uIE90aGVyIHZhbHVlcyB3aWxsIG1lYW4gVTJGIuJBAQL6",
-            "QgeCAQQQASAAUht1c2VyVmVyaWZpY2F0aW9uUmVxdWlyZW1lbnQaKQoGT1RQ",
-            "U01TEh8KC3JldHVybl9jb2RlGAEgASgIUgpyZXR1cm5Db2RlGv4CCghPVFBF",
-            "bWFpbBJWCglzZW5kX2NvZGUYAiABKAsyNy56aXRhZGVsLnNlc3Npb24udjIu",
-            "UmVxdWVzdENoYWxsZW5nZXMuT1RQRW1haWwuU2VuZENvZGVIAFIIc2VuZENv",
-            "ZGUSXAoLcmV0dXJuX2NvZGUYAyABKAsyOS56aXRhZGVsLnNlc3Npb24udjIu",
-            "UmVxdWVzdENoYWxsZW5nZXMuT1RQRW1haWwuUmV0dXJuQ29kZUgAUgpyZXR1",
-            "cm5Db2RlGpwBCghTZW5kQ29kZRJ/Cgx1cmxfdGVtcGxhdGUYASABKAlCV5JB",
-            "SkpCImh0dHBzOi8vZXhhbXBsZS5jb20vb3RwL3ZlcmlmeT91c2VySUQ9e3su",
-            "VXNlcklEfX0mY29kZT17ey5Db2RlfX0ieMgBgAEB+kIHcgUQARjIAUgAUgt1",
-            "cmxUZW1wbGF0ZYgBAUIPCg1fdXJsX3RlbXBsYXRlGgwKClJldHVybkNvZGVC",
-            "DwoNZGVsaXZlcnlfdHlwZUINCgtfd2ViX2F1dGhfbkIKCghfb3RwX3Ntc0IM",
-            "Cgpfb3RwX2VtYWlsIqoGCgpDaGFsbGVuZ2VzEkoKCndlYl9hdXRoX24YASAB",
-            "KAsyJy56aXRhZGVsLnNlc3Npb24udjIuQ2hhbGxlbmdlcy5XZWJBdXRoTkgA",
-            "Ugh3ZWJBdXRoTogBARIcCgdvdHBfc21zGAIgASgJSAFSBm90cFNtc4gBARIg",
-            "CglvdHBfZW1haWwYAyABKAlIAlIIb3RwRW1haWyIAQEa5gQKCFdlYkF1dGhO",
-            "EtkECiVwdWJsaWNfa2V5X2NyZWRlbnRpYWxfcmVxdWVzdF9vcHRpb25zGAEg",
-            "ASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVjdELtA5JB6QMy+gFPcHRpb25z",
-            "IGZvciBBc3NlcnRpb24gR2VuZXJhcmF0aW9uIChkaWN0aW9uYXJ5IFB1Ymxp",
-            "Y0tleUNyZWRlbnRpYWxSZXF1ZXN0T3B0aW9ucykuIEdlbmVyYXRlZCBoZWxw",
-            "ZXIgbWV0aG9kcyB0cmFuc2Zvcm0gdGhlIGZpZWxkIHRvIEpTT04sIGZvciB1",
-            "c2UgaW4gYSBXZWJhdXRoTiBjbGllbnQuIFNlZSBhbHNvOiBodHRwczovL3d3",
-            "dy53My5vcmcvVFIvd2ViYXV0aG4vI2RpY3RkZWYtcHVibGlja2V5Y3JlZGVu",
-            "dGlhbHJlcXVlc3RvcHRpb25zSukBeyJwdWJsaWNLZXkiOnsiYWxsb3dDcmVk",
-            "ZW50aWFscyI6W3siaWQiOiJBVG1xQmctOTlxeU9aazJ6bG9QZEpReVMyUjdJ",
-            "a0ZUN3Y5SG9vc19CX25NIiwidHlwZSI6InB1YmxpYy1rZXkifV0sImNoYWxs",
-            "ZW5nZSI6IkdBT0hZejJqRTY5a0pNWW82TGFpajh5V3c5LWRLS2diVmlOaGZ1",
-            "eTBTdEEiLCJycElkIjoibG9jYWxob3N0IiwidGltZW91dCI6MzAwMDAwLCJ1",
-            "c2VyVmVyaWZpY2F0aW9uIjoicmVxdWlyZWQifX1SIXB1YmxpY0tleUNyZWRl",
-            "bnRpYWxSZXF1ZXN0T3B0aW9uc0INCgtfd2ViX2F1dGhfbkIKCghfb3RwX3Nt",
-            "c0IMCgpfb3RwX2VtYWlsKtQBChtVc2VyVmVyaWZpY2F0aW9uUmVxdWlyZW1l",
-            "bnQSLQopVVNFUl9WRVJJRklDQVRJT05fUkVRVUlSRU1FTlRfVU5TUEVDSUZJ",
-            "RUQQABIqCiZVU0VSX1ZFUklGSUNBVElPTl9SRVFVSVJFTUVOVF9SRVFVSVJF",
-            "RBABEisKJ1VTRVJfVkVSSUZJQ0FUSU9OX1JFUVVJUkVNRU5UX1BSRUZFUlJF",
-            "RBACEi0KKVVTRVJfVkVSSUZJQ0FUSU9OX1JFUVVJUkVNRU5UX0RJU0NPVVJB",
-            "R0VEEANCygEKFmNvbS56aXRhZGVsLnNlc3Npb24udjJCDkNoYWxsZW5nZVBy",
-            "b3RvUAFaNmdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3Nl",
-            "c3Npb24vdjI7c2Vzc2lvbqICA1pTWKoCElppdGFkZWwuU2Vzc2lvbi5WMsoC",
-            "ElppdGFkZWxcU2Vzc2lvblxWMuICHlppdGFkZWxcU2Vzc2lvblxWMlxHUEJN",
-            "ZXRhZGF0YeoCFFppdGFkZWw6OlNlc3Npb246OlYyYgZwcm90bzM="));
+            "aWyIAQEauAEKCFdlYkF1dGhOEiYKBmRvbWFpbhgBIAEoCUIO4kEBAvpCB3IF",
+            "EAEYyAFSBmRvbWFpbhKDAQoddXNlcl92ZXJpZmljYXRpb25fcmVxdWlyZW1l",
+            "bnQYAiABKA4yLy56aXRhZGVsLnNlc3Npb24udjIuVXNlclZlcmlmaWNhdGlv",
+            "blJlcXVpcmVtZW50Qg7iQQEC+kIHggEEEAEgAFIbdXNlclZlcmlmaWNhdGlv",
+            "blJlcXVpcmVtZW50GikKBk9UUFNNUxIfCgtyZXR1cm5fY29kZRgBIAEoCFIK",
+            "cmV0dXJuQ29kZRr+AgoIT1RQRW1haWwSVgoJc2VuZF9jb2RlGAIgASgLMjcu",
+            "eml0YWRlbC5zZXNzaW9uLnYyLlJlcXVlc3RDaGFsbGVuZ2VzLk9UUEVtYWls",
+            "LlNlbmRDb2RlSABSCHNlbmRDb2RlElwKC3JldHVybl9jb2RlGAMgASgLMjku",
+            "eml0YWRlbC5zZXNzaW9uLnYyLlJlcXVlc3RDaGFsbGVuZ2VzLk9UUEVtYWls",
+            "LlJldHVybkNvZGVIAFIKcmV0dXJuQ29kZRqcAQoIU2VuZENvZGUSfwoMdXJs",
+            "X3RlbXBsYXRlGAEgASgJQleSQUpKQiJodHRwczovL2V4YW1wbGUuY29tL290",
+            "cC92ZXJpZnk/dXNlcklEPXt7LlVzZXJJRH19JmNvZGU9e3suQ29kZX19InjI",
+            "AYABAfpCB3IFEAEYyAFIAFILdXJsVGVtcGxhdGWIAQFCDwoNX3VybF90ZW1w",
+            "bGF0ZRoMCgpSZXR1cm5Db2RlQg8KDWRlbGl2ZXJ5X3R5cGVCDQoLX3dlYl9h",
+            "dXRoX25CCgoIX290cF9zbXNCDAoKX290cF9lbWFpbCKtBAoKQ2hhbGxlbmdl",
+            "cxJKCgp3ZWJfYXV0aF9uGAEgASgLMicueml0YWRlbC5zZXNzaW9uLnYyLkNo",
+            "YWxsZW5nZXMuV2ViQXV0aE5IAFIId2ViQXV0aE6IAQESHAoHb3RwX3NtcxgC",
+            "IAEoCUgBUgZvdHBTbXOIAQESIAoJb3RwX2VtYWlsGAMgASgJSAJSCG90cEVt",
+            "YWlsiAEBGukCCghXZWJBdXRoThLcAgolcHVibGljX2tleV9jcmVkZW50aWFs",
+            "X3JlcXVlc3Rfb3B0aW9ucxgBIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1",
+            "Y3RC8AGSQewBSukBeyJwdWJsaWNLZXkiOnsiYWxsb3dDcmVkZW50aWFscyI6",
+            "W3siaWQiOiJBVG1xQmctOTlxeU9aazJ6bG9QZEpReVMyUjdJa0ZUN3Y5SG9v",
+            "c19CX25NIiwidHlwZSI6InB1YmxpYy1rZXkifV0sImNoYWxsZW5nZSI6IkdB",
+            "T0hZejJqRTY5a0pNWW82TGFpajh5V3c5LWRLS2diVmlOaGZ1eTBTdEEiLCJy",
+            "cElkIjoibG9jYWxob3N0IiwidGltZW91dCI6MzAwMDAwLCJ1c2VyVmVyaWZp",
+            "Y2F0aW9uIjoicmVxdWlyZWQifX1SIXB1YmxpY0tleUNyZWRlbnRpYWxSZXF1",
+            "ZXN0T3B0aW9uc0INCgtfd2ViX2F1dGhfbkIKCghfb3RwX3Ntc0IMCgpfb3Rw",
+            "X2VtYWlsKtQBChtVc2VyVmVyaWZpY2F0aW9uUmVxdWlyZW1lbnQSLQopVVNF",
+            "Ul9WRVJJRklDQVRJT05fUkVRVUlSRU1FTlRfVU5TUEVDSUZJRUQQABIqCiZV",
+            "U0VSX1ZFUklGSUNBVElPTl9SRVFVSVJFTUVOVF9SRVFVSVJFRBABEisKJ1VT",
+            "RVJfVkVSSUZJQ0FUSU9OX1JFUVVJUkVNRU5UX1BSRUZFUlJFRBACEi0KKVVT",
+            "RVJfVkVSSUZJQ0FUSU9OX1JFUVVJUkVNRU5UX0RJU0NPVVJBR0VEEANCygEK",
+            "FmNvbS56aXRhZGVsLnNlc3Npb24udjJCDkNoYWxsZW5nZVByb3RvUAFaNmdp",
+            "dGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3Nlc3Npb24vdjI7",
+            "c2Vzc2lvbqICA1pTWKoCElppdGFkZWwuU2Vzc2lvbi5WMsoCElppdGFkZWxc",
+            "U2Vzc2lvblxWMuICHlppdGFkZWxcU2Vzc2lvblxWMlxHUEJNZXRhZGF0YeoC",
+            "FFppdGFkZWw6OlNlc3Npb246OlYyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Session.V2.UserVerificationRequirement), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -158,6 +145,11 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "web_auth_n" field.</summary>
     public const int WebAuthNFieldNumber = 1;
     private global::Zitadel.Session.V2.RequestChallenges.Types.WebAuthN webAuthN_;
+    /// <summary>
+    /// WebAuthN requests a challenge to be used in the WebAuthN authentication ceremony.
+    /// They can be used for both passkey and U2F authentication.
+    /// They're required for a webauthn check at the SetSession endpoint.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.RequestChallenges.Types.WebAuthN WebAuthN {
@@ -170,6 +162,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "otp_sms" field.</summary>
     public const int OtpSmsFieldNumber = 2;
     private global::Zitadel.Session.V2.RequestChallenges.Types.OTPSMS otpSms_;
+    /// <summary>
+    /// OTPSMS requests a code to be sent via SMS to the user's primary phone.
+    /// It is required for an OTP check at the SetSession endpoint.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.RequestChallenges.Types.OTPSMS OtpSms {
@@ -182,6 +178,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "otp_email" field.</summary>
     public const int OtpEmailFieldNumber = 3;
     private global::Zitadel.Session.V2.RequestChallenges.Types.OTPEmail otpEmail_;
+    /// <summary>
+    /// OTPEmail requests a code to be sent via email to the user's primary email address.
+    /// It is required for an OTP check at the SetSession endpoint.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.RequestChallenges.Types.OTPEmail OtpEmail {
@@ -459,6 +459,13 @@ namespace Zitadel.Session.V2 {
         /// <summary>Field number for the "domain" field.</summary>
         public const int DomainFieldNumber = 1;
         private string domain_ = "";
+        /// <summary>
+        /// The domain on which the session was created. Will be used in the WebAuthN challenge.
+        /// It must be either the exact domain or a top-level domain of the origin of the request.
+        /// For example if the request is coming from "login.example.com", the domain can be
+        /// "login.example.com" or "example.com", but not "other.com" or "sub.login.example.com".
+        /// See also: https://www.w3.org/TR/webauthn/#relying-party-identifier
+        /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string Domain {
@@ -471,6 +478,14 @@ namespace Zitadel.Session.V2 {
         /// <summary>Field number for the "user_verification_requirement" field.</summary>
         public const int UserVerificationRequirementFieldNumber = 2;
         private global::Zitadel.Session.V2.UserVerificationRequirement userVerificationRequirement_ = global::Zitadel.Session.V2.UserVerificationRequirement.Unspecified;
+        /// <summary>
+        /// User verification that is required during validation.
+        /// When set to `USER_VERIFICATION_REQUIREMENT_REQUIRED` the behaviour is for passkey authentication.
+        /// Other values will mean U2F.
+        /// See also: https://www.w3.org/TR/webauthn/#enum-userVerificationRequirement
+        /// If either the value is set to USER_VERIFICATION_REQUIREMENT_REQUIRED or the user verification
+        /// is passed as part of the authentication ceremony, the user_verified flag will be set in the resulting webauthn factor.
+        /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Zitadel.Session.V2.UserVerificationRequirement UserVerificationRequirement {
@@ -693,6 +708,10 @@ namespace Zitadel.Session.V2 {
         /// <summary>Field number for the "return_code" field.</summary>
         public const int ReturnCodeFieldNumber = 1;
         private bool returnCode_;
+        /// <summary>
+        /// Request the code to be returned instead of sending an SMS.
+        /// This is useful for testing or in case you want to send the code yourself.
+        /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool ReturnCode {
@@ -1841,6 +1860,11 @@ namespace Zitadel.Session.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
+      /// <summary>
+      /// WebAuthN contains the options for the Assertion Generation (dictionary PublicKeyCredentialRequestOptions).
+      /// Generated helper methods transform the field to JSON, for use in a WebauthN client.
+      /// See also: https://www.w3.org/TR/webauthn/#dictdef-publickeycredentialrequestoptions
+      /// </summary>
       [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
       public sealed partial class WebAuthN : pb::IMessage<WebAuthN>
       #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE

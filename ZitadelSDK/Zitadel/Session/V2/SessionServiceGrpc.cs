@@ -117,7 +117,14 @@ namespace Zitadel.Session.V2 {
     public abstract partial class SessionServiceBase
     {
       /// <summary>
-      /// Search sessions
+      /// List sessions
+      ///
+      /// Searches for sessions matching the given query. You can search by session ID, user ID,
+      /// creation date, creator, user agent or expiration date.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to search for own sessions
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -129,7 +136,19 @@ namespace Zitadel.Session.V2 {
       }
 
       /// <summary>
-      /// GetSession a session
+      /// Get Session
+      ///
+      /// Retrieve a session by its ID. Returns all information about the session, including
+      /// the factors that were verified, the metadata, user agent information and possible expiration date.
+      /// The session token is required unless either of the following conditions is met:
+      ///   - the caller created the session
+      ///   - the authenticated user requests their own session (checked user)
+      ///   - the security token provided in the authorization header has the same user agent as the session
+      ///   - the caller is granted the permission session.read permission on either the instance or on the checked user's organization
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to get own sessions (see above) or when providing the current session token
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -141,7 +160,16 @@ namespace Zitadel.Session.V2 {
       }
 
       /// <summary>
-      /// Create a new session
+      /// Create Session
+      ///
+      /// Create a new session with initial checks, metadata and challenges for further verification.
+      /// A token will be returned, which is required for using the session as authentication, e.g.
+      /// when authenticating an OIDC auth request or SAML request.
+      /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+      /// the ZITADEL APIs.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -153,7 +181,14 @@ namespace Zitadel.Session.V2 {
       }
 
       /// <summary>
-      /// Update a session
+      /// Set Session
+      ///
+      /// Update an existing session with new information like additional checks or metadata
+      /// or request additional challenges.
+      /// A new session token will be returned. Note that the previous token will be invalidated.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -165,7 +200,17 @@ namespace Zitadel.Session.V2 {
       }
 
       /// <summary>
-      /// Terminate a session
+      /// DeleteSession
+      ///
+      /// Terminate an existing session. This invalidates the session and its token.
+      /// The session can no longer be used for the authentication of other resources
+      /// or to authenticate against the ZITADEL APIs.
+      ///
+      /// You can only terminate your own session, unless you are granted the `session.delete` permission.
+      ///
+      /// Required permissions:
+      ///   - `session.delete`
+      ///   - no permission required for own sessions or when providing the current session token
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -206,7 +251,14 @@ namespace Zitadel.Session.V2 {
       }
 
       /// <summary>
-      /// Search sessions
+      /// List sessions
+      ///
+      /// Searches for sessions matching the given query. You can search by session ID, user ID,
+      /// creation date, creator, user agent or expiration date.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to search for own sessions
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -219,7 +271,14 @@ namespace Zitadel.Session.V2 {
         return ListSessions(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Search sessions
+      /// List sessions
+      ///
+      /// Searches for sessions matching the given query. You can search by session ID, user ID,
+      /// creation date, creator, user agent or expiration date.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to search for own sessions
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -230,7 +289,14 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_ListSessions, null, options, request);
       }
       /// <summary>
-      /// Search sessions
+      /// List sessions
+      ///
+      /// Searches for sessions matching the given query. You can search by session ID, user ID,
+      /// creation date, creator, user agent or expiration date.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to search for own sessions
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -243,7 +309,14 @@ namespace Zitadel.Session.V2 {
         return ListSessionsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Search sessions
+      /// List sessions
+      ///
+      /// Searches for sessions matching the given query. You can search by session ID, user ID,
+      /// creation date, creator, user agent or expiration date.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to search for own sessions
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -254,7 +327,19 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_ListSessions, null, options, request);
       }
       /// <summary>
-      /// GetSession a session
+      /// Get Session
+      ///
+      /// Retrieve a session by its ID. Returns all information about the session, including
+      /// the factors that were verified, the metadata, user agent information and possible expiration date.
+      /// The session token is required unless either of the following conditions is met:
+      ///   - the caller created the session
+      ///   - the authenticated user requests their own session (checked user)
+      ///   - the security token provided in the authorization header has the same user agent as the session
+      ///   - the caller is granted the permission session.read permission on either the instance or on the checked user's organization
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to get own sessions (see above) or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -267,7 +352,19 @@ namespace Zitadel.Session.V2 {
         return GetSession(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// GetSession a session
+      /// Get Session
+      ///
+      /// Retrieve a session by its ID. Returns all information about the session, including
+      /// the factors that were verified, the metadata, user agent information and possible expiration date.
+      /// The session token is required unless either of the following conditions is met:
+      ///   - the caller created the session
+      ///   - the authenticated user requests their own session (checked user)
+      ///   - the security token provided in the authorization header has the same user agent as the session
+      ///   - the caller is granted the permission session.read permission on either the instance or on the checked user's organization
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to get own sessions (see above) or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -278,7 +375,19 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetSession, null, options, request);
       }
       /// <summary>
-      /// GetSession a session
+      /// Get Session
+      ///
+      /// Retrieve a session by its ID. Returns all information about the session, including
+      /// the factors that were verified, the metadata, user agent information and possible expiration date.
+      /// The session token is required unless either of the following conditions is met:
+      ///   - the caller created the session
+      ///   - the authenticated user requests their own session (checked user)
+      ///   - the security token provided in the authorization header has the same user agent as the session
+      ///   - the caller is granted the permission session.read permission on either the instance or on the checked user's organization
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to get own sessions (see above) or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -291,7 +400,19 @@ namespace Zitadel.Session.V2 {
         return GetSessionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// GetSession a session
+      /// Get Session
+      ///
+      /// Retrieve a session by its ID. Returns all information about the session, including
+      /// the factors that were verified, the metadata, user agent information and possible expiration date.
+      /// The session token is required unless either of the following conditions is met:
+      ///   - the caller created the session
+      ///   - the authenticated user requests their own session (checked user)
+      ///   - the security token provided in the authorization header has the same user agent as the session
+      ///   - the caller is granted the permission session.read permission on either the instance or on the checked user's organization
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      ///   - no permission required to get own sessions (see above) or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -302,7 +423,16 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetSession, null, options, request);
       }
       /// <summary>
-      /// Create a new session
+      /// Create Session
+      ///
+      /// Create a new session with initial checks, metadata and challenges for further verification.
+      /// A token will be returned, which is required for using the session as authentication, e.g.
+      /// when authenticating an OIDC auth request or SAML request.
+      /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+      /// the ZITADEL APIs.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -315,7 +445,16 @@ namespace Zitadel.Session.V2 {
         return CreateSession(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new session
+      /// Create Session
+      ///
+      /// Create a new session with initial checks, metadata and challenges for further verification.
+      /// A token will be returned, which is required for using the session as authentication, e.g.
+      /// when authenticating an OIDC auth request or SAML request.
+      /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+      /// the ZITADEL APIs.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -326,7 +465,16 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_CreateSession, null, options, request);
       }
       /// <summary>
-      /// Create a new session
+      /// Create Session
+      ///
+      /// Create a new session with initial checks, metadata and challenges for further verification.
+      /// A token will be returned, which is required for using the session as authentication, e.g.
+      /// when authenticating an OIDC auth request or SAML request.
+      /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+      /// the ZITADEL APIs.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -339,7 +487,16 @@ namespace Zitadel.Session.V2 {
         return CreateSessionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new session
+      /// Create Session
+      ///
+      /// Create a new session with initial checks, metadata and challenges for further verification.
+      /// A token will be returned, which is required for using the session as authentication, e.g.
+      /// when authenticating an OIDC auth request or SAML request.
+      /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+      /// the ZITADEL APIs.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -350,7 +507,14 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_CreateSession, null, options, request);
       }
       /// <summary>
-      /// Update a session
+      /// Set Session
+      ///
+      /// Update an existing session with new information like additional checks or metadata
+      /// or request additional challenges.
+      /// A new session token will be returned. Note that the previous token will be invalidated.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -363,7 +527,14 @@ namespace Zitadel.Session.V2 {
         return SetSession(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update a session
+      /// Set Session
+      ///
+      /// Update an existing session with new information like additional checks or metadata
+      /// or request additional challenges.
+      /// A new session token will be returned. Note that the previous token will be invalidated.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -374,7 +545,14 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_SetSession, null, options, request);
       }
       /// <summary>
-      /// Update a session
+      /// Set Session
+      ///
+      /// Update an existing session with new information like additional checks or metadata
+      /// or request additional challenges.
+      /// A new session token will be returned. Note that the previous token will be invalidated.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -387,7 +565,14 @@ namespace Zitadel.Session.V2 {
         return SetSessionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update a session
+      /// Set Session
+      ///
+      /// Update an existing session with new information like additional checks or metadata
+      /// or request additional challenges.
+      /// A new session token will be returned. Note that the previous token will be invalidated.
+      ///
+      /// Required permissions:
+      ///   - `session.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -398,7 +583,17 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_SetSession, null, options, request);
       }
       /// <summary>
-      /// Terminate a session
+      /// DeleteSession
+      ///
+      /// Terminate an existing session. This invalidates the session and its token.
+      /// The session can no longer be used for the authentication of other resources
+      /// or to authenticate against the ZITADEL APIs.
+      ///
+      /// You can only terminate your own session, unless you are granted the `session.delete` permission.
+      ///
+      /// Required permissions:
+      ///   - `session.delete`
+      ///   - no permission required for own sessions or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -411,7 +606,17 @@ namespace Zitadel.Session.V2 {
         return DeleteSession(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Terminate a session
+      /// DeleteSession
+      ///
+      /// Terminate an existing session. This invalidates the session and its token.
+      /// The session can no longer be used for the authentication of other resources
+      /// or to authenticate against the ZITADEL APIs.
+      ///
+      /// You can only terminate your own session, unless you are granted the `session.delete` permission.
+      ///
+      /// Required permissions:
+      ///   - `session.delete`
+      ///   - no permission required for own sessions or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -422,7 +627,17 @@ namespace Zitadel.Session.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteSession, null, options, request);
       }
       /// <summary>
-      /// Terminate a session
+      /// DeleteSession
+      ///
+      /// Terminate an existing session. This invalidates the session and its token.
+      /// The session can no longer be used for the authentication of other resources
+      /// or to authenticate against the ZITADEL APIs.
+      ///
+      /// You can only terminate your own session, unless you are granted the `session.delete` permission.
+      ///
+      /// Required permissions:
+      ///   - `session.delete`
+      ///   - no permission required for own sessions or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -435,7 +650,17 @@ namespace Zitadel.Session.V2 {
         return DeleteSessionAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Terminate a session
+      /// DeleteSession
+      ///
+      /// Terminate an existing session. This invalidates the session and its token.
+      /// The session can no longer be used for the authentication of other resources
+      /// or to authenticate against the ZITADEL APIs.
+      ///
+      /// You can only terminate your own session, unless you are granted the `session.delete` permission.
+      ///
+      /// Required permissions:
+      ///   - `session.delete`
+      ///   - no permission required for own sessions or when providing the current session token
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

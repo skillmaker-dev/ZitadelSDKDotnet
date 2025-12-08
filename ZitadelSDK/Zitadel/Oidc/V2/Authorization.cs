@@ -27,76 +27,50 @@ namespace Zitadel.Oidc.V2 {
             "CiN6aXRhZGVsL29pZGMvdjIvYXV0aG9yaXphdGlvbi5wcm90bxIPeml0YWRl",
             "bC5vaWRjLnYyGh5nb29nbGUvcHJvdG9idWYvZHVyYXRpb24ucHJvdG8aH2dv",
             "b2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aLnByb3RvYy1nZW4tb3Bl",
-            "bmFwaXYyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8i0g0KC0F1dGhSZXF1",
-            "ZXN0EjQKAmlkGAEgASgJQiSSQSEyH0lEIG9mIHRoZSBhdXRob3JpemF0aW9u",
-            "IHJlcXVlc3RSAmlkEmwKDWNyZWF0aW9uX2RhdGUYAiABKAsyGi5nb29nbGUu",
-            "cHJvdG9idWYuVGltZXN0YW1wQiuSQSgyJlRpbWUgd2hlbiB0aGUgYXV0aCBy",
-            "ZXF1ZXN0IHdhcyBjcmVhdGVkUgxjcmVhdGlvbkRhdGUSYQoJY2xpZW50X2lk",
-            "GAMgASgJQkSSQUEyP09JREMgY2xpZW50IElEIG9mIHRoZSBhcHBsaWNhdGlv",
-            "biB0aGF0IGNyZWF0ZWQgdGhlIGF1dGggcmVxdWVzdFIIY2xpZW50SWQSXwoF",
-            "c2NvcGUYBCADKAlCSZJBRjJEUmVxdWVzdGVkIHNjb3BlcyBieSB0aGUgYXBw",
-            "bGljYXRpb24sIHdoaWNoIHRoZSB1c2VyIG11c3QgY29uc2VudCB0by5SBXNj",
-            "b3BlElQKDHJlZGlyZWN0X3VyaRgFIAEoCUIxkkEuMixCYXNlIFVSSSB0aGF0",
-            "IHBvaW50cyBiYWNrIHRvIHRoZSBhcHBsaWNhdGlvblILcmVkaXJlY3RVcmkS",
-            "YAoGcHJvbXB0GAYgAygOMhcueml0YWRlbC5vaWRjLnYyLlByb21wdEIvkkEs",
-            "MipQcm9tcHRzIHRoYXQgbXVzdCBiZSBkaXNwbGF5ZWQgdG8gdGhlIHVzZXJS",
-            "BnByb21wdBLUAwoKdWlfbG9jYWxlcxgHIAMoCUK0A5JBsAMyrQNFbmQtVXNl",
-            "cidzIHByZWZlcnJlZCBsYW5ndWFnZXMgYW5kIHNjcmlwdHMgZm9yIHRoZSB1",
-            "c2VyIGludGVyZmFjZSwgcmVwcmVzZW50ZWQgYXMgYSBsaXN0IG9mIEJDUDQ3",
-            "IFtSRkM1NjQ2XSBsYW5ndWFnZSB0YWcgdmFsdWVzLCBvcmRlcmVkIGJ5IHBy",
-            "ZWZlcmVuY2UuIEZvciBpbnN0YW5jZSwgdGhlIHZhbHVlIFtmci1DQSwgZnIs",
-            "IGVuXSByZXByZXNlbnRzIGEgcHJlZmVyZW5jZSBmb3IgRnJlbmNoIGFzIHNw",
-            "b2tlbiBpbiBDYW5hZGEsIHRoZW4gRnJlbmNoICh3aXRob3V0IGEgcmVnaW9u",
-            "IGRlc2lnbmF0aW9uKSwgZm9sbG93ZWQgYnkgRW5nbGlzaCAod2l0aG91dCBh",
-            "IHJlZ2lvbiBkZXNpZ25hdGlvbikuIEFuIGVycm9yIFNIT1VMRCBOT1QgcmVz",
-            "dWx0IGlmIHNvbWUgb3IgYWxsIG9mIHRoZSByZXF1ZXN0ZWQgbG9jYWxlcyBh",
-            "cmUgbm90IHN1cHBvcnRlZC5SCXVpTG9jYWxlcxKKAQoKbG9naW5faGludBgI",
-            "IAEoCUJmkkFjMmFMb2dpbiBoaW50IGNhbiBiZSBzZXQgYnkgdGhlIGFwcGxp",
-            "Y2F0aW9uIHdpdGggYSB1c2VyIGlkZW50aWZpZXIgc3VjaCBhcyBhbiBlbWFp",
-            "bCBvciBwaG9uZSBudW1iZXIuSABSCWxvZ2luSGludIgBARKpAgoHbWF4X2Fn",
-            "ZRgJIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkLvAZJB6wEy6AFT",
-            "cGVjaWZpZXMgdGhlIGFsbG93YWJsZSBlbGFwc2VkIHRpbWUgaW4gc2Vjb25k",
-            "cyBzaW5jZSB0aGUgbGFzdCB0aW1lIHRoZSBFbmQtVXNlciB3YXMgYWN0aXZl",
-            "bHkgYXV0aGVudGljYXRlZC4gSWYgdGhlIGVsYXBzZWQgdGltZSBpcyBncmVh",
-            "dGVyIHRoYW4gdGhpcyB2YWx1ZSwgb3IgdGhlIGZpZWxkIGlzIHByZXNlbnQg",
-            "d2l0aCAwIGR1cmF0aW9uLCB0aGUgdXNlciBtdXN0IGJlIHJlLWF1dGhlbnRp",
-            "Y2F0ZWQuSAFSBm1heEFnZYgBARJrCgxoaW50X3VzZXJfaWQYCiABKAlCRJJB",
-            "QTI/VXNlciBJRCB0YWtlbiBmcm9tIGEgSUQgVG9rZW4gSGludCBpZiBpdCB3",
-            "YXMgcHJlc2VudCBhbmQgdmFsaWQuSAJSCmhpbnRVc2VySWSIAQE6epJBdyp1",
-            "CjBGaW5kIG91dCBtb3JlIGFib3V0IE9JREMgQXV0aCBSZXF1ZXN0IHBhcmFt",
-            "ZXRlcnMSQWh0dHBzOi8vb3BlbmlkLm5ldC9zcGVjcy9vcGVuaWQtY29ubmVj",
-            "dC1jb3JlLTFfMC5odG1sI0F1dGhSZXF1ZXN0Qg0KC19sb2dpbl9oaW50QgoK",
-            "CF9tYXhfYWdlQg8KDV9oaW50X3VzZXJfaWQiwAEKEkF1dGhvcml6YXRpb25F",
-            "cnJvchIyCgVlcnJvchgBIAEoDjIcLnppdGFkZWwub2lkYy52Mi5FcnJvclJl",
-            "YXNvblIFZXJyb3ISMAoRZXJyb3JfZGVzY3JpcHRpb24YAiABKAlIAFIQZXJy",
-            "b3JEZXNjcmlwdGlvbogBARIgCgllcnJvcl91cmkYAyABKAlIAVIIZXJyb3JV",
-            "cmmIAQFCFAoSX2Vycm9yX2Rlc2NyaXB0aW9uQgwKCl9lcnJvcl91cmkinQEK",
-            "GkRldmljZUF1dGhvcml6YXRpb25SZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZBIb",
-            "CgljbGllbnRfaWQYAiABKAlSCGNsaWVudElkEhQKBXNjb3BlGAMgAygJUgVz",
-            "Y29wZRIZCghhcHBfbmFtZRgEIAEoCVIHYXBwTmFtZRIhCgxwcm9qZWN0X25h",
-            "bWUYBSABKAlSC3Byb2plY3ROYW1lKoUBCgZQcm9tcHQSFgoSUFJPTVBUX1VO",
-            "U1BFQ0lGSUVEEAASDwoLUFJPTVBUX05PTkUQARIQCgxQUk9NUFRfTE9HSU4Q",
-            "AhISCg5QUk9NUFRfQ09OU0VOVBADEhkKFVBST01QVF9TRUxFQ1RfQUNDT1VO",
-            "VBAEEhEKDVBST01QVF9DUkVBVEUQBSqOBQoLRXJyb3JSZWFzb24SHAoYRVJS",
-            "T1JfUkVBU09OX1VOU1BFQ0lGSUVEEAASIAocRVJST1JfUkVBU09OX0lOVkFM",
-            "SURfUkVRVUVTVBABEiQKIEVSUk9SX1JFQVNPTl9VTkFVVEhPUklaRURfQ0xJ",
-            "RU5UEAISHgoaRVJST1JfUkVBU09OX0FDQ0VTU19ERU5JRUQQAxIqCiZFUlJP",
-            "Ul9SRUFTT05fVU5TVVBQT1JURURfUkVTUE9OU0VfVFlQRRAEEh4KGkVSUk9S",
-            "X1JFQVNPTl9JTlZBTElEX1NDT1BFEAUSHQoZRVJST1JfUkVBU09OX1NFUlZF",
-            "Ul9FUlJPUhAGEiYKIkVSUk9SX1JFQVNPTl9URU1QT1JBUllfVU5BVkFJTEFC",
-            "TEUQBxIlCiFFUlJPUl9SRUFTT05fSU5URVJBQ1RJT05fUkVRVUlSRUQQCBIf",
-            "ChtFUlJPUl9SRUFTT05fTE9HSU5fUkVRVUlSRUQQCRIrCidFUlJPUl9SRUFT",
-            "T05fQUNDT1VOVF9TRUxFQ1RJT05fUkVRVUlSRUQQChIhCh1FUlJPUl9SRUFT",
-            "T05fQ09OU0VOVF9SRVFVSVJFRBALEiQKIEVSUk9SX1JFQVNPTl9JTlZBTElE",
-            "X1JFUVVFU1RfVVJJEAwSJwojRVJST1JfUkVBU09OX0lOVkFMSURfUkVRVUVT",
-            "VF9PQkpFQ1QQDRImCiJFUlJPUl9SRUFTT05fUkVRVUVTVF9OT1RfU1VQUE9S",
-            "VEVEEA4SKgomRVJST1JfUkVBU09OX1JFUVVFU1RfVVJJX05PVF9TVVBQT1JU",
-            "RUQQDxIrCidFUlJPUl9SRUFTT05fUkVHSVNUUkFUSU9OX05PVF9TVVBQT1JU",
-            "RUQQEEK5AQoTY29tLnppdGFkZWwub2lkYy52MkISQXV0aG9yaXphdGlvblBy",
-            "b3RvUAFaMGdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL29p",
-            "ZGMvdjI7b2lkY6ICA1pPWKoCD1ppdGFkZWwuT2lkYy5WMsoCD1ppdGFkZWxc",
-            "T2lkY1xWMuICG1ppdGFkZWxcT2lkY1xWMlxHUEJNZXRhZGF0YeoCEVppdGFk",
-            "ZWw6Ok9pZGM6OlYyYgZwcm90bzM="));
+            "bmFwaXYyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8isAQKC0F1dGhSZXF1",
+            "ZXN0Eg4KAmlkGAEgASgJUgJpZBI/Cg1jcmVhdGlvbl9kYXRlGAIgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIMY3JlYXRpb25EYXRlEhsKCWNs",
+            "aWVudF9pZBgDIAEoCVIIY2xpZW50SWQSFAoFc2NvcGUYBCADKAlSBXNjb3Bl",
+            "EiEKDHJlZGlyZWN0X3VyaRgFIAEoCVILcmVkaXJlY3RVcmkSLwoGcHJvbXB0",
+            "GAYgAygOMhcueml0YWRlbC5vaWRjLnYyLlByb21wdFIGcHJvbXB0Eh0KCnVp",
+            "X2xvY2FsZXMYByADKAlSCXVpTG9jYWxlcxIiCgpsb2dpbl9oaW50GAggASgJ",
+            "SABSCWxvZ2luSGludIgBARI3CgdtYXhfYWdlGAkgASgLMhkuZ29vZ2xlLnBy",
+            "b3RvYnVmLkR1cmF0aW9uSAFSBm1heEFnZYgBARIlCgxoaW50X3VzZXJfaWQY",
+            "CiABKAlIAlIKaGludFVzZXJJZIgBATp6kkF3KnUKMEZpbmQgb3V0IG1vcmUg",
+            "YWJvdXQgT0lEQyBBdXRoIFJlcXVlc3QgcGFyYW1ldGVycxJBaHR0cHM6Ly9v",
+            "cGVuaWQubmV0L3NwZWNzL29wZW5pZC1jb25uZWN0LWNvcmUtMV8wLmh0bWwj",
+            "QXV0aFJlcXVlc3RCDQoLX2xvZ2luX2hpbnRCCgoIX21heF9hZ2VCDwoNX2hp",
+            "bnRfdXNlcl9pZCLAAQoSQXV0aG9yaXphdGlvbkVycm9yEjIKBWVycm9yGAEg",
+            "ASgOMhwueml0YWRlbC5vaWRjLnYyLkVycm9yUmVhc29uUgVlcnJvchIwChFl",
+            "cnJvcl9kZXNjcmlwdGlvbhgCIAEoCUgAUhBlcnJvckRlc2NyaXB0aW9uiAEB",
+            "EiAKCWVycm9yX3VyaRgDIAEoCUgBUghlcnJvclVyaYgBAUIUChJfZXJyb3Jf",
+            "ZGVzY3JpcHRpb25CDAoKX2Vycm9yX3VyaSKdAQoaRGV2aWNlQXV0aG9yaXph",
+            "dGlvblJlcXVlc3QSDgoCaWQYASABKAlSAmlkEhsKCWNsaWVudF9pZBgCIAEo",
+            "CVIIY2xpZW50SWQSFAoFc2NvcGUYAyADKAlSBXNjb3BlEhkKCGFwcF9uYW1l",
+            "GAQgASgJUgdhcHBOYW1lEiEKDHByb2plY3RfbmFtZRgFIAEoCVILcHJvamVj",
+            "dE5hbWUqhQEKBlByb21wdBIWChJQUk9NUFRfVU5TUEVDSUZJRUQQABIPCgtQ",
+            "Uk9NUFRfTk9ORRABEhAKDFBST01QVF9MT0dJThACEhIKDlBST01QVF9DT05T",
+            "RU5UEAMSGQoVUFJPTVBUX1NFTEVDVF9BQ0NPVU5UEAQSEQoNUFJPTVBUX0NS",
+            "RUFURRAFKo4FCgtFcnJvclJlYXNvbhIcChhFUlJPUl9SRUFTT05fVU5TUEVD",
+            "SUZJRUQQABIgChxFUlJPUl9SRUFTT05fSU5WQUxJRF9SRVFVRVNUEAESJAog",
+            "RVJST1JfUkVBU09OX1VOQVVUSE9SSVpFRF9DTElFTlQQAhIeChpFUlJPUl9S",
+            "RUFTT05fQUNDRVNTX0RFTklFRBADEioKJkVSUk9SX1JFQVNPTl9VTlNVUFBP",
+            "UlRFRF9SRVNQT05TRV9UWVBFEAQSHgoaRVJST1JfUkVBU09OX0lOVkFMSURf",
+            "U0NPUEUQBRIdChlFUlJPUl9SRUFTT05fU0VSVkVSX0VSUk9SEAYSJgoiRVJS",
+            "T1JfUkVBU09OX1RFTVBPUkFSWV9VTkFWQUlMQUJMRRAHEiUKIUVSUk9SX1JF",
+            "QVNPTl9JTlRFUkFDVElPTl9SRVFVSVJFRBAIEh8KG0VSUk9SX1JFQVNPTl9M",
+            "T0dJTl9SRVFVSVJFRBAJEisKJ0VSUk9SX1JFQVNPTl9BQ0NPVU5UX1NFTEVD",
+            "VElPTl9SRVFVSVJFRBAKEiEKHUVSUk9SX1JFQVNPTl9DT05TRU5UX1JFUVVJ",
+            "UkVEEAsSJAogRVJST1JfUkVBU09OX0lOVkFMSURfUkVRVUVTVF9VUkkQDBIn",
+            "CiNFUlJPUl9SRUFTT05fSU5WQUxJRF9SRVFVRVNUX09CSkVDVBANEiYKIkVS",
+            "Uk9SX1JFQVNPTl9SRVFVRVNUX05PVF9TVVBQT1JURUQQDhIqCiZFUlJPUl9S",
+            "RUFTT05fUkVRVUVTVF9VUklfTk9UX1NVUFBPUlRFRBAPEisKJ0VSUk9SX1JF",
+            "QVNPTl9SRUdJU1RSQVRJT05fTk9UX1NVUFBPUlRFRBAQQrkBChNjb20ueml0",
+            "YWRlbC5vaWRjLnYyQhJBdXRob3JpemF0aW9uUHJvdG9QAVowZ2l0aHViLmNv",
+            "bS96aXRhZGVsL3ppdGFkZWwvcGtnL2dycGMvb2lkYy92MjtvaWRjogIDWk9Y",
+            "qgIPWml0YWRlbC5PaWRjLlYyygIPWml0YWRlbFxPaWRjXFYy4gIbWml0YWRl",
+            "bFxPaWRjXFYyXEdQQk1ldGFkYXRh6gIRWml0YWRlbDo6T2lkYzo6VjJiBnBy",
+            "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Oidc.V2.Prompt), typeof(global::Zitadel.Oidc.V2.ErrorReason), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -147,6 +121,10 @@ namespace Zitadel.Oidc.V2 {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// AuthRequest represents an OpenID Connect Authorization Request as defined in
+  /// https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class AuthRequest : pb::IMessage<AuthRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -204,6 +182,9 @@ namespace Zitadel.Oidc.V2 {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// The unique identifier of the authorization request.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -216,6 +197,9 @@ namespace Zitadel.Oidc.V2 {
     /// <summary>Field number for the "creation_date" field.</summary>
     public const int CreationDateFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
+    /// <summary>
+    /// The timestamp when the authorization request was created.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreationDate {
@@ -228,6 +212,9 @@ namespace Zitadel.Oidc.V2 {
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 3;
     private string clientId_ = "";
+    /// <summary>
+    /// The OAuth2/OIDC client_id of the application that initiated the authorization request.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string ClientId {
@@ -242,6 +229,9 @@ namespace Zitadel.Oidc.V2 {
     private static readonly pb::FieldCodec<string> _repeated_scope_codec
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> scope_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// The scopes by the application that the user must consent to.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> Scope {
@@ -251,6 +241,10 @@ namespace Zitadel.Oidc.V2 {
     /// <summary>Field number for the "redirect_uri" field.</summary>
     public const int RedirectUriFieldNumber = 5;
     private string redirectUri_ = "";
+    /// <summary>
+    /// The redirect_uri used in the authorization request. This must exactly match one of the redirect URIs registered for the client.
+    /// This uri is used to send the authorization code or tokens back to the application.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RedirectUri {
@@ -265,6 +259,9 @@ namespace Zitadel.Oidc.V2 {
     private static readonly pb::FieldCodec<global::Zitadel.Oidc.V2.Prompt> _repeated_prompt_codec
         = pb::FieldCodec.ForEnum(50, x => (int) x, x => (global::Zitadel.Oidc.V2.Prompt) x);
     private readonly pbc::RepeatedField<global::Zitadel.Oidc.V2.Prompt> prompt_ = new pbc::RepeatedField<global::Zitadel.Oidc.V2.Prompt>();
+    /// <summary>
+    /// Prompts that must be displayed to the user.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Zitadel.Oidc.V2.Prompt> Prompt {
@@ -276,6 +273,13 @@ namespace Zitadel.Oidc.V2 {
     private static readonly pb::FieldCodec<string> _repeated_uiLocales_codec
         = pb::FieldCodec.ForString(58);
     private readonly pbc::RepeatedField<string> uiLocales_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// End-User's preferred languages and scripts for the user interface, represented as a list of BCP47 [RFC5646]
+    /// language tag values, ordered by preference.
+    /// For instance, the value [fr-CA, fr, en] represents a preference for French as spoken in Canada,
+    /// then French (without a region designation), followed by English (without a region designation).
+    /// An error SHOULD NOT result if some or all of the requested locales are not supported.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<string> UiLocales {
@@ -287,6 +291,9 @@ namespace Zitadel.Oidc.V2 {
     private readonly static string LoginHintDefaultValue = "";
 
     private string loginHint_;
+    /// <summary>
+    /// Login hint can be set by the application with a user identifier such as an email or phone number.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LoginHint {
@@ -311,6 +318,10 @@ namespace Zitadel.Oidc.V2 {
     /// <summary>Field number for the "max_age" field.</summary>
     public const int MaxAgeFieldNumber = 9;
     private global::Google.Protobuf.WellKnownTypes.Duration maxAge_;
+    /// <summary>
+    /// Specifies the allowable elapsed time in seconds since the last time the End-User was actively authenticated.
+    /// If the elapsed time is greater than this value, or the field is present with 0 duration, the user must be re-authenticated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration MaxAge {
@@ -325,6 +336,9 @@ namespace Zitadel.Oidc.V2 {
     private readonly static string HintUserIdDefaultValue = "";
 
     private string hintUserId_;
+    /// <summary>
+    /// User ID taken from a ID Token Hint if it was present and valid.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string HintUserId {

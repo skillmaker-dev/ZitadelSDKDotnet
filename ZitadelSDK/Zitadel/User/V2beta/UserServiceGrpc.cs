@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Zitadel.User.V2beta {
+  /// <summary>
+  /// Deprecated: use user service v2 instead. This service will be removed in the next major version of ZITADEL.
+  /// </summary>
   public static partial class UserService
   {
     static readonly string __ServiceName = "zitadel.user.v2beta.UserService";

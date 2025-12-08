@@ -8,6 +8,11 @@
 using grpc = global::Grpc.Core;
 
 namespace Zitadel.Org.V2beta {
+  /// <summary>
+  /// This service is intended to manage organizations in a ZITADEL instance.
+  ///
+  /// Deprecated: use organization service v2 instead. This service will be removed in the next major version of ZITADEL.
+  /// </summary>
   public static partial class OrganizationService
   {
     static readonly string __ServiceName = "zitadel.org.v2beta.OrganizationService";
@@ -246,6 +251,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Update Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the name of the organization.
       ///
       /// Required permission:
@@ -263,10 +270,12 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       ///
       /// Required permission:
-      ///  - `iam.read`
+      ///  - `org.read`
       ///
       /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
       /// </summary>
@@ -281,6 +290,8 @@ namespace Zitadel.Org.V2beta {
 
       /// <summary>
       /// Delete Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       ///
@@ -299,6 +310,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Set Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       ///
       /// Required permission:
@@ -315,6 +328,8 @@ namespace Zitadel.Org.V2beta {
 
       /// <summary>
       /// List Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List metadata of an organization filtered by query.
       ///
@@ -333,6 +348,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete metadata objects from an organization with a specific key.
       ///
       /// Required permission:
@@ -349,6 +366,8 @@ namespace Zitadel.Org.V2beta {
 
       /// <summary>
       /// Add Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       ///
@@ -367,6 +386,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organization Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs. 
       ///
       /// Required permission:
@@ -383,6 +404,8 @@ namespace Zitadel.Org.V2beta {
 
       /// <summary>
       /// Delete Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       ///
@@ -401,6 +424,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Generate Organization Domain Validation
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       ///
       /// Required permission:
@@ -417,6 +442,8 @@ namespace Zitadel.Org.V2beta {
 
       /// <summary>
       /// Verify Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
@@ -435,6 +462,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Deactivate Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       ///
       /// Required permission:
@@ -451,6 +480,8 @@ namespace Zitadel.Org.V2beta {
 
       /// <summary>
       /// Activate Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       ///
@@ -574,6 +605,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Update Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the name of the organization.
       ///
       /// Required permission:
@@ -592,6 +625,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Update Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the name of the organization.
       ///
       /// Required permission:
@@ -607,6 +642,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Update Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Change the name of the organization.
       ///
@@ -626,6 +663,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Update Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the name of the organization.
       ///
       /// Required permission:
@@ -642,10 +681,12 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       ///
       /// Required permission:
-      ///  - `iam.read`
+      ///  - `org.read`
       ///
       /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
       /// </summary>
@@ -662,10 +703,12 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       ///
       /// Required permission:
-      ///  - `iam.read`
+      ///  - `org.read`
       ///
       /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
       /// </summary>
@@ -680,10 +723,12 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       ///
       /// Required permission:
-      ///  - `iam.read`
+      ///  - `org.read`
       ///
       /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
       /// </summary>
@@ -700,10 +745,12 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       ///
       /// Required permission:
-      ///  - `iam.read`
+      ///  - `org.read`
       ///
       /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
       /// </summary>
@@ -717,6 +764,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Delete Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       ///
@@ -736,6 +785,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       ///
       /// Required permission:
@@ -751,6 +802,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Delete Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       ///
@@ -770,6 +823,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       ///
       /// Required permission:
@@ -785,6 +840,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Set Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       ///
@@ -804,6 +861,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Set Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       ///
       /// Required permission:
@@ -819,6 +878,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Set Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       ///
@@ -838,6 +899,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Set Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
       ///
       /// Required permission:
@@ -853,6 +916,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// List Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List metadata of an organization filtered by query.
       ///
@@ -872,6 +937,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List metadata of an organization filtered by query.
       ///
       /// Required permission:
@@ -887,6 +954,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// List Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List metadata of an organization filtered by query.
       ///
@@ -906,6 +975,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List metadata of an organization filtered by query.
       ///
       /// Required permission:
@@ -921,6 +992,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Delete Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete metadata objects from an organization with a specific key.
       ///
@@ -940,6 +1013,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete metadata objects from an organization with a specific key.
       ///
       /// Required permission:
@@ -955,6 +1030,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Delete Organization Metadata
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete metadata objects from an organization with a specific key.
       ///
@@ -974,6 +1051,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization Metadata
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete metadata objects from an organization with a specific key.
       ///
       /// Required permission:
@@ -989,6 +1068,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Add Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       ///
@@ -1008,6 +1089,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Add Organization Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       ///
       /// Required permission:
@@ -1023,6 +1106,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Add Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       ///
@@ -1042,6 +1127,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Add Organization Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
       ///
       /// Required permission:
@@ -1057,6 +1144,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// List Organization Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs. 
       ///
@@ -1076,6 +1165,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organization Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs. 
       ///
       /// Required permission:
@@ -1091,6 +1182,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// List Organization Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs. 
       ///
@@ -1110,6 +1203,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// List Organization Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs. 
       ///
       /// Required permission:
@@ -1125,6 +1220,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Delete Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       ///
@@ -1144,6 +1241,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       ///
       /// Required permission:
@@ -1159,6 +1258,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Delete Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       ///
@@ -1178,6 +1279,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Delete Organization Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
       ///
       /// Required permission:
@@ -1193,6 +1296,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Generate Organization Domain Validation
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       ///
@@ -1212,6 +1317,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Generate Organization Domain Validation
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       ///
       /// Required permission:
@@ -1227,6 +1334,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Generate Organization Domain Validation
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       ///
@@ -1246,6 +1355,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Generate Organization Domain Validation
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
       ///
       /// Required permission:
@@ -1261,6 +1372,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Verify Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
@@ -1280,6 +1393,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Verify Organization Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
@@ -1295,6 +1410,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Verify Organization Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
@@ -1314,6 +1431,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Verify Organization Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
@@ -1329,6 +1448,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Deactivate Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       ///
@@ -1348,6 +1469,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Deactivate Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       ///
       /// Required permission:
@@ -1363,6 +1486,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Deactivate Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       ///
@@ -1382,6 +1507,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Deactivate Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
       ///
       /// Required permission:
@@ -1397,6 +1524,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Activate Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       ///
@@ -1416,6 +1545,8 @@ namespace Zitadel.Org.V2beta {
       /// <summary>
       /// Activate Organization
       ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       ///
       /// Required permission:
@@ -1431,6 +1562,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Activate Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       ///
@@ -1449,6 +1582,8 @@ namespace Zitadel.Org.V2beta {
       }
       /// <summary>
       /// Activate Organization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
       ///

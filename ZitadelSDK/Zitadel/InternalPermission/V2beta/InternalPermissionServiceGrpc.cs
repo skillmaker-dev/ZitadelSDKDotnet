@@ -14,6 +14,8 @@ namespace Zitadel.InternalPermission.V2beta {
   ///
   /// If you want to manage permissions and roles within your project or application,
   /// please use the AuthorizationsService.
+  ///
+  /// Deprecated: use internal permission service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
   public static partial class InternalPermissionService
   {
@@ -114,6 +116,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// ListAdministrators returns all administrators and its roles matching the request and necessary permissions.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Required permissions depend on the resource type:
       ///   - "iam.member.read" for instance administrators
       ///   - "org.member.read" for organization administrators
@@ -132,6 +136,8 @@ namespace Zitadel.InternalPermission.V2beta {
 
       /// <summary>
       /// CreateAdministrator grants a administrator role to a user for a specific resource.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Note that the roles are specific to the resource type.
       /// This means that if you want to grant a user the administrator role for an organization and a project,
@@ -155,6 +161,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// UpdateAdministrator updates the specific administrator role.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Note that any role previously granted to the user and not present in the request will be revoked.
       ///
       /// Required permissions depend on the resource type:
@@ -174,6 +182,8 @@ namespace Zitadel.InternalPermission.V2beta {
 
       /// <summary>
       /// DeleteAdministrator revokes a administrator role from a user.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// In case the administrator role is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -226,6 +236,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// ListAdministrators returns all administrators and its roles matching the request and necessary permissions.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Required permissions depend on the resource type:
       ///   - "iam.member.read" for instance administrators
       ///   - "org.member.read" for organization administrators
@@ -246,6 +258,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// ListAdministrators returns all administrators and its roles matching the request and necessary permissions.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Required permissions depend on the resource type:
       ///   - "iam.member.read" for instance administrators
       ///   - "org.member.read" for organization administrators
@@ -263,6 +277,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// ListAdministrators returns all administrators and its roles matching the request and necessary permissions.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Required permissions depend on the resource type:
       ///   - "iam.member.read" for instance administrators
@@ -284,6 +300,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// ListAdministrators returns all administrators and its roles matching the request and necessary permissions.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Required permissions depend on the resource type:
       ///   - "iam.member.read" for instance administrators
       ///   - "org.member.read" for organization administrators
@@ -301,6 +319,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// CreateAdministrator grants a administrator role to a user for a specific resource.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Note that the roles are specific to the resource type.
       /// This means that if you want to grant a user the administrator role for an organization and a project,
@@ -325,6 +345,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// CreateAdministrator grants a administrator role to a user for a specific resource.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Note that the roles are specific to the resource type.
       /// This means that if you want to grant a user the administrator role for an organization and a project,
       /// you need to create two administrator roles.
@@ -345,6 +367,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// CreateAdministrator grants a administrator role to a user for a specific resource.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Note that the roles are specific to the resource type.
       /// This means that if you want to grant a user the administrator role for an organization and a project,
@@ -369,6 +393,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// CreateAdministrator grants a administrator role to a user for a specific resource.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Note that the roles are specific to the resource type.
       /// This means that if you want to grant a user the administrator role for an organization and a project,
       /// you need to create two administrator roles.
@@ -389,6 +415,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// UpdateAdministrator updates the specific administrator role.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Note that any role previously granted to the user and not present in the request will be revoked.
       ///
@@ -411,6 +439,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// UpdateAdministrator updates the specific administrator role.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Note that any role previously granted to the user and not present in the request will be revoked.
       ///
       /// Required permissions depend on the resource type:
@@ -429,6 +459,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// UpdateAdministrator updates the specific administrator role.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Note that any role previously granted to the user and not present in the request will be revoked.
       ///
@@ -451,6 +483,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// UpdateAdministrator updates the specific administrator role.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Note that any role previously granted to the user and not present in the request will be revoked.
       ///
       /// Required permissions depend on the resource type:
@@ -469,6 +503,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// DeleteAdministrator revokes a administrator role from a user.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// In case the administrator role is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -493,6 +529,8 @@ namespace Zitadel.InternalPermission.V2beta {
       /// <summary>
       /// DeleteAdministrator revokes a administrator role from a user.
       ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// In case the administrator role is not found, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the deletion date in the response to verify if the administrator role was deleted during the request.
@@ -513,6 +551,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// DeleteAdministrator revokes a administrator role from a user.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// In case the administrator role is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -536,6 +576,8 @@ namespace Zitadel.InternalPermission.V2beta {
       }
       /// <summary>
       /// DeleteAdministrator revokes a administrator role from a user.
+      ///
+      /// Deprecated: please move to the corresponding endpoint under internal permission service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// In case the administrator role is not found, the request will return a successful response as
       /// the desired state is already achieved.

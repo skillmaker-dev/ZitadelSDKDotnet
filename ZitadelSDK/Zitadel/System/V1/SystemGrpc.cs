@@ -360,7 +360,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns a list of ZITADEL instances
       ///
-      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-instances.api.mdx) instead to list instances
+      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -374,7 +374,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns the detail of an instance
       ///
-      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
+      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -402,7 +402,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Updates name of an existing instance
       ///
-      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
+      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -430,7 +430,7 @@ namespace Zitadel.System.V1 {
       /// Removes an instance
       /// This might take some time
       ///
-      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-delete-instance.api.mdx) instead to delete an instance
+      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-delete-instance.api.mdx) instead to delete an instance
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -458,7 +458,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Checks if a domain exists
       ///
-      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
+      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -472,7 +472,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// List Domains
       ///
-      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
       /// Returns the custom domains of an instance.
       /// </summary>
@@ -488,7 +488,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -502,7 +502,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -755,7 +755,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns a list of ZITADEL instances
       ///
-      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-instances.api.mdx) instead to list instances
+      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -770,7 +770,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns a list of ZITADEL instances
       ///
-      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-instances.api.mdx) instead to list instances
+      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -783,7 +783,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns a list of ZITADEL instances
       ///
-      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-instances.api.mdx) instead to list instances
+      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -798,7 +798,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns a list of ZITADEL instances
       ///
-      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-instances.api.mdx) instead to list instances
+      /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -811,7 +811,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns the detail of an instance
       ///
-      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
+      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -826,7 +826,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns the detail of an instance
       ///
-      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
+      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -839,7 +839,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns the detail of an instance
       ///
-      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
+      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -854,7 +854,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Returns the detail of an instance
       ///
-      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
+      /// Deprecated: Use [GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead to get the details of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -923,7 +923,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Updates name of an existing instance
       ///
-      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
+      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -938,7 +938,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Updates name of an existing instance
       ///
-      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
+      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -951,7 +951,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Updates name of an existing instance
       ///
-      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
+      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -966,7 +966,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Updates name of an existing instance
       ///
-      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
+      /// Deprecated: Use [UpdateInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-update-instance.api.mdx) instead to update the name of the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1032,7 +1032,7 @@ namespace Zitadel.System.V1 {
       /// Removes an instance
       /// This might take some time
       ///
-      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-delete-instance.api.mdx) instead to delete an instance
+      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-delete-instance.api.mdx) instead to delete an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1048,7 +1048,7 @@ namespace Zitadel.System.V1 {
       /// Removes an instance
       /// This might take some time
       ///
-      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-delete-instance.api.mdx) instead to delete an instance
+      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-delete-instance.api.mdx) instead to delete an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1062,7 +1062,7 @@ namespace Zitadel.System.V1 {
       /// Removes an instance
       /// This might take some time
       ///
-      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-delete-instance.api.mdx) instead to delete an instance
+      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-delete-instance.api.mdx) instead to delete an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1078,7 +1078,7 @@ namespace Zitadel.System.V1 {
       /// Removes an instance
       /// This might take some time
       ///
-      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-delete-instance.api.mdx) instead to delete an instance
+      /// Deprecated: Use [DeleteInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-delete-instance.api.mdx) instead to delete an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1147,7 +1147,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Checks if a domain exists
       ///
-      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
+      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1162,7 +1162,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Checks if a domain exists
       ///
-      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
+      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1175,7 +1175,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Checks if a domain exists
       ///
-      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
+      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1190,7 +1190,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Checks if a domain exists
       ///
-      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
+      /// Deprecated: Use [ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead to check existence of an instance
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1203,7 +1203,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// List Domains
       ///
-      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
       /// Returns the custom domains of an instance.
       /// </summary>
@@ -1220,7 +1220,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// List Domains
       ///
-      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
       /// Returns the custom domains of an instance.
       /// </summary>
@@ -1235,7 +1235,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// List Domains
       ///
-      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
       /// Returns the custom domains of an instance.
       /// </summary>
@@ -1252,7 +1252,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// List Domains
       ///
-      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-custom-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
       /// Returns the custom domains of an instance.
       /// </summary>
@@ -1267,7 +1267,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1282,7 +1282,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1295,7 +1295,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1310,7 +1310,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1323,7 +1323,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1338,7 +1338,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1351,7 +1351,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1366,7 +1366,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

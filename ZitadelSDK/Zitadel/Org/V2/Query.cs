@@ -49,23 +49,30 @@ namespace Zitadel.Org.V2 {
             "BXN0YXRlGAEgASgOMiEueml0YWRlbC5vcmcudjIuT3JnYW5pemF0aW9uU3Rh",
             "dGVCCPpCBYIBAhABUgVzdGF0ZSJTChNPcmdhbml6YXRpb25JRFF1ZXJ5EjwK",
             "AmlkGAEgASgJQiySQRtKEyI2OTYyOTAyMzkwNjQ4ODMzNCJ4yAGAAQHiQQEC",
-            "+kIHcgUQARjIAVICaWQiGgoYRGVmYXVsdE9yZ2FuaXphdGlvblF1ZXJ5KmIK",
-            "FU9yZ2FuaXphdGlvbkZpZWxkTmFtZRInCiNPUkdBTklaQVRJT05fRklFTERf",
-            "TkFNRV9VTlNQRUNJRklFRBAAEiAKHE9SR0FOSVpBVElPTl9GSUVMRF9OQU1F",
-            "X05BTUUQAUKqAQoSY29tLnppdGFkZWwub3JnLnYyQgpRdWVyeVByb3RvUAFa",
-            "LmdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL29yZy92Mjtv",
-            "cmeiAgNaT1iqAg5aaXRhZGVsLk9yZy5WMsoCDlppdGFkZWxcT3JnXFYy4gIa",
-            "Wml0YWRlbFxPcmdcVjJcR1BCTWV0YWRhdGHqAhBaaXRhZGVsOjpPcmc6OlYy",
-            "YgZwcm90bzM="));
+            "+kIHcgUQARjIAVICaWQiGgoYRGVmYXVsdE9yZ2FuaXphdGlvblF1ZXJ5InMK",
+            "EkRvbWFpblNlYXJjaEZpbHRlchJOCg1kb21haW5fZmlsdGVyGAEgASgLMicu",
+            "eml0YWRlbC5vcmcudjIuT3JnYW5pemF0aW9uRG9tYWluUXVlcnlIAFIMZG9t",
+            "YWluRmlsdGVyQg0KBmZpbHRlchID+EIBKo0BChVPcmdhbml6YXRpb25GaWVs",
+            "ZE5hbWUSJwojT1JHQU5JWkFUSU9OX0ZJRUxEX05BTUVfVU5TUEVDSUZJRUQQ",
+            "ABIgChxPUkdBTklaQVRJT05fRklFTERfTkFNRV9OQU1FEAESKQolT1JHQU5J",
+            "WkFUSU9OX0ZJRUxEX05BTUVfQ1JFQVRJT05fREFURRACKnUKD0RvbWFpbkZp",
+            "ZWxkTmFtZRIhCh1ET01BSU5fRklFTERfTkFNRV9VTlNQRUNJRklFRBAAEhoK",
+            "FkRPTUFJTl9GSUVMRF9OQU1FX05BTUUQARIjCh9ET01BSU5fRklFTERfTkFN",
+            "RV9DUkVBVElPTl9EQVRFEAJCqgEKEmNvbS56aXRhZGVsLm9yZy52MkIKUXVl",
+            "cnlQcm90b1ABWi5naXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3Jw",
+            "Yy9vcmcvdjI7b3JnogIDWk9YqgIOWml0YWRlbC5PcmcuVjLKAg5aaXRhZGVs",
+            "XE9yZ1xWMuICGlppdGFkZWxcT3JnXFYyXEdQQk1ldGFkYXRh6gIQWml0YWRl",
+            "bDo6T3JnOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Zitadel.Org.V2.OrgReflection.Descriptor, global::Zitadel.Object.V2.ObjectReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Org.V2.OrganizationFieldName), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Org.V2.OrganizationFieldName), typeof(global::Zitadel.Org.V2.DomainFieldName), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.SearchQuery), global::Zitadel.Org.V2.SearchQuery.Parser, new[]{ "NameQuery", "DomainQuery", "StateQuery", "IdQuery", "DefaultQuery" }, new[]{ "Query" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.OrganizationNameQuery), global::Zitadel.Org.V2.OrganizationNameQuery.Parser, new[]{ "Name", "Method" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.OrganizationDomainQuery), global::Zitadel.Org.V2.OrganizationDomainQuery.Parser, new[]{ "Domain", "Method" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.OrganizationStateQuery), global::Zitadel.Org.V2.OrganizationStateQuery.Parser, new[]{ "State" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.OrganizationIDQuery), global::Zitadel.Org.V2.OrganizationIDQuery.Parser, new[]{ "Id" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.DefaultOrganizationQuery), global::Zitadel.Org.V2.DefaultOrganizationQuery.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.DefaultOrganizationQuery), global::Zitadel.Org.V2.DefaultOrganizationQuery.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Org.V2.DomainSearchFilter), global::Zitadel.Org.V2.DomainSearchFilter.Parser, new[]{ "DomainFilter" }, new[]{ "Filter" }, null, null, null)
           }));
     }
     #endregion
@@ -75,6 +82,13 @@ namespace Zitadel.Org.V2 {
   public enum OrganizationFieldName {
     [pbr::OriginalName("ORGANIZATION_FIELD_NAME_UNSPECIFIED")] Unspecified = 0,
     [pbr::OriginalName("ORGANIZATION_FIELD_NAME_NAME")] Name = 1,
+    [pbr::OriginalName("ORGANIZATION_FIELD_NAME_CREATION_DATE")] CreationDate = 2,
+  }
+
+  public enum DomainFieldName {
+    [pbr::OriginalName("DOMAIN_FIELD_NAME_UNSPECIFIED")] Unspecified = 0,
+    [pbr::OriginalName("DOMAIN_FIELD_NAME_NAME")] Name = 1,
+    [pbr::OriginalName("DOMAIN_FIELD_NAME_CREATION_DATE")] CreationDate = 2,
   }
 
   #endregion
@@ -144,6 +158,9 @@ namespace Zitadel.Org.V2 {
 
     /// <summary>Field number for the "name_query" field.</summary>
     public const int NameQueryFieldNumber = 1;
+    /// <summary>
+    /// Filter organizations by their name.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Org.V2.OrganizationNameQuery NameQuery {
@@ -156,6 +173,9 @@ namespace Zitadel.Org.V2 {
 
     /// <summary>Field number for the "domain_query" field.</summary>
     public const int DomainQueryFieldNumber = 2;
+    /// <summary>
+    /// Filter organizations by their domain.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Org.V2.OrganizationDomainQuery DomainQuery {
@@ -168,6 +188,9 @@ namespace Zitadel.Org.V2 {
 
     /// <summary>Field number for the "state_query" field.</summary>
     public const int StateQueryFieldNumber = 3;
+    /// <summary>
+    /// Filter organizations by their state.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Org.V2.OrganizationStateQuery StateQuery {
@@ -180,6 +203,9 @@ namespace Zitadel.Org.V2 {
 
     /// <summary>Field number for the "id_query" field.</summary>
     public const int IdQueryFieldNumber = 4;
+    /// <summary>
+    /// Filter organizations by their id.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Org.V2.OrganizationIDQuery IdQuery {
@@ -192,6 +218,9 @@ namespace Zitadel.Org.V2 {
 
     /// <summary>Field number for the "default_query" field.</summary>
     public const int DefaultQueryFieldNumber = 5;
+    /// <summary>
+    /// Filter for the default organization.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Org.V2.DefaultOrganizationQuery DefaultQuery {
@@ -1571,6 +1600,250 @@ namespace Zitadel.Org.V2 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class DomainSearchFilter : pb::IMessage<DomainSearchFilter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DomainSearchFilter> _parser = new pb::MessageParser<DomainSearchFilter>(() => new DomainSearchFilter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DomainSearchFilter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Org.V2.QueryReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DomainSearchFilter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DomainSearchFilter(DomainSearchFilter other) : this() {
+      switch (other.FilterCase) {
+        case FilterOneofCase.DomainFilter:
+          DomainFilter = other.DomainFilter.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DomainSearchFilter Clone() {
+      return new DomainSearchFilter(this);
+    }
+
+    /// <summary>Field number for the "domain_filter" field.</summary>
+    public const int DomainFilterFieldNumber = 1;
+    /// <summary>
+    /// Filter organization domains by their domain name.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Org.V2.OrganizationDomainQuery DomainFilter {
+      get { return filterCase_ == FilterOneofCase.DomainFilter ? (global::Zitadel.Org.V2.OrganizationDomainQuery) filter_ : null; }
+      set {
+        filter_ = value;
+        filterCase_ = value == null ? FilterOneofCase.None : FilterOneofCase.DomainFilter;
+      }
+    }
+
+    private object filter_;
+    /// <summary>Enum of possible cases for the "filter" oneof.</summary>
+    public enum FilterOneofCase {
+      None = 0,
+      DomainFilter = 1,
+    }
+    private FilterOneofCase filterCase_ = FilterOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public FilterOneofCase FilterCase {
+      get { return filterCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFilter() {
+      filterCase_ = FilterOneofCase.None;
+      filter_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DomainSearchFilter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DomainSearchFilter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(DomainFilter, other.DomainFilter)) return false;
+      if (FilterCase != other.FilterCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (filterCase_ == FilterOneofCase.DomainFilter) hash ^= DomainFilter.GetHashCode();
+      hash ^= (int) filterCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (filterCase_ == FilterOneofCase.DomainFilter) {
+        output.WriteRawTag(10);
+        output.WriteMessage(DomainFilter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (filterCase_ == FilterOneofCase.DomainFilter) {
+        output.WriteRawTag(10);
+        output.WriteMessage(DomainFilter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (filterCase_ == FilterOneofCase.DomainFilter) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DomainFilter);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DomainSearchFilter other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.FilterCase) {
+        case FilterOneofCase.DomainFilter:
+          if (DomainFilter == null) {
+            DomainFilter = new global::Zitadel.Org.V2.OrganizationDomainQuery();
+          }
+          DomainFilter.MergeFrom(other.DomainFilter);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Zitadel.Org.V2.OrganizationDomainQuery subBuilder = new global::Zitadel.Org.V2.OrganizationDomainQuery();
+            if (filterCase_ == FilterOneofCase.DomainFilter) {
+              subBuilder.MergeFrom(DomainFilter);
+            }
+            input.ReadMessage(subBuilder);
+            DomainFilter = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Zitadel.Org.V2.OrganizationDomainQuery subBuilder = new global::Zitadel.Org.V2.OrganizationDomainQuery();
+            if (filterCase_ == FilterOneofCase.DomainFilter) {
+              subBuilder.MergeFrom(DomainFilter);
+            }
+            input.ReadMessage(subBuilder);
+            DomainFilter = subBuilder;
+            break;
+          }
         }
       }
     }

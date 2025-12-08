@@ -13,6 +13,8 @@ namespace Zitadel.Authorization.V2beta {
   ///
   /// For managing permissions and roles for ZITADEL internal resources, like organizations, projects,
   /// users, etc., please use the InternalPermissionService.
+  ///
+  /// Deprecated: use authorization service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
   public static partial class AuthorizationService
   {
@@ -137,6 +139,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// List Authorizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
@@ -155,6 +159,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Create Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
@@ -171,6 +177,8 @@ namespace Zitadel.Authorization.V2beta {
 
       /// <summary>
       /// Update Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// UpdateAuthorization updates the authorization.
       ///
@@ -190,6 +198,8 @@ namespace Zitadel.Authorization.V2beta {
 
       /// <summary>
       /// Delete Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeleteAuthorization deletes the authorization.
       ///
@@ -212,6 +222,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Activate Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
@@ -232,6 +244,8 @@ namespace Zitadel.Authorization.V2beta {
 
       /// <summary>
       /// Deactivate Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -283,6 +297,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// List Authorizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
@@ -302,6 +318,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// List Authorizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
@@ -318,6 +336,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// List Authorizations
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
@@ -338,6 +358,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// List Authorizations
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
@@ -354,6 +376,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Create Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
@@ -373,6 +397,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Create Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
@@ -388,6 +414,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Create Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
@@ -407,6 +435,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Create Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
@@ -422,6 +452,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Update Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// UpdateAuthorization updates the authorization.
       ///
@@ -443,6 +475,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Update Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
@@ -460,6 +494,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Update Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// UpdateAuthorization updates the authorization.
       ///
@@ -481,6 +517,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Update Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
@@ -498,6 +536,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Delete Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeleteAuthorization deletes the authorization.
       ///
@@ -521,6 +561,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Delete Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
@@ -540,6 +582,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Delete Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeleteAuthorization deletes the authorization.
       ///
@@ -563,6 +607,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Delete Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
@@ -582,6 +628,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Activate Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
@@ -605,6 +653,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Activate Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
@@ -624,6 +674,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Activate Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
@@ -647,6 +699,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Activate Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
@@ -666,6 +720,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Deactivate Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -689,6 +745,8 @@ namespace Zitadel.Authorization.V2beta {
       /// <summary>
       /// Deactivate Authorization
       ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
       /// In case the authorization is already inactive, the request will return a successful response as
@@ -708,6 +766,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Deactivate Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -730,6 +790,8 @@ namespace Zitadel.Authorization.V2beta {
       }
       /// <summary>
       /// Deactivate Authorization
+      ///
+      /// Deprecated: please move to the corresponding endpoint under authorization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///

@@ -27,37 +27,26 @@ namespace Zitadel.Settings.V2 {
             "Cit6aXRhZGVsL3NldHRpbmdzL3YyL2JyYW5kaW5nX3NldHRpbmdzLnByb3Rv",
             "EhN6aXRhZGVsLnNldHRpbmdzLnYyGi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9v",
             "cHRpb25zL2Fubm90YXRpb25zLnByb3RvGiJ6aXRhZGVsL3NldHRpbmdzL3Yy",
-            "L3NldHRpbmdzLnByb3RvItMGChBCcmFuZGluZ1NldHRpbmdzEjsKC2xpZ2h0",
+            "L3NldHRpbmdzLnByb3RvIvkDChBCcmFuZGluZ1NldHRpbmdzEjsKC2xpZ2h0",
             "X3RoZW1lGAEgASgLMhoueml0YWRlbC5zZXR0aW5ncy52Mi5UaGVtZVIKbGln",
             "aHRUaGVtZRI5CgpkYXJrX3RoZW1lGAIgASgLMhoueml0YWRlbC5zZXR0aW5n",
-            "cy52Mi5UaGVtZVIJZGFya1RoZW1lEooBCghmb250X3VybBgDIAEoCUJvkkFs",
-            "MhR1cmwgdG8gdGhlIGZvbnQgdXNlZEpUImh0dHBzOi8vYWNtZS5jb20vYXNz",
-            "ZXRzL3YxLzE2NTYxNzg1MDY5MjY1NDYwMS9wb2xpY3kvbGFiZWwvZm9udC0x",
-            "ODA5NTAyNDMyMzc0MDU0NDEiUgdmb250VXJsEqYBChZoaWRlX2xvZ2luX25h",
-            "bWVfc3VmZml4GAQgASgIQnGSQW4ybGhpZGVzIHRoZSBvcmcgc3VmZml4IG9u",
-            "IHRoZSBsb2dpbiBmb3JtIGlmIHRoZSBzY29wZSAidXJuOnppdGFkZWw6aWFt",
-            "Om9yZzpkb21haW46cHJpbWFyeTp7ZG9tYWlubmFtZX0iIGlzIHNldFITaGlk",
-            "ZUxvZ2luTmFtZVN1ZmZpeBJSChFkaXNhYmxlX3dhdGVybWFyaxgFIAEoCEIl",
-            "kkEiMiBib29sZWFuIHRvIGRpc2FibGUgdGhlIHdhdGVybWFya1IQZGlzYWJs",
-            "ZVdhdGVybWFyaxK5AQoTcmVzb3VyY2Vfb3duZXJfdHlwZRgGIAEoDjImLnpp",
-            "dGFkZWwuc2V0dGluZ3MudjIuUmVzb3VyY2VPd25lclR5cGVCYZJBXjJccmVz",
-            "b3VyY2Vfb3duZXJfdHlwZSByZXR1cm5zIGlmIHRoZSBzZXR0aW5nIGlzIG1h",
-            "bmFnZWQgb24gdGhlIG9yZ2FuaXphdGlvbiBvciBvbiB0aGUgaW5zdGFuY2VS",
-            "EXJlc291cmNlT3duZXJUeXBlEoABCgp0aGVtZV9tb2RlGAcgASgOMh4ueml0",
-            "YWRlbC5zZXR0aW5ncy52Mi5UaGVtZU1vZGVCQZJBPjI8c3RhdGVzIHdoZXRo",
-            "ZXIgYm90aCBvciBvbmx5IGRhcmsgb3IgbGlnaHQgdGhlbWUgd2lsbCBiZSB1",
-            "c2VkUgl0aGVtZU1vZGUi1gQKBVRoZW1lElAKDXByaW1hcnlfY29sb3IYASAB",
-            "KAlCK5JBKDIbaGV4IHZhbHVlIGZvciBwcmltYXJ5IGNvbG9ySgkiIzU0Njlk",
-            "NCJSDHByaW1hcnlDb2xvchJZChBiYWNrZ3JvdW5kX2NvbG9yGAIgASgJQi6S",
-            "QSsyHmhleCB2YWx1ZSBmb3IgYmFja2dyb3VuZCBjb2xvckoJIiNGQUZBRkEi",
-            "Ug9iYWNrZ3JvdW5kQ29sb3ISRwoKd2Fybl9jb2xvchgDIAEoCUIokkElMhho",
-            "ZXggdmFsdWUgZm9yIHdhcm4gY29sb3JKCSIjQ0QzRDU2IlIJd2FybkNvbG9y",
-            "EkcKCmZvbnRfY29sb3IYBCABKAlCKJJBJTIYaGV4IHZhbHVlIGZvciBmb250",
-            "IGNvbG9ySgkiIzAwMDAwMCJSCWZvbnRDb2xvchKFAQoIbG9nb191cmwYBSAB",
-            "KAlCapJBZzIPdXJsIHRvIHRoZSBsb2dvSlQiaHR0cHM6Ly9hY21lLmNvbS9h",
-            "c3NldHMvdjEvMTY1NjE3ODUwNjkyNjU0NjAxL3BvbGljeS9sYWJlbC9sb2dv",
-            "LTE4MDk1MDQxNjMyMTQ5NDY1NyJSB2xvZ29VcmwShQEKCGljb25fdXJsGAYg",
-            "ASgJQmqSQWcyD3VybCB0byB0aGUgaWNvbkpUImh0dHBzOi8vYWNtZS5jb20v",
+            "cy52Mi5UaGVtZVIJZGFya1RoZW1lEnQKCGZvbnRfdXJsGAMgASgJQlmSQVZK",
+            "VCJodHRwczovL2FjbWUuY29tL2Fzc2V0cy92MS8xNjU2MTc4NTA2OTI2NTQ2",
+            "MDEvcG9saWN5L2xhYmVsL2ZvbnQtMTgwOTUwMjQzMjM3NDA1NDQxIlIHZm9u",
+            "dFVybBIzChZoaWRlX2xvZ2luX25hbWVfc3VmZml4GAQgASgIUhNoaWRlTG9n",
+            "aW5OYW1lU3VmZml4EisKEWRpc2FibGVfd2F0ZXJtYXJrGAUgASgIUhBkaXNh",
+            "YmxlV2F0ZXJtYXJrElYKE3Jlc291cmNlX293bmVyX3R5cGUYBiABKA4yJi56",
+            "aXRhZGVsLnNldHRpbmdzLnYyLlJlc291cmNlT3duZXJUeXBlUhFyZXNvdXJj",
+            "ZU93bmVyVHlwZRI9Cgp0aGVtZV9tb2RlGAcgASgOMh4ueml0YWRlbC5zZXR0",
+            "aW5ncy52Mi5UaGVtZU1vZGVSCXRoZW1lTW9kZSLBAwoFVGhlbWUSMwoNcHJp",
+            "bWFyeV9jb2xvchgBIAEoCUIOkkELSgkiIzU0NjlkNCJSDHByaW1hcnlDb2xv",
+            "chI5ChBiYWNrZ3JvdW5kX2NvbG9yGAIgASgJQg6SQQtKCSIjRkFGQUZBIlIP",
+            "YmFja2dyb3VuZENvbG9yEi0KCndhcm5fY29sb3IYAyABKAlCDpJBC0oJIiND",
+            "RDNENTYiUgl3YXJuQ29sb3ISLQoKZm9udF9jb2xvchgEIAEoCUIOkkELSgki",
+            "IzAwMDAwMCJSCWZvbnRDb2xvchJ0Cghsb2dvX3VybBgFIAEoCUJZkkFWSlQi",
+            "aHR0cHM6Ly9hY21lLmNvbS9hc3NldHMvdjEvMTY1NjE3ODUwNjkyNjU0NjAx",
+            "L3BvbGljeS9sYWJlbC9sb2dvLTE4MDk1MDQxNjMyMTQ5NDY1NyJSB2xvZ29V",
+            "cmwSdAoIaWNvbl91cmwYBiABKAlCWZJBVkpUImh0dHBzOi8vYWNtZS5jb20v",
             "YXNzZXRzL3YxLzE2NTYxNzg1MDY5MjY1NDYwMS9wb2xpY3kvbGFiZWwvaWNv",
             "bi0xODA5NTA0OTg4NzQxNzg4MTciUgdpY29uVXJsKmcKCVRoZW1lTW9kZRIa",
             "ChZUSEVNRV9NT0RFX1VOU1BFQ0lGSUVEEAASEwoPVEhFTUVfTU9ERV9BVVRP",
@@ -143,6 +132,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "light_theme" field.</summary>
     public const int LightThemeFieldNumber = 1;
     private global::Zitadel.Settings.V2.Theme lightTheme_;
+    /// <summary>
+    /// Theme used for light mode.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Settings.V2.Theme LightTheme {
@@ -155,6 +147,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "dark_theme" field.</summary>
     public const int DarkThemeFieldNumber = 2;
     private global::Zitadel.Settings.V2.Theme darkTheme_;
+    /// <summary>
+    /// Theme used for dark mode.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Settings.V2.Theme DarkTheme {
@@ -167,6 +162,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "font_url" field.</summary>
     public const int FontUrlFieldNumber = 3;
     private string fontUrl_ = "";
+    /// <summary>
+    /// The url where the font is served.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FontUrl {
@@ -180,7 +178,7 @@ namespace Zitadel.Settings.V2 {
     public const int HideLoginNameSuffixFieldNumber = 4;
     private bool hideLoginNameSuffix_;
     /// <summary>
-    /// hides the org suffix on the login form if the scope \"urn:zitadel:iam:org:domain:primary:{domainname}\" is set
+    /// If enabled, the organization suffix will be hidden on the login form if the scope \"urn:zitadel:iam:org:domain:primary:{domainname}\" is used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -194,6 +192,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "disable_watermark" field.</summary>
     public const int DisableWatermarkFieldNumber = 5;
     private bool disableWatermark_;
+    /// <summary>
+    /// If enabled, the Zitadel logo will not be displayed on the login screen.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool DisableWatermark {
@@ -207,7 +208,8 @@ namespace Zitadel.Settings.V2 {
     public const int ResourceOwnerTypeFieldNumber = 6;
     private global::Zitadel.Settings.V2.ResourceOwnerType resourceOwnerType_ = global::Zitadel.Settings.V2.ResourceOwnerType.Unspecified;
     /// <summary>
-    /// resource_owner_type returns if the setting is managed on the organization or on the instance
+    /// ResourceOwnerType returns if the setting is managed on the organization explicitly or
+    /// fell back on the instance settings.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -221,6 +223,10 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "theme_mode" field.</summary>
     public const int ThemeModeFieldNumber = 7;
     private global::Zitadel.Settings.V2.ThemeMode themeMode_ = global::Zitadel.Settings.V2.ThemeMode.Unspecified;
+    /// <summary>
+    /// States which themes will be used. If auto is selected, the theme will be changed based on the users system preferences.
+    /// You can also choose to only allow dark or light theme.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Settings.V2.ThemeMode ThemeMode {
@@ -587,7 +593,7 @@ namespace Zitadel.Settings.V2 {
     public const int PrimaryColorFieldNumber = 1;
     private string primaryColor_ = "";
     /// <summary>
-    /// hex value for primary color
+    /// The hex value for primary color.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -602,7 +608,7 @@ namespace Zitadel.Settings.V2 {
     public const int BackgroundColorFieldNumber = 2;
     private string backgroundColor_ = "";
     /// <summary>
-    /// hex value for background color
+    /// The hex value for background color.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -617,7 +623,7 @@ namespace Zitadel.Settings.V2 {
     public const int WarnColorFieldNumber = 3;
     private string warnColor_ = "";
     /// <summary>
-    /// hex value for warning color
+    /// The hex value for warning color.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -632,7 +638,7 @@ namespace Zitadel.Settings.V2 {
     public const int FontColorFieldNumber = 4;
     private string fontColor_ = "";
     /// <summary>
-    /// hex value for font color
+    /// The value for font color.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -647,7 +653,7 @@ namespace Zitadel.Settings.V2 {
     public const int LogoUrlFieldNumber = 5;
     private string logoUrl_ = "";
     /// <summary>
-    /// url where the logo is served
+    /// The URL where the logo is served.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -662,7 +668,7 @@ namespace Zitadel.Settings.V2 {
     public const int IconUrlFieldNumber = 6;
     private string iconUrl_ = "";
     /// <summary>
-    /// url where the icon is served
+    /// The URL where the icon is served.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

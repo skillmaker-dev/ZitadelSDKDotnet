@@ -187,9 +187,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -208,9 +205,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -230,9 +224,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -250,9 +241,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -271,9 +259,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -292,9 +277,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -313,9 +295,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -404,9 +383,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -425,9 +401,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -444,9 +417,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -465,9 +435,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -485,9 +452,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -507,9 +471,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -527,9 +488,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -549,9 +507,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -570,9 +525,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -593,9 +545,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -614,9 +563,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -637,9 +583,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -656,9 +599,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -677,9 +617,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -696,9 +633,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -717,9 +651,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -737,9 +668,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -759,9 +687,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -779,9 +704,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -801,9 +723,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -821,9 +740,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -843,9 +759,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -863,9 +776,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -885,9 +795,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -905,9 +812,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -927,9 +831,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -947,9 +848,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -969,9 +867,6 @@ namespace Zitadel.Action.V2 {
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

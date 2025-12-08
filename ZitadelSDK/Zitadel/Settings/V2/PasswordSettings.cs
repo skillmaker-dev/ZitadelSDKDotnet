@@ -27,33 +27,24 @@ namespace Zitadel.Settings.V2 {
             "Cit6aXRhZGVsL3NldHRpbmdzL3YyL3Bhc3N3b3JkX3NldHRpbmdzLnByb3Rv",
             "EhN6aXRhZGVsLnNldHRpbmdzLnYyGi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9v",
             "cHRpb25zL2Fubm90YXRpb25zLnByb3RvGiJ6aXRhZGVsL3NldHRpbmdzL3Yy",
-            "L3NldHRpbmdzLnByb3RvIs0FChpQYXNzd29yZENvbXBsZXhpdHlTZXR0aW5n",
-            "cxJSCgptaW5fbGVuZ3RoGAEgASgEQjOSQTAyKURlZmluZXMgdGhlIG1pbmlt",
-            "dW0gbGVuZ3RoIG9mIGEgcGFzc3dvcmQuSgMiOCJSCW1pbkxlbmd0aBJtChJy",
-            "ZXF1aXJlc191cHBlcmNhc2UYAiABKAhCPpJBOzI5ZGVmaW5lcyBpZiB0aGUg",
-            "cGFzc3dvcmQgTVVTVCBjb250YWluIGFuIHVwcGVyIGNhc2UgbGV0dGVyUhFy",
-            "ZXF1aXJlc1VwcGVyY2FzZRJrChJyZXF1aXJlc19sb3dlcmNhc2UYAyABKAhC",
-            "PJJBOTI3ZGVmaW5lcyBpZiB0aGUgcGFzc3dvcmQgTVVTVCBjb250YWluIGEg",
-            "bG93ZXJjYXNlIGxldHRlclIRcmVxdWlyZXNMb3dlcmNhc2USWwoPcmVxdWly",
-            "ZXNfbnVtYmVyGAQgASgIQjKSQS8yLWRlZmluZXMgaWYgdGhlIHBhc3N3b3Jk",
-            "IE1VU1QgY29udGFpbiBhIG51bWJlclIOcmVxdWlyZXNOdW1iZXISZQoPcmVx",
-            "dWlyZXNfc3ltYm9sGAUgASgIQjySQTkyN2RlZmluZXMgaWYgdGhlIHBhc3N3",
-            "b3JkIE1VU1QgY29udGFpbiBhIHN5bWJvbC4gRS5nLiAiJCJSDnJlcXVpcmVz",
-            "U3ltYm9sEroBChNyZXNvdXJjZV9vd25lcl90eXBlGAYgASgOMiYueml0YWRl",
-            "bC5zZXR0aW5ncy52Mi5SZXNvdXJjZU93bmVyVHlwZUJikkFfMl1yZXNvdXJj",
-            "ZV9vd25lcl90eXBlIHJldHVybnMgaWYgdGhlIHNldHRpbmdzIGlzIG1hbmFn",
-            "ZWQgb24gdGhlIG9yZ2FuaXphdGlvbiBvciBvbiB0aGUgaW5zdGFuY2VSEXJl",
-            "c291cmNlT3duZXJUeXBlItMBChZQYXNzd29yZEV4cGlyeVNldHRpbmdzEiwK",
-            "DG1heF9hZ2VfZGF5cxgBIAEoBEIKkkEHSgUiMzY1IlIKbWF4QWdlRGF5cxIz",
-            "ChBleHBpcmVfd2Fybl9kYXlzGAIgASgEQgmSQQZKBCIxMCJSDmV4cGlyZVdh",
-            "cm5EYXlzElYKE3Jlc291cmNlX293bmVyX3R5cGUYAyABKA4yJi56aXRhZGVs",
-            "LnNldHRpbmdzLnYyLlJlc291cmNlT3duZXJUeXBlUhFyZXNvdXJjZU93bmVy",
-            "VHlwZULYAQoXY29tLnppdGFkZWwuc2V0dGluZ3MudjJCFVBhc3N3b3JkU2V0",
-            "dGluZ3NQcm90b1ABWjhnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cv",
-            "Z3JwYy9zZXR0aW5ncy92MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0",
-            "dGluZ3MuVjLKAhNaaXRhZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0",
-            "aW5nc1xWMlxHUEJNZXRhZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIG",
-            "cHJvdG8z"));
+            "L3NldHRpbmdzLnByb3RvIs0CChpQYXNzd29yZENvbXBsZXhpdHlTZXR0aW5n",
+            "cxInCgptaW5fbGVuZ3RoGAEgASgEQgiSQQVKAyI4IlIJbWluTGVuZ3RoEi0K",
+            "EnJlcXVpcmVzX3VwcGVyY2FzZRgCIAEoCFIRcmVxdWlyZXNVcHBlcmNhc2US",
+            "LQoScmVxdWlyZXNfbG93ZXJjYXNlGAMgASgIUhFyZXF1aXJlc0xvd2VyY2Fz",
+            "ZRInCg9yZXF1aXJlc19udW1iZXIYBCABKAhSDnJlcXVpcmVzTnVtYmVyEicK",
+            "D3JlcXVpcmVzX3N5bWJvbBgFIAEoCFIOcmVxdWlyZXNTeW1ib2wSVgoTcmVz",
+            "b3VyY2Vfb3duZXJfdHlwZRgGIAEoDjImLnppdGFkZWwuc2V0dGluZ3MudjIu",
+            "UmVzb3VyY2VPd25lclR5cGVSEXJlc291cmNlT3duZXJUeXBlItMBChZQYXNz",
+            "d29yZEV4cGlyeVNldHRpbmdzEiwKDG1heF9hZ2VfZGF5cxgBIAEoBEIKkkEH",
+            "SgUiMzY1IlIKbWF4QWdlRGF5cxIzChBleHBpcmVfd2Fybl9kYXlzGAIgASgE",
+            "QgmSQQZKBCIxMCJSDmV4cGlyZVdhcm5EYXlzElYKE3Jlc291cmNlX293bmVy",
+            "X3R5cGUYAyABKA4yJi56aXRhZGVsLnNldHRpbmdzLnYyLlJlc291cmNlT3du",
+            "ZXJUeXBlUhFyZXNvdXJjZU93bmVyVHlwZULYAQoXY29tLnppdGFkZWwuc2V0",
+            "dGluZ3MudjJCFVBhc3N3b3JkU2V0dGluZ3NQcm90b1ABWjhnaXRodWIuY29t",
+            "L3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92MjtzZXR0aW5n",
+            "c6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRhZGVsXFNldHRp",
+            "bmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRhZGF0YeoCFVpp",
+            "dGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -118,6 +109,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "min_length" field.</summary>
     public const int MinLengthFieldNumber = 1;
     private ulong minLength_;
+    /// <summary>
+    /// The minimum length a password must have.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MinLength {
@@ -130,6 +124,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "requires_uppercase" field.</summary>
     public const int RequiresUppercaseFieldNumber = 2;
     private bool requiresUppercase_;
+    /// <summary>
+    /// Defines if the password MUST contain an upper case letter.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool RequiresUppercase {
@@ -142,6 +139,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "requires_lowercase" field.</summary>
     public const int RequiresLowercaseFieldNumber = 3;
     private bool requiresLowercase_;
+    /// <summary>
+    /// Defines if the password MUST contain a lowercase letter.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool RequiresLowercase {
@@ -154,6 +154,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "requires_number" field.</summary>
     public const int RequiresNumberFieldNumber = 4;
     private bool requiresNumber_;
+    /// <summary>
+    /// Defines if the password MUST contain a number.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool RequiresNumber {
@@ -166,6 +169,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "requires_symbol" field.</summary>
     public const int RequiresSymbolFieldNumber = 5;
     private bool requiresSymbol_;
+    /// <summary>
+    /// Defines if the password MUST contain a symbol or special character. E.g. "$"
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool RequiresSymbol {
@@ -179,7 +185,8 @@ namespace Zitadel.Settings.V2 {
     public const int ResourceOwnerTypeFieldNumber = 6;
     private global::Zitadel.Settings.V2.ResourceOwnerType resourceOwnerType_ = global::Zitadel.Settings.V2.ResourceOwnerType.Unspecified;
     /// <summary>
-    /// resource_owner_type returns if the settings is managed on the organization or on the instance
+    /// ResourceOwnerType returns if the settings is managed on the organization explicitly or
+    /// fell back on the instance settings.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -532,7 +539,8 @@ namespace Zitadel.Settings.V2 {
     public const int ResourceOwnerTypeFieldNumber = 3;
     private global::Zitadel.Settings.V2.ResourceOwnerType resourceOwnerType_ = global::Zitadel.Settings.V2.ResourceOwnerType.Unspecified;
     /// <summary>
-    /// resource_owner_type returns if the settings is managed on the organization or on the instance
+    /// ResourceOwnerType returns if the settings is managed on the organization explicitly or
+    /// fail back on the instance settings.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

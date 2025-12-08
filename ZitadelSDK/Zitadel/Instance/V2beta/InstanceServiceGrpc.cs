@@ -11,6 +11,8 @@ namespace Zitadel.Instance.V2beta {
   /// <summary>
   /// Service to manage instances and their domains.
   /// The service provides methods to create, update, delete and list instances and their domains.
+  ///
+  /// Deprecated: use instance service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
   public static partial class InstanceService
   {
@@ -183,6 +185,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Delete Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Deletes an instance with the given ID.
       ///
       /// Required permissions:
@@ -199,6 +203,8 @@ namespace Zitadel.Instance.V2beta {
 
       /// <summary>
       /// Get Instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the instance in the current context.
       ///
@@ -219,6 +225,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Update Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Updates instance in context with the given name.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -237,6 +245,8 @@ namespace Zitadel.Instance.V2beta {
 
       /// <summary>
       /// List Instances
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists instances matching the given query.
       /// The query can be used to filter either by instance ID or domain.
@@ -257,6 +267,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Add Custom Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds a custom domain to the instance in context.
       ///
       /// The instance_id in the input message will be used in the future
@@ -275,6 +287,8 @@ namespace Zitadel.Instance.V2beta {
 
       /// <summary>
       /// Remove Custom Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes a custom domain from the instance.
       ///
@@ -295,6 +309,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// List Custom Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Lists custom domains of the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -313,6 +329,8 @@ namespace Zitadel.Instance.V2beta {
 
       /// <summary>
       /// Add Trusted Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds a trusted domain to the instance.
       ///
@@ -333,6 +351,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Remove Trusted Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes a trusted domain from the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -351,6 +371,8 @@ namespace Zitadel.Instance.V2beta {
 
       /// <summary>
       /// List Trusted Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists trusted domains of the instance.
       ///
@@ -400,6 +422,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Delete Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Deletes an instance with the given ID.
       ///
       /// Required permissions:
@@ -418,6 +442,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Delete Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Deletes an instance with the given ID.
       ///
       /// Required permissions:
@@ -433,6 +459,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Delete Instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Deletes an instance with the given ID.
       ///
@@ -452,6 +480,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Delete Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Deletes an instance with the given ID.
       ///
       /// Required permissions:
@@ -467,6 +497,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Get Instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the instance in the current context.
       ///
@@ -488,6 +520,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Get Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the instance in the current context.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -505,6 +539,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Get Instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the instance in the current context.
       ///
@@ -526,6 +562,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Get Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the instance in the current context.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -543,6 +581,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Update Instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Updates instance in context with the given name.
       ///
@@ -564,6 +604,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Update Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Updates instance in context with the given name.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -581,6 +623,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Update Instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Updates instance in context with the given name.
       ///
@@ -602,6 +646,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Update Instance
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Updates instance in context with the given name.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -619,6 +665,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Instances
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists instances matching the given query.
       /// The query can be used to filter either by instance ID or domain.
@@ -640,6 +688,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// List Instances
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Lists instances matching the given query.
       /// The query can be used to filter either by instance ID or domain.
       /// The request is paginated and returns 100 results by default.
@@ -657,6 +707,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Instances
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists instances matching the given query.
       /// The query can be used to filter either by instance ID or domain.
@@ -678,6 +730,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// List Instances
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Lists instances matching the given query.
       /// The query can be used to filter either by instance ID or domain.
       /// The request is paginated and returns 100 results by default.
@@ -695,6 +749,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Add Custom Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds a custom domain to the instance in context.
       ///
@@ -716,6 +772,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Add Custom Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds a custom domain to the instance in context.
       ///
       /// The instance_id in the input message will be used in the future
@@ -733,6 +791,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Add Custom Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds a custom domain to the instance in context.
       ///
@@ -754,6 +814,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Add Custom Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds a custom domain to the instance in context.
       ///
       /// The instance_id in the input message will be used in the future
@@ -771,6 +833,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Remove Custom Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes a custom domain from the instance.
       ///
@@ -792,6 +856,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Remove Custom Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes a custom domain from the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -809,6 +875,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Remove Custom Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes a custom domain from the instance.
       ///
@@ -830,6 +898,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Remove Custom Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes a custom domain from the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -847,6 +917,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Custom Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists custom domains of the instance.
       ///
@@ -868,6 +940,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// List Custom Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Lists custom domains of the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -885,6 +959,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Custom Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists custom domains of the instance.
       ///
@@ -906,6 +982,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// List Custom Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Lists custom domains of the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -923,6 +1001,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Add Trusted Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds a trusted domain to the instance.
       ///
@@ -944,6 +1024,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Add Trusted Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds a trusted domain to the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -961,6 +1043,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Add Trusted Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Adds a trusted domain to the instance.
       ///
@@ -982,6 +1066,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Add Trusted Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Adds a trusted domain to the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -999,6 +1085,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Remove Trusted Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes a trusted domain from the instance.
       ///
@@ -1020,6 +1108,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Remove Trusted Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes a trusted domain from the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -1037,6 +1127,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// Remove Trusted Domain
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes a trusted domain from the instance.
       ///
@@ -1058,6 +1150,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// Remove Trusted Domain
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes a trusted domain from the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -1075,6 +1169,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Trusted Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists trusted domains of the instance.
       ///
@@ -1096,6 +1192,8 @@ namespace Zitadel.Instance.V2beta {
       /// <summary>
       /// List Trusted Domains
       ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Lists trusted domains of the instance.
       ///
       /// The instance_id in the input message will be used in the future.
@@ -1113,6 +1211,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Trusted Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists trusted domains of the instance.
       ///
@@ -1133,6 +1233,8 @@ namespace Zitadel.Instance.V2beta {
       }
       /// <summary>
       /// List Trusted Domains
+      ///
+      /// Deprecated: please move to the corresponding endpoint under instance service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Lists trusted domains of the instance.
       ///

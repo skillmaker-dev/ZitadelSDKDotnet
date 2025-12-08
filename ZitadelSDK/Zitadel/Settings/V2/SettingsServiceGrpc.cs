@@ -213,7 +213,12 @@ namespace Zitadel.Settings.V2 {
     public abstract partial class SettingsServiceBase
     {
       /// <summary>
-      /// Get basic information over the instance
+      /// Get General Settings
+      ///
+      /// Get basic information of the instance like the default organization, default language and supported languages.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -225,7 +230,14 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the login settings
+      /// Get Login Settings
+      ///
+      /// Get the login settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -237,7 +249,21 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the current active identity providers
+      /// Get Active Identity Providers
+      ///
+      /// Get the current active identity providers for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned identity providers will fall back to the active instance identity providers
+      /// if not explicitly set on the organization.
+      ///
+      /// Optionally, filter the identity providers by their allowed actions:
+      ///   - creation_allowed: only return identity providers that are allowed for user creation
+      ///   - linking_allowed: only return identity providers that are allowed for linking to existing users
+      ///   - auto_creation: only return identity providers that are allowed for automatic user creation
+      ///   - auto_linking: only return identity providers that are allowed for automatic linking to existing users
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -249,7 +275,14 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the password complexity settings
+      /// Get Password Complexity Settings
+      ///
+      /// Get the password complexity settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -261,7 +294,14 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the password expiry settings
+      /// Get Password Expiry Settings
+      ///
+      /// Get the password expiry settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -273,7 +313,14 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the current active branding settings
+      /// Get Branding Settings
+      ///
+      /// Get the current active branding settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -285,7 +332,14 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the domain settings
+      /// Get Domain Settings
+      ///
+      /// Get the domain settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -297,7 +351,14 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the legal and support settings
+      /// Get Legal and Support Settings
+      ///
+      /// Get the legal and support settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -309,7 +370,16 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the lockout settings
+      /// Get Lockout Settings
+      ///
+      /// Get the lockout settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Lockout settings define how many failed attempts are allowed before a user is locked out.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -321,7 +391,13 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get the security settings
+      /// Get Security Settings
+      ///
+      /// Get the security settings of the ZITADEL instance.
+      /// Security settings include settings like enabling impersonation and embedded iframe settings.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -333,7 +409,12 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Set the security settings
+      /// Set Security Settings
+      ///
+      /// Set the security settings of the instance.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.write`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -416,7 +497,12 @@ namespace Zitadel.Settings.V2 {
       }
 
       /// <summary>
-      /// Get basic information over the instance
+      /// Get General Settings
+      ///
+      /// Get basic information of the instance like the default organization, default language and supported languages.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -429,7 +515,12 @@ namespace Zitadel.Settings.V2 {
         return GetGeneralSettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get basic information over the instance
+      /// Get General Settings
+      ///
+      /// Get basic information of the instance like the default organization, default language and supported languages.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -440,7 +531,12 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetGeneralSettings, null, options, request);
       }
       /// <summary>
-      /// Get basic information over the instance
+      /// Get General Settings
+      ///
+      /// Get basic information of the instance like the default organization, default language and supported languages.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -453,7 +549,12 @@ namespace Zitadel.Settings.V2 {
         return GetGeneralSettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get basic information over the instance
+      /// Get General Settings
+      ///
+      /// Get basic information of the instance like the default organization, default language and supported languages.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -464,7 +565,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetGeneralSettings, null, options, request);
       }
       /// <summary>
-      /// Get the login settings
+      /// Get Login Settings
+      ///
+      /// Get the login settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -477,7 +585,14 @@ namespace Zitadel.Settings.V2 {
         return GetLoginSettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the login settings
+      /// Get Login Settings
+      ///
+      /// Get the login settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -488,7 +603,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetLoginSettings, null, options, request);
       }
       /// <summary>
-      /// Get the login settings
+      /// Get Login Settings
+      ///
+      /// Get the login settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -501,7 +623,14 @@ namespace Zitadel.Settings.V2 {
         return GetLoginSettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the login settings
+      /// Get Login Settings
+      ///
+      /// Get the login settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -512,7 +641,21 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetLoginSettings, null, options, request);
       }
       /// <summary>
-      /// Get the current active identity providers
+      /// Get Active Identity Providers
+      ///
+      /// Get the current active identity providers for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned identity providers will fall back to the active instance identity providers
+      /// if not explicitly set on the organization.
+      ///
+      /// Optionally, filter the identity providers by their allowed actions:
+      ///   - creation_allowed: only return identity providers that are allowed for user creation
+      ///   - linking_allowed: only return identity providers that are allowed for linking to existing users
+      ///   - auto_creation: only return identity providers that are allowed for automatic user creation
+      ///   - auto_linking: only return identity providers that are allowed for automatic linking to existing users
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -525,7 +668,21 @@ namespace Zitadel.Settings.V2 {
         return GetActiveIdentityProviders(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the current active identity providers
+      /// Get Active Identity Providers
+      ///
+      /// Get the current active identity providers for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned identity providers will fall back to the active instance identity providers
+      /// if not explicitly set on the organization.
+      ///
+      /// Optionally, filter the identity providers by their allowed actions:
+      ///   - creation_allowed: only return identity providers that are allowed for user creation
+      ///   - linking_allowed: only return identity providers that are allowed for linking to existing users
+      ///   - auto_creation: only return identity providers that are allowed for automatic user creation
+      ///   - auto_linking: only return identity providers that are allowed for automatic linking to existing users
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -536,7 +693,21 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetActiveIdentityProviders, null, options, request);
       }
       /// <summary>
-      /// Get the current active identity providers
+      /// Get Active Identity Providers
+      ///
+      /// Get the current active identity providers for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned identity providers will fall back to the active instance identity providers
+      /// if not explicitly set on the organization.
+      ///
+      /// Optionally, filter the identity providers by their allowed actions:
+      ///   - creation_allowed: only return identity providers that are allowed for user creation
+      ///   - linking_allowed: only return identity providers that are allowed for linking to existing users
+      ///   - auto_creation: only return identity providers that are allowed for automatic user creation
+      ///   - auto_linking: only return identity providers that are allowed for automatic linking to existing users
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -549,7 +720,21 @@ namespace Zitadel.Settings.V2 {
         return GetActiveIdentityProvidersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the current active identity providers
+      /// Get Active Identity Providers
+      ///
+      /// Get the current active identity providers for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned identity providers will fall back to the active instance identity providers
+      /// if not explicitly set on the organization.
+      ///
+      /// Optionally, filter the identity providers by their allowed actions:
+      ///   - creation_allowed: only return identity providers that are allowed for user creation
+      ///   - linking_allowed: only return identity providers that are allowed for linking to existing users
+      ///   - auto_creation: only return identity providers that are allowed for automatic user creation
+      ///   - auto_linking: only return identity providers that are allowed for automatic linking to existing users
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -560,7 +745,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetActiveIdentityProviders, null, options, request);
       }
       /// <summary>
-      /// Get the password complexity settings
+      /// Get Password Complexity Settings
+      ///
+      /// Get the password complexity settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -573,7 +765,14 @@ namespace Zitadel.Settings.V2 {
         return GetPasswordComplexitySettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the password complexity settings
+      /// Get Password Complexity Settings
+      ///
+      /// Get the password complexity settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -584,7 +783,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetPasswordComplexitySettings, null, options, request);
       }
       /// <summary>
-      /// Get the password complexity settings
+      /// Get Password Complexity Settings
+      ///
+      /// Get the password complexity settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -597,7 +803,14 @@ namespace Zitadel.Settings.V2 {
         return GetPasswordComplexitySettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the password complexity settings
+      /// Get Password Complexity Settings
+      ///
+      /// Get the password complexity settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -608,7 +821,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetPasswordComplexitySettings, null, options, request);
       }
       /// <summary>
-      /// Get the password expiry settings
+      /// Get Password Expiry Settings
+      ///
+      /// Get the password expiry settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -621,7 +841,14 @@ namespace Zitadel.Settings.V2 {
         return GetPasswordExpirySettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the password expiry settings
+      /// Get Password Expiry Settings
+      ///
+      /// Get the password expiry settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -632,7 +859,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetPasswordExpirySettings, null, options, request);
       }
       /// <summary>
-      /// Get the password expiry settings
+      /// Get Password Expiry Settings
+      ///
+      /// Get the password expiry settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -645,7 +879,14 @@ namespace Zitadel.Settings.V2 {
         return GetPasswordExpirySettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the password expiry settings
+      /// Get Password Expiry Settings
+      ///
+      /// Get the password expiry settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -656,7 +897,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetPasswordExpirySettings, null, options, request);
       }
       /// <summary>
-      /// Get the current active branding settings
+      /// Get Branding Settings
+      ///
+      /// Get the current active branding settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -669,7 +917,14 @@ namespace Zitadel.Settings.V2 {
         return GetBrandingSettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the current active branding settings
+      /// Get Branding Settings
+      ///
+      /// Get the current active branding settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -680,7 +935,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetBrandingSettings, null, options, request);
       }
       /// <summary>
-      /// Get the current active branding settings
+      /// Get Branding Settings
+      ///
+      /// Get the current active branding settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -693,7 +955,14 @@ namespace Zitadel.Settings.V2 {
         return GetBrandingSettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the current active branding settings
+      /// Get Branding Settings
+      ///
+      /// Get the current active branding settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -704,7 +973,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetBrandingSettings, null, options, request);
       }
       /// <summary>
-      /// Get the domain settings
+      /// Get Domain Settings
+      ///
+      /// Get the domain settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -717,7 +993,14 @@ namespace Zitadel.Settings.V2 {
         return GetDomainSettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the domain settings
+      /// Get Domain Settings
+      ///
+      /// Get the domain settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -728,7 +1011,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetDomainSettings, null, options, request);
       }
       /// <summary>
-      /// Get the domain settings
+      /// Get Domain Settings
+      ///
+      /// Get the domain settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -741,7 +1031,14 @@ namespace Zitadel.Settings.V2 {
         return GetDomainSettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the domain settings
+      /// Get Domain Settings
+      ///
+      /// Get the domain settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -752,7 +1049,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetDomainSettings, null, options, request);
       }
       /// <summary>
-      /// Get the legal and support settings
+      /// Get Legal and Support Settings
+      ///
+      /// Get the legal and support settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -765,7 +1069,14 @@ namespace Zitadel.Settings.V2 {
         return GetLegalAndSupportSettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the legal and support settings
+      /// Get Legal and Support Settings
+      ///
+      /// Get the legal and support settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -776,7 +1087,14 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetLegalAndSupportSettings, null, options, request);
       }
       /// <summary>
-      /// Get the legal and support settings
+      /// Get Legal and Support Settings
+      ///
+      /// Get the legal and support settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -789,7 +1107,14 @@ namespace Zitadel.Settings.V2 {
         return GetLegalAndSupportSettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the legal and support settings
+      /// Get Legal and Support Settings
+      ///
+      /// Get the legal and support settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -800,7 +1125,16 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetLegalAndSupportSettings, null, options, request);
       }
       /// <summary>
-      /// Get the lockout settings
+      /// Get Lockout Settings
+      ///
+      /// Get the lockout settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Lockout settings define how many failed attempts are allowed before a user is locked out.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -813,7 +1147,16 @@ namespace Zitadel.Settings.V2 {
         return GetLockoutSettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the lockout settings
+      /// Get Lockout Settings
+      ///
+      /// Get the lockout settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Lockout settings define how many failed attempts are allowed before a user is locked out.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -824,7 +1167,16 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetLockoutSettings, null, options, request);
       }
       /// <summary>
-      /// Get the lockout settings
+      /// Get Lockout Settings
+      ///
+      /// Get the lockout settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Lockout settings define how many failed attempts are allowed before a user is locked out.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -837,7 +1189,16 @@ namespace Zitadel.Settings.V2 {
         return GetLockoutSettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the lockout settings
+      /// Get Lockout Settings
+      ///
+      /// Get the lockout settings for the requested context.
+      /// This can be the instance or an organization. In case of an organization,
+      /// the returned settings will fall back to the instance settings if not explicitly set on the organization.
+      ///
+      /// Lockout settings define how many failed attempts are allowed before a user is locked out.
+      ///
+      /// Required permissions:
+      ///   - `policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -848,7 +1209,13 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetLockoutSettings, null, options, request);
       }
       /// <summary>
-      /// Get the security settings
+      /// Get Security Settings
+      ///
+      /// Get the security settings of the ZITADEL instance.
+      /// Security settings include settings like enabling impersonation and embedded iframe settings.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -861,7 +1228,13 @@ namespace Zitadel.Settings.V2 {
         return GetSecuritySettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the security settings
+      /// Get Security Settings
+      ///
+      /// Get the security settings of the ZITADEL instance.
+      /// Security settings include settings like enabling impersonation and embedded iframe settings.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -872,7 +1245,13 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetSecuritySettings, null, options, request);
       }
       /// <summary>
-      /// Get the security settings
+      /// Get Security Settings
+      ///
+      /// Get the security settings of the ZITADEL instance.
+      /// Security settings include settings like enabling impersonation and embedded iframe settings.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -885,7 +1264,13 @@ namespace Zitadel.Settings.V2 {
         return GetSecuritySettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get the security settings
+      /// Get Security Settings
+      ///
+      /// Get the security settings of the ZITADEL instance.
+      /// Security settings include settings like enabling impersonation and embedded iframe settings.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -896,7 +1281,12 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetSecuritySettings, null, options, request);
       }
       /// <summary>
-      /// Set the security settings
+      /// Set Security Settings
+      ///
+      /// Set the security settings of the instance.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -909,7 +1299,12 @@ namespace Zitadel.Settings.V2 {
         return SetSecuritySettings(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the security settings
+      /// Set Security Settings
+      ///
+      /// Set the security settings of the instance.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -920,7 +1315,12 @@ namespace Zitadel.Settings.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_SetSecuritySettings, null, options, request);
       }
       /// <summary>
-      /// Set the security settings
+      /// Set Security Settings
+      ///
+      /// Set the security settings of the instance.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -933,7 +1333,12 @@ namespace Zitadel.Settings.V2 {
         return SetSecuritySettingsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Set the security settings
+      /// Set Security Settings
+      ///
+      /// Set the security settings of the instance.
+      ///
+      /// Required permissions:
+      ///   - `iam.policy.write`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

@@ -132,6 +132,9 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "condition" field.</summary>
     public const int ConditionFieldNumber = 1;
     private global::Zitadel.Action.V2.Condition condition_;
+    /// <summary>
+    /// The condition under which the execution is triggered.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Action.V2.Condition Condition {
@@ -178,6 +181,9 @@ namespace Zitadel.Action.V2 {
     private readonly pbc::RepeatedField<string> targets_ = new pbc::RepeatedField<string>();
     /// <summary>
     /// Ordered list of targets called during the execution.
+    /// The order of the targets in this list defines the order of execution.
+    /// If one of the targets fails, depending on the target's type and settings,
+    /// the execution might be interrupted and the following targets will not be called.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -886,7 +892,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "method" field.</summary>
     public const int MethodFieldNumber = 1;
     /// <summary>
-    /// GRPC-method as condition.
+    /// Define a GRPC-method as condition.
+    /// When a request to this method happens, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -915,7 +922,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "service" field.</summary>
     public const int ServiceFieldNumber = 2;
     /// <summary>
-    /// GRPC-service as condition.
+    /// Define a GRPC-service as condition.
+    /// When a request to any method of this service happens, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -944,7 +952,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "all" field.</summary>
     public const int AllFieldNumber = 3;
     /// <summary>
-    /// All calls to any available services and methods as condition.
+    /// Define all calls as condition.
+    /// When a call to any available service happens, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1245,7 +1254,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "method" field.</summary>
     public const int MethodFieldNumber = 1;
     /// <summary>
-    /// GRPC-method as condition.
+    /// Define a GRPC-method as condition.
+    /// Before a response is returned to the client from this method, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1274,7 +1284,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "service" field.</summary>
     public const int ServiceFieldNumber = 2;
     /// <summary>
-    /// GRPC-service as condition.
+    /// Define a GRPC-service as condition.
+    /// Before a response is returned to the client from any method of this service, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1303,7 +1314,9 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "all" field.</summary>
     public const int AllFieldNumber = 3;
     /// <summary>
-    /// All calls to any available services and methods as condition.
+    /// Define all calls as condition.
+    /// Before a response is returned to the client from any available service,
+    /// the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1805,7 +1818,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "event" field.</summary>
     public const int EventFieldNumber = 1;
     /// <summary>
-    /// Event name as condition.
+    /// Define a specific event as condition.
+    /// After this event is created, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1834,7 +1848,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "group" field.</summary>
     public const int GroupFieldNumber = 2;
     /// <summary>
-    /// Event group as condition, all events under this group.
+    /// Define an event group as condition.
+    /// After any event under this group is created, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1863,7 +1878,8 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "all" field.</summary>
     public const int AllFieldNumber = 3;
     /// <summary>
-    /// all events as condition.
+    /// Define all events as condition.
+    /// After any event is created, the execution is triggered.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

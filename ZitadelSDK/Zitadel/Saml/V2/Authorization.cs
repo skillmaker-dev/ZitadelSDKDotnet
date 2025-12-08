@@ -27,38 +27,30 @@ namespace Zitadel.Saml.V2 {
             "CiN6aXRhZGVsL3NhbWwvdjIvYXV0aG9yaXphdGlvbi5wcm90bxIPeml0YWRl",
             "bC5zYW1sLnYyGh5nb29nbGUvcHJvdG9idWYvZHVyYXRpb24ucHJvdG8aH2dv",
             "b2dsZS9wcm90b2J1Zi90aW1lc3RhbXAucHJvdG8aLnByb3RvYy1nZW4tb3Bl",
-            "bmFwaXYyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8iygUKC1NBTUxSZXF1",
-            "ZXN0EioKAmlkGAEgASgJQhqSQRcyFUlEIG9mIHRoZSBTQU1MUmVxdWVzdFIC",
-            "aWQSawoNY3JlYXRpb25fZGF0ZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5U",
-            "aW1lc3RhbXBCKpJBJzIlVGltZSB3aGVuIHRoZSBTQU1MUmVxdWVzdCB3YXMg",
-            "Y3JlYXRlZFIMY3JlYXRpb25EYXRlEloKBmlzc3VlchgDIAEoCUJCkkE/Mj1T",
-            "QU1MIGVudGl0eUlEIG9mIHRoZSBhcHBsaWNhdGlvbiB0aGF0IGNyZWF0ZWQg",
-            "dGhlIFNBTUxSZXF1ZXN0UgZpc3N1ZXISjQEKGmFzc2VydGlvbl9jb25zdW1l",
-            "cl9zZXJ2aWNlGAQgASgJQk+SQUwySlVSTCB3aGljaCBwb2ludHMgYmFjayB0",
-            "byB0aGUgYXNzZXJ0aW9uIGNvbnN1bWVyIHNlcnZpY2Ugb2YgdGhlIGFwcGxp",
-            "Y2F0aW9uUhhhc3NlcnRpb25Db25zdW1lclNlcnZpY2USXAoLcmVsYXlfc3Rh",
-            "dGUYBSABKAlCO5JBODI2UmVsYXlTdGF0ZSBwcm92aWRlZCBieSB0aGUgYXBw",
-            "bGljYXRpb24gZm9yIHRoZSByZXF1ZXN0UgpyZWxheVN0YXRlEk4KB2JpbmRp",
-            "bmcYBiABKAlCNJJBMTIvQmluZGluZyB1c2VkIGJ5IHRoZSBhcHBsaWNhdGlv",
-            "biBmb3IgdGhlIHJlcXVlc3RSB2JpbmRpbmc6hwGSQYMBKoABCipGaW5kIG91",
-            "dCBtb3JlIGFib3V0IFNBTUxSZXF1ZXN0IHBhcmFtZXRlcnMSUmh0dHBzOi8v",
-            "ZG9jcy5vYXNpcy1vcGVuLm9yZy9zZWN1cml0eS9zYW1sL1Bvc3QyLjAvc3N0",
-            "Yy1zYW1sLXRlY2gtb3ZlcnZpZXctMi4wLmh0bWwikAEKEkF1dGhvcml6YXRp",
-            "b25FcnJvchIyCgVlcnJvchgBIAEoDjIcLnppdGFkZWwuc2FtbC52Mi5FcnJv",
-            "clJlYXNvblIFZXJyb3ISMAoRZXJyb3JfZGVzY3JpcHRpb24YAiABKAlIAFIQ",
-            "ZXJyb3JEZXNjcmlwdGlvbogBAUIUChJfZXJyb3JfZGVzY3JpcHRpb24qsQIK",
-            "C0Vycm9yUmVhc29uEhwKGEVSUk9SX1JFQVNPTl9VTlNQRUNJRklFRBAAEiIK",
-            "HkVSUk9SX1JFQVNPTl9WRVJTSU9OX01JU1NNQVRDSBABEh4KGkVSUk9SX1JF",
-            "QVNPTl9BVVRIX05fRkFJTEVEEAISKwonRVJST1JfUkVBU09OX0lOVkFMSURf",
-            "QVRUUl9OQU1FX09SX1ZBTFVFEAMSJgoiRVJST1JfUkVBU09OX0lOVkFMSURf",
-            "TkFNRUlEX1BPTElDWRAEEh8KG0VSUk9SX1JFQVNPTl9SRVFVRVNUX0RFTklF",
-            "RBAFEiQKIEVSUk9SX1JFQVNPTl9SRVFVRVNUX1VOU1VQUE9SVEVEEAYSJAog",
-            "RVJST1JfUkVBU09OX1VOU1VQUE9SVEVEX0JJTkRJTkcQB0K5AQoTY29tLnpp",
-            "dGFkZWwuc2FtbC52MkISQXV0aG9yaXphdGlvblByb3RvUAFaMGdpdGh1Yi5j",
-            "b20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3NhbWwvdjI7c2FtbKICA1pT",
-            "WKoCD1ppdGFkZWwuU2FtbC5WMsoCD1ppdGFkZWxcU2FtbFxWMuICG1ppdGFk",
-            "ZWxcU2FtbFxWMlxHUEJNZXRhZGF0YeoCEVppdGFkZWw6OlNhbWw6OlYyYgZw",
-            "cm90bzM="));
+            "bmFwaXYyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8i+QIKC1NBTUxSZXF1",
+            "ZXN0Eg4KAmlkGAEgASgJUgJpZBI/Cg1jcmVhdGlvbl9kYXRlGAIgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcFIMY3JlYXRpb25EYXRlEhYKBmlz",
+            "c3VlchgDIAEoCVIGaXNzdWVyEjwKGmFzc2VydGlvbl9jb25zdW1lcl9zZXJ2",
+            "aWNlGAQgASgJUhhhc3NlcnRpb25Db25zdW1lclNlcnZpY2USHwoLcmVsYXlf",
+            "c3RhdGUYBSABKAlSCnJlbGF5U3RhdGUSGAoHYmluZGluZxgGIAEoCVIHYmlu",
+            "ZGluZzqHAZJBgwEqgAEKKkZpbmQgb3V0IG1vcmUgYWJvdXQgU0FNTFJlcXVl",
+            "c3QgcGFyYW1ldGVycxJSaHR0cHM6Ly9kb2NzLm9hc2lzLW9wZW4ub3JnL3Nl",
+            "Y3VyaXR5L3NhbWwvUG9zdDIuMC9zc3RjLXNhbWwtdGVjaC1vdmVydmlldy0y",
+            "LjAuaHRtbCKQAQoSQXV0aG9yaXphdGlvbkVycm9yEjIKBWVycm9yGAEgASgO",
+            "Mhwueml0YWRlbC5zYW1sLnYyLkVycm9yUmVhc29uUgVlcnJvchIwChFlcnJv",
+            "cl9kZXNjcmlwdGlvbhgCIAEoCUgAUhBlcnJvckRlc2NyaXB0aW9uiAEBQhQK",
+            "El9lcnJvcl9kZXNjcmlwdGlvbiqxAgoLRXJyb3JSZWFzb24SHAoYRVJST1Jf",
+            "UkVBU09OX1VOU1BFQ0lGSUVEEAASIgoeRVJST1JfUkVBU09OX1ZFUlNJT05f",
+            "TUlTU01BVENIEAESHgoaRVJST1JfUkVBU09OX0FVVEhfTl9GQUlMRUQQAhIr",
+            "CidFUlJPUl9SRUFTT05fSU5WQUxJRF9BVFRSX05BTUVfT1JfVkFMVUUQAxIm",
+            "CiJFUlJPUl9SRUFTT05fSU5WQUxJRF9OQU1FSURfUE9MSUNZEAQSHwobRVJS",
+            "T1JfUkVBU09OX1JFUVVFU1RfREVOSUVEEAUSJAogRVJST1JfUkVBU09OX1JF",
+            "UVVFU1RfVU5TVVBQT1JURUQQBhIkCiBFUlJPUl9SRUFTT05fVU5TVVBQT1JU",
+            "RURfQklORElORxAHQrkBChNjb20ueml0YWRlbC5zYW1sLnYyQhJBdXRob3Jp",
+            "emF0aW9uUHJvdG9QAVowZ2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtn",
+            "L2dycGMvc2FtbC92MjtzYW1sogIDWlNYqgIPWml0YWRlbC5TYW1sLlYyygIP",
+            "Wml0YWRlbFxTYW1sXFYy4gIbWml0YWRlbFxTYW1sXFYyXEdQQk1ldGFkYXRh",
+            "6gIRWml0YWRlbDo6U2FtbDo6VjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Saml.V2.ErrorReason), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -84,6 +76,10 @@ namespace Zitadel.Saml.V2 {
   #endregion
 
   #region Messages
+  /// <summary>
+  /// SAMLRequest contains information about a SAML authentication request.
+  /// see: https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html
+  /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SAMLRequest : pb::IMessage<SAMLRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -137,6 +133,9 @@ namespace Zitadel.Saml.V2 {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// ID of the created SAMLRequest.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -149,6 +148,9 @@ namespace Zitadel.Saml.V2 {
     /// <summary>Field number for the "creation_date" field.</summary>
     public const int CreationDateFieldNumber = 2;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
+    /// <summary>
+    /// Time when the SAMLRequest was created.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp CreationDate {
@@ -161,6 +163,9 @@ namespace Zitadel.Saml.V2 {
     /// <summary>Field number for the "issuer" field.</summary>
     public const int IssuerFieldNumber = 3;
     private string issuer_ = "";
+    /// <summary>
+    /// SAML entityID of the application that created the SAMLRequest.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Issuer {
@@ -173,6 +178,9 @@ namespace Zitadel.Saml.V2 {
     /// <summary>Field number for the "assertion_consumer_service" field.</summary>
     public const int AssertionConsumerServiceFieldNumber = 4;
     private string assertionConsumerService_ = "";
+    /// <summary>
+    /// URL which points back to the assertion consumer service of the application that created the SAMLRequest.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AssertionConsumerService {
@@ -185,6 +193,9 @@ namespace Zitadel.Saml.V2 {
     /// <summary>Field number for the "relay_state" field.</summary>
     public const int RelayStateFieldNumber = 5;
     private string relayState_ = "";
+    /// <summary>
+    /// RelayState provided by the application for the request.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string RelayState {
@@ -197,6 +208,9 @@ namespace Zitadel.Saml.V2 {
     /// <summary>Field number for the "binding" field.</summary>
     public const int BindingFieldNumber = 6;
     private string binding_ = "";
+    /// <summary>
+    /// Binding used by the application for the request.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Binding {

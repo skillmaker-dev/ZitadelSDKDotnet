@@ -27,28 +27,17 @@ namespace Zitadel.Settings.V2 {
             "Cip6aXRhZGVsL3NldHRpbmdzL3YyL2xvY2tvdXRfc2V0dGluZ3MucHJvdG8S",
             "E3ppdGFkZWwuc2V0dGluZ3MudjIaLnByb3RvYy1nZW4tb3BlbmFwaXYyL29w",
             "dGlvbnMvYW5ub3RhdGlvbnMucHJvdG8aInppdGFkZWwvc2V0dGluZ3MvdjIv",
-            "c2V0dGluZ3MucHJvdG8i3wUKD0xvY2tvdXRTZXR0aW5ncxKJAgoVbWF4X3Bh",
-            "c3N3b3JkX2F0dGVtcHRzGAEgASgEQtQBkkHQATLHAU1heGltdW0gcGFzc3dv",
-            "cmQgY2hlY2sgYXR0ZW1wdHMgYmVmb3JlIHRoZSBhY2NvdW50IGdldHMgbG9j",
-            "a2VkLiBBdHRlbXB0cyBhcmUgcmVzZXQgYXMgc29vbiBhcyB0aGUgcGFzc3dv",
-            "cmQgaXMgZW50ZXJlZCBjb3JyZWN0bHkgb3IgdGhlIHBhc3N3b3JkIGlzIHJl",
-            "c2V0LiBJZiBzZXQgdG8gMCB0aGUgYWNjb3VudCB3aWxsIG5ldmVyIGJlIGxv",
-            "Y2tlZC5KBCIxMCJSE21heFBhc3N3b3JkQXR0ZW1wdHMSugEKE3Jlc291cmNl",
-            "X293bmVyX3R5cGUYAiABKA4yJi56aXRhZGVsLnNldHRpbmdzLnYyLlJlc291",
-            "cmNlT3duZXJUeXBlQmKSQV8yXXJlc291cmNlX293bmVyX3R5cGUgcmV0dXJu",
-            "cyBpZiB0aGUgc2V0dGluZ3MgaXMgbWFuYWdlZCBvbiB0aGUgb3JnYW5pemF0",
-            "aW9uIG9yIG9uIHRoZSBpbnN0YW5jZVIRcmVzb3VyY2VPd25lclR5cGUSggIK",
-            "EG1heF9vdHBfYXR0ZW1wdHMYAyABKARC1wGSQdMBMsoBTWF4aW11bSBmYWls",
-            "ZWQgYXR0ZW1wdHMgZm9yIGEgc2luZ2xlIE9UUCB0eXBlIChUT1RQLCBTTVMs",
-            "IEVtYWlsKSBiZWZvcmUgdGhlIGFjY291bnQgZ2V0cyBsb2NrZWQuIEF0dGVt",
-            "cHRzIGFyZSByZXNldCBhcyBzb29uIGFzIHRoZSBPVFAgaXMgZW50ZXJlZCBj",
-            "b3JyZWN0bHkuIElmIHNldCB0byAwIHRoZSBhY2NvdW50IHdpbGwgbmV2ZXIg",
-            "YmUgbG9ja2VkLkoEIjEwIlIObWF4T3RwQXR0ZW1wdHNC1wEKF2NvbS56aXRh",
-            "ZGVsLnNldHRpbmdzLnYyQhRMb2Nrb3V0U2V0dGluZ3NQcm90b1ABWjhnaXRo",
-            "dWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92Mjtz",
-            "ZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRhZGVs",
-            "XFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRhZGF0",
-            "YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
+            "c2V0dGluZ3MucHJvdG8i3QEKD0xvY2tvdXRTZXR0aW5ncxI9ChVtYXhfcGFz",
+            "c3dvcmRfYXR0ZW1wdHMYASABKARCCZJBBkoEIjEwIlITbWF4UGFzc3dvcmRB",
+            "dHRlbXB0cxJWChNyZXNvdXJjZV9vd25lcl90eXBlGAIgASgOMiYueml0YWRl",
+            "bC5zZXR0aW5ncy52Mi5SZXNvdXJjZU93bmVyVHlwZVIRcmVzb3VyY2VPd25l",
+            "clR5cGUSMwoQbWF4X290cF9hdHRlbXB0cxgDIAEoBEIJkkEGSgQiMTAiUg5t",
+            "YXhPdHBBdHRlbXB0c0LXAQoXY29tLnppdGFkZWwuc2V0dGluZ3MudjJCFExv",
+            "Y2tvdXRTZXR0aW5nc1Byb3RvUAFaOGdpdGh1Yi5jb20veml0YWRlbC96aXRh",
+            "ZGVsL3BrZy9ncnBjL3NldHRpbmdzL3YyO3NldHRpbmdzogIDWlNYqgITWml0",
+            "YWRlbC5TZXR0aW5ncy5WMsoCE1ppdGFkZWxcU2V0dGluZ3NcVjLiAh9aaXRh",
+            "ZGVsXFNldHRpbmdzXFYyXEdQQk1ldGFkYXRh6gIVWml0YWRlbDo6U2V0dGlu",
+            "Z3M6OlYyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -109,6 +98,11 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "max_password_attempts" field.</summary>
     public const int MaxPasswordAttemptsFieldNumber = 1;
     private ulong maxPasswordAttempts_;
+    /// <summary>
+    /// The amount of failed password attempts before the account gets locked.
+    /// Attempts are reset as soon as the password is entered correctly or the password is reset.
+    /// If set to 0 the account will never be locked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MaxPasswordAttempts {
@@ -122,7 +116,8 @@ namespace Zitadel.Settings.V2 {
     public const int ResourceOwnerTypeFieldNumber = 2;
     private global::Zitadel.Settings.V2.ResourceOwnerType resourceOwnerType_ = global::Zitadel.Settings.V2.ResourceOwnerType.Unspecified;
     /// <summary>
-    /// resource_owner_type returns if the settings is managed on the organization or on the instance
+    /// ResourceOwnerType returns if the settings is managed on the organization explicitly or
+    /// fell back on the instance settings.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -136,6 +131,11 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "max_otp_attempts" field.</summary>
     public const int MaxOtpAttemptsFieldNumber = 3;
     private ulong maxOtpAttempts_;
+    /// <summary>
+    /// THe amount of failed OTP (TOTP, SMS, Email) attempts before the account gets locked.
+    /// Attempts are reset as soon as the OTP is entered correctly.
+    /// If set to 0 the account will never be locked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong MaxOtpAttempts {

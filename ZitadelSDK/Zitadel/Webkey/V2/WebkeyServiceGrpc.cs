@@ -123,9 +123,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -146,9 +143,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -171,9 +165,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -191,9 +182,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -245,9 +233,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -271,9 +256,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -295,9 +277,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -321,9 +300,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -343,9 +319,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -367,9 +340,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -389,9 +359,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -413,9 +380,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -437,9 +401,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -463,9 +424,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -487,9 +445,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -513,9 +468,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -532,9 +484,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -553,9 +502,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -572,9 +518,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -593,9 +536,6 @@ namespace Zitadel.Webkey.V2 {
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

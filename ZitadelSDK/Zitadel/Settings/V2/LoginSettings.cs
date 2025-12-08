@@ -28,107 +28,72 @@ namespace Zitadel.Settings.V2 {
             "aXRhZGVsLnNldHRpbmdzLnYyGi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9vcHRp",
             "b25zL2Fubm90YXRpb25zLnByb3RvGiJ6aXRhZGVsL3NldHRpbmdzL3YyL3Nl",
             "dHRpbmdzLnByb3RvGhh6aXRhZGVsL2lkcC92Mi9pZHAucHJvdG8aHmdvb2ds",
-            "ZS9wcm90b2J1Zi9kdXJhdGlvbi5wcm90byKSGAoNTG9naW5TZXR0aW5ncxJ+",
-            "ChdhbGxvd191c2VybmFtZV9wYXNzd29yZBgBIAEoCEJGkkFDMkFkZWZpbmVz",
-            "IGlmIGEgdXNlciBpcyBhbGxvd2VkIHRvIGxvZyBpbiB3aXRoIHVzZXJuYW1l",
-            "IGFuZCBwYXNzd29yZFIVYWxsb3dVc2VybmFtZVBhc3N3b3JkEnIKDmFsbG93",
-            "X3JlZ2lzdGVyGAIgASgIQkuSQUgyRmRlZmluZXMgaWYgYSBwZXJzb24gaXMg",
-            "YWxsb3dlZCB0byByZWdpc3RlciBhIHVzZXIgb24gdGhpcyBvcmdhbml6YXRp",
-            "b25SDWFsbG93UmVnaXN0ZXIShAEKEmFsbG93X2V4dGVybmFsX2lkcBgDIAEo",
-            "CEJWkkFTMlFkZWZpbmVzIGlmIGEgdXNlciBpcyBhbGxvd2VkIHRvIGFkZCBh",
-            "IGRlZmluZWQgaWRlbnRpdHkgcHJvdmlkZXIuIEUuZy4gR29vZ2xlIGF1dGhS",
-            "EGFsbG93RXh0ZXJuYWxJZHASVQoJZm9yY2VfbWZhGAQgASgIQjiSQTUyM2Rl",
-            "ZmluZXMgaWYgYSB1c2VyIE1VU1QgdXNlIGEgbXVsdGktZmFjdG9yIHRvIGxv",
-            "ZyBpblIIZm9yY2VNZmESdgoNcGFzc2tleXNfdHlwZRgFIAEoDjIhLnppdGFk",
-            "ZWwuc2V0dGluZ3MudjIuUGFzc2tleXNUeXBlQi6SQSsyKWRlZmluZXMgaWYg",
-            "cGFzc2tleXMgYXJlIGFsbG93ZWQgZm9yIHVzZXJzUgxwYXNza2V5c1R5cGUS",
-            "dwoTaGlkZV9wYXNzd29yZF9yZXNldBgGIAEoCEJHkkFEMkJkZWZpbmVzIGlm",
-            "IHBhc3N3b3JkIHJlc2V0IGxpbmsgc2hvdWxkIGJlIHNob3duIGluIHRoZSBs",
-            "b2dpbiBzY3JlZW5SEWhpZGVQYXNzd29yZFJlc2V0EqsBChhpZ25vcmVfdW5r",
-            "bm93bl91c2VybmFtZXMYByABKAhCcZJBbjJsZGVmaW5lcyBpZiB1bmtub3du",
-            "IHVzZXJuYW1lIG9uIGxvZ2luIHNjcmVlbiBkaXJlY3RseSByZXR1cm5zIGFu",
-            "IGVycm9yIG9yIGFsd2F5cyBkaXNwbGF5cyB0aGUgcGFzc3dvcmQgc2NyZWVu",
-            "UhZpZ25vcmVVbmtub3duVXNlcm5hbWVzEsEBChRkZWZhdWx0X3JlZGlyZWN0",
-            "X3VyaRgIIAEoCUKOAZJBigEyaWRlZmluZXMgd2hlcmUgdGhlIHVzZXIgd2ls",
-            "bCBiZSByZWRpcmVjdGVkIHRvIGlmIHRoZSBsb2dpbiBpcyBzdGFydGVkIHdp",
-            "dGhvdXQgYXBwIGNvbnRleHQgKGUuZy4gZnJvbSBtYWlsKUodImh0dHBzOi8v",
-            "YWNtZS5jb20vdWkvY29uc29sZSJSEmRlZmF1bHRSZWRpcmVjdFVyaRKxAQoX",
-            "cGFzc3dvcmRfY2hlY2tfbGlmZXRpbWUYCSABKAsyGS5nb29nbGUucHJvdG9i",
-            "dWYuRHVyYXRpb25CXpJBWzJORGVmaW5lcyBhZnRlciBob3cgbXVjaCB0aW1l",
-            "IHRoZSB1c2VyIGhhcyB0byByZS1hdXRoZW50aWNhdGUgd2l0aCB0aGUgcGFz",
-            "c3dvcmQuSgkiODY0MDAwcyJSFXBhc3N3b3JkQ2hlY2tMaWZldGltZRLEAQod",
-            "ZXh0ZXJuYWxfbG9naW5fY2hlY2tfbGlmZXRpbWUYCiABKAsyGS5nb29nbGUu",
-            "cHJvdG9idWYuRHVyYXRpb25CZpJBYzJWRGVmaW5lcyBhZnRlciBob3cgbXVj",
-            "aCB0aW1lIHRoZSB1c2VyIGhhcyB0byByZS1hdXRoZW50aWNhdGUgd2l0aCBh",
-            "biBleHRlcm5hbCBwcm92aWRlci5KCSI4NjQwMDBzIlIaZXh0ZXJuYWxMb2dp",
-            "bkNoZWNrTGlmZXRpbWUSoAEKFm1mYV9pbml0X3NraXBfbGlmZXRpbWUYCyAB",
-            "KAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25CUJJBTTI/RGVmaW5lcyBh",
-            "ZnRlciBob3cgbXVjaCB0aW1lIHRoZSBtZmEgcHJvbXB0IHdpbGwgYmUgc2hv",
-            "d24gYWdhaW4uSgoiMjU5MjAwMHMiUhNtZmFJbml0U2tpcExpZmV0aW1lEqMB",
-            "ChxzZWNvbmRfZmFjdG9yX2NoZWNrX2xpZmV0aW1lGAwgASgLMhkuZ29vZ2xl",
-            "LnByb3RvYnVmLkR1cmF0aW9uQkeSQUQyOERlZmluZXMgYWZ0ZXIgaG93IGxv",
-            "bmcgdGhlIHNlY29uZCBmYWN0b3IgY2hlY2sgaXMgdmFsaWQuSggiNjQ4MDBz",
-            "IlIZc2Vjb25kRmFjdG9yQ2hlY2tMaWZldGltZRKaAQobbXVsdGlfZmFjdG9y",
-            "X2NoZWNrX2xpZmV0aW1lGA0gASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0",
-            "aW9uQkCSQT0yMURlZmluZXMgaG93IGxvbmcgdGhlIG11bHRpLWZhY3RvciBj",
-            "aGVjayBpcyB2YWxpZC5KCCI0MzIwMHMiUhhtdWx0aUZhY3RvckNoZWNrTGlm",
-            "ZXRpbWUSTAoOc2Vjb25kX2ZhY3RvcnMYDiADKA4yJS56aXRhZGVsLnNldHRp",
-            "bmdzLnYyLlNlY29uZEZhY3RvclR5cGVSDXNlY29uZEZhY3RvcnMSSQoNbXVs",
-            "dGlfZmFjdG9ycxgPIAMoDjIkLnppdGFkZWwuc2V0dGluZ3MudjIuTXVsdGlG",
-            "YWN0b3JUeXBlUgxtdWx0aUZhY3RvcnMShgIKFmFsbG93X2RvbWFpbl9kaXNj",
-            "b3ZlcnkYECABKAhCzwGSQcsBMsgBSWYgc2V0IHRvIHRydWUsIHRoZSBzdWZm",
-            "aXggKEBkb21haW4uY29tKSBvZiBhbiB1bmtub3duIHVzZXJuYW1lIGlucHV0",
-            "IG9uIHRoZSBsb2dpbiBzY3JlZW4gd2lsbCBiZSBtYXRjaGVkIGFnYWluc3Qg",
-            "dGhlIG9yZyBkb21haW5zIGFuZCB3aWxsIHJlZGlyZWN0IHRvIHRoZSByZWdp",
-            "c3RyYXRpb24gb2YgdGhhdCBvcmdhbml6YXRpb24gb24gc3VjY2Vzcy5SFGFs",
-            "bG93RG9tYWluRGlzY292ZXJ5EqQBChhkaXNhYmxlX2xvZ2luX3dpdGhfZW1h",
-            "aWwYESABKAhCa5JBaDJmZGVmaW5lcyBpZiB0aGUgdXNlciBjYW4gYWRkaXRp",
-            "b25hbGx5ICh0byB0aGUgbG9naW4gbmFtZSkgYmUgaWRlbnRpZmllZCBieSB0",
-            "aGVpciB2ZXJpZmllZCBlbWFpbCBhZGRyZXNzUhVkaXNhYmxlTG9naW5XaXRo",
-            "RW1haWwSowEKGGRpc2FibGVfbG9naW5fd2l0aF9waG9uZRgSIAEoCEJqkkFn",
-            "MmVkZWZpbmVzIGlmIHRoZSB1c2VyIGNhbiBhZGRpdGlvbmFsbHkgKHRvIHRo",
-            "ZSBsb2dpbiBuYW1lKSBiZSBpZGVudGlmaWVkIGJ5IHRoZWlyIHZlcmlmaWVk",
-            "IHBob25lIG51bWJlclIVZGlzYWJsZUxvZ2luV2l0aFBob25lEroBChNyZXNv",
-            "dXJjZV9vd25lcl90eXBlGBMgASgOMiYueml0YWRlbC5zZXR0aW5ncy52Mi5S",
-            "ZXNvdXJjZU93bmVyVHlwZUJikkFfMl1yZXNvdXJjZV9vd25lcl90eXBlIHJl",
-            "dHVybnMgaWYgdGhlIHNldHRpbmdzIGlzIG1hbmFnZWQgb24gdGhlIG9yZ2Fu",
-            "aXphdGlvbiBvciBvbiB0aGUgaW5zdGFuY2VSEXJlc291cmNlT3duZXJUeXBl",
-            "Er4BChRmb3JjZV9tZmFfbG9jYWxfb25seRgWIAEoCEKMAZJBiAEyhQFpZiBh",
-            "Y3RpdmF0ZWQsIG9ubHkgbG9jYWwgYXV0aGVudGljYXRlZCB1c2VycyBhcmUg",
-            "Zm9yY2VkIHRvIHVzZSBNRkEuIEF1dGhlbnRpY2F0aW9uIHRocm91Z2ggSURQ",
-            "cyB3b24ndCBwcm9tcHQgYSBNRkEgc3RlcCBpbiB0aGUgbG9naW4uUhFmb3Jj",
-            "ZU1mYUxvY2FsT25seSKoAQoQSWRlbnRpdHlQcm92aWRlchIOCgJpZBgBIAEo",
-            "CVICaWQSEgoEbmFtZRgCIAEoCVIEbmFtZRI9CgR0eXBlGAMgASgOMikueml0",
-            "YWRlbC5zZXR0aW5ncy52Mi5JZGVudGl0eVByb3ZpZGVyVHlwZVIEdHlwZRIx",
-            "CgdvcHRpb25zGAQgASgLMhcueml0YWRlbC5pZHAudjIuT3B0aW9uc1IHb3B0",
-            "aW9ucyqwAQoQU2Vjb25kRmFjdG9yVHlwZRIiCh5TRUNPTkRfRkFDVE9SX1RZ",
-            "UEVfVU5TUEVDSUZJRUQQABIaChZTRUNPTkRfRkFDVE9SX1RZUEVfT1RQEAES",
-            "GgoWU0VDT05EX0ZBQ1RPUl9UWVBFX1UyRhACEiAKHFNFQ09ORF9GQUNUT1Jf",
-            "VFlQRV9PVFBfRU1BSUwQAxIeChpTRUNPTkRfRkFDVE9SX1RZUEVfT1RQX1NN",
-            "UxAEKmEKD011bHRpRmFjdG9yVHlwZRIhCh1NVUxUSV9GQUNUT1JfVFlQRV9V",
-            "TlNQRUNJRklFRBAAEisKJ01VTFRJX0ZBQ1RPUl9UWVBFX1UyRl9XSVRIX1ZF",
-            "UklGSUNBVElPThABKkgKDFBhc3NrZXlzVHlwZRIdChlQQVNTS0VZU19UWVBF",
-            "X05PVF9BTExPV0VEEAASGQoVUEFTU0tFWVNfVFlQRV9BTExPV0VEEAEq6AMK",
-            "FElkZW50aXR5UHJvdmlkZXJUeXBlEiYKIklERU5USVRZX1BST1ZJREVSX1RZ",
-            "UEVfVU5TUEVDSUZJRUQQABIfChtJREVOVElUWV9QUk9WSURFUl9UWVBFX09J",
-            "REMQARIeChpJREVOVElUWV9QUk9WSURFUl9UWVBFX0pXVBACEh8KG0lERU5U",
-            "SVRZX1BST1ZJREVSX1RZUEVfTERBUBADEiAKHElERU5USVRZX1BST1ZJREVS",
-            "X1RZUEVfT0FVVEgQBBIjCh9JREVOVElUWV9QUk9WSURFUl9UWVBFX0FaVVJF",
-            "X0FEEAUSIQodSURFTlRJVFlfUFJPVklERVJfVFlQRV9HSVRIVUIQBhIkCiBJ",
-            "REVOVElUWV9QUk9WSURFUl9UWVBFX0dJVEhVQl9FUxAHEiEKHUlERU5USVRZ",
-            "X1BST1ZJREVSX1RZUEVfR0lUTEFCEAgSLQopSURFTlRJVFlfUFJPVklERVJf",
-            "VFlQRV9HSVRMQUJfU0VMRl9IT1NURUQQCRIhCh1JREVOVElUWV9QUk9WSURF",
-            "Ul9UWVBFX0dPT0dMRRAKEh8KG0lERU5USVRZX1BST1ZJREVSX1RZUEVfU0FN",
-            "TBALEiAKHElERU5USVRZX1BST1ZJREVSX1RZUEVfQVBQTEUQDELVAQoXY29t",
-            "LnppdGFkZWwuc2V0dGluZ3MudjJCEkxvZ2luU2V0dGluZ3NQcm90b1ABWjhn",
-            "aXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92",
-            "MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRh",
-            "ZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRh",
-            "ZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
+            "ZS9wcm90b2J1Zi9kdXJhdGlvbi5wcm90byLTCwoNTG9naW5TZXR0aW5ncxI6",
+            "ChdhbGxvd191c2VybmFtZV9wYXNzd29yZBgBIAEoCEICGAFSFWFsbG93VXNl",
+            "cm5hbWVQYXNzd29yZBI8ChphbGxvd19sb2NhbF9hdXRoZW50aWNhdGlvbhgU",
+            "IAEoCFIYYWxsb3dMb2NhbEF1dGhlbnRpY2F0aW9uEiUKDmFsbG93X3JlZ2lz",
+            "dGVyGAIgASgIUg1hbGxvd1JlZ2lzdGVyEiwKEmFsbG93X2V4dGVybmFsX2lk",
+            "cBgDIAEoCFIQYWxsb3dFeHRlcm5hbElkcBIbCglmb3JjZV9tZmEYBCABKAhS",
+            "CGZvcmNlTWZhEkYKDXBhc3NrZXlzX3R5cGUYBSABKA4yIS56aXRhZGVsLnNl",
+            "dHRpbmdzLnYyLlBhc3NrZXlzVHlwZVIMcGFzc2tleXNUeXBlEi4KE2hpZGVf",
+            "cGFzc3dvcmRfcmVzZXQYBiABKAhSEWhpZGVQYXNzd29yZFJlc2V0EjgKGGln",
+            "bm9yZV91bmtub3duX3VzZXJuYW1lcxgHIAEoCFIWaWdub3JlVW5rbm93blVz",
+            "ZXJuYW1lcxJUChRkZWZhdWx0X3JlZGlyZWN0X3VyaRgIIAEoCUIikkEfSh0i",
+            "aHR0cHM6Ly9hY21lLmNvbS91aS9jb25zb2xlIlISZGVmYXVsdFJlZGlyZWN0",
+            "VXJpEmEKF3Bhc3N3b3JkX2NoZWNrX2xpZmV0aW1lGAkgASgLMhkuZ29vZ2xl",
+            "LnByb3RvYnVmLkR1cmF0aW9uQg6SQQtKCSI4NjQwMDBzIlIVcGFzc3dvcmRD",
+            "aGVja0xpZmV0aW1lEmwKHWV4dGVybmFsX2xvZ2luX2NoZWNrX2xpZmV0aW1l",
+            "GAogASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uQg6SQQtKCSI4NjQw",
+            "MDBzIlIaZXh0ZXJuYWxMb2dpbkNoZWNrTGlmZXRpbWUSXwoWbWZhX2luaXRf",
+            "c2tpcF9saWZldGltZRgLIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlv",
+            "bkIPkkEMSgoiMjU5MjAwMHMiUhNtZmFJbml0U2tpcExpZmV0aW1lEmkKHHNl",
+            "Y29uZF9mYWN0b3JfY2hlY2tfbGlmZXRpbWUYDCABKAsyGS5nb29nbGUucHJv",
+            "dG9idWYuRHVyYXRpb25CDZJBCkoIIjY0ODAwcyJSGXNlY29uZEZhY3RvckNo",
+            "ZWNrTGlmZXRpbWUSZwobbXVsdGlfZmFjdG9yX2NoZWNrX2xpZmV0aW1lGA0g",
+            "ASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uQg2SQQpKCCI0MzIwMHMi",
+            "UhhtdWx0aUZhY3RvckNoZWNrTGlmZXRpbWUSTAoOc2Vjb25kX2ZhY3RvcnMY",
+            "DiADKA4yJS56aXRhZGVsLnNldHRpbmdzLnYyLlNlY29uZEZhY3RvclR5cGVS",
+            "DXNlY29uZEZhY3RvcnMSSQoNbXVsdGlfZmFjdG9ycxgPIAMoDjIkLnppdGFk",
+            "ZWwuc2V0dGluZ3MudjIuTXVsdGlGYWN0b3JUeXBlUgxtdWx0aUZhY3RvcnMS",
+            "NAoWYWxsb3dfZG9tYWluX2Rpc2NvdmVyeRgQIAEoCFIUYWxsb3dEb21haW5E",
+            "aXNjb3ZlcnkSNwoYZGlzYWJsZV9sb2dpbl93aXRoX2VtYWlsGBEgASgIUhVk",
+            "aXNhYmxlTG9naW5XaXRoRW1haWwSNwoYZGlzYWJsZV9sb2dpbl93aXRoX3Bo",
+            "b25lGBIgASgIUhVkaXNhYmxlTG9naW5XaXRoUGhvbmUSVgoTcmVzb3VyY2Vf",
+            "b3duZXJfdHlwZRgTIAEoDjImLnppdGFkZWwuc2V0dGluZ3MudjIuUmVzb3Vy",
+            "Y2VPd25lclR5cGVSEXJlc291cmNlT3duZXJUeXBlEi8KFGZvcmNlX21mYV9s",
+            "b2NhbF9vbmx5GBYgASgIUhFmb3JjZU1mYUxvY2FsT25seSKoAQoQSWRlbnRp",
+            "dHlQcm92aWRlchIOCgJpZBgBIAEoCVICaWQSEgoEbmFtZRgCIAEoCVIEbmFt",
+            "ZRI9CgR0eXBlGAMgASgOMikueml0YWRlbC5zZXR0aW5ncy52Mi5JZGVudGl0",
+            "eVByb3ZpZGVyVHlwZVIEdHlwZRIxCgdvcHRpb25zGAQgASgLMhcueml0YWRl",
+            "bC5pZHAudjIuT3B0aW9uc1IHb3B0aW9ucyrRAQoQU2Vjb25kRmFjdG9yVHlw",
+            "ZRIiCh5TRUNPTkRfRkFDVE9SX1RZUEVfVU5TUEVDSUZJRUQQABIaChZTRUNP",
+            "TkRfRkFDVE9SX1RZUEVfT1RQEAESGwoXU0VDT05EX0ZBQ1RPUl9UWVBFX1RP",
+            "VFAQARIaChZTRUNPTkRfRkFDVE9SX1RZUEVfVTJGEAISIAocU0VDT05EX0ZB",
+            "Q1RPUl9UWVBFX09UUF9FTUFJTBADEh4KGlNFQ09ORF9GQUNUT1JfVFlQRV9P",
+            "VFBfU01TEAQaAhABKmEKD011bHRpRmFjdG9yVHlwZRIhCh1NVUxUSV9GQUNU",
+            "T1JfVFlQRV9VTlNQRUNJRklFRBAAEisKJ01VTFRJX0ZBQ1RPUl9UWVBFX1Uy",
+            "Rl9XSVRIX1ZFUklGSUNBVElPThABKkgKDFBhc3NrZXlzVHlwZRIdChlQQVNT",
+            "S0VZU19UWVBFX05PVF9BTExPV0VEEAASGQoVUEFTU0tFWVNfVFlQRV9BTExP",
+            "V0VEEAEq6AMKFElkZW50aXR5UHJvdmlkZXJUeXBlEiYKIklERU5USVRZX1BS",
+            "T1ZJREVSX1RZUEVfVU5TUEVDSUZJRUQQABIfChtJREVOVElUWV9QUk9WSURF",
+            "Ul9UWVBFX09JREMQARIeChpJREVOVElUWV9QUk9WSURFUl9UWVBFX0pXVBAC",
+            "Eh8KG0lERU5USVRZX1BST1ZJREVSX1RZUEVfTERBUBADEiAKHElERU5USVRZ",
+            "X1BST1ZJREVSX1RZUEVfT0FVVEgQBBIjCh9JREVOVElUWV9QUk9WSURFUl9U",
+            "WVBFX0FaVVJFX0FEEAUSIQodSURFTlRJVFlfUFJPVklERVJfVFlQRV9HSVRI",
+            "VUIQBhIkCiBJREVOVElUWV9QUk9WSURFUl9UWVBFX0dJVEhVQl9FUxAHEiEK",
+            "HUlERU5USVRZX1BST1ZJREVSX1RZUEVfR0lUTEFCEAgSLQopSURFTlRJVFlf",
+            "UFJPVklERVJfVFlQRV9HSVRMQUJfU0VMRl9IT1NURUQQCRIhCh1JREVOVElU",
+            "WV9QUk9WSURFUl9UWVBFX0dPT0dMRRAKEh8KG0lERU5USVRZX1BST1ZJREVS",
+            "X1RZUEVfU0FNTBALEiAKHElERU5USVRZX1BST1ZJREVSX1RZUEVfQVBQTEUQ",
+            "DELVAQoXY29tLnppdGFkZWwuc2V0dGluZ3MudjJCEkxvZ2luU2V0dGluZ3NQ",
+            "cm90b1ABWjhnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9z",
+            "ZXR0aW5ncy92MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3Mu",
+            "VjLKAhNaaXRhZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xW",
+            "MlxHUEJNZXRhZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, global::Zitadel.Idp.V2.IdpReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Settings.V2.SecondFactorType), typeof(global::Zitadel.Settings.V2.MultiFactorType), typeof(global::Zitadel.Settings.V2.PasskeysType), typeof(global::Zitadel.Settings.V2.IdentityProviderType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.LoginSettings), global::Zitadel.Settings.V2.LoginSettings.Parser, new[]{ "AllowUsernamePassword", "AllowRegister", "AllowExternalIdp", "ForceMfa", "PasskeysType", "HidePasswordReset", "IgnoreUnknownUsernames", "DefaultRedirectUri", "PasswordCheckLifetime", "ExternalLoginCheckLifetime", "MfaInitSkipLifetime", "SecondFactorCheckLifetime", "MultiFactorCheckLifetime", "SecondFactors", "MultiFactors", "AllowDomainDiscovery", "DisableLoginWithEmail", "DisableLoginWithPhone", "ResourceOwnerType", "ForceMfaLocalOnly" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.LoginSettings), global::Zitadel.Settings.V2.LoginSettings.Parser, new[]{ "AllowUsernamePassword", "AllowLocalAuthentication", "AllowRegister", "AllowExternalIdp", "ForceMfa", "PasskeysType", "HidePasswordReset", "IgnoreUnknownUsernames", "DefaultRedirectUri", "PasswordCheckLifetime", "ExternalLoginCheckLifetime", "MfaInitSkipLifetime", "SecondFactorCheckLifetime", "MultiFactorCheckLifetime", "SecondFactors", "MultiFactors", "AllowDomainDiscovery", "DisableLoginWithEmail", "DisableLoginWithPhone", "ResourceOwnerType", "ForceMfaLocalOnly" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.IdentityProvider), global::Zitadel.Settings.V2.IdentityProvider.Parser, new[]{ "Id", "Name", "Type", "Options" }, null, null, null, null)
           }));
     }
@@ -139,9 +104,10 @@ namespace Zitadel.Settings.V2 {
   public enum SecondFactorType {
     [pbr::OriginalName("SECOND_FACTOR_TYPE_UNSPECIFIED")] Unspecified = 0,
     /// <summary>
-    /// This is the type for TOTP
+    /// Deprecated: use SECOND_FACTOR_TYPE_TOTP instead.
     /// </summary>
     [pbr::OriginalName("SECOND_FACTOR_TYPE_OTP")] Otp = 1,
+    [pbr::OriginalName("SECOND_FACTOR_TYPE_TOTP", PreferredAlias = false)] Totp = 1,
     [pbr::OriginalName("SECOND_FACTOR_TYPE_U2F")] U2F = 2,
     [pbr::OriginalName("SECOND_FACTOR_TYPE_OTP_EMAIL")] OtpEmail = 3,
     [pbr::OriginalName("SECOND_FACTOR_TYPE_OTP_SMS")] OtpSms = 4,
@@ -212,6 +178,7 @@ namespace Zitadel.Settings.V2 {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public LoginSettings(LoginSettings other) : this() {
       allowUsernamePassword_ = other.allowUsernamePassword_;
+      allowLocalAuthentication_ = other.allowLocalAuthentication_;
       allowRegister_ = other.allowRegister_;
       allowExternalIdp_ = other.allowExternalIdp_;
       forceMfa_ = other.forceMfa_;
@@ -243,6 +210,13 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "allow_username_password" field.</summary>
     public const int AllowUsernamePasswordFieldNumber = 1;
     private bool allowUsernamePassword_;
+    /// <summary>
+    /// If enabled, users can log in locally with their username and passkeys or password.
+    /// Disabling this option will require users to log in with an external identity provider.
+    /// Be sure to allow at least one external identity provider if this option is disabled.
+    /// Deprecated: check allow_local_authentication instead.
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AllowUsernamePassword {
@@ -252,9 +226,31 @@ namespace Zitadel.Settings.V2 {
       }
     }
 
+    /// <summary>Field number for the "allow_local_authentication" field.</summary>
+    public const int AllowLocalAuthenticationFieldNumber = 20;
+    private bool allowLocalAuthentication_;
+    /// <summary>
+    /// If enabled, users can log in locally with their username and passkeys or password.
+    /// Disabling this option will require users to log in with an external identity provider.
+    /// Be sure to allow at least one external identity provider if this option is disabled.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowLocalAuthentication {
+      get { return allowLocalAuthentication_; }
+      set {
+        allowLocalAuthentication_ = value;
+      }
+    }
+
     /// <summary>Field number for the "allow_register" field.</summary>
     public const int AllowRegisterFieldNumber = 2;
     private bool allowRegister_;
+    /// <summary>
+    /// If enabled, users can register a local account by themself.
+    /// This option does not effect external identity providers.
+    /// Each identity provider can be configured to allow or disallow registration.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AllowRegister {
@@ -267,6 +263,10 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "allow_external_idp" field.</summary>
     public const int AllowExternalIdpFieldNumber = 3;
     private bool allowExternalIdp_;
+    /// <summary>
+    /// If enabled, users will generally be allowed to use an external identity provider to log in.
+    /// Be sure to allow at least one external identity provider if this option is enabled.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool AllowExternalIdp {
@@ -279,6 +279,11 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "force_mfa" field.</summary>
     public const int ForceMfaFieldNumber = 4;
     private bool forceMfa_;
+    /// <summary>
+    /// If enabled, users will be forced to use a multi-factor to log in.
+    /// This also applies to federated logins through an external identity provider.
+    /// Users will be required to set up a second factor if they have not done so already.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ForceMfa {
@@ -291,6 +296,14 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "passkeys_type" field.</summary>
     public const int PasskeysTypeFieldNumber = 5;
     private global::Zitadel.Settings.V2.PasskeysType passkeysType_ = global::Zitadel.Settings.V2.PasskeysType.NotAllowed;
+    /// <summary>
+    /// Defines the usage of passkeys for users.
+    /// PASSKEYS_TYPE_NOT_ALLOWED: Users are not allowed to use passkeys.
+    /// PASSKEYS_TYPE_ALLOWED: Users are allowed to use passkeys.
+    /// There will be additional options in the future.
+    /// If passkeys are allowed, users can choose to use passkeys or password for local authentication.
+    /// A verified passkey authentication will not require a second factor, if force_mfa is enabled.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Settings.V2.PasskeysType PasskeysType {
@@ -303,6 +316,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "hide_password_reset" field.</summary>
     public const int HidePasswordResetFieldNumber = 6;
     private bool hidePasswordReset_;
+    /// <summary>
+    /// If enabled, the password reset link will be hidden on the login screen.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool HidePasswordReset {
@@ -315,6 +331,11 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "ignore_unknown_usernames" field.</summary>
     public const int IgnoreUnknownUsernamesFieldNumber = 7;
     private bool ignoreUnknownUsernames_;
+    /// <summary>
+    /// If enabled, an unknown username on the login screen will not return an error directly,
+    /// but will always display the password screen.
+    /// This prevents user enumeration attacks.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IgnoreUnknownUsernames {
@@ -327,6 +348,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "default_redirect_uri" field.</summary>
     public const int DefaultRedirectUriFieldNumber = 8;
     private string defaultRedirectUri_ = "";
+    /// <summary>
+    /// Defines where the user will be redirected to if the login is started without app context (e.g. from mail).
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string DefaultRedirectUri {
@@ -339,6 +363,12 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "password_check_lifetime" field.</summary>
     public const int PasswordCheckLifetimeFieldNumber = 9;
     private global::Google.Protobuf.WellKnownTypes.Duration passwordCheckLifetime_;
+    /// <summary>
+    /// The duration a password check is valid.
+    /// After this time has passed, the user will be required to re-validate their
+    /// password on the next action that requires authentication.
+    /// Note that this does not enforce a logout or session expiration.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration PasswordCheckLifetime {
@@ -351,6 +381,12 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "external_login_check_lifetime" field.</summary>
     public const int ExternalLoginCheckLifetimeFieldNumber = 10;
     private global::Google.Protobuf.WellKnownTypes.Duration externalLoginCheckLifetime_;
+    /// <summary>
+    /// The duration a login through an external identity provider is valid.
+    /// After this time has passed, the user will be required to re-authenticate with the
+    /// external identity provider on the next action that requires authentication.
+    /// Note that this does not enforce a logout or session expiration.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration ExternalLoginCheckLifetime {
@@ -363,6 +399,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "mfa_init_skip_lifetime" field.</summary>
     public const int MfaInitSkipLifetimeFieldNumber = 11;
     private global::Google.Protobuf.WellKnownTypes.Duration mfaInitSkipLifetime_;
+    /// <summary>
+    /// Defines after how much time the mfa prompt will be shown again.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration MfaInitSkipLifetime {
@@ -375,6 +414,12 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "second_factor_check_lifetime" field.</summary>
     public const int SecondFactorCheckLifetimeFieldNumber = 12;
     private global::Google.Protobuf.WellKnownTypes.Duration secondFactorCheckLifetime_;
+    /// <summary>
+    /// The duration a second factor check is valid.
+    /// After this time has passed, the user will be required to re-validate their
+    /// second factor on the next action that requires authentication.
+    /// Note that this does not enforce a logout or session expiration.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration SecondFactorCheckLifetime {
@@ -387,6 +432,12 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "multi_factor_check_lifetime" field.</summary>
     public const int MultiFactorCheckLifetimeFieldNumber = 13;
     private global::Google.Protobuf.WellKnownTypes.Duration multiFactorCheckLifetime_;
+    /// <summary>
+    /// The duration a multi-factor check is valid.
+    /// After this time has passed, the user will be required to re-validate their
+    /// multi-factor on the next action that requires authentication.
+    /// Note that this does not enforce a logout or session expiration.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration MultiFactorCheckLifetime {
@@ -401,6 +452,9 @@ namespace Zitadel.Settings.V2 {
     private static readonly pb::FieldCodec<global::Zitadel.Settings.V2.SecondFactorType> _repeated_secondFactors_codec
         = pb::FieldCodec.ForEnum(114, x => (int) x, x => (global::Zitadel.Settings.V2.SecondFactorType) x);
     private readonly pbc::RepeatedField<global::Zitadel.Settings.V2.SecondFactorType> secondFactors_ = new pbc::RepeatedField<global::Zitadel.Settings.V2.SecondFactorType>();
+    /// <summary>
+    /// The list of allowed second factors.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Zitadel.Settings.V2.SecondFactorType> SecondFactors {
@@ -412,6 +466,9 @@ namespace Zitadel.Settings.V2 {
     private static readonly pb::FieldCodec<global::Zitadel.Settings.V2.MultiFactorType> _repeated_multiFactors_codec
         = pb::FieldCodec.ForEnum(122, x => (int) x, x => (global::Zitadel.Settings.V2.MultiFactorType) x);
     private readonly pbc::RepeatedField<global::Zitadel.Settings.V2.MultiFactorType> multiFactors_ = new pbc::RepeatedField<global::Zitadel.Settings.V2.MultiFactorType>();
+    /// <summary>
+    /// The list of allowed multi factors.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Zitadel.Settings.V2.MultiFactorType> MultiFactors {
@@ -422,7 +479,11 @@ namespace Zitadel.Settings.V2 {
     public const int AllowDomainDiscoveryFieldNumber = 16;
     private bool allowDomainDiscovery_;
     /// <summary>
-    /// If set to true, the suffix (@domain.com) of an unknown username input on the login screen will be matched against the org domains and will redirect to the registration of that organization on success.
+    /// Allow discovery of the organization and its authentication option by domain.
+    /// If set to true, the suffix (@domain.com) of an unknown username input on the login screen
+    /// will be matched against the organization domains and will redirect to the registration of that organization on success.
+    /// The registration can either be locally (requires allow_register to be true) or through an external identity provider.
+    /// In case only one identity provider is configured for the organization, the user will be redirected directly to the identity provider.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -436,6 +497,11 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "disable_login_with_email" field.</summary>
     public const int DisableLoginWithEmailFieldNumber = 17;
     private bool disableLoginWithEmail_;
+    /// <summary>
+    /// By default, users can login with their verified email address additionally to their login name.
+    /// Setting this to true disables the email login.
+    /// Note: If the email is set as the login name, this setting has no effect.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool DisableLoginWithEmail {
@@ -448,6 +514,11 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "disable_login_with_phone" field.</summary>
     public const int DisableLoginWithPhoneFieldNumber = 18;
     private bool disableLoginWithPhone_;
+    /// <summary>
+    /// By default, users can login with their verified phone number additionally to their login name.
+    /// Setting this to true disables the phone number login.
+    /// Note: If the phone number is set as the login name, this setting has no effect.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool DisableLoginWithPhone {
@@ -461,7 +532,8 @@ namespace Zitadel.Settings.V2 {
     public const int ResourceOwnerTypeFieldNumber = 19;
     private global::Zitadel.Settings.V2.ResourceOwnerType resourceOwnerType_ = global::Zitadel.Settings.V2.ResourceOwnerType.Unspecified;
     /// <summary>
-    /// resource_owner_type returns if the settings is managed on the organization or on the instance
+    /// ResourceOwnerType returns if the settings is managed on the organization explicitly or
+    /// fell back on the instance settings.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -475,6 +547,13 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "force_mfa_local_only" field.</summary>
     public const int ForceMfaLocalOnlyFieldNumber = 22;
     private bool forceMfaLocalOnly_;
+    /// <summary>
+    /// If enabled, users will be forced to use a multi-factor to log in if they authenticated locally.
+    /// This does not apply to federated logins through an external identity provider.
+    /// Users will be required to set up a second factor if they have not done so already.
+    /// If both force_mfa and force_mfa_local_only are enabled, force_mfa takes precedence and
+    /// all logins will require a second factor.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool ForceMfaLocalOnly {
@@ -500,6 +579,7 @@ namespace Zitadel.Settings.V2 {
         return true;
       }
       if (AllowUsernamePassword != other.AllowUsernamePassword) return false;
+      if (AllowLocalAuthentication != other.AllowLocalAuthentication) return false;
       if (AllowRegister != other.AllowRegister) return false;
       if (AllowExternalIdp != other.AllowExternalIdp) return false;
       if (ForceMfa != other.ForceMfa) return false;
@@ -527,6 +607,7 @@ namespace Zitadel.Settings.V2 {
     public override int GetHashCode() {
       int hash = 1;
       if (AllowUsernamePassword != false) hash ^= AllowUsernamePassword.GetHashCode();
+      if (AllowLocalAuthentication != false) hash ^= AllowLocalAuthentication.GetHashCode();
       if (AllowRegister != false) hash ^= AllowRegister.GetHashCode();
       if (AllowExternalIdp != false) hash ^= AllowExternalIdp.GetHashCode();
       if (ForceMfa != false) hash ^= ForceMfa.GetHashCode();
@@ -634,6 +715,10 @@ namespace Zitadel.Settings.V2 {
         output.WriteRawTag(152, 1);
         output.WriteEnum((int) ResourceOwnerType);
       }
+      if (AllowLocalAuthentication != false) {
+        output.WriteRawTag(160, 1);
+        output.WriteBool(AllowLocalAuthentication);
+      }
       if (ForceMfaLocalOnly != false) {
         output.WriteRawTag(176, 1);
         output.WriteBool(ForceMfaLocalOnly);
@@ -718,6 +803,10 @@ namespace Zitadel.Settings.V2 {
         output.WriteRawTag(152, 1);
         output.WriteEnum((int) ResourceOwnerType);
       }
+      if (AllowLocalAuthentication != false) {
+        output.WriteRawTag(160, 1);
+        output.WriteBool(AllowLocalAuthentication);
+      }
       if (ForceMfaLocalOnly != false) {
         output.WriteRawTag(176, 1);
         output.WriteBool(ForceMfaLocalOnly);
@@ -734,6 +823,9 @@ namespace Zitadel.Settings.V2 {
       int size = 0;
       if (AllowUsernamePassword != false) {
         size += 1 + 1;
+      }
+      if (AllowLocalAuthentication != false) {
+        size += 2 + 1;
       }
       if (AllowRegister != false) {
         size += 1 + 1;
@@ -802,6 +894,9 @@ namespace Zitadel.Settings.V2 {
       }
       if (other.AllowUsernamePassword != false) {
         AllowUsernamePassword = other.AllowUsernamePassword;
+      }
+      if (other.AllowLocalAuthentication != false) {
+        AllowLocalAuthentication = other.AllowLocalAuthentication;
       }
       if (other.AllowRegister != false) {
         AllowRegister = other.AllowRegister;
@@ -983,6 +1078,10 @@ namespace Zitadel.Settings.V2 {
             ResourceOwnerType = (global::Zitadel.Settings.V2.ResourceOwnerType) input.ReadEnum();
             break;
           }
+          case 160: {
+            AllowLocalAuthentication = input.ReadBool();
+            break;
+          }
           case 176: {
             ForceMfaLocalOnly = input.ReadBool();
             break;
@@ -1097,6 +1196,10 @@ namespace Zitadel.Settings.V2 {
           }
           case 152: {
             ResourceOwnerType = (global::Zitadel.Settings.V2.ResourceOwnerType) input.ReadEnum();
+            break;
+          }
+          case 160: {
+            AllowLocalAuthentication = input.ReadBool();
             break;
           }
           case 176: {

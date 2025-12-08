@@ -104,12 +104,38 @@ namespace Zitadel.Oidc.V2 {
     [grpc::BindServiceMethod(typeof(OIDCService), "BindService")]
     public abstract partial class OIDCServiceBase
     {
+      /// <summary>
+      /// Get Auth Request
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL.
+      /// Returns details that are parsed from the application's Auth Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Oidc.V2.GetAuthRequestResponse> GetAuthRequest(global::Zitadel.Oidc.V2.GetAuthRequestRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Oidc.V2.CreateCallbackResponse> CreateCallback(global::Zitadel.Oidc.V2.CreateCallbackRequest request, grpc::ServerCallContext context)
       {
@@ -117,11 +143,14 @@ namespace Zitadel.Oidc.V2 {
       }
 
       /// <summary>
-      /// Get device authorization request
+      /// Get Device Authorization Request
       ///
       /// Get the device authorization based on the provided "user code".
       /// This will return the device authorization request, which contains the device authorization id
       /// that is required to authorize the request once the user signed in or to deny it.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -133,9 +162,12 @@ namespace Zitadel.Oidc.V2 {
       }
 
       /// <summary>
-      /// Authorize or deny device authorization
+      /// Authorize or Deny Device Authorization
       ///
       /// Authorize or deny the device authorization request based on the provided device authorization id.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -175,52 +207,167 @@ namespace Zitadel.Oidc.V2 {
       {
       }
 
+      /// <summary>
+      /// Get Auth Request
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL.
+      /// Returns details that are parsed from the application's Auth Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2.GetAuthRequestResponse GetAuthRequest(global::Zitadel.Oidc.V2.GetAuthRequestRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAuthRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get Auth Request
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL.
+      /// Returns details that are parsed from the application's Auth Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2.GetAuthRequestResponse GetAuthRequest(global::Zitadel.Oidc.V2.GetAuthRequestRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetAuthRequest, null, options, request);
       }
+      /// <summary>
+      /// Get Auth Request
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL.
+      /// Returns details that are parsed from the application's Auth Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2.GetAuthRequestResponse> GetAuthRequestAsync(global::Zitadel.Oidc.V2.GetAuthRequestRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAuthRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get Auth Request
+      ///
+      /// Get OIDC Auth Request details by ID, obtained from the redirect URL.
+      /// Returns details that are parsed from the application's Auth Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2.GetAuthRequestResponse> GetAuthRequestAsync(global::Zitadel.Oidc.V2.GetAuthRequestRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetAuthRequest, null, options, request);
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2.CreateCallbackResponse CreateCallback(global::Zitadel.Oidc.V2.CreateCallbackRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateCallback(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Oidc.V2.CreateCallbackResponse CreateCallback(global::Zitadel.Oidc.V2.CreateCallbackRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateCallback, null, options, request);
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2.CreateCallbackResponse> CreateCallbackAsync(global::Zitadel.Oidc.V2.CreateCallbackRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateCallbackAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Create Callback
+      ///
+      /// Finalize an Auth Request and get the callback URL for success or failure.
+      /// The user must be redirected to the URL in order to inform the application about the success or failure.
+      /// On success, the URL contains details for the application to obtain the tokens.
+      /// This method can only be called once for an Auth request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Oidc.V2.CreateCallbackResponse> CreateCallbackAsync(global::Zitadel.Oidc.V2.CreateCallbackRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_CreateCallback, null, options, request);
       }
       /// <summary>
-      /// Get device authorization request
+      /// Get Device Authorization Request
       ///
       /// Get the device authorization based on the provided "user code".
       /// This will return the device authorization request, which contains the device authorization id
       /// that is required to authorize the request once the user signed in or to deny it.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -233,11 +380,14 @@ namespace Zitadel.Oidc.V2 {
         return GetDeviceAuthorizationRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get device authorization request
+      /// Get Device Authorization Request
       ///
       /// Get the device authorization based on the provided "user code".
       /// This will return the device authorization request, which contains the device authorization id
       /// that is required to authorize the request once the user signed in or to deny it.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -248,11 +398,14 @@ namespace Zitadel.Oidc.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_GetDeviceAuthorizationRequest, null, options, request);
       }
       /// <summary>
-      /// Get device authorization request
+      /// Get Device Authorization Request
       ///
       /// Get the device authorization based on the provided "user code".
       /// This will return the device authorization request, which contains the device authorization id
       /// that is required to authorize the request once the user signed in or to deny it.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -265,11 +418,14 @@ namespace Zitadel.Oidc.V2 {
         return GetDeviceAuthorizationRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get device authorization request
+      /// Get Device Authorization Request
       ///
       /// Get the device authorization based on the provided "user code".
       /// This will return the device authorization request, which contains the device authorization id
       /// that is required to authorize the request once the user signed in or to deny it.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -280,9 +436,12 @@ namespace Zitadel.Oidc.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_GetDeviceAuthorizationRequest, null, options, request);
       }
       /// <summary>
-      /// Authorize or deny device authorization
+      /// Authorize or Deny Device Authorization
       ///
       /// Authorize or deny the device authorization request based on the provided device authorization id.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -295,9 +454,12 @@ namespace Zitadel.Oidc.V2 {
         return AuthorizeOrDenyDeviceAuthorization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Authorize or deny device authorization
+      /// Authorize or Deny Device Authorization
       ///
       /// Authorize or deny the device authorization request based on the provided device authorization id.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -308,9 +470,12 @@ namespace Zitadel.Oidc.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_AuthorizeOrDenyDeviceAuthorization, null, options, request);
       }
       /// <summary>
-      /// Authorize or deny device authorization
+      /// Authorize or Deny Device Authorization
       ///
       /// Authorize or deny the device authorization request based on the provided device authorization id.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -323,9 +488,12 @@ namespace Zitadel.Oidc.V2 {
         return AuthorizeOrDenyDeviceAuthorizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Authorize or deny device authorization
+      /// Authorize or Deny Device Authorization
       ///
       /// Authorize or deny the device authorization request based on the provided device authorization id.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

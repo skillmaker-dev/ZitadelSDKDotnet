@@ -13,7 +13,7 @@ namespace Zitadel.Webkey.V2beta {
   /// The service provides methods to create, activate, delete and list web keys.
   /// The public key endpoint (outside of this service) is used to retrieve the public keys of the active and inactive keys.
   ///
-  /// Please make sure to enable the `web_key` feature flag on your instance to use this service.
+  /// Deprecated: use webkey service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
   public static partial class WebKeyService
   {
@@ -114,6 +114,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Create Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a private and public key pair. The private key can be used to sign OIDC tokens after activation.
       /// The public key can be used to validate OIDC tokens.
       /// The newly created key will have the state `STATE_INITIAL` and is published to the public key endpoint.
@@ -123,9 +125,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -139,6 +138,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Activate Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Switch the active signing web key. The previously active key will be deactivated.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
       /// Therefore it is not advised to activate a key that has been created within the cache duration (default is 5min),
@@ -146,9 +147,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -162,6 +160,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Delete Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a web key pair. Only inactive keys can be deleted. Once a key is deleted,
       /// any tokens signed by this key will be invalid.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
@@ -171,9 +171,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -187,13 +184,12 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// List Web Keys
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all web keys and their states.
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -236,6 +232,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Create Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a private and public key pair. The private key can be used to sign OIDC tokens after activation.
       /// The public key can be used to validate OIDC tokens.
       /// The newly created key will have the state `STATE_INITIAL` and is published to the public key endpoint.
@@ -245,9 +243,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -262,6 +257,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Create Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a private and public key pair. The private key can be used to sign OIDC tokens after activation.
       /// The public key can be used to validate OIDC tokens.
       /// The newly created key will have the state `STATE_INITIAL` and is published to the public key endpoint.
@@ -271,9 +268,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -286,6 +280,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Create Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a private and public key pair. The private key can be used to sign OIDC tokens after activation.
       /// The public key can be used to validate OIDC tokens.
       /// The newly created key will have the state `STATE_INITIAL` and is published to the public key endpoint.
@@ -295,9 +291,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -312,6 +305,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Create Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Generate a private and public key pair. The private key can be used to sign OIDC tokens after activation.
       /// The public key can be used to validate OIDC tokens.
       /// The newly created key will have the state `STATE_INITIAL` and is published to the public key endpoint.
@@ -321,9 +316,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -336,6 +328,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Activate Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Switch the active signing web key. The previously active key will be deactivated.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
       /// Therefore it is not advised to activate a key that has been created within the cache duration (default is 5min),
@@ -343,9 +337,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -360,6 +351,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Activate Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Switch the active signing web key. The previously active key will be deactivated.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
       /// Therefore it is not advised to activate a key that has been created within the cache duration (default is 5min),
@@ -367,9 +360,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -382,6 +372,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Activate Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Switch the active signing web key. The previously active key will be deactivated.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
       /// Therefore it is not advised to activate a key that has been created within the cache duration (default is 5min),
@@ -389,9 +381,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -406,6 +395,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Activate Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Switch the active signing web key. The previously active key will be deactivated.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
       /// Therefore it is not advised to activate a key that has been created within the cache duration (default is 5min),
@@ -413,9 +404,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.write`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -428,6 +416,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Delete Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a web key pair. Only inactive keys can be deleted. Once a key is deleted,
       /// any tokens signed by this key will be invalid.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
@@ -437,9 +427,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -454,6 +441,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Delete Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a web key pair. Only inactive keys can be deleted. Once a key is deleted,
       /// any tokens signed by this key will be invalid.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
@@ -463,9 +452,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -478,6 +464,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Delete Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a web key pair. Only inactive keys can be deleted. Once a key is deleted,
       /// any tokens signed by this key will be invalid.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
@@ -487,9 +475,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -504,6 +489,8 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// Delete Web Key
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a web key pair. Only inactive keys can be deleted. Once a key is deleted,
       /// any tokens signed by this key will be invalid.
       /// Note that the JWKs OIDC endpoint returns a cacheable response.
@@ -513,9 +500,6 @@ namespace Zitadel.Webkey.V2beta {
       ///
       /// Required permission:
       ///   - `iam.web_key.delete`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -528,13 +512,12 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// List Web Keys
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all web keys and their states.
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -549,13 +532,12 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// List Web Keys
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all web keys and their states.
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -568,13 +550,12 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// List Web Keys
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all web keys and their states.
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -589,13 +570,12 @@ namespace Zitadel.Webkey.V2beta {
       /// <summary>
       /// List Web Keys
       ///
+      /// Deprecated: please move to the corresponding endpoint under oidc service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all web keys and their states.
       ///
       /// Required permission:
       ///   - `iam.web_key.read`
-      ///
-      /// Required feature flag:
-      ///   - `web_key`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

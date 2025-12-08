@@ -164,7 +164,7 @@ namespace Zitadel.Action.V2 {
     public const int ChangeDateFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp changeDate_;
     /// <summary>
-    /// The timestamp of the last change to the target (e.g. creation, activation, deactivation).
+    /// The timestamp of the last change to the target.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -178,6 +178,9 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 4;
     private string name_ = "";
+    /// <summary>
+    /// Display name of the target.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -242,6 +245,9 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "endpoint" field.</summary>
     public const int EndpointFieldNumber = 9;
     private string endpoint_ = "";
+    /// <summary>
+    /// The URL that will be called in case of an execution.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Endpoint {
@@ -254,6 +260,13 @@ namespace Zitadel.Action.V2 {
     /// <summary>Field number for the "signing_key" field.</summary>
     public const int SigningKeyFieldNumber = 10;
     private string signingKey_ = "";
+    /// <summary>
+    /// The current signing key used to sign the request sent to the target.
+    /// The key can be used to verify the integrity and authenticity of the request
+    /// on the receiver side. The key should be treated as a secret and only known to ZITADEL and the receiver.
+    /// The signature is included in the request header `X-ZITADEL-Signature`
+    /// and calculated over the raw body of the request using HMAC with SHA256.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SigningKey {

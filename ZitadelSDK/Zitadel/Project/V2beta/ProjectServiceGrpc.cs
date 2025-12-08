@@ -10,6 +10,8 @@ using grpc = global::Grpc.Core;
 namespace Zitadel.Project.V2beta {
   /// <summary>
   /// Service to manage projects.
+  ///
+  /// Deprecated: use project service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
   public static partial class ProjectService
   {
@@ -266,6 +268,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Create Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new Project.
       ///
       /// Required permission:
@@ -283,6 +287,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing project.
       ///
       /// Required permission:
@@ -299,6 +305,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// Delete Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete an existing project.
       /// In case the project is not found, the request will return a successful response as
@@ -319,6 +327,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Get Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the project identified by the requested ID.
       ///
       /// Required permission:
@@ -335,6 +345,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// List Projects
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all matching projects. By default all projects of the instance that the caller has permission to read are returned.
       /// Make sure to include a limit and sorting for pagination.
@@ -354,6 +366,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Deactivate Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of a project to deactivated. Request returns no error if the project is already deactivated.
       /// Applications under deactivated projects are not able to login anymore.
       ///
@@ -372,6 +386,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Activate Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of a project to active. Request returns no error if the project is already activated.
       ///
       /// Required permission:
@@ -388,6 +404,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// Add Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       ///
@@ -406,6 +424,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       ///
       /// Required permission:
@@ -422,6 +442,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// Remove Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       ///
@@ -440,6 +462,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// List Project Roles
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns all roles of a project matching the search query.
       ///
       /// Required permission:
@@ -456,6 +480,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// Create Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
@@ -475,6 +501,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the roles of the project that is granted to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
       ///
@@ -492,6 +520,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// Delete Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete a project grant. All user grants for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
@@ -513,6 +543,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Deactivate Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of the project grant to deactivated.
       /// Applications under deactivated projects grants are not able to login anymore.
       ///
@@ -531,6 +563,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Activate Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of the project grant to activated.
       ///
       /// Required permission:
@@ -547,6 +581,8 @@ namespace Zitadel.Project.V2beta {
 
       /// <summary>
       /// List Project Grants
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       ///
@@ -594,6 +630,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Create Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new Project.
       ///
       /// Required permission:
@@ -612,6 +650,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Create Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new Project.
       ///
       /// Required permission:
@@ -627,6 +667,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Create Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Create a new Project.
       ///
@@ -646,6 +688,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Create Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new Project.
       ///
       /// Required permission:
@@ -661,6 +705,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Update Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Update an existing project.
       ///
@@ -680,6 +726,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing project.
       ///
       /// Required permission:
@@ -695,6 +743,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Update Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Update an existing project.
       ///
@@ -714,6 +764,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing project.
       ///
       /// Required permission:
@@ -729,6 +781,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Delete Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete an existing project.
       /// In case the project is not found, the request will return a successful response as
@@ -750,6 +804,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Delete Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing project.
       /// In case the project is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -767,6 +823,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Delete Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete an existing project.
       /// In case the project is not found, the request will return a successful response as
@@ -788,6 +846,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Delete Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing project.
       /// In case the project is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -805,6 +865,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Get Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the project identified by the requested ID.
       ///
@@ -824,6 +886,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Get Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the project identified by the requested ID.
       ///
       /// Required permission:
@@ -839,6 +903,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Get Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns the project identified by the requested ID.
       ///
@@ -858,6 +924,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Get Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the project identified by the requested ID.
       ///
       /// Required permission:
@@ -873,6 +941,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Projects
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all matching projects. By default all projects of the instance that the caller has permission to read are returned.
       /// Make sure to include a limit and sorting for pagination.
@@ -893,6 +963,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// List Projects
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching projects. By default all projects of the instance that the caller has permission to read are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
@@ -909,6 +981,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Projects
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all matching projects. By default all projects of the instance that the caller has permission to read are returned.
       /// Make sure to include a limit and sorting for pagination.
@@ -929,6 +1003,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// List Projects
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching projects. By default all projects of the instance that the caller has permission to read are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
@@ -945,6 +1021,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Deactivate Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of a project to deactivated. Request returns no error if the project is already deactivated.
       /// Applications under deactivated projects are not able to login anymore.
@@ -965,6 +1043,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Deactivate Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of a project to deactivated. Request returns no error if the project is already deactivated.
       /// Applications under deactivated projects are not able to login anymore.
       ///
@@ -981,6 +1061,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Deactivate Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of a project to deactivated. Request returns no error if the project is already deactivated.
       /// Applications under deactivated projects are not able to login anymore.
@@ -1001,6 +1083,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Deactivate Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of a project to deactivated. Request returns no error if the project is already deactivated.
       /// Applications under deactivated projects are not able to login anymore.
       ///
@@ -1017,6 +1101,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Activate Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of a project to active. Request returns no error if the project is already activated.
       ///
@@ -1036,6 +1122,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Activate Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of a project to active. Request returns no error if the project is already activated.
       ///
       /// Required permission:
@@ -1051,6 +1139,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Activate Project
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of a project to active. Request returns no error if the project is already activated.
       ///
@@ -1070,6 +1160,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Activate Project
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of a project to active. Request returns no error if the project is already activated.
       ///
       /// Required permission:
@@ -1085,6 +1177,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Add Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       ///
@@ -1104,6 +1198,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Add Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Add a new project role to a project. The key must be unique within the project.
       ///
       /// Required permission:
@@ -1119,6 +1215,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Add Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Add a new project role to a project. The key must be unique within the project.
       ///
@@ -1138,6 +1236,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Add Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Add a new project role to a project. The key must be unique within the project.
       ///
       /// Required permission:
@@ -1153,6 +1253,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Update Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       ///
@@ -1172,6 +1274,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       ///
       /// Required permission:
@@ -1187,6 +1291,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Update Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       ///
@@ -1206,6 +1312,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change a project role. The key is not editable. If a key should change, remove the role and create a new one.
       ///
       /// Required permission:
@@ -1221,6 +1329,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Remove Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       ///
@@ -1240,6 +1350,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Remove Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       ///
       /// Required permission:
@@ -1255,6 +1367,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Remove Project Role
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       ///
@@ -1274,6 +1388,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Remove Project Role
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
       ///
       /// Required permission:
@@ -1289,6 +1405,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Project Roles
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns all roles of a project matching the search query.
       ///
@@ -1308,6 +1426,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// List Project Roles
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns all roles of a project matching the search query.
       ///
       /// Required permission:
@@ -1323,6 +1443,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Project Roles
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns all roles of a project matching the search query.
       ///
@@ -1342,6 +1464,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// List Project Roles
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns all roles of a project matching the search query.
       ///
       /// Required permission:
@@ -1357,6 +1481,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Create Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
@@ -1377,6 +1503,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Create Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
       ///
@@ -1393,6 +1521,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Create Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
@@ -1413,6 +1543,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Create Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
       ///
@@ -1429,6 +1561,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Update Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Change the roles of the project that is granted to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
@@ -1449,6 +1583,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the roles of the project that is granted to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
       ///
@@ -1465,6 +1601,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Update Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Change the roles of the project that is granted to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
@@ -1485,6 +1623,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Update Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Change the roles of the project that is granted to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
       ///
@@ -1501,6 +1641,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Delete Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete a project grant. All user grants for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
@@ -1523,6 +1665,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Delete Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a project grant. All user grants for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
@@ -1541,6 +1685,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Delete Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Delete a project grant. All user grants for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
@@ -1563,6 +1709,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Delete Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete a project grant. All user grants for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
@@ -1581,6 +1729,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Deactivate Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of the project grant to deactivated.
       /// Applications under deactivated projects grants are not able to login anymore.
@@ -1601,6 +1751,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Deactivate Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of the project grant to deactivated.
       /// Applications under deactivated projects grants are not able to login anymore.
       ///
@@ -1617,6 +1769,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Deactivate Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of the project grant to deactivated.
       /// Applications under deactivated projects grants are not able to login anymore.
@@ -1637,6 +1791,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Deactivate Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of the project grant to deactivated.
       /// Applications under deactivated projects grants are not able to login anymore.
       ///
@@ -1653,6 +1809,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Activate Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of the project grant to activated.
       ///
@@ -1672,6 +1830,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Activate Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of the project grant to activated.
       ///
       /// Required permission:
@@ -1687,6 +1847,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// Activate Project Grant
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Set the state of the project grant to activated.
       ///
@@ -1706,6 +1868,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// Activate Project Grant
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Set the state of the project grant to activated.
       ///
       /// Required permission:
@@ -1721,6 +1885,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Project Grants
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       ///
@@ -1740,6 +1906,8 @@ namespace Zitadel.Project.V2beta {
       /// <summary>
       /// List Project Grants
       ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       ///
       /// Required permission:
@@ -1755,6 +1923,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Project Grants
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       ///
@@ -1773,6 +1943,8 @@ namespace Zitadel.Project.V2beta {
       }
       /// <summary>
       /// List Project Grants
+      ///
+      /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// Returns a list of project grants. A project grant is when the organization grants its project to another organization.
       ///

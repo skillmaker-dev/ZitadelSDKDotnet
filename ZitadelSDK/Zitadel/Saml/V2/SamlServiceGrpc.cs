@@ -80,12 +80,37 @@ namespace Zitadel.Saml.V2 {
     [grpc::BindServiceMethod(typeof(SAMLService), "BindService")]
     public abstract partial class SAMLServiceBase
     {
+      /// <summary>
+      /// Get SAML Request
+      ///
+      /// Get SAML Request details by ID. Returns details that are parsed from the application's SAML Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Saml.V2.GetSAMLRequestResponse> GetSAMLRequest(global::Zitadel.Saml.V2.GetSAMLRequestRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
+      /// <summary>
+      /// Create Response
+      ///
+      /// Finalize a SAML Request and get the response definition for success or failure.
+      /// The response must be handled as per the SAML definition to inform the application about the success or failure.
+      /// On success, the response contains details for the application to obtain the SAMLResponse.
+      /// This method can only be called once for an SAML request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Saml.V2.CreateResponseResponse> CreateResponse(global::Zitadel.Saml.V2.CreateResponseRequest request, grpc::ServerCallContext context)
       {
@@ -121,41 +146,149 @@ namespace Zitadel.Saml.V2 {
       {
       }
 
+      /// <summary>
+      /// Get SAML Request
+      ///
+      /// Get SAML Request details by ID. Returns details that are parsed from the application's SAML Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Saml.V2.GetSAMLRequestResponse GetSAMLRequest(global::Zitadel.Saml.V2.GetSAMLRequestRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetSAMLRequest(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get SAML Request
+      ///
+      /// Get SAML Request details by ID. Returns details that are parsed from the application's SAML Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Saml.V2.GetSAMLRequestResponse GetSAMLRequest(global::Zitadel.Saml.V2.GetSAMLRequestRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_GetSAMLRequest, null, options, request);
       }
+      /// <summary>
+      /// Get SAML Request
+      ///
+      /// Get SAML Request details by ID. Returns details that are parsed from the application's SAML Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Saml.V2.GetSAMLRequestResponse> GetSAMLRequestAsync(global::Zitadel.Saml.V2.GetSAMLRequestRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetSAMLRequestAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Get SAML Request
+      ///
+      /// Get SAML Request details by ID. Returns details that are parsed from the application's SAML Request.
+      ///
+      /// Required permissions:
+      ///   - `session.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Saml.V2.GetSAMLRequestResponse> GetSAMLRequestAsync(global::Zitadel.Saml.V2.GetSAMLRequestRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_GetSAMLRequest, null, options, request);
       }
+      /// <summary>
+      /// Create Response
+      ///
+      /// Finalize a SAML Request and get the response definition for success or failure.
+      /// The response must be handled as per the SAML definition to inform the application about the success or failure.
+      /// On success, the response contains details for the application to obtain the SAMLResponse.
+      /// This method can only be called once for an SAML request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Saml.V2.CreateResponseResponse CreateResponse(global::Zitadel.Saml.V2.CreateResponseRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateResponse(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Create Response
+      ///
+      /// Finalize a SAML Request and get the response definition for success or failure.
+      /// The response must be handled as per the SAML definition to inform the application about the success or failure.
+      /// On success, the response contains details for the application to obtain the SAMLResponse.
+      /// This method can only be called once for an SAML request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::Zitadel.Saml.V2.CreateResponseResponse CreateResponse(global::Zitadel.Saml.V2.CreateResponseRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_CreateResponse, null, options, request);
       }
+      /// <summary>
+      /// Create Response
+      ///
+      /// Finalize a SAML Request and get the response definition for success or failure.
+      /// The response must be handled as per the SAML definition to inform the application about the success or failure.
+      /// On success, the response contains details for the application to obtain the SAMLResponse.
+      /// This method can only be called once for an SAML request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Saml.V2.CreateResponseResponse> CreateResponseAsync(global::Zitadel.Saml.V2.CreateResponseRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return CreateResponseAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      /// Create Response
+      ///
+      /// Finalize a SAML Request and get the response definition for success or failure.
+      /// The response must be handled as per the SAML definition to inform the application about the success or failure.
+      /// On success, the response contains details for the application to obtain the SAMLResponse.
+      /// This method can only be called once for an SAML request.
+      ///
+      /// Required permissions:
+      ///   - `session.link`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Saml.V2.CreateResponseResponse> CreateResponseAsync(global::Zitadel.Saml.V2.CreateResponseRequest request, grpc::CallOptions options)
       {

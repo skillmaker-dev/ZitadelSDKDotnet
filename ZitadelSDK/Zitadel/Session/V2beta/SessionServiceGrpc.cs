@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Zitadel.Session.V2beta {
+  /// <summary>
+  /// Deprecated: use session service v2 instead. This service will be removed in the next major version of ZITADEL.
+  /// </summary>
   public static partial class SessionService
   {
     static readonly string __ServiceName = "zitadel.session.v2beta.SessionService";
@@ -118,6 +121,8 @@ namespace Zitadel.Session.V2beta {
     {
       /// <summary>
       /// Search sessions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -130,6 +135,8 @@ namespace Zitadel.Session.V2beta {
 
       /// <summary>
       /// GetSession a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -142,6 +149,8 @@ namespace Zitadel.Session.V2beta {
 
       /// <summary>
       /// Create a new session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -154,6 +163,8 @@ namespace Zitadel.Session.V2beta {
 
       /// <summary>
       /// Update a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -166,6 +177,8 @@ namespace Zitadel.Session.V2beta {
 
       /// <summary>
       /// Terminate a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -207,6 +220,8 @@ namespace Zitadel.Session.V2beta {
 
       /// <summary>
       /// Search sessions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -220,6 +235,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Search sessions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -231,6 +248,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Search sessions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -244,6 +263,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Search sessions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -255,6 +276,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// GetSession a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -268,6 +291,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// GetSession a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -279,6 +304,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// GetSession a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -292,6 +319,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// GetSession a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -303,6 +332,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Create a new session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -316,6 +347,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Create a new session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -327,6 +360,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Create a new session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -340,6 +375,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Create a new session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -351,6 +388,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Update a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -364,6 +403,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Update a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -375,6 +416,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Update a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -388,6 +431,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Update a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -399,6 +444,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Terminate a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -412,6 +459,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Terminate a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -423,6 +472,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Terminate a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -436,6 +487,8 @@ namespace Zitadel.Session.V2beta {
       }
       /// <summary>
       /// Terminate a session
+      ///
+      /// Deprecated: please move to the corresponding endpoint under session service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

@@ -27,28 +27,19 @@ namespace Zitadel.Settings.V2 {
             "Cil6aXRhZGVsL3NldHRpbmdzL3YyL2RvbWFpbl9zZXR0aW5ncy5wcm90bxIT",
             "eml0YWRlbC5zZXR0aW5ncy52MhoucHJvdG9jLWdlbi1vcGVuYXBpdjIvb3B0",
             "aW9ucy9hbm5vdGF0aW9ucy5wcm90bxoieml0YWRlbC9zZXR0aW5ncy92Mi9z",
-            "ZXR0aW5ncy5wcm90byLEBQoORG9tYWluU2V0dGluZ3MSfQoabG9naW5fbmFt",
-            "ZV9pbmNsdWRlc19kb21haW4YASABKAhCQJJBPTI7dGhlIHVzZXJuYW1lIGhh",
-            "cyB0byBlbmQgd2l0aCB0aGUgZG9tYWluIG9mIGl0cyBvcmdhbml6YXRpb25S",
-            "F2xvZ2luTmFtZUluY2x1ZGVzRG9tYWluErgBCh9yZXF1aXJlX29yZ19kb21h",
-            "aW5fdmVyaWZpY2F0aW9uGAIgASgIQnGSQW4ybGRlZmluZXMgaWYgb3JnYW5p",
-            "emF0aW9uIGRvbWFpbnMgc2hvdWxkIGJlIHZlcmlmaWVkIHVwb24gY3JlYXRp",
-            "b24sIG90aGVyd2lzZSB3aWxsIGJlIGNyZWF0ZWQgYWxyZWFkeSB2ZXJpZmll",
-            "ZFIccmVxdWlyZU9yZ0RvbWFpblZlcmlmaWNhdGlvbhK7AQorc210cF9zZW5k",
-            "ZXJfYWRkcmVzc19tYXRjaGVzX2luc3RhbmNlX2RvbWFpbhgDIAEoCEJekkFb",
-            "MllkZWZpbmVzIGlmIHRoZSBTTVRQIHNlbmRlciBhZGRyZXNzIGRvbWFpbiBz",
-            "aG91bGQgbWF0Y2ggYW4gZXhpc3RpbmcgZG9tYWluIG9uIHRoZSBpbnN0YW5j",
-            "ZVImc210cFNlbmRlckFkZHJlc3NNYXRjaGVzSW5zdGFuY2VEb21haW4SuQEK",
-            "E3Jlc291cmNlX293bmVyX3R5cGUYBiABKA4yJi56aXRhZGVsLnNldHRpbmdz",
-            "LnYyLlJlc291cmNlT3duZXJUeXBlQmGSQV4yXHJlc291cmNlX293bmVyX3R5",
-            "cGUgcmV0dXJucyBpZiB0aGUgc2V0dGluZyBpcyBtYW5hZ2VkIG9uIHRoZSBv",
-            "cmdhbml6YXRpb24gb3Igb24gdGhlIGluc3RhbmNlUhFyZXNvdXJjZU93bmVy",
-            "VHlwZULWAQoXY29tLnppdGFkZWwuc2V0dGluZ3MudjJCE0RvbWFpblNldHRp",
-            "bmdzUHJvdG9QAVo4Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtnL2dy",
-            "cGMvc2V0dGluZ3MvdjI7c2V0dGluZ3OiAgNaU1iqAhNaaXRhZGVsLlNldHRp",
-            "bmdzLlYyygITWml0YWRlbFxTZXR0aW5nc1xWMuICH1ppdGFkZWxcU2V0dGlu",
-            "Z3NcVjJcR1BCTWV0YWRhdGHqAhVaaXRhZGVsOjpTZXR0aW5nczo6VjJiBnBy",
-            "b3RvMw=="));
+            "ZXR0aW5ncy5wcm90byLJAgoORG9tYWluU2V0dGluZ3MSOwoabG9naW5fbmFt",
+            "ZV9pbmNsdWRlc19kb21haW4YASABKAhSF2xvZ2luTmFtZUluY2x1ZGVzRG9t",
+            "YWluEkUKH3JlcXVpcmVfb3JnX2RvbWFpbl92ZXJpZmljYXRpb24YAiABKAhS",
+            "HHJlcXVpcmVPcmdEb21haW5WZXJpZmljYXRpb24SWworc210cF9zZW5kZXJf",
+            "YWRkcmVzc19tYXRjaGVzX2luc3RhbmNlX2RvbWFpbhgDIAEoCFImc210cFNl",
+            "bmRlckFkZHJlc3NNYXRjaGVzSW5zdGFuY2VEb21haW4SVgoTcmVzb3VyY2Vf",
+            "b3duZXJfdHlwZRgGIAEoDjImLnppdGFkZWwuc2V0dGluZ3MudjIuUmVzb3Vy",
+            "Y2VPd25lclR5cGVSEXJlc291cmNlT3duZXJUeXBlQtYBChdjb20ueml0YWRl",
+            "bC5zZXR0aW5ncy52MkITRG9tYWluU2V0dGluZ3NQcm90b1ABWjhnaXRodWIu",
+            "Y29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92MjtzZXR0",
+            "aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRhZGVsXFNl",
+            "dHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRhZGF0YeoC",
+            "FVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -110,6 +101,10 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "login_name_includes_domain" field.</summary>
     public const int LoginNameIncludesDomainFieldNumber = 1;
     private bool loginNameIncludesDomain_;
+    /// <summary>
+    /// If enabled, the login name will automatically be suffixed with the domain of the organization.
+    /// This ensures that the login name is unique across the instance.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool LoginNameIncludesDomain {
@@ -122,6 +117,10 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "require_org_domain_verification" field.</summary>
     public const int RequireOrgDomainVerificationFieldNumber = 2;
     private bool requireOrgDomainVerification_;
+    /// <summary>
+    /// If enabled, organization domains must be verified (through an DNS or HTTP challenge) upon creation.
+    /// If disabled, organization domains will be created as already verified automatically.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool RequireOrgDomainVerification {
@@ -134,6 +133,9 @@ namespace Zitadel.Settings.V2 {
     /// <summary>Field number for the "smtp_sender_address_matches_instance_domain" field.</summary>
     public const int SmtpSenderAddressMatchesInstanceDomainFieldNumber = 3;
     private bool smtpSenderAddressMatchesInstanceDomain_;
+    /// <summary>
+    /// If enabled, the SMTP sender address domain must match custom domain on the instance.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool SmtpSenderAddressMatchesInstanceDomain {
@@ -147,7 +149,8 @@ namespace Zitadel.Settings.V2 {
     public const int ResourceOwnerTypeFieldNumber = 6;
     private global::Zitadel.Settings.V2.ResourceOwnerType resourceOwnerType_ = global::Zitadel.Settings.V2.ResourceOwnerType.Unspecified;
     /// <summary>
-    /// resource_owner_type returns if the setting is managed on the organization or on the instance
+    /// ResourceOwnerType returns if the setting is managed on the organization explicitly or
+    /// fell back on the instance settings.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -2537,7 +2537,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get My Instance
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns the details about the current instance such as the name, version, domains, etc.
       /// </summary>
@@ -2553,7 +2553,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Domains
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
       /// </summary>
@@ -2569,7 +2569,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Trusted Domains
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-trusted-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -2585,7 +2585,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
       /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -2601,7 +2601,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
       /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -2991,7 +2991,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Organization By ID
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns an organization by its ID. Make sure the user has the permissions to access the organization.
       /// </summary>
@@ -3007,7 +3007,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Is Organization Unique
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Checks if an organization with the searched parameters already exists or not.
       /// </summary>
@@ -3029,7 +3029,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Default Organization
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
@@ -3045,7 +3045,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Search Organizations
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       /// </summary>
@@ -3061,7 +3061,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Setup Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead.
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the first user, the user will get the role ORG_OWNER.
       /// </summary>
@@ -3077,7 +3077,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -4031,7 +4031,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List IAM Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -4047,7 +4047,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add IAM Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
@@ -4063,7 +4063,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Update IAM Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -4079,7 +4079,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove IAM Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
@@ -4322,7 +4322,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get My Instance
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns the details about the current instance such as the name, version, domains, etc.
       /// </summary>
@@ -4339,7 +4339,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get My Instance
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns the details about the current instance such as the name, version, domains, etc.
       /// </summary>
@@ -4354,7 +4354,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get My Instance
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns the details about the current instance such as the name, version, domains, etc.
       /// </summary>
@@ -4371,7 +4371,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get My Instance
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns the details about the current instance such as the name, version, domains, etc.
       /// </summary>
@@ -4386,7 +4386,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Domains
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
       /// </summary>
@@ -4403,7 +4403,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Domains
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
       /// </summary>
@@ -4418,7 +4418,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Domains
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
       /// </summary>
@@ -4435,7 +4435,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Domains
       ///
-      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-get-instance.api.mdx) instead.
+      /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
       /// </summary>
@@ -4450,7 +4450,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Trusted Domains
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-trusted-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4467,7 +4467,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Trusted Domains
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-trusted-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4482,7 +4482,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Trusted Domains
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-trusted-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4499,7 +4499,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List Instance Trusted Domains
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-list-trusted-domains.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
       /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4514,7 +4514,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
       /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4531,7 +4531,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
       /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4546,7 +4546,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
       /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4563,7 +4563,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-add-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
       /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4578,7 +4578,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
       /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4595,7 +4595,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
       /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4610,7 +4610,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
       /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -4627,7 +4627,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove an Instance Trusted Domain
       ///
-      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-beta-instance-service-remove-trusted-domain.api.mdx) instead.
+      /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
       /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
       /// </summary>
@@ -6006,7 +6006,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Organization By ID
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns an organization by its ID. Make sure the user has the permissions to access the organization.
       /// </summary>
@@ -6023,7 +6023,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Organization By ID
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns an organization by its ID. Make sure the user has the permissions to access the organization.
       /// </summary>
@@ -6038,7 +6038,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Organization By ID
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns an organization by its ID. Make sure the user has the permissions to access the organization.
       /// </summary>
@@ -6055,7 +6055,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Organization By ID
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns an organization by its ID. Make sure the user has the permissions to access the organization.
       /// </summary>
@@ -6070,7 +6070,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Is Organization Unique
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Checks if an organization with the searched parameters already exists or not.
       /// </summary>
@@ -6087,7 +6087,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Is Organization Unique
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Checks if an organization with the searched parameters already exists or not.
       /// </summary>
@@ -6102,7 +6102,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Is Organization Unique
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Checks if an organization with the searched parameters already exists or not.
       /// </summary>
@@ -6119,7 +6119,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Is Organization Unique
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Checks if an organization with the searched parameters already exists or not.
       /// </summary>
@@ -6154,7 +6154,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Default Organization
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
@@ -6171,7 +6171,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Default Organization
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
@@ -6186,7 +6186,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Default Organization
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
@@ -6203,7 +6203,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Get Default Organization
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
@@ -6218,7 +6218,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Search Organizations
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       /// </summary>
@@ -6235,7 +6235,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Search Organizations
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       /// </summary>
@@ -6250,7 +6250,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Search Organizations
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       /// </summary>
@@ -6267,7 +6267,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Search Organizations
       ///
-      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead.
+      /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
       /// Returns a list of organizations that match the requesting filters. All filters are applied with an AND condition.
       /// </summary>
@@ -6282,7 +6282,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Setup Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead.
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the first user, the user will get the role ORG_OWNER.
       /// </summary>
@@ -6299,7 +6299,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Setup Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead.
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the first user, the user will get the role ORG_OWNER.
       /// </summary>
@@ -6314,7 +6314,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Setup Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead.
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the first user, the user will get the role ORG_OWNER.
       /// </summary>
@@ -6331,7 +6331,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Setup Organization
       ///
-      /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-create-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 AddOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead.
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the first user, the user will get the role ORG_OWNER.
       /// </summary>
@@ -6346,7 +6346,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -6363,7 +6363,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -6378,7 +6378,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -6395,7 +6395,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove Organization
       ///
-      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2beta/zitadel-org-v-2-beta-organization-service-delete-organization.api.mdx) instead.
+      /// Deprecated: use [organization service v2 DeleteOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-delete-organization.api.mdx) instead.
       ///
       /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
       /// </summary>
@@ -9770,7 +9770,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List IAM Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -9787,7 +9787,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List IAM Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -9802,7 +9802,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List IAM Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -9819,7 +9819,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// List IAM Members
       ///
-      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-list-administrators.api.mdx) instead.
+      /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
@@ -9834,7 +9834,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add IAM Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
@@ -9851,7 +9851,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add IAM Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
@@ -9866,7 +9866,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add IAM Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
@@ -9883,7 +9883,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Add IAM Member
       ///
-      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-create-administrator.api.mdx) instead.
+      /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
@@ -9898,7 +9898,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Update IAM Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -9915,7 +9915,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Update IAM Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -9930,7 +9930,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Update IAM Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -9947,7 +9947,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Update IAM Member
       ///
-      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-update-administrator.api.mdx) instead.
+      /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
@@ -9962,7 +9962,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove IAM Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
@@ -9979,7 +9979,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove IAM Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
@@ -9994,7 +9994,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove IAM Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
@@ -10011,7 +10011,7 @@ namespace Zitadel.Admin.V1 {
       /// <summary>
       /// Remove IAM Member
       ///
-      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-beta-internal-permission-service-delete-administrator.api.mdx) instead.
+      /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
       /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>

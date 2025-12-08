@@ -11,6 +11,8 @@ namespace Zitadel.Action.V2beta {
   /// <summary>
   /// Service to manage custom executions.
   /// The service provides methods to create, update, delete and list targets and executions.
+  ///
+  /// Deprecated: use action service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
   public static partial class ActionService
   {
@@ -183,13 +185,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Create Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new target to your endpoint, which can be used in executions.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -203,14 +204,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Update Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing target.
       /// To generate a new signing key set the optional expirationSigningKey.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -224,15 +224,14 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Delete Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing target. This will remove it from any configured execution as well.
       /// In case the target is not found, the request will return a successful response as
       /// the desired state is already achieved.
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -246,13 +245,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Get Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the target identified by the requested ID.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -266,14 +264,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List targets
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching targets. By default all targets of the instance are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -287,14 +284,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Set Execution
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets an execution to call a target or include the targets of another execution.
       /// Setting an empty list of targets will remove all targets from the execution, making it a noop.
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -308,14 +304,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Executions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching executions. By default all executions of the instance are returned that have at least one execution target.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -328,6 +323,8 @@ namespace Zitadel.Action.V2beta {
 
       /// <summary>
       /// List Execution Functions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available functions which can be used as condition for executions.
       /// </summary>
@@ -343,6 +340,8 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Execution Methods
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all available methods which can be used as condition for executions.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -356,6 +355,8 @@ namespace Zitadel.Action.V2beta {
 
       /// <summary>
       /// List Execution Services
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available services which can be used as condition for executions.
       /// </summary>
@@ -400,13 +401,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Create Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new target to your endpoint, which can be used in executions.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -421,13 +421,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Create Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new target to your endpoint, which can be used in executions.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -440,13 +439,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Create Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new target to your endpoint, which can be used in executions.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -461,13 +459,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Create Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Create a new target to your endpoint, which can be used in executions.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -480,14 +477,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Update Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing target.
       /// To generate a new signing key set the optional expirationSigningKey.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -502,14 +498,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Update Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing target.
       /// To generate a new signing key set the optional expirationSigningKey.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -522,14 +517,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Update Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing target.
       /// To generate a new signing key set the optional expirationSigningKey.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -544,14 +538,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Update Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Update an existing target.
       /// To generate a new signing key set the optional expirationSigningKey.
       ///
       /// Required permission:
       ///   - `action.target.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -564,15 +557,14 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Delete Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing target. This will remove it from any configured execution as well.
       /// In case the target is not found, the request will return a successful response as
       /// the desired state is already achieved.
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -587,15 +579,14 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Delete Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing target. This will remove it from any configured execution as well.
       /// In case the target is not found, the request will return a successful response as
       /// the desired state is already achieved.
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -608,15 +599,14 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Delete Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing target. This will remove it from any configured execution as well.
       /// In case the target is not found, the request will return a successful response as
       /// the desired state is already achieved.
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -631,15 +621,14 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Delete Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Delete an existing target. This will remove it from any configured execution as well.
       /// In case the target is not found, the request will return a successful response as
       /// the desired state is already achieved.
       ///
       /// Required permission:
       ///   - `action.target.delete`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -652,13 +641,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Get Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the target identified by the requested ID.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -673,13 +661,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Get Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the target identified by the requested ID.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -692,13 +679,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Get Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the target identified by the requested ID.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -713,13 +699,12 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Get Target
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Returns the target identified by the requested ID.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -732,14 +717,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List targets
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching targets. By default all targets of the instance are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -754,14 +738,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List targets
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching targets. By default all targets of the instance are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -774,14 +757,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List targets
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching targets. By default all targets of the instance are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -796,14 +778,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List targets
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching targets. By default all targets of the instance are returned.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.target.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -816,14 +797,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Set Execution
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets an execution to call a target or include the targets of another execution.
       /// Setting an empty list of targets will remove all targets from the execution, making it a noop.
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -838,14 +818,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Set Execution
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets an execution to call a target or include the targets of another execution.
       /// Setting an empty list of targets will remove all targets from the execution, making it a noop.
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -858,14 +837,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Set Execution
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets an execution to call a target or include the targets of another execution.
       /// Setting an empty list of targets will remove all targets from the execution, making it a noop.
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -880,14 +858,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// Set Execution
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// Sets an execution to call a target or include the targets of another execution.
       /// Setting an empty list of targets will remove all targets from the execution, making it a noop.
       ///
       /// Required permission:
       ///   - `action.execution.write`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -900,14 +877,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Executions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching executions. By default all executions of the instance are returned that have at least one execution target.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -922,14 +898,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Executions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching executions. By default all executions of the instance are returned that have at least one execution target.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -942,14 +917,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Executions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching executions. By default all executions of the instance are returned that have at least one execution target.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -964,14 +938,13 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Executions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all matching executions. By default all executions of the instance are returned that have at least one execution target.
       /// Make sure to include a limit and sorting for pagination.
       ///
       /// Required permission:
       ///   - `action.execution.read`
-      ///
-      /// Required feature flag:
-      ///   - `actions`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -983,6 +956,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Functions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available functions which can be used as condition for executions.
       /// </summary>
@@ -999,6 +974,8 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Execution Functions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all available functions which can be used as condition for executions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -1011,6 +988,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Functions
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available functions which can be used as condition for executions.
       /// </summary>
@@ -1027,6 +1006,8 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Execution Functions
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all available functions which can be used as condition for executions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -1039,6 +1020,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Methods
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available methods which can be used as condition for executions.
       /// </summary>
@@ -1055,6 +1038,8 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Execution Methods
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all available methods which can be used as condition for executions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -1067,6 +1052,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Methods
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available methods which can be used as condition for executions.
       /// </summary>
@@ -1083,6 +1070,8 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Execution Methods
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all available methods which can be used as condition for executions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -1095,6 +1084,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Services
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available services which can be used as condition for executions.
       /// </summary>
@@ -1111,6 +1102,8 @@ namespace Zitadel.Action.V2beta {
       /// <summary>
       /// List Execution Services
       ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
+      ///
       /// List all available services which can be used as condition for executions.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -1123,6 +1116,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Services
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available services which can be used as condition for executions.
       /// </summary>
@@ -1138,6 +1133,8 @@ namespace Zitadel.Action.V2beta {
       }
       /// <summary>
       /// List Execution Services
+      ///
+      /// Deprecated: please move to the corresponding endpoint under action service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
       /// List all available services which can be used as condition for executions.
       /// </summary>

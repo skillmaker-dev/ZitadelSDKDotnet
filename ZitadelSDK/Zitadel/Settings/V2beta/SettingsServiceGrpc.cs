@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Zitadel.Settings.V2beta {
+  /// <summary>
+  /// Deprecated: use settings service v2 instead. This service will be removed in the next major version of ZITADEL.
+  /// </summary>
   public static partial class SettingsService
   {
     static readonly string __ServiceName = "zitadel.settings.v2beta.SettingsService";
@@ -190,6 +193,8 @@ namespace Zitadel.Settings.V2beta {
     {
       /// <summary>
       /// Get basic information over the instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -202,6 +207,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the login settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -214,6 +221,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the current active identity providers
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -226,6 +235,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the password complexity settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -238,6 +249,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the password expiry settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -250,6 +263,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the current active branding settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -262,6 +277,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the domain settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -274,6 +291,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the legal and support settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -286,6 +305,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the lockout settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -298,6 +319,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -310,6 +333,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Set the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -351,6 +376,8 @@ namespace Zitadel.Settings.V2beta {
 
       /// <summary>
       /// Get basic information over the instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -364,6 +391,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get basic information over the instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -375,6 +404,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get basic information over the instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -388,6 +419,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get basic information over the instance
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -399,6 +432,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the login settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -412,6 +447,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the login settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -423,6 +460,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the login settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -436,6 +475,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the login settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -447,6 +488,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active identity providers
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -460,6 +503,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active identity providers
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -471,6 +516,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active identity providers
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -484,6 +531,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active identity providers
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -495,6 +544,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password complexity settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -508,6 +559,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password complexity settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -519,6 +572,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password complexity settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -532,6 +587,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password complexity settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -543,6 +600,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password expiry settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -556,6 +615,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password expiry settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -567,6 +628,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password expiry settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -580,6 +643,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the password expiry settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -591,6 +656,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active branding settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -604,6 +671,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active branding settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -615,6 +684,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active branding settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -628,6 +699,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the current active branding settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -639,6 +712,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the domain settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -652,6 +727,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the domain settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -663,6 +740,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the domain settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -676,6 +755,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the domain settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -687,6 +768,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the legal and support settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -700,6 +783,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the legal and support settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -711,6 +796,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the legal and support settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -724,6 +811,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the legal and support settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -735,6 +824,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the lockout settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -748,6 +839,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the lockout settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -759,6 +852,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the lockout settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -772,6 +867,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the lockout settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -783,6 +880,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -796,6 +895,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -807,6 +908,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -820,6 +923,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Get the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -831,6 +936,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Set the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -844,6 +951,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Set the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -855,6 +964,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Set the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -868,6 +979,8 @@ namespace Zitadel.Settings.V2beta {
       }
       /// <summary>
       /// Set the security settings
+      ///
+      /// Deprecated: please move to the corresponding endpoint under settings service v2. This endpoint will be removed with the next major version of ZITADEL.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

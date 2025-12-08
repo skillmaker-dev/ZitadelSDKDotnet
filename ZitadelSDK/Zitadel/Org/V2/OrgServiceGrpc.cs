@@ -8,6 +8,9 @@
 using grpc = global::Grpc.Core;
 
 namespace Zitadel.Org.V2 {
+  /// <summary>
+  /// This service is intended to manage organizations in a ZITADEL instance.
+  /// </summary>
   public static partial class OrganizationService
   {
     static readonly string __ServiceName = "zitadel.org.v2.OrganizationService";
@@ -50,9 +53,57 @@ namespace Zitadel.Org.V2 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Org.V2.AddOrganizationResponse> __Marshaller_zitadel_org_v2_AddOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.AddOrganizationResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.UpdateOrganizationRequest> __Marshaller_zitadel_org_v2_UpdateOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.UpdateOrganizationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.UpdateOrganizationResponse> __Marshaller_zitadel_org_v2_UpdateOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.UpdateOrganizationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Org.V2.ListOrganizationsRequest> __Marshaller_zitadel_org_v2_ListOrganizationsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ListOrganizationsRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Org.V2.ListOrganizationsResponse> __Marshaller_zitadel_org_v2_ListOrganizationsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ListOrganizationsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeleteOrganizationRequest> __Marshaller_zitadel_org_v2_DeleteOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeleteOrganizationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeleteOrganizationResponse> __Marshaller_zitadel_org_v2_DeleteOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeleteOrganizationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.SetOrganizationMetadataRequest> __Marshaller_zitadel_org_v2_SetOrganizationMetadataRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.SetOrganizationMetadataRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.SetOrganizationMetadataResponse> __Marshaller_zitadel_org_v2_SetOrganizationMetadataResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.SetOrganizationMetadataResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.ListOrganizationMetadataRequest> __Marshaller_zitadel_org_v2_ListOrganizationMetadataRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ListOrganizationMetadataRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.ListOrganizationMetadataResponse> __Marshaller_zitadel_org_v2_ListOrganizationMetadataResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ListOrganizationMetadataResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest> __Marshaller_zitadel_org_v2_DeleteOrganizationMetadataRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse> __Marshaller_zitadel_org_v2_DeleteOrganizationMetadataResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.AddOrganizationDomainRequest> __Marshaller_zitadel_org_v2_AddOrganizationDomainRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.AddOrganizationDomainRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.AddOrganizationDomainResponse> __Marshaller_zitadel_org_v2_AddOrganizationDomainResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.AddOrganizationDomainResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.ListOrganizationDomainsRequest> __Marshaller_zitadel_org_v2_ListOrganizationDomainsRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ListOrganizationDomainsRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.ListOrganizationDomainsResponse> __Marshaller_zitadel_org_v2_ListOrganizationDomainsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ListOrganizationDomainsResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeleteOrganizationDomainRequest> __Marshaller_zitadel_org_v2_DeleteOrganizationDomainRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeleteOrganizationDomainRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeleteOrganizationDomainResponse> __Marshaller_zitadel_org_v2_DeleteOrganizationDomainResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeleteOrganizationDomainResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest> __Marshaller_zitadel_org_v2_GenerateOrganizationDomainValidationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse> __Marshaller_zitadel_org_v2_GenerateOrganizationDomainValidationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.VerifyOrganizationDomainRequest> __Marshaller_zitadel_org_v2_VerifyOrganizationDomainRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.VerifyOrganizationDomainRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.VerifyOrganizationDomainResponse> __Marshaller_zitadel_org_v2_VerifyOrganizationDomainResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.VerifyOrganizationDomainResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeactivateOrganizationRequest> __Marshaller_zitadel_org_v2_DeactivateOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeactivateOrganizationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.DeactivateOrganizationResponse> __Marshaller_zitadel_org_v2_DeactivateOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.DeactivateOrganizationResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.ActivateOrganizationRequest> __Marshaller_zitadel_org_v2_ActivateOrganizationRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ActivateOrganizationRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Org.V2.ActivateOrganizationResponse> __Marshaller_zitadel_org_v2_ActivateOrganizationResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Org.V2.ActivateOrganizationResponse.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Zitadel.Org.V2.AddOrganizationRequest, global::Zitadel.Org.V2.AddOrganizationResponse> __Method_AddOrganization = new grpc::Method<global::Zitadel.Org.V2.AddOrganizationRequest, global::Zitadel.Org.V2.AddOrganizationResponse>(
@@ -63,12 +114,108 @@ namespace Zitadel.Org.V2 {
         __Marshaller_zitadel_org_v2_AddOrganizationResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.UpdateOrganizationRequest, global::Zitadel.Org.V2.UpdateOrganizationResponse> __Method_UpdateOrganization = new grpc::Method<global::Zitadel.Org.V2.UpdateOrganizationRequest, global::Zitadel.Org.V2.UpdateOrganizationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateOrganization",
+        __Marshaller_zitadel_org_v2_UpdateOrganizationRequest,
+        __Marshaller_zitadel_org_v2_UpdateOrganizationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Zitadel.Org.V2.ListOrganizationsRequest, global::Zitadel.Org.V2.ListOrganizationsResponse> __Method_ListOrganizations = new grpc::Method<global::Zitadel.Org.V2.ListOrganizationsRequest, global::Zitadel.Org.V2.ListOrganizationsResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
         "ListOrganizations",
         __Marshaller_zitadel_org_v2_ListOrganizationsRequest,
         __Marshaller_zitadel_org_v2_ListOrganizationsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.DeleteOrganizationRequest, global::Zitadel.Org.V2.DeleteOrganizationResponse> __Method_DeleteOrganization = new grpc::Method<global::Zitadel.Org.V2.DeleteOrganizationRequest, global::Zitadel.Org.V2.DeleteOrganizationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteOrganization",
+        __Marshaller_zitadel_org_v2_DeleteOrganizationRequest,
+        __Marshaller_zitadel_org_v2_DeleteOrganizationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.SetOrganizationMetadataRequest, global::Zitadel.Org.V2.SetOrganizationMetadataResponse> __Method_SetOrganizationMetadata = new grpc::Method<global::Zitadel.Org.V2.SetOrganizationMetadataRequest, global::Zitadel.Org.V2.SetOrganizationMetadataResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SetOrganizationMetadata",
+        __Marshaller_zitadel_org_v2_SetOrganizationMetadataRequest,
+        __Marshaller_zitadel_org_v2_SetOrganizationMetadataResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.ListOrganizationMetadataRequest, global::Zitadel.Org.V2.ListOrganizationMetadataResponse> __Method_ListOrganizationMetadata = new grpc::Method<global::Zitadel.Org.V2.ListOrganizationMetadataRequest, global::Zitadel.Org.V2.ListOrganizationMetadataResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListOrganizationMetadata",
+        __Marshaller_zitadel_org_v2_ListOrganizationMetadataRequest,
+        __Marshaller_zitadel_org_v2_ListOrganizationMetadataResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest, global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse> __Method_DeleteOrganizationMetadata = new grpc::Method<global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest, global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteOrganizationMetadata",
+        __Marshaller_zitadel_org_v2_DeleteOrganizationMetadataRequest,
+        __Marshaller_zitadel_org_v2_DeleteOrganizationMetadataResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.AddOrganizationDomainRequest, global::Zitadel.Org.V2.AddOrganizationDomainResponse> __Method_AddOrganizationDomain = new grpc::Method<global::Zitadel.Org.V2.AddOrganizationDomainRequest, global::Zitadel.Org.V2.AddOrganizationDomainResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddOrganizationDomain",
+        __Marshaller_zitadel_org_v2_AddOrganizationDomainRequest,
+        __Marshaller_zitadel_org_v2_AddOrganizationDomainResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.ListOrganizationDomainsRequest, global::Zitadel.Org.V2.ListOrganizationDomainsResponse> __Method_ListOrganizationDomains = new grpc::Method<global::Zitadel.Org.V2.ListOrganizationDomainsRequest, global::Zitadel.Org.V2.ListOrganizationDomainsResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListOrganizationDomains",
+        __Marshaller_zitadel_org_v2_ListOrganizationDomainsRequest,
+        __Marshaller_zitadel_org_v2_ListOrganizationDomainsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.DeleteOrganizationDomainRequest, global::Zitadel.Org.V2.DeleteOrganizationDomainResponse> __Method_DeleteOrganizationDomain = new grpc::Method<global::Zitadel.Org.V2.DeleteOrganizationDomainRequest, global::Zitadel.Org.V2.DeleteOrganizationDomainResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeleteOrganizationDomain",
+        __Marshaller_zitadel_org_v2_DeleteOrganizationDomainRequest,
+        __Marshaller_zitadel_org_v2_DeleteOrganizationDomainResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest, global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse> __Method_GenerateOrganizationDomainValidation = new grpc::Method<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest, global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GenerateOrganizationDomainValidation",
+        __Marshaller_zitadel_org_v2_GenerateOrganizationDomainValidationRequest,
+        __Marshaller_zitadel_org_v2_GenerateOrganizationDomainValidationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.VerifyOrganizationDomainRequest, global::Zitadel.Org.V2.VerifyOrganizationDomainResponse> __Method_VerifyOrganizationDomain = new grpc::Method<global::Zitadel.Org.V2.VerifyOrganizationDomainRequest, global::Zitadel.Org.V2.VerifyOrganizationDomainResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "VerifyOrganizationDomain",
+        __Marshaller_zitadel_org_v2_VerifyOrganizationDomainRequest,
+        __Marshaller_zitadel_org_v2_VerifyOrganizationDomainResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.DeactivateOrganizationRequest, global::Zitadel.Org.V2.DeactivateOrganizationResponse> __Method_DeactivateOrganization = new grpc::Method<global::Zitadel.Org.V2.DeactivateOrganizationRequest, global::Zitadel.Org.V2.DeactivateOrganizationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeactivateOrganization",
+        __Marshaller_zitadel_org_v2_DeactivateOrganizationRequest,
+        __Marshaller_zitadel_org_v2_DeactivateOrganizationResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Org.V2.ActivateOrganizationRequest, global::Zitadel.Org.V2.ActivateOrganizationResponse> __Method_ActivateOrganization = new grpc::Method<global::Zitadel.Org.V2.ActivateOrganizationRequest, global::Zitadel.Org.V2.ActivateOrganizationResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ActivateOrganization",
+        __Marshaller_zitadel_org_v2_ActivateOrganizationRequest,
+        __Marshaller_zitadel_org_v2_ActivateOrganizationResponse);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -81,9 +228,12 @@ namespace Zitadel.Org.V2 {
     public abstract partial class OrganizationServiceBase
     {
       /// <summary>
-      /// Create an Organization
+      /// Add Organization
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the users, they will be granted the role ORG_OWNER.
+      ///
+      /// Required permission:
+      ///  - `org.create`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -95,15 +245,223 @@ namespace Zitadel.Org.V2 {
       }
 
       /// <summary>
-      /// Search Organizations
+      /// Update Organization
       ///
-      /// Search for Organizations. By default, we will return all organization of the instance. Make sure to include a limit and sorting for pagination..
+      /// Change the name of the organization.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.UpdateOrganizationResponse> UpdateOrganization(global::Zitadel.Org.V2.UpdateOrganizationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List Organizations
+      ///
+      /// Search for Organizations. By default, we will return all organization of the instance that you have permission to read.
+      /// Make sure to include a limit and sorting for pagination.
+      ///
+      /// Required permission:
+      ///  - `org.read`
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.ListOrganizationsResponse> ListOrganizations(global::Zitadel.Org.V2.ListOrganizationsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete Organization
+      ///
+      /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.delete`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.DeleteOrganizationResponse> DeleteOrganization(global::Zitadel.Org.V2.DeleteOrganizationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Set Organization Metadata
+      ///
+      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.SetOrganizationMetadataResponse> SetOrganizationMetadata(global::Zitadel.Org.V2.SetOrganizationMetadataRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List Organization Metadata
+      ///
+      /// List metadata of an organization filtered by query.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.ListOrganizationMetadataResponse> ListOrganizationMetadata(global::Zitadel.Org.V2.ListOrganizationMetadataRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete Organization Metadata
+      ///
+      /// Delete metadata objects from an organization with a specific key.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse> DeleteOrganizationMetadata(global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add Organization Domain
+      ///
+      /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.AddOrganizationDomainResponse> AddOrganizationDomain(global::Zitadel.Org.V2.AddOrganizationDomainRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List Organization Domains
+      ///
+      /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.ListOrganizationDomainsResponse> ListOrganizationDomains(global::Zitadel.Org.V2.ListOrganizationDomainsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Delete Organization Domain
+      ///
+      /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.DeleteOrganizationDomainResponse> DeleteOrganizationDomain(global::Zitadel.Org.V2.DeleteOrganizationDomainRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Generate Organization Domain Validation
+      ///
+      /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse> GenerateOrganizationDomainValidation(global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Verify Organization Domain
+      ///
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.VerifyOrganizationDomainResponse> VerifyOrganizationDomain(global::Zitadel.Org.V2.VerifyOrganizationDomainRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Deactivate Organization
+      ///
+      /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.DeactivateOrganizationResponse> DeactivateOrganization(global::Zitadel.Org.V2.DeactivateOrganizationRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Activate Organization
+      ///
+      /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Org.V2.ActivateOrganizationResponse> ActivateOrganization(global::Zitadel.Org.V2.ActivateOrganizationRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -138,9 +496,12 @@ namespace Zitadel.Org.V2 {
       }
 
       /// <summary>
-      /// Create an Organization
+      /// Add Organization
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the users, they will be granted the role ORG_OWNER.
+      ///
+      /// Required permission:
+      ///  - `org.create`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -153,9 +514,12 @@ namespace Zitadel.Org.V2 {
         return AddOrganization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create an Organization
+      /// Add Organization
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the users, they will be granted the role ORG_OWNER.
+      ///
+      /// Required permission:
+      ///  - `org.create`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -166,9 +530,12 @@ namespace Zitadel.Org.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_AddOrganization, null, options, request);
       }
       /// <summary>
-      /// Create an Organization
+      /// Add Organization
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the users, they will be granted the role ORG_OWNER.
+      ///
+      /// Required permission:
+      ///  - `org.create`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -181,9 +548,12 @@ namespace Zitadel.Org.V2 {
         return AddOrganizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create an Organization
+      /// Add Organization
       ///
       /// Create a new organization with an administrative user. If no specific roles are sent for the users, they will be granted the role ORG_OWNER.
+      ///
+      /// Required permission:
+      ///  - `org.create`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -194,9 +564,81 @@ namespace Zitadel.Org.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_AddOrganization, null, options, request);
       }
       /// <summary>
-      /// Search Organizations
+      /// Update Organization
       ///
-      /// Search for Organizations. By default, we will return all organization of the instance. Make sure to include a limit and sorting for pagination..
+      /// Change the name of the organization.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.UpdateOrganizationResponse UpdateOrganization(global::Zitadel.Org.V2.UpdateOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateOrganization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update Organization
+      ///
+      /// Change the name of the organization.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.UpdateOrganizationResponse UpdateOrganization(global::Zitadel.Org.V2.UpdateOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateOrganization, null, options, request);
+      }
+      /// <summary>
+      /// Update Organization
+      ///
+      /// Change the name of the organization.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.UpdateOrganizationResponse> UpdateOrganizationAsync(global::Zitadel.Org.V2.UpdateOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateOrganizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Update Organization
+      ///
+      /// Change the name of the organization.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.UpdateOrganizationResponse> UpdateOrganizationAsync(global::Zitadel.Org.V2.UpdateOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateOrganization, null, options, request);
+      }
+      /// <summary>
+      /// List Organizations
+      ///
+      /// Search for Organizations. By default, we will return all organization of the instance that you have permission to read.
+      /// Make sure to include a limit and sorting for pagination.
+      ///
+      /// Required permission:
+      ///  - `org.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -209,9 +651,13 @@ namespace Zitadel.Org.V2 {
         return ListOrganizations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Search Organizations
+      /// List Organizations
       ///
-      /// Search for Organizations. By default, we will return all organization of the instance. Make sure to include a limit and sorting for pagination..
+      /// Search for Organizations. By default, we will return all organization of the instance that you have permission to read.
+      /// Make sure to include a limit and sorting for pagination.
+      ///
+      /// Required permission:
+      ///  - `org.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -222,9 +668,13 @@ namespace Zitadel.Org.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_ListOrganizations, null, options, request);
       }
       /// <summary>
-      /// Search Organizations
+      /// List Organizations
       ///
-      /// Search for Organizations. By default, we will return all organization of the instance. Make sure to include a limit and sorting for pagination..
+      /// Search for Organizations. By default, we will return all organization of the instance that you have permission to read.
+      /// Make sure to include a limit and sorting for pagination.
+      ///
+      /// Required permission:
+      ///  - `org.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -237,9 +687,13 @@ namespace Zitadel.Org.V2 {
         return ListOrganizationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Search Organizations
+      /// List Organizations
       ///
-      /// Search for Organizations. By default, we will return all organization of the instance. Make sure to include a limit and sorting for pagination..
+      /// Search for Organizations. By default, we will return all organization of the instance that you have permission to read.
+      /// Make sure to include a limit and sorting for pagination.
+      ///
+      /// Required permission:
+      ///  - `org.read`
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -248,6 +702,754 @@ namespace Zitadel.Org.V2 {
       public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ListOrganizationsResponse> ListOrganizationsAsync(global::Zitadel.Org.V2.ListOrganizationsRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_ListOrganizations, null, options, request);
+      }
+      /// <summary>
+      /// Delete Organization
+      ///
+      /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.delete`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeleteOrganizationResponse DeleteOrganization(global::Zitadel.Org.V2.DeleteOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteOrganization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete Organization
+      ///
+      /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.delete`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeleteOrganizationResponse DeleteOrganization(global::Zitadel.Org.V2.DeleteOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteOrganization, null, options, request);
+      }
+      /// <summary>
+      /// Delete Organization
+      ///
+      /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.delete`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeleteOrganizationResponse> DeleteOrganizationAsync(global::Zitadel.Org.V2.DeleteOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteOrganizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete Organization
+      ///
+      /// Deletes the organization and all its resources (Users, Projects, Grants to and from the org). Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.delete`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeleteOrganizationResponse> DeleteOrganizationAsync(global::Zitadel.Org.V2.DeleteOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteOrganization, null, options, request);
+      }
+      /// <summary>
+      /// Set Organization Metadata
+      ///
+      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.SetOrganizationMetadataResponse SetOrganizationMetadata(global::Zitadel.Org.V2.SetOrganizationMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetOrganizationMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Set Organization Metadata
+      ///
+      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.SetOrganizationMetadataResponse SetOrganizationMetadata(global::Zitadel.Org.V2.SetOrganizationMetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SetOrganizationMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Set Organization Metadata
+      ///
+      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.SetOrganizationMetadataResponse> SetOrganizationMetadataAsync(global::Zitadel.Org.V2.SetOrganizationMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SetOrganizationMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Set Organization Metadata
+      ///
+      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.SetOrganizationMetadataResponse> SetOrganizationMetadataAsync(global::Zitadel.Org.V2.SetOrganizationMetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SetOrganizationMetadata, null, options, request);
+      }
+      /// <summary>
+      /// List Organization Metadata
+      ///
+      /// List metadata of an organization filtered by query.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.ListOrganizationMetadataResponse ListOrganizationMetadata(global::Zitadel.Org.V2.ListOrganizationMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListOrganizationMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Organization Metadata
+      ///
+      /// List metadata of an organization filtered by query.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.ListOrganizationMetadataResponse ListOrganizationMetadata(global::Zitadel.Org.V2.ListOrganizationMetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListOrganizationMetadata, null, options, request);
+      }
+      /// <summary>
+      /// List Organization Metadata
+      ///
+      /// List metadata of an organization filtered by query.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ListOrganizationMetadataResponse> ListOrganizationMetadataAsync(global::Zitadel.Org.V2.ListOrganizationMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListOrganizationMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Organization Metadata
+      ///
+      /// List metadata of an organization filtered by query.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ListOrganizationMetadataResponse> ListOrganizationMetadataAsync(global::Zitadel.Org.V2.ListOrganizationMetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListOrganizationMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Delete Organization Metadata
+      ///
+      /// Delete metadata objects from an organization with a specific key.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse DeleteOrganizationMetadata(global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteOrganizationMetadata(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete Organization Metadata
+      ///
+      /// Delete metadata objects from an organization with a specific key.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse DeleteOrganizationMetadata(global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteOrganizationMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Delete Organization Metadata
+      ///
+      /// Delete metadata objects from an organization with a specific key.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse> DeleteOrganizationMetadataAsync(global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteOrganizationMetadataAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete Organization Metadata
+      ///
+      /// Delete metadata objects from an organization with a specific key.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse> DeleteOrganizationMetadataAsync(global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteOrganizationMetadata, null, options, request);
+      }
+      /// <summary>
+      /// Add Organization Domain
+      ///
+      /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.AddOrganizationDomainResponse AddOrganizationDomain(global::Zitadel.Org.V2.AddOrganizationDomainRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddOrganizationDomain(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add Organization Domain
+      ///
+      /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.AddOrganizationDomainResponse AddOrganizationDomain(global::Zitadel.Org.V2.AddOrganizationDomainRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddOrganizationDomain, null, options, request);
+      }
+      /// <summary>
+      /// Add Organization Domain
+      ///
+      /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.AddOrganizationDomainResponse> AddOrganizationDomainAsync(global::Zitadel.Org.V2.AddOrganizationDomainRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddOrganizationDomainAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add Organization Domain
+      ///
+      /// Add a new domain to an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.AddOrganizationDomainResponse> AddOrganizationDomainAsync(global::Zitadel.Org.V2.AddOrganizationDomainRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddOrganizationDomain, null, options, request);
+      }
+      /// <summary>
+      /// List Organization Domains
+      ///
+      /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.ListOrganizationDomainsResponse ListOrganizationDomains(global::Zitadel.Org.V2.ListOrganizationDomainsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListOrganizationDomains(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Organization Domains
+      ///
+      /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.ListOrganizationDomainsResponse ListOrganizationDomains(global::Zitadel.Org.V2.ListOrganizationDomainsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListOrganizationDomains, null, options, request);
+      }
+      /// <summary>
+      /// List Organization Domains
+      ///
+      /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ListOrganizationDomainsResponse> ListOrganizationDomainsAsync(global::Zitadel.Org.V2.ListOrganizationDomainsRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListOrganizationDomainsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Organization Domains
+      ///
+      /// Returns the list of registered domains of an organization. The domains are used to identify to which organization a user belongs.
+      ///
+      /// Required permission:
+      ///  - `org.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ListOrganizationDomainsResponse> ListOrganizationDomainsAsync(global::Zitadel.Org.V2.ListOrganizationDomainsRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListOrganizationDomains, null, options, request);
+      }
+      /// <summary>
+      /// Delete Organization Domain
+      ///
+      /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeleteOrganizationDomainResponse DeleteOrganizationDomain(global::Zitadel.Org.V2.DeleteOrganizationDomainRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteOrganizationDomain(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete Organization Domain
+      ///
+      /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeleteOrganizationDomainResponse DeleteOrganizationDomain(global::Zitadel.Org.V2.DeleteOrganizationDomainRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeleteOrganizationDomain, null, options, request);
+      }
+      /// <summary>
+      /// Delete Organization Domain
+      ///
+      /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeleteOrganizationDomainResponse> DeleteOrganizationDomainAsync(global::Zitadel.Org.V2.DeleteOrganizationDomainRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeleteOrganizationDomainAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Delete Organization Domain
+      ///
+      /// Delete a new domain from an organization. The domains are used to identify to which organization a user belongs. If the uses use the domain for login, this will not be possible afterwards. They have to use another domain instead.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeleteOrganizationDomainResponse> DeleteOrganizationDomainAsync(global::Zitadel.Org.V2.DeleteOrganizationDomainRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeleteOrganizationDomain, null, options, request);
+      }
+      /// <summary>
+      /// Generate Organization Domain Validation
+      ///
+      /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse GenerateOrganizationDomainValidation(global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateOrganizationDomainValidation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generate Organization Domain Validation
+      ///
+      /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse GenerateOrganizationDomainValidation(global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GenerateOrganizationDomainValidation, null, options, request);
+      }
+      /// <summary>
+      /// Generate Organization Domain Validation
+      ///
+      /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse> GenerateOrganizationDomainValidationAsync(global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateOrganizationDomainValidationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generate Organization Domain Validation
+      ///
+      /// Generate a new file to be able to verify your domain with DNS or HTTP challenge.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse> GenerateOrganizationDomainValidationAsync(global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GenerateOrganizationDomainValidation, null, options, request);
+      }
+      /// <summary>
+      /// Verify Organization Domain
+      ///
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.VerifyOrganizationDomainResponse VerifyOrganizationDomain(global::Zitadel.Org.V2.VerifyOrganizationDomainRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return VerifyOrganizationDomain(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Verify Organization Domain
+      ///
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.VerifyOrganizationDomainResponse VerifyOrganizationDomain(global::Zitadel.Org.V2.VerifyOrganizationDomainRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_VerifyOrganizationDomain, null, options, request);
+      }
+      /// <summary>
+      /// Verify Organization Domain
+      ///
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.VerifyOrganizationDomainResponse> VerifyOrganizationDomainAsync(global::Zitadel.Org.V2.VerifyOrganizationDomainRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return VerifyOrganizationDomainAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Verify Organization Domain
+      ///
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.VerifyOrganizationDomainResponse> VerifyOrganizationDomainAsync(global::Zitadel.Org.V2.VerifyOrganizationDomainRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_VerifyOrganizationDomain, null, options, request);
+      }
+      /// <summary>
+      /// Deactivate Organization
+      ///
+      /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeactivateOrganizationResponse DeactivateOrganization(global::Zitadel.Org.V2.DeactivateOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeactivateOrganization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deactivate Organization
+      ///
+      /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.DeactivateOrganizationResponse DeactivateOrganization(global::Zitadel.Org.V2.DeactivateOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeactivateOrganization, null, options, request);
+      }
+      /// <summary>
+      /// Deactivate Organization
+      ///
+      /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeactivateOrganizationResponse> DeactivateOrganizationAsync(global::Zitadel.Org.V2.DeactivateOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeactivateOrganizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deactivate Organization
+      ///
+      /// Sets the state of my organization to deactivated. Users of this organization will not be able to log in.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.DeactivateOrganizationResponse> DeactivateOrganizationAsync(global::Zitadel.Org.V2.DeactivateOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeactivateOrganization, null, options, request);
+      }
+      /// <summary>
+      /// Activate Organization
+      ///
+      /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.ActivateOrganizationResponse ActivateOrganization(global::Zitadel.Org.V2.ActivateOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ActivateOrganization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Activate Organization
+      ///
+      /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Org.V2.ActivateOrganizationResponse ActivateOrganization(global::Zitadel.Org.V2.ActivateOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ActivateOrganization, null, options, request);
+      }
+      /// <summary>
+      /// Activate Organization
+      ///
+      /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ActivateOrganizationResponse> ActivateOrganizationAsync(global::Zitadel.Org.V2.ActivateOrganizationRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ActivateOrganizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Activate Organization
+      ///
+      /// Set the state of my organization to active. The state of the organization has to be deactivated to perform the request. Users of this organization will be able to log in again.
+      ///
+      /// Required permission:
+      ///  - `org.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Org.V2.ActivateOrganizationResponse> ActivateOrganizationAsync(global::Zitadel.Org.V2.ActivateOrganizationRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ActivateOrganization, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
@@ -264,7 +1466,19 @@ namespace Zitadel.Org.V2 {
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
           .AddMethod(__Method_AddOrganization, serviceImpl.AddOrganization)
-          .AddMethod(__Method_ListOrganizations, serviceImpl.ListOrganizations).Build();
+          .AddMethod(__Method_UpdateOrganization, serviceImpl.UpdateOrganization)
+          .AddMethod(__Method_ListOrganizations, serviceImpl.ListOrganizations)
+          .AddMethod(__Method_DeleteOrganization, serviceImpl.DeleteOrganization)
+          .AddMethod(__Method_SetOrganizationMetadata, serviceImpl.SetOrganizationMetadata)
+          .AddMethod(__Method_ListOrganizationMetadata, serviceImpl.ListOrganizationMetadata)
+          .AddMethod(__Method_DeleteOrganizationMetadata, serviceImpl.DeleteOrganizationMetadata)
+          .AddMethod(__Method_AddOrganizationDomain, serviceImpl.AddOrganizationDomain)
+          .AddMethod(__Method_ListOrganizationDomains, serviceImpl.ListOrganizationDomains)
+          .AddMethod(__Method_DeleteOrganizationDomain, serviceImpl.DeleteOrganizationDomain)
+          .AddMethod(__Method_GenerateOrganizationDomainValidation, serviceImpl.GenerateOrganizationDomainValidation)
+          .AddMethod(__Method_VerifyOrganizationDomain, serviceImpl.VerifyOrganizationDomain)
+          .AddMethod(__Method_DeactivateOrganization, serviceImpl.DeactivateOrganization)
+          .AddMethod(__Method_ActivateOrganization, serviceImpl.ActivateOrganization).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
@@ -275,7 +1489,19 @@ namespace Zitadel.Org.V2 {
     public static void BindService(grpc::ServiceBinderBase serviceBinder, OrganizationServiceBase serviceImpl)
     {
       serviceBinder.AddMethod(__Method_AddOrganization, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.AddOrganizationRequest, global::Zitadel.Org.V2.AddOrganizationResponse>(serviceImpl.AddOrganization));
+      serviceBinder.AddMethod(__Method_UpdateOrganization, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.UpdateOrganizationRequest, global::Zitadel.Org.V2.UpdateOrganizationResponse>(serviceImpl.UpdateOrganization));
       serviceBinder.AddMethod(__Method_ListOrganizations, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.ListOrganizationsRequest, global::Zitadel.Org.V2.ListOrganizationsResponse>(serviceImpl.ListOrganizations));
+      serviceBinder.AddMethod(__Method_DeleteOrganization, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.DeleteOrganizationRequest, global::Zitadel.Org.V2.DeleteOrganizationResponse>(serviceImpl.DeleteOrganization));
+      serviceBinder.AddMethod(__Method_SetOrganizationMetadata, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.SetOrganizationMetadataRequest, global::Zitadel.Org.V2.SetOrganizationMetadataResponse>(serviceImpl.SetOrganizationMetadata));
+      serviceBinder.AddMethod(__Method_ListOrganizationMetadata, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.ListOrganizationMetadataRequest, global::Zitadel.Org.V2.ListOrganizationMetadataResponse>(serviceImpl.ListOrganizationMetadata));
+      serviceBinder.AddMethod(__Method_DeleteOrganizationMetadata, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.DeleteOrganizationMetadataRequest, global::Zitadel.Org.V2.DeleteOrganizationMetadataResponse>(serviceImpl.DeleteOrganizationMetadata));
+      serviceBinder.AddMethod(__Method_AddOrganizationDomain, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.AddOrganizationDomainRequest, global::Zitadel.Org.V2.AddOrganizationDomainResponse>(serviceImpl.AddOrganizationDomain));
+      serviceBinder.AddMethod(__Method_ListOrganizationDomains, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.ListOrganizationDomainsRequest, global::Zitadel.Org.V2.ListOrganizationDomainsResponse>(serviceImpl.ListOrganizationDomains));
+      serviceBinder.AddMethod(__Method_DeleteOrganizationDomain, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.DeleteOrganizationDomainRequest, global::Zitadel.Org.V2.DeleteOrganizationDomainResponse>(serviceImpl.DeleteOrganizationDomain));
+      serviceBinder.AddMethod(__Method_GenerateOrganizationDomainValidation, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.GenerateOrganizationDomainValidationRequest, global::Zitadel.Org.V2.GenerateOrganizationDomainValidationResponse>(serviceImpl.GenerateOrganizationDomainValidation));
+      serviceBinder.AddMethod(__Method_VerifyOrganizationDomain, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.VerifyOrganizationDomainRequest, global::Zitadel.Org.V2.VerifyOrganizationDomainResponse>(serviceImpl.VerifyOrganizationDomain));
+      serviceBinder.AddMethod(__Method_DeactivateOrganization, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.DeactivateOrganizationRequest, global::Zitadel.Org.V2.DeactivateOrganizationResponse>(serviceImpl.DeactivateOrganization));
+      serviceBinder.AddMethod(__Method_ActivateOrganization, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Org.V2.ActivateOrganizationRequest, global::Zitadel.Org.V2.ActivateOrganizationResponse>(serviceImpl.ActivateOrganization));
     }
 
   }

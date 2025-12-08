@@ -40,190 +40,126 @@ namespace Zitadel.Session.V2 {
             "djIuU2Vzc2lvbkZpZWxkTmFtZVINc29ydGluZ0NvbHVtbiKJAQoUTGlzdFNl",
             "c3Npb25zUmVzcG9uc2USOAoHZGV0YWlscxgBIAEoCzIeLnppdGFkZWwub2Jq",
             "ZWN0LnYyLkxpc3REZXRhaWxzUgdkZXRhaWxzEjcKCHNlc3Npb25zGAIgAygL",
-            "Mhsueml0YWRlbC5zZXNzaW9uLnYyLlNlc3Npb25SCHNlc3Npb25zIm4KEUdl",
-            "dFNlc3Npb25SZXF1ZXN0Eh0KCnNlc3Npb25faWQYASABKAlSCXNlc3Npb25J",
-            "ZBIoCg1zZXNzaW9uX3Rva2VuGAIgASgJSABSDHNlc3Npb25Ub2tlbogBAUIQ",
-            "Cg5fc2Vzc2lvbl90b2tlbiJLChJHZXRTZXNzaW9uUmVzcG9uc2USNQoHc2Vz",
-            "c2lvbhgBIAEoCzIbLnppdGFkZWwuc2Vzc2lvbi52Mi5TZXNzaW9uUgdzZXNz",
-            "aW9uIrEFChRDcmVhdGVTZXNzaW9uUmVxdWVzdBKTAQoGY2hlY2tzGAEgASgL",
-            "Mhoueml0YWRlbC5zZXNzaW9uLnYyLkNoZWNrc0JfkkFcMloiQ2hlY2sgZm9y",
-            "IHVzZXIgYW5kIHBhc3N3b3JkLiBTdWNjZXNzZnVsIGNoZWNrcyB3aWxsIGJl",
-            "IHN0YXRlZCBhcyBmYWN0b3JzIG9uIHRoZSBzZXNzaW9uLiJSBmNoZWNrcxKM",
-            "AQoIbWV0YWRhdGEYAiADKAsyNi56aXRhZGVsLnNlc3Npb24udjIuQ3JlYXRl",
-            "U2Vzc2lvblJlcXVlc3QuTWV0YWRhdGFFbnRyeUI4kkE1MjMiY3VzdG9tIGtl",
-            "eSB2YWx1ZSBsaXN0IHRvIGJlIHN0b3JlZCBvbiB0aGUgc2Vzc2lvbiJSCG1l",
-            "dGFkYXRhEkUKCmNoYWxsZW5nZXMYAyABKAsyJS56aXRhZGVsLnNlc3Npb24u",
-            "djIuUmVxdWVzdENoYWxsZW5nZXNSCmNoYWxsZW5nZXMSPAoKdXNlcl9hZ2Vu",
-            "dBgEIAEoCzIdLnppdGFkZWwuc2Vzc2lvbi52Mi5Vc2VyQWdlbnRSCXVzZXJB",
-            "Z2VudBKkAQoIbGlmZXRpbWUYBSABKAsyGS5nb29nbGUucHJvdG9idWYuRHVy",
-            "YXRpb25CaJJBXTJRImR1cmF0aW9uIChpbiBzZWNvbmRzKSBhZnRlciB3aGlj",
-            "aCB0aGUgc2Vzc2lvbiB3aWxsIGJlIGF1dG9tYXRpY2FsbHkgaW52YWxpZGF0",
-            "ZWQiSggiMTgwMDBzIvpCBaoBAioASABSCGxpZmV0aW1liAEBGjsKDU1ldGFk",
-            "YXRhRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAxSBXZh",
-            "bHVlOgI4AUILCglfbGlmZXRpbWUigQMKFUNyZWF0ZVNlc3Npb25SZXNwb25z",
-            "ZRI0CgdkZXRhaWxzGAEgASgLMhoueml0YWRlbC5vYmplY3QudjIuRGV0YWls",
-            "c1IHZGV0YWlscxJNCgpzZXNzaW9uX2lkGAIgASgJQi6SQSsyEyJpZCBvZiB0",
-            "aGUgc2Vzc2lvbiJKFCIyMjI0MzAzNTQxMjY5NzU1MzMiUglzZXNzaW9uSWQS",
-            "ogEKDXNlc3Npb25fdG9rZW4YAyABKAlCfZJBejJ4IlRoZSBjdXJyZW50IHRv",
-            "a2VuIG9mIHRoZSBzZXNzaW9uLCB3aGljaCBpcyByZXF1aXJlZCBmb3IgZGVs",
-            "ZXRlIHNlc3Npb24sIGdldCBzZXNzaW9uIG9yIHRoZSByZXF1ZXN0IG9mIG90",
-            "aGVyIHJlc291cmNlcy4iUgxzZXNzaW9uVG9rZW4SPgoKY2hhbGxlbmdlcxgE",
-            "IAEoCzIeLnppdGFkZWwuc2Vzc2lvbi52Mi5DaGFsbGVuZ2VzUgpjaGFsbGVu",
-            "Z2VzIrYGChFTZXRTZXNzaW9uUmVxdWVzdBJnCgpzZXNzaW9uX2lkGAEgASgJ",
-            "QkiSQTsyHSJpZCBvZiB0aGUgc2Vzc2lvbiB0byB1cGRhdGUiShQiMjIyNDMw",
-            "MzU0MTI2OTc1NTMzInjIAYABAfpCB3IFEAEYyAFSCXNlc3Npb25JZBJeCg1z",
-            "ZXNzaW9uX3Rva2VuGAIgASgJQjmSQSwyJCJERVBSRUNBVEVEOiB0aGlzIGZp",
-            "ZWxkIGlzIGlnbm9yZWQuInjIAYABAfpCB3IFEAAYyAFSDHNlc3Npb25Ub2tl",
-            "bhKTAQoGY2hlY2tzGAMgASgLMhoueml0YWRlbC5zZXNzaW9uLnYyLkNoZWNr",
-            "c0JfkkFcMloiQ2hlY2sgZm9yIHVzZXIgYW5kIHBhc3N3b3JkLiBTdWNjZXNz",
-            "ZnVsIGNoZWNrcyB3aWxsIGJlIHN0YXRlZCBhcyBmYWN0b3JzIG9uIHRoZSBz",
-            "ZXNzaW9uLiJSBmNoZWNrcxKJAQoIbWV0YWRhdGEYBCADKAsyMy56aXRhZGVs",
-            "LnNlc3Npb24udjIuU2V0U2Vzc2lvblJlcXVlc3QuTWV0YWRhdGFFbnRyeUI4",
-            "kkE1MjMiY3VzdG9tIGtleSB2YWx1ZSBsaXN0IHRvIGJlIHN0b3JlZCBvbiB0",
-            "aGUgc2Vzc2lvbiJSCG1ldGFkYXRhEkUKCmNoYWxsZW5nZXMYBSABKAsyJS56",
-            "aXRhZGVsLnNlc3Npb24udjIuUmVxdWVzdENoYWxsZW5nZXNSCmNoYWxsZW5n",
-            "ZXMSpAEKCGxpZmV0aW1lGAYgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0",
-            "aW9uQmiSQV0yUSJkdXJhdGlvbiAoaW4gc2Vjb25kcykgYWZ0ZXIgd2hpY2gg",
-            "dGhlIHNlc3Npb24gd2lsbCBiZSBhdXRvbWF0aWNhbGx5IGludmFsaWRhdGVk",
-            "IkoIIjE4MDAwcyL6QgWqAQIqAEgAUghsaWZldGltZYgBARo7Cg1NZXRhZGF0",
-            "YUVudHJ5EhAKA2tleRgBIAEoCVIDa2V5EhQKBXZhbHVlGAIgASgMUgV2YWx1",
-            "ZToCOAFCCwoJX2xpZmV0aW1lIq8CChJTZXRTZXNzaW9uUmVzcG9uc2USNAoH",
-            "ZGV0YWlscxgBIAEoCzIaLnppdGFkZWwub2JqZWN0LnYyLkRldGFpbHNSB2Rl",
-            "dGFpbHMSogEKDXNlc3Npb25fdG9rZW4YAiABKAlCfZJBejJ4IlRoZSBjdXJy",
-            "ZW50IHRva2VuIG9mIHRoZSBzZXNzaW9uLCB3aGljaCBpcyByZXF1aXJlZCBm",
-            "b3IgZGVsZXRlIHNlc3Npb24sIGdldCBzZXNzaW9uIG9yIHRoZSByZXF1ZXN0",
-            "IG9mIG90aGVyIHJlc291cmNlcy4iUgxzZXNzaW9uVG9rZW4SPgoKY2hhbGxl",
-            "bmdlcxgDIAEoCzIeLnppdGFkZWwuc2Vzc2lvbi52Mi5DaGFsbGVuZ2VzUgpj",
-            "aGFsbGVuZ2VzIp4DChREZWxldGVTZXNzaW9uUmVxdWVzdBJqCgpzZXNzaW9u",
-            "X2lkGAEgASgJQkuSQT4yICJpZCBvZiB0aGUgc2Vzc2lvbiB0byB0ZXJtaW5h",
-            "dGUiShQiMjIyNDMwMzU0MTI2OTc1NTMzInjIAYABAfpCB3IFEAEYyAFSCXNl",
-            "c3Npb25JZBKHAgoNc2Vzc2lvbl90b2tlbhgCIAEoCULcAZJB2AEy1QEiVGhl",
-            "IGN1cnJlbnQgdG9rZW4gb2YgdGhlIHNlc3Npb24sIHByZXZpb3VzbHkgcmV0",
-            "dXJuZWQgb24gdGhlIGNyZWF0ZSAvIHVwZGF0ZSByZXF1ZXN0LiBUaGUgdG9r",
-            "ZW4gaXMgcmVxdWlyZWQgdW5sZXNzIHRoZSBhdXRoZW50aWNhdGVkIHVzZXIg",
-            "dGVybWluYXRlcyB0aGUgb3duIHNlc3Npb24gb3IgaXMgZ3JhbnRlZCB0aGUg",
-            "YHNlc3Npb24uZGVsZXRlYCBwZXJtaXNzaW9uLiJIAFIMc2Vzc2lvblRva2Vu",
-            "iAEBQhAKDl9zZXNzaW9uX3Rva2VuIk0KFURlbGV0ZVNlc3Npb25SZXNwb25z",
-            "ZRI0CgdkZXRhaWxzGAEgASgLMhoueml0YWRlbC5vYmplY3QudjIuRGV0YWls",
-            "c1IHZGV0YWlscyKyDQoGQ2hlY2tzEnEKBHVzZXIYASABKAsyHS56aXRhZGVs",
-            "LnNlc3Npb24udjIuQ2hlY2tVc2VyQjmSQTYyNCJjaGVja3MgdGhlIHVzZXIg",
-            "YW5kIHVwZGF0ZXMgdGhlIHNlc3Npb24gb24gc3VjY2VzcyJIAFIEdXNlcogB",
-            "ARLiAgoIcGFzc3dvcmQYAiABKAsyIS56aXRhZGVsLnNlc3Npb24udjIuQ2hl",
-            "Y2tQYXNzd29yZEKdApJBmQIylgIiQ2hlY2tzIHRoZSBwYXNzd29yZCBhbmQg",
-            "dXBkYXRlcyB0aGUgc2Vzc2lvbiBvbiBzdWNjZXNzLiBSZXF1aXJlcyB0aGF0",
-            "IHRoZSB1c2VyIGlzIGFscmVhZHkgY2hlY2tlZCwgZWl0aGVyIGluIHRoZSBw",
-            "cmV2aW91cyBvciB0aGUgc2FtZSByZXF1ZXN0LiBPbiBmYWlsZWQgcGFzc3dv",
-            "cmQgY2hlY2sgaWQ6ICJDT01NQU5ELTNNMGZzIiB3bGwgYmUgcmV0dXJuZWQu",
-            "IE9uIHVzZXIgbG9ja2VkIG91dCBpZDogIkNPTU1BTkQtSkxLMzUiLyJDT01N",
-            "QU5ELVNGQTN0IiB3aWxsIGJlIHJldHVybmVkIkgBUghwYXNzd29yZIgBARL8",
-            "AQoKd2ViX2F1dGhfbhgDIAEoCzIhLnppdGFkZWwuc2Vzc2lvbi52Mi5DaGVj",
-            "a1dlYkF1dGhOQrUBkkGxATKuASJDaGVja3MgdGhlIHB1YmxpYyBrZXkgY3Jl",
-            "ZGVudGlhbCBpc3N1ZWQgYnkgdGhlIFdlYkF1dGhOIGNsaWVudC4gUmVxdWly",
-            "ZXMgdGhhdCB0aGUgdXNlciBpcyBhbHJlYWR5IGNoZWNrZWQgYW5kIGEgV2Vi",
-            "QXV0aE4gY2hhbGxlbmdlIHRvIGJlIHJlcXVlc3RlZCwgaW4gYW55IHByZXZp",
-            "b3VzIHJlcXVlc3QuIkgCUgh3ZWJBdXRoTogBARKwAQoKaWRwX2ludGVudBgE",
-            "IAEoCzIiLnppdGFkZWwuc2Vzc2lvbi52Mi5DaGVja0lEUEludGVudEJokkFl",
-            "MmMiQ2hlY2tzIHRoZSBJRFAgaW50ZW50LiBSZXF1aXJlcyB0aGF0IHRoZSB1",
-            "c2VybGluayBpcyBhbHJlYWR5IGNoZWNrZWQgYW5kIGEgc3VjY2Vzc2Z1bCBp",
-            "ZHAgaW50ZW50LiJIA1IJaWRwSW50ZW50iAEBEuQBCgR0b3RwGAUgASgLMh0u",
-            "eml0YWRlbC5zZXNzaW9uLnYyLkNoZWNrVE9UUEKrAZJBpwEypAEiQ2hlY2tz",
-            "IHRoZSBUaW1lLWJhc2VkIE9uZS1UaW1lIFBhc3N3b3JkIGFuZCB1cGRhdGVz",
-            "IHRoZSBzZXNzaW9uIG9uIHN1Y2Nlc3MuIFJlcXVpcmVzIHRoYXQgdGhlIHVz",
-            "ZXIgaXMgYWxyZWFkeSBjaGVja2VkLCBlaXRoZXIgaW4gdGhlIHByZXZpb3Vz",
-            "IG9yIHRoZSBzYW1lIHJlcXVlc3QuIkgEUgR0b3RwiAEBEusBCgdvdHBfc21z",
-            "GAYgASgLMhwueml0YWRlbC5zZXNzaW9uLnYyLkNoZWNrT1RQQq4BkkGqATKn",
-            "ASJDaGVja3MgdGhlIE9uZS1UaW1lIFBhc3N3b3JkIHNlbnQgb3ZlciBTTVMg",
-            "YW5kIHVwZGF0ZXMgdGhlIHNlc3Npb24gb24gc3VjY2Vzcy4gUmVxdWlyZXMg",
-            "dGhhdCB0aGUgdXNlciBpcyBhbHJlYWR5IGNoZWNrZWQsIGVpdGhlciBpbiB0",
-            "aGUgcHJldmlvdXMgb3IgdGhlIHNhbWUgcmVxdWVzdC4iSAVSBm90cFNtc4gB",
-            "ARLxAQoJb3RwX2VtYWlsGAcgASgLMhwueml0YWRlbC5zZXNzaW9uLnYyLkNo",
-            "ZWNrT1RQQrABkkGsATKpASJDaGVja3MgdGhlIE9uZS1UaW1lIFBhc3N3b3Jk",
-            "IHNlbnQgb3ZlciBFbWFpbCBhbmQgdXBkYXRlcyB0aGUgc2Vzc2lvbiBvbiBz",
-            "dWNjZXNzLiBSZXF1aXJlcyB0aGF0IHRoZSB1c2VyIGlzIGFscmVhZHkgY2hl",
-            "Y2tlZCwgZWl0aGVyIGluIHRoZSBwcmV2aW91cyBvciB0aGUgc2FtZSByZXF1",
-            "ZXN0LiJIBlIIb3RwRW1haWyIAQFCBwoFX3VzZXJCCwoJX3Bhc3N3b3JkQg0K",
-            "C193ZWJfYXV0aF9uQg0KC19pZHBfaW50ZW50QgcKBV90b3RwQgoKCF9vdHBf",
-            "c21zQgwKCl9vdHBfZW1haWwitQEKCUNoZWNrVXNlchJWCgd1c2VyX2lkGAEg",
-            "ASgJQjuSQS5KJiJkNjU0ZTZiYS03MGEzLTQ4ZWYtYTk1ZC0zN2M4ZDhhNzkw",
-            "MWEieMgBgAEB+kIHcgUQARjIAUgAUgZ1c2VySWQSRgoKbG9naW5fbmFtZRgC",
-            "IAEoCUIlkkEYShAibWluaUBtb3VzZS5jb20ieMgBgAEB+kIHcgUQARjIAUgA",
-            "Uglsb2dpbk5hbWVCCAoGc2VhcmNoIk8KDUNoZWNrUGFzc3dvcmQSPgoIcGFz",
-            "c3dvcmQYASABKAlCIpJBFUoNIlYzcnlTM2N1cmUhInjIAYABAfpCB3IFEAEY",
-            "yAFSCHBhc3N3b3JkIskBCg1DaGVja1dlYkF1dGhOErcBChljcmVkZW50aWFs",
-            "X2Fzc2VydGlvbl9kYXRhGAEgASgLMhcuZ29vZ2xlLnByb3RvYnVmLlN0cnVj",
-            "dEJikkFTMkpKU09OIHJlcHJlc2VudGF0aW9uIG9mIHB1YmxpYyBrZXkgY3Jl",
-            "ZGVudGlhbCBpc3N1ZWQgYnkgdGhlIHdlYkF1dGhOIGNsaWVudHiAgECAATfi",
-            "QQEC+kIFigECEAFSF2NyZWRlbnRpYWxBc3NlcnRpb25EYXRhIo0DCg5DaGVj",
-            "a0lEUEludGVudBK4AQoNaWRwX2ludGVudF9pZBgBIAEoCUKTAZJBhQEyVUlE",
-            "IG9mIHRoZSBpZHAgaW50ZW50LCBwcmV2aW91c2x5IHJldHVybmVkIG9uIHRo",
-            "ZSBzdWNjZXNzIHJlc3BvbnNlIG9mIHRoZSBJRFAgY2FsbGJhY2tKJiJkNjU0",
-            "ZTZiYS03MGEzLTQ4ZWYtYTk1ZC0zN2M4ZDhhNzkwMWEieMgBgAEB+kIHcgUQ",
-            "ARjIAVILaWRwSW50ZW50SWQSvwEKEGlkcF9pbnRlbnRfdG9rZW4YAiABKAlC",
-            "lAGSQYYBMlh0b2tlbiBvZiB0aGUgaWRwIGludGVudCwgcHJldmlvdXNseSBy",
-            "ZXR1cm5lZCBvbiB0aGUgc3VjY2VzcyByZXNwb25zZSBvZiB0aGUgSURQIGNh",
-            "bGxiYWNrSiQiU0pLTDNpb0lEcG8zNDJpb3F3OThmanAzc2RmMzJ3YWhiPSJ4",
-            "yAGAAQH6QgdyBRABGMgBUg5pZHBJbnRlbnRUb2tlbiI8CglDaGVja1RPVFAS",
-            "LwoEY29kZRgBIAEoCUIbkkEPSggiMzIzNzY0IngGgAEG+kIGcgQQBhgGUgRj",
-            "b2RlIjgKCENoZWNrT1RQEiwKBGNvZGUYASABKAlCGJJBDkoJIjMyMzc2NDIi",
-            "gAEB+kIEcgIQAVIEY29kZTLaCgoOU2Vzc2lvblNlcnZpY2UShwIKDExpc3RT",
-            "ZXNzaW9ucxInLnppdGFkZWwuc2Vzc2lvbi52Mi5MaXN0U2Vzc2lvbnNSZXF1",
-            "ZXN0Gigueml0YWRlbC5zZXNzaW9uLnYyLkxpc3RTZXNzaW9uc1Jlc3BvbnNl",
-            "IqMBkkFtEg9TZWFyY2ggc2Vzc2lvbnMaE1NlYXJjaCBmb3Igc2Vzc2lvbnNK",
-            "CwoDMjAwEgQKAk9LSjgKAzQwMBIxChJpbnZhbGlkIGxpc3QgcXVlcnkSGwoZ",
-            "GhcjL2RlZmluaXRpb25zL3JwY1N0YXR1c4q1GBEKDwoNYXV0aGVudGljYXRl",
-            "ZILT5JMCGCITL3YyL3Nlc3Npb25zL3NlYXJjaDoBKhKNAgoKR2V0U2Vzc2lv",
-            "bhIlLnppdGFkZWwuc2Vzc2lvbi52Mi5HZXRTZXNzaW9uUmVxdWVzdBomLnpp",
-            "dGFkZWwuc2Vzc2lvbi52Mi5HZXRTZXNzaW9uUmVzcG9uc2UirwGSQXYSDUdl",
-            "dCBhIHNlc3Npb24aWEdldCBhIHNlc3Npb24gYW5kIGFsbCBpdHMgaW5mb3Jt",
-            "YXRpb24gbGlrZSB0aGUgdGltZSBvZiB0aGUgdXNlciBvciBwYXNzd29yZCB2",
-            "ZXJpZmljYXRpb25KCwoDMjAwEgQKAk9LirUYEQoPCg1hdXRoZW50aWNhdGVk",
-            "gtPkkwIbEhkvdjIvc2Vzc2lvbnMve3Nlc3Npb25faWR9EqYCCg1DcmVhdGVT",
-            "ZXNzaW9uEigueml0YWRlbC5zZXNzaW9uLnYyLkNyZWF0ZVNlc3Npb25SZXF1",
-            "ZXN0Gikueml0YWRlbC5zZXNzaW9uLnYyLkNyZWF0ZVNlc3Npb25SZXNwb25z",
-            "ZSK/AZJBigESFENyZWF0ZSBhIG5ldyBzZXNzaW9uGmVDcmVhdGUgYSBuZXcg",
-            "c2Vzc2lvbi4gQSB0b2tlbiB3aWxsIGJlIHJldHVybmVkLCB3aGljaCBpcyBy",
-            "ZXF1aXJlZCBmb3IgZnVydGhlciB1cGRhdGVzIG9mIHRoZSBzZXNzaW9uLkoL",
-            "CgMyMDASBAoCT0uKtRgWCg8KDWF1dGhlbnRpY2F0ZWQSAwjJAYLT5JMCESIM",
-            "L3YyL3Nlc3Npb25zOgEqEvUBCgpTZXRTZXNzaW9uEiUueml0YWRlbC5zZXNz",
-            "aW9uLnYyLlNldFNlc3Npb25SZXF1ZXN0GiYueml0YWRlbC5zZXNzaW9uLnYy",
-            "LlNldFNlc3Npb25SZXNwb25zZSKXAZJBWxIaVXBkYXRlIGFuIGV4aXN0aW5n",
-            "IHNlc3Npb24aMFVwZGF0ZSBhbiBleGlzdGluZyBzZXNzaW9uIHdpdGggbmV3",
-            "IGluZm9ybWF0aW9uLkoLCgMyMDASBAoCT0uKtRgRCg8KDWF1dGhlbnRpY2F0",
-            "ZWSC0+STAh4yGS92Mi9zZXNzaW9ucy97c2Vzc2lvbl9pZH06ASoSjAIKDURl",
-            "bGV0ZVNlc3Npb24SKC56aXRhZGVsLnNlc3Npb24udjIuRGVsZXRlU2Vzc2lv",
-            "blJlcXVlc3QaKS56aXRhZGVsLnNlc3Npb24udjIuRGVsZXRlU2Vzc2lvblJl",
-            "c3BvbnNlIqUBkkFpEh1UZXJtaW5hdGUgYW4gZXhpc3Rpbmcgc2Vzc2lvbho7",
-            "VGVybWluYXRlIHlvdXIgb3duIHNlc3Npb24gb3IgaWYgZ3JhbnRlZCBhbnkg",
-            "b3RoZXIgc2Vzc2lvbi5KCwoDMjAwEgQKAk9LirUYEQoPCg1hdXRoZW50aWNh",
-            "dGVkgtPkkwIeKhkvdjIvc2Vzc2lvbnMve3Nlc3Npb25faWR9OgEqQsIJChZj",
-            "b20ueml0YWRlbC5zZXNzaW9uLnYyQhNTZXNzaW9uU2VydmljZVByb3RvUAFa",
-            "NmdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3Nlc3Npb24v",
-            "djI7c2Vzc2lvbqICA1pTWKoCElppdGFkZWwuU2Vzc2lvbi5WMsoCElppdGFk",
-            "ZWxcU2Vzc2lvblxWMuICHlppdGFkZWxcU2Vzc2lvblxWMlxHUEJNZXRhZGF0",
-            "YeoCFFppdGFkZWw6OlNlc3Npb246OlYykkHvBxLNAgoPU2Vzc2lvbiBTZXJ2",
-            "aWNlErsBVGhpcyBBUEkgaXMgaW50ZW5kZWQgdG8gbWFuYWdlIHNlc3Npb25z",
-            "IGluIGEgWklUQURFTCBpbnN0YW5jZS4gRm9sbG93IHRoZSBndWlkZXMgb24g",
-            "aG93IHRvIFtidWlsZCB5b3VyIG93biBMb2dpbiBVSV0oL2RvY3MvZ3VpZGVz",
-            "L2ludGVncmF0ZS9sb2dpbi11aSkgYW5kIGxlYXJuIGhvdyB0byB1c2UgdGhl",
-            "IFNlc3Npb24gQVBJLiIuCgdaSVRBREVMEhNodHRwczovL3ppdGFkZWwuY29t",
-            "Gg5oaUB6aXRhZGVsLmNvbSpHCgpBcGFjaGUgMi4wEjlodHRwczovL2dpdGh1",
-            "Yi5jb20veml0YWRlbC96aXRhZGVsL2Jsb2IvbWFpbi9MSUNFTlNJTkcubWQy",
-            "AzIuMBoOJENVU1RPTS1ET01BSU4iAS8qAgIBMhBhcHBsaWNhdGlvbi9qc29u",
-            "MhBhcHBsaWNhdGlvbi9ncnBjMhphcHBsaWNhdGlvbi9ncnBjLXdlYitwcm90",
-            "bzoQYXBwbGljYXRpb24vanNvbjoQYXBwbGljYXRpb24vZ3JwYzoaYXBwbGlj",
-            "YXRpb24vZ3JwYy13ZWIrcHJvdG9SbQoDNDAzEmYKR1JldHVybmVkIHdoZW4g",
-            "dGhlIHVzZXIgZG9lcyBub3QgaGF2ZSBwZXJtaXNzaW9uIHRvIGFjY2VzcyB0",
-            "aGUgcmVzb3VyY2UuEhsKGRoXIy9kZWZpbml0aW9ucy9ycGNTdGF0dXNSUAoD",
-            "NDA0EkkKKlJldHVybmVkIHdoZW4gdGhlIHJlc291cmNlIGRvZXMgbm90IGV4",
-            "aXN0LhIbChkaFyMvZGVmaW5pdGlvbnMvcnBjU3RhdHVzWsIBCr8BCgZPQXV0",
-            "aDIStAEIAygEMiEkQ1VTVE9NLURPTUFJTi9vYXV0aC92Mi9hdXRob3JpemU6",
-            "HSRDVVNUT00tRE9NQUlOL29hdXRoL3YyL3Rva2VuQmwKEAoGb3BlbmlkEgZv",
-            "cGVuaWQKWAoqdXJuOnppdGFkZWw6aWFtOm9yZzpwcm9qZWN0OmlkOnppdGFk",
-            "ZWw6YXVkEip1cm46eml0YWRlbDppYW06b3JnOnByb2plY3Q6aWQ6eml0YWRl",
-            "bDphdWRiQAo+CgZPQXV0aDISNAoGb3BlbmlkCip1cm46eml0YWRlbDppYW06",
-            "b3JnOnByb2plY3Q6aWQ6eml0YWRlbDphdWRyPgoiRGV0YWlsZWQgaW5mb3Jt",
-            "YXRpb24gYWJvdXQgWklUQURFTBIYaHR0cHM6Ly96aXRhZGVsLmNvbS9kb2Nz",
-            "YgZwcm90bzM="));
+            "Mhsueml0YWRlbC5zZXNzaW9uLnYyLlNlc3Npb25SCHNlc3Npb25zIsgBChFH",
+            "ZXRTZXNzaW9uUmVxdWVzdBJMCgpzZXNzaW9uX2lkGAEgASgJQi2SQRxKFCIy",
+            "MjI0MzAzNTQxMjY5NzU1MzMieMgBgAEB4kEBAvpCB3IFEAEYyAFSCXNlc3Np",
+            "b25JZBJTCg1zZXNzaW9uX3Rva2VuGAIgASgJQimSQRxKFCIyMjI0MzAzNTQx",
+            "MjY5NzU1MzMieMgBgAEB+kIHcgUQARjIAUgAUgxzZXNzaW9uVG9rZW6IAQFC",
+            "EAoOX3Nlc3Npb25fdG9rZW4iSwoSR2V0U2Vzc2lvblJlc3BvbnNlEjUKB3Nl",
+            "c3Npb24YASABKAsyGy56aXRhZGVsLnNlc3Npb24udjIuU2Vzc2lvblIHc2Vz",
+            "c2lvbiLAAwoUQ3JlYXRlU2Vzc2lvblJlcXVlc3QSMgoGY2hlY2tzGAEgASgL",
+            "Mhoueml0YWRlbC5zZXNzaW9uLnYyLkNoZWNrc1IGY2hlY2tzElIKCG1ldGFk",
+            "YXRhGAIgAygLMjYueml0YWRlbC5zZXNzaW9uLnYyLkNyZWF0ZVNlc3Npb25S",
+            "ZXF1ZXN0Lk1ldGFkYXRhRW50cnlSCG1ldGFkYXRhEkUKCmNoYWxsZW5nZXMY",
+            "AyABKAsyJS56aXRhZGVsLnNlc3Npb24udjIuUmVxdWVzdENoYWxsZW5nZXNS",
+            "CmNoYWxsZW5nZXMSPAoKdXNlcl9hZ2VudBgEIAEoCzIdLnppdGFkZWwuc2Vz",
+            "c2lvbi52Mi5Vc2VyQWdlbnRSCXVzZXJBZ2VudBJRCghsaWZldGltZRgFIAEo",
+            "CzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkIVkkEKSggiMTgwMDBzIvpC",
+            "BaoBAioASABSCGxpZmV0aW1liAEBGjsKDU1ldGFkYXRhRW50cnkSEAoDa2V5",
+            "GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAxSBXZhbHVlOgI4AUILCglfbGlm",
+            "ZXRpbWUi7AEKFUNyZWF0ZVNlc3Npb25SZXNwb25zZRI0CgdkZXRhaWxzGAEg",
+            "ASgLMhoueml0YWRlbC5vYmplY3QudjIuRGV0YWlsc1IHZGV0YWlscxI4Cgpz",
+            "ZXNzaW9uX2lkGAIgASgJQhmSQRZKFCIyMjI0MzAzNTQxMjY5NzU1MzMiUglz",
+            "ZXNzaW9uSWQSIwoNc2Vzc2lvbl90b2tlbhgDIAEoCVIMc2Vzc2lvblRva2Vu",
+            "Ej4KCmNoYWxsZW5nZXMYBCABKAsyHi56aXRhZGVsLnNlc3Npb24udjIuQ2hh",
+            "bGxlbmdlc1IKY2hhbGxlbmdlcyLzAwoRU2V0U2Vzc2lvblJlcXVlc3QSTAoK",
+            "c2Vzc2lvbl9pZBgBIAEoCUItkkEcShQiMjIyNDMwMzU0MTI2OTc1NTMzInjI",
+            "AYABAeJBAQL6QgdyBRABGMgBUglzZXNzaW9uSWQSJwoNc2Vzc2lvbl90b2tl",
+            "bhgCIAEoCUICGAFSDHNlc3Npb25Ub2tlbhIyCgZjaGVja3MYAyABKAsyGi56",
+            "aXRhZGVsLnNlc3Npb24udjIuQ2hlY2tzUgZjaGVja3MSTwoIbWV0YWRhdGEY",
+            "BCADKAsyMy56aXRhZGVsLnNlc3Npb24udjIuU2V0U2Vzc2lvblJlcXVlc3Qu",
+            "TWV0YWRhdGFFbnRyeVIIbWV0YWRhdGESRQoKY2hhbGxlbmdlcxgFIAEoCzIl",
+            "LnppdGFkZWwuc2Vzc2lvbi52Mi5SZXF1ZXN0Q2hhbGxlbmdlc1IKY2hhbGxl",
+            "bmdlcxJRCghsaWZldGltZRgGIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
+            "dGlvbkIVkkEKSggiMTgwMDBzIvpCBaoBAioASABSCGxpZmV0aW1liAEBGjsK",
+            "DU1ldGFkYXRhRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiAB",
+            "KAxSBXZhbHVlOgI4AUILCglfbGlmZXRpbWUirwEKElNldFNlc3Npb25SZXNw",
+            "b25zZRI0CgdkZXRhaWxzGAEgASgLMhoueml0YWRlbC5vYmplY3QudjIuRGV0",
+            "YWlsc1IHZGV0YWlscxIjCg1zZXNzaW9uX3Rva2VuGAIgASgJUgxzZXNzaW9u",
+            "VG9rZW4SPgoKY2hhbGxlbmdlcxgDIAEoCzIeLnppdGFkZWwuc2Vzc2lvbi52",
+            "Mi5DaGFsbGVuZ2VzUgpjaGFsbGVuZ2VzIqABChREZWxldGVTZXNzaW9uUmVx",
+            "dWVzdBJMCgpzZXNzaW9uX2lkGAEgASgJQi2SQRxKFCIyMjI0MzAzNTQxMjY5",
+            "NzU1MzMieMgBgAEB4kEBAvpCB3IFEAEYyAFSCXNlc3Npb25JZBIoCg1zZXNz",
+            "aW9uX3Rva2VuGAIgASgJSABSDHNlc3Npb25Ub2tlbogBAUIQCg5fc2Vzc2lv",
+            "bl90b2tlbiJNChVEZWxldGVTZXNzaW9uUmVzcG9uc2USNAoHZGV0YWlscxgB",
+            "IAEoCzIaLnppdGFkZWwub2JqZWN0LnYyLkRldGFpbHNSB2RldGFpbHMinQQK",
+            "BkNoZWNrcxI2CgR1c2VyGAEgASgLMh0ueml0YWRlbC5zZXNzaW9uLnYyLkNo",
+            "ZWNrVXNlckgAUgR1c2VyiAEBEkIKCHBhc3N3b3JkGAIgASgLMiEueml0YWRl",
+            "bC5zZXNzaW9uLnYyLkNoZWNrUGFzc3dvcmRIAVIIcGFzc3dvcmSIAQESRAoK",
+            "d2ViX2F1dGhfbhgDIAEoCzIhLnppdGFkZWwuc2Vzc2lvbi52Mi5DaGVja1dl",
+            "YkF1dGhOSAJSCHdlYkF1dGhOiAEBEkYKCmlkcF9pbnRlbnQYBCABKAsyIi56",
+            "aXRhZGVsLnNlc3Npb24udjIuQ2hlY2tJRFBJbnRlbnRIA1IJaWRwSW50ZW50",
+            "iAEBEjYKBHRvdHAYBSABKAsyHS56aXRhZGVsLnNlc3Npb24udjIuQ2hlY2tU",
+            "T1RQSARSBHRvdHCIAQESOgoHb3RwX3NtcxgGIAEoCzIcLnppdGFkZWwuc2Vz",
+            "c2lvbi52Mi5DaGVja09UUEgFUgZvdHBTbXOIAQESPgoJb3RwX2VtYWlsGAcg",
+            "ASgLMhwueml0YWRlbC5zZXNzaW9uLnYyLkNoZWNrT1RQSAZSCG90cEVtYWls",
+            "iAEBQgcKBV91c2VyQgsKCV9wYXNzd29yZEINCgtfd2ViX2F1dGhfbkINCgtf",
+            "aWRwX2ludGVudEIHCgVfdG90cEIKCghfb3RwX3Ntc0IMCgpfb3RwX2VtYWls",
+            "IsIBCglDaGVja1VzZXISWgoHdXNlcl9pZBgBIAEoCUI/kkEuSiYiZDY1NGU2",
+            "YmEtNzBhMy00OGVmLWE5NWQtMzdjOGQ4YTc5MDFhInjIAYABAeJBAQL6Qgdy",
+            "BRABGMgBSABSBnVzZXJJZBJKCgpsb2dpbl9uYW1lGAIgASgJQimSQRhKECJt",
+            "aW5pQG1vdXNlLmNvbSJ4yAGAAQHiQQEC+kIHcgUQARjIAUgAUglsb2dpbk5h",
+            "bWVCDQoGc2VhcmNoEgP4QgEiUwoNQ2hlY2tQYXNzd29yZBJCCghwYXNzd29y",
+            "ZBgBIAEoCUImkkEVSg0iVjNyeVMzY3VyZSEieMgBgAEB4kEBAvpCB3IFEAEY",
+            "yAFSCHBhc3N3b3JkInwKDUNoZWNrV2ViQXV0aE4SawoZY3JlZGVudGlhbF9h",
+            "c3NlcnRpb25fZGF0YRgBIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RC",
+            "FpJBB3iAgECAATfiQQEC+kIFigECEAFSF2NyZWRlbnRpYWxBc3NlcnRpb25E",
+            "YXRhIt4BCg5DaGVja0lEUEludGVudBJjCg1pZHBfaW50ZW50X2lkGAEgASgJ",
+            "Qj+SQS5KJiJkNjU0ZTZiYS03MGEzLTQ4ZWYtYTk1ZC0zN2M4ZDhhNzkwMWEi",
+            "eMgBgAEB4kEBAvpCB3IFEAEYyAFSC2lkcEludGVudElkEmcKEGlkcF9pbnRl",
+            "bnRfdG9rZW4YAiABKAlCPZJBLEokIlNKS0wzaW9JRHBvMzQyaW9xdzk4Zmpw",
+            "M3NkZjMyd2FoYj0ieMgBgAEB4kEBAvpCB3IFEAEYyAFSDmlkcEludGVudFRv",
+            "a2VuIkAKCUNoZWNrVE9UUBIzCgRjb2RlGAEgASgJQh+SQQ9KCCIzMjM3NjQi",
+            "eAaAAQbiQQEC+kIGcgQQBhgGUgRjb2RlIjwKCENoZWNrT1RQEjAKBGNvZGUY",
+            "ASABKAlCHJJBDkoJIjMyMzc2NDIigAEB4kEBAvpCBHICEAFSBGNvZGUyngcK",
+            "DlNlc3Npb25TZXJ2aWNlEuABCgxMaXN0U2Vzc2lvbnMSJy56aXRhZGVsLnNl",
+            "c3Npb24udjIuTGlzdFNlc3Npb25zUmVxdWVzdBooLnppdGFkZWwuc2Vzc2lv",
+            "bi52Mi5MaXN0U2Vzc2lvbnNSZXNwb25zZSJ9kkFHSgsKAzIwMBIECgJPS0o4",
+            "CgM0MDASMQoSaW52YWxpZCBsaXN0IHF1ZXJ5EhsKGRoXIy9kZWZpbml0aW9u",
+            "cy9ycGNTdGF0dXOKtRgRCg8KDWF1dGhlbnRpY2F0ZWSC0+STAhgiEy92Mi9z",
+            "ZXNzaW9ucy9zZWFyY2g6ASoSowEKCkdldFNlc3Npb24SJS56aXRhZGVsLnNl",
+            "c3Npb24udjIuR2V0U2Vzc2lvblJlcXVlc3QaJi56aXRhZGVsLnNlc3Npb24u",
+            "djIuR2V0U2Vzc2lvblJlc3BvbnNlIkaSQQ1KCwoDMjAwEgQKAk9LirUYEQoP",
+            "Cg1hdXRoZW50aWNhdGVkgtPkkwIbEhkvdjIvc2Vzc2lvbnMve3Nlc3Npb25f",
+            "aWR9EqcBCg1DcmVhdGVTZXNzaW9uEigueml0YWRlbC5zZXNzaW9uLnYyLkNy",
+            "ZWF0ZVNlc3Npb25SZXF1ZXN0Gikueml0YWRlbC5zZXNzaW9uLnYyLkNyZWF0",
+            "ZVNlc3Npb25SZXNwb25zZSJBkkENSgsKAzIwMBIECgJPS4q1GBYKDwoNYXV0",
+            "aGVudGljYXRlZBIDCMkBgtPkkwIRIgwvdjIvc2Vzc2lvbnM6ASoSpgEKClNl",
+            "dFNlc3Npb24SJS56aXRhZGVsLnNlc3Npb24udjIuU2V0U2Vzc2lvblJlcXVl",
+            "c3QaJi56aXRhZGVsLnNlc3Npb24udjIuU2V0U2Vzc2lvblJlc3BvbnNlIkmS",
+            "QQ1KCwoDMjAwEgQKAk9LirUYEQoPCg1hdXRoZW50aWNhdGVkgtPkkwIeMhkv",
+            "djIvc2Vzc2lvbnMve3Nlc3Npb25faWR9OgEqEq8BCg1EZWxldGVTZXNzaW9u",
+            "Eigueml0YWRlbC5zZXNzaW9uLnYyLkRlbGV0ZVNlc3Npb25SZXF1ZXN0Giku",
+            "eml0YWRlbC5zZXNzaW9uLnYyLkRlbGV0ZVNlc3Npb25SZXNwb25zZSJJkkEN",
+            "SgsKAzIwMBIECgJPS4q1GBEKDwoNYXV0aGVudGljYXRlZILT5JMCHioZL3Yy",
+            "L3Nlc3Npb25zL3tzZXNzaW9uX2lkfToBKkLCCQoWY29tLnppdGFkZWwuc2Vz",
+            "c2lvbi52MkITU2Vzc2lvblNlcnZpY2VQcm90b1ABWjZnaXRodWIuY29tL3pp",
+            "dGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXNzaW9uL3YyO3Nlc3Npb26iAgNa",
+            "U1iqAhJaaXRhZGVsLlNlc3Npb24uVjLKAhJaaXRhZGVsXFNlc3Npb25cVjLi",
+            "Ah5aaXRhZGVsXFNlc3Npb25cVjJcR1BCTWV0YWRhdGHqAhRaaXRhZGVsOjpT",
+            "ZXNzaW9uOjpWMpJB7wcSzQIKD1Nlc3Npb24gU2VydmljZRK7AVRoaXMgQVBJ",
+            "IGlzIGludGVuZGVkIHRvIG1hbmFnZSBzZXNzaW9ucyBpbiBhIFpJVEFERUwg",
+            "aW5zdGFuY2UuIEZvbGxvdyB0aGUgZ3VpZGVzIG9uIGhvdyB0byBbYnVpbGQg",
+            "eW91ciBvd24gTG9naW4gVUldKC9kb2NzL2d1aWRlcy9pbnRlZ3JhdGUvbG9n",
+            "aW4tdWkpIGFuZCBsZWFybiBob3cgdG8gdXNlIHRoZSBTZXNzaW9uIEFQSS4i",
+            "LgoHWklUQURFTBITaHR0cHM6Ly96aXRhZGVsLmNvbRoOaGlAeml0YWRlbC5j",
+            "b20qRwoKQXBhY2hlIDIuMBI5aHR0cHM6Ly9naXRodWIuY29tL3ppdGFkZWwv",
+            "eml0YWRlbC9ibG9iL21haW4vTElDRU5TSU5HLm1kMgMyLjAaDiRDVVNUT00t",
+            "RE9NQUlOIgEvKgICATIQYXBwbGljYXRpb24vanNvbjIQYXBwbGljYXRpb24v",
+            "Z3JwYzIaYXBwbGljYXRpb24vZ3JwYy13ZWIrcHJvdG86EGFwcGxpY2F0aW9u",
+            "L2pzb246EGFwcGxpY2F0aW9uL2dycGM6GmFwcGxpY2F0aW9uL2dycGMtd2Vi",
+            "K3Byb3RvUm0KAzQwMxJmCkdSZXR1cm5lZCB3aGVuIHRoZSB1c2VyIGRvZXMg",
+            "bm90IGhhdmUgcGVybWlzc2lvbiB0byBhY2Nlc3MgdGhlIHJlc291cmNlLhIb",
+            "ChkaFyMvZGVmaW5pdGlvbnMvcnBjU3RhdHVzUlAKAzQwNBJJCipSZXR1cm5l",
+            "ZCB3aGVuIHRoZSByZXNvdXJjZSBkb2VzIG5vdCBleGlzdC4SGwoZGhcjL2Rl",
+            "ZmluaXRpb25zL3JwY1N0YXR1c1rCAQq/AQoGT0F1dGgyErQBCAMoBDIhJENV",
+            "U1RPTS1ET01BSU4vb2F1dGgvdjIvYXV0aG9yaXplOh0kQ1VTVE9NLURPTUFJ",
+            "Ti9vYXV0aC92Mi90b2tlbkJsChAKBm9wZW5pZBIGb3BlbmlkClgKKnVybjp6",
+            "aXRhZGVsOmlhbTpvcmc6cHJvamVjdDppZDp6aXRhZGVsOmF1ZBIqdXJuOnpp",
+            "dGFkZWw6aWFtOm9yZzpwcm9qZWN0OmlkOnppdGFkZWw6YXVkYkAKPgoGT0F1",
+            "dGgyEjQKBm9wZW5pZAoqdXJuOnppdGFkZWw6aWFtOm9yZzpwcm9qZWN0Omlk",
+            "OnppdGFkZWw6YXVkcj4KIkRldGFpbGVkIGluZm9ybWF0aW9uIGFib3V0IFpJ",
+            "VEFERUwSGGh0dHBzOi8veml0YWRlbC5jb20vZG9jc2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Zitadel.Object.V2.ObjectReflection.Descriptor, global::Zitadel.ProtocGenZitadel.V2.OptionsReflection.Descriptor, global::Zitadel.Session.V2.ChallengeReflection.Descriptor, global::Zitadel.Session.V2.SessionReflection.Descriptor, global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -300,6 +236,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "query" field.</summary>
     public const int QueryFieldNumber = 1;
     private global::Zitadel.Object.V2.ListQuery query_;
+    /// <summary>
+    /// List limitations and ordering.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Object.V2.ListQuery Query {
@@ -314,6 +253,10 @@ namespace Zitadel.Session.V2 {
     private static readonly pb::FieldCodec<global::Zitadel.Session.V2.SearchQuery> _repeated_queries_codec
         = pb::FieldCodec.ForMessage(18, global::Zitadel.Session.V2.SearchQuery.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Session.V2.SearchQuery> queries_ = new pbc::RepeatedField<global::Zitadel.Session.V2.SearchQuery>();
+    /// <summary>
+    /// The criteria to be used when searching for sessions.
+    /// Multiple queries will be combined with a logical AND.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Zitadel.Session.V2.SearchQuery> Queries {
@@ -323,6 +266,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "sorting_column" field.</summary>
     public const int SortingColumnFieldNumber = 3;
     private global::Zitadel.Session.V2.SessionFieldName sortingColumn_ = global::Zitadel.Session.V2.SessionFieldName.Unspecified;
+    /// <summary>
+    /// The column to be used for sorting the sessions.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.SessionFieldName SortingColumn {
@@ -569,6 +515,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "details" field.</summary>
     public const int DetailsFieldNumber = 1;
     private global::Zitadel.Object.V2.ListDetails details_;
+    /// <summary>
+    /// Contains details about the response, such as the total number of sessions.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Object.V2.ListDetails Details {
@@ -583,6 +532,11 @@ namespace Zitadel.Session.V2 {
     private static readonly pb::FieldCodec<global::Zitadel.Session.V2.Session> _repeated_sessions_codec
         = pb::FieldCodec.ForMessage(18, global::Zitadel.Session.V2.Session.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Session.V2.Session> sessions_ = new pbc::RepeatedField<global::Zitadel.Session.V2.Session>();
+    /// <summary>
+    /// The sessions matching the search query. There might be more sessions available
+    /// than returned in this response. Use the details field to see if there are more sessions
+    /// available and to get the total count of sessions matching the query.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Zitadel.Session.V2.Session> Sessions {
@@ -802,6 +756,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_id" field.</summary>
     public const int SessionIdFieldNumber = 1;
     private string sessionId_ = "";
+    /// <summary>
+    /// The unique identifier of the session to be retrieved.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionId {
@@ -816,6 +773,14 @@ namespace Zitadel.Session.V2 {
     private readonly static string SessionTokenDefaultValue = "";
 
     private string sessionToken_;
+    /// <summary>
+    /// The current token of the session, previously returned on the create / update request.
+    /// The token is required unless either of the following conditions is met:
+    /// - the caller created the session
+    /// - the authenticated user requests their own session (checked user)
+    /// - the security token provided in the authorization header has the same user agent as the session
+    /// - the caller is granted the permission session.read permission on either the instance or on the checked user's organization
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionToken {
@@ -1261,6 +1226,15 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "checks" field.</summary>
     public const int ChecksFieldNumber = 1;
     private global::Zitadel.Session.V2.Checks checks_;
+    /// <summary>
+    /// The checks to be performed during session creation.
+    /// Note that a user check can only be performed once per session and cannot be changed afterwards.
+    /// Some checks require that the user is already checked, either in the previous or the same
+    /// request. For example, a password check requires that the user is already checked.
+    /// Other checks, like WebAuthN or IDP intent, require that the user is already checked and a challenge
+    /// was requested in any previous request.
+    /// On successful checks, the session's `factors` field will be updated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.Checks Checks {
@@ -1275,6 +1249,9 @@ namespace Zitadel.Session.V2 {
     private static readonly pbc::MapField<string, pb::ByteString>.Codec _map_metadata_codec
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 18);
     private readonly pbc::MapField<string, pb::ByteString> metadata_ = new pbc::MapField<string, pb::ByteString>();
+    /// <summary>
+    /// Custom key value list to be stored on the session.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> Metadata {
@@ -1284,6 +1261,11 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "challenges" field.</summary>
     public const int ChallengesFieldNumber = 3;
     private global::Zitadel.Session.V2.RequestChallenges challenges_;
+    /// <summary>
+    /// Challenges to be requested for further verification.
+    /// The challenges will be created and returned in the response.
+    /// The challenges can then be used for further checks with the following SetSession method.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.RequestChallenges Challenges {
@@ -1296,6 +1278,11 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "user_agent" field.</summary>
     public const int UserAgentFieldNumber = 4;
     private global::Zitadel.Session.V2.UserAgent userAgent_;
+    /// <summary>
+    /// Store information about the user agent of the client.
+    /// This information is stored on the session and can be used for auditing or security purposes.
+    /// Sessions can also be filtered by user agent information.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.UserAgent UserAgent {
@@ -1308,6 +1295,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "lifetime" field.</summary>
     public const int LifetimeFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Duration lifetime_;
+    /// <summary>
+    /// Duration after which the session will be automatically invalidated.
+    /// If not set, the session will not expire automatically and must be deleted manually.
+    /// Note that an expired session cannot be used for authentication anymore, but will still be listed
+    /// until it is deleted.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration Lifetime {
@@ -1643,6 +1636,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_id" field.</summary>
     public const int SessionIdFieldNumber = 2;
     private string sessionId_ = "";
+    /// <summary>
+    /// Unique identifier of the session.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionId {
@@ -1655,6 +1651,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_token" field.</summary>
     public const int SessionTokenFieldNumber = 3;
     private string sessionToken_ = "";
+    /// <summary>
+    /// The current token of the session, which is required for using the session as authentication,
+    /// e.g.when authenticating an OIDC auth request or SAML request.
+    /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+    /// the ZITADEL APIs.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionToken {
@@ -1667,6 +1669,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "challenges" field.</summary>
     public const int ChallengesFieldNumber = 4;
     private global::Zitadel.Session.V2.Challenges challenges_;
+    /// <summary>
+    /// The challenges that were requested for the session.
+    /// The challenges can be used for further checks with the SetSession method.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.Challenges Challenges {
@@ -1960,6 +1966,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_id" field.</summary>
     public const int SessionIdFieldNumber = 1;
     private string sessionId_ = "";
+    /// <summary>
+    /// The unique identifier of the session to be updated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionId {
@@ -1972,6 +1981,11 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_token" field.</summary>
     public const int SessionTokenFieldNumber = 2;
     private string sessionToken_ = "";
+    /// <summary>
+    /// Deprecated: the session token is no longer required when updating a session
+    /// and will be ignored when provided.
+    /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionToken {
@@ -1984,6 +1998,18 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "checks" field.</summary>
     public const int ChecksFieldNumber = 3;
     private global::Zitadel.Session.V2.Checks checks_;
+    /// <summary>
+    /// Additional checks to be performed on the session.
+    /// Successful checks will be stated as factors on the session.
+    /// Re-executing a check that was already successful will overwrite the previous check time.
+    /// For example, if a password check was already successful, it can be re-checked to update the check time.
+    /// Note that a user check can only be performed once per session and cannot be changed afterwards.
+    /// Some checks require that the user is already checked, either in the previous or the same request.
+    /// For example, a password check requires that the user is already checked.
+    /// Other checks, like WebAuthN or IDP intent, require that the user is already checked and a challenge
+    /// was requested in any previous request.
+    /// On successful checks, the session's `factors` field will be updated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.Checks Checks {
@@ -1998,6 +2024,12 @@ namespace Zitadel.Session.V2 {
     private static readonly pbc::MapField<string, pb::ByteString>.Codec _map_metadata_codec
         = new pbc::MapField<string, pb::ByteString>.Codec(pb::FieldCodec.ForString(10, ""), pb::FieldCodec.ForBytes(18, pb::ByteString.Empty), 34);
     private readonly pbc::MapField<string, pb::ByteString> metadata_ = new pbc::MapField<string, pb::ByteString>();
+    /// <summary>
+    /// Additional custom key value pairs to be stored on the session.
+    /// Existing keys will be overwritten. To delete a key, set its value to an empty byte array.
+    /// Note that metadata keys cannot be changed once the session has been created.
+    /// You need to create a new entry and delete the old one instead.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::MapField<string, pb::ByteString> Metadata {
@@ -2007,6 +2039,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "challenges" field.</summary>
     public const int ChallengesFieldNumber = 5;
     private global::Zitadel.Session.V2.RequestChallenges challenges_;
+    /// <summary>
+    /// Additional challenges to be requested for further verification.
+    /// The challenges will be created and returned in the response.
+    /// The challenges can then be used for further checks with the following SetSession method.
+    /// Requesting a challenge that was already requested will overwrite the previous challenge.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.RequestChallenges Challenges {
@@ -2019,6 +2057,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "lifetime" field.</summary>
     public const int LifetimeFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Duration lifetime_;
+    /// <summary>
+    /// Update the duration after which the session will be automatically invalidated.
+    /// If not set, the lifetime will not be changed.
+    /// Note that an expired session cannot be used for authentication anymore, but will still be listed
+    /// until it is deleted.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Duration Lifetime {
@@ -2368,6 +2412,13 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_token" field.</summary>
     public const int SessionTokenFieldNumber = 2;
     private string sessionToken_ = "";
+    /// <summary>
+    /// The current token of the session, which is required for using the session as authentication,
+    /// e.g.when authenticating an OIDC auth request or SAML request.
+    /// Additionally, the session token can be used as OAuth2 access token to authenticate against
+    /// the ZITADEL APIs.
+    /// The previous token was invalidated and can no longer be used.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionToken {
@@ -2380,6 +2431,10 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "challenges" field.</summary>
     public const int ChallengesFieldNumber = 3;
     private global::Zitadel.Session.V2.Challenges challenges_;
+    /// <summary>
+    /// The challenges that were requested for the session.
+    /// The challenges can be used for further checks with the SetSession method.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.Challenges Challenges {
@@ -2645,6 +2700,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "session_id" field.</summary>
     public const int SessionIdFieldNumber = 1;
     private string sessionId_ = "";
+    /// <summary>
+    /// The unique identifier of the session to be terminated.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionId {
@@ -2659,6 +2717,14 @@ namespace Zitadel.Session.V2 {
     private readonly static string SessionTokenDefaultValue = "";
 
     private string sessionToken_;
+    /// <summary>
+    /// The current token of the session, previously returned on the create / update request.
+    /// The token is required unless either of the following conditions is met:
+    /// - the caller created the session
+    /// - the authenticated user requests their own session (checked user)
+    /// - the security token provided in the authorization header has the same user agent as the session
+    /// - the caller is granted the permission session.delete permission on either the instance or on the checked user's organization
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string SessionToken {
@@ -3106,6 +3172,14 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "user" field.</summary>
     public const int UserFieldNumber = 1;
     private global::Zitadel.Session.V2.CheckUser user_;
+    /// <summary>
+    /// Check the user by its user ID or login name.
+    /// A user check can only be performed once per session and cannot be changed afterwards.
+    /// On successful user check, the session's `factors` field will be updated with a `user` factor
+    /// containing the checked user's ID, login name, display name, organization ID and verification time.
+    /// Note that some other checks require that the user is already checked, either in the previous
+    /// or the same request. For example, a password check requires that the user is already checked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckUser User {
@@ -3118,6 +3192,14 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "password" field.</summary>
     public const int PasswordFieldNumber = 2;
     private global::Zitadel.Session.V2.CheckPassword password_;
+    /// <summary>
+    /// Check the password and update the session on success.
+    /// Requires that the user is already checked, either in the previous or the same request.
+    /// On successful password check, the session's `factors` field will be updated with a `password` factor,
+    /// containing the verification time.
+    /// On failed password check id: "COMMAND-3M0fs" wll be returned.
+    /// On user locked out id: "COMMAND-JLK35"/"COMMAND-SFA3t" will be returned.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckPassword Password {
@@ -3130,6 +3212,13 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "web_auth_n" field.</summary>
     public const int WebAuthNFieldNumber = 3;
     private global::Zitadel.Session.V2.CheckWebAuthN webAuthN_;
+    /// <summary>
+    /// Check the public key credential issued by the WebAuthN client.
+    /// Requires that the user is already checked and a WebAuthN challenge to be requested,
+    /// in any previous request.
+    /// On successful WebAuthN check, the session's `factors` field will be updated with a `webauthn` factor,
+    /// containing the verification time and if the user presence was verified.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckWebAuthN WebAuthN {
@@ -3142,6 +3231,14 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "idp_intent" field.</summary>
     public const int IdpIntentFieldNumber = 4;
     private global::Zitadel.Session.V2.CheckIDPIntent idpIntent_;
+    /// <summary>
+    /// Check the IDP intent and update the session on success.
+    /// Requires that the user is already checked and an IDP intent succeeded and has not expired yet.
+    /// Note that the IDP intent must be either matching the same user as checked in the session,
+    /// or there must not be an external IDP linked to the intent's user.
+    /// On successful IDP intent check, the session's `factors` field will be updated with an `intent` factor,
+    /// containing the verification time.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckIDPIntent IdpIntent {
@@ -3154,6 +3251,12 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "totp" field.</summary>
     public const int TotpFieldNumber = 5;
     private global::Zitadel.Session.V2.CheckTOTP totp_;
+    /// <summary>
+    /// Check the Time-based One-Time Password and update the session on success.
+    /// Requires that the user is already checked, either in the previous or the same request.
+    /// On successful TOTP check, the session's `factors` field will be updated with a `totp` factor,
+    /// containing the verification time.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckTOTP Totp {
@@ -3166,6 +3269,13 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "otp_sms" field.</summary>
     public const int OtpSmsFieldNumber = 6;
     private global::Zitadel.Session.V2.CheckOTP otpSms_;
+    /// <summary>
+    /// Check the One-Time Password sent over SMS and update the session on success.
+    /// Requires that the user is already checked, either in the previous or the same request.
+    /// On successful OTP SMS check, the session's `factors` field will be updated with an `otp` factor,
+    /// containing the verification time.
+    /// Note that the OTP code is valid for a single use only and will be invalidated after a successful check.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckOTP OtpSms {
@@ -3178,6 +3288,13 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "otp_email" field.</summary>
     public const int OtpEmailFieldNumber = 7;
     private global::Zitadel.Session.V2.CheckOTP otpEmail_;
+    /// <summary>
+    /// Check the One-Time Password sent over Email and update the session on success.
+    /// Requires that the user is already checked, either in the previous or the same request.
+    /// On successful OTP Email check, the session's `factors` field will be updated with an `otp` factor,
+    /// containing the verification time.
+    /// Note that the OTP code is valid for a single use only and will be invalidated after a successful check.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Session.V2.CheckOTP OtpEmail {
@@ -3590,6 +3707,9 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "user_id" field.</summary>
     public const int UserIdFieldNumber = 1;
+    /// <summary>
+    /// The unique identifier of the user to be checked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string UserId {
@@ -3616,6 +3736,13 @@ namespace Zitadel.Session.V2 {
 
     /// <summary>Field number for the "login_name" field.</summary>
     public const int LoginNameFieldNumber = 2;
+    /// <summary>
+    /// The login name of the user to be checked. It will search case insensitive.
+    /// Note this only checks for the computed login name and not for any organization scoped usernames.
+    /// Also note that it will not check for emails or phone numbers, even if the corresponding
+    /// setting is enabled. Use the user service ListUsers method to find a user by email or phone number first
+    /// to obtain the user ID or login name.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string LoginName {
@@ -3879,6 +4006,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "password" field.</summary>
     public const int PasswordFieldNumber = 1;
     private string password_ = "";
+    /// <summary>
+    /// The password of the user to be checked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Password {
@@ -4077,6 +4207,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "credential_assertion_data" field.</summary>
     public const int CredentialAssertionDataFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Struct credentialAssertionData_;
+    /// <summary>
+    /// The JSON representation of the public key credential issued by the WebAuthN client.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Struct CredentialAssertionData {
@@ -4285,6 +4418,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "idp_intent_id" field.</summary>
     public const int IdpIntentIdFieldNumber = 1;
     private string idpIntentId_ = "";
+    /// <summary>
+    /// The ID of the idp intent, previously returned on the success response of the IDP callback.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IdpIntentId {
@@ -4297,6 +4433,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "idp_intent_token" field.</summary>
     public const int IdpIntentTokenFieldNumber = 2;
     private string idpIntentToken_ = "";
+    /// <summary>
+    /// The token of the idp intent, previously returned on the success response of the IDP callback.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IdpIntentToken {
@@ -4519,6 +4658,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "code" field.</summary>
     public const int CodeFieldNumber = 1;
     private string code_ = "";
+    /// <summary>
+    /// The Time-based One-Time Password generated by the user's TOTP authenticator app.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Code {
@@ -4717,6 +4859,9 @@ namespace Zitadel.Session.V2 {
     /// <summary>Field number for the "code" field.</summary>
     public const int CodeFieldNumber = 1;
     private string code_ = "";
+    /// <summary>
+    /// The One-Time Password sent over SMS or Email of the user to be checked.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Code {

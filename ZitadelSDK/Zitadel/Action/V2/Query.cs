@@ -40,40 +40,38 @@ namespace Zitadel.Action.V2 {
             "dGlvbnMYASADKAsyHC56aXRhZGVsLmFjdGlvbi52Mi5Db25kaXRpb25SCmNv",
             "bmRpdGlvbnMiXgoTRXhlY3V0aW9uVHlwZUZpbHRlchJHCg5leGVjdXRpb25f",
             "dHlwZRgBIAEoDjIgLnppdGFkZWwuYWN0aW9uLnYyLkV4ZWN1dGlvblR5cGVS",
-            "DWV4ZWN1dGlvblR5cGUiZwoMVGFyZ2V0RmlsdGVyElcKCXRhcmdldF9pZBgB",
-            "IAEoCUI6kkE3MiB0aGUgaWQgb2YgdGhlIHRhcmdldHMgdG8gaW5jbHVkZUoT",
-            "IjY5NjI5MDIzOTA2NDg4MzM0IlIIdGFyZ2V0SWQi0QEKElRhcmdldFNlYXJj",
-            "aEZpbHRlchJTChJ0YXJnZXRfbmFtZV9maWx0ZXIYASABKAsyIy56aXRhZGVs",
-            "LmFjdGlvbi52Mi5UYXJnZXROYW1lRmlsdGVySABSEHRhcmdldE5hbWVGaWx0",
-            "ZXISVwoUaW5fdGFyZ2V0X2lkc19maWx0ZXIYAiABKAsyJC56aXRhZGVsLmFj",
-            "dGlvbi52Mi5JblRhcmdldElEc0ZpbHRlckgAUhFpblRhcmdldElkc0ZpbHRl",
-            "ckINCgZmaWx0ZXISA/hCASLKAQoQVGFyZ2V0TmFtZUZpbHRlchJACgt0YXJn",
-            "ZXRfbmFtZRgBIAEoCUIfkkEUSg8iaXBfYWxsb3dfbGlzdCJ4yAH6QgVyAxjI",
-            "AVIKdGFyZ2V0TmFtZRJ0CgZtZXRob2QYAiABKA4yIy56aXRhZGVsLmZpbHRl",
-            "ci52Mi5UZXh0RmlsdGVyTWV0aG9kQjeSQSwyKmRlZmluZXMgd2hpY2ggdGV4",
-            "dCBlcXVhbGl0eSBtZXRob2QgaXMgdXNlZPpCBYIBAhABUgZtZXRob2QihQEK",
-            "EUluVGFyZ2V0SURzRmlsdGVyEnAKCnRhcmdldF9pZHMYASADKAlCUZJBTjIh",
-            "dGhlIGlkcyBvZiB0aGUgdGFyZ2V0cyB0byBpbmNsdWRlSilbIjY5NjI5MDIz",
-            "OTA2NDg4MzM0IiwiNjk2MjIzNjYwMTIzNTU2NjIiXVIJdGFyZ2V0SWRzKrkC",
-            "Cg9UYXJnZXRGaWVsZE5hbWUSIQodVEFSR0VUX0ZJRUxEX05BTUVfVU5TUEVD",
-            "SUZJRUQQABIYChRUQVJHRVRfRklFTERfTkFNRV9JRBABEiIKHlRBUkdFVF9G",
-            "SUVMRF9OQU1FX0NSRUFURURfREFURRACEiIKHlRBUkdFVF9GSUVMRF9OQU1F",
-            "X0NIQU5HRURfREFURRADEhoKFlRBUkdFVF9GSUVMRF9OQU1FX05BTUUQBBIh",
-            "Ch1UQVJHRVRfRklFTERfTkFNRV9UQVJHRVRfVFlQRRAFEhkKFVRBUkdFVF9G",
-            "SUVMRF9OQU1FX1VSTBAGEh0KGVRBUkdFVF9GSUVMRF9OQU1FX1RJTUVPVVQQ",
-            "BxIoCiRUQVJHRVRfRklFTERfTkFNRV9JTlRFUlJVUFRfT05fRVJST1IQCCqf",
-            "AQoNRXhlY3V0aW9uVHlwZRIeChpFWEVDVVRJT05fVFlQRV9VTlNQRUNJRklF",
-            "RBAAEhoKFkVYRUNVVElPTl9UWVBFX1JFUVVFU1QQARIbChdFWEVDVVRJT05f",
-            "VFlQRV9SRVNQT05TRRACEhgKFEVYRUNVVElPTl9UWVBFX0VWRU5UEAMSGwoX",
-            "RVhFQ1VUSU9OX1RZUEVfRlVOQ1RJT04QBCqlAQoSRXhlY3V0aW9uRmllbGRO",
-            "YW1lEiQKIEVYRUNVVElPTl9GSUVMRF9OQU1FX1VOU1BFQ0lGSUVEEAASGwoX",
-            "RVhFQ1VUSU9OX0ZJRUxEX05BTUVfSUQQARIlCiFFWEVDVVRJT05fRklFTERf",
-            "TkFNRV9DUkVBVEVEX0RBVEUQAhIlCiFFWEVDVVRJT05fRklFTERfTkFNRV9D",
-            "SEFOR0VEX0RBVEUQA0K/AQoVY29tLnppdGFkZWwuYWN0aW9uLnYyQgpRdWVy",
-            "eVByb3RvUAFaNGdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBj",
-            "L2FjdGlvbi92MjthY3Rpb26iAgNaQViqAhFaaXRhZGVsLkFjdGlvbi5WMsoC",
-            "EVppdGFkZWxcQWN0aW9uXFYy4gIdWml0YWRlbFxBY3Rpb25cVjJcR1BCTWV0",
-            "YWRhdGHqAhNaaXRhZGVsOjpBY3Rpb246OlYyYgZwcm90bzM="));
+            "DWV4ZWN1dGlvblR5cGUiRQoMVGFyZ2V0RmlsdGVyEjUKCXRhcmdldF9pZBgB",
+            "IAEoCUIYkkEVShMiNjk2MjkwMjM5MDY0ODgzMzQiUgh0YXJnZXRJZCLRAQoS",
+            "VGFyZ2V0U2VhcmNoRmlsdGVyElMKEnRhcmdldF9uYW1lX2ZpbHRlchgBIAEo",
+            "CzIjLnppdGFkZWwuYWN0aW9uLnYyLlRhcmdldE5hbWVGaWx0ZXJIAFIQdGFy",
+            "Z2V0TmFtZUZpbHRlchJXChRpbl90YXJnZXRfaWRzX2ZpbHRlchgCIAEoCzIk",
+            "LnppdGFkZWwuYWN0aW9uLnYyLkluVGFyZ2V0SURzRmlsdGVySABSEWluVGFy",
+            "Z2V0SWRzRmlsdGVyQg0KBmZpbHRlchID+EIBIpsBChBUYXJnZXROYW1lRmls",
+            "dGVyEkAKC3RhcmdldF9uYW1lGAEgASgJQh+SQRRKDyJpcF9hbGxvd19saXN0",
+            "InjIAfpCBXIDGMgBUgp0YXJnZXROYW1lEkUKBm1ldGhvZBgCIAEoDjIjLnpp",
+            "dGFkZWwuZmlsdGVyLnYyLlRleHRGaWx0ZXJNZXRob2RCCPpCBYIBAhABUgZt",
+            "ZXRob2QiYgoRSW5UYXJnZXRJRHNGaWx0ZXISTQoKdGFyZ2V0X2lkcxgBIAMo",
+            "CUIukkErSilbIjY5NjI5MDIzOTA2NDg4MzM0IiwiNjk2MjIzNjYwMTIzNTU2",
+            "NjIiXVIJdGFyZ2V0SWRzKrkCCg9UYXJnZXRGaWVsZE5hbWUSIQodVEFSR0VU",
+            "X0ZJRUxEX05BTUVfVU5TUEVDSUZJRUQQABIYChRUQVJHRVRfRklFTERfTkFN",
+            "RV9JRBABEiIKHlRBUkdFVF9GSUVMRF9OQU1FX0NSRUFURURfREFURRACEiIK",
+            "HlRBUkdFVF9GSUVMRF9OQU1FX0NIQU5HRURfREFURRADEhoKFlRBUkdFVF9G",
+            "SUVMRF9OQU1FX05BTUUQBBIhCh1UQVJHRVRfRklFTERfTkFNRV9UQVJHRVRf",
+            "VFlQRRAFEhkKFVRBUkdFVF9GSUVMRF9OQU1FX1VSTBAGEh0KGVRBUkdFVF9G",
+            "SUVMRF9OQU1FX1RJTUVPVVQQBxIoCiRUQVJHRVRfRklFTERfTkFNRV9JTlRF",
+            "UlJVUFRfT05fRVJST1IQCCqfAQoNRXhlY3V0aW9uVHlwZRIeChpFWEVDVVRJ",
+            "T05fVFlQRV9VTlNQRUNJRklFRBAAEhoKFkVYRUNVVElPTl9UWVBFX1JFUVVF",
+            "U1QQARIbChdFWEVDVVRJT05fVFlQRV9SRVNQT05TRRACEhgKFEVYRUNVVElP",
+            "Tl9UWVBFX0VWRU5UEAMSGwoXRVhFQ1VUSU9OX1RZUEVfRlVOQ1RJT04QBCql",
+            "AQoSRXhlY3V0aW9uRmllbGROYW1lEiQKIEVYRUNVVElPTl9GSUVMRF9OQU1F",
+            "X1VOU1BFQ0lGSUVEEAASGwoXRVhFQ1VUSU9OX0ZJRUxEX05BTUVfSUQQARIl",
+            "CiFFWEVDVVRJT05fRklFTERfTkFNRV9DUkVBVEVEX0RBVEUQAhIlCiFFWEVD",
+            "VVRJT05fRklFTERfTkFNRV9DSEFOR0VEX0RBVEUQA0K/AQoVY29tLnppdGFk",
+            "ZWwuYWN0aW9uLnYyQgpRdWVyeVByb3RvUAFaNGdpdGh1Yi5jb20veml0YWRl",
+            "bC96aXRhZGVsL3BrZy9ncnBjL2FjdGlvbi92MjthY3Rpb26iAgNaQViqAhFa",
+            "aXRhZGVsLkFjdGlvbi5WMsoCEVppdGFkZWxcQWN0aW9uXFYy4gIdWml0YWRl",
+            "bFxBY3Rpb25cVjJcR1BCTWV0YWRhdGHqAhNaaXRhZGVsOjpBY3Rpb246OlYy",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Zitadel.Action.V2.ExecutionReflection.Descriptor, global::Zitadel.Filter.V2.FilterReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Action.V2.TargetFieldName), typeof(global::Zitadel.Action.V2.ExecutionType), typeof(global::Zitadel.Action.V2.ExecutionFieldName), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -178,6 +176,9 @@ namespace Zitadel.Action.V2 {
 
     /// <summary>Field number for the "in_conditions_filter" field.</summary>
     public const int InConditionsFilterFieldNumber = 1;
+    /// <summary>
+    /// Filter for executions that are executed when certain conditions are met.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Action.V2.InConditionsFilter InConditionsFilter {
@@ -190,6 +191,9 @@ namespace Zitadel.Action.V2 {
 
     /// <summary>Field number for the "execution_type_filter" field.</summary>
     public const int ExecutionTypeFilterFieldNumber = 2;
+    /// <summary>
+    /// Filter for executions of a certain type.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Action.V2.ExecutionTypeFilter ExecutionTypeFilter {
@@ -202,6 +206,9 @@ namespace Zitadel.Action.V2 {
 
     /// <summary>Field number for the "target_filter" field.</summary>
     public const int TargetFilterFieldNumber = 3;
+    /// <summary>
+    /// Filter for executions that include a specific target.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Action.V2.TargetFilter TargetFilter {
@@ -907,7 +914,7 @@ namespace Zitadel.Action.V2 {
     public const int TargetIdFieldNumber = 1;
     private string targetId_ = "";
     /// <summary>
-    /// Defines the id to query for.
+    /// Defines the id of the target that needs to be part of the execution.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1114,6 +1121,9 @@ namespace Zitadel.Action.V2 {
 
     /// <summary>Field number for the "target_name_filter" field.</summary>
     public const int TargetNameFilterFieldNumber = 1;
+    /// <summary>
+    /// Filter for targets with a specific name.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Action.V2.TargetNameFilter TargetNameFilter {
@@ -1126,6 +1136,9 @@ namespace Zitadel.Action.V2 {
 
     /// <summary>Field number for the "in_target_ids_filter" field.</summary>
     public const int InTargetIdsFilterFieldNumber = 2;
+    /// <summary>
+    /// Filter for targets with specific ids.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Zitadel.Action.V2.InTargetIDsFilter InTargetIdsFilter {
