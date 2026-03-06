@@ -1,5 +1,3 @@
-using Duende.AspNetCore.Authentication.OAuth2Introspection;
-using Duende.IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
@@ -42,7 +40,10 @@ public static class ZitadelAuthenticationExtensions
         string authenticationScheme,
         Action<ZitadelIntrospectionOptions>? configureOptions = null)
     {
-        return builder.AddOAuth2Introspection(authenticationScheme, options =>
+        builder.Services.AddMemoryCache();
+        builder.Services.AddHttpClient("ZitadelSDK.Introspection");
+
+        return builder.AddScheme<ZitadelIntrospectionOptions, ZitadelIntrospectionHandler>(authenticationScheme, options =>
         {
             // Create ZITADEL-specific options with defaults
             var zitadelOptions = new ZitadelIntrospectionOptions
@@ -61,15 +62,11 @@ public static class ZitadelAuthenticationExtensions
                 throw new InvalidOperationException("ZITADEL Authority must be configured.");
             }
 
-            // Copy all options to OAuth2IntrospectionOptions
             options.Authority = zitadelOptions.Authority;
-            options.Events = zitadelOptions.Events;
             options.AuthenticationType = zitadelOptions.AuthenticationType;
             options.CacheDuration = zitadelOptions.CacheDuration;
             options.ClientId = zitadelOptions.ClientId;
             options.ClientSecret = zitadelOptions.ClientSecret;
-            options.DiscoveryPolicy = zitadelOptions.DiscoveryPolicy;
-            options.EnableCaching = zitadelOptions.EnableCaching;
             options.IntrospectionEndpoint = zitadelOptions.IntrospectionEndpoint;
             options.SaveToken = zitadelOptions.SaveToken;
             options.TokenRetriever = zitadelOptions.TokenRetriever;
@@ -82,7 +79,6 @@ public static class ZitadelAuthenticationExtensions
             options.TokenTypeHint = zitadelOptions.TokenTypeHint;
             options.SkipTokensWithDots = zitadelOptions.SkipTokensWithDots;
             options.ClaimsIssuer = zitadelOptions.ClaimsIssuer;
-            options.EventsType = zitadelOptions.EventsType;
             options.ForwardAuthenticate = zitadelOptions.ForwardAuthenticate;
             options.ForwardChallenge = zitadelOptions.ForwardChallenge;
             options.ForwardDefault = zitadelOptions.ForwardDefault;
@@ -90,14 +86,20 @@ public static class ZitadelAuthenticationExtensions
             options.ForwardDefaultSelector = zitadelOptions.ForwardDefaultSelector;
             options.ForwardSignIn = zitadelOptions.ForwardSignIn;
             options.ForwardSignOut = zitadelOptions.ForwardSignOut;
+            options.EnableCaching = zitadelOptions.EnableCaching;
+            options.Events = zitadelOptions.Events;
+            options.JwtProfile = zitadelOptions.JwtProfile;
 
             // Configure role claim transformation
-            options.Events.OnTokenValidated += context =>
+            var previousOnTokenValidated = options.Events.OnTokenValidated;
+            options.Events.OnTokenValidated = async context =>
             {
+                await previousOnTokenValidated(context);
+
                 var roleClaims = context.Principal?.Claims.Where(c => c.Type == context.Options.RoleClaimType);
                 if (roleClaims is null)
                 {
-                    return Task.CompletedTask;
+                    return;
                 }
 
                 var claims = new List<Claim>();
@@ -141,27 +143,7 @@ public static class ZitadelAuthenticationExtensions
                 {
                     context.Principal?.AddIdentity(new ClaimsIdentity(claims));
                 }
-
-                return Task.CompletedTask;
             };
-
-            // Configure JWT profile authentication if provided
-            if (zitadelOptions.JwtProfile != null)
-            {
-                options.ClientId = null;
-                options.ClientSecret = null;
-                options.ClientCredentialStyle = ClientCredentialStyle.PostBody;
-                options.Events.OnUpdateClientAssertion += async context =>
-                {
-                    var jwt = await zitadelOptions.JwtProfile.GetSignedJwtAsync(options.Authority!);
-                    context.ClientAssertion = new ClientAssertion
-                    {
-                        Type = ZitadelIntrospectionOptions.JwtBearerClientAssertionType,
-                        Value = jwt
-                    };
-                    context.ClientAssertionExpirationTime = DateTime.UtcNow.AddMinutes(4);
-                };
-            }
         });
     }
 
