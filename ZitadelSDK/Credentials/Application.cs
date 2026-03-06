@@ -61,8 +61,9 @@ public class Application
 
         using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(Key);
+        var rsaParameters = rsaKey.ExportParameters(true);
 
-        var securityKey = new RsaSecurityKey(rsaKey)
+        var securityKey = new RsaSecurityKey(rsaParameters)
         {
             KeyId = KeyId
         };

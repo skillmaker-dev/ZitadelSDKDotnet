@@ -151,8 +151,9 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     {
         using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(_config.Key);
+        var rsaParameters = rsaKey.ExportParameters(true);
 
-        var securityKey = new RsaSecurityKey(rsaKey)
+        var securityKey = new RsaSecurityKey(rsaParameters)
         {
             KeyId = _config.KeyId
         };
