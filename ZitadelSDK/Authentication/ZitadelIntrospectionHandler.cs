@@ -6,6 +6,7 @@ using Microsoft.Extensions.Options;
 using System.Text.Encodings.Web;
 using System.Net.Http.Headers;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 
@@ -229,16 +230,36 @@ internal sealed class ZitadelIntrospectionHandler(
     {
         if (!string.IsNullOrWhiteSpace(Options.IntrospectionEndpoint))
         {
-            return Options.IntrospectionEndpoint!;
+            if (!Uri.TryCreate(Options.IntrospectionEndpoint, UriKind.Absolute, out var introspectionUri))
+            {
+                throw new InvalidOperationException("ZITADEL IntrospectionEndpoint must be an absolute HTTPS URL.");
+            }
+
+            if (!string.Equals(introspectionUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new InvalidOperationException("ZITADEL IntrospectionEndpoint must use HTTPS.");
+            }
+
+            return introspectionUri.ToString();
         }
 
-        var authority = Options.Authority?.TrimEnd('/');
-        if (string.IsNullOrWhiteSpace(authority))
+        if (string.IsNullOrWhiteSpace(Options.Authority))
         {
             throw new InvalidOperationException("ZITADEL Authority must be configured.");
         }
 
-        return $"{authority}/oauth/v2/introspect";
+        if (!Uri.TryCreate(Options.Authority, UriKind.Absolute, out var authorityUri))
+        {
+            throw new InvalidOperationException("ZITADEL Authority must be an absolute HTTPS URL.");
+        }
+
+        if (!string.Equals(authorityUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new InvalidOperationException("ZITADEL Authority must use HTTPS.");
+        }
+
+        var introspectionUriFromAuthority = new Uri(authorityUri, "/oauth/v2/introspect");
+        return introspectionUriFromAuthority.ToString();
     }
 
     private string GetCacheKey(string token)
@@ -248,7 +269,8 @@ internal sealed class ZitadelIntrospectionHandler(
             return Options.CacheKeyGenerator(token);
         }
 
-        return $"{Options.CacheKeyPrefix}{token}";
+        var hashedToken = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(token)));
+        return $"{Options.CacheKeyPrefix}{hashedToken}";
     }
 
     private static string? RetrieveTokenFromAuthorizationHeader(HttpRequest request)

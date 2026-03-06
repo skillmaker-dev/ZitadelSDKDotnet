@@ -110,11 +110,9 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
 
             if (!response.IsSuccessStatusCode)
             {
-                var errorContent = await response.Content.ReadAsStringAsync();
-                _logger.LogError("Failed to obtain access token. Status: {StatusCode}, Response: {Response}",
-                    response.StatusCode, errorContent);
+                _logger.LogError("Failed to obtain access token. Status: {StatusCode}", response.StatusCode);
                 throw new InvalidOperationException(
-                    $"Failed to obtain access token from ZITADEL. Status: {response.StatusCode}, Response: {errorContent}");
+                    $"Failed to obtain access token from ZITADEL. Status: {response.StatusCode}.");
             }
 
             var tokenResponse = await response.Content.ReadFromJsonAsync<TokenResponse>();

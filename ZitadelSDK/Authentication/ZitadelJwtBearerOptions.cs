@@ -31,7 +31,7 @@ public class ZitadelJwtBearerOptions
     /// <summary>
     /// Gets or sets whether to save the token in the authentication properties.
     /// </summary>
-    public bool SaveToken { get; set; } = true;
+    public bool SaveToken { get; set; }
 
     /// <summary>
     /// Gets or sets whether to validate the audience.

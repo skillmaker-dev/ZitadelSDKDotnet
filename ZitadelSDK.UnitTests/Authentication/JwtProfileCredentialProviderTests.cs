@@ -64,7 +64,7 @@ public class JwtProfileCredentialProviderTests
         var handler = new QueueHttpMessageHandler();
         handler.EnqueueResponse(new HttpResponseMessage(HttpStatusCode.BadRequest)
         {
-            Content = new StringContent("error")
+            Content = new StringContent("error-details-with-sensitive-content")
         });
 
         var httpClientFactory = Substitute.For<IHttpClientFactory>();
@@ -78,6 +78,7 @@ public class JwtProfileCredentialProviderTests
         // Act & Assert
         var exception = await Assert.ThrowsAsync<InvalidOperationException>(() => CallCredentialsTestHelper.InvokeAsync(credentials));
         Assert.Contains("Failed to obtain access token", exception.Message);
+        Assert.DoesNotContain("error-details-with-sensitive-content", exception.Message);
     }
 
     private static JwtProfileConfig CreateConfig()

@@ -34,12 +34,10 @@ public static class ZitadelHealthChecksExtensions
         ArgumentNullException.ThrowIfNull(builder);
         ArgumentException.ThrowIfNullOrWhiteSpace(authority);
 
-        var healthCheck = new ZitadelHealthCheck(authority, builder.Services.BuildServiceProvider().GetRequiredService<IHttpClientFactory>());
-
-        return builder.AddCheck(
+        return builder.AddTypeActivatedCheck<ZitadelHealthCheck>(
             name,
-            healthCheck,
             failureStatus ?? HealthStatus.Unhealthy,
-            tags ?? []);
+            tags ?? [],
+            authority);
     }
 }
