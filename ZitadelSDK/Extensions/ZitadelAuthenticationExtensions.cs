@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Text.Json;
@@ -132,9 +133,12 @@ public static class ZitadelAuthenticationExtensions
                             }
                         }
                     }
-                    catch (JsonException)
+                    catch (JsonException ex)
                     {
-                        // Ignore malformed role claims to avoid interrupting the pipeline
+                        var logger = context.HttpContext.RequestServices
+                            .GetService<ILoggerFactory>()
+                            ?.CreateLogger(typeof(ZitadelAuthenticationExtensions));
+                        logger?.LogWarning(ex, "Failed to parse ZITADEL role claim: {ClaimValue}", roleClaim.Value);
                         continue;
                     }
                 }
@@ -258,9 +262,12 @@ public static class ZitadelAuthenticationExtensions
                                     }
                                 }
                             }
-                            catch (JsonException)
+                            catch (JsonException ex)
                             {
-                                // If parsing fails, skip this claim
+                                var logger = context.HttpContext.RequestServices
+                                    .GetService<ILoggerFactory>()
+                                    ?.CreateLogger(typeof(ZitadelAuthenticationExtensions));
+                                logger?.LogWarning(ex, "Failed to parse ZITADEL role claim: {ClaimValue}", roleClaim.Value);
                                 continue;
                             }
                         }

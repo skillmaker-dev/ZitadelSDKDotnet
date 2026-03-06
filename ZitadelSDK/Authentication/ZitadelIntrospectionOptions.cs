@@ -110,6 +110,23 @@ public class ZitadelIntrospectionOptions : AuthenticationSchemeOptions
     /// When set, this will be used instead of ClientId/ClientSecret.
     /// </summary>
     public JwtProfileConfig? JwtProfile { get; set; }
+
+    /// <inheritdoc />
+    public override void Validate()
+    {
+        base.Validate();
+
+        if (string.IsNullOrWhiteSpace(Authority))
+        {
+            throw new InvalidOperationException("ZITADEL Authority must be configured for introspection.");
+        }
+
+        if (JwtProfile is null && string.IsNullOrWhiteSpace(ClientId))
+        {
+            throw new InvalidOperationException(
+                "Either a JwtProfile or ClientId must be configured for introspection authentication.");
+        }
+    }
 }
 
 /// <summary>

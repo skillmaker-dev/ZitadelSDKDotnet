@@ -80,6 +80,63 @@ public class ZitadelIntrospectionHandlerSecurityTests
         Assert.Equal(cacheKey, cacheKeySecond);
     }
 
+    [Fact]
+    public void Options_Validate_WithAuthorityAndClientId_DoesNotThrow()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            ClientId = "my-client-id"
+        };
+
+        var exception = Record.Exception(() => options.Validate());
+
+        Assert.Null(exception);
+    }
+
+    [Fact]
+    public void Options_Validate_WithAuthorityAndJwtProfile_DoesNotThrow()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            JwtProfile = new JwtProfileConfig
+            {
+                KeyId = "key-id",
+                Key = "some-key",
+                ClientId = "client-id"
+            }
+        };
+
+        var exception = Record.Exception(() => options.Validate());
+
+        Assert.Null(exception);
+    }
+
+    [Fact]
+    public void Options_Validate_MissingAuthority_Throws()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            ClientId = "my-client-id"
+        };
+
+        var exception = Assert.Throws<InvalidOperationException>(() => options.Validate());
+        Assert.Contains("Authority", exception.Message);
+    }
+
+    [Fact]
+    public void Options_Validate_MissingClientCredentials_Throws()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com"
+        };
+
+        var exception = Assert.Throws<InvalidOperationException>(() => options.Validate());
+        Assert.Contains("JwtProfile or ClientId", exception.Message);
+    }
+
     private static object CreateInitializedHandler(ZitadelIntrospectionOptions options)
     {
         var assembly = typeof(ZitadelIntrospectionOptions).Assembly;

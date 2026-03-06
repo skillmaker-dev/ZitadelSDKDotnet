@@ -51,6 +51,20 @@ internal sealed class ZitadelIntrospectionHandler(
                 return AuthenticateResult.Fail("Token is inactive.");
             }
 
+            // Validate issuer matches the configured authority (defense-in-depth)
+            if (!string.IsNullOrWhiteSpace(Options.Authority) &&
+                introspectionJson.TryGetProperty("iss", out var issElement) &&
+                issElement.ValueKind == System.Text.Json.JsonValueKind.String)
+            {
+                var issuer = issElement.GetString();
+                var expectedIssuer = Options.Authority.TrimEnd('/');
+                if (!string.Equals(issuer?.TrimEnd('/'), expectedIssuer, StringComparison.OrdinalIgnoreCase))
+                {
+                    return AuthenticateResult.Fail(
+                        $"Token issuer '{issuer}' does not match expected authority '{expectedIssuer}'.");
+                }
+            }
+
             var principal = BuildPrincipal(introspectionJson);
 
             var validatedContext = new ZitadelTokenValidatedContext(Context, Scheme, Options)

@@ -40,9 +40,24 @@ public class Application
     /// </summary>
     /// <param name="authority">The ZITADEL authority URL.</param>
     /// <returns>A signed JWT token.</returns>
-    public async Task<string> GetSignedJwtAsync(string authority)
+    public Task<string> GetSignedJwtAsync(string authority)
     {
-        await Task.CompletedTask; // Placeholder for async operations
+        if (string.IsNullOrWhiteSpace(authority))
+        {
+            throw new ArgumentException("Authority must be provided to generate a JWT assertion.", nameof(authority));
+        }
+
+        if (!Uri.TryCreate(authority, UriKind.Absolute, out var baseUri))
+        {
+            throw new InvalidOperationException($"Invalid authority '{authority}'. Provide an absolute HTTPS URL.");
+        }
+
+        if (!string.Equals(baseUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new InvalidOperationException("JWT Profile assertions require an HTTPS authority.");
+        }
+
+        var normalizedAuthority = baseUri.GetLeftPart(UriPartial.Authority).TrimEnd('/');
 
         using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(Key);
@@ -54,11 +69,13 @@ public class Application
 
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.RsaSha256);
 
+        var now = DateTime.UtcNow;
+
         var claims = new List<Claim>
         {
             new(JwtRegisteredClaimNames.Sub, ClientId),
             new(JwtRegisteredClaimNames.Iss, ClientId),
-            new(JwtRegisteredClaimNames.Aud, authority)
+            new(JwtRegisteredClaimNames.Aud, normalizedAuthority)
         };
 
         if (!string.IsNullOrWhiteSpace(UserId))
@@ -69,13 +86,13 @@ public class Application
         var tokenDescriptor = new SecurityTokenDescriptor
         {
             Subject = new ClaimsIdentity(claims),
-            Expires = DateTime.UtcNow.AddHours(1),
-            IssuedAt = DateTime.UtcNow,
+            Expires = now.AddMinutes(5), // Short-lived assertion
+            IssuedAt = now,
             SigningCredentials = credentials
         };
 
         var tokenHandler = new JwtSecurityTokenHandler();
         var token = tokenHandler.CreateToken(tokenDescriptor);
-        return tokenHandler.WriteToken(token);
+        return Task.FromResult(tokenHandler.WriteToken(token));
     }
 }

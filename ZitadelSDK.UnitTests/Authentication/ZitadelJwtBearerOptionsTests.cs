@@ -11,4 +11,12 @@ public class ZitadelJwtBearerOptionsTests
 
         Assert.False(options.SaveToken);
     }
+
+    [Fact]
+    public void ClockSkew_DefaultsToTwoMinutes()
+    {
+        var options = new ZitadelJwtBearerOptions();
+
+        Assert.Equal(TimeSpan.FromMinutes(2), options.ClockSkew);
+    }
 }
