@@ -106,7 +106,7 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
                 { "assertion", jwtAssertion }
             };
 
-            var response = await httpClient.PostAsync(tokenEndpoint, new FormUrlEncodedContent(requestData));
+            using var response = await httpClient.PostAsync(tokenEndpoint, new FormUrlEncodedContent(requestData));
 
             if (!response.IsSuccessStatusCode)
             {
@@ -152,7 +152,7 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     /// </summary>
     private string GenerateJwtAssertion(string authority)
     {
-        var rsaKey = RSA.Create();
+        using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(_config.Key);
 
         var securityKey = new RsaSecurityKey(rsaKey)

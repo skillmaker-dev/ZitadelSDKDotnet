@@ -44,7 +44,7 @@ public class Application
     {
         await Task.CompletedTask; // Placeholder for async operations
 
-        var rsaKey = RSA.Create();
+        using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(Key);
 
         var securityKey = new RsaSecurityKey(rsaKey)

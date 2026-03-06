@@ -90,7 +90,7 @@ public class JwtProfileConfig
 
         var normalizedAuthority = baseUri.GetLeftPart(UriPartial.Authority).TrimEnd('/');
 
-        var rsaKey = RSA.Create();
+        using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(Key);
 
         var securityKey = new RsaSecurityKey(rsaKey)

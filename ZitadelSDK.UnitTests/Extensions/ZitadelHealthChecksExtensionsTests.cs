@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
+using NSubstitute;
 using ZitadelSDK.Extensions;
 
 namespace ZitadelSDK.UnitTests.Extensions;
@@ -32,5 +33,20 @@ public class ZitadelHealthChecksExtensionsTests
 
         var registration = Assert.Single(options.Registrations, x => x.Name == "zitadel-custom");
         Assert.NotNull(registration.Factory);
+    }
+
+    [Fact]
+    public async Task CheckHealth_WithNonHttpsAuthority_ReturnsUnhealthy()
+    {
+        var httpClientFactory = Substitute.For<IHttpClientFactory>();
+        httpClientFactory.CreateClient().Returns(new HttpClient());
+
+        var healthCheck = new ZitadelHealthCheck("http://example.com", httpClientFactory);
+
+        var result = await healthCheck.CheckHealthAsync(new HealthCheckContext(), CancellationToken.None);
+
+        Assert.Equal(HealthStatus.Unhealthy, result.Status);
+        Assert.NotNull(result.Exception);
+        Assert.Contains("must use HTTPS", result.Exception!.Message);
     }
 }

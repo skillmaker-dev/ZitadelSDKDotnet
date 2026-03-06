@@ -134,6 +134,37 @@ public class ZitadelSdkBuilderExtensionsTests
         Assert.Contains("JWT Profile configuration section", exception.Message);
     }
 
+    [Fact]
+    public async Task WithPatAuth_MultipleCalls_LastRegistrationWins()
+    {
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["ServiceAdmin:Authority"] = "https://example.com",
+                ["ServiceAdmin:AuthenticationType"] = "Token"
+            })
+            .Build();
+
+        var services = new ServiceCollection();
+        services.AddLogging();
+
+        var builder = services.AddZitadelSdk(configuration);
+
+        builder.WithPatAuth("first-token");
+        builder.WithPatAuth("second-token");
+
+        var descriptors = services.Where(x => x.ServiceType == typeof(IZitadelCredentialProvider)).ToList();
+        Assert.Single(descriptors);
+
+        using var serviceProvider = services.BuildServiceProvider();
+        var provider = serviceProvider.GetRequiredService<IZitadelCredentialProvider>();
+        var credentials = provider.CreateCallCredentials("https://example.com");
+        var metadata = await CallCredentialsTestHelper.InvokeAsync(credentials);
+
+        var header = Assert.Single(metadata);
+        Assert.Equal("Token second-token", header.Value);
+    }
+
     private static string CreatePrivateKey()
     {
         using var rsa = RSA.Create(2048);

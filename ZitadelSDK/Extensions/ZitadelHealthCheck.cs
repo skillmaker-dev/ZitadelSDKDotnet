@@ -85,6 +85,11 @@ public class ZitadelHealthCheck : IHealthCheck
             throw new InvalidOperationException($"Invalid ZITADEL authority: {authority}");
         }
 
+        if (!string.Equals(authorityUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
+        {
+            throw new InvalidOperationException("ZITADEL authority must use HTTPS");
+        }
+
         var readyUri = new Uri(authorityUri, "/debug/ready");
         return readyUri.ToString();
     }

@@ -31,7 +31,7 @@ public class ZitadelServiceCollectionExtensionsTests
         // Assert
         Assert.NotNull(builder);
 
-        var descriptor = Assert.Single(services.Where(d => d.ServiceType == typeof(IZitadelSdk)));
+        var descriptor = Assert.Single(services, d => d.ServiceType == typeof(IZitadelSdk));
         Assert.Equal(ServiceLifetime.Singleton, descriptor.Lifetime);
 
         var credentialProvider = Substitute.For<IZitadelCredentialProvider>();
