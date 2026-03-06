@@ -130,19 +130,19 @@ namespace Zitadel.Instance.V2beta {
             "HSIYL3YyYmV0YS9pbnN0YW5jZXMvc2VhcmNoOgEqEvIBCg9BZGRDdXN0b21E",
             "b21haW4SLy56aXRhZGVsLmluc3RhbmNlLnYyYmV0YS5BZGRDdXN0b21Eb21h",
             "aW5SZXF1ZXN0GjAueml0YWRlbC5pbnN0YW5jZS52MmJldGEuQWRkQ3VzdG9t",
-            "RG9tYWluUmVzcG9uc2UifJJBJUohCgMyMDASGgoYVGhlIGFkZGVkIGN1c3Rv",
-            "bSBkb21haW4uWAGKtRgXChUKE3N5c3RlbS5kb21haW4ud3JpdGWC0+STAjMi",
+            "RG9tYWluUmVzcG9uc2UifJJBJUohCgMyMDASGgoYVGhlIGFkZGVkIEN1c3Rv",
+            "bSBEb21haW4uWAGKtRgXChUKE3N5c3RlbS5kb21haW4ud3JpdGWC0+STAjMi",
             "Li92MmJldGEvaW5zdGFuY2VzL3tpbnN0YW5jZV9pZH0vY3VzdG9tLWRvbWFp",
             "bnM6ASoShAIKElJlbW92ZUN1c3RvbURvbWFpbhIyLnppdGFkZWwuaW5zdGFu",
             "Y2UudjJiZXRhLlJlbW92ZUN1c3RvbURvbWFpblJlcXVlc3QaMy56aXRhZGVs",
             "Lmluc3RhbmNlLnYyYmV0YS5SZW1vdmVDdXN0b21Eb21haW5SZXNwb25zZSKE",
-            "AZJBJ0ojCgMyMDASHAoaVGhlIHJlbW92ZWQgY3VzdG9tIGRvbWFpbi5YAYq1",
+            "AZJBJ0ojCgMyMDASHAoaVGhlIHJlbW92ZWQgQ3VzdG9tIERvbWFpbi5YAYq1",
             "GBcKFQoTc3lzdGVtLmRvbWFpbi53cml0ZYLT5JMCOSo3L3YyYmV0YS9pbnN0",
             "YW5jZXMve2luc3RhbmNlX2lkfS9jdXN0b20tZG9tYWlucy97ZG9tYWlufRL3",
             "AQoRTGlzdEN1c3RvbURvbWFpbnMSMS56aXRhZGVsLmluc3RhbmNlLnYyYmV0",
             "YS5MaXN0Q3VzdG9tRG9tYWluc1JlcXVlc3QaMi56aXRhZGVsLmluc3RhbmNl",
             "LnYyYmV0YS5MaXN0Q3VzdG9tRG9tYWluc1Jlc3BvbnNlInuSQShKJAoDMjAw",
-            "Eh0KG1RoZSBsaXN0IG9mIGN1c3RvbSBkb21haW5zLlgBirUYDAoKCghpYW0u",
+            "Eh0KG1RoZSBsaXN0IG9mIEN1c3RvbSBEb21haW5zLlgBirUYDAoKCghpYW0u",
             "cmVhZILT5JMCOiI1L3YyYmV0YS9pbnN0YW5jZXMve2luc3RhbmNlX2lkfS9j",
             "dXN0b20tZG9tYWlucy9zZWFyY2g6ASoS7QEKEEFkZFRydXN0ZWREb21haW4S",
             "MC56aXRhZGVsLmluc3RhbmNlLnYyYmV0YS5BZGRUcnVzdGVkRG9tYWluUmVx",
@@ -171,7 +171,7 @@ namespace Zitadel.Instance.V2beta {
             "bmNlcyBpbiBaSVRBREVMLiIuCgdaSVRBREVMEhNodHRwczovL3ppdGFkZWwu",
             "Y29tGg5oaUB6aXRhZGVsLmNvbSpKCg1BR1BMLTMuMC1vbmx5EjlodHRwczov",
             "L2dpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL2Jsb2IvbWFpbi9MSUNFTlNJ",
-            "TkcubWQyCDIuMC1iZXRhGg4kQ1VTVE9NLURPTUFJTiIBLyoCAgEyEGFwcGxp",
+            "TkcubWQyCDIuMC1iZXRhGg4kQ1VTVE9NX0RPTUFJTiIBLyoCAgEyEGFwcGxp",
             "Y2F0aW9uL2pzb24yEGFwcGxpY2F0aW9uL2dycGMyGmFwcGxpY2F0aW9uL2dy",
             "cGMtd2ViK3Byb3RvOhBhcHBsaWNhdGlvbi9qc29uOhBhcHBsaWNhdGlvbi9n",
             "cnBjOhphcHBsaWNhdGlvbi9ncnBjLXdlYitwcm90b1JtCgM0MDMSZgpHUmV0",
@@ -179,8 +179,8 @@ namespace Zitadel.Instance.V2beta {
             "dG8gYWNjZXNzIHRoZSByZXNvdXJjZS4SGwoZGhcjL2RlZmluaXRpb25zL3Jw",
             "Y1N0YXR1c1JQCgM0MDQSSQoqUmV0dXJuZWQgd2hlbiB0aGUgcmVzb3VyY2Ug",
             "ZG9lcyBub3QgZXhpc3QuEhsKGRoXIy9kZWZpbml0aW9ucy9ycGNTdGF0dXNa",
-            "wgEKvwEKBk9BdXRoMhK0AQgDKAQyISRDVVNUT00tRE9NQUlOL29hdXRoL3Yy",
-            "L2F1dGhvcml6ZTodJENVU1RPTS1ET01BSU4vb2F1dGgvdjIvdG9rZW5CbAoQ",
+            "wgEKvwEKBk9BdXRoMhK0AQgDKAQyISRDVVNUT01fRE9NQUlOL29hdXRoL3Yy",
+            "L2F1dGhvcml6ZTodJENVU1RPTV9ET01BSU4vb2F1dGgvdjIvdG9rZW5CbAoQ",
             "CgZvcGVuaWQSBm9wZW5pZApYCip1cm46eml0YWRlbDppYW06b3JnOnByb2pl",
             "Y3Q6aWQ6eml0YWRlbDphdWQSKnVybjp6aXRhZGVsOmlhbTpvcmc6cHJvamVj",
             "dDppZDp6aXRhZGVsOmF1ZGJACj4KBk9BdXRoMhI0CgZvcGVuaWQKKnVybjp6",
@@ -1526,7 +1526,7 @@ namespace Zitadel.Instance.V2beta {
         = pb::FieldCodec.ForMessage(10, global::Zitadel.Instance.V2beta.Query.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Instance.V2beta.Query> queries_ = new pbc::RepeatedField<global::Zitadel.Instance.V2beta.Query>();
     /// <summary>
-    /// Criterias the client is looking for.
+    /// Criteria the client is looking for.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2986,7 +2986,7 @@ namespace Zitadel.Instance.V2beta {
         = pb::FieldCodec.ForMessage(34, global::Zitadel.Instance.V2beta.DomainSearchQuery.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Instance.V2beta.DomainSearchQuery> queries_ = new pbc::RepeatedField<global::Zitadel.Instance.V2beta.DomainSearchQuery>();
     /// <summary>
-    /// Criterias the client is looking for.
+    /// Criteria the client is looking for.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4422,7 +4422,7 @@ namespace Zitadel.Instance.V2beta {
         = pb::FieldCodec.ForMessage(34, global::Zitadel.Instance.V2beta.TrustedDomainSearchQuery.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Instance.V2beta.TrustedDomainSearchQuery> queries_ = new pbc::RepeatedField<global::Zitadel.Instance.V2beta.TrustedDomainSearchQuery>();
     /// <summary>
-    /// Criterias the client is looking for.
+    /// Criteria the client is looking for.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

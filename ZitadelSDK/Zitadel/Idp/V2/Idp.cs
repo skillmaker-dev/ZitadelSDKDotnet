@@ -259,12 +259,12 @@ namespace Zitadel.Idp.V2 {
     [pbr::OriginalName("AUTO_LINKING_OPTION_UNSPECIFIED")] Unspecified = 0,
     /// <summary>
     /// AUTO_LINKING_OPTION_USERNAME will use the username of the external user to
-    /// check for a corresponding ZITADEL user.
+    /// check for a corresponding Zitadel user.
     /// </summary>
     [pbr::OriginalName("AUTO_LINKING_OPTION_USERNAME")] Username = 1,
     /// <summary>
     /// AUTO_LINKING_OPTION_EMAIL  will use the email of the external user to check
-    /// for a corresponding ZITADEL user with the same verified email Note that in
+    /// for a corresponding Zitadel user with the same verified email Note that in
     /// case multiple users match, no prompt will be shown.
     /// </summary>
     [pbr::OriginalName("AUTO_LINKING_OPTION_EMAIL")] Email = 2,
@@ -1952,7 +1952,7 @@ namespace Zitadel.Idp.V2 {
     public const int AuthorizationEndpointFieldNumber = 2;
     private string authorizationEndpoint_ = "";
     /// <summary>
-    /// The endpoint where ZITADEL send the user to authenticate.
+    /// The endpoint where Zitadel send the user to authenticate.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1967,7 +1967,7 @@ namespace Zitadel.Idp.V2 {
     public const int TokenEndpointFieldNumber = 3;
     private string tokenEndpoint_ = "";
     /// <summary>
-    /// The endpoint where ZITADEL can get the token.
+    /// The endpoint where Zitadel can get the token.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1982,7 +1982,7 @@ namespace Zitadel.Idp.V2 {
     public const int UserEndpointFieldNumber = 4;
     private string userEndpoint_ = "";
     /// <summary>
-    /// The endpoint where ZITADEL can get the user information.
+    /// The endpoint where Zitadel can get the user information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1999,7 +1999,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(42);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request on the identity
+    /// The scopes requested by Zitadel during the request on the identity
     /// provider.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2012,7 +2012,7 @@ namespace Zitadel.Idp.V2 {
     public const int IdAttributeFieldNumber = 6;
     private string idAttribute_ = "";
     /// <summary>
-    /// Defines how the attribute is called where ZITADEL can get the id of the
+    /// Defines how the attribute is called where Zitadel can get the id of the
     /// user.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2359,7 +2359,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request on the identity
+    /// The scopes requested by Zitadel during the request on the identity
     /// provider.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2654,7 +2654,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to GitHub.
+    /// The scopes requested by Zitadel during the request to GitHub.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2923,7 +2923,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(42);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to GitHub.
+    /// The scopes requested by Zitadel during the request to GitHub.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3225,7 +3225,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to Google.
+    /// The scopes requested by Zitadel during the request to Google.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3455,7 +3455,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to GitLab.
+    /// The scopes requested by Zitadel during the request to GitLab.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3698,7 +3698,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to GitLab.
+    /// The scopes requested by Zitadel during the request to GitLab.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4551,7 +4551,7 @@ namespace Zitadel.Idp.V2 {
 
     private bool federatedLogoutEnabled_;
     /// <summary>
-    /// Boolean weather federated logout is enabled. If enabled, ZITADEL will send a logout request to the identity provider,
+    /// Boolean weather federated logout is enabled. If enabled, Zitadel will send a logout request to the identity provider,
     /// if the user terminates the session in ZITADEL. Be sure to provide a SLO endpoint as part of the metadata.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4961,7 +4961,7 @@ namespace Zitadel.Idp.V2 {
     private bool emailVerified_;
     /// <summary>
     /// Azure AD doesn't send if the email has been verified. Enable this if the
-    /// user email should always be added verified in ZITADEL (no verification
+    /// user email should always be added verified in Zitadel (no verification
     /// emails will be sent).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4979,7 +4979,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to Azure AD.
+    /// The scopes requested by Zitadel during the request to Azure AD.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5252,7 +5252,7 @@ namespace Zitadel.Idp.V2 {
     public const int IsLinkingAllowedFieldNumber = 1;
     private bool isLinkingAllowed_;
     /// <summary>
-    /// Enable if users should be able to link an existing ZITADEL user with an
+    /// Enable if users should be able to link an existing Zitadel user with an
     /// external account.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5268,7 +5268,7 @@ namespace Zitadel.Idp.V2 {
     public const int IsCreationAllowedFieldNumber = 2;
     private bool isCreationAllowed_;
     /// <summary>
-    /// Enable if users should be able to create a new account in ZITADEL when
+    /// Enable if users should be able to create a new account in Zitadel when
     /// using an external account.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5284,7 +5284,7 @@ namespace Zitadel.Idp.V2 {
     public const int IsAutoCreationFieldNumber = 3;
     private bool isAutoCreation_;
     /// <summary>
-    /// Enable if a new account in ZITADEL should be created automatically when
+    /// Enable if a new account in Zitadel should be created automatically when
     /// login with an external account.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5300,7 +5300,7 @@ namespace Zitadel.Idp.V2 {
     public const int IsAutoUpdateFieldNumber = 4;
     private bool isAutoUpdate_;
     /// <summary>
-    /// Enable if a the ZITADEL account fields should be updated automatically on
+    /// Enable if a the Zitadel account fields should be updated automatically on
     /// each login.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -5316,7 +5316,7 @@ namespace Zitadel.Idp.V2 {
     public const int AutoLinkingFieldNumber = 5;
     private global::Zitadel.Idp.V2.AutoLinkingOption autoLinking_ = global::Zitadel.Idp.V2.AutoLinkingOption.Unspecified;
     /// <summary>
-    /// Enable if users should get prompted to link an existing ZITADEL user to an
+    /// Enable if users should get prompted to link an existing Zitadel user to an
     /// external account if the selected attribute matches.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6641,7 +6641,7 @@ namespace Zitadel.Idp.V2 {
         = pb::FieldCodec.ForString(34);
     private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The scopes requested by ZITADEL during the request to Apple.
+    /// The scopes requested by Zitadel during the request to Apple.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

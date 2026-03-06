@@ -393,7 +393,7 @@ namespace Zitadel.Settings.V2 {
       /// <summary>
       /// Get Security Settings
       ///
-      /// Get the security settings of the ZITADEL instance.
+      /// Get the security settings of the Zitadel instance.
       /// Security settings include settings like enabling impersonation and embedded iframe settings.
       ///
       /// Required permissions:
@@ -1211,7 +1211,7 @@ namespace Zitadel.Settings.V2 {
       /// <summary>
       /// Get Security Settings
       ///
-      /// Get the security settings of the ZITADEL instance.
+      /// Get the security settings of the Zitadel instance.
       /// Security settings include settings like enabling impersonation and embedded iframe settings.
       ///
       /// Required permissions:
@@ -1230,7 +1230,7 @@ namespace Zitadel.Settings.V2 {
       /// <summary>
       /// Get Security Settings
       ///
-      /// Get the security settings of the ZITADEL instance.
+      /// Get the security settings of the Zitadel instance.
       /// Security settings include settings like enabling impersonation and embedded iframe settings.
       ///
       /// Required permissions:
@@ -1247,7 +1247,7 @@ namespace Zitadel.Settings.V2 {
       /// <summary>
       /// Get Security Settings
       ///
-      /// Get the security settings of the ZITADEL instance.
+      /// Get the security settings of the Zitadel instance.
       /// Security settings include settings like enabling impersonation and embedded iframe settings.
       ///
       /// Required permissions:
@@ -1266,7 +1266,7 @@ namespace Zitadel.Settings.V2 {
       /// <summary>
       /// Get Security Settings
       ///
-      /// Get the security settings of the ZITADEL instance.
+      /// Get the security settings of the Zitadel instance.
       /// Security settings include settings like enabling impersonation and embedded iframe settings.
       ///
       /// Required permissions:

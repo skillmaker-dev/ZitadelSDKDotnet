@@ -2874,7 +2874,7 @@ namespace Zitadel.Project.V2 {
     public const int KeyFieldNumber = 2;
     private string key_ = "";
     /// <summary>
-    /// Key of the project role. The key identifies the role. It's the only relevant attribute for ZITADEL and
+    /// Key of the project role. The key identifies the role. It's the only relevant attribute for Zitadel and
     /// will be used for authorization checks and as claim in tokens and user info responses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

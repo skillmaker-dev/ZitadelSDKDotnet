@@ -39,7 +39,7 @@ namespace Zitadel.Object.V2 {
             "aXMgc2V0IHRvIDEwMDAgaW4gaHR0cHM6Ly9naXRodWIuY29tL3ppdGFkZWwv",
             "eml0YWRlbC9ibG9iL25ldy1ldmVudHN0b3JlL2NtZC96aXRhZGVsL3N0YXJ0",
             "dXAueWFtbC4gSWYgdGhlIGxpbWl0IGV4Y2VlZHMgdGhlIG1heGltdW0gY29u",
-            "ZmlndXJlZCBaSVRBREVMIHdpbGwgdGhyb3cgYW4gZXJyb3IuIElmIG5vIGxp",
+            "ZmlndXJlZCBaaXRhZGVsIHdpbGwgdGhyb3cgYW4gZXJyb3IuIElmIG5vIGxp",
             "bWl0IGlzIHByZXNlbnQgdGhlIGRlZmF1bHQgaXMgdGFrZW4uSgMxMDBSBWxp",
             "bWl0EiwKA2FzYxgDIAEoCEIakkEXMhVkZWZhdWx0IGlzIGRlc2NlbmRpbmdS",
             "A2FzYzpakkFXClUqEkdlbmVyYWwgTGlzdCBRdWVyeTI/T2JqZWN0IHVuc3Bl",

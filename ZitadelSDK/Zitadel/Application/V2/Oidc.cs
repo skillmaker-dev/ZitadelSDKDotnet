@@ -620,7 +620,7 @@ namespace Zitadel.Application.V2 {
     /// <summary>
     /// The AccessTokenType defines the type of the access token returned from ZITADEL.
     /// Bearer tokens are opaque to clients. JWT tokens are self-contained and can be validated by the client.
-    /// Bearer tokens must be introspected at the ZITADEL token endpoint.
+    /// Bearer tokens must be introspected at the Zitadel token endpoint.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -691,7 +691,7 @@ namespace Zitadel.Application.V2 {
     public const int ClockSkewFieldNumber = 16;
     private global::Google.Protobuf.WellKnownTypes.Duration clockSkew_;
     /// <summary>
-    /// ClockSkew is used to compensate time differences between the servers of ZITADEL and the application.
+    /// ClockSkew is used to compensate time differences between the servers of Zitadel and the application.
     /// It is added to the "exp" claim and subtracted from "iat", "auth_time" and "nbf" claims.
     /// The default is 0s, the maximum is 5s.
     /// </summary>

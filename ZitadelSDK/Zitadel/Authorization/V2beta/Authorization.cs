@@ -131,7 +131,7 @@ namespace Zitadel.Authorization.V2beta {
     [pbr::OriginalName("STATE_ACTIVE")] Active = 1,
     /// <summary>
     /// An inactive authorization temporarily deactivates the granted access and roles.
-    /// ZITADEL will not include the specific authorization in any authorization information like an access token.
+    /// Zitadel will not include the specific authorization in any authorization information like an access token.
     /// But the information can still be accessed using the API.
     /// </summary>
     [pbr::OriginalName("STATE_INACTIVE")] Inactive = 2,

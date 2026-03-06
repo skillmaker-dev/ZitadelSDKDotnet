@@ -70,6 +70,26 @@ namespace Zitadel.Action.V2 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Action.V2.ListTargetsResponse> __Marshaller_zitadel_action_v2_ListTargetsResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.ListTargetsResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.AddPublicKeyRequest> __Marshaller_zitadel_action_v2_AddPublicKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.AddPublicKeyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.AddPublicKeyResponse> __Marshaller_zitadel_action_v2_AddPublicKeyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.AddPublicKeyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.ActivatePublicKeyRequest> __Marshaller_zitadel_action_v2_ActivatePublicKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.ActivatePublicKeyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.ActivatePublicKeyResponse> __Marshaller_zitadel_action_v2_ActivatePublicKeyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.ActivatePublicKeyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.DeactivatePublicKeyRequest> __Marshaller_zitadel_action_v2_DeactivatePublicKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.DeactivatePublicKeyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.DeactivatePublicKeyResponse> __Marshaller_zitadel_action_v2_DeactivatePublicKeyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.DeactivatePublicKeyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.RemovePublicKeyRequest> __Marshaller_zitadel_action_v2_RemovePublicKeyRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.RemovePublicKeyRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.RemovePublicKeyResponse> __Marshaller_zitadel_action_v2_RemovePublicKeyResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.RemovePublicKeyResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.ListPublicKeysRequest> __Marshaller_zitadel_action_v2_ListPublicKeysRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.ListPublicKeysRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Action.V2.ListPublicKeysResponse> __Marshaller_zitadel_action_v2_ListPublicKeysResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.ListPublicKeysResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Action.V2.SetExecutionRequest> __Marshaller_zitadel_action_v2_SetExecutionRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.SetExecutionRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Action.V2.SetExecutionResponse> __Marshaller_zitadel_action_v2_SetExecutionResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Action.V2.SetExecutionResponse.Parser));
@@ -129,6 +149,46 @@ namespace Zitadel.Action.V2 {
         "ListTargets",
         __Marshaller_zitadel_action_v2_ListTargetsRequest,
         __Marshaller_zitadel_action_v2_ListTargetsResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Action.V2.AddPublicKeyRequest, global::Zitadel.Action.V2.AddPublicKeyResponse> __Method_AddPublicKey = new grpc::Method<global::Zitadel.Action.V2.AddPublicKeyRequest, global::Zitadel.Action.V2.AddPublicKeyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddPublicKey",
+        __Marshaller_zitadel_action_v2_AddPublicKeyRequest,
+        __Marshaller_zitadel_action_v2_AddPublicKeyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Action.V2.ActivatePublicKeyRequest, global::Zitadel.Action.V2.ActivatePublicKeyResponse> __Method_ActivatePublicKey = new grpc::Method<global::Zitadel.Action.V2.ActivatePublicKeyRequest, global::Zitadel.Action.V2.ActivatePublicKeyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ActivatePublicKey",
+        __Marshaller_zitadel_action_v2_ActivatePublicKeyRequest,
+        __Marshaller_zitadel_action_v2_ActivatePublicKeyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Action.V2.DeactivatePublicKeyRequest, global::Zitadel.Action.V2.DeactivatePublicKeyResponse> __Method_DeactivatePublicKey = new grpc::Method<global::Zitadel.Action.V2.DeactivatePublicKeyRequest, global::Zitadel.Action.V2.DeactivatePublicKeyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "DeactivatePublicKey",
+        __Marshaller_zitadel_action_v2_DeactivatePublicKeyRequest,
+        __Marshaller_zitadel_action_v2_DeactivatePublicKeyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Action.V2.RemovePublicKeyRequest, global::Zitadel.Action.V2.RemovePublicKeyResponse> __Method_RemovePublicKey = new grpc::Method<global::Zitadel.Action.V2.RemovePublicKeyRequest, global::Zitadel.Action.V2.RemovePublicKeyResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemovePublicKey",
+        __Marshaller_zitadel_action_v2_RemovePublicKeyRequest,
+        __Marshaller_zitadel_action_v2_RemovePublicKeyResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Action.V2.ListPublicKeysRequest, global::Zitadel.Action.V2.ListPublicKeysResponse> __Method_ListPublicKeys = new grpc::Method<global::Zitadel.Action.V2.ListPublicKeysRequest, global::Zitadel.Action.V2.ListPublicKeysResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "ListPublicKeys",
+        __Marshaller_zitadel_action_v2_ListPublicKeysRequest,
+        __Marshaller_zitadel_action_v2_ListPublicKeysResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Zitadel.Action.V2.SetExecutionRequest, global::Zitadel.Action.V2.SetExecutionResponse> __Method_SetExecution = new grpc::Method<global::Zitadel.Action.V2.SetExecutionRequest, global::Zitadel.Action.V2.SetExecutionResponse>(
@@ -265,6 +325,114 @@ namespace Zitadel.Action.V2 {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Action.V2.ListTargetsResponse> ListTargets(global::Zitadel.Action.V2.ListTargetsRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add Public Key
+      ///
+      /// Adds a public key to the target for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// The public key must be in PEM format and be either an RSA or an EC key.
+      /// On a successful addition, a key ID is returned which can not only be used to manage the key (activate, remove),
+      /// but also will be used as the `kid` header in the JWE token sent to the target to indicate which key was used for encryption.
+      /// Note that newly added keys are inactive by default. You must activate the key to use it for payload encryption.
+      /// Providing an optional expiration date allows you to set a validity period for the key.
+      /// After the expiration date, the key will be automatically deactivated and no longer used for payload encryption.
+      /// Be sure to activate a new key before the current active key expires to avoid interruptions in your target executions.
+      /// You can have multiple inactive keys for rotation purposes, but only one active key at a time.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Action.V2.AddPublicKeyResponse> AddPublicKey(global::Zitadel.Action.V2.AddPublicKeyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Activate Public Key
+      ///
+      /// Activates the public key for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// Activating a new key will deactivate the current active key. Only one key can be active at a time.
+      /// The active key is indicated in the `kid` header in the JWE token sent to the target.
+      /// Activating a key that is already active is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Action.V2.ActivatePublicKeyResponse> ActivatePublicKey(global::Zitadel.Action.V2.ActivatePublicKeyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Deactivate Public Key
+      ///
+      /// Deactivates the public key for payload encryption.
+      /// The public key will no longer be used to encrypt payloads sent to the target.
+      /// Be aware that deactivating the active key will leave the target without an active key.
+      /// Subsequent calls to the target with payload type `PAYLOAD_TYPE_JWE` will fail until a new key is activated.
+      /// This endpoint can be used in break glass scenarios to quickly disable a compromised key.
+      /// Deactivating a key that is already inactive is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Action.V2.DeactivatePublicKeyResponse> DeactivatePublicKey(global::Zitadel.Action.V2.DeactivatePublicKeyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Remove Public Key
+      ///
+      /// Removes the public key from the target. This is a permanent action and can not be undone.
+      /// Note that you can only remove inactive keys. Attempting to remove an active key will result in an error.
+      /// For break glass scenarios, deactivate the key first and then remove it.
+      /// Removing a non-existing key is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Action.V2.RemovePublicKeyResponse> RemovePublicKey(global::Zitadel.Action.V2.RemovePublicKeyRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// List Public Keys
+      ///
+      /// Lists all public keys of a target.
+      /// The response includes which key is active and the key's expiration dates.
+      /// This allows you to manage key rotations and ensure that your target always has an active key for payload encryption.
+      ///
+      /// Required permission:
+      ///   - `action.target.read`
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Action.V2.ListPublicKeysResponse> ListPublicKeys(global::Zitadel.Action.V2.ListPublicKeysRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -733,6 +901,438 @@ namespace Zitadel.Action.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_ListTargets, null, options, request);
       }
       /// <summary>
+      /// Add Public Key
+      ///
+      /// Adds a public key to the target for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// The public key must be in PEM format and be either an RSA or an EC key.
+      /// On a successful addition, a key ID is returned which can not only be used to manage the key (activate, remove),
+      /// but also will be used as the `kid` header in the JWE token sent to the target to indicate which key was used for encryption.
+      /// Note that newly added keys are inactive by default. You must activate the key to use it for payload encryption.
+      /// Providing an optional expiration date allows you to set a validity period for the key.
+      /// After the expiration date, the key will be automatically deactivated and no longer used for payload encryption.
+      /// Be sure to activate a new key before the current active key expires to avoid interruptions in your target executions.
+      /// You can have multiple inactive keys for rotation purposes, but only one active key at a time.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.AddPublicKeyResponse AddPublicKey(global::Zitadel.Action.V2.AddPublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddPublicKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add Public Key
+      ///
+      /// Adds a public key to the target for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// The public key must be in PEM format and be either an RSA or an EC key.
+      /// On a successful addition, a key ID is returned which can not only be used to manage the key (activate, remove),
+      /// but also will be used as the `kid` header in the JWE token sent to the target to indicate which key was used for encryption.
+      /// Note that newly added keys are inactive by default. You must activate the key to use it for payload encryption.
+      /// Providing an optional expiration date allows you to set a validity period for the key.
+      /// After the expiration date, the key will be automatically deactivated and no longer used for payload encryption.
+      /// Be sure to activate a new key before the current active key expires to avoid interruptions in your target executions.
+      /// You can have multiple inactive keys for rotation purposes, but only one active key at a time.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.AddPublicKeyResponse AddPublicKey(global::Zitadel.Action.V2.AddPublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddPublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Add Public Key
+      ///
+      /// Adds a public key to the target for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// The public key must be in PEM format and be either an RSA or an EC key.
+      /// On a successful addition, a key ID is returned which can not only be used to manage the key (activate, remove),
+      /// but also will be used as the `kid` header in the JWE token sent to the target to indicate which key was used for encryption.
+      /// Note that newly added keys are inactive by default. You must activate the key to use it for payload encryption.
+      /// Providing an optional expiration date allows you to set a validity period for the key.
+      /// After the expiration date, the key will be automatically deactivated and no longer used for payload encryption.
+      /// Be sure to activate a new key before the current active key expires to avoid interruptions in your target executions.
+      /// You can have multiple inactive keys for rotation purposes, but only one active key at a time.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.AddPublicKeyResponse> AddPublicKeyAsync(global::Zitadel.Action.V2.AddPublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddPublicKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add Public Key
+      ///
+      /// Adds a public key to the target for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// The public key must be in PEM format and be either an RSA or an EC key.
+      /// On a successful addition, a key ID is returned which can not only be used to manage the key (activate, remove),
+      /// but also will be used as the `kid` header in the JWE token sent to the target to indicate which key was used for encryption.
+      /// Note that newly added keys are inactive by default. You must activate the key to use it for payload encryption.
+      /// Providing an optional expiration date allows you to set a validity period for the key.
+      /// After the expiration date, the key will be automatically deactivated and no longer used for payload encryption.
+      /// Be sure to activate a new key before the current active key expires to avoid interruptions in your target executions.
+      /// You can have multiple inactive keys for rotation purposes, but only one active key at a time.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.AddPublicKeyResponse> AddPublicKeyAsync(global::Zitadel.Action.V2.AddPublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddPublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Activate Public Key
+      ///
+      /// Activates the public key for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// Activating a new key will deactivate the current active key. Only one key can be active at a time.
+      /// The active key is indicated in the `kid` header in the JWE token sent to the target.
+      /// Activating a key that is already active is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.ActivatePublicKeyResponse ActivatePublicKey(global::Zitadel.Action.V2.ActivatePublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ActivatePublicKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Activate Public Key
+      ///
+      /// Activates the public key for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// Activating a new key will deactivate the current active key. Only one key can be active at a time.
+      /// The active key is indicated in the `kid` header in the JWE token sent to the target.
+      /// Activating a key that is already active is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.ActivatePublicKeyResponse ActivatePublicKey(global::Zitadel.Action.V2.ActivatePublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ActivatePublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Activate Public Key
+      ///
+      /// Activates the public key for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// Activating a new key will deactivate the current active key. Only one key can be active at a time.
+      /// The active key is indicated in the `kid` header in the JWE token sent to the target.
+      /// Activating a key that is already active is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.ActivatePublicKeyResponse> ActivatePublicKeyAsync(global::Zitadel.Action.V2.ActivatePublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ActivatePublicKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Activate Public Key
+      ///
+      /// Activates the public key for payload encryption.
+      /// The public key is used to encrypt the payload sent to the target when the payload type is set to `PAYLOAD_TYPE_JWE`.
+      /// Activating a new key will deactivate the current active key. Only one key can be active at a time.
+      /// The active key is indicated in the `kid` header in the JWE token sent to the target.
+      /// Activating a key that is already active is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.ActivatePublicKeyResponse> ActivatePublicKeyAsync(global::Zitadel.Action.V2.ActivatePublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ActivatePublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Deactivate Public Key
+      ///
+      /// Deactivates the public key for payload encryption.
+      /// The public key will no longer be used to encrypt payloads sent to the target.
+      /// Be aware that deactivating the active key will leave the target without an active key.
+      /// Subsequent calls to the target with payload type `PAYLOAD_TYPE_JWE` will fail until a new key is activated.
+      /// This endpoint can be used in break glass scenarios to quickly disable a compromised key.
+      /// Deactivating a key that is already inactive is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.DeactivatePublicKeyResponse DeactivatePublicKey(global::Zitadel.Action.V2.DeactivatePublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeactivatePublicKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deactivate Public Key
+      ///
+      /// Deactivates the public key for payload encryption.
+      /// The public key will no longer be used to encrypt payloads sent to the target.
+      /// Be aware that deactivating the active key will leave the target without an active key.
+      /// Subsequent calls to the target with payload type `PAYLOAD_TYPE_JWE` will fail until a new key is activated.
+      /// This endpoint can be used in break glass scenarios to quickly disable a compromised key.
+      /// Deactivating a key that is already inactive is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.DeactivatePublicKeyResponse DeactivatePublicKey(global::Zitadel.Action.V2.DeactivatePublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_DeactivatePublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Deactivate Public Key
+      ///
+      /// Deactivates the public key for payload encryption.
+      /// The public key will no longer be used to encrypt payloads sent to the target.
+      /// Be aware that deactivating the active key will leave the target without an active key.
+      /// Subsequent calls to the target with payload type `PAYLOAD_TYPE_JWE` will fail until a new key is activated.
+      /// This endpoint can be used in break glass scenarios to quickly disable a compromised key.
+      /// Deactivating a key that is already inactive is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.DeactivatePublicKeyResponse> DeactivatePublicKeyAsync(global::Zitadel.Action.V2.DeactivatePublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return DeactivatePublicKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Deactivate Public Key
+      ///
+      /// Deactivates the public key for payload encryption.
+      /// The public key will no longer be used to encrypt payloads sent to the target.
+      /// Be aware that deactivating the active key will leave the target without an active key.
+      /// Subsequent calls to the target with payload type `PAYLOAD_TYPE_JWE` will fail until a new key is activated.
+      /// This endpoint can be used in break glass scenarios to quickly disable a compromised key.
+      /// Deactivating a key that is already inactive is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.DeactivatePublicKeyResponse> DeactivatePublicKeyAsync(global::Zitadel.Action.V2.DeactivatePublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_DeactivatePublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Remove Public Key
+      ///
+      /// Removes the public key from the target. This is a permanent action and can not be undone.
+      /// Note that you can only remove inactive keys. Attempting to remove an active key will result in an error.
+      /// For break glass scenarios, deactivate the key first and then remove it.
+      /// Removing a non-existing key is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.RemovePublicKeyResponse RemovePublicKey(global::Zitadel.Action.V2.RemovePublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemovePublicKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove Public Key
+      ///
+      /// Removes the public key from the target. This is a permanent action and can not be undone.
+      /// Note that you can only remove inactive keys. Attempting to remove an active key will result in an error.
+      /// For break glass scenarios, deactivate the key first and then remove it.
+      /// Removing a non-existing key is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.RemovePublicKeyResponse RemovePublicKey(global::Zitadel.Action.V2.RemovePublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemovePublicKey, null, options, request);
+      }
+      /// <summary>
+      /// Remove Public Key
+      ///
+      /// Removes the public key from the target. This is a permanent action and can not be undone.
+      /// Note that you can only remove inactive keys. Attempting to remove an active key will result in an error.
+      /// For break glass scenarios, deactivate the key first and then remove it.
+      /// Removing a non-existing key is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.RemovePublicKeyResponse> RemovePublicKeyAsync(global::Zitadel.Action.V2.RemovePublicKeyRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemovePublicKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove Public Key
+      ///
+      /// Removes the public key from the target. This is a permanent action and can not be undone.
+      /// Note that you can only remove inactive keys. Attempting to remove an active key will result in an error.
+      /// For break glass scenarios, deactivate the key first and then remove it.
+      /// Removing a non-existing key is a no-op.
+      ///
+      /// Required permission:
+      ///   - `action.target.write`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.RemovePublicKeyResponse> RemovePublicKeyAsync(global::Zitadel.Action.V2.RemovePublicKeyRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemovePublicKey, null, options, request);
+      }
+      /// <summary>
+      /// List Public Keys
+      ///
+      /// Lists all public keys of a target.
+      /// The response includes which key is active and the key's expiration dates.
+      /// This allows you to manage key rotations and ensure that your target always has an active key for payload encryption.
+      ///
+      /// Required permission:
+      ///   - `action.target.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.ListPublicKeysResponse ListPublicKeys(global::Zitadel.Action.V2.ListPublicKeysRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPublicKeys(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Public Keys
+      ///
+      /// Lists all public keys of a target.
+      /// The response includes which key is active and the key's expiration dates.
+      /// This allows you to manage key rotations and ensure that your target always has an active key for payload encryption.
+      ///
+      /// Required permission:
+      ///   - `action.target.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Action.V2.ListPublicKeysResponse ListPublicKeys(global::Zitadel.Action.V2.ListPublicKeysRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_ListPublicKeys, null, options, request);
+      }
+      /// <summary>
+      /// List Public Keys
+      ///
+      /// Lists all public keys of a target.
+      /// The response includes which key is active and the key's expiration dates.
+      /// This allows you to manage key rotations and ensure that your target always has an active key for payload encryption.
+      ///
+      /// Required permission:
+      ///   - `action.target.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.ListPublicKeysResponse> ListPublicKeysAsync(global::Zitadel.Action.V2.ListPublicKeysRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return ListPublicKeysAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// List Public Keys
+      ///
+      /// Lists all public keys of a target.
+      /// The response includes which key is active and the key's expiration dates.
+      /// This allows you to manage key rotations and ensure that your target always has an active key for payload encryption.
+      ///
+      /// Required permission:
+      ///   - `action.target.read`
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Action.V2.ListPublicKeysResponse> ListPublicKeysAsync(global::Zitadel.Action.V2.ListPublicKeysRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_ListPublicKeys, null, options, request);
+      }
+      /// <summary>
       /// Set Execution
       ///
       /// Sets an execution to call a target or include the targets of another execution.
@@ -1063,6 +1663,11 @@ namespace Zitadel.Action.V2 {
           .AddMethod(__Method_DeleteTarget, serviceImpl.DeleteTarget)
           .AddMethod(__Method_GetTarget, serviceImpl.GetTarget)
           .AddMethod(__Method_ListTargets, serviceImpl.ListTargets)
+          .AddMethod(__Method_AddPublicKey, serviceImpl.AddPublicKey)
+          .AddMethod(__Method_ActivatePublicKey, serviceImpl.ActivatePublicKey)
+          .AddMethod(__Method_DeactivatePublicKey, serviceImpl.DeactivatePublicKey)
+          .AddMethod(__Method_RemovePublicKey, serviceImpl.RemovePublicKey)
+          .AddMethod(__Method_ListPublicKeys, serviceImpl.ListPublicKeys)
           .AddMethod(__Method_SetExecution, serviceImpl.SetExecution)
           .AddMethod(__Method_ListExecutions, serviceImpl.ListExecutions)
           .AddMethod(__Method_ListExecutionFunctions, serviceImpl.ListExecutionFunctions)
@@ -1082,6 +1687,11 @@ namespace Zitadel.Action.V2 {
       serviceBinder.AddMethod(__Method_DeleteTarget, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.DeleteTargetRequest, global::Zitadel.Action.V2.DeleteTargetResponse>(serviceImpl.DeleteTarget));
       serviceBinder.AddMethod(__Method_GetTarget, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.GetTargetRequest, global::Zitadel.Action.V2.GetTargetResponse>(serviceImpl.GetTarget));
       serviceBinder.AddMethod(__Method_ListTargets, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.ListTargetsRequest, global::Zitadel.Action.V2.ListTargetsResponse>(serviceImpl.ListTargets));
+      serviceBinder.AddMethod(__Method_AddPublicKey, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.AddPublicKeyRequest, global::Zitadel.Action.V2.AddPublicKeyResponse>(serviceImpl.AddPublicKey));
+      serviceBinder.AddMethod(__Method_ActivatePublicKey, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.ActivatePublicKeyRequest, global::Zitadel.Action.V2.ActivatePublicKeyResponse>(serviceImpl.ActivatePublicKey));
+      serviceBinder.AddMethod(__Method_DeactivatePublicKey, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.DeactivatePublicKeyRequest, global::Zitadel.Action.V2.DeactivatePublicKeyResponse>(serviceImpl.DeactivatePublicKey));
+      serviceBinder.AddMethod(__Method_RemovePublicKey, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.RemovePublicKeyRequest, global::Zitadel.Action.V2.RemovePublicKeyResponse>(serviceImpl.RemovePublicKey));
+      serviceBinder.AddMethod(__Method_ListPublicKeys, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.ListPublicKeysRequest, global::Zitadel.Action.V2.ListPublicKeysResponse>(serviceImpl.ListPublicKeys));
       serviceBinder.AddMethod(__Method_SetExecution, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.SetExecutionRequest, global::Zitadel.Action.V2.SetExecutionResponse>(serviceImpl.SetExecution));
       serviceBinder.AddMethod(__Method_ListExecutions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.ListExecutionsRequest, global::Zitadel.Action.V2.ListExecutionsResponse>(serviceImpl.ListExecutions));
       serviceBinder.AddMethod(__Method_ListExecutionFunctions, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Action.V2.ListExecutionFunctionsRequest, global::Zitadel.Action.V2.ListExecutionFunctionsResponse>(serviceImpl.ListExecutionFunctions));

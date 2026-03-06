@@ -345,8 +345,8 @@ namespace Zitadel.System.V1 {
     public abstract partial class SystemServiceBase
     {
       /// <summary>
-      ///Indicates if ZITADEL is running.
-      /// It respondes as soon as ZITADEL started
+      ///Indicates if Zitadel is running.
+      /// It respondes as soon as Zitadel started
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -358,7 +358,7 @@ namespace Zitadel.System.V1 {
       }
 
       /// <summary>
-      /// Returns a list of ZITADEL instances
+      /// Returns a list of Zitadel instances
       ///
       /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
@@ -474,7 +474,7 @@ namespace Zitadel.System.V1 {
       ///
       /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
-      /// Returns the custom domains of an instance.
+      /// Returns the Custom Domains of an instance.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -488,7 +488,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a Custom Domain to the instance in context
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -502,7 +502,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a Custom Domain from the instance in context
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -526,7 +526,7 @@ namespace Zitadel.System.V1 {
       }
 
       /// <summary>
-      ///Returns all stored read models of ZITADEL
+      ///Returns all stored read models of Zitadel
       /// views are used for search optimisation and optimise request latencies
       /// they represent the delta of the event happend on the objects
       /// </summary>
@@ -541,7 +541,7 @@ namespace Zitadel.System.V1 {
 
       /// <summary>
       ///Truncates the delta of the change stream
-      /// be carefull with this function because ZITADEL has to
+      /// be carefull with this function because Zitadel has to
       /// recompute the deltas after they got cleared.
       /// Search requests will return wrong results until all deltas are recomputed
       /// </summary>
@@ -701,8 +701,8 @@ namespace Zitadel.System.V1 {
       }
 
       /// <summary>
-      ///Indicates if ZITADEL is running.
-      /// It respondes as soon as ZITADEL started
+      ///Indicates if Zitadel is running.
+      /// It respondes as soon as Zitadel started
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -715,8 +715,8 @@ namespace Zitadel.System.V1 {
         return Healthz(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Indicates if ZITADEL is running.
-      /// It respondes as soon as ZITADEL started
+      ///Indicates if Zitadel is running.
+      /// It respondes as soon as Zitadel started
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -727,8 +727,8 @@ namespace Zitadel.System.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_Healthz, null, options, request);
       }
       /// <summary>
-      ///Indicates if ZITADEL is running.
-      /// It respondes as soon as ZITADEL started
+      ///Indicates if Zitadel is running.
+      /// It respondes as soon as Zitadel started
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -741,8 +741,8 @@ namespace Zitadel.System.V1 {
         return HealthzAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Indicates if ZITADEL is running.
-      /// It respondes as soon as ZITADEL started
+      ///Indicates if Zitadel is running.
+      /// It respondes as soon as Zitadel started
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -753,7 +753,7 @@ namespace Zitadel.System.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_Healthz, null, options, request);
       }
       /// <summary>
-      /// Returns a list of ZITADEL instances
+      /// Returns a list of Zitadel instances
       ///
       /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
@@ -768,7 +768,7 @@ namespace Zitadel.System.V1 {
         return ListInstances(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns a list of ZITADEL instances
+      /// Returns a list of Zitadel instances
       ///
       /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
@@ -781,7 +781,7 @@ namespace Zitadel.System.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListInstances, null, options, request);
       }
       /// <summary>
-      /// Returns a list of ZITADEL instances
+      /// Returns a list of Zitadel instances
       ///
       /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
@@ -796,7 +796,7 @@ namespace Zitadel.System.V1 {
         return ListInstancesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Returns a list of ZITADEL instances
+      /// Returns a list of Zitadel instances
       ///
       /// Deprecated: Use [ListInstances](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-instances.api.mdx) instead to list instances
       /// </summary>
@@ -1205,7 +1205,7 @@ namespace Zitadel.System.V1 {
       ///
       /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
-      /// Returns the custom domains of an instance.
+      /// Returns the Custom Domains of an instance.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1222,7 +1222,7 @@ namespace Zitadel.System.V1 {
       ///
       /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
-      /// Returns the custom domains of an instance.
+      /// Returns the Custom Domains of an instance.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1237,7 +1237,7 @@ namespace Zitadel.System.V1 {
       ///
       /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
-      /// Returns the custom domains of an instance.
+      /// Returns the Custom Domains of an instance.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1254,7 +1254,7 @@ namespace Zitadel.System.V1 {
       ///
       /// Deprecated: use [instance service v2 ListCustomDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-custom-domains.api.mdx) instead.
       ///
-      /// Returns the custom domains of an instance.
+      /// Returns the Custom Domains of an instance.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1267,7 +1267,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a Custom Domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1282,7 +1282,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a Custom Domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1295,7 +1295,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a Custom Domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1310,7 +1310,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Adds a domain to an instance
       ///
-      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a custom domain to the instance in context
+      /// Deprecated: Use [AddCustomDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-custom-domain.api.mdx) instead to add a Custom Domain to the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1323,7 +1323,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a Custom Domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1338,7 +1338,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a Custom Domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1351,7 +1351,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a Custom Domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1366,7 +1366,7 @@ namespace Zitadel.System.V1 {
       /// <summary>
       /// Removes the domain of an instance
       ///
-      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a custom domain from the instance in context
+      /// Deprecated: Use [RemoveDomain](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-custom-domain.api.mdx) instead to remove a Custom Domain from the instance in context
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1425,7 +1425,7 @@ namespace Zitadel.System.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_SetPrimaryDomain, null, options, request);
       }
       /// <summary>
-      ///Returns all stored read models of ZITADEL
+      ///Returns all stored read models of Zitadel
       /// views are used for search optimisation and optimise request latencies
       /// they represent the delta of the event happend on the objects
       /// </summary>
@@ -1440,7 +1440,7 @@ namespace Zitadel.System.V1 {
         return ListViews(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Returns all stored read models of ZITADEL
+      ///Returns all stored read models of Zitadel
       /// views are used for search optimisation and optimise request latencies
       /// they represent the delta of the event happend on the objects
       /// </summary>
@@ -1453,7 +1453,7 @@ namespace Zitadel.System.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListViews, null, options, request);
       }
       /// <summary>
-      ///Returns all stored read models of ZITADEL
+      ///Returns all stored read models of Zitadel
       /// views are used for search optimisation and optimise request latencies
       /// they represent the delta of the event happend on the objects
       /// </summary>
@@ -1468,7 +1468,7 @@ namespace Zitadel.System.V1 {
         return ListViewsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      ///Returns all stored read models of ZITADEL
+      ///Returns all stored read models of Zitadel
       /// views are used for search optimisation and optimise request latencies
       /// they represent the delta of the event happend on the objects
       /// </summary>
@@ -1482,7 +1482,7 @@ namespace Zitadel.System.V1 {
       }
       /// <summary>
       ///Truncates the delta of the change stream
-      /// be carefull with this function because ZITADEL has to
+      /// be carefull with this function because Zitadel has to
       /// recompute the deltas after they got cleared.
       /// Search requests will return wrong results until all deltas are recomputed
       /// </summary>
@@ -1498,7 +1498,7 @@ namespace Zitadel.System.V1 {
       }
       /// <summary>
       ///Truncates the delta of the change stream
-      /// be carefull with this function because ZITADEL has to
+      /// be carefull with this function because Zitadel has to
       /// recompute the deltas after they got cleared.
       /// Search requests will return wrong results until all deltas are recomputed
       /// </summary>
@@ -1512,7 +1512,7 @@ namespace Zitadel.System.V1 {
       }
       /// <summary>
       ///Truncates the delta of the change stream
-      /// be carefull with this function because ZITADEL has to
+      /// be carefull with this function because Zitadel has to
       /// recompute the deltas after they got cleared.
       /// Search requests will return wrong results until all deltas are recomputed
       /// </summary>
@@ -1528,7 +1528,7 @@ namespace Zitadel.System.V1 {
       }
       /// <summary>
       ///Truncates the delta of the change stream
-      /// be carefull with this function because ZITADEL has to
+      /// be carefull with this function because Zitadel has to
       /// recompute the deltas after they got cleared.
       /// Search requests will return wrong results until all deltas are recomputed
       /// </summary>

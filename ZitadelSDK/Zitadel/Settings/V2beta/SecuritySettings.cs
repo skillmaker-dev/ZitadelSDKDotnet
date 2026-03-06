@@ -35,7 +35,7 @@ namespace Zitadel.Settings.V2beta {
             "aW5ncxJQCgdlbmFibGVkGAEgASgIQjaSQTMyMXN0YXRlcyBpZiBpZnJhbWUg",
             "ZW1iZWRkaW5nIGlzIGVuYWJsZWQgb3IgZGlzYWJsZWRSB2VuYWJsZWQSiQEK",
             "D2FsbG93ZWRfb3JpZ2lucxgCIAMoCUJgkkFdMjhvcmlnaW5zIGFsbG93ZWQg",
-            "bG9hZGluZyBaSVRBREVMIGluIGFuIGlmcmFtZSBpZiBlbmFibGVkLkohWyJm",
+            "bG9hZGluZyBaaXRhZGVsIGluIGFuIGlmcmFtZSBpZiBlbmFibGVkLkohWyJm",
             "b28uYmFyLmNvbSIsICJsb2NhbGhvc3Q6ODA4MCJdUg5hbGxvd2VkT3JpZ2lu",
             "c0LwAQobY29tLnppdGFkZWwuc2V0dGluZ3MudjJiZXRhQhVTZWN1cml0eVNl",
             "dHRpbmdzUHJvdG9QAVo8Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtn",

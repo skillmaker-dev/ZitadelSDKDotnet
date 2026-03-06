@@ -1035,7 +1035,7 @@ namespace Zitadel.Instance.V2 {
     /// <summary>Field number for the "custom_domains_filter" field.</summary>
     public const int CustomDomainsFilterFieldNumber = 2;
     /// <summary>
-    /// Filter for instances that have at least one of the specified custom domains.
+    /// Filter for instances that have at least one of the specified Custom Domains.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1515,7 +1515,7 @@ namespace Zitadel.Instance.V2 {
     /// <summary>Field number for the "domain_filter" field.</summary>
     public const int DomainFilterFieldNumber = 1;
     /// <summary>
-    /// Filter for a specific custom domain.
+    /// Filter for a specific Custom Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2399,7 +2399,7 @@ namespace Zitadel.Instance.V2 {
     /// <summary>Field number for the "domain_filter" field.</summary>
     public const int DomainFilterFieldNumber = 1;
     /// <summary>
-    /// Filter for a specific trusted domain.
+    /// Filter for a specific Trusted Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

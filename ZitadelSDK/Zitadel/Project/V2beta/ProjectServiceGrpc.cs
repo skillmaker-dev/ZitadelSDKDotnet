@@ -445,7 +445,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -485,6 +485,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permission:
       ///   - `project.grant.create`
@@ -523,7 +524,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1332,7 +1333,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1352,7 +1353,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1370,7 +1371,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1390,7 +1391,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1486,6 +1487,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permission:
       ///   - `project.grant.create`
@@ -1507,6 +1509,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permission:
       ///   - `project.grant.create`
@@ -1526,6 +1529,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permission:
       ///   - `project.grant.create`
@@ -1547,6 +1551,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Grant a project to another organization.
       /// The project grant will allow the granted organization to access the project and manage the authorizations for its users.
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permission:
       ///   - `project.grant.create`
@@ -1644,7 +1649,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1667,7 +1672,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1688,7 +1693,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1711,7 +1716,7 @@ namespace Zitadel.Project.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under project service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.

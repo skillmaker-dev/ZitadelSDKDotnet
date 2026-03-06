@@ -11,7 +11,9 @@ namespace Zitadel.Authorization.V2 {
   /// <summary>
   /// AuthorizationService provides methods to manage authorizations for users within your projects and applications.
   ///
-  /// For managing permissions and roles for ZITADEL internal resources, like organizations, projects,
+  /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+  ///
+  /// For managing permissions and roles for Zitadel internal resources, like organizations, projects,
   /// users, etc., please use the InternalPermissionService.
   /// </summary>
   public static partial class AuthorizationService
@@ -139,6 +141,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.read"
       ///   - no permissions required for listing own authorizations
@@ -157,6 +161,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.write"
       /// </summary>
@@ -173,6 +179,8 @@ namespace Zitadel.Authorization.V2 {
       /// Update Authorization
       ///
       /// UpdateAuthorization updates the authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -192,6 +200,8 @@ namespace Zitadel.Authorization.V2 {
       /// Delete Authorization
       ///
       /// DeleteAuthorization deletes the authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -214,6 +224,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the change date in the response to verify if the authorization was activated by the request.
@@ -234,6 +246,8 @@ namespace Zitadel.Authorization.V2 {
       /// Deactivate Authorization
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is already inactive, the request will return a successful response as
       /// the desired state is already achieved.
@@ -285,6 +299,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.read"
       ///   - no permissions required for listing own authorizations
@@ -304,6 +320,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.read"
       ///   - no permissions required for listing own authorizations
@@ -320,6 +338,8 @@ namespace Zitadel.Authorization.V2 {
       /// List Authorizations
       ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permissions:
       ///   - "user.grant.read"
@@ -340,6 +360,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.read"
       ///   - no permissions required for listing own authorizations
@@ -356,6 +378,8 @@ namespace Zitadel.Authorization.V2 {
       /// Create Authorization
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -375,6 +399,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.write"
       /// </summary>
@@ -390,6 +416,8 @@ namespace Zitadel.Authorization.V2 {
       /// Create Authorization
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -409,6 +437,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Required permissions:
       ///   - "user.grant.write"
       /// </summary>
@@ -424,6 +454,8 @@ namespace Zitadel.Authorization.V2 {
       /// Update Authorization
       ///
       /// UpdateAuthorization updates the authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -445,6 +477,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// UpdateAuthorization updates the authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
       /// Required permissions:
@@ -462,6 +496,8 @@ namespace Zitadel.Authorization.V2 {
       /// Update Authorization
       ///
       /// UpdateAuthorization updates the authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -483,6 +519,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// UpdateAuthorization updates the authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
       /// Required permissions:
@@ -500,6 +538,8 @@ namespace Zitadel.Authorization.V2 {
       /// Delete Authorization
       ///
       /// DeleteAuthorization deletes the authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -523,6 +563,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// DeleteAuthorization deletes the authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the deletion date in the response to verify if the authorization was deleted by the request.
@@ -542,6 +584,8 @@ namespace Zitadel.Authorization.V2 {
       /// Delete Authorization
       ///
       /// DeleteAuthorization deletes the authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -565,6 +609,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// DeleteAuthorization deletes the authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the deletion date in the response to verify if the authorization was deleted by the request.
@@ -584,6 +630,8 @@ namespace Zitadel.Authorization.V2 {
       /// Activate Authorization
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -607,6 +655,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the change date in the response to verify if the authorization was activated by the request.
@@ -626,6 +676,8 @@ namespace Zitadel.Authorization.V2 {
       /// Activate Authorization
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -649,6 +701,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// ActivateAuthorization activates an existing but inactive authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the change date in the response to verify if the authorization was activated by the request.
@@ -668,6 +722,8 @@ namespace Zitadel.Authorization.V2 {
       /// Deactivate Authorization
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is already inactive, the request will return a successful response as
       /// the desired state is already achieved.
@@ -691,6 +747,8 @@ namespace Zitadel.Authorization.V2 {
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
       /// In case the authorization is already inactive, the request will return a successful response as
       /// the desired state is already achieved.
       /// You can check the change date in the response to verify if the authorization was deactivated by the request.
@@ -710,6 +768,8 @@ namespace Zitadel.Authorization.V2 {
       /// Deactivate Authorization
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is already inactive, the request will return a successful response as
       /// the desired state is already achieved.
@@ -732,6 +792,8 @@ namespace Zitadel.Authorization.V2 {
       /// Deactivate Authorization
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       ///
       /// In case the authorization is already inactive, the request will return a successful response as
       /// the desired state is already achieved.

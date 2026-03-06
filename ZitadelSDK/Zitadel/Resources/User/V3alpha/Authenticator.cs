@@ -419,7 +419,7 @@ namespace Zitadel.Resources.User.V3alpha {
         = pb::FieldCodec.ForMessage(34, global::Zitadel.Resources.User.V3alpha.TOTP.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Resources.User.V3alpha.TOTP> totps_ = new pbc::RepeatedField<global::Zitadel.Resources.User.V3alpha.TOTP>();
     /// <summary>
-    /// A list of the user's time-based one-time password (TOTP) authenticators,
+    /// A list of the user's TOTP authenticators,
     /// incl. the name for identification.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -434,7 +434,7 @@ namespace Zitadel.Resources.User.V3alpha {
         = pb::FieldCodec.ForMessage(42, global::Zitadel.Resources.User.V3alpha.OTPSMS.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Resources.User.V3alpha.OTPSMS> otpSms_ = new pbc::RepeatedField<global::Zitadel.Resources.User.V3alpha.OTPSMS>();
     /// <summary>
-    /// A list of the user's one-time password (OTP) SMS authenticators.
+    /// A list of the user's OTP SMS authenticators.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -448,7 +448,7 @@ namespace Zitadel.Resources.User.V3alpha {
         = pb::FieldCodec.ForMessage(50, global::Zitadel.Resources.User.V3alpha.OTPEmail.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Resources.User.V3alpha.OTPEmail> otpEmail_ = new pbc::RepeatedField<global::Zitadel.Resources.User.V3alpha.OTPEmail>();
     /// <summary>
-    /// A list of the user's one-time password (OTP) Email authenticators.
+    /// A list of the user's OTP Email authenticators.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -821,7 +821,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// This can be useful if you provide multiple usernames for a single user, where one
     /// if specific to your organization, e.g.:
     /// - gigi-giraffe@zitadel.com (unique across organizations)
-    /// - gigi-giraffe (unique only inside the ZITADEL organization)
+    /// - gigi-giraffe (unique only inside the Zitadel organization)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1094,7 +1094,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// This can be useful if you provide multiple usernames for a single user, where one
     /// if specific to your organization, e.g.:
     /// - gigi-giraffe@zitadel.com (unique across organizations)
-    /// - gigi-giraffe (unique only inside the ZITADEL organization)
+    /// - gigi-giraffe (unique only inside the Zitadel organization)
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2402,7 +2402,7 @@ namespace Zitadel.Resources.User.V3alpha {
     public const int OtpSmsIdFieldNumber = 1;
     private string otpSmsId_ = "";
     /// <summary>
-    /// unique identifier of the one-time password (OTP) SMS authenticator.
+    /// unique identifier of the OTP SMS authenticator.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2683,7 +2683,7 @@ namespace Zitadel.Resources.User.V3alpha {
     public const int OtpEmailIdFieldNumber = 1;
     private string otpEmailId_ = "";
     /// <summary>
-    /// unique identifier of the one-time password (OTP) Email authenticator.
+    /// unique identifier of the OTP Email authenticator.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2964,7 +2964,7 @@ namespace Zitadel.Resources.User.V3alpha {
     public const int TotpIdFieldNumber = 1;
     private string totpId_ = "";
     /// <summary>
-    /// unique identifier of the time-based one-time password (TOTP) authenticator.
+    /// unique identifier of the TOTP authenticator.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3613,7 +3613,7 @@ namespace Zitadel.Resources.User.V3alpha {
     private string userId_ = "";
     /// <summary>
     /// The user ID represents the ID provided by the identity provider.
-    /// This ID is used to link the user in ZITADEL with the identity provider.
+    /// This ID is used to link the user in Zitadel with the identity provider.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4151,7 +4151,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "password" field.</summary>
     public const int PasswordFieldNumber = 1;
     /// <summary>
-    /// Provide the plain text password. ZITADEL will take care to store it in a secure way (hash).
+    /// Provide the plain text password. Zitadel will take care to store it in a secure way (hash).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4181,7 +4181,7 @@ namespace Zitadel.Resources.User.V3alpha {
     public const int HashFieldNumber = 2;
     /// <summary>
     /// Encoded hash of a password in Modular Crypt Format:
-    /// https://zitadel.com/docs/concepts/architecture/secrets#hashed-secrets.
+    /// https://zitadel.com/docs/learn/architecture/secrets#hashed-secrets.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4621,8 +4621,8 @@ namespace Zitadel.Resources.User.V3alpha {
     private string urlTemplate_;
     /// <summary>
     /// Optionally set a url_template, which will be used in the password reset mail
-    /// sent by ZITADEL to guide the user to your password change page.
-    /// If no template is set, the default ZITADEL url will be used.
+    /// sent by Zitadel to guide the user to your password change page.
+    /// If no template is set, the default Zitadel url will be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5400,9 +5400,9 @@ namespace Zitadel.Resources.User.V3alpha {
 
     private string urlTemplate_;
     /// <summary>
-    /// Optionally set a url_template, which will be used in the mail sent by ZITADEL
+    /// Optionally set a url_template, which will be used in the mail sent by Zitadel
     /// to guide the user to your passkey registration page.
-    /// If no template is set, the default ZITADEL url will be used.
+    /// If no template is set, the default Zitadel url will be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6292,7 +6292,7 @@ namespace Zitadel.Resources.User.V3alpha {
 
     private string userId_;
     /// <summary>
-    /// If the user was already federated and linked to a ZITADEL user, it's id will be returned.
+    /// If the user was already federated and linked to a Zitadel user, it's id will be returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

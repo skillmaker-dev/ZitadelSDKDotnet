@@ -2032,7 +2032,7 @@ namespace Zitadel.Instance.V2 {
     public const int CustomDomainFieldNumber = 2;
     private string customDomain_ = "";
     /// <summary>
-    /// Custom domain to add to the instance.
+    /// Custom Domain to add to the instance.
     /// Must be a valid domain name.
     /// Once the domain is added, it will be used to route requests to this instance.
     /// </summary>
@@ -3244,7 +3244,7 @@ namespace Zitadel.Instance.V2 {
         = pb::FieldCodec.ForMessage(10, global::Zitadel.Instance.V2.CustomDomain.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Instance.V2.CustomDomain> domains_ = new pbc::RepeatedField<global::Zitadel.Instance.V2.CustomDomain>();
     /// <summary>
-    /// The list of custom domains matching the query.
+    /// The list of Custom Domains matching the query.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3481,7 +3481,7 @@ namespace Zitadel.Instance.V2 {
     public const int InstanceIdFieldNumber = 1;
     private string instanceId_ = "";
     /// <summary>
-    /// InstanceID is the unique ID of the instance to which the trusted domain will be added.
+    /// InstanceID is the unique ID of the instance to which the Trusted Domain will be added.
     /// If not set, the instance in the current context (e.g. identified by the host header) will be used.
     /// If an ID is set, the caller must have additional permissions.
     /// </summary>
@@ -3498,13 +3498,13 @@ namespace Zitadel.Instance.V2 {
     public const int TrustedDomainFieldNumber = 2;
     private string trustedDomain_ = "";
     /// <summary>
-    /// Trusted domain to be added to the instance.
+    /// Trusted Domain to be added to the instance.
     /// Must be a valid domain name.
     /// Once the domain is added, it can be used in API responses like OIDC discovery,
     /// email templates, and more.
     /// This can be used in cases where the API is accessed through a different domain
-    /// than the instance domain, e.g. proxy setups and custom login UIs.
-    /// Unlike custom domains, trusted domains are not used to route requests to this instance
+    /// than the Custom Domain, e.g. proxy setups and custom login UIs.
+    /// Unlike Custom Domains, Trusted Domains are not used to route requests to this instance
     /// and therefore do not need to be uniquely assigned to an instance.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3730,7 +3730,7 @@ namespace Zitadel.Instance.V2 {
     public const int CreationDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
     /// <summary>
-    /// CreationDate is the timestamp when the trusted domain was added.
+    /// CreationDate is the timestamp when the Trusted Domain was added.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3941,7 +3941,7 @@ namespace Zitadel.Instance.V2 {
     public const int InstanceIdFieldNumber = 1;
     private string instanceId_ = "";
     /// <summary>
-    /// InstanceID is the unique ID of the instance from which the trusted domain will be removed.
+    /// InstanceID is the unique ID of the instance from which the Trusted Domain will be removed.
     /// If not set, the instance in the current context (e.g. identified by the host header) will be used.
     /// If an ID is set, the caller must have additional permissions.
     /// </summary>
@@ -3958,7 +3958,7 @@ namespace Zitadel.Instance.V2 {
     public const int TrustedDomainFieldNumber = 2;
     private string trustedDomain_ = "";
     /// <summary>
-    /// The trusted domain to remove from the instance.
+    /// The Trusted Domain to remove from the instance.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4183,7 +4183,7 @@ namespace Zitadel.Instance.V2 {
     public const int DeletionDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp deletionDate_;
     /// <summary>
-    /// DeletionDate is the timestamp when the trusted domain was removed.
+    /// DeletionDate is the timestamp when the Trusted Domain was removed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4396,7 +4396,7 @@ namespace Zitadel.Instance.V2 {
     public const int InstanceIdFieldNumber = 1;
     private string instanceId_ = "";
     /// <summary>
-    /// InstanceID is the unique ID of the instance whose trusted domains will be listed.
+    /// InstanceID is the unique ID of the instance whose Trusted Domains will be listed.
     /// If not set, the instance in the current context (e.g. identified by the host header) will be used.
     /// If an ID is set, the caller must have additional permissions.
     /// </summary>
@@ -4717,7 +4717,7 @@ namespace Zitadel.Instance.V2 {
         = pb::FieldCodec.ForMessage(10, global::Zitadel.Instance.V2.TrustedDomain.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Instance.V2.TrustedDomain> trustedDomain_ = new pbc::RepeatedField<global::Zitadel.Instance.V2.TrustedDomain>();
     /// <summary>
-    /// The list of trusted domains matching the query.
+    /// The list of Trusted Domains matching the query.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

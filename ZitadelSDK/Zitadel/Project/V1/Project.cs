@@ -284,7 +284,7 @@ namespace Zitadel.Project.V1 {
     public const int ProjectRoleCheckFieldNumber = 6;
     private bool projectRoleCheck_;
     /// <summary>
-    /// ZITADEL checks if the user has at least one on this project
+    /// Zitadel checks if the user has at least one on this project
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -299,7 +299,7 @@ namespace Zitadel.Project.V1 {
     public const int HasProjectCheckFieldNumber = 7;
     private bool hasProjectCheck_;
     /// <summary>
-    /// ZITADEL checks if the org of the user has permission for this project
+    /// Zitadel checks if the org of the user has permission for this project
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

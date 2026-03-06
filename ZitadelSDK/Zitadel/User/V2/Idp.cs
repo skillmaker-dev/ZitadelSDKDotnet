@@ -32,7 +32,7 @@ namespace Zitadel.User.V2 {
             "VXNlcm5hbWUgdXNlZCB0byBsb2dpbiB0aHJvdWdoIExEQVBKCiJ1c2VybmFt",
             "ZSJ4yAGAAQH6QgpyCBABGMgBkAEBUgh1c2VybmFtZRJiCghwYXNzd29yZBgC",
             "IAEoCUJGkkE5MiNQYXNzd29yZCB1c2VkIHRvIGxvZ2luIHRocm91Z2ggTERB",
-            "UEoMIlBhc3N3b3JkMSEieMgBgAEB+kIHcgUQARjIAVIIcGFzc3dvcmQi0gIK",
+            "UEoMIlBhc3N3b3JkMSEieMgBgAEB+kIHcgUQARjIAVIIcGFzc3dvcmQi2QMK",
             "DFJlZGlyZWN0VVJMcxKjAQoLc3VjY2Vzc191cmwYASABKAlCgQGSQXEyQVVS",
             "TCBvbiB3aGljaCB0aGUgdXNlciB3aWxsIGJlIHJlZGlyZWN0ZWQgYWZ0ZXIg",
             "YSBzdWNjZXNzZnVsIGxvZ2luSiYiaHR0cHM6Ly9jdXN0b20uY29tL2xvZ2lu",
@@ -40,13 +40,16 @@ namespace Zitadel.User.V2 {
             "mwEKC2ZhaWx1cmVfdXJsGAIgASgJQnqSQWoyPVVSTCBvbiB3aGljaCB0aGUg",
             "dXNlciB3aWxsIGJlIHJlZGlyZWN0ZWQgYWZ0ZXIgYSBmYWlsZWQgbG9naW5K",
             "IyJodHRwczovL2N1c3RvbS5jb20vbG9naW4vaWRwL2ZhaWwieIAQgAEB+kIK",
-            "cggQARiAEJABAVIKZmFpbHVyZVVybCLJAgoJSURQSW50ZW50ElkKDWlkcF9p",
+            "cggQARiAEJABAVIKZmFpbHVyZVVybBKEAQoKbG9naW5faGludBgDIAEoCUJl",
+            "kkFaMj5sb2dpbl9oaW50IGhpbnRzIHRvIHRoZSBsb2dpbiBwYWdlIHdoaWNo",
+            "IHVzZXIgd2FudHMgdG8gbG9nIGluLkoVInNvbWVvbmVAZXhhbXBsZS5jb20i",
+            "eMgB+kIFcgMYyAFSCWxvZ2luSGludCLJAgoJSURQSW50ZW50ElkKDWlkcF9p",
             "bnRlbnRfaWQYASABKAlCNZJBMjIUSUQgb2YgdGhlIElEUCBpbnRlbnRKFCIx",
             "NjM4NDA3NzY4MzU0MzI3MDUieMgBgAEBUgtpZHBJbnRlbnRJZBJyChBpZHBf",
             "aW50ZW50X3Rva2VuGAIgASgJQkiSQUUyF3Rva2VuIG9mIHRoZSBJRFAgaW50",
             "ZW50SiQiU0pLTDNpb0lEcG8zNDJpb3F3OThmanAzc2RmMzJ3YWhiPSJ4yAGA",
             "AQFSDmlkcEludGVudFRva2VuEm0KB3VzZXJfaWQYAyABKAlCVJJBUTI2SUQg",
-            "b2YgdGhlIFpJVEFERUwgdXNlciBpZiBleHRlcm5hbCB1c2VyIGFscmVhZHkg",
+            "b2YgdGhlIFppdGFkZWwgdXNlciBpZiBleHRlcm5hbCB1c2VyIGFscmVhZHkg",
             "bGlua2VkShQiMTYzODQwNzc2ODM1NDMyMzQ1InjIAVIGdXNlcklkIssGCg5J",
             "RFBJbmZvcm1hdGlvbhKLAQoFb2F1dGgYASABKAsyKi56aXRhZGVsLnVzZXIu",
             "djIuSURQT0F1dGhBY2Nlc3NJbmZvcm1hdGlvbkJHkkFEMkJPQXV0aC9PSURD",
@@ -66,39 +69,47 @@ namespace Zitadel.User.V2 {
             "dXNlckBleHRlcm5hbC5jb20iUgh1c2VyTmFtZRJ9Cg9yYXdfaW5mb3JtYXRp",
             "b24YBSABKAsyFy5nb29nbGUucHJvdG9idWYuU3RydWN0QjuSQTgyNmNvbXBs",
             "ZXRlIGluZm9ybWF0aW9uIHJldHVybmVkIGJ5IHRoZSBpZGVudGl0eSBwcm92",
-            "aWRlclIOcmF3SW5mb3JtYXRpb25CCAoGYWNjZXNzImsKGUlEUE9BdXRoQWNj",
-            "ZXNzSW5mb3JtYXRpb24SIQoMYWNjZXNzX3Rva2VuGAEgASgJUgthY2Nlc3NU",
-            "b2tlbhIeCghpZF90b2tlbhgCIAEoCUgAUgdpZFRva2VuiAEBQgsKCV9pZF90",
-            "b2tlbiJTChhJRFBMREFQQWNjZXNzSW5mb3JtYXRpb24SNwoKYXR0cmlidXRl",
-            "cxgBIAEoCzIXLmdvb2dsZS5wcm90b2J1Zi5TdHJ1Y3RSCmF0dHJpYnV0ZXMi",
-            "OAoYSURQU0FNTEFjY2Vzc0luZm9ybWF0aW9uEhwKCWFzc2VydGlvbhgBIAEo",
-            "DFIJYXNzZXJ0aW9uIucCCgdJRFBMaW5rEm8KBmlkcF9pZBgBIAEoCUJYkkFL",
-            "MhtJRCBvZiB0aGUgaWRlbnRpdHkgcHJvdmlkZXJKJiJkNjU0ZTZiYS03MGEz",
-            "LTQ4ZWYtYTk1ZC0zN2M4ZDhhNzkwMWEieMgBgAEB+kIHcgUQARjIAVIFaWRw",
-            "SWQSdQoHdXNlcl9pZBgCIAEoCUJckkFPMidJRCBvZiB0aGUgdXNlciBvZiB0",
-            "aGUgaWRlbnRpdHkgcHJvdmlkZXJKHiI2NTE2ODQ5ODA0ODkwNDY4MDQ4NDYx",
-            "NDAzNTE4InjIAYABAfpCB3IFEAEYyAFSBnVzZXJJZBJ0Cgl1c2VyX25hbWUY",
-            "AyABKAlCV5JBSjItdXNlcm5hbWUgb2YgdGhlIHVzZXIgb2YgdGhlIGlkZW50",
-            "aXR5IHByb3ZpZGVyShMidXNlckBleHRlcm5hbC5jb20ieMgBgAEB+kIHcgUQ",
-            "ARjIAVIIdXNlck5hbWUi+AEKCEZvcm1EYXRhEjQKA3VybBgBIAEoCUIikkEf",
-            "Sh0iaHR0cHM6Ly9pZHAuY29tL3NhbWwvdjIvYWNzIlIDdXJsEnsKBmZpZWxk",
-            "cxgCIAMoCzIlLnppdGFkZWwudXNlci52Mi5Gb3JtRGF0YS5GaWVsZHNFbnRy",
-            "eUI8kkE5Sjd7InJlbGF5U3RhdGUiOiJzdGF0ZSIsIlNBTUxSZXF1ZXN0Ijoi",
-            "YXNqZmtqM2lyMmZqMjQ4PSJ9UgZmaWVsZHMaOQoLRmllbGRzRW50cnkSEAoD",
-            "a2V5GAEgASgJUgNrZXkSFAoFdmFsdWUYAiABKAlSBXZhbHVlOgI4AUKvAQoT",
-            "Y29tLnppdGFkZWwudXNlci52MkIISWRwUHJvdG9QAVowZ2l0aHViLmNvbS96",
-            "aXRhZGVsL3ppdGFkZWwvcGtnL2dycGMvdXNlci92Mjt1c2VyogIDWlVYqgIP",
-            "Wml0YWRlbC5Vc2VyLlYyygIPWml0YWRlbFxVc2VyXFYy4gIbWml0YWRlbFxV",
-            "c2VyXFYyXEdQQk1ldGFkYXRh6gIRWml0YWRlbDo6VXNlcjo6VjJiBnByb3Rv",
-            "Mw=="));
+            "aWRlclIOcmF3SW5mb3JtYXRpb25CCAoGYWNjZXNzIucDChlJRFBPQXV0aEFj",
+            "Y2Vzc0luZm9ybWF0aW9uEl8KDGFjY2Vzc190b2tlbhgBIAEoCUI8kkE5MjdB",
+            "Y2Nlc3MgdG9rZW4gcmV0dXJuZWQgYnkgdGhlIGV4dGVybmFsIGlkZW50aXR5",
+            "IHByb3ZpZGVyUgthY2Nlc3NUb2tlbhKZAQoIaWRfdG9rZW4YAiABKAlCeZJB",
+            "djJ0SUQgdG9rZW4gcmV0dXJuZWQgYnkgdGhlIGV4dGVybmFsIGlkZW50aXR5",
+            "IHByb3ZpZGVyLiBPbmx5IHNldCBpZiB0aGUgZXh0ZXJuYWwgaWRlbnRpdHkg",
+            "cHJvdmlkZXIgcmV0dXJucyBhbiBJRCB0b2tlbi5IAFIHaWRUb2tlbogBARKt",
+            "AQoNcmVmcmVzaF90b2tlbhgDIAEoCUKCAZJBfzJ9UmVmcmVzaCB0b2tlbiBy",
+            "ZXR1cm5lZCBieSB0aGUgZXh0ZXJuYWwgaWRlbnRpdHkgcHJvdmlkZXIuIE9u",
+            "bHkgc2V0IGlmIHRoZSBleHRlcm5hbCBpZGVudGl0eSBwcm92aWRlciByZXR1",
+            "cm5zIGEgcmVmcmVzaCB0b2tlbi5IAVIMcmVmcmVzaFRva2VuiAEBQgsKCV9p",
+            "ZF90b2tlbkIQCg5fcmVmcmVzaF90b2tlbiJTChhJRFBMREFQQWNjZXNzSW5m",
+            "b3JtYXRpb24SNwoKYXR0cmlidXRlcxgBIAEoCzIXLmdvb2dsZS5wcm90b2J1",
+            "Zi5TdHJ1Y3RSCmF0dHJpYnV0ZXMiOAoYSURQU0FNTEFjY2Vzc0luZm9ybWF0",
+            "aW9uEhwKCWFzc2VydGlvbhgBIAEoDFIJYXNzZXJ0aW9uIucCCgdJRFBMaW5r",
+            "Em8KBmlkcF9pZBgBIAEoCUJYkkFLMhtJRCBvZiB0aGUgaWRlbnRpdHkgcHJv",
+            "dmlkZXJKJiJkNjU0ZTZiYS03MGEzLTQ4ZWYtYTk1ZC0zN2M4ZDhhNzkwMWEi",
+            "eMgBgAEB+kIHcgUQARjIAVIFaWRwSWQSdQoHdXNlcl9pZBgCIAEoCUJckkFP",
+            "MidJRCBvZiB0aGUgdXNlciBvZiB0aGUgaWRlbnRpdHkgcHJvdmlkZXJKHiI2",
+            "NTE2ODQ5ODA0ODkwNDY4MDQ4NDYxNDAzNTE4InjIAYABAfpCB3IFEAEYyAFS",
+            "BnVzZXJJZBJ0Cgl1c2VyX25hbWUYAyABKAlCV5JBSjItdXNlcm5hbWUgb2Yg",
+            "dGhlIHVzZXIgb2YgdGhlIGlkZW50aXR5IHByb3ZpZGVyShMidXNlckBleHRl",
+            "cm5hbC5jb20ieMgBgAEB+kIHcgUQARjIAVIIdXNlck5hbWUi+AEKCEZvcm1E",
+            "YXRhEjQKA3VybBgBIAEoCUIikkEfSh0iaHR0cHM6Ly9pZHAuY29tL3NhbWwv",
+            "djIvYWNzIlIDdXJsEnsKBmZpZWxkcxgCIAMoCzIlLnppdGFkZWwudXNlci52",
+            "Mi5Gb3JtRGF0YS5GaWVsZHNFbnRyeUI8kkE5Sjd7InJlbGF5U3RhdGUiOiJz",
+            "dGF0ZSIsIlNBTUxSZXF1ZXN0IjoiYXNqZmtqM2lyMmZqMjQ4PSJ9UgZmaWVs",
+            "ZHMaOQoLRmllbGRzRW50cnkSEAoDa2V5GAEgASgJUgNrZXkSFAoFdmFsdWUY",
+            "AiABKAlSBXZhbHVlOgI4AUKvAQoTY29tLnppdGFkZWwudXNlci52MkIISWRw",
+            "UHJvdG9QAVowZ2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtnL2dycGMv",
+            "dXNlci92Mjt1c2VyogIDWlVYqgIPWml0YWRlbC5Vc2VyLlYyygIPWml0YWRl",
+            "bFxVc2VyXFYy4gIbWml0YWRlbFxVc2VyXFYyXEdQQk1ldGFkYXRh6gIRWml0",
+            "YWRlbDo6VXNlcjo6VjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.LDAPCredentials), global::Zitadel.User.V2.LDAPCredentials.Parser, new[]{ "Username", "Password" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.RedirectURLs), global::Zitadel.User.V2.RedirectURLs.Parser, new[]{ "SuccessUrl", "FailureUrl" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.RedirectURLs), global::Zitadel.User.V2.RedirectURLs.Parser, new[]{ "SuccessUrl", "FailureUrl", "LoginHint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPIntent), global::Zitadel.User.V2.IDPIntent.Parser, new[]{ "IdpIntentId", "IdpIntentToken", "UserId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPInformation), global::Zitadel.User.V2.IDPInformation.Parser, new[]{ "Oauth", "Ldap", "Saml", "IdpId", "UserId", "UserName", "RawInformation" }, new[]{ "Access" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPOAuthAccessInformation), global::Zitadel.User.V2.IDPOAuthAccessInformation.Parser, new[]{ "AccessToken", "IdToken" }, new[]{ "IdToken" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPOAuthAccessInformation), global::Zitadel.User.V2.IDPOAuthAccessInformation.Parser, new[]{ "AccessToken", "IdToken", "RefreshToken" }, new[]{ "IdToken", "RefreshToken" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPLDAPAccessInformation), global::Zitadel.User.V2.IDPLDAPAccessInformation.Parser, new[]{ "Attributes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPSAMLAccessInformation), global::Zitadel.User.V2.IDPSAMLAccessInformation.Parser, new[]{ "Assertion" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.User.V2.IDPLink), global::Zitadel.User.V2.IDPLink.Parser, new[]{ "IdpId", "UserId", "UserName" }, null, null, null, null),
@@ -381,6 +392,7 @@ namespace Zitadel.User.V2 {
     public RedirectURLs(RedirectURLs other) : this() {
       successUrl_ = other.successUrl_;
       failureUrl_ = other.failureUrl_;
+      loginHint_ = other.loginHint_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -414,6 +426,18 @@ namespace Zitadel.User.V2 {
       }
     }
 
+    /// <summary>Field number for the "login_hint" field.</summary>
+    public const int LoginHintFieldNumber = 3;
+    private string loginHint_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string LoginHint {
+      get { return loginHint_; }
+      set {
+        loginHint_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -431,6 +455,7 @@ namespace Zitadel.User.V2 {
       }
       if (SuccessUrl != other.SuccessUrl) return false;
       if (FailureUrl != other.FailureUrl) return false;
+      if (LoginHint != other.LoginHint) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -440,6 +465,7 @@ namespace Zitadel.User.V2 {
       int hash = 1;
       if (SuccessUrl.Length != 0) hash ^= SuccessUrl.GetHashCode();
       if (FailureUrl.Length != 0) hash ^= FailureUrl.GetHashCode();
+      if (LoginHint.Length != 0) hash ^= LoginHint.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -466,6 +492,10 @@ namespace Zitadel.User.V2 {
         output.WriteRawTag(18);
         output.WriteString(FailureUrl);
       }
+      if (LoginHint.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(LoginHint);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -484,6 +514,10 @@ namespace Zitadel.User.V2 {
         output.WriteRawTag(18);
         output.WriteString(FailureUrl);
       }
+      if (LoginHint.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(LoginHint);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -499,6 +533,9 @@ namespace Zitadel.User.V2 {
       }
       if (FailureUrl.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(FailureUrl);
+      }
+      if (LoginHint.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LoginHint);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -517,6 +554,9 @@ namespace Zitadel.User.V2 {
       }
       if (other.FailureUrl.Length != 0) {
         FailureUrl = other.FailureUrl;
+      }
+      if (other.LoginHint.Length != 0) {
+        LoginHint = other.LoginHint;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -545,6 +585,10 @@ namespace Zitadel.User.V2 {
             FailureUrl = input.ReadString();
             break;
           }
+          case 26: {
+            LoginHint = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -570,6 +614,10 @@ namespace Zitadel.User.V2 {
           }
           case 18: {
             FailureUrl = input.ReadString();
+            break;
+          }
+          case 26: {
+            LoginHint = input.ReadString();
             break;
           }
         }
@@ -1392,6 +1440,7 @@ namespace Zitadel.User.V2 {
     public IDPOAuthAccessInformation(IDPOAuthAccessInformation other) : this() {
       accessToken_ = other.accessToken_;
       idToken_ = other.idToken_;
+      refreshToken_ = other.refreshToken_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1404,6 +1453,9 @@ namespace Zitadel.User.V2 {
     /// <summary>Field number for the "access_token" field.</summary>
     public const int AccessTokenFieldNumber = 1;
     private string accessToken_ = "";
+    /// <summary>
+    /// The access token returned by the external identity provider.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string AccessToken {
@@ -1418,6 +1470,9 @@ namespace Zitadel.User.V2 {
     private readonly static string IdTokenDefaultValue = "";
 
     private string idToken_;
+    /// <summary>
+    /// The ID token is only set when it is returned by the external identity provider.
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string IdToken {
@@ -1439,6 +1494,35 @@ namespace Zitadel.User.V2 {
       idToken_ = null;
     }
 
+    /// <summary>Field number for the "refresh_token" field.</summary>
+    public const int RefreshTokenFieldNumber = 3;
+    private readonly static string RefreshTokenDefaultValue = "";
+
+    private string refreshToken_;
+    /// <summary>
+    /// The refresh token is only set when it is returned by the external identity provider.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string RefreshToken {
+      get { return refreshToken_ ?? RefreshTokenDefaultValue; }
+      set {
+        refreshToken_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+    /// <summary>Gets whether the "refresh_token" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRefreshToken {
+      get { return refreshToken_ != null; }
+    }
+    /// <summary>Clears the value of the "refresh_token" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRefreshToken() {
+      refreshToken_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1456,6 +1540,7 @@ namespace Zitadel.User.V2 {
       }
       if (AccessToken != other.AccessToken) return false;
       if (IdToken != other.IdToken) return false;
+      if (RefreshToken != other.RefreshToken) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1465,6 +1550,7 @@ namespace Zitadel.User.V2 {
       int hash = 1;
       if (AccessToken.Length != 0) hash ^= AccessToken.GetHashCode();
       if (HasIdToken) hash ^= IdToken.GetHashCode();
+      if (HasRefreshToken) hash ^= RefreshToken.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1491,6 +1577,10 @@ namespace Zitadel.User.V2 {
         output.WriteRawTag(18);
         output.WriteString(IdToken);
       }
+      if (HasRefreshToken) {
+        output.WriteRawTag(26);
+        output.WriteString(RefreshToken);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1509,6 +1599,10 @@ namespace Zitadel.User.V2 {
         output.WriteRawTag(18);
         output.WriteString(IdToken);
       }
+      if (HasRefreshToken) {
+        output.WriteRawTag(26);
+        output.WriteString(RefreshToken);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1524,6 +1618,9 @@ namespace Zitadel.User.V2 {
       }
       if (HasIdToken) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdToken);
+      }
+      if (HasRefreshToken) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RefreshToken);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1542,6 +1639,9 @@ namespace Zitadel.User.V2 {
       }
       if (other.HasIdToken) {
         IdToken = other.IdToken;
+      }
+      if (other.HasRefreshToken) {
+        RefreshToken = other.RefreshToken;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1570,6 +1670,10 @@ namespace Zitadel.User.V2 {
             IdToken = input.ReadString();
             break;
           }
+          case 26: {
+            RefreshToken = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1595,6 +1699,10 @@ namespace Zitadel.User.V2 {
           }
           case 18: {
             IdToken = input.ReadString();
+            break;
+          }
+          case 26: {
+            RefreshToken = input.ReadString();
             break;
           }
         }

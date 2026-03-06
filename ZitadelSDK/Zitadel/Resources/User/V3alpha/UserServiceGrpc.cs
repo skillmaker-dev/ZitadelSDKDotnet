@@ -838,7 +838,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Start a TOTP registration
       ///
-      /// Start the registration of a new time-based one-time password (TOTP) generator for a user.
+      /// Start the registration of a new TOTP generator for a user.
       /// As a response a secret is returned, which is used to initialize a TOTP app or device.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
@@ -853,7 +853,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Verify a TOTP registration
       ///
-      /// Verify the time-based one-time password (TOTP) registration with the generated code.
+      /// Verify the TOTP registration with the generated code.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -867,7 +867,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a TOTP authenticator
       ///
-      /// Remove an existing time-based one-time password (TOTP) authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing TOTP authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -881,7 +881,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP SMS authenticator
       ///
-      /// Add a new one-time password (OTP) SMS authenticator to a user.
+      /// Add a new OTP SMS authenticator to a user.
       /// If the phone is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by SMS.
       /// </summary>
@@ -911,7 +911,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP SMS authenticator
       ///
-      /// Remove an existing one-time password (OTP) SMS authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP SMS authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -925,7 +925,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP Email authenticator
       ///
-      /// Add a new one-time password (OTP) Email authenticator to a user.
+      /// Add a new OTP Email authenticator to a user.
       /// If the email is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by email.
       /// </summary>
@@ -955,7 +955,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP Email authenticator
       ///
-      /// Remove an existing one-time password (OTP) Email authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP Email authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2443,7 +2443,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Start a TOTP registration
       ///
-      /// Start the registration of a new time-based one-time password (TOTP) generator for a user.
+      /// Start the registration of a new TOTP generator for a user.
       /// As a response a secret is returned, which is used to initialize a TOTP app or device.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -2459,7 +2459,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Start a TOTP registration
       ///
-      /// Start the registration of a new time-based one-time password (TOTP) generator for a user.
+      /// Start the registration of a new TOTP generator for a user.
       /// As a response a secret is returned, which is used to initialize a TOTP app or device.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -2473,7 +2473,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Start a TOTP registration
       ///
-      /// Start the registration of a new time-based one-time password (TOTP) generator for a user.
+      /// Start the registration of a new TOTP generator for a user.
       /// As a response a secret is returned, which is used to initialize a TOTP app or device.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -2489,7 +2489,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Start a TOTP registration
       ///
-      /// Start the registration of a new time-based one-time password (TOTP) generator for a user.
+      /// Start the registration of a new TOTP generator for a user.
       /// As a response a secret is returned, which is used to initialize a TOTP app or device.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
@@ -2503,7 +2503,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Verify a TOTP registration
       ///
-      /// Verify the time-based one-time password (TOTP) registration with the generated code.
+      /// Verify the TOTP registration with the generated code.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2518,7 +2518,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Verify a TOTP registration
       ///
-      /// Verify the time-based one-time password (TOTP) registration with the generated code.
+      /// Verify the TOTP registration with the generated code.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2531,7 +2531,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Verify a TOTP registration
       ///
-      /// Verify the time-based one-time password (TOTP) registration with the generated code.
+      /// Verify the TOTP registration with the generated code.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2546,7 +2546,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Verify a TOTP registration
       ///
-      /// Verify the time-based one-time password (TOTP) registration with the generated code.
+      /// Verify the TOTP registration with the generated code.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2559,7 +2559,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a TOTP authenticator
       ///
-      /// Remove an existing time-based one-time password (TOTP) authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing TOTP authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2574,7 +2574,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a TOTP authenticator
       ///
-      /// Remove an existing time-based one-time password (TOTP) authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing TOTP authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2587,7 +2587,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a TOTP authenticator
       ///
-      /// Remove an existing time-based one-time password (TOTP) authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing TOTP authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2602,7 +2602,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a TOTP authenticator
       ///
-      /// Remove an existing time-based one-time password (TOTP) authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing TOTP authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2615,7 +2615,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP SMS authenticator
       ///
-      /// Add a new one-time password (OTP) SMS authenticator to a user.
+      /// Add a new OTP SMS authenticator to a user.
       /// If the phone is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by SMS.
       /// </summary>
@@ -2632,7 +2632,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP SMS authenticator
       ///
-      /// Add a new one-time password (OTP) SMS authenticator to a user.
+      /// Add a new OTP SMS authenticator to a user.
       /// If the phone is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by SMS.
       /// </summary>
@@ -2647,7 +2647,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP SMS authenticator
       ///
-      /// Add a new one-time password (OTP) SMS authenticator to a user.
+      /// Add a new OTP SMS authenticator to a user.
       /// If the phone is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by SMS.
       /// </summary>
@@ -2664,7 +2664,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP SMS authenticator
       ///
-      /// Add a new one-time password (OTP) SMS authenticator to a user.
+      /// Add a new OTP SMS authenticator to a user.
       /// If the phone is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by SMS.
       /// </summary>
@@ -2735,7 +2735,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP SMS authenticator
       ///
-      /// Remove an existing one-time password (OTP) SMS authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP SMS authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2750,7 +2750,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP SMS authenticator
       ///
-      /// Remove an existing one-time password (OTP) SMS authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP SMS authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2763,7 +2763,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP SMS authenticator
       ///
-      /// Remove an existing one-time password (OTP) SMS authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP SMS authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2778,7 +2778,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP SMS authenticator
       ///
-      /// Remove an existing one-time password (OTP) SMS authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP SMS authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2791,7 +2791,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP Email authenticator
       ///
-      /// Add a new one-time password (OTP) Email authenticator to a user.
+      /// Add a new OTP Email authenticator to a user.
       /// If the email is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by email.
       /// </summary>
@@ -2808,7 +2808,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP Email authenticator
       ///
-      /// Add a new one-time password (OTP) Email authenticator to a user.
+      /// Add a new OTP Email authenticator to a user.
       /// If the email is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by email.
       /// </summary>
@@ -2823,7 +2823,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP Email authenticator
       ///
-      /// Add a new one-time password (OTP) Email authenticator to a user.
+      /// Add a new OTP Email authenticator to a user.
       /// If the email is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by email.
       /// </summary>
@@ -2840,7 +2840,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Add a OTP Email authenticator
       ///
-      /// Add a new one-time password (OTP) Email authenticator to a user.
+      /// Add a new OTP Email authenticator to a user.
       /// If the email is not passed as verified, a verification code will be generated,
       /// which can be either returned or will be sent to the user by email.
       /// </summary>
@@ -2911,7 +2911,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP Email authenticator
       ///
-      /// Remove an existing one-time password (OTP) Email authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP Email authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2926,7 +2926,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP Email authenticator
       ///
-      /// Remove an existing one-time password (OTP) Email authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP Email authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2939,7 +2939,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP Email authenticator
       ///
-      /// Remove an existing one-time password (OTP) Email authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP Email authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2954,7 +2954,7 @@ namespace Zitadel.Resources.User.V3alpha {
       /// <summary>
       /// Remove a OTP Email authenticator
       ///
-      /// Remove an existing one-time password (OTP) Email authenticator from a user, so it cannot be used for authentication anymore.
+      /// Remove an existing OTP Email authenticator from a user, so it cannot be used for authentication anymore.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

@@ -468,9 +468,9 @@ namespace Zitadel.User.V2beta {
     public abstract partial class UserServiceBase
     {
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA)
       /// </summary>
@@ -486,7 +486,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -854,7 +854,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -868,9 +868,9 @@ namespace Zitadel.User.V2beta {
       }
 
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -886,7 +886,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor.
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -900,9 +900,9 @@ namespace Zitadel.User.V2beta {
       }
 
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -998,7 +998,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more.
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -1041,9 +1041,9 @@ namespace Zitadel.User.V2beta {
       }
 
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA)
       /// </summary>
@@ -1058,9 +1058,9 @@ namespace Zitadel.User.V2beta {
         return AddHumanUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA)
       /// </summary>
@@ -1073,9 +1073,9 @@ namespace Zitadel.User.V2beta {
         return CallInvoker.BlockingUnaryCall(__Method_AddHumanUser, null, options, request);
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA)
       /// </summary>
@@ -1090,9 +1090,9 @@ namespace Zitadel.User.V2beta {
         return AddHumanUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA)
       /// </summary>
@@ -1107,7 +1107,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -1124,7 +1124,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -1139,7 +1139,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -1156,7 +1156,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2579,7 +2579,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2596,7 +2596,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2611,7 +2611,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2628,7 +2628,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2641,9 +2641,9 @@ namespace Zitadel.User.V2beta {
         return CallInvoker.AsyncUnaryCall(__Method_AddOTPSMS, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2658,9 +2658,9 @@ namespace Zitadel.User.V2beta {
         return RemoveOTPSMS(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2673,9 +2673,9 @@ namespace Zitadel.User.V2beta {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveOTPSMS, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2690,9 +2690,9 @@ namespace Zitadel.User.V2beta {
         return RemoveOTPSMSAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2707,7 +2707,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor.
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2724,7 +2724,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor.
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2739,7 +2739,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor.
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2756,7 +2756,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor.
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2769,9 +2769,9 @@ namespace Zitadel.User.V2beta {
         return CallInvoker.AsyncUnaryCall(__Method_AddOTPEmail, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2786,9 +2786,9 @@ namespace Zitadel.User.V2beta {
         return RemoveOTPEmail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2801,9 +2801,9 @@ namespace Zitadel.User.V2beta {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveOTPEmail, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -2818,9 +2818,9 @@ namespace Zitadel.User.V2beta {
         return RemoveOTPEmailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -3155,7 +3155,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more.
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -3172,7 +3172,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more.
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -3187,7 +3187,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more.
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>
@@ -3204,7 +3204,7 @@ namespace Zitadel.User.V2beta {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more.
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more.
       ///
       /// Deprecated: please move to the corresponding endpoint under user service v2 (GA).
       /// </summary>

@@ -27,27 +27,27 @@ namespace Zitadel.Settings.V2 {
             "Cih6aXRhZGVsL3NldHRpbmdzL3YyL2xlZ2FsX3NldHRpbmdzLnByb3RvEhN6",
             "aXRhZGVsLnNldHRpbmdzLnYyGi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9vcHRp",
             "b25zL2Fubm90YXRpb25zLnByb3RvGiJ6aXRhZGVsL3NldHRpbmdzL3YyL3Nl",
-            "dHRpbmdzLnByb3RvGhd2YWxpZGF0ZS92YWxpZGF0ZS5wcm90byKGBQoXTGVn",
-            "YWxBbmRTdXBwb3J0U2V0dGluZ3MSUQoIdG9zX2xpbmsYASABKAlCNpJBM0ox",
-            "Imh0dHBzOi8veml0YWRlbC5jb20vZG9jcy9sZWdhbC90ZXJtcy1vZi1zZXJ2",
-            "aWNlIlIHdG9zTGluaxJkChNwcml2YWN5X3BvbGljeV9saW5rGAIgASgJQjSS",
-            "QTFKLyJodHRwczovL3ppdGFkZWwuY29tL2RvY3MvbGVnYWwvcHJpdmFjeS1w",
-            "b2xpY3kiUhFwcml2YWN5UG9saWN5TGluaxJRCgloZWxwX2xpbmsYAyABKAlC",
-            "NJJBMUovImh0dHBzOi8veml0YWRlbC5jb20vZG9jcy9tYW51YWxzL2ludHJv",
-            "ZHVjdGlvbiJSCGhlbHBMaW5rEk8KDXN1cHBvcnRfZW1haWwYBCABKAlCKpJB",
-            "GkoYInN1cHBvcnQtZW1haWxAdGVzdC5jb20i+kIKcggYwAJgAdABAVIMc3Vw",
-            "cG9ydEVtYWlsElYKE3Jlc291cmNlX293bmVyX3R5cGUYBSABKA4yJi56aXRh",
-            "ZGVsLnNldHRpbmdzLnYyLlJlc291cmNlT3duZXJUeXBlUhFyZXNvdXJjZU93",
-            "bmVyVHlwZRI8Cglkb2NzX2xpbmsYBiABKAlCH5JBHEoaImh0dHBzOi8veml0",
-            "YWRlbC5jb20vZG9jcyJSCGRvY3NMaW5rEj0KC2N1c3RvbV9saW5rGAcgASgJ",
-            "QhySQRlKFyJodHRwczovL2V4dGVybmFsLmxpbmsiUgpjdXN0b21MaW5rEjkK",
-            "EGN1c3RvbV9saW5rX3RleHQYCCABKAlCD5JBDEoKIkV4dGVybmFsIlIOY3Vz",
-            "dG9tTGlua1RleHRC1QEKF2NvbS56aXRhZGVsLnNldHRpbmdzLnYyQhJMZWdh",
-            "bFNldHRpbmdzUHJvdG9QAVo4Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwv",
-            "cGtnL2dycGMvc2V0dGluZ3MvdjI7c2V0dGluZ3OiAgNaU1iqAhNaaXRhZGVs",
-            "LlNldHRpbmdzLlYyygITWml0YWRlbFxTZXR0aW5nc1xWMuICH1ppdGFkZWxc",
-            "U2V0dGluZ3NcVjJcR1BCTWV0YWRhdGHqAhVaaXRhZGVsOjpTZXR0aW5nczo6",
-            "VjJiBnByb3RvMw=="));
+            "dHRpbmdzLnByb3RvGhd2YWxpZGF0ZS92YWxpZGF0ZS5wcm90byKgBQoXTGVn",
+            "YWxBbmRTdXBwb3J0U2V0dGluZ3MSWAoIdG9zX2xpbmsYASABKAlCPZJBOko4",
+            "Imh0dHBzOi8veml0YWRlbC5jb20vZG9jcy9tYW5hZ2UvbGVnYWwvdGVybXMt",
+            "b2Ytc2VydmljZSJSB3Rvc0xpbmsSdAoTcHJpdmFjeV9wb2xpY3lfbGluaxgC",
+            "IAEoCUJEkkFBSj8iaHR0cHM6Ly96aXRhZGVsLmNvbS9kb2NzL21hbmFnZS9s",
+            "ZWdhbC9wb2xpY2llcy9wcml2YWN5LXBvbGljeSJSEXByaXZhY3lQb2xpY3lM",
+            "aW5rElQKCWhlbHBfbGluaxgDIAEoCUI3kkE0SjIiaHR0cHM6Ly96aXRhZGVs",
+            "LmNvbS9kb2NzL21hbmFnZS9jb25zb2xlLW92ZXJ2aWV3IlIIaGVscExpbmsS",
+            "TwoNc3VwcG9ydF9lbWFpbBgEIAEoCUIqkkEaShgic3VwcG9ydC1lbWFpbEB0",
+            "ZXN0LmNvbSL6QgpyCBjAAmAB0AEBUgxzdXBwb3J0RW1haWwSVgoTcmVzb3Vy",
+            "Y2Vfb3duZXJfdHlwZRgFIAEoDjImLnppdGFkZWwuc2V0dGluZ3MudjIuUmVz",
+            "b3VyY2VPd25lclR5cGVSEXJlc291cmNlT3duZXJUeXBlEjwKCWRvY3NfbGlu",
+            "axgGIAEoCUIfkkEcShoiaHR0cHM6Ly96aXRhZGVsLmNvbS9kb2NzIlIIZG9j",
+            "c0xpbmsSPQoLY3VzdG9tX2xpbmsYByABKAlCHJJBGUoXImh0dHBzOi8vZXh0",
+            "ZXJuYWwubGluayJSCmN1c3RvbUxpbmsSOQoQY3VzdG9tX2xpbmtfdGV4dBgI",
+            "IAEoCUIPkkEMSgoiRXh0ZXJuYWwiUg5jdXN0b21MaW5rVGV4dELVAQoXY29t",
+            "LnppdGFkZWwuc2V0dGluZ3MudjJCEkxlZ2FsU2V0dGluZ3NQcm90b1ABWjhn",
+            "aXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92",
+            "MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRh",
+            "ZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRh",
+            "ZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -190,7 +190,7 @@ namespace Zitadel.Settings.V2 {
     public const int DocsLinkFieldNumber = 6;
     private string docsLink_ = "";
     /// <summary>
-    /// Link to documentation to be shown in the console.
+    /// Link to documentation to be shown in the management console.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -205,7 +205,7 @@ namespace Zitadel.Settings.V2 {
     public const int CustomLinkFieldNumber = 7;
     private string customLink_ = "";
     /// <summary>
-    /// Link to an external resource that will be available to users in the console.
+    /// Link to an external resource that will be available to users in the management console.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -220,7 +220,7 @@ namespace Zitadel.Settings.V2 {
     public const int CustomLinkTextFieldNumber = 8;
     private string customLinkText_ = "";
     /// <summary>
-    /// The button text that would be shown in console pointing to custom link.
+    /// The button text that would be shown in the management console pointing to custom link.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

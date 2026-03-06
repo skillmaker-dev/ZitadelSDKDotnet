@@ -65,31 +65,32 @@ namespace Zitadel.Settings.V2 {
             "dHlQcm92aWRlchIOCgJpZBgBIAEoCVICaWQSEgoEbmFtZRgCIAEoCVIEbmFt",
             "ZRI9CgR0eXBlGAMgASgOMikueml0YWRlbC5zZXR0aW5ncy52Mi5JZGVudGl0",
             "eVByb3ZpZGVyVHlwZVIEdHlwZRIxCgdvcHRpb25zGAQgASgLMhcueml0YWRl",
-            "bC5pZHAudjIuT3B0aW9uc1IHb3B0aW9ucyrRAQoQU2Vjb25kRmFjdG9yVHlw",
+            "bC5pZHAudjIuT3B0aW9uc1IHb3B0aW9ucyr4AQoQU2Vjb25kRmFjdG9yVHlw",
             "ZRIiCh5TRUNPTkRfRkFDVE9SX1RZUEVfVU5TUEVDSUZJRUQQABIaChZTRUNP",
             "TkRfRkFDVE9SX1RZUEVfT1RQEAESGwoXU0VDT05EX0ZBQ1RPUl9UWVBFX1RP",
             "VFAQARIaChZTRUNPTkRfRkFDVE9SX1RZUEVfVTJGEAISIAocU0VDT05EX0ZB",
             "Q1RPUl9UWVBFX09UUF9FTUFJTBADEh4KGlNFQ09ORF9GQUNUT1JfVFlQRV9P",
-            "VFBfU01TEAQaAhABKmEKD011bHRpRmFjdG9yVHlwZRIhCh1NVUxUSV9GQUNU",
-            "T1JfVFlQRV9VTlNQRUNJRklFRBAAEisKJ01VTFRJX0ZBQ1RPUl9UWVBFX1Uy",
-            "Rl9XSVRIX1ZFUklGSUNBVElPThABKkgKDFBhc3NrZXlzVHlwZRIdChlQQVNT",
-            "S0VZU19UWVBFX05PVF9BTExPV0VEEAASGQoVUEFTU0tFWVNfVFlQRV9BTExP",
-            "V0VEEAEq6AMKFElkZW50aXR5UHJvdmlkZXJUeXBlEiYKIklERU5USVRZX1BS",
-            "T1ZJREVSX1RZUEVfVU5TUEVDSUZJRUQQABIfChtJREVOVElUWV9QUk9WSURF",
-            "Ul9UWVBFX09JREMQARIeChpJREVOVElUWV9QUk9WSURFUl9UWVBFX0pXVBAC",
-            "Eh8KG0lERU5USVRZX1BST1ZJREVSX1RZUEVfTERBUBADEiAKHElERU5USVRZ",
-            "X1BST1ZJREVSX1RZUEVfT0FVVEgQBBIjCh9JREVOVElUWV9QUk9WSURFUl9U",
-            "WVBFX0FaVVJFX0FEEAUSIQodSURFTlRJVFlfUFJPVklERVJfVFlQRV9HSVRI",
-            "VUIQBhIkCiBJREVOVElUWV9QUk9WSURFUl9UWVBFX0dJVEhVQl9FUxAHEiEK",
-            "HUlERU5USVRZX1BST1ZJREVSX1RZUEVfR0lUTEFCEAgSLQopSURFTlRJVFlf",
-            "UFJPVklERVJfVFlQRV9HSVRMQUJfU0VMRl9IT1NURUQQCRIhCh1JREVOVElU",
-            "WV9QUk9WSURFUl9UWVBFX0dPT0dMRRAKEh8KG0lERU5USVRZX1BST1ZJREVS",
-            "X1RZUEVfU0FNTBALEiAKHElERU5USVRZX1BST1ZJREVSX1RZUEVfQVBQTEUQ",
-            "DELVAQoXY29tLnppdGFkZWwuc2V0dGluZ3MudjJCEkxvZ2luU2V0dGluZ3NQ",
-            "cm90b1ABWjhnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9z",
-            "ZXR0aW5ncy92MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3Mu",
-            "VjLKAhNaaXRhZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xW",
-            "MlxHUEJNZXRhZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
+            "VFBfU01TEAQSJQohU0VDT05EX0ZBQ1RPUl9UWVBFX1JFQ09WRVJZX0NPREVT",
+            "EAUaAhABKmEKD011bHRpRmFjdG9yVHlwZRIhCh1NVUxUSV9GQUNUT1JfVFlQ",
+            "RV9VTlNQRUNJRklFRBAAEisKJ01VTFRJX0ZBQ1RPUl9UWVBFX1UyRl9XSVRI",
+            "X1ZFUklGSUNBVElPThABKkgKDFBhc3NrZXlzVHlwZRIdChlQQVNTS0VZU19U",
+            "WVBFX05PVF9BTExPV0VEEAASGQoVUEFTU0tFWVNfVFlQRV9BTExPV0VEEAEq",
+            "6AMKFElkZW50aXR5UHJvdmlkZXJUeXBlEiYKIklERU5USVRZX1BST1ZJREVS",
+            "X1RZUEVfVU5TUEVDSUZJRUQQABIfChtJREVOVElUWV9QUk9WSURFUl9UWVBF",
+            "X09JREMQARIeChpJREVOVElUWV9QUk9WSURFUl9UWVBFX0pXVBACEh8KG0lE",
+            "RU5USVRZX1BST1ZJREVSX1RZUEVfTERBUBADEiAKHElERU5USVRZX1BST1ZJ",
+            "REVSX1RZUEVfT0FVVEgQBBIjCh9JREVOVElUWV9QUk9WSURFUl9UWVBFX0Fa",
+            "VVJFX0FEEAUSIQodSURFTlRJVFlfUFJPVklERVJfVFlQRV9HSVRIVUIQBhIk",
+            "CiBJREVOVElUWV9QUk9WSURFUl9UWVBFX0dJVEhVQl9FUxAHEiEKHUlERU5U",
+            "SVRZX1BST1ZJREVSX1RZUEVfR0lUTEFCEAgSLQopSURFTlRJVFlfUFJPVklE",
+            "RVJfVFlQRV9HSVRMQUJfU0VMRl9IT1NURUQQCRIhCh1JREVOVElUWV9QUk9W",
+            "SURFUl9UWVBFX0dPT0dMRRAKEh8KG0lERU5USVRZX1BST1ZJREVSX1RZUEVf",
+            "U0FNTBALEiAKHElERU5USVRZX1BST1ZJREVSX1RZUEVfQVBQTEUQDELVAQoX",
+            "Y29tLnppdGFkZWwuc2V0dGluZ3MudjJCEkxvZ2luU2V0dGluZ3NQcm90b1AB",
+            "WjhnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5n",
+            "cy92MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNa",
+            "aXRhZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJN",
+            "ZXRhZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, global::Zitadel.Idp.V2.IdpReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Settings.V2.SecondFactorType), typeof(global::Zitadel.Settings.V2.MultiFactorType), typeof(global::Zitadel.Settings.V2.PasskeysType), typeof(global::Zitadel.Settings.V2.IdentityProviderType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -111,6 +112,7 @@ namespace Zitadel.Settings.V2 {
     [pbr::OriginalName("SECOND_FACTOR_TYPE_U2F")] U2F = 2,
     [pbr::OriginalName("SECOND_FACTOR_TYPE_OTP_EMAIL")] OtpEmail = 3,
     [pbr::OriginalName("SECOND_FACTOR_TYPE_OTP_SMS")] OtpSms = 4,
+    [pbr::OriginalName("SECOND_FACTOR_TYPE_RECOVERY_CODES")] RecoveryCodes = 5,
   }
 
   public enum MultiFactorType {
@@ -481,7 +483,7 @@ namespace Zitadel.Settings.V2 {
     /// <summary>
     /// Allow discovery of the organization and its authentication option by domain.
     /// If set to true, the suffix (@domain.com) of an unknown username input on the login screen
-    /// will be matched against the organization domains and will redirect to the registration of that organization on success.
+    /// will be matched against the Organization Domains and will redirect to the registration of that organization on success.
     /// The registration can either be locally (requires allow_register to be true) or through an external identity provider.
     /// In case only one identity provider is configured for the organization, the user will be redirected directly to the identity provider.
     /// </summary>

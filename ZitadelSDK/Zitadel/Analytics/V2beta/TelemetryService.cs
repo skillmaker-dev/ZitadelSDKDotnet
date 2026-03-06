@@ -115,7 +115,7 @@ namespace Zitadel.Analytics.V2beta {
     public const int SystemIdFieldNumber = 1;
     private string systemId_ = "";
     /// <summary>
-    /// The system ID is a unique identifier for the ZITADEL system.
+    /// The system ID is a unique identifier for the Zitadel system.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -130,7 +130,7 @@ namespace Zitadel.Analytics.V2beta {
     public const int VersionFieldNumber = 2;
     private string version_ = "";
     /// <summary>
-    /// The current version of the ZITADEL system.
+    /// The current version of the Zitadel system.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -147,7 +147,7 @@ namespace Zitadel.Analytics.V2beta {
         = pb::FieldCodec.ForMessage(26, global::Zitadel.Analytics.V2beta.InstanceInformation.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Analytics.V2beta.InstanceInformation> instances_ = new pbc::RepeatedField<global::Zitadel.Analytics.V2beta.InstanceInformation>();
     /// <summary>
-    /// A list of instances in the ZITADEL system and their information.
+    /// A list of instances in the Zitadel system and their information.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -588,7 +588,7 @@ namespace Zitadel.Analytics.V2beta {
     public const int SystemIdFieldNumber = 1;
     private string systemId_ = "";
     /// <summary>
-    /// The system ID is a unique identifier for the ZITADEL system.
+    /// The system ID is a unique identifier for the Zitadel system.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

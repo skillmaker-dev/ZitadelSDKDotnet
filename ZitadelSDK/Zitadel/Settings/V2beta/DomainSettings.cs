@@ -32,7 +32,7 @@ namespace Zitadel.Settings.V2beta {
             "IHVzZXJuYW1lIGhhcyB0byBlbmQgd2l0aCB0aGUgZG9tYWluIG9mIGl0cyBv",
             "cmdhbml6YXRpb25SF2xvZ2luTmFtZUluY2x1ZGVzRG9tYWluErgBCh9yZXF1",
             "aXJlX29yZ19kb21haW5fdmVyaWZpY2F0aW9uGAIgASgIQnGSQW4ybGRlZmlu",
-            "ZXMgaWYgb3JnYW5pemF0aW9uIGRvbWFpbnMgc2hvdWxkIGJlIHZlcmlmaWVk",
+            "ZXMgaWYgT3JnYW5pemF0aW9uIERvbWFpbnMgc2hvdWxkIGJlIHZlcmlmaWVk",
             "IHVwb24gY3JlYXRpb24sIG90aGVyd2lzZSB3aWxsIGJlIGNyZWF0ZWQgYWxy",
             "ZWFkeSB2ZXJpZmllZFIccmVxdWlyZU9yZ0RvbWFpblZlcmlmaWNhdGlvbhK7",
             "AQorc210cF9zZW5kZXJfYWRkcmVzc19tYXRjaGVzX2luc3RhbmNlX2RvbWFp",

@@ -87,53 +87,53 @@ namespace Zitadel.User.V2 {
             "eml0YWRlbC51c2VyLnYyLkh1bWFuVXNlckIlkkEiMiBvbmUgb2YgdHlwZSB1",
             "c2UgaHVtYW4gb3IgbWFjaGluZUgAUgVodW1hbhJfCgdtYWNoaW5lGAcgASgL",
             "Mhwueml0YWRlbC51c2VyLnYyLk1hY2hpbmVVc2VyQiWSQSIyIG9uZSBvZiB0",
-            "eXBlIHVzZSBodW1hbiBvciBtYWNoaW5lSABSB21hY2hpbmVCBgoEdHlwZSKQ",
+            "eXBlIHVzZSBodW1hbiBvciBtYWNoaW5lSABSB21hY2hpbmVCBgoEdHlwZSKV",
             "AgoLTWFjaGluZVVzZXISIgoEbmFtZRgBIAEoCUIOkkELSgkieml0YWRlbCJS",
-            "BG5hbWUSPQoLZGVzY3JpcHRpb24YAiABKAlCG5JBGEoWIlRoZSBvbmUgYW5k",
-            "IG9ubHkgSUFNIlILZGVzY3JpcHRpb24SKgoKaGFzX3NlY3JldBgDIAEoCEIL",
-            "kkEISgYidHJ1ZSJSCWhhc1NlY3JldBJyChFhY2Nlc3NfdG9rZW5fdHlwZRgE",
-            "IAEoDjIgLnppdGFkZWwudXNlci52Mi5BY2Nlc3NUb2tlblR5cGVCJJJBITIf",
-            "VHlwZSBvZiBhY2Nlc3MgdG9rZW4gdG8gcmVjZWl2ZVIPYWNjZXNzVG9rZW5U",
-            "eXBlIrkBCgdQYXNza2V5EigKAmlkGAEgASgJQhiSQRVKEyI2OTYyOTAyMzkw",
-            "NjQ4ODMzNCJSAmlkElkKBXN0YXRlGAIgASgOMiAueml0YWRlbC51c2VyLnYy",
-            "LkF1dGhGYWN0b3JTdGF0ZUIhkkEeMhxjdXJyZW50IHN0YXRlIG9mIHRoZSBw",
-            "YXNza2V5UgVzdGF0ZRIpCgRuYW1lGAMgASgJQhWSQRJKCiJmaWRvIGtleSJ4",
-            "yAGAAQFSBG5hbWUiwAMKCkF1dGhGYWN0b3ISXQoFc3RhdGUYASABKA4yIC56",
-            "aXRhZGVsLnVzZXIudjIuQXV0aEZhY3RvclN0YXRlQiWSQSIyIGN1cnJlbnQg",
-            "c3RhdGUgb2YgdGhlIGF1dGggZmFjdG9yUgVzdGF0ZRJLCgNvdHAYAiABKAsy",
-            "Hi56aXRhZGVsLnVzZXIudjIuQXV0aEZhY3Rvck9UUEIXkkEUMhJUT1RQIHNl",
-            "Y29uZCBmYWN0b3JIAFIDb3RwEkoKA3UyZhgDIAEoCzIeLnppdGFkZWwudXNl",
-            "ci52Mi5BdXRoRmFjdG9yVTJGQhaSQRMyEVUyRiBzZWNvbmQgZmFjdG9ySABS",
-            "A3UyZhJUCgdvdHBfc21zGAQgASgLMiEueml0YWRlbC51c2VyLnYyLkF1dGhG",
-            "YWN0b3JPVFBTTVNCFpJBEzIRU01TIHNlY29uZCBmYWN0b3JIAFIGb3RwU21z",
-            "ElwKCW90cF9lbWFpbBgFIAEoCzIjLnppdGFkZWwudXNlci52Mi5BdXRoRmFj",
-            "dG9yT1RQRW1haWxCGJJBFTITRW1haWwgc2Vjb25kIGZhY3RvckgAUghvdHBF",
-            "bWFpbEIGCgR0eXBlIg8KDUF1dGhGYWN0b3JPVFAiEgoQQXV0aEZhY3Rvck9U",
-            "UFNNUyIUChJBdXRoRmFjdG9yT1RQRW1haWwiXgoNQXV0aEZhY3RvclUyRhIo",
-            "CgJpZBgBIAEoCUIYkkEVShMiNjk2MjkwMjM5MDY0ODgzMzQiUgJpZBIjCgRu",
-            "YW1lGAIgASgJQg+SQQxKCiJmaWRvIGtleSJSBG5hbWUioQIKDlNlbmRJbnZp",
-            "dGVDb2RlEpEBCgx1cmxfdGVtcGxhdGUYASABKAlCaZJBXEpUImh0dHBzOi8v",
-            "ZXhhbXBsZS5jb20vdXNlci9pbnZpdGU/dXNlcklEPXt7LlVzZXJJRH19JmNv",
-            "ZGU9e3suQ29kZX19Jm9yZ0lEPXt7Lk9yZ0lEfX0ieMgBgAEB+kIHcgUQARjI",
-            "AUgAUgt1cmxUZW1wbGF0ZYgBARJVChBhcHBsaWNhdGlvbl9uYW1lGAIgASgJ",
-            "QiWSQRhKECJDdXN0b21lclBvcnRhbCJ4yAGAAQH6QgdyBRABGMgBSAFSD2Fw",
-            "cGxpY2F0aW9uTmFtZYgBAUIPCg1fdXJsX3RlbXBsYXRlQhMKEV9hcHBsaWNh",
-            "dGlvbl9uYW1lIhIKEFJldHVybkludml0ZUNvZGUqWAoGR2VuZGVyEhYKEkdF",
-            "TkRFUl9VTlNQRUNJRklFRBAAEhEKDUdFTkRFUl9GRU1BTEUQARIPCgtHRU5E",
-            "RVJfTUFMRRACEhIKDkdFTkRFUl9ESVZFUlNFEAMqSgoPQWNjZXNzVG9rZW5U",
-            "eXBlEhwKGEFDQ0VTU19UT0tFTl9UWVBFX0JFQVJFUhAAEhkKFUFDQ0VTU19U",
-            "T0tFTl9UWVBFX0pXVBABKp4BCglVc2VyU3RhdGUSGgoWVVNFUl9TVEFURV9V",
-            "TlNQRUNJRklFRBAAEhUKEVVTRVJfU1RBVEVfQUNUSVZFEAESFwoTVVNFUl9T",
-            "VEFURV9JTkFDVElWRRACEhYKElVTRVJfU1RBVEVfREVMRVRFRBADEhUKEVVT",
-            "RVJfU1RBVEVfTE9DS0VEEAQSFgoSVVNFUl9TVEFURV9JTklUSUFMEAUqkQEK",
-            "D0F1dGhGYWN0b3JTdGF0ZRIhCh1BVVRIX0ZBQ1RPUl9TVEFURV9VTlNQRUNJ",
-            "RklFRBAAEh8KG0FVVEhfRkFDVE9SX1NUQVRFX05PVF9SRUFEWRABEhsKF0FV",
-            "VEhfRkFDVE9SX1NUQVRFX1JFQURZEAISHQoZQVVUSF9GQUNUT1JfU1RBVEVf",
-            "UkVNT1ZFRBADQrABChNjb20ueml0YWRlbC51c2VyLnYyQglVc2VyUHJvdG9Q",
-            "AVowZ2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtnL2dycGMvdXNlci92",
-            "Mjt1c2VyogIDWlVYqgIPWml0YWRlbC5Vc2VyLlYyygIPWml0YWRlbFxVc2Vy",
-            "XFYy4gIbWml0YWRlbFxVc2VyXFYyXEdQQk1ldGFkYXRh6gIRWml0YWRlbDo6",
-            "VXNlcjo6VjJiBnByb3RvMw=="));
+            "BG5hbWUSQgoLZGVzY3JpcHRpb24YAiABKAlCIJJBHUobIlRoZSBvbmUgYW5k",
+            "IG9ubHkgaW5zdGFuY2UiUgtkZXNjcmlwdGlvbhIqCgpoYXNfc2VjcmV0GAMg",
+            "ASgIQguSQQhKBiJ0cnVlIlIJaGFzU2VjcmV0EnIKEWFjY2Vzc190b2tlbl90",
+            "eXBlGAQgASgOMiAueml0YWRlbC51c2VyLnYyLkFjY2Vzc1Rva2VuVHlwZUIk",
+            "kkEhMh9UeXBlIG9mIGFjY2VzcyB0b2tlbiB0byByZWNlaXZlUg9hY2Nlc3NU",
+            "b2tlblR5cGUiuQEKB1Bhc3NrZXkSKAoCaWQYASABKAlCGJJBFUoTIjY5NjI5",
+            "MDIzOTA2NDg4MzM0IlICaWQSWQoFc3RhdGUYAiABKA4yIC56aXRhZGVsLnVz",
+            "ZXIudjIuQXV0aEZhY3RvclN0YXRlQiGSQR4yHGN1cnJlbnQgc3RhdGUgb2Yg",
+            "dGhlIHBhc3NrZXlSBXN0YXRlEikKBG5hbWUYAyABKAlCFZJBEkoKImZpZG8g",
+            "a2V5InjIAYABAVIEbmFtZSLAAwoKQXV0aEZhY3RvchJdCgVzdGF0ZRgBIAEo",
+            "DjIgLnppdGFkZWwudXNlci52Mi5BdXRoRmFjdG9yU3RhdGVCJZJBIjIgY3Vy",
+            "cmVudCBzdGF0ZSBvZiB0aGUgYXV0aCBmYWN0b3JSBXN0YXRlEksKA290cBgC",
+            "IAEoCzIeLnppdGFkZWwudXNlci52Mi5BdXRoRmFjdG9yT1RQQheSQRQyElRP",
+            "VFAgc2Vjb25kIGZhY3RvckgAUgNvdHASSgoDdTJmGAMgASgLMh4ueml0YWRl",
+            "bC51c2VyLnYyLkF1dGhGYWN0b3JVMkZCFpJBEzIRVTJGIHNlY29uZCBmYWN0",
+            "b3JIAFIDdTJmElQKB290cF9zbXMYBCABKAsyIS56aXRhZGVsLnVzZXIudjIu",
+            "QXV0aEZhY3Rvck9UUFNNU0IWkkETMhFTTVMgc2Vjb25kIGZhY3RvckgAUgZv",
+            "dHBTbXMSXAoJb3RwX2VtYWlsGAUgASgLMiMueml0YWRlbC51c2VyLnYyLkF1",
+            "dGhGYWN0b3JPVFBFbWFpbEIYkkEVMhNFbWFpbCBzZWNvbmQgZmFjdG9ySABS",
+            "CG90cEVtYWlsQgYKBHR5cGUiDwoNQXV0aEZhY3Rvck9UUCISChBBdXRoRmFj",
+            "dG9yT1RQU01TIhQKEkF1dGhGYWN0b3JPVFBFbWFpbCJeCg1BdXRoRmFjdG9y",
+            "VTJGEigKAmlkGAEgASgJQhiSQRVKEyI2OTYyOTAyMzkwNjQ4ODMzNCJSAmlk",
+            "EiMKBG5hbWUYAiABKAlCD5JBDEoKImZpZG8ga2V5IlIEbmFtZSKhAgoOU2Vu",
+            "ZEludml0ZUNvZGUSkQEKDHVybF90ZW1wbGF0ZRgBIAEoCUJpkkFcSlQiaHR0",
+            "cHM6Ly9leGFtcGxlLmNvbS91c2VyL2ludml0ZT91c2VySUQ9e3suVXNlcklE",
+            "fX0mY29kZT17ey5Db2RlfX0mb3JnSUQ9e3suT3JnSUR9fSJ4yAGAAQH6Qgdy",
+            "BRABGMgBSABSC3VybFRlbXBsYXRliAEBElUKEGFwcGxpY2F0aW9uX25hbWUY",
+            "AiABKAlCJZJBGEoQIkN1c3RvbWVyUG9ydGFsInjIAYABAfpCB3IFEAEYyAFI",
+            "AVIPYXBwbGljYXRpb25OYW1liAEBQg8KDV91cmxfdGVtcGxhdGVCEwoRX2Fw",
+            "cGxpY2F0aW9uX25hbWUiEgoQUmV0dXJuSW52aXRlQ29kZSpYCgZHZW5kZXIS",
+            "FgoSR0VOREVSX1VOU1BFQ0lGSUVEEAASEQoNR0VOREVSX0ZFTUFMRRABEg8K",
+            "C0dFTkRFUl9NQUxFEAISEgoOR0VOREVSX0RJVkVSU0UQAypKCg9BY2Nlc3NU",
+            "b2tlblR5cGUSHAoYQUNDRVNTX1RPS0VOX1RZUEVfQkVBUkVSEAASGQoVQUND",
+            "RVNTX1RPS0VOX1RZUEVfSldUEAEqngEKCVVzZXJTdGF0ZRIaChZVU0VSX1NU",
+            "QVRFX1VOU1BFQ0lGSUVEEAASFQoRVVNFUl9TVEFURV9BQ1RJVkUQARIXChNV",
+            "U0VSX1NUQVRFX0lOQUNUSVZFEAISFgoSVVNFUl9TVEFURV9ERUxFVEVEEAMS",
+            "FQoRVVNFUl9TVEFURV9MT0NLRUQQBBIWChJVU0VSX1NUQVRFX0lOSVRJQUwQ",
+            "BSqRAQoPQXV0aEZhY3RvclN0YXRlEiEKHUFVVEhfRkFDVE9SX1NUQVRFX1VO",
+            "U1BFQ0lGSUVEEAASHwobQVVUSF9GQUNUT1JfU1RBVEVfTk9UX1JFQURZEAES",
+            "GwoXQVVUSF9GQUNUT1JfU1RBVEVfUkVBRFkQAhIdChlBVVRIX0ZBQ1RPUl9T",
+            "VEFURV9SRU1PVkVEEANCsAEKE2NvbS56aXRhZGVsLnVzZXIudjJCCVVzZXJQ",
+            "cm90b1ABWjBnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy91",
+            "c2VyL3YyO3VzZXKiAgNaVViqAg9aaXRhZGVsLlVzZXIuVjLKAg9aaXRhZGVs",
+            "XFVzZXJcVjLiAhtaaXRhZGVsXFVzZXJcVjJcR1BCTWV0YWRhdGHqAhFaaXRh",
+            "ZGVsOjpVc2VyOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Zitadel.Object.V2.ObjectReflection.Descriptor, global::Zitadel.User.V2.EmailReflection.Descriptor, global::Zitadel.User.V2.PhoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.User.V2.Gender), typeof(global::Zitadel.User.V2.AccessTokenType), typeof(global::Zitadel.User.V2.UserState), typeof(global::Zitadel.User.V2.AuthFactorState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -243,6 +243,9 @@ namespace Zitadel.User.V2 {
     /// <summary>Field number for the "given_name" field.</summary>
     public const int GivenNameFieldNumber = 1;
     private string givenName_ = "";
+    /// <summary>
+    /// The given name is the first name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GivenName {
@@ -255,6 +258,9 @@ namespace Zitadel.User.V2 {
     /// <summary>Field number for the "family_name" field.</summary>
     public const int FamilyNameFieldNumber = 2;
     private string familyName_ = "";
+    /// <summary>
+    /// The family name is the last name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FamilyName {
@@ -686,6 +692,9 @@ namespace Zitadel.User.V2 {
     /// <summary>Field number for the "given_name" field.</summary>
     public const int GivenNameFieldNumber = 1;
     private string givenName_ = "";
+    /// <summary>
+    /// The given name is the first name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GivenName {
@@ -698,6 +707,9 @@ namespace Zitadel.User.V2 {
     /// <summary>Field number for the "family_name" field.</summary>
     public const int FamilyNameFieldNumber = 2;
     private string familyName_ = "";
+    /// <summary>
+    /// The family name is the last name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FamilyName {
@@ -4281,8 +4293,8 @@ namespace Zitadel.User.V2 {
 
     private string urlTemplate_;
     /// <summary>
-    /// Optionally set a url_template, which will be used in the invite mail sent by ZITADEL to guide the user to your invitation page.
-    /// If no template is set and no previous code was created, the default ZITADEL url will be used.
+    /// Optionally set a url_template, which will be used in the invite mail sent by Zitadel to guide the user to your invitation page.
+    /// If no template is set and no previous code was created, the default Zitadel url will be used.
     ///
     /// The following placeholders can be used: UserID, OrgID, Code
     /// </summary>
@@ -4314,7 +4326,7 @@ namespace Zitadel.User.V2 {
     private string applicationName_;
     /// <summary>
     /// Optionally set an application name, which will be used in the invite mail sent by ZITADEL.
-    /// If no application name is set and no previous code was created, ZITADEL will be used as default.
+    /// If no application name is set and no previous code was created, Zitadel will be used as default.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

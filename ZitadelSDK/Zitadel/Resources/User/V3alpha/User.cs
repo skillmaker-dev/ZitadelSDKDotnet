@@ -208,7 +208,7 @@ namespace Zitadel.Resources.User.V3alpha {
 
     private string userId_;
     /// <summary>
-    /// Optionally set a unique identifier of the user. If unset, ZITADEL will take care of it.
+    /// Optionally set a unique identifier of the user. If unset, Zitadel will take care of it.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -898,7 +898,7 @@ namespace Zitadel.Resources.User.V3alpha {
     public const int ContactFieldNumber = 4;
     private global::Zitadel.Resources.User.V3alpha.Contact contact_;
     /// <summary>
-    /// Contact information for the user. ZITADEL will use this in case of internal notifications.
+    /// Contact information for the user. Zitadel will use this in case of internal notifications.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

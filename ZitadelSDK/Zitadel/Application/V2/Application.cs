@@ -32,7 +32,7 @@ namespace Zitadel.Application.V2 {
             "bGlkYXRlLnByb3RvGiB6aXRhZGVsL2FwcGxpY2F0aW9uL3YyL2FwaS5wcm90",
             "bxoheml0YWRlbC9hcHBsaWNhdGlvbi92Mi9vaWRjLnByb3RvGiF6aXRhZGVs",
             "L2FwcGxpY2F0aW9uL3YyL3NhbWwucHJvdG8aHnppdGFkZWwvZmlsdGVyL3Yy",
-            "L2ZpbHRlci5wcm90byKUBQoLQXBwbGljYXRpb24SPwoOYXBwbGljYXRpb25f",
+            "L2ZpbHRlci5wcm90byKzBQoLQXBwbGljYXRpb24SPwoOYXBwbGljYXRpb25f",
             "aWQYASABKAlCGJJBFUoTIjY5NjI5MDIzOTA2NDg4MzM0IlINYXBwbGljYXRp",
             "b25JZBJgCg1jcmVhdGlvbl9kYXRlGAIgASgLMhouZ29vZ2xlLnByb3RvYnVm",
             "LlRpbWVzdGFtcEIfkkEcShoiMjAyNC0xMi0xOFQwNzo1MDo0Ny40OTJaIlIM",
@@ -46,75 +46,85 @@ namespace Zitadel.Application.V2 {
             "dGlvbhgHIAEoCzIoLnppdGFkZWwuYXBwbGljYXRpb24udjIuQVBJQ29uZmln",
             "dXJhdGlvbkgAUhBhcGlDb25maWd1cmF0aW9uEloKEnNhbWxfY29uZmlndXJh",
             "dGlvbhgIIAEoCzIpLnppdGFkZWwuYXBwbGljYXRpb24udjIuU0FNTENvbmZp",
-            "Z3VyYXRpb25IAFIRc2FtbENvbmZpZ3VyYXRpb25CDwoNY29uZmlndXJhdGlv",
-            "biL4AgoXQXBwbGljYXRpb25TZWFyY2hGaWx0ZXISVQoRcHJvamVjdF9pZF9m",
-            "aWx0ZXIYASABKAsyJy56aXRhZGVsLmFwcGxpY2F0aW9uLnYyLlByb2plY3RJ",
-            "REZpbHRlckgAUg9wcm9qZWN0SWRGaWx0ZXISUAoLbmFtZV9maWx0ZXIYAiAB",
-            "KAsyLS56aXRhZGVsLmFwcGxpY2F0aW9uLnYyLkFwcGxpY2F0aW9uTmFtZUZp",
-            "bHRlckgAUgpuYW1lRmlsdGVyEk0KDHN0YXRlX2ZpbHRlchgDIAEoDjIoLnpp",
-            "dGFkZWwuYXBwbGljYXRpb24udjIuQXBwbGljYXRpb25TdGF0ZUgAUgtzdGF0",
-            "ZUZpbHRlchJWCgt0eXBlX2ZpbHRlchgEIAEoDjInLnppdGFkZWwuYXBwbGlj",
-            "YXRpb24udjIuQXBwbGljYXRpb25UeXBlQgr6QgeCAQQQASAASABSCnR5cGVG",
-            "aWx0ZXJCDQoGZmlsdGVyEgP4QgEiWAoPUHJvamVjdElERmlsdGVyEkUKCnBy",
-            "b2plY3RfaWQYASABKAlCJpJBFUoTIjY5NjI5MDIzOTA2NDg4MzM0IuJBAQL6",
-            "QgdyBRABGMgBUglwcm9qZWN0SWQiiAEKFUFwcGxpY2F0aW9uTmFtZUZpbHRl",
-            "chIoCgRuYW1lGAEgASgJQhSSQQlKByJDb25zbyL6QgVyAxjIAVIEbmFtZRJF",
-            "CgZtZXRob2QYAiABKA4yIy56aXRhZGVsLmZpbHRlci52Mi5UZXh0RmlsdGVy",
-            "TWV0aG9kQgj6QgWCAQIQAVIGbWV0aG9kIvUCChpBcHBsaWNhdGlvbktleVNl",
-            "YXJjaEZpbHRlchJvChVhcHBsaWNhdGlvbl9pZF9maWx0ZXIYASABKAsyOS56",
-            "aXRhZGVsLmFwcGxpY2F0aW9uLnYyLkFwcGxpY2F0aW9uS2V5QXBwbGljYXRp",
-            "b25JREZpbHRlckgAUhNhcHBsaWNhdGlvbklkRmlsdGVyEmMKEXByb2plY3Rf",
-            "aWRfZmlsdGVyGAIgASgLMjUueml0YWRlbC5hcHBsaWNhdGlvbi52Mi5BcHBs",
-            "aWNhdGlvbktleVByb2plY3RJREZpbHRlckgAUg9wcm9qZWN0SWRGaWx0ZXIS",
-            "cgoWb3JnYW5pemF0aW9uX2lkX2ZpbHRlchgDIAEoCzI6LnppdGFkZWwuYXBw",
-            "bGljYXRpb24udjIuQXBwbGljYXRpb25LZXlPcmdhbml6YXRpb25JREZpbHRl",
-            "ckgAUhRvcmdhbml6YXRpb25JZEZpbHRlckINCgZmaWx0ZXISA/hCASJwCiFB",
-            "cHBsaWNhdGlvbktleUFwcGxpY2F0aW9uSURGaWx0ZXISSwoOYXBwbGljYXRp",
-            "b25faWQYASABKAlCJJJBFUoTIjY5NjI5MDIzOTA2NDg4MzM0IuJBAQL6QgVy",
-            "AxjIAVINYXBwbGljYXRpb25JZCJmCh1BcHBsaWNhdGlvbktleVByb2plY3RJ",
-            "REZpbHRlchJFCgpwcm9qZWN0X2lkGAEgASgJQiaSQRVKEyI2OTYyOTAyMzkw",
-            "NjQ4ODMzNCLiQQEC+kIHcgUQARjIAVIJcHJvamVjdElkInUKIkFwcGxpY2F0",
-            "aW9uS2V5T3JnYW5pemF0aW9uSURGaWx0ZXISTwoPb3JnYW5pemF0aW9uX2lk",
-            "GAEgASgJQiaSQRVKEyI2OTYyOTAyMzkwNjQ4ODMzNCLiQQEC+kIHcgUQARjI",
-            "AVIOb3JnYW5pemF0aW9uSWQi3gIKDkFwcGxpY2F0aW9uS2V5EhUKBmtleV9p",
-            "ZBgBIAEoCVIFa2V5SWQSJQoOYXBwbGljYXRpb25faWQYAiABKAlSDWFwcGxp",
-            "Y2F0aW9uSWQSHQoKcHJvamVjdF9pZBgDIAEoCVIJcHJvamVjdElkEmAKDWNy",
-            "ZWF0aW9uX2RhdGUYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
-            "Qh+SQRxKGiIyMDI0LTEyLTE4VDA3OjUwOjQ3LjQ5MloiUgxjcmVhdGlvbkRh",
-            "dGUSJwoPb3JnYW5pemF0aW9uX2lkGAUgASgJUg5vcmdhbml6YXRpb25JZBJk",
-            "Cg9leHBpcmF0aW9uX2RhdGUYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGlt",
-            "ZXN0YW1wQh+SQRxKGiIyMDI0LTEyLTE4VDA3OjUwOjQ3LjQ5MloiUg5leHBp",
-            "cmF0aW9uRGF0ZSqSAQoQQXBwbGljYXRpb25TdGF0ZRIhCh1BUFBMSUNBVElP",
-            "Tl9TVEFURV9VTlNQRUNJRklFRBAAEhwKGEFQUExJQ0FUSU9OX1NUQVRFX0FD",
-            "VElWRRABEh4KGkFQUExJQ0FUSU9OX1NUQVRFX0lOQUNUSVZFEAISHQoZQVBQ",
-            "TElDQVRJT05fU1RBVEVfUkVNT1ZFRBADKrkBChJBcHBsaWNhdGlvblNvcnRp",
-            "bmcSGgoWQVBQTElDQVRJT05fU09SVF9CWV9JRBAAEhwKGEFQUExJQ0FUSU9O",
-            "X1NPUlRfQllfTkFNRRABEh0KGUFQUExJQ0FUSU9OX1NPUlRfQllfU1RBVEUQ",
-            "AhIlCiFBUFBMSUNBVElPTl9TT1JUX0JZX0NSRUFUSU9OX0RBVEUQAxIjCh9B",
-            "UFBMSUNBVElPTl9TT1JUX0JZX0NIQU5HRV9EQVRFEAQqgwEKD0FwcGxpY2F0",
-            "aW9uVHlwZRIgChxBUFBMSUNBVElPTl9UWVBFX1VOU1BFQ0lGSUVEEAASGQoV",
-            "QVBQTElDQVRJT05fVFlQRV9PSURDEAESGAoUQVBQTElDQVRJT05fVFlQRV9B",
-            "UEkQAhIZChVBUFBMSUNBVElPTl9UWVBFX1NBTUwQAyq1AgoWQXBwbGljYXRp",
-            "b25LZXlzU29ydGluZxIfChtBUFBMSUNBVElPTl9LRVlTX1NPUlRfQllfSUQQ",
-            "ABInCiNBUFBMSUNBVElPTl9LRVlTX1NPUlRfQllfUFJPSkVDVF9JRBABEisK",
-            "J0FQUExJQ0FUSU9OX0tFWVNfU09SVF9CWV9BUFBMSUNBVElPTl9JRBACEioK",
-            "JkFQUExJQ0FUSU9OX0tFWVNfU09SVF9CWV9DUkVBVElPTl9EQVRFEAMSLAoo",
-            "QVBQTElDQVRJT05fS0VZU19TT1JUX0JZX09SR0FOSVpBVElPTl9JRBAEEicK",
-            "I0FQUExJQ0FUSU9OX0tFWVNfU09SVF9CWV9FWFBJUkFUSU9OEAUSIQodQVBQ",
-            "TElDQVRJT05fS0VZU19TT1JUX0JZX1RZUEUQBkLoAQoaY29tLnppdGFkZWwu",
-            "YXBwbGljYXRpb24udjJCEEFwcGxpY2F0aW9uUHJvdG9QAVo+Z2l0aHViLmNv",
-            "bS96aXRhZGVsL3ppdGFkZWwvcGtnL2dycGMvYXBwbGljYXRpb24vdjI7YXBw",
-            "bGljYXRpb26iAgNaQViqAhZaaXRhZGVsLkFwcGxpY2F0aW9uLlYyygIWWml0",
-            "YWRlbFxBcHBsaWNhdGlvblxWMuICIlppdGFkZWxcQXBwbGljYXRpb25cVjJc",
-            "R1BCTWV0YWRhdGHqAhhaaXRhZGVsOjpBcHBsaWNhdGlvbjo6VjJiBnByb3Rv",
-            "Mw=="));
+            "Z3VyYXRpb25IAFIRc2FtbENvbmZpZ3VyYXRpb24SHQoKcHJvamVjdF9pZBgJ",
+            "IAEoCVIJcHJvamVjdElkQg8KDWNvbmZpZ3VyYXRpb24ioAQKF0FwcGxpY2F0",
+            "aW9uU2VhcmNoRmlsdGVyElUKEXByb2plY3RfaWRfZmlsdGVyGAEgASgLMicu",
+            "eml0YWRlbC5hcHBsaWNhdGlvbi52Mi5Qcm9qZWN0SURGaWx0ZXJIAFIPcHJv",
+            "amVjdElkRmlsdGVyElAKC25hbWVfZmlsdGVyGAIgASgLMi0ueml0YWRlbC5h",
+            "cHBsaWNhdGlvbi52Mi5BcHBsaWNhdGlvbk5hbWVGaWx0ZXJIAFIKbmFtZUZp",
+            "bHRlchJNCgxzdGF0ZV9maWx0ZXIYAyABKA4yKC56aXRhZGVsLmFwcGxpY2F0",
+            "aW9uLnYyLkFwcGxpY2F0aW9uU3RhdGVIAFILc3RhdGVGaWx0ZXISVgoLdHlw",
+            "ZV9maWx0ZXIYBCABKA4yJy56aXRhZGVsLmFwcGxpY2F0aW9uLnYyLkFwcGxp",
+            "Y2F0aW9uVHlwZUIK+kIHggEEEAEgAEgAUgp0eXBlRmlsdGVyElIKEGNsaWVu",
+            "dF9pZF9maWx0ZXIYBSABKAsyJi56aXRhZGVsLmFwcGxpY2F0aW9uLnYyLkNs",
+            "aWVudElERmlsdGVySABSDmNsaWVudElkRmlsdGVyElIKEGVudGl0eV9pZF9m",
+            "aWx0ZXIYBiABKAsyJi56aXRhZGVsLmFwcGxpY2F0aW9uLnYyLkVudGl0eUlE",
+            "RmlsdGVySABSDmVudGl0eUlkRmlsdGVyQg0KBmZpbHRlchID+EIBIlgKD1By",
+            "b2plY3RJREZpbHRlchJFCgpwcm9qZWN0X2lkGAEgASgJQiaSQRVKEyI2OTYy",
+            "OTAyMzkwNjQ4ODMzNCLiQQEC+kIHcgUQARjIAVIJcHJvamVjdElkIogBChVB",
+            "cHBsaWNhdGlvbk5hbWVGaWx0ZXISKAoEbmFtZRgBIAEoCUIUkkEJSgciQ29u",
+            "c28i+kIFcgMYyAFSBG5hbWUSRQoGbWV0aG9kGAIgASgOMiMueml0YWRlbC5m",
+            "aWx0ZXIudjIuVGV4dEZpbHRlck1ldGhvZEII+kIFggECEAFSBm1ldGhvZCJQ",
+            "Cg5DbGllbnRJREZpbHRlchI+CgljbGllbnRfaWQYASABKAlCIZJBEEoOImNs",
+            "aWVudC0xMjM0NSLiQQEC+kIHcgUQARjIAVIIY2xpZW50SWQiaAoORW50aXR5",
+            "SURGaWx0ZXISVgoJZW50aXR5X2lkGAEgASgJQjmSQShKJiJodHRwczovL2V4",
+            "YW1wbGUuY29tL3NhbWwvdjIvbWV0YWRhdGEi4kEBAvpCB3IFEAEYyAFSCGVu",
+            "dGl0eUlkIvUCChpBcHBsaWNhdGlvbktleVNlYXJjaEZpbHRlchJvChVhcHBs",
+            "aWNhdGlvbl9pZF9maWx0ZXIYASABKAsyOS56aXRhZGVsLmFwcGxpY2F0aW9u",
+            "LnYyLkFwcGxpY2F0aW9uS2V5QXBwbGljYXRpb25JREZpbHRlckgAUhNhcHBs",
+            "aWNhdGlvbklkRmlsdGVyEmMKEXByb2plY3RfaWRfZmlsdGVyGAIgASgLMjUu",
+            "eml0YWRlbC5hcHBsaWNhdGlvbi52Mi5BcHBsaWNhdGlvbktleVByb2plY3RJ",
+            "REZpbHRlckgAUg9wcm9qZWN0SWRGaWx0ZXIScgoWb3JnYW5pemF0aW9uX2lk",
+            "X2ZpbHRlchgDIAEoCzI6LnppdGFkZWwuYXBwbGljYXRpb24udjIuQXBwbGlj",
+            "YXRpb25LZXlPcmdhbml6YXRpb25JREZpbHRlckgAUhRvcmdhbml6YXRpb25J",
+            "ZEZpbHRlckINCgZmaWx0ZXISA/hCASJwCiFBcHBsaWNhdGlvbktleUFwcGxp",
+            "Y2F0aW9uSURGaWx0ZXISSwoOYXBwbGljYXRpb25faWQYASABKAlCJJJBFUoT",
+            "IjY5NjI5MDIzOTA2NDg4MzM0IuJBAQL6QgVyAxjIAVINYXBwbGljYXRpb25J",
+            "ZCJmCh1BcHBsaWNhdGlvbktleVByb2plY3RJREZpbHRlchJFCgpwcm9qZWN0",
+            "X2lkGAEgASgJQiaSQRVKEyI2OTYyOTAyMzkwNjQ4ODMzNCLiQQEC+kIHcgUQ",
+            "ARjIAVIJcHJvamVjdElkInUKIkFwcGxpY2F0aW9uS2V5T3JnYW5pemF0aW9u",
+            "SURGaWx0ZXISTwoPb3JnYW5pemF0aW9uX2lkGAEgASgJQiaSQRVKEyI2OTYy",
+            "OTAyMzkwNjQ4ODMzNCLiQQEC+kIHcgUQARjIAVIOb3JnYW5pemF0aW9uSWQi",
+            "3gIKDkFwcGxpY2F0aW9uS2V5EhUKBmtleV9pZBgBIAEoCVIFa2V5SWQSJQoO",
+            "YXBwbGljYXRpb25faWQYAiABKAlSDWFwcGxpY2F0aW9uSWQSHQoKcHJvamVj",
+            "dF9pZBgDIAEoCVIJcHJvamVjdElkEmAKDWNyZWF0aW9uX2RhdGUYBCABKAsy",
+            "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQh+SQRxKGiIyMDI0LTEyLTE4",
+            "VDA3OjUwOjQ3LjQ5MloiUgxjcmVhdGlvbkRhdGUSJwoPb3JnYW5pemF0aW9u",
+            "X2lkGAUgASgJUg5vcmdhbml6YXRpb25JZBJkCg9leHBpcmF0aW9uX2RhdGUY",
+            "BiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQh+SQRxKGiIyMDI0",
+            "LTEyLTE4VDA3OjUwOjQ3LjQ5MloiUg5leHBpcmF0aW9uRGF0ZSqSAQoQQXBw",
+            "bGljYXRpb25TdGF0ZRIhCh1BUFBMSUNBVElPTl9TVEFURV9VTlNQRUNJRklF",
+            "RBAAEhwKGEFQUExJQ0FUSU9OX1NUQVRFX0FDVElWRRABEh4KGkFQUExJQ0FU",
+            "SU9OX1NUQVRFX0lOQUNUSVZFEAISHQoZQVBQTElDQVRJT05fU1RBVEVfUkVN",
+            "T1ZFRBADKrkBChJBcHBsaWNhdGlvblNvcnRpbmcSGgoWQVBQTElDQVRJT05f",
+            "U09SVF9CWV9JRBAAEhwKGEFQUExJQ0FUSU9OX1NPUlRfQllfTkFNRRABEh0K",
+            "GUFQUExJQ0FUSU9OX1NPUlRfQllfU1RBVEUQAhIlCiFBUFBMSUNBVElPTl9T",
+            "T1JUX0JZX0NSRUFUSU9OX0RBVEUQAxIjCh9BUFBMSUNBVElPTl9TT1JUX0JZ",
+            "X0NIQU5HRV9EQVRFEAQqgwEKD0FwcGxpY2F0aW9uVHlwZRIgChxBUFBMSUNB",
+            "VElPTl9UWVBFX1VOU1BFQ0lGSUVEEAASGQoVQVBQTElDQVRJT05fVFlQRV9P",
+            "SURDEAESGAoUQVBQTElDQVRJT05fVFlQRV9BUEkQAhIZChVBUFBMSUNBVElP",
+            "Tl9UWVBFX1NBTUwQAyq1AgoWQXBwbGljYXRpb25LZXlzU29ydGluZxIfChtB",
+            "UFBMSUNBVElPTl9LRVlTX1NPUlRfQllfSUQQABInCiNBUFBMSUNBVElPTl9L",
+            "RVlTX1NPUlRfQllfUFJPSkVDVF9JRBABEisKJ0FQUExJQ0FUSU9OX0tFWVNf",
+            "U09SVF9CWV9BUFBMSUNBVElPTl9JRBACEioKJkFQUExJQ0FUSU9OX0tFWVNf",
+            "U09SVF9CWV9DUkVBVElPTl9EQVRFEAMSLAooQVBQTElDQVRJT05fS0VZU19T",
+            "T1JUX0JZX09SR0FOSVpBVElPTl9JRBAEEicKI0FQUExJQ0FUSU9OX0tFWVNf",
+            "U09SVF9CWV9FWFBJUkFUSU9OEAUSIQodQVBQTElDQVRJT05fS0VZU19TT1JU",
+            "X0JZX1RZUEUQBkLoAQoaY29tLnppdGFkZWwuYXBwbGljYXRpb24udjJCEEFw",
+            "cGxpY2F0aW9uUHJvdG9QAVo+Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwv",
+            "cGtnL2dycGMvYXBwbGljYXRpb24vdjI7YXBwbGljYXRpb26iAgNaQViqAhZa",
+            "aXRhZGVsLkFwcGxpY2F0aW9uLlYyygIWWml0YWRlbFxBcHBsaWNhdGlvblxW",
+            "MuICIlppdGFkZWxcQXBwbGljYXRpb25cVjJcR1BCTWV0YWRhdGHqAhhaaXRh",
+            "ZGVsOjpBcHBsaWNhdGlvbjo6VjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Zitadel.Application.V2.ApiReflection.Descriptor, global::Zitadel.Application.V2.OidcReflection.Descriptor, global::Zitadel.Application.V2.SamlReflection.Descriptor, global::Zitadel.Filter.V2.FilterReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Application.V2.ApplicationState), typeof(global::Zitadel.Application.V2.ApplicationSorting), typeof(global::Zitadel.Application.V2.ApplicationType), typeof(global::Zitadel.Application.V2.ApplicationKeysSorting), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.Application), global::Zitadel.Application.V2.Application.Parser, new[]{ "ApplicationId", "CreationDate", "ChangeDate", "State", "Name", "OidcConfiguration", "ApiConfiguration", "SamlConfiguration" }, new[]{ "Configuration" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ApplicationSearchFilter), global::Zitadel.Application.V2.ApplicationSearchFilter.Parser, new[]{ "ProjectIdFilter", "NameFilter", "StateFilter", "TypeFilter" }, new[]{ "Filter" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.Application), global::Zitadel.Application.V2.Application.Parser, new[]{ "ApplicationId", "CreationDate", "ChangeDate", "State", "Name", "OidcConfiguration", "ApiConfiguration", "SamlConfiguration", "ProjectId" }, new[]{ "Configuration" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ApplicationSearchFilter), global::Zitadel.Application.V2.ApplicationSearchFilter.Parser, new[]{ "ProjectIdFilter", "NameFilter", "StateFilter", "TypeFilter", "ClientIdFilter", "EntityIdFilter" }, new[]{ "Filter" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ProjectIDFilter), global::Zitadel.Application.V2.ProjectIDFilter.Parser, new[]{ "ProjectId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ApplicationNameFilter), global::Zitadel.Application.V2.ApplicationNameFilter.Parser, new[]{ "Name", "Method" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ClientIDFilter), global::Zitadel.Application.V2.ClientIDFilter.Parser, new[]{ "ClientId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.EntityIDFilter), global::Zitadel.Application.V2.EntityIDFilter.Parser, new[]{ "EntityId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ApplicationKeySearchFilter), global::Zitadel.Application.V2.ApplicationKeySearchFilter.Parser, new[]{ "ApplicationIdFilter", "ProjectIdFilter", "OrganizationIdFilter" }, new[]{ "Filter" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ApplicationKeyApplicationIDFilter), global::Zitadel.Application.V2.ApplicationKeyApplicationIDFilter.Parser, new[]{ "ApplicationId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Application.V2.ApplicationKeyProjectIDFilter), global::Zitadel.Application.V2.ApplicationKeyProjectIDFilter.Parser, new[]{ "ProjectId" }, null, null, null, null),
@@ -201,6 +211,7 @@ namespace Zitadel.Application.V2 {
       changeDate_ = other.changeDate_ != null ? other.changeDate_.Clone() : null;
       state_ = other.state_;
       name_ = other.name_;
+      projectId_ = other.projectId_;
       switch (other.ConfigurationCase) {
         case ConfigurationOneofCase.OidcConfiguration:
           OidcConfiguration = other.OidcConfiguration.Clone();
@@ -333,6 +344,21 @@ namespace Zitadel.Application.V2 {
       }
     }
 
+    /// <summary>Field number for the "project_id" field.</summary>
+    public const int ProjectIdFieldNumber = 9;
+    private string projectId_ = "";
+    /// <summary>
+    /// The ProjectID represents the ID of the project the application belongs to.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ProjectId {
+      get { return projectId_; }
+      set {
+        projectId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     private object configuration_;
     /// <summary>Enum of possible cases for the "configuration" oneof.</summary>
     public enum ConfigurationOneofCase {
@@ -378,6 +404,7 @@ namespace Zitadel.Application.V2 {
       if (!object.Equals(OidcConfiguration, other.OidcConfiguration)) return false;
       if (!object.Equals(ApiConfiguration, other.ApiConfiguration)) return false;
       if (!object.Equals(SamlConfiguration, other.SamlConfiguration)) return false;
+      if (ProjectId != other.ProjectId) return false;
       if (ConfigurationCase != other.ConfigurationCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -394,6 +421,7 @@ namespace Zitadel.Application.V2 {
       if (configurationCase_ == ConfigurationOneofCase.OidcConfiguration) hash ^= OidcConfiguration.GetHashCode();
       if (configurationCase_ == ConfigurationOneofCase.ApiConfiguration) hash ^= ApiConfiguration.GetHashCode();
       if (configurationCase_ == ConfigurationOneofCase.SamlConfiguration) hash ^= SamlConfiguration.GetHashCode();
+      if (ProjectId.Length != 0) hash ^= ProjectId.GetHashCode();
       hash ^= (int) configurationCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -445,6 +473,10 @@ namespace Zitadel.Application.V2 {
         output.WriteRawTag(66);
         output.WriteMessage(SamlConfiguration);
       }
+      if (ProjectId.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ProjectId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -487,6 +519,10 @@ namespace Zitadel.Application.V2 {
         output.WriteRawTag(66);
         output.WriteMessage(SamlConfiguration);
       }
+      if (ProjectId.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(ProjectId);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -521,6 +557,9 @@ namespace Zitadel.Application.V2 {
       if (configurationCase_ == ConfigurationOneofCase.SamlConfiguration) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(SamlConfiguration);
       }
+      if (ProjectId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ProjectId);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -553,6 +592,9 @@ namespace Zitadel.Application.V2 {
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.ProjectId.Length != 0) {
+        ProjectId = other.ProjectId;
       }
       switch (other.ConfigurationCase) {
         case ConfigurationOneofCase.OidcConfiguration:
@@ -647,6 +689,10 @@ namespace Zitadel.Application.V2 {
             SamlConfiguration = subBuilder;
             break;
           }
+          case 74: {
+            ProjectId = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -719,6 +765,10 @@ namespace Zitadel.Application.V2 {
             SamlConfiguration = subBuilder;
             break;
           }
+          case 74: {
+            ProjectId = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -773,6 +823,12 @@ namespace Zitadel.Application.V2 {
           break;
         case FilterOneofCase.TypeFilter:
           TypeFilter = other.TypeFilter;
+          break;
+        case FilterOneofCase.ClientIdFilter:
+          ClientIdFilter = other.ClientIdFilter.Clone();
+          break;
+        case FilterOneofCase.EntityIdFilter:
+          EntityIdFilter = other.EntityIdFilter.Clone();
           break;
       }
 
@@ -873,6 +929,38 @@ namespace Zitadel.Application.V2 {
       }
     }
 
+    /// <summary>Field number for the "client_id_filter" field.</summary>
+    public const int ClientIdFilterFieldNumber = 5;
+    /// <summary>
+    /// Filter the applications by the clientID
+    /// This is only applicable for OIDC and API applications.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Application.V2.ClientIDFilter ClientIdFilter {
+      get { return filterCase_ == FilterOneofCase.ClientIdFilter ? (global::Zitadel.Application.V2.ClientIDFilter) filter_ : null; }
+      set {
+        filter_ = value;
+        filterCase_ = value == null ? FilterOneofCase.None : FilterOneofCase.ClientIdFilter;
+      }
+    }
+
+    /// <summary>Field number for the "entity_id_filter" field.</summary>
+    public const int EntityIdFilterFieldNumber = 6;
+    /// <summary>
+    /// Filter the applications by their entityID
+    /// This is only applicable for SAML applications.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Application.V2.EntityIDFilter EntityIdFilter {
+      get { return filterCase_ == FilterOneofCase.EntityIdFilter ? (global::Zitadel.Application.V2.EntityIDFilter) filter_ : null; }
+      set {
+        filter_ = value;
+        filterCase_ = value == null ? FilterOneofCase.None : FilterOneofCase.EntityIdFilter;
+      }
+    }
+
     private object filter_;
     /// <summary>Enum of possible cases for the "filter" oneof.</summary>
     public enum FilterOneofCase {
@@ -881,6 +969,8 @@ namespace Zitadel.Application.V2 {
       NameFilter = 2,
       StateFilter = 3,
       TypeFilter = 4,
+      ClientIdFilter = 5,
+      EntityIdFilter = 6,
     }
     private FilterOneofCase filterCase_ = FilterOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -915,6 +1005,8 @@ namespace Zitadel.Application.V2 {
       if (!object.Equals(NameFilter, other.NameFilter)) return false;
       if (StateFilter != other.StateFilter) return false;
       if (TypeFilter != other.TypeFilter) return false;
+      if (!object.Equals(ClientIdFilter, other.ClientIdFilter)) return false;
+      if (!object.Equals(EntityIdFilter, other.EntityIdFilter)) return false;
       if (FilterCase != other.FilterCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -927,6 +1019,8 @@ namespace Zitadel.Application.V2 {
       if (filterCase_ == FilterOneofCase.NameFilter) hash ^= NameFilter.GetHashCode();
       if (HasStateFilter) hash ^= StateFilter.GetHashCode();
       if (HasTypeFilter) hash ^= TypeFilter.GetHashCode();
+      if (filterCase_ == FilterOneofCase.ClientIdFilter) hash ^= ClientIdFilter.GetHashCode();
+      if (filterCase_ == FilterOneofCase.EntityIdFilter) hash ^= EntityIdFilter.GetHashCode();
       hash ^= (int) filterCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -962,6 +1056,14 @@ namespace Zitadel.Application.V2 {
         output.WriteRawTag(32);
         output.WriteEnum((int) TypeFilter);
       }
+      if (filterCase_ == FilterOneofCase.ClientIdFilter) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ClientIdFilter);
+      }
+      if (filterCase_ == FilterOneofCase.EntityIdFilter) {
+        output.WriteRawTag(50);
+        output.WriteMessage(EntityIdFilter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -988,6 +1090,14 @@ namespace Zitadel.Application.V2 {
         output.WriteRawTag(32);
         output.WriteEnum((int) TypeFilter);
       }
+      if (filterCase_ == FilterOneofCase.ClientIdFilter) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ClientIdFilter);
+      }
+      if (filterCase_ == FilterOneofCase.EntityIdFilter) {
+        output.WriteRawTag(50);
+        output.WriteMessage(EntityIdFilter);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1009,6 +1119,12 @@ namespace Zitadel.Application.V2 {
       }
       if (HasTypeFilter) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) TypeFilter);
+      }
+      if (filterCase_ == FilterOneofCase.ClientIdFilter) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientIdFilter);
+      }
+      if (filterCase_ == FilterOneofCase.EntityIdFilter) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityIdFilter);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1040,6 +1156,18 @@ namespace Zitadel.Application.V2 {
           break;
         case FilterOneofCase.TypeFilter:
           TypeFilter = other.TypeFilter;
+          break;
+        case FilterOneofCase.ClientIdFilter:
+          if (ClientIdFilter == null) {
+            ClientIdFilter = new global::Zitadel.Application.V2.ClientIDFilter();
+          }
+          ClientIdFilter.MergeFrom(other.ClientIdFilter);
+          break;
+        case FilterOneofCase.EntityIdFilter:
+          if (EntityIdFilter == null) {
+            EntityIdFilter = new global::Zitadel.Application.V2.EntityIDFilter();
+          }
+          EntityIdFilter.MergeFrom(other.EntityIdFilter);
           break;
       }
 
@@ -1090,6 +1218,24 @@ namespace Zitadel.Application.V2 {
             filterCase_ = FilterOneofCase.TypeFilter;
             break;
           }
+          case 42: {
+            global::Zitadel.Application.V2.ClientIDFilter subBuilder = new global::Zitadel.Application.V2.ClientIDFilter();
+            if (filterCase_ == FilterOneofCase.ClientIdFilter) {
+              subBuilder.MergeFrom(ClientIdFilter);
+            }
+            input.ReadMessage(subBuilder);
+            ClientIdFilter = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Zitadel.Application.V2.EntityIDFilter subBuilder = new global::Zitadel.Application.V2.EntityIDFilter();
+            if (filterCase_ == FilterOneofCase.EntityIdFilter) {
+              subBuilder.MergeFrom(EntityIdFilter);
+            }
+            input.ReadMessage(subBuilder);
+            EntityIdFilter = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -1135,6 +1281,24 @@ namespace Zitadel.Application.V2 {
           case 32: {
             filter_ = input.ReadEnum();
             filterCase_ = FilterOneofCase.TypeFilter;
+            break;
+          }
+          case 42: {
+            global::Zitadel.Application.V2.ClientIDFilter subBuilder = new global::Zitadel.Application.V2.ClientIDFilter();
+            if (filterCase_ == FilterOneofCase.ClientIdFilter) {
+              subBuilder.MergeFrom(ClientIdFilter);
+            }
+            input.ReadMessage(subBuilder);
+            ClientIdFilter = subBuilder;
+            break;
+          }
+          case 50: {
+            global::Zitadel.Application.V2.EntityIDFilter subBuilder = new global::Zitadel.Application.V2.EntityIDFilter();
+            if (filterCase_ == FilterOneofCase.EntityIdFilter) {
+              subBuilder.MergeFrom(EntityIdFilter);
+            }
+            input.ReadMessage(subBuilder);
+            EntityIdFilter = subBuilder;
             break;
           }
         }
@@ -1587,6 +1751,408 @@ namespace Zitadel.Application.V2 {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class ClientIDFilter : pb::IMessage<ClientIDFilter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<ClientIDFilter> _parser = new pb::MessageParser<ClientIDFilter>(() => new ClientIDFilter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<ClientIDFilter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ClientIDFilter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ClientIDFilter(ClientIDFilter other) : this() {
+      clientId_ = other.clientId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public ClientIDFilter Clone() {
+      return new ClientIDFilter(this);
+    }
+
+    /// <summary>Field number for the "client_id" field.</summary>
+    public const int ClientIdFieldNumber = 1;
+    private string clientId_ = "";
+    /// <summary>
+    /// The clientID to search for. The search is performed as an exact match.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string ClientId {
+      get { return clientId_; }
+      set {
+        clientId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as ClientIDFilter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(ClientIDFilter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ClientId != other.ClientId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ClientId.Length != 0) hash ^= ClientId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ClientId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ClientId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ClientId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(ClientId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ClientId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ClientId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(ClientIDFilter other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ClientId.Length != 0) {
+        ClientId = other.ClientId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            ClientId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            ClientId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class EntityIDFilter : pb::IMessage<EntityIDFilter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<EntityIDFilter> _parser = new pb::MessageParser<EntityIDFilter>(() => new EntityIDFilter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<EntityIDFilter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EntityIDFilter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EntityIDFilter(EntityIDFilter other) : this() {
+      entityId_ = other.entityId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public EntityIDFilter Clone() {
+      return new EntityIDFilter(this);
+    }
+
+    /// <summary>Field number for the "entity_id" field.</summary>
+    public const int EntityIdFieldNumber = 1;
+    private string entityId_ = "";
+    /// <summary>
+    /// The entityID to search for. The search is performed as an exact match.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as EntityIDFilter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(EntityIDFilter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (EntityId != other.EntityId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (EntityId.Length != 0) hash ^= EntityId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (EntityId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(EntityId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (EntityId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(EntityId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (EntityId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(EntityId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(EntityIDFilter other) {
+      if (other == null) {
+        return;
+      }
+      if (other.EntityId.Length != 0) {
+        EntityId = other.EntityId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            EntityId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            EntityId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class ApplicationKeySearchFilter : pb::IMessage<ApplicationKeySearchFilter>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -1601,7 +2167,7 @@ namespace Zitadel.Application.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1957,7 +2523,7 @@ namespace Zitadel.Application.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2158,7 +2724,7 @@ namespace Zitadel.Application.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2359,7 +2925,7 @@ namespace Zitadel.Application.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2560,7 +3126,7 @@ namespace Zitadel.Application.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Zitadel.Application.V2.ApplicationReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

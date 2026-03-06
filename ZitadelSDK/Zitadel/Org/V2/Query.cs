@@ -1660,7 +1660,7 @@ namespace Zitadel.Org.V2 {
     /// <summary>Field number for the "domain_filter" field.</summary>
     public const int DomainFilterFieldNumber = 1;
     /// <summary>
-    /// Filter organization domains by their domain name.
+    /// Filter Organization Domains by their domain name.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
