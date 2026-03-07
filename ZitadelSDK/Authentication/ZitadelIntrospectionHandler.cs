@@ -26,30 +26,44 @@ internal sealed class ZitadelIntrospectionHandler(
 
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
     {
+        Logger.LogDebug("Introspection: Starting authentication for request {Path}", Request.Path);
+
         var token = Options.TokenRetriever?.Invoke(Request) ?? RetrieveTokenFromAuthorizationHeader(Request);
         if (string.IsNullOrWhiteSpace(token))
         {
+            Logger.LogDebug("Introspection: No bearer token found in request.");
             return AuthenticateResult.NoResult();
         }
 
+        Logger.LogDebug("Introspection: Token found (length={TokenLength}).", token.Length);
+
         if (Options.SkipTokensWithDots && token.Contains('.'))
         {
+            Logger.LogDebug("Introspection: Skipping token with dots (SkipTokensWithDots=true).");
             return AuthenticateResult.NoResult();
         }
 
         var cacheKey = GetCacheKey(token);
         if (Options.EnableCaching && _memoryCache.TryGetValue<AuthenticationTicket>(cacheKey, out var cachedTicket))
         {
+            Logger.LogDebug("Introspection: Cache hit for token.");
             return AuthenticateResult.Success(cachedTicket!);
         }
+
+        Logger.LogInformation("Introspection: Cache miss. Calling introspection endpoint. Authority={Authority}, JwtProfile={HasJwtProfile}, ClientId={ClientId}",
+            Options.Authority, Options.JwtProfile != null, Options.ClientId ?? "(null)");
 
         try
         {
             var introspectionJson = await IntrospectAsync(token);
+
             if (!introspectionJson.TryGetProperty("active", out var activeElement) || !activeElement.GetBoolean())
             {
+                Logger.LogDebug("Introspection: Token is inactive.");
                 return AuthenticateResult.Fail("Token is inactive.");
             }
+
+            Logger.LogDebug("Introspection: Token is active. Validating claims.");
 
             // Validate issuer matches the configured authority (defense-in-depth)
             if (!string.IsNullOrWhiteSpace(Options.Authority) &&
@@ -60,12 +74,14 @@ internal sealed class ZitadelIntrospectionHandler(
                 var expectedIssuer = Options.Authority.TrimEnd('/');
                 if (!string.Equals(issuer?.TrimEnd('/'), expectedIssuer, StringComparison.OrdinalIgnoreCase))
                 {
+                    Logger.LogWarning("Introspection: Issuer mismatch. Token iss={Issuer}, expected={Expected}", issuer, expectedIssuer);
                     return AuthenticateResult.Fail(
                         $"Token issuer '{issuer}' does not match expected authority '{expectedIssuer}'.");
                 }
             }
 
             var principal = BuildPrincipal(introspectionJson);
+            Logger.LogDebug("Introspection: Principal built with {ClaimCount} claims.", principal.Claims.Count());
 
             var validatedContext = new ZitadelTokenValidatedContext(Context, Scheme, Options)
             {
@@ -77,6 +93,7 @@ internal sealed class ZitadelIntrospectionHandler(
 
             if (validatedContext.Principal is null)
             {
+                Logger.LogWarning("Introspection: Principal was nullified by OnTokenValidated event.");
                 return AuthenticateResult.Fail("No principal produced from token introspection.");
             }
 
@@ -91,12 +108,15 @@ internal sealed class ZitadelIntrospectionHandler(
             if (Options.EnableCaching)
             {
                 _memoryCache.Set(cacheKey, ticket, Options.CacheDuration);
+                Logger.LogDebug("Introspection: Result cached for {CacheDuration}.", Options.CacheDuration);
             }
 
+            Logger.LogInformation("Introspection: Authentication succeeded.");
             return AuthenticateResult.Success(ticket);
         }
         catch (Exception exception)
         {
+            Logger.LogWarning(exception, "Introspection: Authentication failed with exception.");
             var failedContext = new ZitadelIntrospectionFailedContext(Context, Scheme, Options, exception);
             await Options.Events.OnAuthenticationFailed(failedContext);
             if (failedContext.Result != null)
@@ -111,6 +131,8 @@ internal sealed class ZitadelIntrospectionHandler(
     private async Task<JsonElement> IntrospectAsync(string token)
     {
         var endpoint = GetIntrospectionEndpoint();
+        Logger.LogDebug("Introspection: POST to {Endpoint}", endpoint);
+
         using var request = new HttpRequestMessage(HttpMethod.Post, endpoint);
 
         var form = new List<KeyValuePair<string, string>>
@@ -125,14 +147,24 @@ internal sealed class ZitadelIntrospectionHandler(
 
         await AddClientAuthenticationAsync(request, form);
 
+        Logger.LogDebug("Introspection: Sending {FieldCount} form fields: {FieldNames}",
+            form.Count, string.Join(", ", form.Select(f => f.Key)));
+
         request.Content = new FormUrlEncodedContent(form);
 
         var client = _httpClientFactory.CreateClient(HttpClientName);
         using var response = await client.SendAsync(request, Context.RequestAborted);
 
+        Logger.LogDebug("Introspection: Response status {StatusCode}", (int)response.StatusCode);
+
         if (!response.IsSuccessStatusCode)
         {
-            throw new InvalidOperationException($"Introspection endpoint returned status {(int)response.StatusCode}.");
+            var errorBody = await response.Content.ReadAsStringAsync(Context.RequestAborted);
+            Logger.LogWarning(
+                "Introspection endpoint returned {StatusCode}. Response: {ErrorBody}",
+                (int)response.StatusCode, errorBody);
+            throw new InvalidOperationException(
+                $"Introspection endpoint returned status {(int)response.StatusCode}. Response: {errorBody}");
         }
 
         var content = await response.Content.ReadAsStringAsync(Context.RequestAborted);
@@ -144,6 +176,7 @@ internal sealed class ZitadelIntrospectionHandler(
     {
         if (Options.JwtProfile != null)
         {
+            Logger.LogDebug("Using JWT Profile for introspection client authentication.");
             var assertion = await Options.JwtProfile.GetSignedJwtAsync(Options.Authority!);
 
             var updateContext = new ZitadelUpdateClientAssertionContext(Context, Scheme, Options)
@@ -167,8 +200,14 @@ internal sealed class ZitadelIntrospectionHandler(
 
         if (string.IsNullOrWhiteSpace(Options.ClientId))
         {
+            Logger.LogWarning(
+                "No client authentication configured for introspection. " +
+                "JwtProfile is null and ClientId is empty. " +
+                "The introspection endpoint will likely reject this request.");
             return;
         }
+
+        Logger.LogDebug("Using ClientId/ClientSecret for introspection client authentication.");
 
         if (Options.ClientCredentialStyle == ClientCredentialStyle.PostBody)
         {
