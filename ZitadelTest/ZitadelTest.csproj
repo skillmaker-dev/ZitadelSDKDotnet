@@ -4,13 +4,15 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
     
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.4" />
     
-    <PackageReference Include="ZitadelSDK" Version="1.3.0" />
+    <ProjectReference Include="..\ZitadelSDK\ZitadelSDK.csproj" />
   </ItemGroup>
 
 </Project>
