@@ -9,16 +9,16 @@ using grpc = global::Grpc.Core;
 
 namespace Zitadel.Analytics.V2beta {
   /// <summary>
-  /// The TelemetryService is used to report telemetry such as usage statistics of the ZITADEL instance(s).
+  /// The TelemetryService is used to report telemetry such as usage statistics of the Zitadel instance(s).
   /// back to a central storage.
-  /// It is used to collect anonymized data about the usage of ZITADEL features, capabilities, and configurations.
-  /// ZITADEL acts as a client of the TelemetryService.
+  /// It is used to collect anonymized data about the usage of Zitadel features, capabilities, and configurations.
+  /// Zitadel acts as a client of the TelemetryService.
   ///
   /// Reports are sent periodically based on the system's runtime configuration.
   /// The content of the reports, respectively the data collected, can be configured in the system's runtime configuration.
   ///
   /// All endpoints follow the same error and retry handling:
-  /// In case of a failure to report the usage, ZITADEL will retry to report the usage
+  /// In case of a failure to report the usage, Zitadel will retry to report the usage
   /// based on the configured retry policy and error type:
   /// - Client side errors will not be retried, as they indicate a misconfiguration or an invalid request:
   ///   - `INVALID_ARGUMENT`: The request was malformed.
@@ -105,7 +105,7 @@ namespace Zitadel.Analytics.V2beta {
     public abstract partial class TelemetryServiceBase
     {
       /// <summary>
-      /// ReportBaseInformation is used to report the base information of the ZITADEL system,
+      /// ReportBaseInformation is used to report the base information of the Zitadel system,
       /// including the version, instances, their creation date and domains.
       /// The response contains a report ID to link it to the resource counts or other reports.
       /// The report ID is only valid for the same system ID.
@@ -165,7 +165,7 @@ namespace Zitadel.Analytics.V2beta {
       }
 
       /// <summary>
-      /// ReportBaseInformation is used to report the base information of the ZITADEL system,
+      /// ReportBaseInformation is used to report the base information of the Zitadel system,
       /// including the version, instances, their creation date and domains.
       /// The response contains a report ID to link it to the resource counts or other reports.
       /// The report ID is only valid for the same system ID.
@@ -181,7 +181,7 @@ namespace Zitadel.Analytics.V2beta {
         return ReportBaseInformation(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// ReportBaseInformation is used to report the base information of the ZITADEL system,
+      /// ReportBaseInformation is used to report the base information of the Zitadel system,
       /// including the version, instances, their creation date and domains.
       /// The response contains a report ID to link it to the resource counts or other reports.
       /// The report ID is only valid for the same system ID.
@@ -195,7 +195,7 @@ namespace Zitadel.Analytics.V2beta {
         return CallInvoker.BlockingUnaryCall(__Method_ReportBaseInformation, null, options, request);
       }
       /// <summary>
-      /// ReportBaseInformation is used to report the base information of the ZITADEL system,
+      /// ReportBaseInformation is used to report the base information of the Zitadel system,
       /// including the version, instances, their creation date and domains.
       /// The response contains a report ID to link it to the resource counts or other reports.
       /// The report ID is only valid for the same system ID.
@@ -211,7 +211,7 @@ namespace Zitadel.Analytics.V2beta {
         return ReportBaseInformationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// ReportBaseInformation is used to report the base information of the ZITADEL system,
+      /// ReportBaseInformation is used to report the base information of the Zitadel system,
       /// including the version, instances, their creation date and domains.
       /// The response contains a report ID to link it to the resource counts or other reports.
       /// The report ID is only valid for the same system ID.

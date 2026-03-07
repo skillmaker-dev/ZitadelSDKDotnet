@@ -174,6 +174,14 @@ namespace Zitadel.User.V2 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.User.V2.RemoveOTPSMSResponse> __Marshaller_zitadel_user_v2_RemoveOTPSMSResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.RemoveOTPSMSResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.User.V2.GenerateRecoveryCodesRequest> __Marshaller_zitadel_user_v2_GenerateRecoveryCodesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.GenerateRecoveryCodesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.User.V2.GenerateRecoveryCodesResponse> __Marshaller_zitadel_user_v2_GenerateRecoveryCodesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.GenerateRecoveryCodesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.User.V2.RemoveRecoveryCodesRequest> __Marshaller_zitadel_user_v2_RemoveRecoveryCodesRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.RemoveRecoveryCodesRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.User.V2.RemoveRecoveryCodesResponse> __Marshaller_zitadel_user_v2_RemoveRecoveryCodesResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.RemoveRecoveryCodesResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.User.V2.AddOTPEmailRequest> __Marshaller_zitadel_user_v2_AddOTPEmailRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.AddOTPEmailRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.User.V2.AddOTPEmailResponse> __Marshaller_zitadel_user_v2_AddOTPEmailResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.User.V2.AddOTPEmailResponse.Parser));
@@ -535,6 +543,22 @@ namespace Zitadel.User.V2 {
         __Marshaller_zitadel_user_v2_RemoveOTPSMSResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.User.V2.GenerateRecoveryCodesRequest, global::Zitadel.User.V2.GenerateRecoveryCodesResponse> __Method_GenerateRecoveryCodes = new grpc::Method<global::Zitadel.User.V2.GenerateRecoveryCodesRequest, global::Zitadel.User.V2.GenerateRecoveryCodesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GenerateRecoveryCodes",
+        __Marshaller_zitadel_user_v2_GenerateRecoveryCodesRequest,
+        __Marshaller_zitadel_user_v2_GenerateRecoveryCodesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.User.V2.RemoveRecoveryCodesRequest, global::Zitadel.User.V2.RemoveRecoveryCodesResponse> __Method_RemoveRecoveryCodes = new grpc::Method<global::Zitadel.User.V2.RemoveRecoveryCodesRequest, global::Zitadel.User.V2.RemoveRecoveryCodesResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "RemoveRecoveryCodes",
+        __Marshaller_zitadel_user_v2_RemoveRecoveryCodesRequest,
+        __Marshaller_zitadel_user_v2_RemoveRecoveryCodesResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Zitadel.User.V2.AddOTPEmailRequest, global::Zitadel.User.V2.AddOTPEmailResponse> __Method_AddOTPEmail = new grpc::Method<global::Zitadel.User.V2.AddOTPEmailRequest, global::Zitadel.User.V2.AddOTPEmailResponse>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -755,7 +779,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Create a User
       ///
-      /// Create a new human or machine user in the specified organization.
+      /// Create a new user or service account in the specified organization.
       ///
       /// Required permission:
       ///   - user.write
@@ -770,11 +794,11 @@ namespace Zitadel.User.V2 {
       }
 
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Deprecated: Use [CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) to create a new user of type human instead.
+      /// Deprecated: Use [CreateUser](/docs/reference/api/user/zitadel.user.v2.UserService.CreateUser) to create a new user.
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -788,7 +812,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc..
+      /// Returns the full user or Service Account including the profile, email, etc..
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -816,7 +840,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change the user email
       ///
-      /// Deprecated: [Update the users email field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users email field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Change the email address of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by email..
       /// </summary>
@@ -870,7 +894,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Set the phone number of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by sms..
       /// </summary>
@@ -886,7 +910,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Delete the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx) to remove the phone number.
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to remove the phone number.
       ///
       /// Delete the phone number of a user.
       /// </summary>
@@ -947,9 +971,9 @@ namespace Zitadel.User.V2 {
       }
 
       /// <summary>
-      /// Update Human User
+      /// Update User (Human)
       ///
-      /// Deprecated: Use [UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) to update a user of type human instead.
+      /// Deprecated: Use [UpdateUser](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to update a user.
       ///
       /// Update all information from a user.
       /// </summary>
@@ -1189,7 +1213,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1201,9 +1225,9 @@ namespace Zitadel.User.V2 {
       }
 
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1215,9 +1239,37 @@ namespace Zitadel.User.V2 {
       }
 
       /// <summary>
+      /// Generate single-use recovery codes for a user
+      ///
+      /// Generate new single-use recovery codes for the authenticated user. Recovery codes can be used to recover access to the account if other second factors are not available.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.User.V2.GenerateRecoveryCodesResponse> GenerateRecoveryCodes(global::Zitadel.User.V2.GenerateRecoveryCodesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Remove recovery codes from a user
+      ///
+      /// Remove all recovery codes from the authenticated user. This will disable the recovery code second factor.
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.User.V2.RemoveRecoveryCodesResponse> RemoveRecoveryCodes(global::Zitadel.User.V2.RemoveRecoveryCodesRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor..
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1229,9 +1281,9 @@ namespace Zitadel.User.V2 {
       }
 
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1329,7 +1381,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change password
       ///
-      /// Deprecated: [Update the users password](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
+      /// Deprecated: [Update the users password](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) instead.
       ///
       /// Change the password of a user with either a verification code or the current password..
       /// </summary>
@@ -1365,7 +1417,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Remove a Users Secret
       ///
-      /// Remove the current client ID and client secret from a machine user.
+      /// Remove the current client ID and client secret from a service account.
       ///
       /// Required permission:
       ///   - user.write
@@ -1490,7 +1542,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more..
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more..
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1527,7 +1579,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Resend an invite code for a user
       ///
-      /// Deprecated: Use [CreateInviteCode](apis/resources/user_service_v2/user-service-create-invite-code.api.mdx) instead.
+      /// Deprecated: Use [CreateInviteCode](/docs/reference/api/user/zitadel.user.v2.UserService.CreateInviteCode) instead.
       ///
       /// Resend an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
       /// A resend is only possible if a code has been created previously and sent to the user. If there is no code or it was directly returned, an error will be returned.
@@ -1573,7 +1625,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](apis/resources/user_service_v2/user-service-delete-user-metadata.api.mdx). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -1653,7 +1705,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Create a User
       ///
-      /// Create a new human or machine user in the specified organization.
+      /// Create a new user or service account in the specified organization.
       ///
       /// Required permission:
       ///   - user.write
@@ -1671,7 +1723,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Create a User
       ///
-      /// Create a new human or machine user in the specified organization.
+      /// Create a new user or service account in the specified organization.
       ///
       /// Required permission:
       ///   - user.write
@@ -1687,7 +1739,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Create a User
       ///
-      /// Create a new human or machine user in the specified organization.
+      /// Create a new user or service account in the specified organization.
       ///
       /// Required permission:
       ///   - user.write
@@ -1705,7 +1757,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Create a User
       ///
-      /// Create a new human or machine user in the specified organization.
+      /// Create a new user or service account in the specified organization.
       ///
       /// Required permission:
       ///   - user.write
@@ -1719,11 +1771,11 @@ namespace Zitadel.User.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_CreateUser, null, options, request);
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Deprecated: Use [CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) to create a new user of type human instead.
+      /// Deprecated: Use [CreateUser](/docs/reference/api/user/zitadel.user.v2.UserService.CreateUser) to create a new user.
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1736,11 +1788,11 @@ namespace Zitadel.User.V2 {
         return AddHumanUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Deprecated: Use [CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) to create a new user of type human instead.
+      /// Deprecated: Use [CreateUser](/docs/reference/api/user/zitadel.user.v2.UserService.CreateUser) to create a new user.
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1751,11 +1803,11 @@ namespace Zitadel.User.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_AddHumanUser, null, options, request);
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Deprecated: Use [CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) to create a new user of type human instead.
+      /// Deprecated: Use [CreateUser](/docs/reference/api/user/zitadel.user.v2.UserService.CreateUser) to create a new user.
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1768,11 +1820,11 @@ namespace Zitadel.User.V2 {
         return AddHumanUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create a new human user
+      /// Create a new User (Human)
       ///
-      /// Deprecated: Use [CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) to create a new user of type human instead.
+      /// Deprecated: Use [CreateUser](/docs/reference/api/user/zitadel.user.v2.UserService.CreateUser) to create a new user.
       ///
-      /// Create/import a new user with the type human. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
+      /// Create/import a new user. The newly created user will get a verification email if either the email address is not marked as verified and you did not request the verification to be returned.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1785,7 +1837,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc..
+      /// Returns the full user or Service Account including the profile, email, etc..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1800,7 +1852,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc..
+      /// Returns the full user or Service Account including the profile, email, etc..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1813,7 +1865,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc..
+      /// Returns the full user or Service Account including the profile, email, etc..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -1828,7 +1880,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// User by ID
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc..
+      /// Returns the full user or Service Account including the profile, email, etc..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1897,7 +1949,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change the user email
       ///
-      /// Deprecated: [Update the users email field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users email field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Change the email address of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by email..
       /// </summary>
@@ -1914,7 +1966,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change the user email
       ///
-      /// Deprecated: [Update the users email field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users email field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Change the email address of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by email..
       /// </summary>
@@ -1929,7 +1981,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change the user email
       ///
-      /// Deprecated: [Update the users email field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users email field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Change the email address of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by email..
       /// </summary>
@@ -1946,7 +1998,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change the user email
       ///
-      /// Deprecated: [Update the users email field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users email field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Change the email address of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by email..
       /// </summary>
@@ -2113,7 +2165,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Set the phone number of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by sms..
       /// </summary>
@@ -2130,7 +2182,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Set the phone number of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by sms..
       /// </summary>
@@ -2145,7 +2197,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Set the phone number of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by sms..
       /// </summary>
@@ -2162,7 +2214,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx).
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser).
       ///
       /// Set the phone number of a user. If the state is set to not verified, a verification code will be generated, which can be either returned or sent to the user by sms..
       /// </summary>
@@ -2177,7 +2229,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Delete the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx) to remove the phone number.
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to remove the phone number.
       ///
       /// Delete the phone number of a user.
       /// </summary>
@@ -2194,7 +2246,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Delete the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx) to remove the phone number.
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to remove the phone number.
       ///
       /// Delete the phone number of a user.
       /// </summary>
@@ -2209,7 +2261,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Delete the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx) to remove the phone number.
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to remove the phone number.
       ///
       /// Delete the phone number of a user.
       /// </summary>
@@ -2226,7 +2278,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Delete the user phone
       ///
-      /// Deprecated: [Update the users phone field](apis/resources/user_service_v2/user-service-update-user.api.mdx) to remove the phone number.
+      /// Deprecated: [Update the users phone field](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to remove the phone number.
       ///
       /// Delete the phone number of a user.
       /// </summary>
@@ -2427,9 +2479,9 @@ namespace Zitadel.User.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateUser, null, options, request);
       }
       /// <summary>
-      /// Update Human User
+      /// Update User (Human)
       ///
-      /// Deprecated: Use [UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) to update a user of type human instead.
+      /// Deprecated: Use [UpdateUser](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to update a user.
       ///
       /// Update all information from a user.
       /// </summary>
@@ -2444,9 +2496,9 @@ namespace Zitadel.User.V2 {
         return UpdateHumanUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update Human User
+      /// Update User (Human)
       ///
-      /// Deprecated: Use [UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) to update a user of type human instead.
+      /// Deprecated: Use [UpdateUser](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to update a user.
       ///
       /// Update all information from a user.
       /// </summary>
@@ -2459,9 +2511,9 @@ namespace Zitadel.User.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateHumanUser, null, options, request);
       }
       /// <summary>
-      /// Update Human User
+      /// Update User (Human)
       ///
-      /// Deprecated: Use [UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) to update a user of type human instead.
+      /// Deprecated: Use [UpdateUser](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to update a user.
       ///
       /// Update all information from a user.
       /// </summary>
@@ -2476,9 +2528,9 @@ namespace Zitadel.User.V2 {
         return UpdateHumanUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update Human User
+      /// Update User (Human)
       ///
-      /// Deprecated: Use [UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) to update a user of type human instead.
+      /// Deprecated: Use [UpdateUser](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) to update a user.
       ///
       /// Update all information from a user.
       /// </summary>
@@ -3389,7 +3441,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3404,7 +3456,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3417,7 +3469,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3432,7 +3484,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP SMS for a user
       ///
-      /// Add a new One-Time Password (OTP) SMS factor to the authenticated user. OTP SMS will enable the user to verify a OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
+      /// Add a new OTP SMS factor to the authenticated user. OTP SMS will enable the user to verify an OTP with the latest verified phone number. The phone number has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3443,9 +3495,9 @@ namespace Zitadel.User.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_AddOTPSMS, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3458,9 +3510,9 @@ namespace Zitadel.User.V2 {
         return RemoveOTPSMS(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3471,9 +3523,9 @@ namespace Zitadel.User.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveOTPSMS, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3486,9 +3538,9 @@ namespace Zitadel.User.V2 {
         return RemoveOTPSMSAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) SMS from a user
+      /// Remove OTP SMS from a user
       ///
-      /// Remove the configured One-Time Password (OTP) SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS factor of a user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3499,9 +3551,121 @@ namespace Zitadel.User.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveOTPSMS, null, options, request);
       }
       /// <summary>
+      /// Generate single-use recovery codes for a user
+      ///
+      /// Generate new single-use recovery codes for the authenticated user. Recovery codes can be used to recover access to the account if other second factors are not available.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.User.V2.GenerateRecoveryCodesResponse GenerateRecoveryCodes(global::Zitadel.User.V2.GenerateRecoveryCodesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateRecoveryCodes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generate single-use recovery codes for a user
+      ///
+      /// Generate new single-use recovery codes for the authenticated user. Recovery codes can be used to recover access to the account if other second factors are not available.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.User.V2.GenerateRecoveryCodesResponse GenerateRecoveryCodes(global::Zitadel.User.V2.GenerateRecoveryCodesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GenerateRecoveryCodes, null, options, request);
+      }
+      /// <summary>
+      /// Generate single-use recovery codes for a user
+      ///
+      /// Generate new single-use recovery codes for the authenticated user. Recovery codes can be used to recover access to the account if other second factors are not available.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.User.V2.GenerateRecoveryCodesResponse> GenerateRecoveryCodesAsync(global::Zitadel.User.V2.GenerateRecoveryCodesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GenerateRecoveryCodesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Generate single-use recovery codes for a user
+      ///
+      /// Generate new single-use recovery codes for the authenticated user. Recovery codes can be used to recover access to the account if other second factors are not available.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.User.V2.GenerateRecoveryCodesResponse> GenerateRecoveryCodesAsync(global::Zitadel.User.V2.GenerateRecoveryCodesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GenerateRecoveryCodes, null, options, request);
+      }
+      /// <summary>
+      /// Remove recovery codes from a user
+      ///
+      /// Remove all recovery codes from the authenticated user. This will disable the recovery code second factor.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.User.V2.RemoveRecoveryCodesResponse RemoveRecoveryCodes(global::Zitadel.User.V2.RemoveRecoveryCodesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveRecoveryCodes(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove recovery codes from a user
+      ///
+      /// Remove all recovery codes from the authenticated user. This will disable the recovery code second factor.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.User.V2.RemoveRecoveryCodesResponse RemoveRecoveryCodes(global::Zitadel.User.V2.RemoveRecoveryCodesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_RemoveRecoveryCodes, null, options, request);
+      }
+      /// <summary>
+      /// Remove recovery codes from a user
+      ///
+      /// Remove all recovery codes from the authenticated user. This will disable the recovery code second factor.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.User.V2.RemoveRecoveryCodesResponse> RemoveRecoveryCodesAsync(global::Zitadel.User.V2.RemoveRecoveryCodesRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return RemoveRecoveryCodesAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Remove recovery codes from a user
+      ///
+      /// Remove all recovery codes from the authenticated user. This will disable the recovery code second factor.
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.User.V2.RemoveRecoveryCodesResponse> RemoveRecoveryCodesAsync(global::Zitadel.User.V2.RemoveRecoveryCodesRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_RemoveRecoveryCodes, null, options, request);
+      }
+      /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor..
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3516,7 +3680,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor..
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3529,7 +3693,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor..
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3544,7 +3708,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Add OTP Email for a user
       ///
-      /// Add a new One-Time Password (OTP) Email factor to the authenticated user. OTP Email will enable the user to verify a OTP with the latest verified email. The email has to be verified to add the second factor..
+      /// Add a new OTP Email factor to the authenticated user. OTP Email will enable the user to verify an OTP with the latest verified email. The email has to be verified to add the second factor..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3555,9 +3719,9 @@ namespace Zitadel.User.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_AddOTPEmail, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3570,9 +3734,9 @@ namespace Zitadel.User.V2 {
         return RemoveOTPEmail(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3583,9 +3747,9 @@ namespace Zitadel.User.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveOTPEmail, null, options, request);
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -3598,9 +3762,9 @@ namespace Zitadel.User.V2 {
         return RemoveOTPEmailAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Remove One-Time Password (OTP) Email from a user
+      /// Remove OTP Email from a user
       ///
-      /// Remove the configured One-Time Password (OTP) Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email factor of a user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -3949,7 +4113,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change password
       ///
-      /// Deprecated: [Update the users password](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
+      /// Deprecated: [Update the users password](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) instead.
       ///
       /// Change the password of a user with either a verification code or the current password..
       /// </summary>
@@ -3966,7 +4130,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change password
       ///
-      /// Deprecated: [Update the users password](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
+      /// Deprecated: [Update the users password](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) instead.
       ///
       /// Change the password of a user with either a verification code or the current password..
       /// </summary>
@@ -3981,7 +4145,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change password
       ///
-      /// Deprecated: [Update the users password](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
+      /// Deprecated: [Update the users password](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) instead.
       ///
       /// Change the password of a user with either a verification code or the current password..
       /// </summary>
@@ -3998,7 +4162,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Change password
       ///
-      /// Deprecated: [Update the users password](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
+      /// Deprecated: [Update the users password](/docs/reference/api/user/zitadel.user.v2.UserService.UpdateUser) instead.
       ///
       /// Change the password of a user with either a verification code or the current password..
       /// </summary>
@@ -4093,7 +4257,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Remove a Users Secret
       ///
-      /// Remove the current client ID and client secret from a machine user.
+      /// Remove the current client ID and client secret from a service account.
       ///
       /// Required permission:
       ///   - user.write
@@ -4111,7 +4275,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Remove a Users Secret
       ///
-      /// Remove the current client ID and client secret from a machine user.
+      /// Remove the current client ID and client secret from a service account.
       ///
       /// Required permission:
       ///   - user.write
@@ -4127,7 +4291,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Remove a Users Secret
       ///
-      /// Remove the current client ID and client secret from a machine user.
+      /// Remove the current client ID and client secret from a service account.
       ///
       /// Required permission:
       ///   - user.write
@@ -4145,7 +4309,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Remove a Users Secret
       ///
-      /// Remove the current client ID and client secret from a machine user.
+      /// Remove the current client ID and client secret from a service account.
       ///
       /// Required permission:
       ///   - user.write
@@ -4593,7 +4757,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more..
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4608,7 +4772,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more..
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4621,7 +4785,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more..
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4636,7 +4800,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// List all possible authentication methods of a user
       ///
-      /// List all possible authentication methods of a user like password, passwordless, (T)OTP and more..
+      /// List all possible authentication methods of a user like password, passkey, (T)OTP and more..
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4737,7 +4901,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Resend an invite code for a user
       ///
-      /// Deprecated: Use [CreateInviteCode](apis/resources/user_service_v2/user-service-create-invite-code.api.mdx) instead.
+      /// Deprecated: Use [CreateInviteCode](/docs/reference/api/user/zitadel.user.v2.UserService.CreateInviteCode) instead.
       ///
       /// Resend an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
       /// A resend is only possible if a code has been created previously and sent to the user. If there is no code or it was directly returned, an error will be returned.
@@ -4755,7 +4919,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Resend an invite code for a user
       ///
-      /// Deprecated: Use [CreateInviteCode](apis/resources/user_service_v2/user-service-create-invite-code.api.mdx) instead.
+      /// Deprecated: Use [CreateInviteCode](/docs/reference/api/user/zitadel.user.v2.UserService.CreateInviteCode) instead.
       ///
       /// Resend an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
       /// A resend is only possible if a code has been created previously and sent to the user. If there is no code or it was directly returned, an error will be returned.
@@ -4771,7 +4935,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Resend an invite code for a user
       ///
-      /// Deprecated: Use [CreateInviteCode](apis/resources/user_service_v2/user-service-create-invite-code.api.mdx) instead.
+      /// Deprecated: Use [CreateInviteCode](/docs/reference/api/user/zitadel.user.v2.UserService.CreateInviteCode) instead.
       ///
       /// Resend an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
       /// A resend is only possible if a code has been created previously and sent to the user. If there is no code or it was directly returned, an error will be returned.
@@ -4789,7 +4953,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Resend an invite code for a user
       ///
-      /// Deprecated: Use [CreateInviteCode](apis/resources/user_service_v2/user-service-create-invite-code.api.mdx) instead.
+      /// Deprecated: Use [CreateInviteCode](/docs/reference/api/user/zitadel.user.v2.UserService.CreateInviteCode) instead.
       ///
       /// Resend an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
       /// A resend is only possible if a code has been created previously and sent to the user. If there is no code or it was directly returned, an error will be returned.
@@ -4921,7 +5085,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](apis/resources/user_service_v2/user-service-delete-user-metadata.api.mdx). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -4939,7 +5103,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](apis/resources/user_service_v2/user-service-delete-user-metadata.api.mdx). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -4955,7 +5119,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](apis/resources/user_service_v2/user-service-delete-user-metadata.api.mdx). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -4973,7 +5137,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](apis/resources/user_service_v2/user-service-delete-user-metadata.api.mdx). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -5168,6 +5332,8 @@ namespace Zitadel.User.V2 {
           .AddMethod(__Method_RemoveTOTP, serviceImpl.RemoveTOTP)
           .AddMethod(__Method_AddOTPSMS, serviceImpl.AddOTPSMS)
           .AddMethod(__Method_RemoveOTPSMS, serviceImpl.RemoveOTPSMS)
+          .AddMethod(__Method_GenerateRecoveryCodes, serviceImpl.GenerateRecoveryCodes)
+          .AddMethod(__Method_RemoveRecoveryCodes, serviceImpl.RemoveRecoveryCodes)
           .AddMethod(__Method_AddOTPEmail, serviceImpl.AddOTPEmail)
           .AddMethod(__Method_RemoveOTPEmail, serviceImpl.RemoveOTPEmail)
           .AddMethod(__Method_StartIdentityProviderIntent, serviceImpl.StartIdentityProviderIntent)
@@ -5235,6 +5401,8 @@ namespace Zitadel.User.V2 {
       serviceBinder.AddMethod(__Method_RemoveTOTP, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.RemoveTOTPRequest, global::Zitadel.User.V2.RemoveTOTPResponse>(serviceImpl.RemoveTOTP));
       serviceBinder.AddMethod(__Method_AddOTPSMS, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.AddOTPSMSRequest, global::Zitadel.User.V2.AddOTPSMSResponse>(serviceImpl.AddOTPSMS));
       serviceBinder.AddMethod(__Method_RemoveOTPSMS, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.RemoveOTPSMSRequest, global::Zitadel.User.V2.RemoveOTPSMSResponse>(serviceImpl.RemoveOTPSMS));
+      serviceBinder.AddMethod(__Method_GenerateRecoveryCodes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.GenerateRecoveryCodesRequest, global::Zitadel.User.V2.GenerateRecoveryCodesResponse>(serviceImpl.GenerateRecoveryCodes));
+      serviceBinder.AddMethod(__Method_RemoveRecoveryCodes, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.RemoveRecoveryCodesRequest, global::Zitadel.User.V2.RemoveRecoveryCodesResponse>(serviceImpl.RemoveRecoveryCodes));
       serviceBinder.AddMethod(__Method_AddOTPEmail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.AddOTPEmailRequest, global::Zitadel.User.V2.AddOTPEmailResponse>(serviceImpl.AddOTPEmail));
       serviceBinder.AddMethod(__Method_RemoveOTPEmail, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.RemoveOTPEmailRequest, global::Zitadel.User.V2.RemoveOTPEmailResponse>(serviceImpl.RemoveOTPEmail));
       serviceBinder.AddMethod(__Method_StartIdentityProviderIntent, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.User.V2.StartIdentityProviderIntentRequest, global::Zitadel.User.V2.StartIdentityProviderIntentResponse>(serviceImpl.StartIdentityProviderIntent));

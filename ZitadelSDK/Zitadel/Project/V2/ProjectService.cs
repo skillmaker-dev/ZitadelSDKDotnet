@@ -3940,7 +3940,7 @@ namespace Zitadel.Project.V2 {
     public const int RoleKeyFieldNumber = 2;
     private string roleKey_ = "";
     /// <summary>
-    /// RoleKey identifies the role. It's the only relevant attribute for ZITADEL and
+    /// RoleKey identifies the role. It's the only relevant attribute for Zitadel and
     /// will be used for authorization checks and as claim in tokens and user info responses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4488,7 +4488,7 @@ namespace Zitadel.Project.V2 {
     public const int RoleKeyFieldNumber = 2;
     private string roleKey_ = "";
     /// <summary>
-    /// RoleKey identifies the role. It's the only relevant attribute for ZITADEL and
+    /// RoleKey identifies the role. It's the only relevant attribute for Zitadel and
     /// will be used for authorization checks and as claim in tokens and user info responses.
     /// It cannot be changed. If you need a different key, remove the role and create a new one.
     /// </summary>
@@ -5052,7 +5052,7 @@ namespace Zitadel.Project.V2 {
     private string roleKey_ = "";
     /// <summary>
     /// RoleKey is the key of the role to be removed.
-    /// All dependencies of this role will be removed as well, including project grants and user grants.
+    /// All dependencies of this role will be removed as well, including project grants and user grants (role assignments).
     /// If the role is not found, the request will return a successful response as the desired state is already achieved.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -6585,7 +6585,7 @@ namespace Zitadel.Project.V2 {
     /// The roles are identified by their keys.
     /// Any roles not included in this list will be removed from the project grant.
     /// If you want to add a role, make sure to include all other existing roles as well.
-    /// If any previous role is removed, all user grants for this project grant with this role will be removed as well.
+    /// If any previous role is removed, all user grants (role assignments) for this project grant with this role will be removed as well.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

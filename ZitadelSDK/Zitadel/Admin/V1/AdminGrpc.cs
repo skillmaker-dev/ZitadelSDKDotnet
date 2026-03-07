@@ -2555,7 +2555,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are the URLs where Zitadel is running.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2571,7 +2571,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2587,7 +2587,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
-      /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Add a domain to the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -2603,7 +2603,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
-      /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Removes a domain from the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -3031,7 +3031,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
-      /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
+      /// Get the default organization of the Zitadel instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4029,11 +4029,11 @@ namespace Zitadel.Admin.V1 {
       }
 
       /// <summary>
-      /// List IAM Members
+      /// List instance Members
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4045,11 +4045,11 @@ namespace Zitadel.Admin.V1 {
       }
 
       /// <summary>
-      /// Add IAM Member
+      /// Add instance Member
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4061,11 +4061,11 @@ namespace Zitadel.Admin.V1 {
       }
 
       /// <summary>
-      /// Update IAM Member
+      /// Update instance Member
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4081,7 +4081,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4388,7 +4388,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are the URLs where Zitadel is running.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4405,7 +4405,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are the URLs where Zitadel is running.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4420,7 +4420,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are the URLs where Zitadel is running.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4437,7 +4437,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 GetInstance](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-get-instance.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are the URLs where ZITADEL is running.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are the URLs where Zitadel is running.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4452,7 +4452,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4469,7 +4469,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4484,7 +4484,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4501,7 +4501,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-list-trusted-domains.api.mdx) instead.
       ///
-      /// Returns a list of domains that are configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Returns a list of domains that are configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4516,7 +4516,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
-      /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Add a domain to the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4533,7 +4533,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
-      /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Add a domain to the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4548,7 +4548,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
-      /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Add a domain to the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4565,7 +4565,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-add-trusted-domain.api.mdx) instead.
       ///
-      /// Add a domain to the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Add a domain to the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4580,7 +4580,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
-      /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Removes a domain from the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4597,7 +4597,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
-      /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Removes a domain from the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4612,7 +4612,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
-      /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Removes a domain from the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4629,7 +4629,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [instance service v2 ListTrustedDomains](apis/resources/instance_service_v2/zitadel-instance-v-2-instance-service-remove-trusted-domain.api.mdx) instead.
       ///
-      /// Removes a domain from the list configured for this ZITADEL instance. These domains are trusted to be used as public hosts.
+      /// Removes a domain from the list configured for this Zitadel instance. These domains are trusted to be used as public hosts.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6156,7 +6156,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
-      /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
+      /// Get the default organization of the Zitadel instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6173,7 +6173,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
-      /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
+      /// Get the default organization of the Zitadel instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -6188,7 +6188,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
-      /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
+      /// Get the default organization of the Zitadel instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -6205,7 +6205,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [organization service v2 ListOrganizations](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-list-organizations.api.mdx) instead.
       ///
-      /// Get the default organization of the ZITADEL instance. If no specific organization is given on the register form, a user will be registered to the default organization.
+      /// Get the default organization of the Zitadel instance. If no specific organization is given on the register form, a user will be registered to the default organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9768,11 +9768,11 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_ListIAMMemberRoles, null, options, request);
       }
       /// <summary>
-      /// List IAM Members
+      /// List instance Members
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9785,11 +9785,11 @@ namespace Zitadel.Admin.V1 {
         return ListIAMMembers(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List IAM Members
+      /// List instance Members
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9800,11 +9800,11 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListIAMMembers, null, options, request);
       }
       /// <summary>
-      /// List IAM Members
+      /// List instance Members
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9817,11 +9817,11 @@ namespace Zitadel.Admin.V1 {
         return ListIAMMembersAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List IAM Members
+      /// List instance Members
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the instance level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9832,11 +9832,11 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_ListIAMMembers, null, options, request);
       }
       /// <summary>
-      /// Add IAM Member
+      /// Add instance Member
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9849,11 +9849,11 @@ namespace Zitadel.Admin.V1 {
         return AddIAMMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add IAM Member
+      /// Add instance Member
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9864,11 +9864,11 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_AddIAMMember, null, options, request);
       }
       /// <summary>
-      /// Add IAM Member
+      /// Add instance Member
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9881,11 +9881,11 @@ namespace Zitadel.Admin.V1 {
         return AddIAMMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add IAM Member
+      /// Add instance Member
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9896,11 +9896,11 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_AddIAMMember, null, options, request);
       }
       /// <summary>
-      /// Update IAM Member
+      /// Update instance Member
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9913,11 +9913,11 @@ namespace Zitadel.Admin.V1 {
         return UpdateIAMMember(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update IAM Member
+      /// Update instance Member
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9928,11 +9928,11 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateIAMMember, null, options, request);
       }
       /// <summary>
-      /// Update IAM Member
+      /// Update instance Member
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9945,11 +9945,11 @@ namespace Zitadel.Admin.V1 {
         return UpdateIAMMemberAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update IAM Member
+      /// Update instance Member
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9964,7 +9964,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9981,7 +9981,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9996,7 +9996,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10013,7 +10013,7 @@ namespace Zitadel.Admin.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

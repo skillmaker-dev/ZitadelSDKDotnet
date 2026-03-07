@@ -445,12 +445,12 @@ namespace Zitadel.App.V2beta {
             "bFxBcHBcVjJiZXRhXEdQQk1ldGFkYXRh6gIUWml0YWRlbDo6QXBwOjpWMmJl",
             "dGGSQfAHEs4CChNBcHBsaWNhdGlvbiBTZXJ2aWNlErMBVGhpcyBBUEkgaXMg",
             "aW50ZW5kZWQgdG8gbWFuYWdlIGFwcHMgKFNBTUwsIE9JREMsIGV0Yy4uKSBp",
-            "biBhIFpJVEFERUwgaW5zdGFuY2UuIFRoaXMgc2VydmljZSBpcyBpbiBiZXRh",
+            "biBhIFppdGFkZWwgaW5zdGFuY2UuIFRoaXMgc2VydmljZSBpcyBpbiBiZXRh",
             "IHN0YXRlLiBJdCBjYW4gQU5EIHdpbGwgY29udGludWUgYnJlYWtpbmcgdW50",
             "aWwgYSBzdGFibGUgdmVyc2lvbiBpcyByZWxlYXNlZC4iLgoHWklUQURFTBIT",
             "aHR0cHM6Ly96aXRhZGVsLmNvbRoOaGlAeml0YWRlbC5jb20qRwoKQXBhY2hl",
             "IDIuMBI5aHR0cHM6Ly9naXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9ibG9i",
-            "L21haW4vTElDRU5TSU5HLm1kMggyLjAtYmV0YRoOJENVU1RPTS1ET01BSU4i",
+            "L21haW4vTElDRU5TSU5HLm1kMggyLjAtYmV0YRoOJENVU1RPTV9ET01BSU4i",
             "AS8qAgIBMhBhcHBsaWNhdGlvbi9qc29uMhBhcHBsaWNhdGlvbi9ncnBjMhph",
             "cHBsaWNhdGlvbi9ncnBjLXdlYitwcm90bzoQYXBwbGljYXRpb24vanNvbjoQ",
             "YXBwbGljYXRpb24vZ3JwYzoaYXBwbGljYXRpb24vZ3JwYy13ZWIrcHJvdG9S",
@@ -458,8 +458,8 @@ namespace Zitadel.App.V2beta {
             "ZSBwZXJtaXNzaW9uIHRvIGFjY2VzcyB0aGUgcmVzb3VyY2UuEhsKGRoXIy9k",
             "ZWZpbml0aW9ucy9ycGNTdGF0dXNSUAoDNDA0EkkKKlJldHVybmVkIHdoZW4g",
             "dGhlIHJlc291cmNlIGRvZXMgbm90IGV4aXN0LhIbChkaFyMvZGVmaW5pdGlv",
-            "bnMvcnBjU3RhdHVzWsIBCr8BCgZPQXV0aDIStAEIAygEMiEkQ1VTVE9NLURP",
-            "TUFJTi9vYXV0aC92Mi9hdXRob3JpemU6HSRDVVNUT00tRE9NQUlOL29hdXRo",
+            "bnMvcnBjU3RhdHVzWsIBCr8BCgZPQXV0aDIStAEIAygEMiEkQ1VTVE9NX0RP",
+            "TUFJTi9vYXV0aC92Mi9hdXRob3JpemU6HSRDVVNUT01fRE9NQUlOL29hdXRo",
             "L3YyL3Rva2VuQmwKEAoGb3BlbmlkEgZvcGVuaWQKWAoqdXJuOnppdGFkZWw6",
             "aWFtOm9yZzpwcm9qZWN0OmlkOnppdGFkZWw6YXVkEip1cm46eml0YWRlbDpp",
             "YW06b3JnOnByb2plY3Q6aWQ6eml0YWRlbDphdWRiQAo+CgZPQXV0aDISNAoG",
@@ -1526,7 +1526,7 @@ namespace Zitadel.App.V2beta {
         = pb::FieldCodec.ForString(50);
     private readonly pbc::RepeatedField<string> postLogoutRedirectUris_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// ZITADEL will redirect to this link after a successful logout
+    /// Zitadel will redirect to this link after a successful logout
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

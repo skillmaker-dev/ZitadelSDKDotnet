@@ -1155,7 +1155,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_code" field.</summary>
     public const int SendCodeFieldNumber = 2;
     /// <summary>
-    /// Let ZITADEL send the link to the user via email.
+    /// Let Zitadel send the link to the user via email.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1528,9 +1528,9 @@ namespace Zitadel.Resources.User.V3alpha {
 
     private string urlTemplate_;
     /// <summary>
-    /// Optionally set a url_template, which will be used in the verification mail sent by ZITADEL
+    /// Optionally set a url_template, which will be used in the verification mail sent by Zitadel
     /// to guide the user to your verification page.
-    /// If no template is set, the default ZITADEL url will be used.
+    /// If no template is set, the default Zitadel url will be used.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1930,7 +1930,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_code" field.</summary>
     public const int SendCodeFieldNumber = 2;
     /// <summary>
-    /// Let ZITADEL send the link to the user via SMS.
+    /// Let Zitadel send the link to the user via SMS.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

@@ -810,7 +810,7 @@ namespace Zitadel.InternalPermission.V2 {
     private string displayName_ = "";
     /// <summary>
     /// DisplayName is the public display name of the user.
-    /// By default it's the user's given name and family name, their username or their email address.
+    /// By default it's the user's first name and last name, their username or their email address.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

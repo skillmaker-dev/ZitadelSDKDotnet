@@ -57,7 +57,7 @@ namespace Zitadel.Quota.V1 {
   public enum Unit {
     [pbr::OriginalName("UNIT_UNIMPLEMENTED")] Unimplemented = 0,
     /// <summary>
-    /// The sum of all requests to the ZITADEL API with an authorization header,
+    /// The sum of all requests to the Zitadel API with an authorization header,
     ///excluding the following exceptions
     ///- Calls to the System API
     ///- Calls that cause internal server errors

@@ -31,7 +31,7 @@ namespace Zitadel.Action.V2 {
             "b3RvYy1nZW4tb3BlbmFwaXYyL29wdGlvbnMvYW5ub3RhdGlvbnMucHJvdG8a",
             "F3ZhbGlkYXRlL3ZhbGlkYXRlLnByb3RvGit6aXRhZGVsL3Byb3RvY19nZW5f",
             "eml0YWRlbC92Mi9vcHRpb25zLnByb3RvGh9nb29nbGUvcHJvdG9idWYvdGlt",
-            "ZXN0YW1wLnByb3RvIqUFCgZUYXJnZXQSKAoCaWQYASABKAlCGJJBFUoTIjY5",
+            "ZXN0YW1wLnByb3RvIoIGCgZUYXJnZXQSKAoCaWQYASABKAlCGJJBFUoTIjY5",
             "NjI5MDEyOTA2NDg4MzM0IlICaWQSYAoNY3JlYXRpb25fZGF0ZRgCIAEoCzIa",
             "Lmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCH5JBHEoaIjIwMjQtMTItMThU",
             "MDc6NTA6NDcuNDkyWiJSDGNyZWF0aW9uRGF0ZRJcCgtjaGFuZ2VfZGF0ZRgD",
@@ -46,26 +46,69 @@ namespace Zitadel.Action.V2 {
             "SgUiMTBzIlIHdGltZW91dBJFCghlbmRwb2ludBgJIAEoCUIpkkEmSiQiaHR0",
             "cHM6Ly9leGFtcGxlLmNvbS9ob29rcy9pcF9jaGVjayJSCGVuZHBvaW50EjAK",
             "C3NpZ25pbmdfa2V5GAogASgJQg+SQQxKCiI5OEttc1U2NyJSCnNpZ25pbmdL",
-            "ZXlCDQoLdGFyZ2V0X3R5cGUiOwoLUkVTVFdlYmhvb2sSLAoSaW50ZXJydXB0",
-            "X29uX2Vycm9yGAEgASgIUhBpbnRlcnJ1cHRPbkVycm9yIjgKCFJFU1RDYWxs",
-            "EiwKEmludGVycnVwdF9vbl9lcnJvchgBIAEoCFIQaW50ZXJydXB0T25FcnJv",
-            "ciILCglSRVNUQXN5bmNCwAEKFWNvbS56aXRhZGVsLmFjdGlvbi52MkILVGFy",
-            "Z2V0UHJvdG9QAVo0Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtnL2dy",
-            "cGMvYWN0aW9uL3YyO2FjdGlvbqICA1pBWKoCEVppdGFkZWwuQWN0aW9uLlYy",
-            "ygIRWml0YWRlbFxBY3Rpb25cVjLiAh1aaXRhZGVsXEFjdGlvblxWMlxHUEJN",
-            "ZXRhZGF0YeoCE1ppdGFkZWw6OkFjdGlvbjo6VjJiBnByb3RvMw=="));
+            "ZXkSWwoMcGF5bG9hZF90eXBlGAsgASgOMh4ueml0YWRlbC5hY3Rpb24udjIu",
+            "UGF5bG9hZFR5cGVCGJJBFUoTIlBBWUxPQURfVFlQRV9KU09OIlILcGF5bG9h",
+            "ZFR5cGVCDQoLdGFyZ2V0X3R5cGUiOwoLUkVTVFdlYmhvb2sSLAoSaW50ZXJy",
+            "dXB0X29uX2Vycm9yGAEgASgIUhBpbnRlcnJ1cHRPbkVycm9yIjgKCFJFU1RD",
+            "YWxsEiwKEmludGVycnVwdF9vbl9lcnJvchgBIAEoCFIQaW50ZXJydXB0T25F",
+            "cnJvciILCglSRVNUQXN5bmMipwQKCVB1YmxpY0tleRIvCgZrZXlfaWQYASAB",
+            "KAlCGJJBFUoTIjY5NjI5MDMyOTA2NDg5NTc2IlIFa2V5SWQSIQoGYWN0aXZl",
+            "GAIgASgIQgmSQQZKBHRydWVSBmFjdGl2ZRJDCgpwdWJsaWNfa2V5GAMgASgM",
+            "QiSSQSFKHyItLS0tLUJFR0lOIFBVQkxJQyBLRVktLS0tLS4uLiJSCXB1Ymxp",
+            "Y0tleRJbCgtmaW5nZXJwcmludBgEIAEoCUI5kkE2SjQiU0hBMjU2OlNUcUsr",
+            "U2Q0cWdkdStVaml3SThOQmpPRDZQN1VxUTQyRVpZSWR5U0V5VHciUgtmaW5n",
+            "ZXJwcmludBJkCg9leHBpcmF0aW9uX2RhdGUYBSABKAsyGi5nb29nbGUucHJv",
+            "dG9idWYuVGltZXN0YW1wQh+SQRxKGiIyMDI0LTEyLTE4VDA3OjUwOjQ3LjQ5",
+            "MloiUg5leHBpcmF0aW9uRGF0ZRJgCg1jcmVhdGlvbl9kYXRlGAYgASgLMhou",
+            "Z29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIfkkEcShoiMjAyNC0xMi0xOFQw",
+            "Nzo1MDo0Ny40OTJaIlIMY3JlYXRpb25EYXRlElwKC2NoYW5nZV9kYXRlGAcg",
+            "ASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIfkkEcShoiMjAyNC0x",
+            "Mi0xOFQwNzo1MDo0Ny40OTJaIlIKY2hhbmdlRGF0ZSpuCgtQYXlsb2FkVHlw",
+            "ZRIcChhQQVlMT0FEX1RZUEVfVU5TUEVDSUZJRUQQABIVChFQQVlMT0FEX1RZ",
+            "UEVfSlNPThABEhQKEFBBWUxPQURfVFlQRV9KV1QQAhIUChBQQVlMT0FEX1RZ",
+            "UEVfSldFEANCwAEKFWNvbS56aXRhZGVsLmFjdGlvbi52MkILVGFyZ2V0UHJv",
+            "dG9QAVo0Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtnL2dycGMvYWN0",
+            "aW9uL3YyO2FjdGlvbqICA1pBWKoCEVppdGFkZWwuQWN0aW9uLlYyygIRWml0",
+            "YWRlbFxBY3Rpb25cVjLiAh1aaXRhZGVsXEFjdGlvblxWMlxHUEJNZXRhZGF0",
+            "YeoCE1ppdGFkZWw6OkFjdGlvbjo6VjJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.StructReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Zitadel.ProtocGenZitadel.V2.OptionsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.Target), global::Zitadel.Action.V2.Target.Parser, new[]{ "Id", "CreationDate", "ChangeDate", "Name", "RestWebhook", "RestCall", "RestAsync", "Timeout", "Endpoint", "SigningKey" }, new[]{ "TargetType" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Action.V2.PayloadType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.Target), global::Zitadel.Action.V2.Target.Parser, new[]{ "Id", "CreationDate", "ChangeDate", "Name", "RestWebhook", "RestCall", "RestAsync", "Timeout", "Endpoint", "SigningKey", "PayloadType" }, new[]{ "TargetType" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.RESTWebhook), global::Zitadel.Action.V2.RESTWebhook.Parser, new[]{ "InterruptOnError" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.RESTCall), global::Zitadel.Action.V2.RESTCall.Parser, new[]{ "InterruptOnError" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.RESTAsync), global::Zitadel.Action.V2.RESTAsync.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.RESTAsync), global::Zitadel.Action.V2.RESTAsync.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.PublicKey), global::Zitadel.Action.V2.PublicKey.Parser, new[]{ "KeyId", "Active", "PublicKey_", "Fingerprint", "ExpirationDate", "CreationDate", "ChangeDate" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum PayloadType {
+    [pbr::OriginalName("PAYLOAD_TYPE_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// PAYLOAD_TYPE_JSON will send the payload as JSON in the body of the request.
+    /// For integrity and authenticity a signature is included in the header `X-ZITADEL-Signature`.
+    /// This is the current default, for backwards compatibility reasons.
+    /// </summary>
+    [pbr::OriginalName("PAYLOAD_TYPE_JSON")] Json = 1,
+    /// <summary>
+    /// PAYLOAD_TYPE_JWT will send the payload as JSON Web Token (JWT) in the body of the request.
+    /// This allows the receiver to verify the authenticity and integrity of the payload
+    /// using the signing key (published on the JWKS URL).
+    /// </summary>
+    [pbr::OriginalName("PAYLOAD_TYPE_JWT")] Jwt = 2,
+    /// <summary>
+    /// PAYLOAD_TYPE_JWE will send the payload as Encrypted JWT (JWE) in the body of the request.
+    /// This allows additional security, e.g when passing sensitive information.
+    /// You can provide your own public key for encryption.
+    /// </summary>
+    [pbr::OriginalName("PAYLOAD_TYPE_JWE")] Jwe = 3,
+  }
+
+  #endregion
+
   #region Messages
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Target : pb::IMessage<Target>
@@ -109,6 +152,7 @@ namespace Zitadel.Action.V2 {
       timeout_ = other.timeout_ != null ? other.timeout_.Clone() : null;
       endpoint_ = other.endpoint_;
       signingKey_ = other.signingKey_;
+      payloadType_ = other.payloadType_;
       switch (other.TargetTypeCase) {
         case TargetTypeOneofCase.RestWebhook:
           RestWebhook = other.RestWebhook.Clone();
@@ -230,7 +274,7 @@ namespace Zitadel.Action.V2 {
     public const int TimeoutFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Duration timeout_;
     /// <summary>
-    /// Timeout defines the duration until ZITADEL cancels the execution.
+    /// Timeout defines the duration until Zitadel cancels the execution.
     /// If the target doesn't respond before this timeout expires, the the connection is closed and the action fails. Depending on the target type and possible setting on `interrupt_on_error` following targets will not be called. In case of a `rest_async` target only this specific target will fail, without any influence on other targets of the same execution.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -263,7 +307,7 @@ namespace Zitadel.Action.V2 {
     /// <summary>
     /// The current signing key used to sign the request sent to the target.
     /// The key can be used to verify the integrity and authenticity of the request
-    /// on the receiver side. The key should be treated as a secret and only known to ZITADEL and the receiver.
+    /// on the receiver side. The key should be treated as a secret and only known to Zitadel and the receiver.
     /// The signature is included in the request header `X-ZITADEL-Signature`
     /// and calculated over the raw body of the request using HMAC with SHA256.
     /// </summary>
@@ -273,6 +317,28 @@ namespace Zitadel.Action.V2 {
       get { return signingKey_; }
       set {
         signingKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "payload_type" field.</summary>
+    public const int PayloadTypeFieldNumber = 11;
+    private global::Zitadel.Action.V2.PayloadType payloadType_ = global::Zitadel.Action.V2.PayloadType.Unspecified;
+    /// <summary>
+    /// Payload type defines how the payload is formatted and secured.
+    /// The default is `PAYLOAD_TYPE_JSON`, which sends the payload as JSON in the body of the request.
+    /// For integrity and authenticity a signature is included in the header `X-ZITADEL-Signature`.
+    /// You can also choose to send the payload as a JWT (`PAYLOAD_TYPE_JWT`), which sends
+    /// the payload as a signed JWT in the body of the request. This allows the receiver to verify
+    /// the authenticity and integrity of the payload using the signing key (published on the JWKS URL).
+    /// If you need encryption as well, you can choose `PAYLOAD_TYPE_JWE`, which sends the payload
+    /// as an encrypted JWT in the body of the request. You can provide your own public key for encryption.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Action.V2.PayloadType PayloadType {
+      get { return payloadType_; }
+      set {
+        payloadType_ = value;
       }
     }
 
@@ -323,6 +389,7 @@ namespace Zitadel.Action.V2 {
       if (!object.Equals(Timeout, other.Timeout)) return false;
       if (Endpoint != other.Endpoint) return false;
       if (SigningKey != other.SigningKey) return false;
+      if (PayloadType != other.PayloadType) return false;
       if (TargetTypeCase != other.TargetTypeCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -341,6 +408,7 @@ namespace Zitadel.Action.V2 {
       if (timeout_ != null) hash ^= Timeout.GetHashCode();
       if (Endpoint.Length != 0) hash ^= Endpoint.GetHashCode();
       if (SigningKey.Length != 0) hash ^= SigningKey.GetHashCode();
+      if (PayloadType != global::Zitadel.Action.V2.PayloadType.Unspecified) hash ^= PayloadType.GetHashCode();
       hash ^= (int) targetTypeCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -400,6 +468,10 @@ namespace Zitadel.Action.V2 {
         output.WriteRawTag(82);
         output.WriteString(SigningKey);
       }
+      if (PayloadType != global::Zitadel.Action.V2.PayloadType.Unspecified) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) PayloadType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -450,6 +522,10 @@ namespace Zitadel.Action.V2 {
         output.WriteRawTag(82);
         output.WriteString(SigningKey);
       }
+      if (PayloadType != global::Zitadel.Action.V2.PayloadType.Unspecified) {
+        output.WriteRawTag(88);
+        output.WriteEnum((int) PayloadType);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -489,6 +565,9 @@ namespace Zitadel.Action.V2 {
       }
       if (SigningKey.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(SigningKey);
+      }
+      if (PayloadType != global::Zitadel.Action.V2.PayloadType.Unspecified) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PayloadType);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -531,6 +610,9 @@ namespace Zitadel.Action.V2 {
       }
       if (other.SigningKey.Length != 0) {
         SigningKey = other.SigningKey;
+      }
+      if (other.PayloadType != global::Zitadel.Action.V2.PayloadType.Unspecified) {
+        PayloadType = other.PayloadType;
       }
       switch (other.TargetTypeCase) {
         case TargetTypeOneofCase.RestWebhook:
@@ -636,6 +718,10 @@ namespace Zitadel.Action.V2 {
             SigningKey = input.ReadString();
             break;
           }
+          case 88: {
+            PayloadType = (global::Zitadel.Action.V2.PayloadType) input.ReadEnum();
+            break;
+          }
         }
       }
     #endif
@@ -717,6 +803,10 @@ namespace Zitadel.Action.V2 {
           }
           case 82: {
             SigningKey = input.ReadString();
+            break;
+          }
+          case 88: {
+            PayloadType = (global::Zitadel.Action.V2.PayloadType) input.ReadEnum();
             break;
           }
         }
@@ -1282,6 +1372,481 @@ namespace Zitadel.Action.V2 {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PublicKey : pb::IMessage<PublicKey>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PublicKey> _parser = new pb::MessageParser<PublicKey>(() => new PublicKey());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PublicKey> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Action.V2.TargetReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PublicKey() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PublicKey(PublicKey other) : this() {
+      keyId_ = other.keyId_;
+      active_ = other.active_;
+      publicKey_ = other.publicKey_;
+      fingerprint_ = other.fingerprint_;
+      expirationDate_ = other.expirationDate_ != null ? other.expirationDate_.Clone() : null;
+      creationDate_ = other.creationDate_ != null ? other.creationDate_.Clone() : null;
+      changeDate_ = other.changeDate_ != null ? other.changeDate_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PublicKey Clone() {
+      return new PublicKey(this);
+    }
+
+    /// <summary>Field number for the "key_id" field.</summary>
+    public const int KeyIdFieldNumber = 1;
+    private string keyId_ = "";
+    /// <summary>
+    /// KeyID is the unique identifier of the public key.
+    /// It's also used as the `kid` field in the JWE header when the payload type is set to `PAYLOAD_TYPE_JWE`.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string KeyId {
+      get { return keyId_; }
+      set {
+        keyId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "active" field.</summary>
+    public const int ActiveFieldNumber = 2;
+    private bool active_;
+    /// <summary>
+    /// Active indicates whether the public key is active and used for payload encryption.
+    /// Only one public key can be active at a time.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Active {
+      get { return active_; }
+      set {
+        active_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "public_key" field.</summary>
+    public const int PublicKey_FieldNumber = 3;
+    private pb::ByteString publicKey_ = pb::ByteString.Empty;
+    /// <summary>
+    /// The public key in PEM format.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pb::ByteString PublicKey_ {
+      get { return publicKey_; }
+      set {
+        publicKey_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "fingerprint" field.</summary>
+    public const int FingerprintFieldNumber = 4;
+    private string fingerprint_ = "";
+    /// <summary>
+    /// Fingerprint is the fingerprint of the public key. It's prefixed with the hashing algorithm used
+    /// and base64 encoded without padding, e.g. `SHA256:STqK+Sd4qgdu+UjiwI8NBjOD6P7UqQ42EZYIdySEyTw`.
+    /// The fingerprint can be used to easily compare the public key with other sources.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Fingerprint {
+      get { return fingerprint_; }
+      set {
+        fingerprint_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "expiration_date" field.</summary>
+    public const int ExpirationDateFieldNumber = 5;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp expirationDate_;
+    /// <summary>
+    /// ExpirationDate is the timestamp when the public key automatically expires and
+    /// no longer will be used for payload encryption, even when active.
+    /// Be sure to upload and activate a new public key before the expiration date
+    /// to avoid failed executions.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ExpirationDate {
+      get { return expirationDate_; }
+      set {
+        expirationDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "creation_date" field.</summary>
+    public const int CreationDateFieldNumber = 6;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
+    /// <summary>
+    /// CreationDate is the timestamp when the the public key was uploaded.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreationDate {
+      get { return creationDate_; }
+      set {
+        creationDate_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "change_date" field.</summary>
+    public const int ChangeDateFieldNumber = 7;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp changeDate_;
+    /// <summary>
+    /// ChangeDate is the timestamp when the public key was last changed, e.g. activated or deactivated.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp ChangeDate {
+      get { return changeDate_; }
+      set {
+        changeDate_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PublicKey);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PublicKey other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (KeyId != other.KeyId) return false;
+      if (Active != other.Active) return false;
+      if (PublicKey_ != other.PublicKey_) return false;
+      if (Fingerprint != other.Fingerprint) return false;
+      if (!object.Equals(ExpirationDate, other.ExpirationDate)) return false;
+      if (!object.Equals(CreationDate, other.CreationDate)) return false;
+      if (!object.Equals(ChangeDate, other.ChangeDate)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (KeyId.Length != 0) hash ^= KeyId.GetHashCode();
+      if (Active != false) hash ^= Active.GetHashCode();
+      if (PublicKey_.Length != 0) hash ^= PublicKey_.GetHashCode();
+      if (Fingerprint.Length != 0) hash ^= Fingerprint.GetHashCode();
+      if (expirationDate_ != null) hash ^= ExpirationDate.GetHashCode();
+      if (creationDate_ != null) hash ^= CreationDate.GetHashCode();
+      if (changeDate_ != null) hash ^= ChangeDate.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (KeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(KeyId);
+      }
+      if (Active != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Active);
+      }
+      if (PublicKey_.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(PublicKey_);
+      }
+      if (Fingerprint.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Fingerprint);
+      }
+      if (expirationDate_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ExpirationDate);
+      }
+      if (creationDate_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreationDate);
+      }
+      if (changeDate_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ChangeDate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (KeyId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(KeyId);
+      }
+      if (Active != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(Active);
+      }
+      if (PublicKey_.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteBytes(PublicKey_);
+      }
+      if (Fingerprint.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Fingerprint);
+      }
+      if (expirationDate_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(ExpirationDate);
+      }
+      if (creationDate_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreationDate);
+      }
+      if (changeDate_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(ChangeDate);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (KeyId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(KeyId);
+      }
+      if (Active != false) {
+        size += 1 + 1;
+      }
+      if (PublicKey_.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(PublicKey_);
+      }
+      if (Fingerprint.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Fingerprint);
+      }
+      if (expirationDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpirationDate);
+      }
+      if (creationDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreationDate);
+      }
+      if (changeDate_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ChangeDate);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PublicKey other) {
+      if (other == null) {
+        return;
+      }
+      if (other.KeyId.Length != 0) {
+        KeyId = other.KeyId;
+      }
+      if (other.Active != false) {
+        Active = other.Active;
+      }
+      if (other.PublicKey_.Length != 0) {
+        PublicKey_ = other.PublicKey_;
+      }
+      if (other.Fingerprint.Length != 0) {
+        Fingerprint = other.Fingerprint;
+      }
+      if (other.expirationDate_ != null) {
+        if (expirationDate_ == null) {
+          ExpirationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ExpirationDate.MergeFrom(other.ExpirationDate);
+      }
+      if (other.creationDate_ != null) {
+        if (creationDate_ == null) {
+          CreationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreationDate.MergeFrom(other.CreationDate);
+      }
+      if (other.changeDate_ != null) {
+        if (changeDate_ == null) {
+          ChangeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        ChangeDate.MergeFrom(other.ChangeDate);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            KeyId = input.ReadString();
+            break;
+          }
+          case 16: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 26: {
+            PublicKey_ = input.ReadBytes();
+            break;
+          }
+          case 34: {
+            Fingerprint = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (expirationDate_ == null) {
+              ExpirationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpirationDate);
+            break;
+          }
+          case 50: {
+            if (creationDate_ == null) {
+              CreationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreationDate);
+            break;
+          }
+          case 58: {
+            if (changeDate_ == null) {
+              ChangeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ChangeDate);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            KeyId = input.ReadString();
+            break;
+          }
+          case 16: {
+            Active = input.ReadBool();
+            break;
+          }
+          case 26: {
+            PublicKey_ = input.ReadBytes();
+            break;
+          }
+          case 34: {
+            Fingerprint = input.ReadString();
+            break;
+          }
+          case 42: {
+            if (expirationDate_ == null) {
+              ExpirationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ExpirationDate);
+            break;
+          }
+          case 50: {
+            if (creationDate_ == null) {
+              CreationDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreationDate);
+            break;
+          }
+          case 58: {
+            if (changeDate_ == null) {
+              ChangeDate = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(ChangeDate);
+            break;
+          }
         }
       }
     }

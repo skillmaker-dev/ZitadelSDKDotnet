@@ -911,7 +911,7 @@ namespace Zitadel.Project.V2beta {
     public const int AuthorizationRequiredFieldNumber = 8;
     private bool authorizationRequired_;
     /// <summary>
-    /// When enabled ZITADEL will check if a user has an authorization to use this project assigned when login into an application of this project.
+    /// When enabled, ZITADEL will check if a user has appropriate role assignments to use this project when they log into an application of this project.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -926,7 +926,7 @@ namespace Zitadel.Project.V2beta {
     public const int ProjectAccessRequiredFieldNumber = 9;
     private bool projectAccessRequired_;
     /// <summary>
-    /// When enabled ZITADEL will check if the organization of the user, that is trying to log in, has access to this project (either owns the project or is granted).
+    /// When enabled, ZITADEL will check if the organization of the user, that is trying to log in, has access to this project (either owns the project or is granted).
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

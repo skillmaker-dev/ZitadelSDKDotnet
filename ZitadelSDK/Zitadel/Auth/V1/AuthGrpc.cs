@@ -969,11 +969,13 @@ namespace Zitadel.Auth.V1 {
       }
 
       /// <summary>
-      /// List My Authorizations / User Grants
+      /// List My Authorizations / Role Assignments
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
       ///
-      /// Returns a list of the authorizations/user grants the authenticated user has. User grants consist of an organization, a project and 1-n roles.
+      /// Returns a list of the authorizations/role assignments the authenticated user has. Role assignments consist of an organization, a project and 1-n roles.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -999,7 +1001,7 @@ namespace Zitadel.Auth.V1 {
       /// <summary>
       /// List My Project Roles
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
       ///
       /// Returns a list of roles for the authenticated user and for the requesting project.
       /// </summary>
@@ -1994,11 +1996,13 @@ namespace Zitadel.Auth.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveMyPasswordless, null, options, request);
       }
       /// <summary>
-      /// List My Authorizations / User Grants
+      /// List My Authorizations / Role Assignments
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
       ///
-      /// Returns a list of the authorizations/user grants the authenticated user has. User grants consist of an organization, a project and 1-n roles.
+      /// Returns a list of the authorizations/role assignments the authenticated user has. Role assignments consist of an organization, a project and 1-n roles.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2011,11 +2015,13 @@ namespace Zitadel.Auth.V1 {
         return ListMyUserGrants(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List My Authorizations / User Grants
+      /// List My Authorizations / Role Assignments
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
       ///
-      /// Returns a list of the authorizations/user grants the authenticated user has. User grants consist of an organization, a project and 1-n roles.
+      /// Returns a list of the authorizations/role assignments the authenticated user has. Role assignments consist of an organization, a project and 1-n roles.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2026,11 +2032,13 @@ namespace Zitadel.Auth.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListMyUserGrants, null, options, request);
       }
       /// <summary>
-      /// List My Authorizations / User Grants
+      /// List My Authorizations / Role Assignments
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
       ///
-      /// Returns a list of the authorizations/user grants the authenticated user has. User grants consist of an organization, a project and 1-n roles.
+      /// Returns a list of the authorizations/role assignments the authenticated user has. Role assignments consist of an organization, a project and 1-n roles.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -2043,11 +2051,13 @@ namespace Zitadel.Auth.V1 {
         return ListMyUserGrantsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List My Authorizations / User Grants
+      /// List My Authorizations / Role Assignments
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID to search for your authorizations on granted and owned projects.
       ///
-      /// Returns a list of the authorizations/user grants the authenticated user has. User grants consist of an organization, a project and 1-n roles.
+      /// Returns a list of the authorizations/role assignments the authenticated user has. Role assignments consist of an organization, a project and 1-n roles.
+      ///
+      /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -2100,7 +2110,7 @@ namespace Zitadel.Auth.V1 {
       /// <summary>
       /// List My Project Roles
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
       ///
       /// Returns a list of roles for the authenticated user and for the requesting project.
       /// </summary>
@@ -2117,7 +2127,7 @@ namespace Zitadel.Auth.V1 {
       /// <summary>
       /// List My Project Roles
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
       ///
       /// Returns a list of roles for the authenticated user and for the requesting project.
       /// </summary>
@@ -2132,7 +2142,7 @@ namespace Zitadel.Auth.V1 {
       /// <summary>
       /// List My Project Roles
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
       ///
       /// Returns a list of roles for the authenticated user and for the requesting project.
       /// </summary>
@@ -2149,7 +2159,7 @@ namespace Zitadel.Auth.V1 {
       /// <summary>
       /// List My Project Roles
       ///
-      /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
+      /// Deprecated: [List authorizations](/docs/reference/api/authorization/zitadel.authorization.v2.AuthorizationService.ListAuthorizations) and pass the user ID filter with your users ID and the project ID filter to search for your authorizations on a granted and an owned project.
       ///
       /// Returns a list of roles for the authenticated user and for the requesting project.
       /// </summary>

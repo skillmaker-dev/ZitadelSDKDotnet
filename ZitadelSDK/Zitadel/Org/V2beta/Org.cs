@@ -206,7 +206,7 @@ namespace Zitadel.Org.V2beta {
     public const int ChangedDateFieldNumber = 3;
     private global::Google.Protobuf.WellKnownTypes.Timestamp changedDate_;
     /// <summary>
-    ///  The timestamp of the verification of the organization domain.
+    ///  The timestamp of the verification of the Organization Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -251,7 +251,7 @@ namespace Zitadel.Org.V2beta {
     public const int PrimaryDomainFieldNumber = 6;
     private string primaryDomain_ = "";
     /// <summary>
-    /// Primary domain used in the organization.
+    /// Organization Domain used in the organization.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2414,7 +2414,7 @@ namespace Zitadel.Org.V2beta {
     public const int IsPrimaryFieldNumber = 4;
     private bool isPrimary_;
     /// <summary>
-    /// Defines if the domain is the primary domain.
+    /// Defines if the domain is the Organization Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

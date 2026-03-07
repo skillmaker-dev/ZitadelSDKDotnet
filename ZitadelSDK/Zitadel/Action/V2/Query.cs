@@ -52,36 +52,46 @@ namespace Zitadel.Action.V2 {
             "dGFkZWwuZmlsdGVyLnYyLlRleHRGaWx0ZXJNZXRob2RCCPpCBYIBAhABUgZt",
             "ZXRob2QiYgoRSW5UYXJnZXRJRHNGaWx0ZXISTQoKdGFyZ2V0X2lkcxgBIAMo",
             "CUIukkErSilbIjY5NjI5MDIzOTA2NDg4MzM0IiwiNjk2MjIzNjYwMTIzNTU2",
-            "NjIiXVIJdGFyZ2V0SWRzKrkCCg9UYXJnZXRGaWVsZE5hbWUSIQodVEFSR0VU",
-            "X0ZJRUxEX05BTUVfVU5TUEVDSUZJRUQQABIYChRUQVJHRVRfRklFTERfTkFN",
-            "RV9JRBABEiIKHlRBUkdFVF9GSUVMRF9OQU1FX0NSRUFURURfREFURRACEiIK",
-            "HlRBUkdFVF9GSUVMRF9OQU1FX0NIQU5HRURfREFURRADEhoKFlRBUkdFVF9G",
-            "SUVMRF9OQU1FX05BTUUQBBIhCh1UQVJHRVRfRklFTERfTkFNRV9UQVJHRVRf",
-            "VFlQRRAFEhkKFVRBUkdFVF9GSUVMRF9OQU1FX1VSTBAGEh0KGVRBUkdFVF9G",
-            "SUVMRF9OQU1FX1RJTUVPVVQQBxIoCiRUQVJHRVRfRklFTERfTkFNRV9JTlRF",
-            "UlJVUFRfT05fRVJST1IQCCqfAQoNRXhlY3V0aW9uVHlwZRIeChpFWEVDVVRJ",
-            "T05fVFlQRV9VTlNQRUNJRklFRBAAEhoKFkVYRUNVVElPTl9UWVBFX1JFUVVF",
-            "U1QQARIbChdFWEVDVVRJT05fVFlQRV9SRVNQT05TRRACEhgKFEVYRUNVVElP",
-            "Tl9UWVBFX0VWRU5UEAMSGwoXRVhFQ1VUSU9OX1RZUEVfRlVOQ1RJT04QBCql",
-            "AQoSRXhlY3V0aW9uRmllbGROYW1lEiQKIEVYRUNVVElPTl9GSUVMRF9OQU1F",
-            "X1VOU1BFQ0lGSUVEEAASGwoXRVhFQ1VUSU9OX0ZJRUxEX05BTUVfSUQQARIl",
-            "CiFFWEVDVVRJT05fRklFTERfTkFNRV9DUkVBVEVEX0RBVEUQAhIlCiFFWEVD",
-            "VVRJT05fRklFTERfTkFNRV9DSEFOR0VEX0RBVEUQA0K/AQoVY29tLnppdGFk",
-            "ZWwuYWN0aW9uLnYyQgpRdWVyeVByb3RvUAFaNGdpdGh1Yi5jb20veml0YWRl",
-            "bC96aXRhZGVsL3BrZy9ncnBjL2FjdGlvbi92MjthY3Rpb26iAgNaQViqAhFa",
-            "aXRhZGVsLkFjdGlvbi5WMsoCEVppdGFkZWxcQWN0aW9uXFYy4gIdWml0YWRl",
-            "bFxBY3Rpb25cVjJcR1BCTWV0YWRhdGHqAhNaaXRhZGVsOjpBY3Rpb246OlYy",
-            "YgZwcm90bzM="));
+            "NjIiXVIJdGFyZ2V0SWRzIuwBChVQdWJsaWNLZXlTZWFyY2hGaWx0ZXISRgoO",
+            "a2V5X2lkc19maWx0ZXIYASABKAsyHi56aXRhZGVsLmZpbHRlci52Mi5JbklE",
+            "c0ZpbHRlckgAUgxrZXlJZHNGaWx0ZXISJQoNYWN0aXZlX2ZpbHRlchgCIAEo",
+            "CEgAUgxhY3RpdmVGaWx0ZXISWgoWZXhwaXJhdGlvbl9kYXRlX2ZpbHRlchgD",
+            "IAEoCzIiLnppdGFkZWwuZmlsdGVyLnYyLlRpbWVzdGFtcEZpbHRlckgAUhRl",
+            "eHBpcmF0aW9uRGF0ZUZpbHRlckIICgZmaWx0ZXIquQIKD1RhcmdldEZpZWxk",
+            "TmFtZRIhCh1UQVJHRVRfRklFTERfTkFNRV9VTlNQRUNJRklFRBAAEhgKFFRB",
+            "UkdFVF9GSUVMRF9OQU1FX0lEEAESIgoeVEFSR0VUX0ZJRUxEX05BTUVfQ1JF",
+            "QVRFRF9EQVRFEAISIgoeVEFSR0VUX0ZJRUxEX05BTUVfQ0hBTkdFRF9EQVRF",
+            "EAMSGgoWVEFSR0VUX0ZJRUxEX05BTUVfTkFNRRAEEiEKHVRBUkdFVF9GSUVM",
+            "RF9OQU1FX1RBUkdFVF9UWVBFEAUSGQoVVEFSR0VUX0ZJRUxEX05BTUVfVVJM",
+            "EAYSHQoZVEFSR0VUX0ZJRUxEX05BTUVfVElNRU9VVBAHEigKJFRBUkdFVF9G",
+            "SUVMRF9OQU1FX0lOVEVSUlVQVF9PTl9FUlJPUhAIKp8BCg1FeGVjdXRpb25U",
+            "eXBlEh4KGkVYRUNVVElPTl9UWVBFX1VOU1BFQ0lGSUVEEAASGgoWRVhFQ1VU",
+            "SU9OX1RZUEVfUkVRVUVTVBABEhsKF0VYRUNVVElPTl9UWVBFX1JFU1BPTlNF",
+            "EAISGAoURVhFQ1VUSU9OX1RZUEVfRVZFTlQQAxIbChdFWEVDVVRJT05fVFlQ",
+            "RV9GVU5DVElPThAEKqUBChJFeGVjdXRpb25GaWVsZE5hbWUSJAogRVhFQ1VU",
+            "SU9OX0ZJRUxEX05BTUVfVU5TUEVDSUZJRUQQABIbChdFWEVDVVRJT05fRklF",
+            "TERfTkFNRV9JRBABEiUKIUVYRUNVVElPTl9GSUVMRF9OQU1FX0NSRUFURURf",
+            "REFURRACEiUKIUVYRUNVVElPTl9GSUVMRF9OQU1FX0NIQU5HRURfREFURRAD",
+            "KrYBChJQdWJsaWNLZXlGaWVsZE5hbWUSJQohUFVCTElDX0tFWV9GSUVMRF9O",
+            "QU1FX1VOU1BFQ0lGSUVEEAASJwojUFVCTElDX0tFWV9GSUVMRF9OQU1FX0NS",
+            "RUFUSU9OX0RBVEUQARIlCiFQVUJMSUNfS0VZX0ZJRUxEX05BTUVfQ0hBTkdF",
+            "X0RBVEUQAhIpCiVQVUJMSUNfS0VZX0ZJRUxEX05BTUVfRVhQSVJBVElPTl9E",
+            "QVRFEANCvwEKFWNvbS56aXRhZGVsLmFjdGlvbi52MkIKUXVlcnlQcm90b1AB",
+            "WjRnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9hY3Rpb24v",
+            "djI7YWN0aW9uogIDWkFYqgIRWml0YWRlbC5BY3Rpb24uVjLKAhFaaXRhZGVs",
+            "XEFjdGlvblxWMuICHVppdGFkZWxcQWN0aW9uXFYyXEdQQk1ldGFkYXRh6gIT",
+            "Wml0YWRlbDo6QWN0aW9uOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Zitadel.Action.V2.ExecutionReflection.Descriptor, global::Zitadel.Filter.V2.FilterReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Action.V2.TargetFieldName), typeof(global::Zitadel.Action.V2.ExecutionType), typeof(global::Zitadel.Action.V2.ExecutionFieldName), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Action.V2.TargetFieldName), typeof(global::Zitadel.Action.V2.ExecutionType), typeof(global::Zitadel.Action.V2.ExecutionFieldName), typeof(global::Zitadel.Action.V2.PublicKeyFieldName), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.ExecutionSearchFilter), global::Zitadel.Action.V2.ExecutionSearchFilter.Parser, new[]{ "InConditionsFilter", "ExecutionTypeFilter", "TargetFilter" }, new[]{ "Filter" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.InConditionsFilter), global::Zitadel.Action.V2.InConditionsFilter.Parser, new[]{ "Conditions" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.ExecutionTypeFilter), global::Zitadel.Action.V2.ExecutionTypeFilter.Parser, new[]{ "ExecutionType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.TargetFilter), global::Zitadel.Action.V2.TargetFilter.Parser, new[]{ "TargetId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.TargetSearchFilter), global::Zitadel.Action.V2.TargetSearchFilter.Parser, new[]{ "TargetNameFilter", "InTargetIdsFilter" }, new[]{ "Filter" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.TargetNameFilter), global::Zitadel.Action.V2.TargetNameFilter.Parser, new[]{ "TargetName", "Method" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.InTargetIDsFilter), global::Zitadel.Action.V2.InTargetIDsFilter.Parser, new[]{ "TargetIds" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.InTargetIDsFilter), global::Zitadel.Action.V2.InTargetIDsFilter.Parser, new[]{ "TargetIds" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Action.V2.PublicKeySearchFilter), global::Zitadel.Action.V2.PublicKeySearchFilter.Parser, new[]{ "KeyIdsFilter", "ActiveFilter", "ExpirationDateFilter" }, new[]{ "Filter" }, null, null, null)
           }));
     }
     #endregion
@@ -113,6 +123,25 @@ namespace Zitadel.Action.V2 {
     [pbr::OriginalName("EXECUTION_FIELD_NAME_ID")] Id = 1,
     [pbr::OriginalName("EXECUTION_FIELD_NAME_CREATED_DATE")] CreatedDate = 2,
     [pbr::OriginalName("EXECUTION_FIELD_NAME_CHANGED_DATE")] ChangedDate = 3,
+  }
+
+  public enum PublicKeyFieldName {
+    /// <summary>
+    /// Unspecified field name.
+    /// </summary>
+    [pbr::OriginalName("PUBLIC_KEY_FIELD_NAME_UNSPECIFIED")] Unspecified = 0,
+    /// <summary>
+    /// Sort by creation date.
+    /// </summary>
+    [pbr::OriginalName("PUBLIC_KEY_FIELD_NAME_CREATION_DATE")] CreationDate = 1,
+    /// <summary>
+    /// Sort by change date.
+    /// </summary>
+    [pbr::OriginalName("PUBLIC_KEY_FIELD_NAME_CHANGE_DATE")] ChangeDate = 2,
+    /// <summary>
+    /// Sort by expiration date.
+    /// </summary>
+    [pbr::OriginalName("PUBLIC_KEY_FIELD_NAME_EXPIRATION_DATE")] ExpirationDate = 3,
   }
 
   #endregion
@@ -1788,6 +1817,363 @@ namespace Zitadel.Action.V2 {
             break;
           case 10: {
             targetIds_.AddEntriesFrom(ref input, _repeated_targetIds_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PublicKeySearchFilter : pb::IMessage<PublicKeySearchFilter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PublicKeySearchFilter> _parser = new pb::MessageParser<PublicKeySearchFilter>(() => new PublicKeySearchFilter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PublicKeySearchFilter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Action.V2.QueryReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PublicKeySearchFilter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PublicKeySearchFilter(PublicKeySearchFilter other) : this() {
+      switch (other.FilterCase) {
+        case FilterOneofCase.KeyIdsFilter:
+          KeyIdsFilter = other.KeyIdsFilter.Clone();
+          break;
+        case FilterOneofCase.ActiveFilter:
+          ActiveFilter = other.ActiveFilter;
+          break;
+        case FilterOneofCase.ExpirationDateFilter:
+          ExpirationDateFilter = other.ExpirationDateFilter.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PublicKeySearchFilter Clone() {
+      return new PublicKeySearchFilter(this);
+    }
+
+    /// <summary>Field number for the "key_ids_filter" field.</summary>
+    public const int KeyIdsFilterFieldNumber = 1;
+    /// <summary>
+    /// Filter the keys by one or multiple ids.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Filter.V2.InIDsFilter KeyIdsFilter {
+      get { return filterCase_ == FilterOneofCase.KeyIdsFilter ? (global::Zitadel.Filter.V2.InIDsFilter) filter_ : null; }
+      set {
+        filter_ = value;
+        filterCase_ = value == null ? FilterOneofCase.None : FilterOneofCase.KeyIdsFilter;
+      }
+    }
+
+    /// <summary>Field number for the "active_filter" field.</summary>
+    public const int ActiveFilterFieldNumber = 2;
+    /// <summary>
+    /// Filter the keys by their active status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool ActiveFilter {
+      get { return HasActiveFilter ? (bool) filter_ : false; }
+      set {
+        filter_ = value;
+        filterCase_ = FilterOneofCase.ActiveFilter;
+      }
+    }
+    /// <summary>Gets whether the "active_filter" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasActiveFilter {
+      get { return filterCase_ == FilterOneofCase.ActiveFilter; }
+    }
+    /// <summary> Clears the value of the oneof if it's currently set to "active_filter" </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearActiveFilter() {
+      if (HasActiveFilter) {
+        ClearFilter();
+      }
+    }
+
+    /// <summary>Field number for the "expiration_date_filter" field.</summary>
+    public const int ExpirationDateFilterFieldNumber = 3;
+    /// <summary>
+    /// Filter the keys by their expiration status.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Filter.V2.TimestampFilter ExpirationDateFilter {
+      get { return filterCase_ == FilterOneofCase.ExpirationDateFilter ? (global::Zitadel.Filter.V2.TimestampFilter) filter_ : null; }
+      set {
+        filter_ = value;
+        filterCase_ = value == null ? FilterOneofCase.None : FilterOneofCase.ExpirationDateFilter;
+      }
+    }
+
+    private object filter_;
+    /// <summary>Enum of possible cases for the "filter" oneof.</summary>
+    public enum FilterOneofCase {
+      None = 0,
+      KeyIdsFilter = 1,
+      ActiveFilter = 2,
+      ExpirationDateFilter = 3,
+    }
+    private FilterOneofCase filterCase_ = FilterOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public FilterOneofCase FilterCase {
+      get { return filterCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFilter() {
+      filterCase_ = FilterOneofCase.None;
+      filter_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PublicKeySearchFilter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PublicKeySearchFilter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(KeyIdsFilter, other.KeyIdsFilter)) return false;
+      if (ActiveFilter != other.ActiveFilter) return false;
+      if (!object.Equals(ExpirationDateFilter, other.ExpirationDateFilter)) return false;
+      if (FilterCase != other.FilterCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (filterCase_ == FilterOneofCase.KeyIdsFilter) hash ^= KeyIdsFilter.GetHashCode();
+      if (HasActiveFilter) hash ^= ActiveFilter.GetHashCode();
+      if (filterCase_ == FilterOneofCase.ExpirationDateFilter) hash ^= ExpirationDateFilter.GetHashCode();
+      hash ^= (int) filterCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (filterCase_ == FilterOneofCase.KeyIdsFilter) {
+        output.WriteRawTag(10);
+        output.WriteMessage(KeyIdsFilter);
+      }
+      if (HasActiveFilter) {
+        output.WriteRawTag(16);
+        output.WriteBool(ActiveFilter);
+      }
+      if (filterCase_ == FilterOneofCase.ExpirationDateFilter) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ExpirationDateFilter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (filterCase_ == FilterOneofCase.KeyIdsFilter) {
+        output.WriteRawTag(10);
+        output.WriteMessage(KeyIdsFilter);
+      }
+      if (HasActiveFilter) {
+        output.WriteRawTag(16);
+        output.WriteBool(ActiveFilter);
+      }
+      if (filterCase_ == FilterOneofCase.ExpirationDateFilter) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ExpirationDateFilter);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (filterCase_ == FilterOneofCase.KeyIdsFilter) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(KeyIdsFilter);
+      }
+      if (HasActiveFilter) {
+        size += 1 + 1;
+      }
+      if (filterCase_ == FilterOneofCase.ExpirationDateFilter) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ExpirationDateFilter);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PublicKeySearchFilter other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.FilterCase) {
+        case FilterOneofCase.KeyIdsFilter:
+          if (KeyIdsFilter == null) {
+            KeyIdsFilter = new global::Zitadel.Filter.V2.InIDsFilter();
+          }
+          KeyIdsFilter.MergeFrom(other.KeyIdsFilter);
+          break;
+        case FilterOneofCase.ActiveFilter:
+          ActiveFilter = other.ActiveFilter;
+          break;
+        case FilterOneofCase.ExpirationDateFilter:
+          if (ExpirationDateFilter == null) {
+            ExpirationDateFilter = new global::Zitadel.Filter.V2.TimestampFilter();
+          }
+          ExpirationDateFilter.MergeFrom(other.ExpirationDateFilter);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::Zitadel.Filter.V2.InIDsFilter subBuilder = new global::Zitadel.Filter.V2.InIDsFilter();
+            if (filterCase_ == FilterOneofCase.KeyIdsFilter) {
+              subBuilder.MergeFrom(KeyIdsFilter);
+            }
+            input.ReadMessage(subBuilder);
+            KeyIdsFilter = subBuilder;
+            break;
+          }
+          case 16: {
+            ActiveFilter = input.ReadBool();
+            break;
+          }
+          case 26: {
+            global::Zitadel.Filter.V2.TimestampFilter subBuilder = new global::Zitadel.Filter.V2.TimestampFilter();
+            if (filterCase_ == FilterOneofCase.ExpirationDateFilter) {
+              subBuilder.MergeFrom(ExpirationDateFilter);
+            }
+            input.ReadMessage(subBuilder);
+            ExpirationDateFilter = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::Zitadel.Filter.V2.InIDsFilter subBuilder = new global::Zitadel.Filter.V2.InIDsFilter();
+            if (filterCase_ == FilterOneofCase.KeyIdsFilter) {
+              subBuilder.MergeFrom(KeyIdsFilter);
+            }
+            input.ReadMessage(subBuilder);
+            KeyIdsFilter = subBuilder;
+            break;
+          }
+          case 16: {
+            ActiveFilter = input.ReadBool();
+            break;
+          }
+          case 26: {
+            global::Zitadel.Filter.V2.TimestampFilter subBuilder = new global::Zitadel.Filter.V2.TimestampFilter();
+            if (filterCase_ == FilterOneofCase.ExpirationDateFilter) {
+              subBuilder.MergeFrom(ExpirationDateFilter);
+            }
+            input.ReadMessage(subBuilder);
+            ExpirationDateFilter = subBuilder;
             break;
           }
         }

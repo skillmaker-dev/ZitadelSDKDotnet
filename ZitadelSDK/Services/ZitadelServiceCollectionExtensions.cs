@@ -57,6 +57,8 @@ public static class ZitadelServiceCollectionExtensions
         builder
             .Validate(options => !string.IsNullOrWhiteSpace(options.Authority),
                 "Zitadel authority must be provided.")
+            .Validate(options => !string.IsNullOrWhiteSpace(options.AuthenticationType),
+                "Zitadel authentication type must be provided.")
             .ValidateOnStart();
     }
 

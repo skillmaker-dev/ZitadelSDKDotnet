@@ -133,7 +133,7 @@ namespace Zitadel.Analytics.V2beta {
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> domains_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// The custom domains (incl. generated ones) of the instance.
+    /// The Custom Domains (incl. generated ones) of the instance.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

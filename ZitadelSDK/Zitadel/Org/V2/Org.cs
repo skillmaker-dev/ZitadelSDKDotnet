@@ -199,7 +199,7 @@ namespace Zitadel.Org.V2 {
     public const int PrimaryDomainFieldNumber = 5;
     private string primaryDomain_ = "";
     /// <summary>
-    /// Primary domain used in the organization.
+    /// Organization Domain used in the organization.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -554,7 +554,7 @@ namespace Zitadel.Org.V2 {
     public const int IsPrimaryFieldNumber = 4;
     private bool isPrimary_;
     /// <summary>
-    /// IsPrimary is a boolean flag indicating if the domain is the primary domain of the organization.
+    /// IsPrimary is a boolean flag indicating if the domain is the Organization Domain of the organization.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

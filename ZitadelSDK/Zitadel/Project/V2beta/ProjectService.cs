@@ -327,12 +327,12 @@ namespace Zitadel.Project.V2beta {
             "4gIiWml0YWRlbFxQcm9qZWN0XFYyYmV0YVxHUEJNZXRhZGF0YeoCGFppdGFk",
             "ZWw6OlByb2plY3Q6OlYyYmV0YZJB4AcSvgIKD1Byb2plY3QgU2VydmljZRKn",
             "AVRoaXMgQVBJIGlzIGludGVuZGVkIHRvIG1hbmFnZSBQcm9qZWN0cyBpbiBh",
-            "IFpJVEFERUwgT3JnYW5pemF0aW9uLiBUaGlzIHNlcnZpY2UgaXMgaW4gYmV0",
+            "IFppdGFkZWwgT3JnYW5pemF0aW9uLiBUaGlzIHNlcnZpY2UgaXMgaW4gYmV0",
             "YSBzdGF0ZS4gSXQgY2FuIEFORCB3aWxsIGNvbnRpbnVlIGJyZWFraW5nIHVu",
             "dGlsIGEgc3RhYmxlIHZlcnNpb24gaXMgcmVsZWFzZWQuIi4KB1pJVEFERUwS",
             "E2h0dHBzOi8veml0YWRlbC5jb20aDmhpQHppdGFkZWwuY29tKkcKCkFwYWNo",
             "ZSAyLjASOWh0dHBzOi8vZ2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvYmxv",
-            "Yi9tYWluL0xJQ0VOU0lORy5tZDIIMi4wLWJldGEaDiRDVVNUT00tRE9NQUlO",
+            "Yi9tYWluL0xJQ0VOU0lORy5tZDIIMi4wLWJldGEaDiRDVVNUT01fRE9NQUlO",
             "IgEvKgICATIQYXBwbGljYXRpb24vanNvbjIQYXBwbGljYXRpb24vZ3JwYzIa",
             "YXBwbGljYXRpb24vZ3JwYy13ZWIrcHJvdG86EGFwcGxpY2F0aW9uL2pzb246",
             "EGFwcGxpY2F0aW9uL2dycGM6GmFwcGxpY2F0aW9uL2dycGMtd2ViK3Byb3Rv",
@@ -340,8 +340,8 @@ namespace Zitadel.Project.V2beta {
             "dmUgcGVybWlzc2lvbiB0byBhY2Nlc3MgdGhlIHJlc291cmNlLhIbChkaFyMv",
             "ZGVmaW5pdGlvbnMvcnBjU3RhdHVzUlAKAzQwNBJJCipSZXR1cm5lZCB3aGVu",
             "IHRoZSByZXNvdXJjZSBkb2VzIG5vdCBleGlzdC4SGwoZGhcjL2RlZmluaXRp",
-            "b25zL3JwY1N0YXR1c1rCAQq/AQoGT0F1dGgyErQBCAMoBDIhJENVU1RPTS1E",
-            "T01BSU4vb2F1dGgvdjIvYXV0aG9yaXplOh0kQ1VTVE9NLURPTUFJTi9vYXV0",
+            "b25zL3JwY1N0YXR1c1rCAQq/AQoGT0F1dGgyErQBCAMoBDIhJENVU1RPTV9E",
+            "T01BSU4vb2F1dGgvdjIvYXV0aG9yaXplOh0kQ1VTVE9NX0RPTUFJTi9vYXV0",
             "aC92Mi90b2tlbkJsChAKBm9wZW5pZBIGb3BlbmlkClgKKnVybjp6aXRhZGVs",
             "OmlhbTpvcmc6cHJvamVjdDppZDp6aXRhZGVsOmF1ZBIqdXJuOnppdGFkZWw6",
             "aWFtOm9yZzpwcm9qZWN0OmlkOnppdGFkZWw6YXVkYkAKPgoGT0F1dGgyEjQK",
@@ -1489,7 +1489,7 @@ namespace Zitadel.Project.V2beta {
 
     private bool projectRoleCheck_;
     /// <summary>
-    /// When enabled ZITADEL will check if a user has a role of this project assigned when login into an application of this project.
+    /// When enabled Zitadel will check if a user has a role of this project assigned when login into an application of this project.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1519,7 +1519,7 @@ namespace Zitadel.Project.V2beta {
 
     private bool hasProjectCheck_;
     /// <summary>
-    /// When enabled ZITADEL will check if the organization of the user, that is trying to log in, has a grant to this project.
+    /// When enabled Zitadel will check if the organization of the user, that is trying to log in, has a grant to this project.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4283,7 +4283,7 @@ namespace Zitadel.Project.V2beta {
     public const int RoleKeyFieldNumber = 2;
     private string roleKey_ = "";
     /// <summary>
-    /// The key is the only relevant attribute for ZITADEL regarding the authorization checks.
+    /// The key is the only relevant attribute for Zitadel regarding the authorization checks.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4828,7 +4828,7 @@ namespace Zitadel.Project.V2beta {
     public const int RoleKeyFieldNumber = 2;
     private string roleKey_ = "";
     /// <summary>
-    /// The key is the only relevant attribute for ZITADEL regarding the authorization checks.
+    /// The key is the only relevant attribute for Zitadel regarding the authorization checks.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5385,7 +5385,7 @@ namespace Zitadel.Project.V2beta {
     public const int RoleKeyFieldNumber = 2;
     private string roleKey_ = "";
     /// <summary>
-    /// The key is the only relevant attribute for ZITADEL regarding the authorization checks.
+    /// The key is the only relevant attribute for Zitadel regarding the authorization checks.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

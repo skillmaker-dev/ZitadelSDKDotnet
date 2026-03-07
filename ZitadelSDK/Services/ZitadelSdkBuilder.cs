@@ -1,4 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ZitadelSDK.Authentication;
@@ -37,11 +38,11 @@ public class ZitadelSdkBuilder
         if (!jwtConfig.IsValid())
         {
             throw new InvalidOperationException(
-                "JWT Profile configuration is invalid. KeyId, Key, and UserId are required.");
+                "JWT Profile configuration is invalid. KeyId, Key, and UserId (or AppId/ClientId) are required.");
         }
 
         // Register the credential provider as a singleton
-        _services.AddSingleton<IZitadelCredentialProvider>(sp =>
+        ReplaceCredentialProvider(sp =>
         {
             var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
             var logger = sp.GetRequiredService<ILogger<JwtProfileCredentialProvider>>();
@@ -69,7 +70,7 @@ public class ZitadelSdkBuilder
             throw new ArgumentException("Personal access token cannot be null or empty.", nameof(token));
         }
 
-        _services.AddSingleton<IZitadelCredentialProvider>(sp =>
+        ReplaceCredentialProvider(sp =>
         {
             var options = sp.GetRequiredService<IOptions<ZitadelClientOptions>>();
             return new PersonalAccessTokenCredentialProvider(
@@ -89,7 +90,7 @@ public class ZitadelSdkBuilder
     {
         ArgumentNullException.ThrowIfNull(configure);
 
-        _services.AddSingleton<IZitadelCredentialProvider>(sp =>
+        ReplaceCredentialProvider(sp =>
         {
             var token = configure(sp);
 
@@ -105,5 +106,11 @@ public class ZitadelSdkBuilder
         });
 
         return this;
+    }
+
+    private void ReplaceCredentialProvider(Func<IServiceProvider, IZitadelCredentialProvider> implementationFactory)
+    {
+        _services.RemoveAll<IZitadelCredentialProvider>();
+        _services.AddSingleton(implementationFactory);
     }
 }

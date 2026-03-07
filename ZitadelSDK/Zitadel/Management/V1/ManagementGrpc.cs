@@ -3637,7 +3637,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListUsers with InUserIDQuery](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -3707,7 +3707,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) instead.
       ///
-      /// Create a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -3723,7 +3723,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 UpdateHumanUser](apis/resources/user_service_v2/user-service-update-human-user.api.mdx) instead.
       ///
-      /// Create/import a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create/import a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4187,7 +4187,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveTOTP](apis/resources/user_service_v2/user-service-remove-totp.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
+      /// Remove the configured OTP as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4219,7 +4219,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPSMS](apis/resources/user_service_v2/user-service-remove-otpsms.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4235,7 +4235,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPEmail](apis/resources/user_service_v2/user-service-remove-otp-email.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4247,11 +4247,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Search Passwordless/Passkey authentication
+      /// Search Passkey authentication
       ///
       /// Deprecated: use [user service v2 ListPasskeys](apis/resources/user_service_v2/user-service-list-passkeys.api.mdx) instead.
       ///
-      /// Get a list of configured passwordless/passkey authentication methods from the user. Passwordless/passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
+      /// Get a list of configured passkey authentication methods from the user. Passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4263,11 +4263,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Add Passwordless/Passkey Registration Link
+      /// Add Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4279,11 +4279,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Send Passwordless/Passkey Registration Link
+      /// Send Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4295,11 +4295,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Delete Passwordless/Passkey
+      /// Delete Passkey
       ///
       /// Deprecated: use [user service v2 RemovePasskey](apis/resources/user_service_v2/user-service-remove-passkey.api.mdx) instead.
       ///
-      /// Remove a configured passwordless/passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
+      /// Remove a configured passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4311,11 +4311,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Update Machine User
+      /// Update Service Account
       ///
       /// Deprecated: use [user service v2 UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
       ///
-      /// Change a service account/machine user. It is used for accounts with non-interactive authentication possibilities.
+      /// Change a service account/service account. It is used for accounts with non-interactive authentication possibilities.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4327,11 +4327,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Create Secret for Machine User
+      /// Create Secret for Service Account
       ///
       /// Deprecated: use [user service v2 AddSecret](apis/resources/user_service_v2/user-service-add-secret.api.mdx) instead.
       ///
-      /// Create a new secret for a machine user/service account. It is used to authenticate the user (client credential grant).
+      /// Create a new secret for a service account. It is used to authenticate the user (client credential grant).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4343,11 +4343,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Delete Secret of Machine User
+      /// Delete Secret of Service Account
       ///
       /// Deprecated: use [user service v2 RemoveSecret](apis/resources/user_service_v2/user-service-remove-secret.api.mdx) instead.
       ///
-      /// Delete a secret of a machine user/service account. The user will not be able to authenticate with the secret afterward.
+      /// Delete a secret of a service account. The user will not be able to authenticate with the secret afterward.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4359,11 +4359,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Get Machine user Key By ID
+      /// Get Service account Key By ID
       ///
       /// Deprecated: use [user service v2 ListUsers](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Get a specific Key of a machine user by its id. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get a specific Key of a service account by its id. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4379,7 +4379,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListKeys](apis/resources/user_service_v2/user-service-list-keys.api.mdx) instead.
       ///
-      /// Get the list of keys of a machine user. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get the list of keys of a service account. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4391,7 +4391,7 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Create Key for machine user
+      /// Create Key for service account
       ///
       /// Deprecated: use [user service v2 AddKey](apis/resources/user_service_v2/user-service-add-key.api.mdx) instead.
       ///
@@ -4410,7 +4410,7 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// Delete Key for machine user
+      /// Delete Key for service account
       ///
       /// Deprecated: use [user service v2 RemoveKey](apis/resources/user_service_v2/user-service-remove-key.api.mdx) instead.
       ///
@@ -4525,11 +4525,11 @@ namespace Zitadel.Management.V1 {
       }
 
       /// <summary>
-      /// List ZITADEL Permissions
+      /// List Zitadel Permissions
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
+      /// Show all the permissions the user has in Zitadel (ZITADEL Manager).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4573,7 +4573,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
-      /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
+      /// Create a new organization. Based on the provided name a domain will be generated to be able to identify users within an organization.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4813,7 +4813,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4841,7 +4841,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4857,7 +4857,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4873,7 +4873,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -4889,7 +4889,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5135,7 +5135,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5157,7 +5157,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5173,7 +5173,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5189,7 +5189,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5205,7 +5205,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5570,7 +5570,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
-      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5586,7 +5586,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
-      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5634,7 +5634,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
-      /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
+      /// Remove a project grant. All user grants (role assignments) for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5656,7 +5656,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5672,7 +5672,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5688,7 +5688,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5704,7 +5704,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5721,6 +5721,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5736,7 +5738,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
-      /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
+      /// Returns a list of user grants that match the search queries. User grants/role assignments are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5753,6 +5757,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5769,6 +5775,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5785,6 +5793,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5801,6 +5811,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5817,6 +5829,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -5832,7 +5846,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
-      /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      /// Remove a list of user grants (role assignments). The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -7027,7 +7043,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListUsers with InUserIDQuery](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7044,7 +7060,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListUsers with InUserIDQuery](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7059,7 +7075,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListUsers with InUserIDQuery](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7076,7 +7092,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListUsers with InUserIDQuery](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Returns the full user object (human or machine) including the profile, email, etc.
+      /// Returns the full user or Service Account including the profile, email, etc.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7303,7 +7319,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) instead.
       ///
-      /// Create a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7320,7 +7336,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) instead.
       ///
-      /// Create a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7335,7 +7351,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) instead.
       ///
-      /// Create a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7352,7 +7368,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 CreateUser](apis/resources/user_service_v2/user-service-create-user.api.mdx) instead.
       ///
-      /// Create a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7367,7 +7383,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 UpdateHumanUser](apis/resources/user_service_v2/user-service-update-human-user.api.mdx) instead.
       ///
-      /// Create/import a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create/import a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7384,7 +7400,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 UpdateHumanUser](apis/resources/user_service_v2/user-service-update-human-user.api.mdx) instead.
       ///
-      /// Create/import a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create/import a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -7399,7 +7415,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 UpdateHumanUser](apis/resources/user_service_v2/user-service-update-human-user.api.mdx) instead.
       ///
-      /// Create/import a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create/import a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -7416,7 +7432,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 UpdateHumanUser](apis/resources/user_service_v2/user-service-update-human-user.api.mdx) instead.
       ///
-      /// Create/import a new user with the type human. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
+      /// Create/import a new user. The newly created user will get an initialization email if either the email address is not marked as verified or no password is set. If a password is set the user will not be requested to set a new one on the first login.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9223,7 +9239,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveTOTP](apis/resources/user_service_v2/user-service-remove-totp.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
+      /// Remove the configured OTP as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9240,7 +9256,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveTOTP](apis/resources/user_service_v2/user-service-remove-totp.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
+      /// Remove the configured OTP as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9255,7 +9271,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveTOTP](apis/resources/user_service_v2/user-service-remove-totp.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
+      /// Remove the configured OTP as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9272,7 +9288,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveTOTP](apis/resources/user_service_v2/user-service-remove-totp.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
+      /// Remove the configured OTP as a factor from the user. OTP is an authentication app, like Authy or Google/Microsoft Authenticator.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9351,7 +9367,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPSMS](apis/resources/user_service_v2/user-service-remove-otpsms.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9368,7 +9384,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPSMS](apis/resources/user_service_v2/user-service-remove-otpsms.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9383,7 +9399,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPSMS](apis/resources/user_service_v2/user-service-remove-otpsms.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9400,7 +9416,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPSMS](apis/resources/user_service_v2/user-service-remove-otpsms.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
+      /// Remove the configured OTP SMS as a factor from the user. As only one OTP SMS per user is allowed, the user will not have OTP SMS as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9415,7 +9431,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPEmail](apis/resources/user_service_v2/user-service-remove-otp-email.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9432,7 +9448,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPEmail](apis/resources/user_service_v2/user-service-remove-otp-email.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9447,7 +9463,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPEmail](apis/resources/user_service_v2/user-service-remove-otp-email.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9464,7 +9480,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 RemoveOTPEmail](apis/resources/user_service_v2/user-service-remove-otp-email.api.mdx) instead.
       ///
-      /// Remove the configured One-Time Password (OTP) Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
+      /// Remove the configured OTP Email as a factor from the user. As only one OTP Email per user is allowed, the user will not have OTP Email as a second factor afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9475,11 +9491,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveHumanAuthFactorOTPEmail, null, options, request);
       }
       /// <summary>
-      /// Search Passwordless/Passkey authentication
+      /// Search Passkey authentication
       ///
       /// Deprecated: use [user service v2 ListPasskeys](apis/resources/user_service_v2/user-service-list-passkeys.api.mdx) instead.
       ///
-      /// Get a list of configured passwordless/passkey authentication methods from the user. Passwordless/passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
+      /// Get a list of configured passkey authentication methods from the user. Passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9492,11 +9508,11 @@ namespace Zitadel.Management.V1 {
         return ListHumanPasswordless(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Search Passwordless/Passkey authentication
+      /// Search Passkey authentication
       ///
       /// Deprecated: use [user service v2 ListPasskeys](apis/resources/user_service_v2/user-service-list-passkeys.api.mdx) instead.
       ///
-      /// Get a list of configured passwordless/passkey authentication methods from the user. Passwordless/passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
+      /// Get a list of configured passkey authentication methods from the user. Passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9507,11 +9523,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListHumanPasswordless, null, options, request);
       }
       /// <summary>
-      /// Search Passwordless/Passkey authentication
+      /// Search Passkey authentication
       ///
       /// Deprecated: use [user service v2 ListPasskeys](apis/resources/user_service_v2/user-service-list-passkeys.api.mdx) instead.
       ///
-      /// Get a list of configured passwordless/passkey authentication methods from the user. Passwordless/passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
+      /// Get a list of configured passkey authentication methods from the user. Passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9524,11 +9540,11 @@ namespace Zitadel.Management.V1 {
         return ListHumanPasswordlessAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Search Passwordless/Passkey authentication
+      /// Search Passkey authentication
       ///
       /// Deprecated: use [user service v2 ListPasskeys](apis/resources/user_service_v2/user-service-list-passkeys.api.mdx) instead.
       ///
-      /// Get a list of configured passwordless/passkey authentication methods from the user. Passwordless/passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
+      /// Get a list of configured passkey authentication methods from the user. Passkey is a device-dependent authentication like FingerScan, WindowsHello or a Hardware Token.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9539,11 +9555,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_ListHumanPasswordless, null, options, request);
       }
       /// <summary>
-      /// Add Passwordless/Passkey Registration Link
+      /// Add Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9556,11 +9572,11 @@ namespace Zitadel.Management.V1 {
         return AddPasswordlessRegistration(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add Passwordless/Passkey Registration Link
+      /// Add Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9571,11 +9587,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_AddPasswordlessRegistration, null, options, request);
       }
       /// <summary>
-      /// Add Passwordless/Passkey Registration Link
+      /// Add Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9588,11 +9604,11 @@ namespace Zitadel.Management.V1 {
         return AddPasswordlessRegistrationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Add Passwordless/Passkey Registration Link
+      /// Add Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and returns it in the response. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9603,11 +9619,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_AddPasswordlessRegistration, null, options, request);
       }
       /// <summary>
-      /// Send Passwordless/Passkey Registration Link
+      /// Send Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9620,11 +9636,11 @@ namespace Zitadel.Management.V1 {
         return SendPasswordlessRegistration(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Send Passwordless/Passkey Registration Link
+      /// Send Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9635,11 +9651,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_SendPasswordlessRegistration, null, options, request);
       }
       /// <summary>
-      /// Send Passwordless/Passkey Registration Link
+      /// Send Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9652,11 +9668,11 @@ namespace Zitadel.Management.V1 {
         return SendPasswordlessRegistrationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Send Passwordless/Passkey Registration Link
+      /// Send Passkey Registration Link
       ///
       /// Deprecated: use [user service v2 RegisterPasskey](apis/resources/user_service_v2/user-service-register-passkey.api.mdx) instead.
       ///
-      /// Adds a new passwordless/passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passwordless/passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
+      /// Adds a new passkey authenticator link to the user and sends it to the user per email. The link enables the user to register a new device if current passkey devices are all platform authenticators. e.g. User has already registered Windows Hello and wants to register FaceID on the iPhone.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9667,11 +9683,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_SendPasswordlessRegistration, null, options, request);
       }
       /// <summary>
-      /// Delete Passwordless/Passkey
+      /// Delete Passkey
       ///
       /// Deprecated: use [user service v2 RemovePasskey](apis/resources/user_service_v2/user-service-remove-passkey.api.mdx) instead.
       ///
-      /// Remove a configured passwordless/passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
+      /// Remove a configured passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9684,11 +9700,11 @@ namespace Zitadel.Management.V1 {
         return RemoveHumanPasswordless(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Passwordless/Passkey
+      /// Delete Passkey
       ///
       /// Deprecated: use [user service v2 RemovePasskey](apis/resources/user_service_v2/user-service-remove-passkey.api.mdx) instead.
       ///
-      /// Remove a configured passwordless/passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
+      /// Remove a configured passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9699,11 +9715,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveHumanPasswordless, null, options, request);
       }
       /// <summary>
-      /// Delete Passwordless/Passkey
+      /// Delete Passkey
       ///
       /// Deprecated: use [user service v2 RemovePasskey](apis/resources/user_service_v2/user-service-remove-passkey.api.mdx) instead.
       ///
-      /// Remove a configured passwordless/passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
+      /// Remove a configured passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9716,11 +9732,11 @@ namespace Zitadel.Management.V1 {
         return RemoveHumanPasswordlessAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Passwordless/Passkey
+      /// Delete Passkey
       ///
       /// Deprecated: use [user service v2 RemovePasskey](apis/resources/user_service_v2/user-service-remove-passkey.api.mdx) instead.
       ///
-      /// Remove a configured passwordless/passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
+      /// Remove a configured passkey authentication method from the user. (e.g FaceID, FingerScane, WindowsHello, etc.).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9731,11 +9747,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveHumanPasswordless, null, options, request);
       }
       /// <summary>
-      /// Update Machine User
+      /// Update Service Account
       ///
       /// Deprecated: use [user service v2 UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
       ///
-      /// Change a service account/machine user. It is used for accounts with non-interactive authentication possibilities.
+      /// Change a service account/service account. It is used for accounts with non-interactive authentication possibilities.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9748,11 +9764,11 @@ namespace Zitadel.Management.V1 {
         return UpdateMachine(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update Machine User
+      /// Update Service Account
       ///
       /// Deprecated: use [user service v2 UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
       ///
-      /// Change a service account/machine user. It is used for accounts with non-interactive authentication possibilities.
+      /// Change a service account/service account. It is used for accounts with non-interactive authentication possibilities.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9763,11 +9779,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateMachine, null, options, request);
       }
       /// <summary>
-      /// Update Machine User
+      /// Update Service Account
       ///
       /// Deprecated: use [user service v2 UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
       ///
-      /// Change a service account/machine user. It is used for accounts with non-interactive authentication possibilities.
+      /// Change a service account/service account. It is used for accounts with non-interactive authentication possibilities.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9780,11 +9796,11 @@ namespace Zitadel.Management.V1 {
         return UpdateMachineAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update Machine User
+      /// Update Service Account
       ///
       /// Deprecated: use [user service v2 UpdateUser](apis/resources/user_service_v2/user-service-update-user.api.mdx) instead.
       ///
-      /// Change a service account/machine user. It is used for accounts with non-interactive authentication possibilities.
+      /// Change a service account/service account. It is used for accounts with non-interactive authentication possibilities.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9795,11 +9811,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateMachine, null, options, request);
       }
       /// <summary>
-      /// Create Secret for Machine User
+      /// Create Secret for Service Account
       ///
       /// Deprecated: use [user service v2 AddSecret](apis/resources/user_service_v2/user-service-add-secret.api.mdx) instead.
       ///
-      /// Create a new secret for a machine user/service account. It is used to authenticate the user (client credential grant).
+      /// Create a new secret for a service account. It is used to authenticate the user (client credential grant).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9812,11 +9828,11 @@ namespace Zitadel.Management.V1 {
         return GenerateMachineSecret(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create Secret for Machine User
+      /// Create Secret for Service Account
       ///
       /// Deprecated: use [user service v2 AddSecret](apis/resources/user_service_v2/user-service-add-secret.api.mdx) instead.
       ///
-      /// Create a new secret for a machine user/service account. It is used to authenticate the user (client credential grant).
+      /// Create a new secret for a service account. It is used to authenticate the user (client credential grant).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9827,11 +9843,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GenerateMachineSecret, null, options, request);
       }
       /// <summary>
-      /// Create Secret for Machine User
+      /// Create Secret for Service Account
       ///
       /// Deprecated: use [user service v2 AddSecret](apis/resources/user_service_v2/user-service-add-secret.api.mdx) instead.
       ///
-      /// Create a new secret for a machine user/service account. It is used to authenticate the user (client credential grant).
+      /// Create a new secret for a service account. It is used to authenticate the user (client credential grant).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9844,11 +9860,11 @@ namespace Zitadel.Management.V1 {
         return GenerateMachineSecretAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create Secret for Machine User
+      /// Create Secret for Service Account
       ///
       /// Deprecated: use [user service v2 AddSecret](apis/resources/user_service_v2/user-service-add-secret.api.mdx) instead.
       ///
-      /// Create a new secret for a machine user/service account. It is used to authenticate the user (client credential grant).
+      /// Create a new secret for a service account. It is used to authenticate the user (client credential grant).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9859,11 +9875,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_GenerateMachineSecret, null, options, request);
       }
       /// <summary>
-      /// Delete Secret of Machine User
+      /// Delete Secret of Service Account
       ///
       /// Deprecated: use [user service v2 RemoveSecret](apis/resources/user_service_v2/user-service-remove-secret.api.mdx) instead.
       ///
-      /// Delete a secret of a machine user/service account. The user will not be able to authenticate with the secret afterward.
+      /// Delete a secret of a service account. The user will not be able to authenticate with the secret afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9876,11 +9892,11 @@ namespace Zitadel.Management.V1 {
         return RemoveMachineSecret(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Secret of Machine User
+      /// Delete Secret of Service Account
       ///
       /// Deprecated: use [user service v2 RemoveSecret](apis/resources/user_service_v2/user-service-remove-secret.api.mdx) instead.
       ///
-      /// Delete a secret of a machine user/service account. The user will not be able to authenticate with the secret afterward.
+      /// Delete a secret of a service account. The user will not be able to authenticate with the secret afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9891,11 +9907,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveMachineSecret, null, options, request);
       }
       /// <summary>
-      /// Delete Secret of Machine User
+      /// Delete Secret of Service Account
       ///
       /// Deprecated: use [user service v2 RemoveSecret](apis/resources/user_service_v2/user-service-remove-secret.api.mdx) instead.
       ///
-      /// Delete a secret of a machine user/service account. The user will not be able to authenticate with the secret afterward.
+      /// Delete a secret of a service account. The user will not be able to authenticate with the secret afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9908,11 +9924,11 @@ namespace Zitadel.Management.V1 {
         return RemoveMachineSecretAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Secret of Machine User
+      /// Delete Secret of Service Account
       ///
       /// Deprecated: use [user service v2 RemoveSecret](apis/resources/user_service_v2/user-service-remove-secret.api.mdx) instead.
       ///
-      /// Delete a secret of a machine user/service account. The user will not be able to authenticate with the secret afterward.
+      /// Delete a secret of a service account. The user will not be able to authenticate with the secret afterward.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9923,11 +9939,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveMachineSecret, null, options, request);
       }
       /// <summary>
-      /// Get Machine user Key By ID
+      /// Get Service account Key By ID
       ///
       /// Deprecated: use [user service v2 ListUsers](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Get a specific Key of a machine user by its id. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get a specific Key of a service account by its id. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9940,11 +9956,11 @@ namespace Zitadel.Management.V1 {
         return GetMachineKeyByIDs(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get Machine user Key By ID
+      /// Get Service account Key By ID
       ///
       /// Deprecated: use [user service v2 ListUsers](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Get a specific Key of a machine user by its id. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get a specific Key of a service account by its id. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9955,11 +9971,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_GetMachineKeyByIDs, null, options, request);
       }
       /// <summary>
-      /// Get Machine user Key By ID
+      /// Get Service account Key By ID
       ///
       /// Deprecated: use [user service v2 ListUsers](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Get a specific Key of a machine user by its id. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get a specific Key of a service account by its id. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -9972,11 +9988,11 @@ namespace Zitadel.Management.V1 {
         return GetMachineKeyByIDsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Get Machine user Key By ID
+      /// Get Service account Key By ID
       ///
       /// Deprecated: use [user service v2 ListUsers](apis/resources/user_service_v2/user-service-list-users.api.mdx) instead.
       ///
-      /// Get a specific Key of a machine user by its id. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get a specific Key of a service account by its id. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -9991,7 +10007,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListKeys](apis/resources/user_service_v2/user-service-list-keys.api.mdx) instead.
       ///
-      /// Get the list of keys of a machine user. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get the list of keys of a service account. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10008,7 +10024,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListKeys](apis/resources/user_service_v2/user-service-list-keys.api.mdx) instead.
       ///
-      /// Get the list of keys of a machine user. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get the list of keys of a service account. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -10023,7 +10039,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListKeys](apis/resources/user_service_v2/user-service-list-keys.api.mdx) instead.
       ///
-      /// Get the list of keys of a machine user. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get the list of keys of a service account. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10040,7 +10056,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [user service v2 ListKeys](apis/resources/user_service_v2/user-service-list-keys.api.mdx) instead.
       ///
-      /// Get the list of keys of a machine user. Machine keys are used to authenticate with jwt profile authentication.
+      /// Get the list of keys of a service account. Machine keys are used to authenticate with jwt profile authentication.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -10051,7 +10067,7 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_ListMachineKeys, null, options, request);
       }
       /// <summary>
-      /// Create Key for machine user
+      /// Create Key for service account
       ///
       /// Deprecated: use [user service v2 AddKey](apis/resources/user_service_v2/user-service-add-key.api.mdx) instead.
       ///
@@ -10071,7 +10087,7 @@ namespace Zitadel.Management.V1 {
         return AddMachineKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create Key for machine user
+      /// Create Key for service account
       ///
       /// Deprecated: use [user service v2 AddKey](apis/resources/user_service_v2/user-service-add-key.api.mdx) instead.
       ///
@@ -10089,7 +10105,7 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_AddMachineKey, null, options, request);
       }
       /// <summary>
-      /// Create Key for machine user
+      /// Create Key for service account
       ///
       /// Deprecated: use [user service v2 AddKey](apis/resources/user_service_v2/user-service-add-key.api.mdx) instead.
       ///
@@ -10109,7 +10125,7 @@ namespace Zitadel.Management.V1 {
         return AddMachineKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create Key for machine user
+      /// Create Key for service account
       ///
       /// Deprecated: use [user service v2 AddKey](apis/resources/user_service_v2/user-service-add-key.api.mdx) instead.
       ///
@@ -10127,7 +10143,7 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_AddMachineKey, null, options, request);
       }
       /// <summary>
-      /// Delete Key for machine user
+      /// Delete Key for service account
       ///
       /// Deprecated: use [user service v2 RemoveKey](apis/resources/user_service_v2/user-service-remove-key.api.mdx) instead.
       ///
@@ -10145,7 +10161,7 @@ namespace Zitadel.Management.V1 {
         return RemoveMachineKey(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Key for machine user
+      /// Delete Key for service account
       ///
       /// Deprecated: use [user service v2 RemoveKey](apis/resources/user_service_v2/user-service-remove-key.api.mdx) instead.
       ///
@@ -10161,7 +10177,7 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_RemoveMachineKey, null, options, request);
       }
       /// <summary>
-      /// Delete Key for machine user
+      /// Delete Key for service account
       ///
       /// Deprecated: use [user service v2 RemoveKey](apis/resources/user_service_v2/user-service-remove-key.api.mdx) instead.
       ///
@@ -10179,7 +10195,7 @@ namespace Zitadel.Management.V1 {
         return RemoveMachineKeyAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Key for machine user
+      /// Delete Key for service account
       ///
       /// Deprecated: use [user service v2 RemoveKey](apis/resources/user_service_v2/user-service-remove-key.api.mdx) instead.
       ///
@@ -10587,11 +10603,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RemoveHumanLinkedIDP, null, options, request);
       }
       /// <summary>
-      /// List ZITADEL Permissions
+      /// List Zitadel Permissions
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
+      /// Show all the permissions the user has in Zitadel (ZITADEL Manager).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10604,11 +10620,11 @@ namespace Zitadel.Management.V1 {
         return ListUserMemberships(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List ZITADEL Permissions
+      /// List Zitadel Permissions
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
+      /// Show all the permissions the user has in Zitadel (ZITADEL Manager).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -10619,11 +10635,11 @@ namespace Zitadel.Management.V1 {
         return CallInvoker.BlockingUnaryCall(__Method_ListUserMemberships, null, options, request);
       }
       /// <summary>
-      /// List ZITADEL Permissions
+      /// List Zitadel Permissions
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
+      /// Show all the permissions the user has in Zitadel (ZITADEL Manager).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10636,11 +10652,11 @@ namespace Zitadel.Management.V1 {
         return ListUserMembershipsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List ZITADEL Permissions
+      /// List Zitadel Permissions
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Show all the permissions the user has in ZITADEL (ZITADEL Manager).
+      /// Show all the permissions the user has in Zitadel (ZITADEL Manager).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -10759,7 +10775,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
-      /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
+      /// Create a new organization. Based on the provided name a domain will be generated to be able to identify users within an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10776,7 +10792,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
-      /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
+      /// Create a new organization. Based on the provided name a domain will be generated to be able to identify users within an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -10791,7 +10807,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
-      /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
+      /// Create a new organization. Based on the provided name a domain will be generated to be able to identify users within an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -10808,7 +10824,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 CreateOrganization](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-add-organization.api.mdx) instead
       ///
-      /// Create a new organization. Based on the given name a domain will be generated to be able to identify users within an organization.
+      /// Create a new organization. Based on the provided name a domain will be generated to be able to identify users within an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11719,7 +11735,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11736,7 +11752,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11751,7 +11767,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11768,7 +11784,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [organization service v2 VerifyOrganizationDomain](apis/resources/org_service_v2/zitadel-org-v-2-organization-service-verify-organization-domain.api.mdx) instead.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11823,7 +11839,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11840,7 +11856,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11855,7 +11871,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11872,7 +11888,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the organization level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11887,7 +11903,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11904,7 +11920,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11919,7 +11935,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11936,7 +11952,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the organization level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11951,7 +11967,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -11968,7 +11984,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -11983,7 +11999,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12000,7 +12016,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12015,7 +12031,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12032,7 +12048,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12047,7 +12063,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -12064,7 +12080,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an instance level. The user can still have roles on another level (iam, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -12995,7 +13011,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13012,7 +13028,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13027,7 +13043,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13044,7 +13060,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [project v2 service RemoveProjectRole](apis/resources/project_service_v2/zitadel-project-v-2-project-service-remove-project-role.api.mdx) instead.
       ///
-      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants.
+      /// Removes the role from the project and on every resource it has a dependency. This includes project grants and user grants (role assignments).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13079,7 +13095,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13096,7 +13112,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13111,7 +13127,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13128,7 +13144,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13143,7 +13159,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13160,7 +13176,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13175,7 +13191,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13192,7 +13208,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
+      /// Members are users with permission to administrate Zitadel on different levels. This request adds a new user to the members list on the project level with one or multiple roles.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13207,7 +13223,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13224,7 +13240,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13239,7 +13255,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13256,7 +13272,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13271,7 +13287,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13288,7 +13304,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -13303,7 +13319,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -13320,7 +13336,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on an project level. The user can still have roles on another level (iam, organization).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14723,7 +14739,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
-      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14740,7 +14756,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
-      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14755,7 +14771,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
-      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14772,7 +14788,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-create-project-grant.api.mdx) instead.
       ///
-      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Grant a project to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14787,7 +14803,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
-      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14804,7 +14820,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
-      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14819,7 +14835,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
-      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14836,7 +14852,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-update-project-grant.api.mdx) instead.
       ///
-      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the authorizations for its users. Project Grant will be listed in the granted project of the granted organization.
+      /// Change the roles of the project that is granted to another organization. The project grant will allow the granted organization to access the project and manage the role assignments for its users. Project Grant will be listed in the granted project of the granted organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -14979,7 +14995,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
-      /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
+      /// Remove a project grant. All user grants (role assignments) for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -14996,7 +15012,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
-      /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
+      /// Remove a project grant. All user grants (role assignments) for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15011,7 +15027,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
-      /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
+      /// Remove a project grant. All user grants (role assignments) for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15028,7 +15044,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteProjectGrant](apis/resources/project_service_v2/zitadel-project-v-2-project-service-delete-project-grant.api.mdx) instead.
       ///
-      /// Remove a project grant. All user grants for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
+      /// Remove a project grant. All user grants (role assignments) for this project grant will also be removed. A user will not have access to the project afterward (if permissions are checked).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15063,7 +15079,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15080,7 +15096,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15095,7 +15111,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15112,7 +15128,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [ListAdministrators](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-list-administrators.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15127,7 +15143,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15144,7 +15160,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15159,7 +15175,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15176,7 +15192,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [CreateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-create-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
+      /// Members are users with permission to administrate Zitadel on different levels. This request returns all users with memberships on the project grant level, matching the search queries. The search queries will be AND linked.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15191,7 +15207,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15208,7 +15224,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15223,7 +15239,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15240,7 +15256,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [UpdateAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-update-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
+      /// Members are users with permission to administrate Zitadel on different levels. This request changes the roles of an existing member. The whole roles list will be updated. Make sure to include roles that you don't want to change (remove).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15255,7 +15271,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15272,7 +15288,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15287,7 +15303,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15304,7 +15320,7 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: use [DeleteAdministrator](apis/resources/internal_permission_service_v2/zitadel-internal-permission-v-2-internal-permission-service-delete-administrator.api.mdx) instead.
       ///
-      /// Members are users with permission to administrate ZITADEL on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
+      /// Members are users with permission to administrate Zitadel on different levels. This request removes a user from the members list on a project grant level. The user can still have roles on another level (iam, organization, project).
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15320,6 +15336,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15337,6 +15355,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15352,6 +15372,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15369,6 +15391,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and filter by its ID.
       ///
       /// Returns a user grant per ID. A user grant is a role a user has for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15383,7 +15407,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
-      /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
+      /// Returns a list of user grants that match the search queries. User grants/role assignments are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15400,7 +15426,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
-      /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
+      /// Returns a list of user grants that match the search queries. User grants/role assignments are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15415,7 +15443,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
-      /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
+      /// Returns a list of user grants that match the search queries. User grants/role assignments are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15432,7 +15462,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [List authorizations](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-list-authorizations.api.mdx) and pass the user ID filter to search for a users grants on owned or granted projects.
       ///
-      /// Returns a list of user grants that match the search queries. User grants are the roles users have for a specific project and organization.
+      /// Returns a list of user grants that match the search queries. User grants/role assignments are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15448,6 +15480,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15465,6 +15499,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15480,6 +15516,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15497,6 +15535,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Add an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-create-authorization.api.mdx) to grant a user access to an owned or granted project.
       ///
       /// Add a user grant for a specific user. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15512,6 +15552,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15529,6 +15571,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15544,6 +15588,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15561,6 +15607,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Update an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-update-authorization.api.mdx) to update a user's roles on an owned or granted project.
       ///
       /// Update the roles of a user grant. User grants are the roles users have for a specific project and organization.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15576,6 +15624,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15593,6 +15643,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15608,6 +15660,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15625,6 +15679,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Deactivate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-deactivate-authorization.api.mdx) to disable a user's access to an owned or granted project.
       ///
       /// Deactivate the user grant. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested. An error will be returned if the user grant is already deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15640,6 +15696,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15657,6 +15715,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15672,6 +15732,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15689,6 +15751,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Activate an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-activate-authorization.api.mdx) to enable a user's access to an owned or granted project.
       ///
       /// Reactivate a deactivated user grant. The user will be able to use the granted project again. An error will be returned if the user grant is not deactivated.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15704,6 +15768,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15721,6 +15787,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15736,6 +15804,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15753,6 +15823,8 @@ namespace Zitadel.Management.V1 {
       /// Deprecated: [Delete an authorization](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove a users access to an owned or granted project.
       ///
       /// Removes the user grant from the user. The user will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15767,7 +15839,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
-      /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      /// Remove a list of user grants (role assignments). The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15784,7 +15858,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
-      /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      /// Remove a list of user grants (role assignments). The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -15799,7 +15875,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
-      /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      /// Remove a list of user grants (role assignments). The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -15816,7 +15894,9 @@ namespace Zitadel.Management.V1 {
       ///
       /// Deprecated: [Delete authorizations one after the other](apis/resources/authorization_service_v2/zitadel-authorization-v-2-authorization-service-delete-authorization.api.mdx) to remove access for multiple users on multiple owned or granted projects.
       ///
-      /// Remove a list of user grants. The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      /// Remove a list of user grants (role assignments). The users will not be able to use the granted project anymore. Also, the roles will not be included in the tokens when requested.
+      ///
+      /// Note: User grant refers to role assignments.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>

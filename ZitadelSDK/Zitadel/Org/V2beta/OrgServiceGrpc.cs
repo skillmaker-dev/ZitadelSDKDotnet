@@ -9,7 +9,7 @@ using grpc = global::Grpc.Core;
 
 namespace Zitadel.Org.V2beta {
   /// <summary>
-  /// This service is intended to manage organizations in a ZITADEL instance.
+  /// This service is intended to manage organizations in a Zitadel instance.
   ///
   /// Deprecated: use organization service v2 instead. This service will be removed in the next major version of ZITADEL.
   /// </summary>
@@ -237,7 +237,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.create`
       ///
-      /// Deprecated: Use [AddOrganization](/apis/resources/org_service_v2/organization-service-add-organization.api.mdx) instead to create an organization.
+      /// Deprecated: Use [AddOrganization](/docs/reference/api/org/zitadel.org.v2.OrganizationService.AddOrganization) instead to create an organization.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -277,7 +277,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.read`
       ///
-      /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
+      /// Deprecated: Use [ListOrganizations](/docs/reference/api/org/zitadel.org.v2.OrganizationService.ListOrganizations) instead to list organizations.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -445,7 +445,7 @@ namespace Zitadel.Org.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -534,7 +534,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.create`
       ///
-      /// Deprecated: Use [AddOrganization](/apis/resources/org_service_v2/organization-service-add-organization.api.mdx) instead to create an organization.
+      /// Deprecated: Use [AddOrganization](/docs/reference/api/org/zitadel.org.v2.OrganizationService.AddOrganization) instead to create an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -554,7 +554,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.create`
       ///
-      /// Deprecated: Use [AddOrganization](/apis/resources/org_service_v2/organization-service-add-organization.api.mdx) instead to create an organization.
+      /// Deprecated: Use [AddOrganization](/docs/reference/api/org/zitadel.org.v2.OrganizationService.AddOrganization) instead to create an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -572,7 +572,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.create`
       ///
-      /// Deprecated: Use [AddOrganization](/apis/resources/org_service_v2/organization-service-add-organization.api.mdx) instead to create an organization.
+      /// Deprecated: Use [AddOrganization](/docs/reference/api/org/zitadel.org.v2.OrganizationService.AddOrganization) instead to create an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -592,7 +592,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.create`
       ///
-      /// Deprecated: Use [AddOrganization](/apis/resources/org_service_v2/organization-service-add-organization.api.mdx) instead to create an organization.
+      /// Deprecated: Use [AddOrganization](/docs/reference/api/org/zitadel.org.v2.OrganizationService.AddOrganization) instead to create an organization.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -688,7 +688,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.read`
       ///
-      /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
+      /// Deprecated: Use [ListOrganizations](/docs/reference/api/org/zitadel.org.v2.OrganizationService.ListOrganizations) instead to list organizations.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -710,7 +710,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.read`
       ///
-      /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
+      /// Deprecated: Use [ListOrganizations](/docs/reference/api/org/zitadel.org.v2.OrganizationService.ListOrganizations) instead to list organizations.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -730,7 +730,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.read`
       ///
-      /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
+      /// Deprecated: Use [ListOrganizations](/docs/reference/api/org/zitadel.org.v2.OrganizationService.ListOrganizations) instead to list organizations.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -752,7 +752,7 @@ namespace Zitadel.Org.V2beta {
       /// Required permission:
       ///  - `org.read`
       ///
-      /// Deprecated: Use [ListOrganizations](/apis/resources/org_service_v2/organization-service-list-organizations.api.mdx) instead to list organizations.
+      /// Deprecated: Use [ListOrganizations](/docs/reference/api/org/zitadel.org.v2.OrganizationService.ListOrganizations) instead to list organizations.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -1375,7 +1375,7 @@ namespace Zitadel.Org.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1395,7 +1395,7 @@ namespace Zitadel.Org.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1413,7 +1413,7 @@ namespace Zitadel.Org.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1433,7 +1433,7 @@ namespace Zitadel.Org.V2beta {
       ///
       /// Deprecated: please move to the corresponding endpoint under organization service v2. This endpoint will be removed with the next major version of ZITADEL.
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`

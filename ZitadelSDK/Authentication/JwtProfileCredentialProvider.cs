@@ -18,7 +18,7 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     private readonly ILogger<JwtProfileCredentialProvider> _logger;
     private readonly string _authenticationScheme;
 
-    // Token cache
+    // Token cache – access is guarded by _tokenLock for correctness
     private string? _cachedAccessToken;
     private DateTime _tokenExpiration = DateTime.MinValue;
     private readonly SemaphoreSlim _tokenLock = new(1, 1);
@@ -71,20 +71,14 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     /// </summary>
     private async Task<string> GetAccessTokenAsync(string authority)
     {
-        // Check if we have a valid cached token (with 5 minute buffer before expiration)
-        if (_cachedAccessToken != null && DateTime.UtcNow < _tokenExpiration.AddMinutes(-5))
-        {
-            _logger.LogDebug("Using cached access token, expires at {Expiration}", _tokenExpiration);
-            return _cachedAccessToken;
-        }
-
-        // Use semaphore to prevent multiple simultaneous token requests
+        // Always acquire the lock to guarantee thread-safe access to cache fields
         await _tokenLock.WaitAsync();
         try
         {
-            // Double-check after acquiring lock
+            // Check if we have a valid cached token (with 5 minute buffer before expiration)
             if (_cachedAccessToken != null && DateTime.UtcNow < _tokenExpiration.AddMinutes(-5))
             {
+                _logger.LogDebug("Using cached access token, expires at {Expiration}", _tokenExpiration);
                 return _cachedAccessToken;
             }
 
@@ -106,15 +100,16 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
                 { "assertion", jwtAssertion }
             };
 
-            var response = await httpClient.PostAsync(tokenEndpoint, new FormUrlEncodedContent(requestData));
+            using var response = await httpClient.PostAsync(tokenEndpoint, new FormUrlEncodedContent(requestData));
 
             if (!response.IsSuccessStatusCode)
             {
-                var errorContent = await response.Content.ReadAsStringAsync();
-                _logger.LogError("Failed to obtain access token. Status: {StatusCode}, Response: {Response}",
-                    response.StatusCode, errorContent);
+                var errorBody = await response.Content.ReadAsStringAsync();
+                _logger.LogWarning(
+                    "Failed to obtain access token. Status: {StatusCode}, Error: {ErrorBody}",
+                    response.StatusCode, errorBody);
                 throw new InvalidOperationException(
-                    $"Failed to obtain access token from ZITADEL. Status: {response.StatusCode}, Response: {errorContent}");
+                    $"Failed to obtain access token from ZITADEL. Status: {response.StatusCode}.");
             }
 
             var tokenResponse = await response.Content.ReadFromJsonAsync<TokenResponse>();
@@ -154,10 +149,11 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     /// </summary>
     private string GenerateJwtAssertion(string authority)
     {
-        var rsaKey = RSA.Create();
+        using var rsaKey = RSA.Create();
         rsaKey.ImportFromPem(_config.Key);
+        var rsaParameters = rsaKey.ExportParameters(true);
 
-        var securityKey = new RsaSecurityKey(rsaKey)
+        var securityKey = new RsaSecurityKey(rsaParameters)
         {
             KeyId = _config.KeyId
         };

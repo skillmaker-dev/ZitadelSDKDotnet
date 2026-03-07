@@ -141,10 +141,10 @@ namespace Zitadel.System.V1 {
             "dGEgcGVyaW9kcyBkdXJhdGlvbvpCBaoBAggBUg1yZXNldEludGVydmFsEj0K",
             "BmFtb3VudBgFIAEoBEIlkkEbMhl0aGUgcXVvdGEgYW1vdW50IG9mIHVuaXRz",
             "+kIEMgIgAFIGYW1vdW50EmgKBWxpbWl0GAYgASgIQlKSQU8yTXdoZXRoZXIg",
-            "WklUQURFTCBzaG91bGQgYmxvY2sgZnVydGhlciB1c2FnZSB3aGVuIHRoZSBj",
+            "Wml0YWRlbCBzaG91bGQgYmxvY2sgZnVydGhlciB1c2FnZSB3aGVuIHRoZSBj",
             "b25maWd1cmVkIGFtb3VudCBpcyB1c2VkUgVsaW1pdBKUAQoNbm90aWZpY2F0",
             "aW9ucxgHIAMoCzIeLnppdGFkZWwucXVvdGEudjEuTm90aWZpY2F0aW9uQk6S",
-            "QUsySXRoZSBoYW5kbGVycywgWklUQURFTCBleGVjdXRlcyB3aGVuIGNlcnRh",
+            "QUsySXRoZSBoYW5kbGVycywgWml0YWRlbCBleGVjdXRlcyB3aGVuIGNlcnRh",
             "aW4gcXVvdGEgcGVyY2VudGFnZXMgYXJlIHJlYWNoZWRSDW5vdGlmaWNhdGlv",
             "bnMiRwoQQWRkUXVvdGFSZXNwb25zZRIzCgdkZXRhaWxzGAEgASgLMhkueml0",
             "YWRlbC52MS5PYmplY3REZXRhaWxzUgdkZXRhaWxzIp8GCg9TZXRRdW90YVJl",
@@ -160,10 +160,10 @@ namespace Zitadel.System.V1 {
             "b2J1Zi5EdXJhdGlvbkInkkEcMhp0aGUgcXVvdGEgcGVyaW9kcyBkdXJhdGlv",
             "bvpCBaoBAggBUg1yZXNldEludGVydmFsEjYKBmFtb3VudBgFIAEoBEIekkEb",
             "Mhl0aGUgcXVvdGEgYW1vdW50IG9mIHVuaXRzUgZhbW91bnQSaAoFbGltaXQY",
-            "BiABKAhCUpJBTzJNd2hldGhlciBaSVRBREVMIHNob3VsZCBibG9jayBmdXJ0",
+            "BiABKAhCUpJBTzJNd2hldGhlciBaaXRhZGVsIHNob3VsZCBibG9jayBmdXJ0",
             "aGVyIHVzYWdlIHdoZW4gdGhlIGNvbmZpZ3VyZWQgYW1vdW50IGlzIHVzZWRS",
             "BWxpbWl0EpQBCg1ub3RpZmljYXRpb25zGAcgAygLMh4ueml0YWRlbC5xdW90",
-            "YS52MS5Ob3RpZmljYXRpb25CTpJBSzJJdGhlIGhhbmRsZXJzLCBaSVRBREVM",
+            "YS52MS5Ob3RpZmljYXRpb25CTpJBSzJJdGhlIGhhbmRsZXJzLCBaaXRhZGVs",
             "IGV4ZWN1dGVzIHdoZW4gY2VydGFpbiBxdW90YSBwZXJjZW50YWdlcyBhcmUg",
             "cmVhY2hlZFINbm90aWZpY2F0aW9ucyJHChBTZXRRdW90YVJlc3BvbnNlEjMK",
             "B2RldGFpbHMYASABKAsyGS56aXRhZGVsLnYxLk9iamVjdERldGFpbHNSB2Rl",
@@ -382,7 +382,7 @@ namespace Zitadel.System.V1 {
             "aGUgZGlmZmVyZW50IHRlbmFudHMgd2hpdGhpbiBaSVRBREVMLiIuCgdaSVRB",
             "REVMEhNodHRwczovL3ppdGFkZWwuY29tGg5oaUB6aXRhZGVsLmNvbSpHCgpB",
             "cGFjaGUgMi4wEjlodHRwczovL2dpdGh1Yi5jb20veml0YWRlbC96aXRhZGVs",
-            "L2Jsb2IvbWFpbi9MSUNFTlNJTkcubWQyAzEuMBoOJENVU1RPTS1ET01BSU4i",
+            "L2Jsb2IvbWFpbi9MSUNFTlNJTkcubWQyAzEuMBoOJENVU1RPTV9ET01BSU4i",
             "Ci9zeXN0ZW0vdjEqAgIBMhBhcHBsaWNhdGlvbi9qc29uMhBhcHBsaWNhdGlv",
             "bi9ncnBjMhphcHBsaWNhdGlvbi9ncnBjLXdlYitwcm90bzoQYXBwbGljYXRp",
             "b24vanNvbjoQYXBwbGljYXRpb24vZ3JwYzoaYXBwbGljYXRpb24vZ3JwYy13",
@@ -7563,7 +7563,7 @@ namespace Zitadel.System.V1 {
     public const int LimitFieldNumber = 6;
     private bool limit_;
     /// <summary>
-    /// whether ZITADEL should block further usage when the configured amount is used
+    /// whether Zitadel should block further usage when the configured amount is used
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -7580,7 +7580,7 @@ namespace Zitadel.System.V1 {
         = pb::FieldCodec.ForMessage(58, global::Zitadel.Quota.V1.Notification.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Quota.V1.Notification> notifications_ = new pbc::RepeatedField<global::Zitadel.Quota.V1.Notification>();
     /// <summary>
-    /// the handlers, ZITADEL executes when certain quota percentages are reached
+    /// the handlers, Zitadel executes when certain quota percentages are reached
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8215,7 +8215,7 @@ namespace Zitadel.System.V1 {
     public const int LimitFieldNumber = 6;
     private bool limit_;
     /// <summary>
-    /// whether ZITADEL should block further usage when the configured amount is used
+    /// whether Zitadel should block further usage when the configured amount is used
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8232,7 +8232,7 @@ namespace Zitadel.System.V1 {
         = pb::FieldCodec.ForMessage(58, global::Zitadel.Quota.V1.Notification.Parser);
     private readonly pbc::RepeatedField<global::Zitadel.Quota.V1.Notification> notifications_ = new pbc::RepeatedField<global::Zitadel.Quota.V1.Notification>();
     /// <summary>
-    /// the handlers, ZITADEL executes when certain quota percentages are reached
+    /// the handlers, Zitadel executes when certain quota percentages are reached
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

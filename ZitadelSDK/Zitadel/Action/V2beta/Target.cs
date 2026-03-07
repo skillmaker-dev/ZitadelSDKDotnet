@@ -228,7 +228,7 @@ namespace Zitadel.Action.V2beta {
     public const int TimeoutFieldNumber = 8;
     private global::Google.Protobuf.WellKnownTypes.Duration timeout_;
     /// <summary>
-    /// Timeout defines the duration until ZITADEL cancels the execution.
+    /// Timeout defines the duration until Zitadel cancels the execution.
     /// If the target doesn't respond before this timeout expires, the the connection is closed and the action fails. Depending on the target type and possible setting on `interrupt_on_error` following targets will not be called. In case of a `rest_async` target only this specific target will fail, without any influence on other targets of the same execution.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

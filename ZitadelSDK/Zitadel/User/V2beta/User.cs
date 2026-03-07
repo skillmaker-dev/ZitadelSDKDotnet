@@ -87,25 +87,25 @@ namespace Zitadel.User.V2beta {
             "YS5IdW1hblVzZXJCJZJBIjIgb25lIG9mIHR5cGUgdXNlIGh1bWFuIG9yIG1h",
             "Y2hpbmVIAFIFaHVtYW4SYwoHbWFjaGluZRgHIAEoCzIgLnppdGFkZWwudXNl",
             "ci52MmJldGEuTWFjaGluZVVzZXJCJZJBIjIgb25lIG9mIHR5cGUgdXNlIGh1",
-            "bWFuIG9yIG1hY2hpbmVIAFIHbWFjaGluZUIGCgR0eXBlIpQCCgtNYWNoaW5l",
-            "VXNlchIiCgRuYW1lGAEgASgJQg6SQQtKCSJ6aXRhZGVsIlIEbmFtZRI9Cgtk",
-            "ZXNjcmlwdGlvbhgCIAEoCUIbkkEYShYiVGhlIG9uZSBhbmQgb25seSBJQU0i",
-            "UgtkZXNjcmlwdGlvbhIqCgpoYXNfc2VjcmV0GAMgASgIQguSQQhKBiJ0cnVl",
-            "IlIJaGFzU2VjcmV0EnYKEWFjY2Vzc190b2tlbl90eXBlGAQgASgOMiQueml0",
-            "YWRlbC51c2VyLnYyYmV0YS5BY2Nlc3NUb2tlblR5cGVCJJJBITIfVHlwZSBv",
-            "ZiBhY2Nlc3MgdG9rZW4gdG8gcmVjZWl2ZVIPYWNjZXNzVG9rZW5UeXBlKlgK",
-            "BkdlbmRlchIWChJHRU5ERVJfVU5TUEVDSUZJRUQQABIRCg1HRU5ERVJfRkVN",
-            "QUxFEAESDwoLR0VOREVSX01BTEUQAhISCg5HRU5ERVJfRElWRVJTRRADKkoK",
-            "D0FjY2Vzc1Rva2VuVHlwZRIcChhBQ0NFU1NfVE9LRU5fVFlQRV9CRUFSRVIQ",
-            "ABIZChVBQ0NFU1NfVE9LRU5fVFlQRV9KV1QQASqeAQoJVXNlclN0YXRlEhoK",
-            "FlVTRVJfU1RBVEVfVU5TUEVDSUZJRUQQABIVChFVU0VSX1NUQVRFX0FDVElW",
-            "RRABEhcKE1VTRVJfU1RBVEVfSU5BQ1RJVkUQAhIWChJVU0VSX1NUQVRFX0RF",
-            "TEVURUQQAxIVChFVU0VSX1NUQVRFX0xPQ0tFRBAEEhYKElVTRVJfU1RBVEVf",
-            "SU5JVElBTBAFQsgBChdjb20ueml0YWRlbC51c2VyLnYyYmV0YUIJVXNlclBy",
-            "b3RvUAFaNGdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3Vz",
-            "ZXIvdjJiZXRhO3VzZXKiAgNaVViqAhNaaXRhZGVsLlVzZXIuVjJiZXRhygIT",
-            "Wml0YWRlbFxVc2VyXFYyYmV0YeICH1ppdGFkZWxcVXNlclxWMmJldGFcR1BC",
-            "TWV0YWRhdGHqAhVaaXRhZGVsOjpVc2VyOjpWMmJldGFiBnByb3RvMw=="));
+            "bWFuIG9yIG1hY2hpbmVIAFIHbWFjaGluZUIGCgR0eXBlIpkCCgtNYWNoaW5l",
+            "VXNlchIiCgRuYW1lGAEgASgJQg6SQQtKCSJ6aXRhZGVsIlIEbmFtZRJCCgtk",
+            "ZXNjcmlwdGlvbhgCIAEoCUIgkkEdShsiVGhlIG9uZSBhbmQgb25seSBpbnN0",
+            "YW5jZSJSC2Rlc2NyaXB0aW9uEioKCmhhc19zZWNyZXQYAyABKAhCC5JBCEoG",
+            "InRydWUiUgloYXNTZWNyZXQSdgoRYWNjZXNzX3Rva2VuX3R5cGUYBCABKA4y",
+            "JC56aXRhZGVsLnVzZXIudjJiZXRhLkFjY2Vzc1Rva2VuVHlwZUIkkkEhMh9U",
+            "eXBlIG9mIGFjY2VzcyB0b2tlbiB0byByZWNlaXZlUg9hY2Nlc3NUb2tlblR5",
+            "cGUqWAoGR2VuZGVyEhYKEkdFTkRFUl9VTlNQRUNJRklFRBAAEhEKDUdFTkRF",
+            "Ul9GRU1BTEUQARIPCgtHRU5ERVJfTUFMRRACEhIKDkdFTkRFUl9ESVZFUlNF",
+            "EAMqSgoPQWNjZXNzVG9rZW5UeXBlEhwKGEFDQ0VTU19UT0tFTl9UWVBFX0JF",
+            "QVJFUhAAEhkKFUFDQ0VTU19UT0tFTl9UWVBFX0pXVBABKp4BCglVc2VyU3Rh",
+            "dGUSGgoWVVNFUl9TVEFURV9VTlNQRUNJRklFRBAAEhUKEVVTRVJfU1RBVEVf",
+            "QUNUSVZFEAESFwoTVVNFUl9TVEFURV9JTkFDVElWRRACEhYKElVTRVJfU1RB",
+            "VEVfREVMRVRFRBADEhUKEVVTRVJfU1RBVEVfTE9DS0VEEAQSFgoSVVNFUl9T",
+            "VEFURV9JTklUSUFMEAVCyAEKF2NvbS56aXRhZGVsLnVzZXIudjJiZXRhQglV",
+            "c2VyUHJvdG9QAVo0Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtnL2dy",
+            "cGMvdXNlci92MmJldGE7dXNlcqICA1pVWKoCE1ppdGFkZWwuVXNlci5WMmJl",
+            "dGHKAhNaaXRhZGVsXFVzZXJcVjJiZXRh4gIfWml0YWRlbFxVc2VyXFYyYmV0",
+            "YVxHUEJNZXRhZGF0YeoCFVppdGFkZWw6OlVzZXI6OlYyYmV0YWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Zitadel.Object.V2beta.ObjectReflection.Descriptor, global::Zitadel.User.V2beta.EmailReflection.Descriptor, global::Zitadel.User.V2beta.PhoneReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.User.V2beta.Gender), typeof(global::Zitadel.User.V2beta.AccessTokenType), typeof(global::Zitadel.User.V2beta.UserState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -200,6 +200,9 @@ namespace Zitadel.User.V2beta {
     /// <summary>Field number for the "given_name" field.</summary>
     public const int GivenNameFieldNumber = 1;
     private string givenName_ = "";
+    /// <summary>
+    /// The given name is the first name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GivenName {
@@ -212,6 +215,9 @@ namespace Zitadel.User.V2beta {
     /// <summary>Field number for the "family_name" field.</summary>
     public const int FamilyNameFieldNumber = 2;
     private string familyName_ = "";
+    /// <summary>
+    /// The family name is the last name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FamilyName {
@@ -643,6 +649,9 @@ namespace Zitadel.User.V2beta {
     /// <summary>Field number for the "given_name" field.</summary>
     public const int GivenNameFieldNumber = 1;
     private string givenName_ = "";
+    /// <summary>
+    /// The given name is the first name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string GivenName {
@@ -655,6 +664,9 @@ namespace Zitadel.User.V2beta {
     /// <summary>Field number for the "family_name" field.</summary>
     public const int FamilyNameFieldNumber = 2;
     private string familyName_ = "";
+    /// <summary>
+    /// The family name is the last name of the user
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string FamilyName {

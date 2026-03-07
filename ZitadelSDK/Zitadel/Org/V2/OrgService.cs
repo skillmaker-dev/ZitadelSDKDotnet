@@ -244,10 +244,10 @@ namespace Zitadel.Org.V2 {
             "bFxPcmdcVjLiAhpaaXRhZGVsXE9yZ1xWMlxHUEJNZXRhZGF0YeoCEFppdGFk",
             "ZWw6Ok9yZzo6VjKSQfsGEtkBChRPcmdhbml6YXRpb24gU2VydmljZRJDVGhp",
             "cyBBUEkgaXMgaW50ZW5kZWQgdG8gbWFuYWdlIG9yZ2FuaXphdGlvbnMgaW4g",
-            "YSBaSVRBREVMIGluc3RhbmNlLiIuCgdaSVRBREVMEhNodHRwczovL3ppdGFk",
+            "YSBaaXRhZGVsIGluc3RhbmNlLiIuCgdaSVRBREVMEhNodHRwczovL3ppdGFk",
             "ZWwuY29tGg5oaUB6aXRhZGVsLmNvbSpHCgpBcGFjaGUgMi4wEjlodHRwczov",
             "L2dpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL2Jsb2IvbWFpbi9MSUNFTlNJ",
-            "TkcubWQyAzIuMBoOJENVU1RPTS1ET01BSU4iAS8qAgIBMhBhcHBsaWNhdGlv",
+            "TkcubWQyAzIuMBoOJENVU1RPTV9ET01BSU4iAS8qAgIBMhBhcHBsaWNhdGlv",
             "bi9qc29uMhBhcHBsaWNhdGlvbi9ncnBjMhphcHBsaWNhdGlvbi9ncnBjLXdl",
             "Yitwcm90bzoQYXBwbGljYXRpb24vanNvbjoQYXBwbGljYXRpb24vZ3JwYzoa",
             "YXBwbGljYXRpb24vZ3JwYy13ZWIrcHJvdG9SbQoDNDAzEmYKR1JldHVybmVk",
@@ -255,8 +255,8 @@ namespace Zitadel.Org.V2 {
             "Y2VzcyB0aGUgcmVzb3VyY2UuEhsKGRoXIy9kZWZpbml0aW9ucy9ycGNTdGF0",
             "dXNSUAoDNDA0EkkKKlJldHVybmVkIHdoZW4gdGhlIHJlc291cmNlIGRvZXMg",
             "bm90IGV4aXN0LhIbChkaFyMvZGVmaW5pdGlvbnMvcnBjU3RhdHVzWsIBCr8B",
-            "CgZPQXV0aDIStAEIAygEMiEkQ1VTVE9NLURPTUFJTi9vYXV0aC92Mi9hdXRo",
-            "b3JpemU6HSRDVVNUT00tRE9NQUlOL29hdXRoL3YyL3Rva2VuQmwKEAoGb3Bl",
+            "CgZPQXV0aDIStAEIAygEMiEkQ1VTVE9NX0RPTUFJTi9vYXV0aC92Mi9hdXRo",
+            "b3JpemU6HSRDVVNUT01fRE9NQUlOL29hdXRoL3YyL3Rva2VuQmwKEAoGb3Bl",
             "bmlkEgZvcGVuaWQKWAoqdXJuOnppdGFkZWw6aWFtOm9yZzpwcm9qZWN0Omlk",
             "OnppdGFkZWw6YXVkEip1cm46eml0YWRlbDppYW06b3JnOnByb2plY3Q6aWQ6",
             "eml0YWRlbDphdWRiQAo+CgZPQXV0aDISNAoGb3BlbmlkCip1cm46eml0YWRl",
@@ -423,6 +423,7 @@ namespace Zitadel.Org.V2 {
     /// which is the recommended way. The generated ID will be returned in the response.
     ///
     /// Deprecated: use 'organization_id' field instead.
+    /// If both org_id and organization_id are set, organization_id will take precedence.
     /// </summary>
     [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1631,7 +1632,7 @@ namespace Zitadel.Org.V2 {
     /// changing the name will also change the domain.
     /// Additionally, if the domain is used as suffix for user logins,
     /// their login names will also change accordingly.
-    /// It will not affect any custom domains added to the organization.
+    /// It will not affect any Organization Domains added to the organization.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4100,7 +4101,7 @@ namespace Zitadel.Org.V2 {
     public const int CreationDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp creationDate_;
     /// <summary>
-    /// CreationDate is the timestamp when the organization domain was created.
+    /// CreationDate is the timestamp when the Organization Domain was created.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5114,7 +5115,7 @@ namespace Zitadel.Org.V2 {
     public const int DeletionDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp deletionDate_;
     /// <summary>
-    /// DeletionDate is the timestamp of the deletion of the organization domain.
+    /// DeletionDate is the timestamp of the deletion of the Organization Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6094,7 +6095,7 @@ namespace Zitadel.Org.V2 {
     public const int ChangeDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp changeDate_;
     /// <summary>
-    /// ChangeDate is the timestamp of the verification of the organization domain.
+    /// ChangeDate is the timestamp of the verification of the Organization Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

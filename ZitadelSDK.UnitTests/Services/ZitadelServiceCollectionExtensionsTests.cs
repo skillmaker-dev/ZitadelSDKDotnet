@@ -31,7 +31,7 @@ public class ZitadelServiceCollectionExtensionsTests
         // Assert
         Assert.NotNull(builder);
 
-        var descriptor = Assert.Single(services.Where(d => d.ServiceType == typeof(IZitadelSdk)));
+        var descriptor = Assert.Single(services, d => d.ServiceType == typeof(IZitadelSdk));
         Assert.Equal(ServiceLifetime.Singleton, descriptor.Lifetime);
 
         var credentialProvider = Substitute.For<IZitadelCredentialProvider>();
@@ -91,6 +91,28 @@ public class ZitadelServiceCollectionExtensionsTests
             .Build();
 
         services.AddZitadelSdk(configuration);
+
+        services.AddSingleton(Substitute.For<IZitadelCredentialProvider>());
+
+        using var provider = services.BuildServiceProvider();
+
+        // Act & Assert
+        Assert.Throws<OptionsValidationException>(
+            () => provider.GetRequiredService<IOptions<ZitadelClientOptions>>().Value);
+    }
+
+    [Fact]
+    public void AddZitadelSdk_EmptyAuthenticationType_ThrowsValidationException()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddLogging();
+
+        services.AddZitadelSdk(options =>
+        {
+            options.Authority = "https://unit.test";
+            options.AuthenticationType = "";
+        });
 
         services.AddSingleton(Substitute.For<IZitadelCredentialProvider>());
 

@@ -2,7 +2,7 @@
 
 A comprehensive ASP.NET Core SDK for integrating with ZITADEL, featuring centralized gRPC client management, flexible authentication methods for your APIs, and a clean, fluent builder API for configuration.
 
-⚠️ **Note**: This is based on the 4.4.0 version of Zitadel, it may not work with older versions of Zitadel, especially < 4.0.0.
+⚠️ **Note**: This SDK was developed with the help of AI, It may contain mistakes, however, it is always scanned for security vulnerabilities and bugs.
 
 ## 🌟 Features
 

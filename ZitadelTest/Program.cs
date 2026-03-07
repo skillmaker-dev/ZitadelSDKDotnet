@@ -70,28 +70,27 @@ builder.Services.AddZitadelClient<SettingsService.SettingsServiceClient>()
 //     });
 
 // ========================================
-// ASP.NET Authentication (Optional)
+// ASP.NET Authentication
 // ========================================
-// If you want to protect your API endpoints with [Authorize], configure ASP.NET authentication.
-// This is SEPARATE from the SDK configuration above (which is for making gRPC calls TO ZITADEL).
-//
-// For OAuth2 Introspection (validates access tokens by calling ZITADEL):
-//builder.Services.AddAuthentication()
-//    .AddZitadelIntrospection(options =>
-//    {
-//        options.Authority = builder.Configuration["ServiceAdmin:Authority"]!;
-//        options.ClientId = builder.Configuration["ServiceAdmin:JwtProfile:AppId"]!;
-//        options.ClientSecret = builder.Configuration["ServiceAdmin:JwtProfile:Key"]!;
-//        options.CacheDuration = TimeSpan.FromMinutes(5);
-//    });
+// Configure ASP.NET authentication to protect API endpoints with [Authorize].
 
-// For JWT Bearer (validates JWT tokens locally):
-//builder.Services.AddAuthentication()
-//    .AddZitadelJwtBearer(options =>
-//    {
-//        options.Authority = builder.Configuration["ServiceAdmin:Authority"]!;
-//        options.Audience = builder.Configuration["ServiceAdmin:JwtProfile:AppId"]!;
-//    });
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultScheme = "ZITADEL";
+        options.DefaultChallengeScheme = "ZITADEL";
+    })
+    .AddZitadelIntrospection("ZITADEL-Introspection", options =>
+    {
+        options.Authority = builder.Configuration["ServiceAdmin:Authority"]!;
+        options.ClientId = builder.Configuration["ServiceAdmin:JwtProfile:ClientId"]!;
+        options.ClientSecret = builder.Configuration["ServiceAdmin:JwtProfile:ClientSecret"]!;
+    })
+    .AddZitadelJwtBearer("ZITADEL", options =>
+    {
+        options.Authority = builder.Configuration["ServiceAdmin:Authority"]!;
+        options.Audience = builder.Configuration["ServiceAdmin:JwtProfile:ClientId"]!;
+    });
+
 
 var app = builder.Build();
 

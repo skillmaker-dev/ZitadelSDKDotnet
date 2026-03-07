@@ -31,7 +31,7 @@ public class ZitadelJwtBearerOptions
     /// <summary>
     /// Gets or sets whether to save the token in the authentication properties.
     /// </summary>
-    public bool SaveToken { get; set; } = true;
+    public bool SaveToken { get; set; }
 
     /// <summary>
     /// Gets or sets whether to validate the audience.
@@ -51,7 +51,7 @@ public class ZitadelJwtBearerOptions
     /// <summary>
     /// Gets or sets the clock skew to apply when validating token lifetime.
     /// </summary>
-    public TimeSpan ClockSkew { get; set; } = TimeSpan.FromMinutes(5);
+    public TimeSpan ClockSkew { get; set; } = TimeSpan.FromMinutes(2);
 
     /// <summary>
     /// Gets or sets the name claim type.

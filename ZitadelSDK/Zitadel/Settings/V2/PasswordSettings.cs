@@ -524,7 +524,7 @@ namespace Zitadel.Settings.V2 {
     public const int ExpireWarnDaysFieldNumber = 2;
     private ulong expireWarnDays_;
     /// <summary>
-    /// Amount of days after which the user should be notified of the upcoming expiry. ZITADEL will not notify the user.
+    /// Amount of days after which the user should be notified of the upcoming expiry. Zitadel will not notify the user.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

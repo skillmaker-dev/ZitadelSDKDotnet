@@ -733,7 +733,7 @@ namespace Zitadel.Webkey.V2beta {
     public const int HasherFieldNumber = 2;
     private global::Zitadel.Webkey.V2beta.RSAHasher hasher_ = global::Zitadel.Webkey.V2beta.RSAHasher.Unspecified;
     /// <summary>
-    /// Signing algrithm used. Default is SHA256.
+    /// Signing algorithm used. Default is SHA256.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

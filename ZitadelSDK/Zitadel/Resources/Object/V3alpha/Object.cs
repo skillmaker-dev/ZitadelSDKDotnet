@@ -39,7 +39,7 @@ namespace Zitadel.Resources.Object.V3alpha {
             "UgZvZmZzZXQSxgEKBWxpbWl0GAIgASgNQq8BkkGrATKjAU1heGltdW0gYW1v",
             "dW50IG9mIGV2ZW50cyByZXR1cm5lZC4gSWYgbm90IGNvbmZpZ3VyZWQgb3Ro",
             "ZXJ3aXNlLCB0aGUgZGVmYXVsdCBpcyAxMDAsIHRoZSBtYXhpbXVtIGlzIDEw",
-            "MDAuIElmIHRoZSBsaW1pdCBleGNlZWRzIHRoZSBtYXhpbXVtLCBaSVRBREVM",
+            "MDAuIElmIHRoZSBsaW1pdCBleGNlZWRzIHRoZSBtYXhpbXVtLCBaaXRhZGVs",
             "IHRocm93cyBhbiBlcnJvci5KAzEwMFIFbGltaXQSoQEKBGRlc2MYAyABKAhC",
             "jAGSQYgBMoUBZGVmYXVsdCBpcyBhc2NlbmRpbmcsIGJlY2F1c2UgdG9nZXRo",
             "ZXIgd2l0aCB0aGUgY3JlYXRpb24gZGF0ZSBzb3J0aW5nIGNvbHVtbiwgdGhp",

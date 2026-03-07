@@ -30,36 +30,36 @@ namespace Zitadel.User.V2 {
             "aWRhdGUvdmFsaWRhdGUucHJvdG8iewoIUGFzc3dvcmQSRgoIcGFzc3dvcmQY",
             "ASABKAlCKpJBGUoRIlNlY3IzdFA0c3N3MHJkISJ4yAGAAQHiQQEC+kIHcgUQ",
             "ARjIAVIIcGFzc3dvcmQSJwoPY2hhbmdlX3JlcXVpcmVkGAIgASgIUg5jaGFu",
-            "Z2VSZXF1aXJlZCKmAgoOSGFzaGVkUGFzc3dvcmQS6gEKBGhhc2gYASABKAlC",
-            "1QGSQcMBMnsiRW5jb2RlZCBoYXNoIG9mIGEgcGFzc3dvcmQgaW4gTW9kdWxh",
-            "ciBDcnlwdCBGb3JtYXQ6IGh0dHBzOi8veml0YWRlbC5jb20vZG9jcy9jb25j",
-            "ZXB0cy9hcmNoaXRlY3R1cmUvc2VjcmV0cyNoYXNoZWQtc2VjcmV0cyJKPiIk",
-            "MmEkMTIkbEowOGZxVnI4YkZKaWxSVm5EVDlRZVVMSTdZVy5uVDNpd1V2NmR5",
-            "ZzBhQ3JmbTNVWThYUjIieMgBgAEB4kEBAvpCB3IFEAEYyAFSBGhhc2gSJwoP",
-            "Y2hhbmdlX3JlcXVpcmVkGAIgASgIUg5jaGFuZ2VSZXF1aXJlZCKRAgoVU2Vu",
-            "ZFBhc3N3b3JkUmVzZXRMaW5rEk4KEW5vdGlmaWNhdGlvbl90eXBlGAEgASgO",
-            "MiEueml0YWRlbC51c2VyLnYyLk5vdGlmaWNhdGlvblR5cGVSEG5vdGlmaWNh",
-            "dGlvblR5cGUSlgEKDHVybF90ZW1wbGF0ZRgCIAEoCUJukkFhSlkiaHR0cHM6",
-            "Ly9leGFtcGxlLmNvbS9wYXNzd29yZC9jaGFuZ2V5P3VzZXJJRD17ey5Vc2Vy",
-            "SUR9fSZjb2RlPXt7LkNvZGV9fSZvcmdJRD17ey5PcmdJRH19InjIAYABAfpC",
-            "B3IFEAEYyAFIAFILdXJsVGVtcGxhdGWIAQFCDwoNX3VybF90ZW1wbGF0ZSIZ",
-            "ChdSZXR1cm5QYXNzd29yZFJlc2V0Q29kZSKgAwoLU2V0UGFzc3dvcmQSNwoI",
-            "cGFzc3dvcmQYASABKAsyGS56aXRhZGVsLnVzZXIudjIuUGFzc3dvcmRIAFII",
-            "cGFzc3dvcmQSSgoPaGFzaGVkX3Bhc3N3b3JkGAIgASgLMh8ueml0YWRlbC51",
-            "c2VyLnYyLkhhc2hlZFBhc3N3b3JkSABSDmhhc2hlZFBhc3N3b3JkElcKEGN1",
-            "cnJlbnRfcGFzc3dvcmQYAyABKAlCKpJBGUoRIlNlY3IzdFA0c3N3MHJkISJ4",
-            "yAGAAQHiQQEC+kIHcgUQARjIAUgBUg9jdXJyZW50UGFzc3dvcmQSkQEKEXZl",
-            "cmlmaWNhdGlvbl9jb2RlGAQgASgJQmKSQVIyPyJ0aGUgdmVyaWZpY2F0aW9u",
-            "IGNvZGUgZ2VuZXJhdGVkIGR1cmluZyBwYXNzd29yZCByZXNldCByZXF1ZXN0",
-            "IkoKIlNLSmQzNDJrIngUgAEB4kEBAvpCBnIEEAEYFEgBUhB2ZXJpZmljYXRp",
-            "b25Db2RlQg8KDXBhc3N3b3JkX3R5cGVCDgoMdmVyaWZpY2F0aW9uKm0KEE5v",
-            "dGlmaWNhdGlvblR5cGUSIQodTk9USUZJQ0FUSU9OX1RZUEVfVW5zcGVjaWZp",
-            "ZWQQABIbChdOT1RJRklDQVRJT05fVFlQRV9FbWFpbBABEhkKFU5PVElGSUNB",
-            "VElPTl9UWVBFX1NNUxACQrQBChNjb20ueml0YWRlbC51c2VyLnYyQg1QYXNz",
-            "d29yZFByb3RvUAFaMGdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9n",
-            "cnBjL3VzZXIvdjI7dXNlcqICA1pVWKoCD1ppdGFkZWwuVXNlci5WMsoCD1pp",
-            "dGFkZWxcVXNlclxWMuICG1ppdGFkZWxcVXNlclxWMlxHUEJNZXRhZGF0YeoC",
-            "EVppdGFkZWw6OlVzZXI6OlYyYgZwcm90bzM="));
+            "Z2VSZXF1aXJlZCKjAgoOSGFzaGVkUGFzc3dvcmQS5wEKBGhhc2gYASABKAlC",
+            "0gGSQcABMngiRW5jb2RlZCBoYXNoIG9mIGEgcGFzc3dvcmQgaW4gTW9kdWxh",
+            "ciBDcnlwdCBGb3JtYXQ6IGh0dHBzOi8veml0YWRlbC5jb20vZG9jcy9sZWFy",
+            "bi9hcmNoaXRlY3R1cmUvc2VjcmV0cyNoYXNoZWQtc2VjcmV0cyJKPiIkMmEk",
+            "MTIkbEowOGZxVnI4YkZKaWxSVm5EVDlRZVVMSTdZVy5uVDNpd1V2NmR5ZzBh",
+            "Q3JmbTNVWThYUjIieMgBgAEB4kEBAvpCB3IFEAEYyAFSBGhhc2gSJwoPY2hh",
+            "bmdlX3JlcXVpcmVkGAIgASgIUg5jaGFuZ2VSZXF1aXJlZCKRAgoVU2VuZFBh",
+            "c3N3b3JkUmVzZXRMaW5rEk4KEW5vdGlmaWNhdGlvbl90eXBlGAEgASgOMiEu",
+            "eml0YWRlbC51c2VyLnYyLk5vdGlmaWNhdGlvblR5cGVSEG5vdGlmaWNhdGlv",
+            "blR5cGUSlgEKDHVybF90ZW1wbGF0ZRgCIAEoCUJukkFhSlkiaHR0cHM6Ly9l",
+            "eGFtcGxlLmNvbS9wYXNzd29yZC9jaGFuZ2V5P3VzZXJJRD17ey5Vc2VySUR9",
+            "fSZjb2RlPXt7LkNvZGV9fSZvcmdJRD17ey5PcmdJRH19InjIAYABAfpCB3IF",
+            "EAEYyAFIAFILdXJsVGVtcGxhdGWIAQFCDwoNX3VybF90ZW1wbGF0ZSIZChdS",
+            "ZXR1cm5QYXNzd29yZFJlc2V0Q29kZSKgAwoLU2V0UGFzc3dvcmQSNwoIcGFz",
+            "c3dvcmQYASABKAsyGS56aXRhZGVsLnVzZXIudjIuUGFzc3dvcmRIAFIIcGFz",
+            "c3dvcmQSSgoPaGFzaGVkX3Bhc3N3b3JkGAIgASgLMh8ueml0YWRlbC51c2Vy",
+            "LnYyLkhhc2hlZFBhc3N3b3JkSABSDmhhc2hlZFBhc3N3b3JkElcKEGN1cnJl",
+            "bnRfcGFzc3dvcmQYAyABKAlCKpJBGUoRIlNlY3IzdFA0c3N3MHJkISJ4yAGA",
+            "AQHiQQEC+kIHcgUQARjIAUgBUg9jdXJyZW50UGFzc3dvcmQSkQEKEXZlcmlm",
+            "aWNhdGlvbl9jb2RlGAQgASgJQmKSQVIyPyJ0aGUgdmVyaWZpY2F0aW9uIGNv",
+            "ZGUgZ2VuZXJhdGVkIGR1cmluZyBwYXNzd29yZCByZXNldCByZXF1ZXN0IkoK",
+            "IlNLSmQzNDJrIngUgAEB4kEBAvpCBnIEEAEYFEgBUhB2ZXJpZmljYXRpb25D",
+            "b2RlQg8KDXBhc3N3b3JkX3R5cGVCDgoMdmVyaWZpY2F0aW9uKm0KEE5vdGlm",
+            "aWNhdGlvblR5cGUSIQodTk9USUZJQ0FUSU9OX1RZUEVfVW5zcGVjaWZpZWQQ",
+            "ABIbChdOT1RJRklDQVRJT05fVFlQRV9FbWFpbBABEhkKFU5PVElGSUNBVElP",
+            "Tl9UWVBFX1NNUxACQrQBChNjb20ueml0YWRlbC51c2VyLnYyQg1QYXNzd29y",
+            "ZFByb3RvUAFaMGdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBj",
+            "L3VzZXIvdjI7dXNlcqICA1pVWKoCD1ppdGFkZWwuVXNlci5WMsoCD1ppdGFk",
+            "ZWxcVXNlclxWMuICG1ppdGFkZWxcVXNlclxWMlxHUEJNZXRhZGF0YeoCEVpp",
+            "dGFkZWw6OlVzZXI6OlYyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Api.FieldBehaviorReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.User.V2.NotificationType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -617,8 +617,8 @@ namespace Zitadel.User.V2 {
 
     private string urlTemplate_;
     /// <summary>
-    /// Optionally set a url_template, which will be used in the password reset mail sent by ZITADEL to guide the user to your password change page.
-    /// If no template is set, the default ZITADEL url will be used.
+    /// Optionally set a url_template, which will be used in the password reset mail sent by Zitadel to guide the user to your password change page.
+    /// If no template is set, the default Zitadel url will be used.
     ///
     /// The following placeholders can be used: UserID, OrgID, Code
     /// </summary>

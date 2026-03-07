@@ -427,7 +427,7 @@ namespace Zitadel.Project.V2 {
       /// Remove Project Role
       ///
       /// Removes the role from the project and on every resource it has a dependency.
-      /// This includes project grants and user grants.
+      /// This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -499,7 +499,7 @@ namespace Zitadel.Project.V2 {
       /// <summary>
       /// Delete Project Grant
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1242,7 +1242,7 @@ namespace Zitadel.Project.V2 {
       /// Remove Project Role
       ///
       /// Removes the role from the project and on every resource it has a dependency.
-      /// This includes project grants and user grants.
+      /// This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1261,7 +1261,7 @@ namespace Zitadel.Project.V2 {
       /// Remove Project Role
       ///
       /// Removes the role from the project and on every resource it has a dependency.
-      /// This includes project grants and user grants.
+      /// This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1278,7 +1278,7 @@ namespace Zitadel.Project.V2 {
       /// Remove Project Role
       ///
       /// Removes the role from the project and on every resource it has a dependency.
-      /// This includes project grants and user grants.
+      /// This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1297,7 +1297,7 @@ namespace Zitadel.Project.V2 {
       /// Remove Project Role
       ///
       /// Removes the role from the project and on every resource it has a dependency.
-      /// This includes project grants and user grants.
+      /// This includes project grants and user grants (role assignments).
       ///
       /// Required permission:
       ///   - `project.role.write`
@@ -1533,7 +1533,7 @@ namespace Zitadel.Project.V2 {
       /// <summary>
       /// Delete Project Grant
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1554,7 +1554,7 @@ namespace Zitadel.Project.V2 {
       /// <summary>
       /// Delete Project Grant
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1573,7 +1573,7 @@ namespace Zitadel.Project.V2 {
       /// <summary>
       /// Delete Project Grant
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -1594,7 +1594,7 @@ namespace Zitadel.Project.V2 {
       /// <summary>
       /// Delete Project Grant
       ///
-      /// Delete a project grant. All user grants for this project grant will also be removed.
+      /// Delete a project grant. All user grants (role assignments) for this project grant will also be removed.
       /// A user will not have access to the project afterward (if permissions are checked).
       /// In case the project grant is not found, the request will return a successful response as
       /// the desired state is already achieved.

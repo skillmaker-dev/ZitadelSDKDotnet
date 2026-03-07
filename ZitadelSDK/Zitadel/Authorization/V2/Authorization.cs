@@ -132,7 +132,7 @@ namespace Zitadel.Authorization.V2 {
     [pbr::OriginalName("STATE_ACTIVE")] Active = 1,
     /// <summary>
     /// An inactive authorization temporarily deactivates the granted access and roles.
-    /// ZITADEL will not include the specific authorization in any authorization information like an access token.
+    /// Zitadel will not include the specific authorization in any authorization information like an access token.
     /// But the information can still be accessed using the API.
     /// </summary>
     [pbr::OriginalName("STATE_INACTIVE")] Inactive = 2,
@@ -1609,7 +1609,7 @@ namespace Zitadel.Authorization.V2 {
     public const int KeyFieldNumber = 1;
     private string key_ = "";
     /// <summary>
-    /// Key is the unique key of the role. It's the only relevant attribute for ZITADEL and
+    /// Key is the unique key of the role. It's the only relevant attribute for Zitadel and
     /// will be used for authorization checks and as claim in tokens and user info responses.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

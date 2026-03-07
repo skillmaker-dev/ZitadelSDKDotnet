@@ -174,7 +174,7 @@ namespace Zitadel.Filter.V2 {
     /// <summary>
     /// limit is the maximum amount of objects returned. The default is set to 100
     /// with a maximum of 1000 in the runtime configuration.
-    /// If the limit exceeds the maximum configured ZITADEL will throw an error.
+    /// If the limit exceeds the maximum configured Zitadel will throw an error.
     /// If no limit is present the default is taken.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

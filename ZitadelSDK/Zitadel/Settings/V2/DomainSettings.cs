@@ -118,8 +118,8 @@ namespace Zitadel.Settings.V2 {
     public const int RequireOrgDomainVerificationFieldNumber = 2;
     private bool requireOrgDomainVerification_;
     /// <summary>
-    /// If enabled, organization domains must be verified (through an DNS or HTTP challenge) upon creation.
-    /// If disabled, organization domains will be created as already verified automatically.
+    /// If enabled, Organization Domains must be verified (through an DNS or HTTP challenge) upon creation.
+    /// If disabled, Organization Domains will be created as already verified automatically.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -134,7 +134,7 @@ namespace Zitadel.Settings.V2 {
     public const int SmtpSenderAddressMatchesInstanceDomainFieldNumber = 3;
     private bool smtpSenderAddressMatchesInstanceDomain_;
     /// <summary>
-    /// If enabled, the SMTP sender address domain must match custom domain on the instance.
+    /// If enabled, the SMTP sender address domain must match Custom Domain on the instance.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

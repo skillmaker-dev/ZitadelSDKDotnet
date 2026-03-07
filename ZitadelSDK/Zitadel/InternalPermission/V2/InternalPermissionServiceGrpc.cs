@@ -10,7 +10,7 @@ using grpc = global::Grpc.Core;
 namespace Zitadel.InternalPermission.V2 {
   /// <summary>
   /// InternalPermissionService provides methods to manage permissions for resource
-  /// and their management in ZITADEL itself also known as "administrators".
+  /// and their management in Zitadel itself also known as "administrators".
   ///
   /// If you want to manage permissions and roles within your project or application,
   /// please use the AuthorizationsService.

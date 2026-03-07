@@ -719,14 +719,14 @@ namespace Zitadel.Resources.User.V3alpha {
             "ZXNvdXJjZXNcVXNlclxWM2FscGhhXEdQQk1ldGFkYXRh6gIhWml0YWRlbDo6",
             "UmVzb3VyY2VzOjpVc2VyOjpWM2FscGhhkkGiCBKAAwoMVXNlciBTZXJ2aWNl",
             "EusBVGhpcyBBUEkgaXMgaW50ZW5kZWQgdG8gbWFuYWdlIHVzZXJzIHdpdGgg",
-            "eW91ciBvd24gZGF0YSBzY2hlbWEgaW4gYSBaSVRBREVMIGluc3RhbmNlLiBU",
+            "eW91ciBvd24gZGF0YSBzY2hlbWEgaW4gYSBaaXRhZGVsIGluc3RhbmNlLiBU",
             "aGlzIHByb2plY3QgaXMgaW4gcHJldmlldyBzdGF0ZS4gSXQgY2FuIEFORCB3",
             "aWxsIGNvbnRpbnVlIGJyZWFraW5nIHVudGlsIHRoZSBzZXJ2aWNlIHByb3Zp",
             "ZGVzIHRoZSBzYW1lIGZ1bmN0aW9uYWxpdHkgYXMgdGhlIHYxIGFuZCB2MiB1",
             "c2VyIHNlcnZpY2VzLiIuCgdaSVRBREVMEhNodHRwczovL3ppdGFkZWwuY29t",
             "Gg5oaUB6aXRhZGVsLmNvbSpHCgpBcGFjaGUgMi4wEjlodHRwczovL2dpdGh1",
             "Yi5jb20veml0YWRlbC96aXRhZGVsL2Jsb2IvbWFpbi9MSUNFTlNJTkcubWQy",
-            "CTMuMC1hbHBoYRoOJENVU1RPTS1ET01BSU4iAS8qAgIBMhBhcHBsaWNhdGlv",
+            "CTMuMC1hbHBoYRoOJENVU1RPTV9ET01BSU4iAS8qAgIBMhBhcHBsaWNhdGlv",
             "bi9qc29uMhBhcHBsaWNhdGlvbi9ncnBjMhphcHBsaWNhdGlvbi9ncnBjLXdl",
             "Yitwcm90bzoQYXBwbGljYXRpb24vanNvbjoQYXBwbGljYXRpb24vZ3JwYzoa",
             "YXBwbGljYXRpb24vZ3JwYy13ZWIrcHJvdG9SbQoDNDAzEmYKR1JldHVybmVk",
@@ -734,8 +734,8 @@ namespace Zitadel.Resources.User.V3alpha {
             "Y2VzcyB0aGUgcmVzb3VyY2UuEhsKGRoXIy9kZWZpbml0aW9ucy9ycGNTdGF0",
             "dXNSUAoDNDA0EkkKKlJldHVybmVkIHdoZW4gdGhlIHJlc291cmNlIGRvZXMg",
             "bm90IGV4aXN0LhIbChkaFyMvZGVmaW5pdGlvbnMvcnBjU3RhdHVzWsIBCr8B",
-            "CgZPQXV0aDIStAEIAygEMiEkQ1VTVE9NLURPTUFJTi9vYXV0aC92Mi9hdXRo",
-            "b3JpemU6HSRDVVNUT00tRE9NQUlOL29hdXRoL3YyL3Rva2VuQmwKEAoGb3Bl",
+            "CgZPQXV0aDIStAEIAygEMiEkQ1VTVE9NX0RPTUFJTi9vYXV0aC92Mi9hdXRo",
+            "b3JpemU6HSRDVVNUT01fRE9NQUlOL29hdXRoL3YyL3Rva2VuQmwKEAoGb3Bl",
             "bmlkEgZvcGVuaWQKWAoqdXJuOnppdGFkZWw6aWFtOm9yZzpwcm9qZWN0Omlk",
             "OnppdGFkZWw6YXVkEip1cm46eml0YWRlbDppYW06b3JnOnByb2plY3Q6aWQ6",
             "eml0YWRlbDphdWRiQAo+CgZPQXV0aDISNAoGb3BlbmlkCip1cm46eml0YWRl",
@@ -6880,7 +6880,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_code" field.</summary>
     public const int SendCodeFieldNumber = 4;
     /// <summary>
-    /// Let ZITADEL send the link to the user via email.
+    /// Let Zitadel send the link to the user via email.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -8725,7 +8725,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_code" field.</summary>
     public const int SendCodeFieldNumber = 4;
     /// <summary>
-    /// Let ZITADEL send the link to the user via SMS.
+    /// Let Zitadel send the link to the user via SMS.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -11111,7 +11111,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_email" field.</summary>
     public const int SendEmailFieldNumber = 4;
     /// <summary>
-    /// Let ZITADEL send the link to the user via email.
+    /// Let Zitadel send the link to the user via email.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -11126,7 +11126,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_sms" field.</summary>
     public const int SendSmsFieldNumber = 5;
     /// <summary>
-    /// Let ZITADEL send the link to the user via SMS.
+    /// Let Zitadel send the link to the user via SMS.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -13089,7 +13089,7 @@ namespace Zitadel.Resources.User.V3alpha {
     /// <summary>Field number for the "send_link" field.</summary>
     public const int SendLinkFieldNumber = 4;
     /// <summary>
-    /// Let ZITADEL send the link to the user via email.
+    /// Let Zitadel send the link to the user via email.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -20766,7 +20766,7 @@ namespace Zitadel.Resources.User.V3alpha {
 
     private string id_;
     /// <summary>
-    /// If the user was already federated and linked to a ZITADEL user, it's id will be returned.
+    /// If the user was already federated and linked to a Zitadel user, it's id will be returned.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

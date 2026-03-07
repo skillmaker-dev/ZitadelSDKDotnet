@@ -368,7 +368,7 @@ namespace Zitadel.Settings.V2 {
         = pb::FieldCodec.ForString(18);
     private readonly pbc::RepeatedField<string> allowedOrigins_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// AllowedOrigins defines which origins are allowed to embed ZITADEL in an iframe.
+    /// AllowedOrigins defines which origins are allowed to embed Zitadel in an iframe.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

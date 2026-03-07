@@ -9,7 +9,7 @@ using grpc = global::Grpc.Core;
 
 namespace Zitadel.Org.V2 {
   /// <summary>
-  /// This service is intended to manage organizations in a ZITADEL instance.
+  /// This service is intended to manage organizations in a Zitadel instance.
   /// </summary>
   public static partial class OrganizationService
   {
@@ -418,7 +418,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Verify Organization Domain
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1250,7 +1250,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Verify Organization Domain
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1268,7 +1268,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Verify Organization Domain
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1284,7 +1284,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Verify Organization Domain
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -1302,7 +1302,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Verify Organization Domain
       ///
-      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). ZITADEL will check it and set the domain as verified if it was successful. A verify domain has to be unique.
+      /// Make sure you have added the required verification to your domain, depending on the method you have chosen (HTTP or DNS challenge). Zitadel will check it and set the domain as verified if it was successful. A verify domain has to be unique.
       ///
       /// Required permission:
       ///  - `org.write`

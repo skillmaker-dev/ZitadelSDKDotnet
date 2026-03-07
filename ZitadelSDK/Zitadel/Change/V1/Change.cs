@@ -53,7 +53,7 @@ namespace Zitadel.Change.V1 {
             "Ly9naXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9ibG9iL25ldy1ldmVudHN0",
             "b3JlL2NtZC96aXRhZGVsL3N0YXJ0dXAueWFtbC4gSWYgbm8gbGltaXQgaXMg",
             "c2V0IG9yIHRoZSBsaW1pdCBleGNlZWRzIHRoZSBtYXhpbXVtIGNvbmZpZ3Vy",
-            "ZWQgWklUQURFTCB3aWxsIHRocm93IGFuIGVycm9yLiBJZiBubyBsaW1pdCBp",
+            "ZWQgWml0YWRlbCB3aWxsIHRocm93IGFuIGVycm9yLiBJZiBubyBsaW1pdCBp",
             "cyBwcmVzZW50IHRoZSBkZWZhdWx0IGlzIHRha2VuLkoCMjBSBWxpbWl0EiwK",
             "A2FzYxgDIAEoCEIakkEXMhVkZWZhdWx0IGlzIGRlc2NlbmRpbmdSA2FzYzpf",
             "kkFcCloqHlF1ZXJ5IGZvciBDaGFuZ2VzIG9mIGFuIE9iamVjdDI4RmlsdGVy",

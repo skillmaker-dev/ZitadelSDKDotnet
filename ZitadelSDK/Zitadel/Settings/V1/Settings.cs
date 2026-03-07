@@ -61,7 +61,7 @@ namespace Zitadel.Settings.V1 {
             "C2Rlc2NyaXB0aW9uEjwKBHNtdHAYBCABKAsyJi56aXRhZGVsLnNldHRpbmdz",
             "LnYxLkVtYWlsUHJvdmlkZXJTTVRQSABSBHNtdHASPAoEaHR0cBgFIAEoCzIm",
             "LnppdGFkZWwuc2V0dGluZ3MudjEuRW1haWxQcm92aWRlckhUVFBIAFIEaHR0",
-            "cEIICgZjb25maWci3QIKEUVtYWlsUHJvdmlkZXJTTVRQEkUKDnNlbmRlcl9h",
+            "cEIICgZjb25maWcimgQKEUVtYWlsUHJvdmlkZXJTTVRQEkUKDnNlbmRlcl9h",
             "ZGRyZXNzGAEgASgJQh6SQRtKGSJub3JlcGx5QG0ueml0YWRlbC5jbG91ZCJS",
             "DXNlbmRlckFkZHJlc3MSLwoLc2VuZGVyX25hbWUYAiABKAlCDpJBC0oJIlpJ",
             "VEFERUwiUgpzZW5kZXJOYW1lEhAKA3RscxgDIAEoCFIDdGxzEjMKBGhvc3QY",
@@ -69,58 +69,71 @@ namespace Zitadel.Settings.V1 {
             "PwoEdXNlchgFIAEoCUIrkkEoSiYiMTk3ZjAxMTctNTI5ZS00NDNkLWJmNmMt",
             "MDI5MmRkOWEwMmI3IlIEdXNlchJIChByZXBseV90b19hZGRyZXNzGAYgASgJ",
             "Qh6SQRtKGSJyZXBseXRvQG0ueml0YWRlbC5jbG91ZCJSDnJlcGx5VG9BZGRy",
-            "ZXNzImEKEUVtYWlsUHJvdmlkZXJIVFRQEhoKCGVuZHBvaW50GAEgASgJUghl",
-            "bmRwb2ludBIwCgtzaWduaW5nX2tleRgCIAEoCUIPkkEMSgoiOThLbXNVNjci",
-            "UgpzaWduaW5nS2V5IrUCCgtTTVNQcm92aWRlchIzCgdkZXRhaWxzGAEgASgL",
-            "Mhkueml0YWRlbC52MS5PYmplY3REZXRhaWxzUgdkZXRhaWxzEg4KAmlkGAIg",
-            "ASgJUgJpZBJBCgVzdGF0ZRgDIAEoDjIrLnppdGFkZWwuc2V0dGluZ3MudjEu",
-            "U01TUHJvdmlkZXJDb25maWdTdGF0ZVIFc3RhdGUSIAoLZGVzY3JpcHRpb24Y",
-            "BiABKAlSC2Rlc2NyaXB0aW9uEjsKBnR3aWxpbxgEIAEoCzIhLnppdGFkZWwu",
-            "c2V0dGluZ3MudjEuVHdpbGlvQ29uZmlnSABSBnR3aWxpbxI1CgRodHRwGAUg",
-            "ASgLMh8ueml0YWRlbC5zZXR0aW5ncy52MS5IVFRQQ29uZmlnSABSBGh0dHBC",
-            "CAoGY29uZmlnInMKDFR3aWxpb0NvbmZpZxIQCgNzaWQYASABKAlSA3NpZBIj",
-            "Cg1zZW5kZXJfbnVtYmVyGAIgASgJUgxzZW5kZXJOdW1iZXISLAoSdmVyaWZ5",
-            "X3NlcnZpY2Vfc2lkGAMgASgJUhB2ZXJpZnlTZXJ2aWNlU2lkIloKCkhUVFBD",
-            "b25maWcSGgoIZW5kcG9pbnQYASABKAlSCGVuZHBvaW50EjAKC3NpZ25pbmdf",
-            "a2V5GAIgASgJQg+SQQxKCiI5OEttc1U2NyJSCnNpZ25pbmdLZXkiagoZRGVi",
-            "dWdOb3RpZmljYXRpb25Qcm92aWRlchIzCgdkZXRhaWxzGAEgASgLMhkueml0",
-            "YWRlbC52MS5PYmplY3REZXRhaWxzUgdkZXRhaWxzEhgKB2NvbXBhY3QYAiAB",
-            "KAhSB2NvbXBhY3QijAMKDE9JRENTZXR0aW5ncxIzCgdkZXRhaWxzGAEgASgL",
-            "Mhkueml0YWRlbC52MS5PYmplY3REZXRhaWxzUgdkZXRhaWxzEk0KFWFjY2Vz",
-            "c190b2tlbl9saWZldGltZRgCIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJh",
-            "dGlvblITYWNjZXNzVG9rZW5MaWZldGltZRJFChFpZF90b2tlbl9saWZldGlt",
-            "ZRgDIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvblIPaWRUb2tlbkxp",
-            "ZmV0aW1lElwKHXJlZnJlc2hfdG9rZW5faWRsZV9leHBpcmF0aW9uGAQgASgL",
-            "MhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUhpyZWZyZXNoVG9rZW5JZGxl",
-            "RXhwaXJhdGlvbhJTChhyZWZyZXNoX3Rva2VuX2V4cGlyYXRpb24YBSABKAsy",
-            "GS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25SFnJlZnJlc2hUb2tlbkV4cGly",
-            "YXRpb24i2QEKDlNlY3VyaXR5UG9saWN5EjMKB2RldGFpbHMYASABKAsyGS56",
-            "aXRhZGVsLnYxLk9iamVjdERldGFpbHNSB2RldGFpbHMSNgoXZW5hYmxlX2lm",
-            "cmFtZV9lbWJlZGRpbmcYAiABKAhSFWVuYWJsZUlmcmFtZUVtYmVkZGluZxIn",
-            "Cg9hbGxvd2VkX29yaWdpbnMYAyADKAlSDmFsbG93ZWRPcmlnaW5zEjEKFGVu",
-            "YWJsZV9pbXBlcnNvbmF0aW9uGAQgASgIUhNlbmFibGVJbXBlcnNvbmF0aW9u",
-            "KmYKD1NNVFBDb25maWdTdGF0ZRIhCh1TTVRQX0NPTkZJR19TVEFURV9VTlNQ",
-            "RUNJRklFRBAAEhYKElNNVFBfQ09ORklHX0FDVElWRRABEhgKFFNNVFBfQ09O",
-            "RklHX0lOQUNUSVZFEAIqigMKE1NlY3JldEdlbmVyYXRvclR5cGUSJQohU0VD",
-            "UkVUX0dFTkVSQVRPUl9UWVBFX1VOU1BFQ0lGSUVEEAASIwofU0VDUkVUX0dF",
-            "TkVSQVRPUl9UWVBFX0lOSVRfQ09ERRABEisKJ1NFQ1JFVF9HRU5FUkFUT1Jf",
-            "VFlQRV9WRVJJRllfRU1BSUxfQ09ERRACEisKJ1NFQ1JFVF9HRU5FUkFUT1Jf",
-            "VFlQRV9WRVJJRllfUEhPTkVfQ09ERRADEi0KKVNFQ1JFVF9HRU5FUkFUT1Jf",
-            "VFlQRV9QQVNTV09SRF9SRVNFVF9DT0RFEAQSMAosU0VDUkVUX0dFTkVSQVRP",
-            "Ul9UWVBFX1BBU1NXT1JETEVTU19JTklUX0NPREUQBRIkCiBTRUNSRVRfR0VO",
-            "RVJBVE9SX1RZUEVfQVBQX1NFQ1JFVBAGEiEKHVNFQ1JFVF9HRU5FUkFUT1Jf",
-            "VFlQRV9PVFBfU01TEAcSIwofU0VDUkVUX0dFTkVSQVRPUl9UWVBFX09UUF9F",
-            "TUFJTBAIKnIKEkVtYWlsUHJvdmlkZXJTdGF0ZRIkCiBFTUFJTF9QUk9WSURF",
-            "Ul9TVEFURV9VTlNQRUNJRklFRBAAEhkKFUVNQUlMX1BST1ZJREVSX0FDVElW",
-            "RRABEhsKF0VNQUlMX1BST1ZJREVSX0lOQUNUSVZFEAIqhQEKFlNNU1Byb3Zp",
-            "ZGVyQ29uZmlnU3RhdGUSKQolU01TX1BST1ZJREVSX0NPTkZJR19TVEFURV9V",
-            "TlNQRUNJRklFRBAAEh4KGlNNU19QUk9WSURFUl9DT05GSUdfQUNUSVZFEAES",
-            "IAocU01TX1BST1ZJREVSX0NPTkZJR19JTkFDVElWRRACQsQBChdjb20ueml0",
-            "YWRlbC5zZXR0aW5ncy52MUINU2V0dGluZ3NQcm90b1ABWixnaXRodWIuY29t",
-            "L3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5nc6ICA1pTWKoCE1pp",
-            "dGFkZWwuU2V0dGluZ3MuVjHKAhNaaXRhZGVsXFNldHRpbmdzXFYx4gIfWml0",
-            "YWRlbFxTZXR0aW5nc1xWMVxHUEJNZXRhZGF0YeoCFVppdGFkZWw6OlNldHRp",
-            "bmdzOjpWMWIGcHJvdG8z"));
+            "ZXNzEjUKBG5vbmUYCSABKAsyHy56aXRhZGVsLnNldHRpbmdzLnYxLlNNVFBO",
+            "b0F1dGhIAFIEbm9uZRI6CgVwbGFpbhgKIAEoCzIiLnppdGFkZWwuc2V0dGlu",
+            "Z3MudjEuU01UUFBsYWluQXV0aEgAUgVwbGFpbhJACgd4b2F1dGgyGAsgASgL",
+            "MiQueml0YWRlbC5zZXR0aW5ncy52MS5TTVRQWE9BdXRoMkF1dGhIAFIHeG9h",
+            "dXRoMkIGCgRBdXRoIgwKClNNVFBOb0F1dGgiDwoNU01UUFBsYWluQXV0aCLv",
+            "AgoPU01UUFhPQXV0aDJBdXRoEksKDnRva2VuX2VuZHBvaW50GAEgASgJQiSS",
+            "QSFKHyJodHRwOi8vYXV0aC5leGFtcGxlLmNvbS90b2tlbiJSDXRva2VuRW5k",
+            "cG9pbnQSOQoGc2NvcGVzGAIgAygJQiGSQR5KHFsiaHR0cHM6Ly9tYWlsLmV4",
+            "YW1wbGUuY29tIl1SBnNjb3BlcxJnChJjbGllbnRfY3JlZGVudGlhbHMYAyAB",
+            "KAsyNi56aXRhZGVsLnNldHRpbmdzLnYxLlNNVFBYT0F1dGgyQXV0aC5DbGll",
+            "bnRDcmVkZW50aWFsc0gAUhFjbGllbnRDcmVkZW50aWFscxpdChFDbGllbnRD",
+            "cmVkZW50aWFscxJICgljbGllbnRfaWQYASABKAlCK5JBKEomIjE5N2YwMTE3",
+            "LTUyOWUtNDQzZC1iZjZjLTAyOTJkZDlhMDJiNyJSCGNsaWVudElkQgwKCk9B",
+            "dXRoMlR5cGUiYQoRRW1haWxQcm92aWRlckhUVFASGgoIZW5kcG9pbnQYASAB",
+            "KAlSCGVuZHBvaW50EjAKC3NpZ25pbmdfa2V5GAIgASgJQg+SQQxKCiI5OEtt",
+            "c1U2NyJSCnNpZ25pbmdLZXkitQIKC1NNU1Byb3ZpZGVyEjMKB2RldGFpbHMY",
+            "ASABKAsyGS56aXRhZGVsLnYxLk9iamVjdERldGFpbHNSB2RldGFpbHMSDgoC",
+            "aWQYAiABKAlSAmlkEkEKBXN0YXRlGAMgASgOMisueml0YWRlbC5zZXR0aW5n",
+            "cy52MS5TTVNQcm92aWRlckNvbmZpZ1N0YXRlUgVzdGF0ZRIgCgtkZXNjcmlw",
+            "dGlvbhgGIAEoCVILZGVzY3JpcHRpb24SOwoGdHdpbGlvGAQgASgLMiEueml0",
+            "YWRlbC5zZXR0aW5ncy52MS5Ud2lsaW9Db25maWdIAFIGdHdpbGlvEjUKBGh0",
+            "dHAYBSABKAsyHy56aXRhZGVsLnNldHRpbmdzLnYxLkhUVFBDb25maWdIAFIE",
+            "aHR0cEIICgZjb25maWcicwoMVHdpbGlvQ29uZmlnEhAKA3NpZBgBIAEoCVID",
+            "c2lkEiMKDXNlbmRlcl9udW1iZXIYAiABKAlSDHNlbmRlck51bWJlchIsChJ2",
+            "ZXJpZnlfc2VydmljZV9zaWQYAyABKAlSEHZlcmlmeVNlcnZpY2VTaWQiWgoK",
+            "SFRUUENvbmZpZxIaCghlbmRwb2ludBgBIAEoCVIIZW5kcG9pbnQSMAoLc2ln",
+            "bmluZ19rZXkYAiABKAlCD5JBDEoKIjk4S21zVTY3IlIKc2lnbmluZ0tleSJq",
+            "ChlEZWJ1Z05vdGlmaWNhdGlvblByb3ZpZGVyEjMKB2RldGFpbHMYASABKAsy",
+            "GS56aXRhZGVsLnYxLk9iamVjdERldGFpbHNSB2RldGFpbHMSGAoHY29tcGFj",
+            "dBgCIAEoCFIHY29tcGFjdCKMAwoMT0lEQ1NldHRpbmdzEjMKB2RldGFpbHMY",
+            "ASABKAsyGS56aXRhZGVsLnYxLk9iamVjdERldGFpbHNSB2RldGFpbHMSTQoV",
+            "YWNjZXNzX3Rva2VuX2xpZmV0aW1lGAIgASgLMhkuZ29vZ2xlLnByb3RvYnVm",
+            "LkR1cmF0aW9uUhNhY2Nlc3NUb2tlbkxpZmV0aW1lEkUKEWlkX3Rva2VuX2xp",
+            "ZmV0aW1lGAMgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uUg9pZFRv",
+            "a2VuTGlmZXRpbWUSXAodcmVmcmVzaF90b2tlbl9pZGxlX2V4cGlyYXRpb24Y",
+            "BCABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25SGnJlZnJlc2hUb2tl",
+            "bklkbGVFeHBpcmF0aW9uElMKGHJlZnJlc2hfdG9rZW5fZXhwaXJhdGlvbhgF",
+            "IAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvblIWcmVmcmVzaFRva2Vu",
+            "RXhwaXJhdGlvbiLZAQoOU2VjdXJpdHlQb2xpY3kSMwoHZGV0YWlscxgBIAEo",
+            "CzIZLnppdGFkZWwudjEuT2JqZWN0RGV0YWlsc1IHZGV0YWlscxI2ChdlbmFi",
+            "bGVfaWZyYW1lX2VtYmVkZGluZxgCIAEoCFIVZW5hYmxlSWZyYW1lRW1iZWRk",
+            "aW5nEicKD2FsbG93ZWRfb3JpZ2lucxgDIAMoCVIOYWxsb3dlZE9yaWdpbnMS",
+            "MQoUZW5hYmxlX2ltcGVyc29uYXRpb24YBCABKAhSE2VuYWJsZUltcGVyc29u",
+            "YXRpb24qZgoPU01UUENvbmZpZ1N0YXRlEiEKHVNNVFBfQ09ORklHX1NUQVRF",
+            "X1VOU1BFQ0lGSUVEEAASFgoSU01UUF9DT05GSUdfQUNUSVZFEAESGAoUU01U",
+            "UF9DT05GSUdfSU5BQ1RJVkUQAiqKAwoTU2VjcmV0R2VuZXJhdG9yVHlwZRIl",
+            "CiFTRUNSRVRfR0VORVJBVE9SX1RZUEVfVU5TUEVDSUZJRUQQABIjCh9TRUNS",
+            "RVRfR0VORVJBVE9SX1RZUEVfSU5JVF9DT0RFEAESKwonU0VDUkVUX0dFTkVS",
+            "QVRPUl9UWVBFX1ZFUklGWV9FTUFJTF9DT0RFEAISKwonU0VDUkVUX0dFTkVS",
+            "QVRPUl9UWVBFX1ZFUklGWV9QSE9ORV9DT0RFEAMSLQopU0VDUkVUX0dFTkVS",
+            "QVRPUl9UWVBFX1BBU1NXT1JEX1JFU0VUX0NPREUQBBIwCixTRUNSRVRfR0VO",
+            "RVJBVE9SX1RZUEVfUEFTU1dPUkRMRVNTX0lOSVRfQ09ERRAFEiQKIFNFQ1JF",
+            "VF9HRU5FUkFUT1JfVFlQRV9BUFBfU0VDUkVUEAYSIQodU0VDUkVUX0dFTkVS",
+            "QVRPUl9UWVBFX09UUF9TTVMQBxIjCh9TRUNSRVRfR0VORVJBVE9SX1RZUEVf",
+            "T1RQX0VNQUlMEAgqcgoSRW1haWxQcm92aWRlclN0YXRlEiQKIEVNQUlMX1BS",
+            "T1ZJREVSX1NUQVRFX1VOU1BFQ0lGSUVEEAASGQoVRU1BSUxfUFJPVklERVJf",
+            "QUNUSVZFEAESGwoXRU1BSUxfUFJPVklERVJfSU5BQ1RJVkUQAiqFAQoWU01T",
+            "UHJvdmlkZXJDb25maWdTdGF0ZRIpCiVTTVNfUFJPVklERVJfQ09ORklHX1NU",
+            "QVRFX1VOU1BFQ0lGSUVEEAASHgoaU01TX1BST1ZJREVSX0NPTkZJR19BQ1RJ",
+            "VkUQARIgChxTTVNfUFJPVklERVJfQ09ORklHX0lOQUNUSVZFEAJCxAEKF2Nv",
+            "bS56aXRhZGVsLnNldHRpbmdzLnYxQg1TZXR0aW5nc1Byb3RvUAFaLGdpdGh1",
+            "Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3NldHRpbmdzogIDWlNY",
+            "qgITWml0YWRlbC5TZXR0aW5ncy5WMcoCE1ppdGFkZWxcU2V0dGluZ3NcVjHi",
+            "Ah9aaXRhZGVsXFNldHRpbmdzXFYxXEdQQk1ldGFkYXRh6gIVWml0YWRlbDo6",
+            "U2V0dGluZ3M6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Zitadel.V1.ObjectReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Settings.V1.SMTPConfigState), typeof(global::Zitadel.Settings.V1.SecretGeneratorType), typeof(global::Zitadel.Settings.V1.EmailProviderState), typeof(global::Zitadel.Settings.V1.SMSProviderConfigState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -129,7 +142,10 @@ namespace Zitadel.Settings.V1 {
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SecretGeneratorTypeQuery), global::Zitadel.Settings.V1.SecretGeneratorTypeQuery.Parser, new[]{ "GeneratorType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SMTPConfig), global::Zitadel.Settings.V1.SMTPConfig.Parser, new[]{ "Details", "SenderAddress", "SenderName", "Tls", "Host", "User", "ReplyToAddress", "State", "Description", "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.EmailProvider), global::Zitadel.Settings.V1.EmailProvider.Parser, new[]{ "Details", "Id", "State", "Description", "Smtp", "Http" }, new[]{ "Config" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.EmailProviderSMTP), global::Zitadel.Settings.V1.EmailProviderSMTP.Parser, new[]{ "SenderAddress", "SenderName", "Tls", "Host", "User", "ReplyToAddress" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.EmailProviderSMTP), global::Zitadel.Settings.V1.EmailProviderSMTP.Parser, new[]{ "SenderAddress", "SenderName", "Tls", "Host", "User", "ReplyToAddress", "None", "Plain", "Xoauth2" }, new[]{ "Auth" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SMTPNoAuth), global::Zitadel.Settings.V1.SMTPNoAuth.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SMTPPlainAuth), global::Zitadel.Settings.V1.SMTPPlainAuth.Parser, null, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SMTPXOAuth2Auth), global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Parser, new[]{ "TokenEndpoint", "Scopes", "ClientCredentials" }, new[]{ "OAuth2Type" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials), global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials.Parser, new[]{ "ClientId" }, null, null, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.EmailProviderHTTP), global::Zitadel.Settings.V1.EmailProviderHTTP.Parser, new[]{ "Endpoint", "SigningKey" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.SMSProvider), global::Zitadel.Settings.V1.SMSProvider.Parser, new[]{ "Details", "Id", "State", "Description", "Twilio", "Http" }, new[]{ "Config" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V1.TwilioConfig), global::Zitadel.Settings.V1.TwilioConfig.Parser, new[]{ "Sid", "SenderNumber", "VerifyServiceSid" }, null, null, null, null),
@@ -2122,6 +2138,18 @@ namespace Zitadel.Settings.V1 {
       host_ = other.host_;
       user_ = other.user_;
       replyToAddress_ = other.replyToAddress_;
+      switch (other.AuthCase) {
+        case AuthOneofCase.None_:
+          None = other.None.Clone();
+          break;
+        case AuthOneofCase.Plain:
+          Plain = other.Plain.Clone();
+          break;
+        case AuthOneofCase.Xoauth2:
+          Xoauth2 = other.Xoauth2.Clone();
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2203,6 +2231,64 @@ namespace Zitadel.Settings.V1 {
       }
     }
 
+    /// <summary>Field number for the "none" field.</summary>
+    public const int NoneFieldNumber = 9;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Settings.V1.SMTPNoAuth None {
+      get { return authCase_ == AuthOneofCase.None_ ? (global::Zitadel.Settings.V1.SMTPNoAuth) auth_ : null; }
+      set {
+        auth_ = value;
+        authCase_ = value == null ? AuthOneofCase.None : AuthOneofCase.None_;
+      }
+    }
+
+    /// <summary>Field number for the "plain" field.</summary>
+    public const int PlainFieldNumber = 10;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Settings.V1.SMTPPlainAuth Plain {
+      get { return authCase_ == AuthOneofCase.Plain ? (global::Zitadel.Settings.V1.SMTPPlainAuth) auth_ : null; }
+      set {
+        auth_ = value;
+        authCase_ = value == null ? AuthOneofCase.None : AuthOneofCase.Plain;
+      }
+    }
+
+    /// <summary>Field number for the "xoauth2" field.</summary>
+    public const int Xoauth2FieldNumber = 11;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Settings.V1.SMTPXOAuth2Auth Xoauth2 {
+      get { return authCase_ == AuthOneofCase.Xoauth2 ? (global::Zitadel.Settings.V1.SMTPXOAuth2Auth) auth_ : null; }
+      set {
+        auth_ = value;
+        authCase_ = value == null ? AuthOneofCase.None : AuthOneofCase.Xoauth2;
+      }
+    }
+
+    private object auth_;
+    /// <summary>Enum of possible cases for the "Auth" oneof.</summary>
+    public enum AuthOneofCase {
+      None = 0,
+      None_ = 9,
+      Plain = 10,
+      Xoauth2 = 11,
+    }
+    private AuthOneofCase authCase_ = AuthOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AuthOneofCase AuthCase {
+      get { return authCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAuth() {
+      authCase_ = AuthOneofCase.None;
+      auth_ = null;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -2224,6 +2310,10 @@ namespace Zitadel.Settings.V1 {
       if (Host != other.Host) return false;
       if (User != other.User) return false;
       if (ReplyToAddress != other.ReplyToAddress) return false;
+      if (!object.Equals(None, other.None)) return false;
+      if (!object.Equals(Plain, other.Plain)) return false;
+      if (!object.Equals(Xoauth2, other.Xoauth2)) return false;
+      if (AuthCase != other.AuthCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2237,6 +2327,10 @@ namespace Zitadel.Settings.V1 {
       if (Host.Length != 0) hash ^= Host.GetHashCode();
       if (User.Length != 0) hash ^= User.GetHashCode();
       if (ReplyToAddress.Length != 0) hash ^= ReplyToAddress.GetHashCode();
+      if (authCase_ == AuthOneofCase.None_) hash ^= None.GetHashCode();
+      if (authCase_ == AuthOneofCase.Plain) hash ^= Plain.GetHashCode();
+      if (authCase_ == AuthOneofCase.Xoauth2) hash ^= Xoauth2.GetHashCode();
+      hash ^= (int) authCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2279,6 +2373,18 @@ namespace Zitadel.Settings.V1 {
         output.WriteRawTag(50);
         output.WriteString(ReplyToAddress);
       }
+      if (authCase_ == AuthOneofCase.None_) {
+        output.WriteRawTag(74);
+        output.WriteMessage(None);
+      }
+      if (authCase_ == AuthOneofCase.Plain) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Plain);
+      }
+      if (authCase_ == AuthOneofCase.Xoauth2) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Xoauth2);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -2313,6 +2419,18 @@ namespace Zitadel.Settings.V1 {
         output.WriteRawTag(50);
         output.WriteString(ReplyToAddress);
       }
+      if (authCase_ == AuthOneofCase.None_) {
+        output.WriteRawTag(74);
+        output.WriteMessage(None);
+      }
+      if (authCase_ == AuthOneofCase.Plain) {
+        output.WriteRawTag(82);
+        output.WriteMessage(Plain);
+      }
+      if (authCase_ == AuthOneofCase.Xoauth2) {
+        output.WriteRawTag(90);
+        output.WriteMessage(Xoauth2);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -2340,6 +2458,15 @@ namespace Zitadel.Settings.V1 {
       }
       if (ReplyToAddress.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ReplyToAddress);
+      }
+      if (authCase_ == AuthOneofCase.None_) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(None);
+      }
+      if (authCase_ == AuthOneofCase.Plain) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Plain);
+      }
+      if (authCase_ == AuthOneofCase.Xoauth2) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Xoauth2);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2371,6 +2498,27 @@ namespace Zitadel.Settings.V1 {
       if (other.ReplyToAddress.Length != 0) {
         ReplyToAddress = other.ReplyToAddress;
       }
+      switch (other.AuthCase) {
+        case AuthOneofCase.None_:
+          if (None == null) {
+            None = new global::Zitadel.Settings.V1.SMTPNoAuth();
+          }
+          None.MergeFrom(other.None);
+          break;
+        case AuthOneofCase.Plain:
+          if (Plain == null) {
+            Plain = new global::Zitadel.Settings.V1.SMTPPlainAuth();
+          }
+          Plain.MergeFrom(other.Plain);
+          break;
+        case AuthOneofCase.Xoauth2:
+          if (Xoauth2 == null) {
+            Xoauth2 = new global::Zitadel.Settings.V1.SMTPXOAuth2Auth();
+          }
+          Xoauth2.MergeFrom(other.Xoauth2);
+          break;
+      }
+
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2412,6 +2560,33 @@ namespace Zitadel.Settings.V1 {
           }
           case 50: {
             ReplyToAddress = input.ReadString();
+            break;
+          }
+          case 74: {
+            global::Zitadel.Settings.V1.SMTPNoAuth subBuilder = new global::Zitadel.Settings.V1.SMTPNoAuth();
+            if (authCase_ == AuthOneofCase.None_) {
+              subBuilder.MergeFrom(None);
+            }
+            input.ReadMessage(subBuilder);
+            None = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Zitadel.Settings.V1.SMTPPlainAuth subBuilder = new global::Zitadel.Settings.V1.SMTPPlainAuth();
+            if (authCase_ == AuthOneofCase.Plain) {
+              subBuilder.MergeFrom(Plain);
+            }
+            input.ReadMessage(subBuilder);
+            Plain = subBuilder;
+            break;
+          }
+          case 90: {
+            global::Zitadel.Settings.V1.SMTPXOAuth2Auth subBuilder = new global::Zitadel.Settings.V1.SMTPXOAuth2Auth();
+            if (authCase_ == AuthOneofCase.Xoauth2) {
+              subBuilder.MergeFrom(Xoauth2);
+            }
+            input.ReadMessage(subBuilder);
+            Xoauth2 = subBuilder;
             break;
           }
         }
@@ -2457,10 +2632,892 @@ namespace Zitadel.Settings.V1 {
             ReplyToAddress = input.ReadString();
             break;
           }
+          case 74: {
+            global::Zitadel.Settings.V1.SMTPNoAuth subBuilder = new global::Zitadel.Settings.V1.SMTPNoAuth();
+            if (authCase_ == AuthOneofCase.None_) {
+              subBuilder.MergeFrom(None);
+            }
+            input.ReadMessage(subBuilder);
+            None = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Zitadel.Settings.V1.SMTPPlainAuth subBuilder = new global::Zitadel.Settings.V1.SMTPPlainAuth();
+            if (authCase_ == AuthOneofCase.Plain) {
+              subBuilder.MergeFrom(Plain);
+            }
+            input.ReadMessage(subBuilder);
+            Plain = subBuilder;
+            break;
+          }
+          case 90: {
+            global::Zitadel.Settings.V1.SMTPXOAuth2Auth subBuilder = new global::Zitadel.Settings.V1.SMTPXOAuth2Auth();
+            if (authCase_ == AuthOneofCase.Xoauth2) {
+              subBuilder.MergeFrom(Xoauth2);
+            }
+            input.ReadMessage(subBuilder);
+            Xoauth2 = subBuilder;
+            break;
+          }
         }
       }
     }
     #endif
+
+  }
+
+  /// <summary>
+  /// SMTPNoAuth can be used when no authentication is required for the SMTP connection.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SMTPNoAuth : pb::IMessage<SMTPNoAuth>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SMTPNoAuth> _parser = new pb::MessageParser<SMTPNoAuth>(() => new SMTPNoAuth());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SMTPNoAuth> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPNoAuth() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPNoAuth(SMTPNoAuth other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPNoAuth Clone() {
+      return new SMTPNoAuth(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SMTPNoAuth);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SMTPNoAuth other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SMTPNoAuth other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// SMTPPlainAuth adds plain authentication to the smtp connection. The username of the parent configuration is used in
+  /// combination with the password in this message.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SMTPPlainAuth : pb::IMessage<SMTPPlainAuth>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SMTPPlainAuth> _parser = new pb::MessageParser<SMTPPlainAuth>(() => new SMTPPlainAuth());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SMTPPlainAuth> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPPlainAuth() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPPlainAuth(SMTPPlainAuth other) : this() {
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPPlainAuth Clone() {
+      return new SMTPPlainAuth(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SMTPPlainAuth);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SMTPPlainAuth other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SMTPPlainAuth other) {
+      if (other == null) {
+        return;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+        }
+      }
+    }
+    #endif
+
+  }
+
+  /// <summary>
+  /// SMTPXOAuth2Auth adds XOAut2 authentication to the smtp connection. The username of the parent configuration is used
+  /// in combination with the other parameters of this message.
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SMTPXOAuth2Auth : pb::IMessage<SMTPXOAuth2Auth>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SMTPXOAuth2Auth> _parser = new pb::MessageParser<SMTPXOAuth2Auth>(() => new SMTPXOAuth2Auth());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SMTPXOAuth2Auth> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPXOAuth2Auth() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPXOAuth2Auth(SMTPXOAuth2Auth other) : this() {
+      tokenEndpoint_ = other.tokenEndpoint_;
+      scopes_ = other.scopes_.Clone();
+      switch (other.OAuth2TypeCase) {
+        case OAuth2TypeOneofCase.ClientCredentials:
+          ClientCredentials = other.ClientCredentials.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SMTPXOAuth2Auth Clone() {
+      return new SMTPXOAuth2Auth(this);
+    }
+
+    /// <summary>Field number for the "token_endpoint" field.</summary>
+    public const int TokenEndpointFieldNumber = 1;
+    private string tokenEndpoint_ = "";
+    /// <summary>
+    /// token_endpoint is the endpoint from which a token will be requested according to the oauth2 specification.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TokenEndpoint {
+      get { return tokenEndpoint_; }
+      set {
+        tokenEndpoint_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "scopes" field.</summary>
+    public const int ScopesFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_scopes_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> scopes_ = new pbc::RepeatedField<string>();
+    /// <summary>
+    /// scopes is a list of scopes which should be requested from the authorization service. To authorize a token to
+    /// use the smtp functionality, the server requires a specific scope. These scopes can be found in the documentation
+    /// of the provider.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Scopes {
+      get { return scopes_; }
+    }
+
+    /// <summary>Field number for the "client_credentials" field.</summary>
+    public const int ClientCredentialsFieldNumber = 3;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials ClientCredentials {
+      get { return oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials ? (global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials) oAuth2Type_ : null; }
+      set {
+        oAuth2Type_ = value;
+        oAuth2TypeCase_ = value == null ? OAuth2TypeOneofCase.None : OAuth2TypeOneofCase.ClientCredentials;
+      }
+    }
+
+    private object oAuth2Type_;
+    /// <summary>Enum of possible cases for the "OAuth2Type" oneof.</summary>
+    public enum OAuth2TypeOneofCase {
+      None = 0,
+      ClientCredentials = 3,
+    }
+    private OAuth2TypeOneofCase oAuth2TypeCase_ = OAuth2TypeOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public OAuth2TypeOneofCase OAuth2TypeCase {
+      get { return oAuth2TypeCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOAuth2Type() {
+      oAuth2TypeCase_ = OAuth2TypeOneofCase.None;
+      oAuth2Type_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SMTPXOAuth2Auth);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SMTPXOAuth2Auth other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TokenEndpoint != other.TokenEndpoint) return false;
+      if(!scopes_.Equals(other.scopes_)) return false;
+      if (!object.Equals(ClientCredentials, other.ClientCredentials)) return false;
+      if (OAuth2TypeCase != other.OAuth2TypeCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TokenEndpoint.Length != 0) hash ^= TokenEndpoint.GetHashCode();
+      hash ^= scopes_.GetHashCode();
+      if (oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials) hash ^= ClientCredentials.GetHashCode();
+      hash ^= (int) oAuth2TypeCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TokenEndpoint.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TokenEndpoint);
+      }
+      scopes_.WriteTo(output, _repeated_scopes_codec);
+      if (oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ClientCredentials);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TokenEndpoint.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TokenEndpoint);
+      }
+      scopes_.WriteTo(ref output, _repeated_scopes_codec);
+      if (oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials) {
+        output.WriteRawTag(26);
+        output.WriteMessage(ClientCredentials);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TokenEndpoint.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TokenEndpoint);
+      }
+      size += scopes_.CalculateSize(_repeated_scopes_codec);
+      if (oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(ClientCredentials);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SMTPXOAuth2Auth other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TokenEndpoint.Length != 0) {
+        TokenEndpoint = other.TokenEndpoint;
+      }
+      scopes_.Add(other.scopes_);
+      switch (other.OAuth2TypeCase) {
+        case OAuth2TypeOneofCase.ClientCredentials:
+          if (ClientCredentials == null) {
+            ClientCredentials = new global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials();
+          }
+          ClientCredentials.MergeFrom(other.ClientCredentials);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            TokenEndpoint = input.ReadString();
+            break;
+          }
+          case 18: {
+            scopes_.AddEntriesFrom(input, _repeated_scopes_codec);
+            break;
+          }
+          case 26: {
+            global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials subBuilder = new global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials();
+            if (oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials) {
+              subBuilder.MergeFrom(ClientCredentials);
+            }
+            input.ReadMessage(subBuilder);
+            ClientCredentials = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            TokenEndpoint = input.ReadString();
+            break;
+          }
+          case 18: {
+            scopes_.AddEntriesFrom(ref input, _repeated_scopes_codec);
+            break;
+          }
+          case 26: {
+            global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials subBuilder = new global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Types.ClientCredentials();
+            if (oAuth2TypeCase_ == OAuth2TypeOneofCase.ClientCredentials) {
+              subBuilder.MergeFrom(ClientCredentials);
+            }
+            input.ReadMessage(subBuilder);
+            ClientCredentials = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the SMTPXOAuth2Auth message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      /// <summary>
+      /// ClientCredentials authenticates the SMTP client using Oauth 2.0 Client Credentials grant.
+      /// https://datatracker.ietf.org/doc/html/rfc6749#section-4.4
+      /// </summary>
+      [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+      public sealed partial class ClientCredentials : pb::IMessage<ClientCredentials>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<ClientCredentials> _parser = new pb::MessageParser<ClientCredentials>(() => new ClientCredentials());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<ClientCredentials> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Zitadel.Settings.V1.SMTPXOAuth2Auth.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public ClientCredentials() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public ClientCredentials(ClientCredentials other) : this() {
+          clientId_ = other.clientId_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public ClientCredentials Clone() {
+          return new ClientCredentials(this);
+        }
+
+        /// <summary>Field number for the "client_id" field.</summary>
+        public const int ClientIdFieldNumber = 1;
+        private string clientId_ = "";
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public string ClientId {
+          get { return clientId_; }
+          set {
+            clientId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as ClientCredentials);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(ClientCredentials other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (ClientId != other.ClientId) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (ClientId.Length != 0) hash ^= ClientId.GetHashCode();
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (ClientId.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(ClientId);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (ClientId.Length != 0) {
+            output.WriteRawTag(10);
+            output.WriteString(ClientId);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (ClientId.Length != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeStringSize(ClientId);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(ClientCredentials other) {
+          if (other == null) {
+            return;
+          }
+          if (other.ClientId.Length != 0) {
+            ClientId = other.ClientId;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 10: {
+                ClientId = input.ReadString();
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+          if ((tag & 7) == 4) {
+            // Abort on any end group tag.
+            return;
+          }
+          switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 10: {
+                ClientId = input.ReadString();
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+      }
+
+    }
+    #endregion
 
   }
 
@@ -2479,7 +3536,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2714,7 +3771,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3165,7 +4222,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3437,7 +4494,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3672,7 +4729,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3916,7 +4973,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4307,7 +5364,7 @@ namespace Zitadel.Settings.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Zitadel.Settings.V1.SettingsReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4373,7 +5430,7 @@ namespace Zitadel.Settings.V1 {
         = pb::FieldCodec.ForString(26);
     private readonly pbc::RepeatedField<string> allowedOrigins_ = new pbc::RepeatedField<string>();
     /// <summary>
-    /// origins allowed loading ZITADEL in an iframe if enable_iframe_embedding is true
+    /// origins allowed loading Zitadel in an iframe if enable_iframe_embedding is true
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

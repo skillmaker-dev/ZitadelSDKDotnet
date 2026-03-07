@@ -104,7 +104,7 @@ namespace Zitadel.Application.V2 {
     /// <summary>Field number for the "login_v1" field.</summary>
     public const int LoginV1FieldNumber = 1;
     /// <summary>
-    /// Allow the user to sign in through the ZITADEL hosted login UI.
+    /// Allow the user to sign in through the Zitadel hosted login UI.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

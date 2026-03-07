@@ -244,14 +244,14 @@ namespace Zitadel.Org.V2beta {
             "Zy5WMmJldGHKAhJaaXRhZGVsXE9yZ1xWMmJldGHiAh5aaXRhZGVsXE9yZ1xW",
             "MmJldGFcR1BCTWV0YWRhdGHqAhRaaXRhZGVsOjpPcmc6OlYyYmV0YZJBkQgS",
             "7wIKG09yZ2FuaXphdGlvbiBTZXJ2aWNlIChCZXRhKRLMAVRoaXMgQVBJIGlz",
-            "IGludGVuZGVkIHRvIG1hbmFnZSBvcmdhbml6YXRpb25zIGluIGEgWklUQURF",
-            "TCBpbnN0YW5jZS4gVGhpcyBwcm9qZWN0IGlzIGluIGJldGEgc3RhdGUuIEl0",
+            "IGludGVuZGVkIHRvIG1hbmFnZSBvcmdhbml6YXRpb25zIGluIGEgWml0YWRl",
+            "bCBpbnN0YW5jZS4gVGhpcyBwcm9qZWN0IGlzIGluIGJldGEgc3RhdGUuIEl0",
             "IGNhbiBBTkQgd2lsbCBjb250aW51ZSBicmVha2luZyB1bnRpbCB0aGUgc2Vy",
             "dmljZXMgcHJvdmlkZSB0aGUgc2FtZSBmdW5jdGlvbmFsaXR5IGFzIHRoZSBj",
             "dXJyZW50IGxvZ2luLiIuCgdaSVRBREVMEhNodHRwczovL3ppdGFkZWwuY29t",
             "Gg5oaUB6aXRhZGVsLmNvbSpHCgpBcGFjaGUgMi4wEjlodHRwczovL2dpdGh1",
             "Yi5jb20veml0YWRlbC96aXRhZGVsL2Jsb2IvbWFpbi9MSUNFTlNJTkcubWQy",
-            "CDIuMC1iZXRhGg4kQ1VTVE9NLURPTUFJTiIBLyoCAgEyEGFwcGxpY2F0aW9u",
+            "CDIuMC1iZXRhGg4kQ1VTVE9NX0RPTUFJTiIBLyoCAgEyEGFwcGxpY2F0aW9u",
             "L2pzb24yEGFwcGxpY2F0aW9uL2dycGMyGmFwcGxpY2F0aW9uL2dycGMtd2Vi",
             "K3Byb3RvOhBhcHBsaWNhdGlvbi9qc29uOhBhcHBsaWNhdGlvbi9ncnBjOhph",
             "cHBsaWNhdGlvbi9ncnBjLXdlYitwcm90b1JtCgM0MDMSZgpHUmV0dXJuZWQg",
@@ -259,8 +259,8 @@ namespace Zitadel.Org.V2beta {
             "ZXNzIHRoZSByZXNvdXJjZS4SGwoZGhcjL2RlZmluaXRpb25zL3JwY1N0YXR1",
             "c1JQCgM0MDQSSQoqUmV0dXJuZWQgd2hlbiB0aGUgcmVzb3VyY2UgZG9lcyBu",
             "b3QgZXhpc3QuEhsKGRoXIy9kZWZpbml0aW9ucy9ycGNTdGF0dXNawgEKvwEK",
-            "Bk9BdXRoMhK0AQgDKAQyISRDVVNUT00tRE9NQUlOL29hdXRoL3YyL2F1dGhv",
-            "cml6ZTodJENVU1RPTS1ET01BSU4vb2F1dGgvdjIvdG9rZW5CbAoQCgZvcGVu",
+            "Bk9BdXRoMhK0AQgDKAQyISRDVVNUT01fRE9NQUlOL29hdXRoL3YyL2F1dGhv",
+            "cml6ZTodJENVU1RPTV9ET01BSU4vb2F1dGgvdjIvdG9rZW5CbAoQCgZvcGVu",
             "aWQSBm9wZW5pZApYCip1cm46eml0YWRlbDppYW06b3JnOnByb2plY3Q6aWQ6",
             "eml0YWRlbDphdWQSKnVybjp6aXRhZGVsOmlhbTpvcmc6cHJvamVjdDppZDp6",
             "aXRhZGVsOmF1ZGJACj4KBk9BdXRoMhI0CgZvcGVuaWQKKnVybjp6aXRhZGVs",
@@ -5457,7 +5457,7 @@ namespace Zitadel.Org.V2beta {
     public const int DeletionDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp deletionDate_;
     /// <summary>
-    /// The timestamp of the deletion of the organization domain.
+    /// The timestamp of the deletion of the Organization Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6427,7 +6427,7 @@ namespace Zitadel.Org.V2beta {
     public const int ChangeDateFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp changeDate_;
     /// <summary>
-    /// The timestamp of the verification of the organization domain.
+    /// The timestamp of the verification of the Organization Domain.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

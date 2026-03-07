@@ -203,13 +203,13 @@ namespace Zitadel.Action.V2beta {
             "YeICIVppdGFkZWxcQWN0aW9uXFYyYmV0YVxHUEJNZXRhZGF0YeoCF1ppdGFk",
             "ZWw6OkFjdGlvbjo6VjJiZXRhkkGCCBLgAgoOQWN0aW9uIFNlcnZpY2USygFU",
             "aGlzIEFQSSBpcyBpbnRlbmRlZCB0byBtYW5hZ2UgY3VzdG9tIGV4ZWN1dGlv",
-            "bnMgKHByZXZpb3VzbHkga25vd24gYXMgYWN0aW9ucykgaW4gYSBaSVRBREVM",
+            "bnMgKHByZXZpb3VzbHkga25vd24gYXMgYWN0aW9ucykgaW4gYSBaaXRhZGVs",
             "IGluc3RhbmNlLiBUaGlzIHNlcnZpY2UgaXMgaW4gYmV0YSBzdGF0ZS4gSXQg",
             "Y2FuIEFORCB3aWxsIGNvbnRpbnVlIGJyZWFraW5nIHVudGlsIGEgc3RhYmxl",
             "IHZlcnNpb24gaXMgcmVsZWFzZWQuIi4KB1pJVEFERUwSE2h0dHBzOi8veml0",
             "YWRlbC5jb20aDmhpQHppdGFkZWwuY29tKkcKCkFwYWNoZSAyLjASOWh0dHBz",
             "Oi8vZ2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvYmxvYi9tYWluL0xJQ0VO",
-            "U0lORy5tZDIIMi4wLWJldGEaDiRDVVNUT00tRE9NQUlOIgEvKgICATIQYXBw",
+            "U0lORy5tZDIIMi4wLWJldGEaDiRDVVNUT01fRE9NQUlOIgEvKgICATIQYXBw",
             "bGljYXRpb24vanNvbjIQYXBwbGljYXRpb24vZ3JwYzIaYXBwbGljYXRpb24v",
             "Z3JwYy13ZWIrcHJvdG86EGFwcGxpY2F0aW9uL2pzb246EGFwcGxpY2F0aW9u",
             "L2dycGM6GmFwcGxpY2F0aW9uL2dycGMtd2ViK3Byb3RvUm0KAzQwMxJmCkdS",
@@ -217,8 +217,8 @@ namespace Zitadel.Action.V2beta {
             "biB0byBhY2Nlc3MgdGhlIHJlc291cmNlLhIbChkaFyMvZGVmaW5pdGlvbnMv",
             "cnBjU3RhdHVzUlAKAzQwNBJJCipSZXR1cm5lZCB3aGVuIHRoZSByZXNvdXJj",
             "ZSBkb2VzIG5vdCBleGlzdC4SGwoZGhcjL2RlZmluaXRpb25zL3JwY1N0YXR1",
-            "c1rCAQq/AQoGT0F1dGgyErQBCAMoBDIhJENVU1RPTS1ET01BSU4vb2F1dGgv",
-            "djIvYXV0aG9yaXplOh0kQ1VTVE9NLURPTUFJTi9vYXV0aC92Mi90b2tlbkJs",
+            "c1rCAQq/AQoGT0F1dGgyErQBCAMoBDIhJENVU1RPTV9ET01BSU4vb2F1dGgv",
+            "djIvYXV0aG9yaXplOh0kQ1VTVE9NX0RPTUFJTi9vYXV0aC92Mi90b2tlbkJs",
             "ChAKBm9wZW5pZBIGb3BlbmlkClgKKnVybjp6aXRhZGVsOmlhbTpvcmc6cHJv",
             "amVjdDppZDp6aXRhZGVsOmF1ZBIqdXJuOnppdGFkZWw6aWFtOm9yZzpwcm9q",
             "ZWN0OmlkOnppdGFkZWw6YXVkYkAKPgoGT0F1dGgyEjQKBm9wZW5pZAoqdXJu",
@@ -358,7 +358,7 @@ namespace Zitadel.Action.V2beta {
     /// <summary>Field number for the "rest_async" field.</summary>
     public const int RestAsyncFieldNumber = 4;
     /// <summary>
-    /// Call is executed in parallel to others, ZITADEL does not wait until the call is finished. The state is ignored, call is sent as post.
+    /// Call is executed in parallel to others, Zitadel does not wait until the call is finished. The state is ignored, call is sent as post.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -374,7 +374,7 @@ namespace Zitadel.Action.V2beta {
     public const int TimeoutFieldNumber = 5;
     private global::Google.Protobuf.WellKnownTypes.Duration timeout_;
     /// <summary>
-    /// Timeout defines the duration until ZITADEL cancels the execution.
+    /// Timeout defines the duration until Zitadel cancels the execution.
     /// If the target doesn't respond before this timeout expires, then the connection is closed and the action fails. Depending on the target type and possible setting on `interrupt_on_error` following targets will not be called. In case of a `rest_async` target only this specific target will fail, without any influence on other targets of the same execution.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1156,7 +1156,7 @@ namespace Zitadel.Action.V2beta {
     /// <summary>Field number for the "rest_async" field.</summary>
     public const int RestAsyncFieldNumber = 5;
     /// <summary>
-    /// Call is executed in parallel to others, ZITADEL does not wait until the call is finished. The state is ignored, call is sent as post.
+    /// Call is executed in parallel to others, Zitadel does not wait until the call is finished. The state is ignored, call is sent as post.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1172,7 +1172,7 @@ namespace Zitadel.Action.V2beta {
     public const int TimeoutFieldNumber = 6;
     private global::Google.Protobuf.WellKnownTypes.Duration timeout_;
     /// <summary>
-    /// Timeout defines the duration until ZITADEL cancels the execution.
+    /// Timeout defines the duration until Zitadel cancels the execution.
     /// If the target doesn't respond before this timeout expires, then the connection is closed and the action fails. Depending on the target type and possible setting on `interrupt_on_error` following targets will not be called. In case of a `rest_async` target only this specific target will fail, without any influence on other targets of the same execution.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
