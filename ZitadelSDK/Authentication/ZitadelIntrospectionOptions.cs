@@ -76,6 +76,17 @@ public class ZitadelIntrospectionOptions : AuthenticationSchemeOptions
     public string TokenTypeHint { get; set; } = "access_token";
 
     /// <summary>
+    /// Gets or sets how many times to retry introspection when the token is reported as inactive.
+    /// Useful when a newly issued token is not immediately visible to introspection due to propagation delay.
+    /// </summary>
+    public int InactiveTokenRetryCount { get; set; } = 1;
+
+    /// <summary>
+    /// Gets or sets the delay between retries when introspection returns an inactive token.
+    /// </summary>
+    public TimeSpan InactiveTokenRetryDelay { get; set; } = TimeSpan.FromMilliseconds(150);
+
+    /// <summary>
     /// Gets or sets the claim type used as name claim.
     /// </summary>
     public string NameClaimType { get; set; } = ClaimTypes.NameIdentifier;
@@ -125,6 +136,16 @@ public class ZitadelIntrospectionOptions : AuthenticationSchemeOptions
         {
             throw new InvalidOperationException(
                 "Either a JwtProfile or ClientId must be configured for introspection authentication.");
+        }
+
+        if (InactiveTokenRetryCount < 0)
+        {
+            throw new InvalidOperationException("InactiveTokenRetryCount cannot be negative.");
+        }
+
+        if (InactiveTokenRetryDelay < TimeSpan.Zero)
+        {
+            throw new InvalidOperationException("InactiveTokenRetryDelay cannot be negative.");
         }
     }
 }

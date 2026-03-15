@@ -79,6 +79,8 @@ public static class ZitadelAuthenticationExtensions
             options.RoleClaimType = zitadelOptions.RoleClaimType;
             options.TokenTypeHint = zitadelOptions.TokenTypeHint;
             options.SkipTokensWithDots = zitadelOptions.SkipTokensWithDots;
+            options.InactiveTokenRetryCount = zitadelOptions.InactiveTokenRetryCount;
+            options.InactiveTokenRetryDelay = zitadelOptions.InactiveTokenRetryDelay;
             options.ClaimsIssuer = zitadelOptions.ClaimsIssuer;
             options.ForwardAuthenticate = zitadelOptions.ForwardAuthenticate;
             options.ForwardChallenge = zitadelOptions.ForwardChallenge;

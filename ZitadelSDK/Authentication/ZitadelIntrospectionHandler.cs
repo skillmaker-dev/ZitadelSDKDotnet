@@ -55,11 +55,11 @@ internal sealed class ZitadelIntrospectionHandler(
 
         try
         {
-            var introspectionJson = await IntrospectAsync(token);
+            var introspectionJson = await IntrospectWithRetryOnInactiveAsync(token);
 
-            if (!introspectionJson.TryGetProperty("active", out var activeElement) || !activeElement.GetBoolean())
+            if (!IsTokenActive(introspectionJson))
             {
-                Logger.LogDebug("Introspection: Token is inactive.");
+                Logger.LogDebug("Introspection: Token is inactive after retry policy exhausted.");
                 return AuthenticateResult.Fail("Token is inactive.");
             }
 
@@ -126,6 +126,43 @@ internal sealed class ZitadelIntrospectionHandler(
 
             return AuthenticateResult.Fail(exception);
         }
+    }
+
+    private async Task<JsonElement> IntrospectWithRetryOnInactiveAsync(string token)
+    {
+        var attempts = 0;
+
+        while (true)
+        {
+            var introspectionJson = await IntrospectAsync(token);
+            if (IsTokenActive(introspectionJson))
+            {
+                return introspectionJson;
+            }
+
+            if (attempts >= Options.InactiveTokenRetryCount)
+            {
+                return introspectionJson;
+            }
+
+            attempts++;
+
+            if (Options.InactiveTokenRetryDelay > TimeSpan.Zero)
+            {
+                Logger.LogDebug(
+                    "Introspection: Token inactive on attempt {Attempt}. Retrying in {RetryDelay}.",
+                    attempts,
+                    Options.InactiveTokenRetryDelay);
+
+                await Task.Delay(Options.InactiveTokenRetryDelay, Context.RequestAborted);
+            }
+        }
+    }
+
+    private static bool IsTokenActive(JsonElement introspectionJson)
+    {
+        return introspectionJson.TryGetProperty("active", out var activeElement)
+            && activeElement.ValueKind == JsonValueKind.True;
     }
 
     private async Task<JsonElement> IntrospectAsync(string token)

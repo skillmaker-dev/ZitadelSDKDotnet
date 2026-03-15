@@ -368,6 +368,8 @@ builder.Services.AddAuthentication("ZITADEL")
         options.ClientSecret = "your-client-secret";
         options.EnableCaching = true; // Recommended for performance
         options.CacheDuration = TimeSpan.FromMinutes(10);
+        options.InactiveTokenRetryCount = 1; // Helps with immediate first-use token propagation delay
+        options.InactiveTokenRetryDelay = TimeSpan.FromMilliseconds(150);
     });
 ```
 
@@ -382,6 +384,8 @@ builder.Services.AddAuthentication("ZITADEL")
         options.Authority = "https://your-instance.zitadel.cloud";
         options.EnableCaching = true;
         options.CacheDuration = TimeSpan.FromMinutes(5);
+        options.InactiveTokenRetryCount = 1;
+        options.InactiveTokenRetryDelay = TimeSpan.FromMilliseconds(150);
         options.JwtProfile = new()
         {
             ClientId = "your-client-id@your-project",  // Required for introspection

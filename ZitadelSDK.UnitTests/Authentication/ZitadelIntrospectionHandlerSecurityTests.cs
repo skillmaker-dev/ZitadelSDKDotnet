@@ -114,6 +114,15 @@ public class ZitadelIntrospectionHandlerSecurityTests
     }
 
     [Fact]
+    public void Options_Defaults_IncludeInactiveTokenRetryPolicy()
+    {
+        var options = new ZitadelIntrospectionOptions();
+
+        Assert.Equal(1, options.InactiveTokenRetryCount);
+        Assert.Equal(TimeSpan.FromMilliseconds(150), options.InactiveTokenRetryDelay);
+    }
+
+    [Fact]
     public void Options_Validate_MissingAuthority_Throws()
     {
         var options = new ZitadelIntrospectionOptions
@@ -135,6 +144,34 @@ public class ZitadelIntrospectionHandlerSecurityTests
 
         var exception = Assert.Throws<InvalidOperationException>(() => options.Validate());
         Assert.Contains("JwtProfile or ClientId", exception.Message);
+    }
+
+    [Fact]
+    public void Options_Validate_NegativeInactiveTokenRetryCount_Throws()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            ClientId = "my-client-id",
+            InactiveTokenRetryCount = -1
+        };
+
+        var exception = Assert.Throws<InvalidOperationException>(() => options.Validate());
+        Assert.Contains("InactiveTokenRetryCount", exception.Message);
+    }
+
+    [Fact]
+    public void Options_Validate_NegativeInactiveTokenRetryDelay_Throws()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            ClientId = "my-client-id",
+            InactiveTokenRetryDelay = TimeSpan.FromMilliseconds(-1)
+        };
+
+        var exception = Assert.Throws<InvalidOperationException>(() => options.Validate());
+        Assert.Contains("InactiveTokenRetryDelay", exception.Message);
     }
 
     private static object CreateInitializedHandler(ZitadelIntrospectionOptions options)
