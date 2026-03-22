@@ -21,7 +21,7 @@ public class Application
     public string ClientId { get; set; } = string.Empty;
 
     /// <summary>
-    /// Gets or sets the private key in JSON format.
+    /// Gets or sets the RSA private key in PEM format (PKCS#8 "PRIVATE KEY" or PKCS#1 "RSA PRIVATE KEY").
     /// </summary>
     public string Key { get; set; } = string.Empty;
 
