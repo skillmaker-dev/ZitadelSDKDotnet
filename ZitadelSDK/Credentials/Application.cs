@@ -1,7 +1,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Security.Cryptography;
+using ZitadelSDK.Authentication;
 
 namespace ZitadelSDK.Credentials;
 
@@ -21,7 +21,7 @@ public class Application
     public string ClientId { get; set; } = string.Empty;
 
     /// <summary>
-    /// Gets or sets the private key in JSON format.
+    /// Gets or sets the RSA private key in PEM format (PKCS#8 "PRIVATE KEY" or PKCS#1 "RSA PRIVATE KEY").
     /// </summary>
     public string Key { get; set; } = string.Empty;
 
@@ -59,16 +59,7 @@ public class Application
 
         var normalizedAuthority = baseUri.GetLeftPart(UriPartial.Authority).TrimEnd('/');
 
-        using var rsaKey = RSA.Create();
-        rsaKey.ImportFromPem(Key);
-        var rsaParameters = rsaKey.ExportParameters(true);
-
-        var securityKey = new RsaSecurityKey(rsaParameters)
-        {
-            KeyId = KeyId
-        };
-
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.RsaSha256);
+        var credentials = JwtSigningCredentialsFactory.CreateFromPem(Key, KeyId);
 
         var now = DateTime.UtcNow;
 

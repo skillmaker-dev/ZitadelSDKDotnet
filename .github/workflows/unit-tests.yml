@@ -1,0 +1,30 @@
+name: Unit Tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore ZitadelSDK.slnx
+
+    - name: Build
+      run: dotnet build ZitadelSDK.slnx --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test ZitadelSDK.slnx --configuration Release --no-build --verbosity normal
