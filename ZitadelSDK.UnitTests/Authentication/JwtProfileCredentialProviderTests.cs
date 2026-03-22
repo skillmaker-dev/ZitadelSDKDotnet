@@ -1,9 +1,11 @@
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using System.Net;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Cryptography;
 using System.Text;
 using ZitadelSDK.Authentication;
+using ZitadelSDK.Credentials;
 using ZitadelSDK.UnitTests.TestHelpers;
 
 namespace ZitadelSDK.UnitTests.Authentication;
@@ -79,6 +81,44 @@ public class JwtProfileCredentialProviderTests
         var exception = await Assert.ThrowsAsync<InvalidOperationException>(() => CallCredentialsTestHelper.InvokeAsync(credentials));
         Assert.Contains("Failed to obtain access token", exception.Message);
         Assert.DoesNotContain("error-details-with-sensitive-content", exception.Message);
+    }
+
+    [Fact]
+    public async Task JwtProfileConfig_GetSignedJwtAsync_CanGenerateMultipleAssertions()
+    {
+        var config = CreateConfig();
+
+        var firstToken = await config.GetSignedJwtAsync("https://example.com");
+        var secondToken = await config.GetSignedJwtAsync("https://example.com");
+
+        Assert.False(string.IsNullOrWhiteSpace(firstToken));
+        Assert.False(string.IsNullOrWhiteSpace(secondToken));
+
+        var handler = new JwtSecurityTokenHandler();
+        Assert.Equal("key-id", handler.ReadJwtToken(firstToken).Header.Kid);
+        Assert.Equal("key-id", handler.ReadJwtToken(secondToken).Header.Kid);
+    }
+
+    [Fact]
+    public async Task Application_GetSignedJwtAsync_CanGenerateMultipleAssertions()
+    {
+        var application = new Application
+        {
+            AppId = "app-id",
+            ClientId = "client-id",
+            KeyId = "key-id",
+            Key = CreatePrivateKey()
+        };
+
+        var firstToken = await application.GetSignedJwtAsync("https://example.com");
+        var secondToken = await application.GetSignedJwtAsync("https://example.com");
+
+        Assert.False(string.IsNullOrWhiteSpace(firstToken));
+        Assert.False(string.IsNullOrWhiteSpace(secondToken));
+
+        var handler = new JwtSecurityTokenHandler();
+        Assert.Equal("key-id", handler.ReadJwtToken(firstToken).Header.Kid);
+        Assert.Equal("key-id", handler.ReadJwtToken(secondToken).Header.Kid);
     }
 
     private static JwtProfileConfig CreateConfig()

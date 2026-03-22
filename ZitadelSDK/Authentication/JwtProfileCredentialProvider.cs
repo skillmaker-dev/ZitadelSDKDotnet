@@ -4,7 +4,6 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Json;
 using System.Security.Claims;
-using System.Security.Cryptography;
 
 namespace ZitadelSDK.Authentication;
 
@@ -149,16 +148,7 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     /// </summary>
     private string GenerateJwtAssertion(string authority)
     {
-        using var rsaKey = RSA.Create();
-        rsaKey.ImportFromPem(_config.Key);
-        var rsaParameters = rsaKey.ExportParameters(true);
-
-        var securityKey = new RsaSecurityKey(rsaParameters)
-        {
-            KeyId = _config.KeyId
-        };
-
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.RsaSha256);
+        var credentials = JwtSigningCredentialsFactory.CreateFromPem(_config.Key, _config.KeyId);
 
         var now = DateTime.UtcNow;
         var effectiveUserId = _config.GetUserId();
