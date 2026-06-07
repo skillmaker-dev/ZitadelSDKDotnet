@@ -9,6 +9,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using ZitadelSDK.Internal;
 
 namespace ZitadelSDK.Authentication;
 
@@ -26,7 +27,9 @@ internal sealed class ZitadelIntrospectionHandler(
 
     protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
     {
-        Logger.LogDebug("Introspection: Starting authentication for request {Path}", Request.Path);
+        Logger.LogDebug(
+            "Introspection: Starting authentication for request {Path}",
+            SanitizeForLog(Request.Path));
 
         var token = Options.TokenRetriever?.Invoke(Request) ?? RetrieveTokenFromAuthorizationHeader(Request);
         if (string.IsNullOrWhiteSpace(token))
@@ -44,14 +47,22 @@ internal sealed class ZitadelIntrospectionHandler(
         }
 
         var cacheKey = GetCacheKey(token);
-        if (Options.EnableCaching && _memoryCache.TryGetValue<AuthenticationTicket>(cacheKey, out var cachedTicket))
+        if (Options.EnableCaching)
         {
-            Logger.LogDebug("Introspection: Cache hit for token.");
-            return AuthenticateResult.Success(cachedTicket!);
-        }
+            if (_memoryCache.TryGetValue<AuthenticationTicket>(cacheKey, out var cachedTicket))
+            {
+                Logger.LogDebug("Introspection: Cache hit for token.");
+                return AuthenticateResult.Success(cachedTicket!);
+            }
 
-        Logger.LogInformation("Introspection: Cache miss. Calling introspection endpoint. Authority={Authority}, JwtProfile={HasJwtProfile}, ClientId={ClientId}",
-            Options.Authority, Options.JwtProfile != null, Options.ClientId ?? "(null)");
+            Logger.LogInformation("Introspection: Cache miss. Calling introspection endpoint. Authority={Authority}, JwtProfile={HasJwtProfile}, ClientId={ClientId}",
+                Options.Authority, Options.JwtProfile != null, Options.ClientId ?? "(null)");
+        }
+        else
+        {
+            Logger.LogDebug("Introspection: Caching disabled. Calling introspection endpoint. Authority={Authority}, JwtProfile={HasJwtProfile}, ClientId={ClientId}",
+                Options.Authority, Options.JwtProfile != null, Options.ClientId ?? "(null)");
+        }
 
         try
         {
@@ -214,7 +225,9 @@ internal sealed class ZitadelIntrospectionHandler(
         if (Options.JwtProfile != null)
         {
             Logger.LogDebug("Using JWT Profile for introspection client authentication.");
-            var assertion = await Options.JwtProfile.GetSignedJwtAsync(Options.Authority!);
+            var assertion = await Options.JwtProfile.GetSignedJwtAsync(
+                Options.Authority!,
+                Options.AllowInsecureTransport);
 
             var updateContext = new ZitadelUpdateClientAssertionContext(Context, Scheme, Options)
             {
@@ -320,15 +333,10 @@ internal sealed class ZitadelIntrospectionHandler(
     {
         if (!string.IsNullOrWhiteSpace(Options.IntrospectionEndpoint))
         {
-            if (!Uri.TryCreate(Options.IntrospectionEndpoint, UriKind.Absolute, out var introspectionUri))
-            {
-                throw new InvalidOperationException("ZITADEL IntrospectionEndpoint must be an absolute HTTPS URL.");
-            }
-
-            if (!string.Equals(introspectionUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
-            {
-                throw new InvalidOperationException("ZITADEL IntrospectionEndpoint must use HTTPS.");
-            }
+            var introspectionUri = TransportSecurity.ValidateUri(
+                Options.IntrospectionEndpoint,
+                "ZITADEL IntrospectionEndpoint",
+                Options.AllowInsecureTransport);
 
             return introspectionUri.ToString();
         }
@@ -338,15 +346,10 @@ internal sealed class ZitadelIntrospectionHandler(
             throw new InvalidOperationException("ZITADEL Authority must be configured.");
         }
 
-        if (!Uri.TryCreate(Options.Authority, UriKind.Absolute, out var authorityUri))
-        {
-            throw new InvalidOperationException("ZITADEL Authority must be an absolute HTTPS URL.");
-        }
-
-        if (!string.Equals(authorityUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
-        {
-            throw new InvalidOperationException("ZITADEL Authority must use HTTPS.");
-        }
+        var authorityUri = TransportSecurity.ValidateUri(
+            Options.Authority,
+            "ZITADEL Authority",
+            Options.AllowInsecureTransport);
 
         var introspectionUriFromAuthority = new Uri(authorityUri, "/oauth/v2/introspect");
         return introspectionUriFromAuthority.ToString();
@@ -378,5 +381,12 @@ internal sealed class ZitadelIntrospectionHandler(
         }
 
         return authorization[bearerPrefix.Length..].Trim();
+    }
+
+    private static string SanitizeForLog(PathString path)
+    {
+        return (path.Value ?? string.Empty)
+            .Replace("\r", "\\r", StringComparison.Ordinal)
+            .Replace("\n", "\\n", StringComparison.Ordinal);
     }
 }

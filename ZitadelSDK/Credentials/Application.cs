@@ -2,6 +2,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using ZitadelSDK.Authentication;
+using ZitadelSDK.Internal;
 
 namespace ZitadelSDK.Credentials;
 
@@ -42,22 +43,26 @@ public class Application
     /// <returns>A signed JWT token.</returns>
     public Task<string> GetSignedJwtAsync(string authority)
     {
+        return GetSignedJwtAsync(authority, allowInsecureTransport: false);
+    }
+
+    /// <summary>
+    /// Generates a signed JWT assertion for client authentication.
+    /// </summary>
+    /// <param name="authority">The ZITADEL authority URL.</param>
+    /// <param name="allowInsecureTransport">Whether plaintext HTTP transport is allowed for the assertion audience.</param>
+    /// <returns>A signed JWT token.</returns>
+    public Task<string> GetSignedJwtAsync(string authority, bool allowInsecureTransport = false)
+    {
         if (string.IsNullOrWhiteSpace(authority))
         {
             throw new ArgumentException("Authority must be provided to generate a JWT assertion.", nameof(authority));
         }
 
-        if (!Uri.TryCreate(authority, UriKind.Absolute, out var baseUri))
-        {
-            throw new InvalidOperationException($"Invalid authority '{authority}'. Provide an absolute HTTPS URL.");
-        }
-
-        if (!string.Equals(baseUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
-        {
-            throw new InvalidOperationException("JWT Profile assertions require an HTTPS authority.");
-        }
-
-        var normalizedAuthority = baseUri.GetLeftPart(UriPartial.Authority).TrimEnd('/');
+        var normalizedAuthority = TransportSecurity.NormalizeAuthority(
+            authority,
+            "Authority",
+            allowInsecureTransport);
 
         var credentials = JwtSigningCredentialsFactory.CreateFromPem(Key, KeyId);
 

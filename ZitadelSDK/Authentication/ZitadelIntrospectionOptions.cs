@@ -26,6 +26,12 @@ public class ZitadelIntrospectionOptions : AuthenticationSchemeOptions
     public string? IntrospectionEndpoint { get; set; }
 
     /// <summary>
+    /// Gets or sets whether plaintext HTTP transport is allowed for introspection requests.
+    /// Defaults to <see langword="false" />.
+    /// </summary>
+    public bool AllowInsecureTransport { get; set; }
+
+    /// <summary>
     /// Gets or sets the authentication type for created identities.
     /// </summary>
     public string? AuthenticationType { get; set; }

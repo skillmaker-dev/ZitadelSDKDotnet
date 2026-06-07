@@ -60,6 +60,19 @@ Choose **either** the JWT Profile (recommended for production) **or** a Personal
 }
 ```
 
+To allow plaintext `http://` transport for local development or trusted internal environments, add:
+
+```json
+{
+  "ServiceAdmin": {
+    "Authority": "http://localhost:8080",
+    "AllowInsecureTransport": true
+  }
+}
+```
+
+`AllowInsecureTransport` defaults to `false`. Production deployments should keep HTTPS enabled.
+
 #### Option B: Personal Access Token (For Development)
 
 ```json
@@ -145,6 +158,21 @@ builder.Services.AddZitadelSdk(builder.Configuration)
 
 builder.Services.AddZitadelSdk(builder.Configuration)
     .WithPatAuth("your-pat-token");
+
+// ────────────────────────────────────────
+// Method 6: Explicit HTTP opt-in for local or trusted internal environments
+// ────────────────────────────────────────
+builder.Services.AddZitadelSdk(config =>
+{
+    config.Authority = "http://localhost:8080";
+    config.AllowInsecureTransport = true;
+})
+    .WithJwtAuth(config =>
+    {
+        config.KeyId = "your-key-id";
+        config.Key = "-----BEGIN RSA PRIVATE KEY-----...";
+        config.UserId = "user-id";
+    });
 ```
 
 ### 4. Use in Your Code
@@ -260,6 +288,21 @@ builder.Services.AddHealthChecks()
         failureStatus: HealthStatus.Degraded,
         tags: new[] { "external", "identity" }
     );
+
+// HTTP health checks require an explicit opt-in
+builder.Services.AddHealthChecks()
+    .AddZitadel(
+        authority: "http://localhost:8080",
+        allowInsecureTransport: true
+    );
+
+// Or with additional configuration
+builder.Services.AddHealthChecks()
+    .AddZitadel(
+        authority: "http://localhost:8080",
+        allowInsecureTransport: true,
+        name: "zitadel-http"
+    );
 ```
 
 ### Health Check Response
@@ -370,6 +413,19 @@ builder.Services.AddAuthentication("ZITADEL")
         options.CacheDuration = TimeSpan.FromMinutes(10);
         options.InactiveTokenRetryCount = 1; // Helps with immediate first-use token propagation delay
         options.InactiveTokenRetryDelay = TimeSpan.FromMilliseconds(150);
+    });
+```
+
+To call an HTTP introspection endpoint, explicitly opt in:
+
+```csharp
+builder.Services.AddAuthentication("ZITADEL")
+    .AddZitadelIntrospection(options =>
+    {
+        options.Authority = "http://localhost:8080";
+        options.AllowInsecureTransport = true;
+        options.ClientId = "your-client-id@your-project";
+        options.ClientSecret = "your-client-secret";
     });
 ```
 
@@ -513,7 +569,7 @@ public IActionResult GetAdminDashboard()
 
 1.  **Never Commit Secrets**: Use user secrets, environment variables, or a managed secret store like Azure Key Vault.
 2.  **Prefer JWT Profile for M2M**: Use the JWT Profile method for service-to-service authentication in production over static Personal Access Tokens.
-3.  **Use HTTPS**: Always set `RequireHttpsMetadata = true` on your authentication handlers in production.
+3.  **Use HTTPS**: `AllowInsecureTransport` is an explicit local/trusted-network escape hatch. Keep it disabled in production, and always set `RequireHttpsMetadata = true` on your authentication handlers in production.
 4.  **Principle of Least Privilege**: Grant only the permissions necessary for your service account.
 5.  **Enable Caching**: For the introspection handler, enable caching to reduce latency and load on your ZITADEL instance.
 6.  **Rotate Keys**: Regularly rotate service account keys and Personal Access Tokens.

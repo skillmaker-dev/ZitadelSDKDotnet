@@ -21,7 +21,8 @@ public class ZitadelServiceCollectionExtensionsTests
             .AddInMemoryCollection(new Dictionary<string, string?>
             {
                 ["ServiceAdmin:Authority"] = "https://example.com",
-                ["ServiceAdmin:AuthenticationType"] = "Custom"
+                ["ServiceAdmin:AuthenticationType"] = "Custom",
+                ["ServiceAdmin:AllowInsecureTransport"] = "true"
             })
             .Build();
 
@@ -46,9 +47,13 @@ public class ZitadelServiceCollectionExtensionsTests
 
         Assert.Equal("https://example.com", options.Authority);
         Assert.Equal("Custom", options.AuthenticationType);
+        Assert.True(options.AllowInsecureTransport);
 
         var sdk = provider.GetRequiredService<IZitadelSdk>();
         Assert.NotNull(sdk);
+        Assert.True(GetChannelProperty<bool>(sdk.Channel, "IsSecure"));
+        Assert.False(GetChannelProperty<bool>(sdk.Channel, "UnsafeUseInsecureChannelCallCredentials"));
+        Assert.Single(GetChannelProperty<System.Collections.ICollection>(sdk.Channel, "CallCredentials").Cast<object>());
     }
 
     [Fact]
@@ -63,6 +68,7 @@ public class ZitadelServiceCollectionExtensionsTests
         {
             options.Authority = "https://unit.test";
             options.AuthenticationType = "Token";
+            options.AllowInsecureTransport = true;
         });
 
         var credentialProvider = Substitute.For<IZitadelCredentialProvider>();
@@ -77,6 +83,7 @@ public class ZitadelServiceCollectionExtensionsTests
         var options = provider.GetRequiredService<IOptions<ZitadelClientOptions>>().Value;
         Assert.Equal("https://unit.test", options.Authority);
         Assert.Equal("Token", options.AuthenticationType);
+        Assert.True(options.AllowInsecureTransport);
     }
 
     [Fact]
@@ -121,5 +128,69 @@ public class ZitadelServiceCollectionExtensionsTests
         // Act & Assert
         Assert.Throws<OptionsValidationException>(
             () => provider.GetRequiredService<IOptions<ZitadelClientOptions>>().Value);
+    }
+
+    [Fact]
+    public void AddZitadelSdk_HttpAuthority_ThrowsWhenInsecureTransportIsDisabled()
+    {
+        var services = new ServiceCollection();
+        services.AddLogging();
+
+        services.AddZitadelSdk(options =>
+        {
+            options.Authority = "http://unit.test";
+            options.AuthenticationType = "Token";
+        });
+
+        var credentialProvider = Substitute.For<IZitadelCredentialProvider>();
+        credentialProvider
+            .CreateCallCredentials(Arg.Any<string>())
+            .Returns(CallCredentials.FromInterceptor((_, _) => Task.CompletedTask));
+        services.AddSingleton(credentialProvider);
+
+        using var provider = services.BuildServiceProvider();
+
+        var exception = Assert.Throws<InvalidOperationException>(
+            () => provider.GetRequiredService<IZitadelSdk>());
+
+        Assert.Contains("must use HTTPS", exception.Message);
+    }
+
+    [Fact]
+    public void AddZitadelSdk_HttpAuthority_AllowsSdkCreationWhenInsecureTransportIsEnabled()
+    {
+        var services = new ServiceCollection();
+        services.AddLogging();
+
+        services.AddZitadelSdk(options =>
+        {
+            options.Authority = "http://unit.test";
+            options.AuthenticationType = "Token";
+            options.AllowInsecureTransport = true;
+        });
+
+        var credentialProvider = Substitute.For<IZitadelCredentialProvider>();
+        credentialProvider
+            .CreateCallCredentials(Arg.Any<string>())
+            .Returns(CallCredentials.FromInterceptor((_, _) => Task.CompletedTask));
+        services.AddSingleton(credentialProvider);
+
+        using var provider = services.BuildServiceProvider();
+        using var sdk = provider.GetRequiredService<IZitadelSdk>();
+
+        Assert.NotNull(sdk.Channel);
+        Assert.False(GetChannelProperty<bool>(sdk.Channel, "IsSecure"));
+        Assert.True(GetChannelProperty<bool>(sdk.Channel, "UnsafeUseInsecureChannelCallCredentials"));
+        Assert.Single(GetChannelProperty<System.Collections.ICollection>(sdk.Channel, "CallCredentials").Cast<object>());
+    }
+
+    private static T GetChannelProperty<T>(object channel, string propertyName)
+    {
+        var property = channel.GetType().GetProperty(
+            propertyName,
+            System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic);
+
+        Assert.NotNull(property);
+        return (T)property.GetValue(channel)!;
     }
 }

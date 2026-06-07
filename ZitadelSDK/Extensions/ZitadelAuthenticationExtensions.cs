@@ -65,6 +65,7 @@ public static class ZitadelAuthenticationExtensions
 
             options.Authority = zitadelOptions.Authority;
             options.AuthenticationType = zitadelOptions.AuthenticationType;
+            options.AllowInsecureTransport = zitadelOptions.AllowInsecureTransport;
             options.CacheDuration = zitadelOptions.CacheDuration;
             options.ClientId = zitadelOptions.ClientId;
             options.ClientSecret = zitadelOptions.ClientSecret;

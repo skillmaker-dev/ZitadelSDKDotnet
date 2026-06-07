@@ -20,4 +20,10 @@ public class ZitadelClientOptions
     /// Gets or sets the authentication type (default: "Bearer").
     /// </summary>
     public string AuthenticationType { get; set; } = "Bearer";
+
+    /// <summary>
+    /// Gets or sets whether plaintext HTTP transport is allowed for SDK-owned outbound calls.
+    /// Defaults to <see langword="false" />.
+    /// </summary>
+    public bool AllowInsecureTransport { get; set; }
 }

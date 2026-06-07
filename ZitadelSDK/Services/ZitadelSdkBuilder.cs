@@ -52,7 +52,8 @@ public class ZitadelSdkBuilder
                 jwtConfig,
                 httpClientFactory,
                 logger,
-                options.Value.AuthenticationType);
+                options.Value.AuthenticationType,
+                options.Value.AllowInsecureTransport);
         });
 
         return this;
