@@ -56,7 +56,7 @@ namespace Zitadel.Oidc.V2beta {
             "biB0byB0aGUgQXV0aCBSZXF1ZXN0LkoUIjE2Mzg0MDc3NjgzNTQzMjcwNSJ4",
             "yAGAAQH6QgdyBRABGMgBUglzZXNzaW9uSWQSXgoNc2Vzc2lvbl90b2tlbhgC",
             "IAEoCUI5kkEsMiRUb2tlbiB0byB2ZXJpZnkgdGhlIHNlc3Npb24gaXMgdmFs",
-            "aWR4yAGAAQH6QgdyBRABGMgBUgxzZXNzaW9uVG9rZW4i/wMKFkNyZWF0ZUNh",
+            "aWR49AOAAQH6QgdyBRABGPQDUgxzZXNzaW9uVG9rZW4i/wMKFkNyZWF0ZUNh",
             "bGxiYWNrUmVzcG9uc2USOAoHZGV0YWlscxgBIAEoCzIeLnppdGFkZWwub2Jq",
             "ZWN0LnYyYmV0YS5EZXRhaWxzUgdkZXRhaWxzEqoDCgxjYWxsYmFja191cmwY",
             "AiABKAlChgOSQYIDMrACQ2FsbGJhY2sgVVJMIHdoZXJlIHRoZSB1c2VyIHNo",

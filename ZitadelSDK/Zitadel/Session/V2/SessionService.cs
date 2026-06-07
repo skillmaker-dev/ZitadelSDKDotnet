@@ -44,7 +44,7 @@ namespace Zitadel.Session.V2 {
             "ZXRTZXNzaW9uUmVxdWVzdBJMCgpzZXNzaW9uX2lkGAEgASgJQi2SQRxKFCIy",
             "MjI0MzAzNTQxMjY5NzU1MzMieMgBgAEB4kEBAvpCB3IFEAEYyAFSCXNlc3Np",
             "b25JZBJTCg1zZXNzaW9uX3Rva2VuGAIgASgJQimSQRxKFCIyMjI0MzAzNTQx",
-            "MjY5NzU1MzMieMgBgAEB+kIHcgUQARjIAUgAUgxzZXNzaW9uVG9rZW6IAQFC",
+            "MjY5NzU1MzMiePQDgAEB+kIHcgUQARj0A0gAUgxzZXNzaW9uVG9rZW6IAQFC",
             "EAoOX3Nlc3Npb25fdG9rZW4iSwoSR2V0U2Vzc2lvblJlc3BvbnNlEjUKB3Nl",
             "c3Npb24YASABKAsyGy56aXRhZGVsLnNlc3Npb24udjIuU2Vzc2lvblIHc2Vz",
             "c2lvbiLAAwoUQ3JlYXRlU2Vzc2lvblJlcXVlc3QSMgoGY2hlY2tzGAEgASgL",

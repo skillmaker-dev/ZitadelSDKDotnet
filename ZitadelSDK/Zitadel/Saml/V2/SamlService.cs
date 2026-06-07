@@ -43,7 +43,7 @@ namespace Zitadel.Saml.V2 {
             "AFIFZXJyb3JCFAoNcmVzcG9uc2Vfa2luZBID+EIBIpUBCgdTZXNzaW9uEkwK",
             "CnNlc3Npb25faWQYASABKAlCLZJBHEoUIjE2Mzg0MDc3NjgzNTQzMjcwNSJ4",
             "yAGAAQHiQQEC+kIHcgUQARjIAVIJc2Vzc2lvbklkEjwKDXNlc3Npb25fdG9r",
-            "ZW4YAiABKAlCF5JBBnjIAYABAeJBAQL6QgdyBRABGMgBUgxzZXNzaW9uVG9r",
+            "ZW4YAiABKAlCF5JBBnj0A4ABAeJBAQL6QgdyBRABGPQDUgxzZXNzaW9uVG9r",
             "ZW4ihwIKFkNyZWF0ZVJlc3BvbnNlUmVzcG9uc2USNAoHZGV0YWlscxgBIAEo",
             "CzIaLnppdGFkZWwub2JqZWN0LnYyLkRldGFpbHNSB2RldGFpbHMSNgoDdXJs",
             "GAIgASgJQiSSQSFKHyJodHRwczovL2NsaWVudC5leGFtcGxlLm9yZy9jYiJS",

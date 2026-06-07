@@ -2048,7 +2048,7 @@ namespace Zitadel.Org.V2beta {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// Organization Id for the Organization to be updated
+    /// Organization ID for the Organization to be updated
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3017,7 +3017,7 @@ namespace Zitadel.Org.V2beta {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// Organization Id for the Organization to be deleted
+    /// Organization ID for the Organization to be deleted
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3428,7 +3428,7 @@ namespace Zitadel.Org.V2beta {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// Organization Id for the Organization to be deactivated
+    /// Organization ID for the Organization to be deactivated
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3839,7 +3839,7 @@ namespace Zitadel.Org.V2beta {
     public const int IdFieldNumber = 1;
     private string id_ = "";
     /// <summary>
-    /// Organization Id for the Organization to be activated
+    /// Organization ID for the Organization to be activated
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4251,7 +4251,7 @@ namespace Zitadel.Org.V2beta {
     public const int OrganizationIdFieldNumber = 1;
     private string organizationId_ = "";
     /// <summary>
-    /// Organization Id for the Organization for which the domain is to be added to.
+    /// Organization ID for the Organization for which the domain is to be added to.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -4703,7 +4703,7 @@ namespace Zitadel.Org.V2beta {
     public const int OrganizationIdFieldNumber = 1;
     private string organizationId_ = "";
     /// <summary>
-    /// Organization Id for the Organization which domains are to be listed.
+    /// Organization ID for the Organization which domains are to be listed.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5220,7 +5220,7 @@ namespace Zitadel.Org.V2beta {
     public const int OrganizationIdFieldNumber = 1;
     private string organizationId_ = "";
     /// <summary>
-    /// Organization Id for the Organization which domain is to be deleted.
+    /// Organization ID for the Organization which domain is to be deleted.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -5669,7 +5669,7 @@ namespace Zitadel.Org.V2beta {
     public const int OrganizationIdFieldNumber = 1;
     private string organizationId_ = "";
     /// <summary>
-    /// Organization Id for the Organization which doman to be validated.
+    /// Organization ID for the Organization which domain to be validated.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6187,7 +6187,7 @@ namespace Zitadel.Org.V2beta {
     public const int OrganizationIdFieldNumber = 1;
     private string organizationId_ = "";
     /// <summary>
-    /// Organization Id for the Organization doman to be verified.
+    /// Organization ID for the Organization domain to be verified.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6202,7 +6202,7 @@ namespace Zitadel.Org.V2beta {
     public const int DomainFieldNumber = 2;
     private string domain_ = "";
     /// <summary>
-    /// Organization Id for the Organization doman to be verified.
+    /// The domain to be verified.
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -6878,9 +6878,6 @@ namespace Zitadel.Org.V2beta {
     /// <summary>Field number for the "organization_id" field.</summary>
     public const int OrganizationIdFieldNumber = 1;
     private string organizationId_ = "";
-    /// <summary>
-    /// Organization Id for the Organization doman to be verified.
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string OrganizationId {

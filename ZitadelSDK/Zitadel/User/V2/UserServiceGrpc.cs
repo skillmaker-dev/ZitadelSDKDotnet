@@ -1563,9 +1563,8 @@ namespace Zitadel.User.V2 {
       /// Create an invite code for a user
       ///
       /// Create an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
-      /// If an invite code has been created previously, it's url template and application name will be used as defaults for the new code.
+      /// If an invite code has been created previously, its URL template and application name will be used as defaults for the new code.
       /// The new code will overwrite the previous one and make it invalid.
-      /// Note: It is possible to reissue a new code only when the previous code has expired, or when the user provides a wrong code three or more times during verification.
       /// </summary>
       /// <param name="request">The request received from the client.</param>
       /// <param name="context">The context of the server-side call handler being invoked.</param>
@@ -1625,7 +1624,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -4834,9 +4833,8 @@ namespace Zitadel.User.V2 {
       /// Create an invite code for a user
       ///
       /// Create an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
-      /// If an invite code has been created previously, it's url template and application name will be used as defaults for the new code.
+      /// If an invite code has been created previously, its URL template and application name will be used as defaults for the new code.
       /// The new code will overwrite the previous one and make it invalid.
-      /// Note: It is possible to reissue a new code only when the previous code has expired, or when the user provides a wrong code three or more times during verification.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4852,9 +4850,8 @@ namespace Zitadel.User.V2 {
       /// Create an invite code for a user
       ///
       /// Create an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
-      /// If an invite code has been created previously, it's url template and application name will be used as defaults for the new code.
+      /// If an invite code has been created previously, its URL template and application name will be used as defaults for the new code.
       /// The new code will overwrite the previous one and make it invalid.
-      /// Note: It is possible to reissue a new code only when the previous code has expired, or when the user provides a wrong code three or more times during verification.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -4868,9 +4865,8 @@ namespace Zitadel.User.V2 {
       /// Create an invite code for a user
       ///
       /// Create an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
-      /// If an invite code has been created previously, it's url template and application name will be used as defaults for the new code.
+      /// If an invite code has been created previously, its URL template and application name will be used as defaults for the new code.
       /// The new code will overwrite the previous one and make it invalid.
-      /// Note: It is possible to reissue a new code only when the previous code has expired, or when the user provides a wrong code three or more times during verification.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
@@ -4886,9 +4882,8 @@ namespace Zitadel.User.V2 {
       /// Create an invite code for a user
       ///
       /// Create an invite code for a user to initialize their first authentication method (password, passkeys, IdP) depending on the organization's available methods.
-      /// If an invite code has been created previously, it's url template and application name will be used as defaults for the new code.
+      /// If an invite code has been created previously, its URL template and application name will be used as defaults for the new code.
       /// The new code will overwrite the previous one and make it invalid.
-      /// Note: It is possible to reissue a new code only when the previous code has expired, or when the user provides a wrong code three or more times during verification.
       /// </summary>
       /// <param name="request">The request to send to the server.</param>
       /// <param name="options">The options for the call.</param>
@@ -5085,7 +5080,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -5103,7 +5098,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -5119,7 +5114,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
@@ -5137,7 +5132,7 @@ namespace Zitadel.User.V2 {
       /// <summary>
       /// Set User Metadata
       ///
-      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove metadata entries, use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). For HTTP requests, make sure the bytes array value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteUserMetadata](/docs/reference/api/user/zitadel.user.v2.UserService.DeleteUserMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `user.write`
