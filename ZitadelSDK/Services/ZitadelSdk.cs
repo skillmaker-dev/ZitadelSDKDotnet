@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using System.Collections.Concurrent;
 using ZitadelSDK.Authentication;
+using ZitadelSDK.Internal;
 
 namespace ZitadelSDK.Services;
 
@@ -66,7 +67,8 @@ public sealed class ZitadelSdk : IZitadelSdk
 
         _channel = GrpcChannel.ForAddress(_options.Authority, new GrpcChannelOptions
         {
-            Credentials = channelCredentials
+            Credentials = channelCredentials,
+            UnsafeUseInsecureChannelCallCredentials = _options.AllowInsecureTransport && !TransportSecurity.UsesHttps(_options.Authority)
         });
 
         _callInvoker = _channel.CreateCallInvoker();
@@ -138,7 +140,11 @@ public sealed class ZitadelSdk : IZitadelSdk
         IZitadelCredentialProvider credentialProvider)
     {
         var callCredentials = credentialProvider.CreateCallCredentials(options.Authority);
-        return ChannelCredentials.Create(new SslCredentials(), callCredentials);
+        var transportCredentials = TransportSecurity.UsesHttps(options.Authority)
+            ? new SslCredentials()
+            : ChannelCredentials.Insecure;
+
+        return ChannelCredentials.Create(transportCredentials, callCredentials);
     }
 
     private static void ValidateOptions(ZitadelClientOptions options)
@@ -148,15 +154,10 @@ public sealed class ZitadelSdk : IZitadelSdk
             throw new InvalidOperationException("Zitadel authority is not configured. Set 'ServiceAdmin:Authority' in appsettings.json or environment variables.");
         }
 
-        if (!Uri.TryCreate(options.Authority, UriKind.Absolute, out var authorityUri))
-        {
-            throw new InvalidOperationException($"Zitadel authority '{options.Authority}' is not a valid absolute URI.");
-        }
-
-        if (!string.Equals(authorityUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
-        {
-            throw new InvalidOperationException("Zitadel authority must use HTTPS.");
-        }
+        TransportSecurity.ValidateUri(
+            options.Authority,
+            "Zitadel authority",
+            options.AllowInsecureTransport);
     }
 
     private void ThrowIfDisposed()

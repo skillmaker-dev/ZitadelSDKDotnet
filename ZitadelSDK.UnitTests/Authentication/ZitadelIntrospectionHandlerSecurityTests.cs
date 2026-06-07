@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using NSubstitute;
+using System.Net;
 using System.Reflection;
+using System.Text;
 using System.Text.Encodings.Web;
 using ZitadelSDK.Authentication;
 
@@ -28,6 +31,23 @@ public class ZitadelIntrospectionHandlerSecurityTests
     }
 
     [Fact]
+    public void GetIntrospectionEndpoint_WithHttpIntrospectionEndpointAndInsecureTransportAllowed_ReturnsExpectedPath()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            IntrospectionEndpoint = "http://example.com/oauth/v2/introspect",
+            AllowInsecureTransport = true
+        };
+
+        var handler = CreateInitializedHandler(options);
+
+        var endpoint = InvokePrivate<string>(handler, "GetIntrospectionEndpoint");
+
+        Assert.Equal("http://example.com/oauth/v2/introspect", endpoint);
+    }
+
+    [Fact]
     public void GetIntrospectionEndpoint_WithHttpAuthority_Throws()
     {
         var options = new ZitadelIntrospectionOptions
@@ -39,6 +59,22 @@ public class ZitadelIntrospectionHandlerSecurityTests
 
         var exception = Assert.Throws<InvalidOperationException>(() => InvokePrivate<string>(handler, "GetIntrospectionEndpoint"));
         Assert.Contains("must use HTTPS", exception.Message);
+    }
+
+    [Fact]
+    public void GetIntrospectionEndpoint_WithHttpAuthorityAndInsecureTransportAllowed_ReturnsExpectedPath()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "http://example.com",
+            AllowInsecureTransport = true
+        };
+
+        var handler = CreateInitializedHandler(options);
+
+        var endpoint = InvokePrivate<string>(handler, "GetIntrospectionEndpoint");
+
+        Assert.Equal("http://example.com/oauth/v2/introspect", endpoint);
     }
 
     [Fact]
@@ -123,6 +159,58 @@ public class ZitadelIntrospectionHandlerSecurityTests
     }
 
     [Fact]
+    public async Task AuthenticateAsync_WithCachingDisabled_LogsCachingDisabledInsteadOfCacheMiss()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            ClientId = "client-id",
+            ClientSecret = "client-secret",
+            EnableCaching = false
+        };
+
+        var loggerFactory = new ListLoggerFactory();
+        var httpClientFactory = Substitute.For<IHttpClientFactory>();
+        httpClientFactory.CreateClient(Arg.Any<string>()).Returns(new HttpClient(new StaticHttpMessageHandler(CreateActiveResponse())));
+
+        var context = new DefaultHttpContext();
+        context.Request.Headers.Authorization = "Bearer opaque-token";
+
+        var handler = CreateInitializedHandler(options, loggerFactory, httpClientFactory, context);
+
+        var result = await ((IAuthenticationHandler)handler).AuthenticateAsync();
+
+        Assert.True(result.Succeeded);
+        Assert.Contains(loggerFactory.Messages, message => message.Contains("Caching disabled. Calling introspection endpoint.", StringComparison.Ordinal));
+        Assert.DoesNotContain(loggerFactory.Messages, message => message.Contains("Cache miss. Calling introspection endpoint.", StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public async Task AuthenticateAsync_SanitizesRequestPathBeforeLogging()
+    {
+        var options = new ZitadelIntrospectionOptions
+        {
+            Authority = "https://example.com",
+            ClientId = "client-id"
+        };
+
+        var loggerFactory = new ListLoggerFactory();
+        var context = new DefaultHttpContext();
+        context.Request.Path = new PathString("/\r\nforged");
+
+        var handler = CreateInitializedHandler(options, loggerFactory, httpContext: context);
+
+        var result = await ((IAuthenticationHandler)handler).AuthenticateAsync();
+
+        Assert.False(result.Succeeded);
+        var startMessage = Assert.Single(
+            loggerFactory.Messages,
+            message => message.Contains("Starting authentication for request", StringComparison.Ordinal));
+        Assert.Contains("/\\r\\nforged", startMessage, StringComparison.Ordinal);
+        Assert.DoesNotContain("/\r\nforged", startMessage, StringComparison.Ordinal);
+    }
+
+    [Fact]
     public void Options_Validate_MissingAuthority_Throws()
     {
         var options = new ZitadelIntrospectionOptions
@@ -174,26 +262,32 @@ public class ZitadelIntrospectionHandlerSecurityTests
         Assert.Contains("InactiveTokenRetryDelay", exception.Message);
     }
 
-    private static object CreateInitializedHandler(ZitadelIntrospectionOptions options)
+    private static object CreateInitializedHandler(
+        ZitadelIntrospectionOptions options,
+        ILoggerFactory? loggerFactory = null,
+        IHttpClientFactory? httpClientFactory = null,
+        HttpContext? httpContext = null,
+        IMemoryCache? memoryCache = null)
     {
         var assembly = typeof(ZitadelIntrospectionOptions).Assembly;
         var handlerType = assembly.GetType("ZitadelSDK.Authentication.ZitadelIntrospectionHandler", throwOnError: true)!;
 
         var optionsMonitor = new StaticOptionsMonitor(options);
-        var httpClientFactory = Substitute.For<IHttpClientFactory>();
-        var memoryCache = new MemoryCache(new MemoryCacheOptions());
+        httpClientFactory ??= Substitute.For<IHttpClientFactory>();
+        memoryCache ??= new MemoryCache(new MemoryCacheOptions());
+        loggerFactory ??= NullLoggerFactory.Instance;
 
         var handler = Activator.CreateInstance(
             handlerType,
             optionsMonitor,
-            NullLoggerFactory.Instance,
+            loggerFactory,
             UrlEncoder.Default,
             httpClientFactory,
             memoryCache)!;
 
         var authenticationHandler = (IAuthenticationHandler)handler;
         var scheme = new AuthenticationScheme("ZITADEL", "ZITADEL", handlerType);
-        authenticationHandler.InitializeAsync(scheme, new DefaultHttpContext()).GetAwaiter().GetResult();
+        authenticationHandler.InitializeAsync(scheme, httpContext ?? new DefaultHttpContext()).GetAwaiter().GetResult();
 
         return handler;
     }
@@ -213,6 +307,14 @@ public class ZitadelIntrospectionHandlerSecurityTests
         }
     }
 
+    private static HttpResponseMessage CreateActiveResponse()
+    {
+        return new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StringContent("{\"active\":true,\"sub\":\"user-1\"}", Encoding.UTF8, "application/json")
+        };
+    }
+
     private sealed class StaticOptionsMonitor(ZitadelIntrospectionOptions options) : IOptionsMonitor<ZitadelIntrospectionOptions>
     {
         public ZitadelIntrospectionOptions CurrentValue => options;
@@ -222,6 +324,59 @@ public class ZitadelIntrospectionHandlerSecurityTests
         public IDisposable? OnChange(Action<ZitadelIntrospectionOptions, string?> listener)
         {
             return null;
+        }
+    }
+
+    private sealed class StaticHttpMessageHandler(HttpResponseMessage response) : HttpMessageHandler
+    {
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            return Task.FromResult(response);
+        }
+    }
+
+    private sealed class ListLoggerFactory : ILoggerFactory
+    {
+        public List<string> Messages { get; } = [];
+
+        public void AddProvider(ILoggerProvider provider)
+        {
+        }
+
+        public ILogger CreateLogger(string categoryName)
+        {
+            return new ListLogger(Messages);
+        }
+
+        public void Dispose()
+        {
+        }
+    }
+
+    private sealed class ListLogger(List<string> messages) : ILogger
+    {
+        public IDisposable BeginScope<TState>(TState state) where TState : notnull
+        {
+            return NullScope.Instance;
+        }
+
+        public bool IsEnabled(LogLevel logLevel)
+        {
+            return true;
+        }
+
+        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception? exception, Func<TState, Exception?, string> formatter)
+        {
+            messages.Add(formatter(state, exception));
+        }
+    }
+
+    private sealed class NullScope : IDisposable
+    {
+        public static NullScope Instance { get; } = new();
+
+        public void Dispose()
+        {
         }
     }
 }

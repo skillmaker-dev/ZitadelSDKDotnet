@@ -5,6 +5,7 @@ internal sealed class QueueHttpMessageHandler : HttpMessageHandler
     private readonly Queue<HttpResponseMessage> _responses = new();
 
     public int CallCount { get; private set; }
+    public HttpRequestMessage? LastRequest { get; private set; }
 
     public void EnqueueResponse(HttpResponseMessage response)
     {
@@ -15,6 +16,7 @@ internal sealed class QueueHttpMessageHandler : HttpMessageHandler
     protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
         CallCount++;
+        LastRequest = request;
 
         if (_responses.Count == 0)
         {

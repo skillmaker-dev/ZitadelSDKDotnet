@@ -299,7 +299,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteOrganizationMetadata](/docs/reference/api/org/zitadel.org.v2.OrganizationService.DeleteOrganizationMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -774,7 +774,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteOrganizationMetadata](/docs/reference/api/org/zitadel.org.v2.OrganizationService.DeleteOrganizationMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -792,7 +792,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteOrganizationMetadata](/docs/reference/api/org/zitadel.org.v2.OrganizationService.DeleteOrganizationMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -808,7 +808,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteOrganizationMetadata](/docs/reference/api/org/zitadel.org.v2.OrganizationService.DeleteOrganizationMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `org.write`
@@ -826,7 +826,7 @@ namespace Zitadel.Org.V2 {
       /// <summary>
       /// Set Organization Metadata
       ///
-      /// Adds or updates a metadata value for the requested key. Make sure the value is base64 encoded.
+      /// Sets a list of key value pairs. Existing metadata entries with matching keys are overwritten. Existing metadata entries without matching keys are untouched. To remove existing metadata entries, pass an empty metadata value or use [DeleteOrganizationMetadata](/docs/reference/api/org/zitadel.org.v2.OrganizationService.DeleteOrganizationMetadata). If no metadata entry exists for a given key, passing an empty value for that key has no effect (no-op). For HTTP requests, make sure the bytes array value is base64 encoded.
       ///
       /// Required permission:
       ///  - `org.write`

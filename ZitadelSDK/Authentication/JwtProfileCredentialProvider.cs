@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http.Json;
 using System.Security.Claims;
+using ZitadelSDK.Internal;
 
 namespace ZitadelSDK.Authentication;
 
@@ -16,6 +17,7 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
     private readonly IHttpClientFactory _httpClientFactory;
     private readonly ILogger<JwtProfileCredentialProvider> _logger;
     private readonly string _authenticationScheme;
+    private readonly bool _allowInsecureTransport;
 
     // Token cache – access is guarded by _tokenLock for correctness
     private string? _cachedAccessToken;
@@ -34,6 +36,40 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
         IHttpClientFactory httpClientFactory,
         ILogger<JwtProfileCredentialProvider> logger,
         string authenticationScheme = "Bearer")
+        : this(config, httpClientFactory, logger, authenticationScheme, allowInsecureTransport: false)
+    {
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="JwtProfileCredentialProvider"/> class.
+    /// </summary>
+    /// <param name="config">The JWT profile configuration.</param>
+    /// <param name="httpClientFactory">Factory for creating HTTP clients.</param>
+    /// <param name="logger">Logger used for diagnostic messages.</param>
+    /// <param name="allowInsecureTransport">Whether plaintext HTTP transport is allowed for token exchange.</param>
+    public JwtProfileCredentialProvider(
+        JwtProfileConfig config,
+        IHttpClientFactory httpClientFactory,
+        ILogger<JwtProfileCredentialProvider> logger,
+        bool allowInsecureTransport)
+        : this(config, httpClientFactory, logger, "Bearer", allowInsecureTransport)
+    {
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="JwtProfileCredentialProvider"/> class.
+    /// </summary>
+    /// <param name="config">The JWT profile configuration.</param>
+    /// <param name="httpClientFactory">Factory for creating HTTP clients.</param>
+    /// <param name="logger">Logger used for diagnostic messages.</param>
+    /// <param name="authenticationScheme">The authentication scheme to apply to outbound requests.</param>
+    /// <param name="allowInsecureTransport">Whether plaintext HTTP transport is allowed for token exchange.</param>
+    public JwtProfileCredentialProvider(
+        JwtProfileConfig config,
+        IHttpClientFactory httpClientFactory,
+        ILogger<JwtProfileCredentialProvider> logger,
+        string authenticationScheme,
+        bool allowInsecureTransport)
     {
         ArgumentNullException.ThrowIfNull(config);
         ArgumentNullException.ThrowIfNull(httpClientFactory);
@@ -48,6 +84,7 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
         _httpClientFactory = httpClientFactory;
         _logger = logger;
         _authenticationScheme = authenticationScheme;
+        _allowInsecureTransport = allowInsecureTransport;
     }
 
     /// <summary>
@@ -175,24 +212,14 @@ public class JwtProfileCredentialProvider : IZitadelCredentialProvider
         return tokenHandler.WriteToken(token);
     }
 
-    private static string NormalizeAuthority(string authority)
+    private string NormalizeAuthority(string authority)
     {
         if (string.IsNullOrWhiteSpace(authority))
         {
             throw new InvalidOperationException("ZITADEL authority must be provided for JWT authentication.");
         }
 
-        if (!Uri.TryCreate(authority, UriKind.Absolute, out var baseUri))
-        {
-            throw new InvalidOperationException($"Invalid ZITADEL authority '{authority}'. Provide an absolute HTTPS URL.");
-        }
-
-        if (!string.Equals(baseUri.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase))
-        {
-            throw new InvalidOperationException("JWT Profile authentication requires an HTTPS authority.");
-        }
-
-        return baseUri.GetLeftPart(UriPartial.Authority).TrimEnd('/');
+        return TransportSecurity.NormalizeAuthority(authority, "ZITADEL authority", _allowInsecureTransport);
     }
 
     private static string BuildTokenEndpoint(string normalizedAuthority)

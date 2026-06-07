@@ -2,7 +2,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using NSubstitute;
+using System.Net;
 using ZitadelSDK.Extensions;
+using ZitadelSDK.UnitTests.TestHelpers;
 
 namespace ZitadelSDK.UnitTests.Extensions;
 
@@ -48,5 +50,25 @@ public class ZitadelHealthChecksExtensionsTests
         Assert.Equal(HealthStatus.Unhealthy, result.Status);
         Assert.NotNull(result.Exception);
         Assert.Contains("must use HTTPS", result.Exception!.Message);
+    }
+
+    [Fact]
+    public async Task CheckHealth_WithHttpAuthority_AllowsReadyCheckWhenInsecureTransportIsEnabled()
+    {
+        var handler = new QueueHttpMessageHandler();
+        handler.EnqueueResponse(new HttpResponseMessage(HttpStatusCode.OK));
+
+        var httpClientFactory = Substitute.For<IHttpClientFactory>();
+        httpClientFactory.CreateClient().Returns(new HttpClient(handler));
+
+        var healthCheck = new ZitadelHealthCheck(
+            "http://example.com/base-path",
+            httpClientFactory,
+            allowInsecureTransport: true);
+
+        var result = await healthCheck.CheckHealthAsync(new HealthCheckContext(), CancellationToken.None);
+
+        Assert.Equal(HealthStatus.Healthy, result.Status);
+        Assert.Equal("http://example.com/debug/ready", handler.LastRequest?.RequestUri?.ToString());
     }
 }

@@ -59,6 +59,48 @@ public class JwtProfileCredentialProviderTests
     }
 
     [Fact]
+    public async Task CreateCallCredentials_HttpAuthority_ThrowsWhenInsecureTransportIsDisabled()
+    {
+        var config = CreateConfig();
+        var httpClientFactory = Substitute.For<IHttpClientFactory>();
+        var logger = Substitute.For<ILogger<JwtProfileCredentialProvider>>();
+        var provider = new JwtProfileCredentialProvider(config, httpClientFactory, logger);
+
+        var credentials = provider.CreateCallCredentials("http://example.com");
+
+        var exception = await Assert.ThrowsAsync<InvalidOperationException>(
+            () => CallCredentialsTestHelper.InvokeAsync(credentials));
+
+        Assert.Contains("HTTPS", exception.Message);
+    }
+
+    [Fact]
+    public async Task CreateCallCredentials_HttpAuthority_AllowsTokenExchangeWhenInsecureTransportIsEnabled()
+    {
+        var config = CreateConfig();
+        var handler = new QueueHttpMessageHandler();
+        handler.EnqueueResponse(CreateTokenResponse("token-1", expiresIn: 3600));
+
+        var httpClientFactory = Substitute.For<IHttpClientFactory>();
+        httpClientFactory.CreateClient(Arg.Any<string>()).Returns(new HttpClient(handler));
+
+        var logger = Substitute.For<ILogger<JwtProfileCredentialProvider>>();
+        var provider = new JwtProfileCredentialProvider(
+            config,
+            httpClientFactory,
+            logger,
+            allowInsecureTransport: true);
+
+        var credentials = provider.CreateCallCredentials("http://example.com");
+        var metadata = await CallCredentialsTestHelper.InvokeAsync(credentials);
+
+        var header = Assert.Single(metadata);
+        Assert.Equal("authorization", header.Key);
+        Assert.Equal("Bearer token-1", header.Value);
+        Assert.Equal("http://example.com/oauth/v2/token", handler.LastRequest?.RequestUri?.ToString());
+    }
+
+    [Fact]
     public async Task CreateCallCredentials_NonSuccessResponseThrows()
     {
         // Arrange
@@ -100,6 +142,19 @@ public class JwtProfileCredentialProviderTests
     }
 
     [Fact]
+    public async Task JwtProfileConfig_GetSignedJwtAsync_AllowsHttpWhenInsecureTransportIsEnabled()
+    {
+        var config = CreateConfig();
+
+        var token = await config.GetSignedJwtAsync("http://example.com", allowInsecureTransport: true);
+
+        var handler = new JwtSecurityTokenHandler();
+        var jwt = handler.ReadJwtToken(token);
+
+        Assert.Equal("http://example.com", jwt.Audiences.Single());
+    }
+
+    [Fact]
     public async Task Application_GetSignedJwtAsync_CanGenerateMultipleAssertions()
     {
         var application = new Application
@@ -121,6 +176,24 @@ public class JwtProfileCredentialProviderTests
         Assert.Equal("key-id", handler.ReadJwtToken(secondToken).Header.Kid);
     }
 
+    [Fact]
+    public async Task Application_GetSignedJwtAsync_AllowsHttpWhenInsecureTransportIsEnabled()
+    {
+        var application = new Application
+        {
+            AppId = "app-id",
+            ClientId = "client-id",
+            KeyId = "key-id",
+            Key = CreatePrivateKey()
+        };
+
+        var token = await application.GetSignedJwtAsync("http://example.com", allowInsecureTransport: true);
+
+        var handler = new JwtSecurityTokenHandler();
+        var jwt = handler.ReadJwtToken(token);
+
+        Assert.Equal("http://example.com", jwt.Audiences.Single());
+    }
     private static JwtProfileConfig CreateConfig()
     {
         return new JwtProfileConfig

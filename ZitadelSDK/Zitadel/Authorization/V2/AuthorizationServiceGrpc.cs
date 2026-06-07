@@ -9,9 +9,9 @@ using grpc = global::Grpc.Core;
 
 namespace Zitadel.Authorization.V2 {
   /// <summary>
-  /// AuthorizationService provides methods to manage authorizations for users within your projects and applications.
+  /// Note: We have streamlined our naming conventions to improve clarity. Authorization in this context refers to role assignments, not to OAuth authorization.
   ///
-  /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+  /// AuthorizationService provides methods to manage authorizations for users within your projects and applications.
   ///
   /// For managing permissions and roles for Zitadel internal resources, like organizations, projects,
   /// users, etc., please use the InternalPermissionService.
@@ -137,11 +137,11 @@ namespace Zitadel.Authorization.V2 {
     public abstract partial class AuthorizationServiceBase
     {
       /// <summary>
-      /// List Authorizations
-      ///
-      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
+      /// List Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
       ///   - "user.grant.read"
@@ -157,11 +157,11 @@ namespace Zitadel.Authorization.V2 {
       }
 
       /// <summary>
-      /// Create Authorization
-      ///
-      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      /// Create Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -176,11 +176,11 @@ namespace Zitadel.Authorization.V2 {
       }
 
       /// <summary>
-      /// Update Authorization
-      ///
-      /// UpdateAuthorization updates the authorization.
+      /// Update Role Assignments
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -197,11 +197,11 @@ namespace Zitadel.Authorization.V2 {
       }
 
       /// <summary>
-      /// Delete Authorization
-      ///
-      /// DeleteAuthorization deletes the authorization.
+      /// Delete Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -220,11 +220,11 @@ namespace Zitadel.Authorization.V2 {
       }
 
       /// <summary>
-      /// Activate Authorization
-      ///
-      /// ActivateAuthorization activates an existing but inactive authorization.
+      /// Activate Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -243,7 +243,7 @@ namespace Zitadel.Authorization.V2 {
       }
 
       /// <summary>
-      /// Deactivate Authorization
+      /// Deactivate Role Assignment
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -295,11 +295,11 @@ namespace Zitadel.Authorization.V2 {
       }
 
       /// <summary>
-      /// List Authorizations
-      ///
-      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
+      /// List Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
       ///   - "user.grant.read"
@@ -316,11 +316,11 @@ namespace Zitadel.Authorization.V2 {
         return ListAuthorizations(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List Authorizations
-      ///
-      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
+      /// List Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
       ///   - "user.grant.read"
@@ -335,11 +335,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_ListAuthorizations, null, options, request);
       }
       /// <summary>
-      /// List Authorizations
-      ///
-      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
+      /// List Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
       ///   - "user.grant.read"
@@ -356,11 +356,11 @@ namespace Zitadel.Authorization.V2 {
         return ListAuthorizationsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// List Authorizations
-      ///
-      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
+      /// List Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ListAuthorizations returns all authorizations matching the request and necessary permissions.
       ///
       /// Required permissions:
       ///   - "user.grant.read"
@@ -375,11 +375,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_ListAuthorizations, null, options, request);
       }
       /// <summary>
-      /// Create Authorization
-      ///
-      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      /// Create Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -395,11 +395,11 @@ namespace Zitadel.Authorization.V2 {
         return CreateAuthorization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create Authorization
-      ///
-      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      /// Create Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -413,11 +413,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_CreateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Create Authorization
-      ///
-      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      /// Create Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -433,11 +433,11 @@ namespace Zitadel.Authorization.V2 {
         return CreateAuthorizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Create Authorization
-      ///
-      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
+      /// Create Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// CreateAuthorization creates a new authorization for a user in an owned or granted project.
       ///
       /// Required permissions:
       ///   - "user.grant.write"
@@ -451,11 +451,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_CreateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Update Authorization
-      ///
-      /// UpdateAuthorization updates the authorization.
+      /// Update Role Assignments
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -473,11 +473,11 @@ namespace Zitadel.Authorization.V2 {
         return UpdateAuthorization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update Authorization
-      ///
-      /// UpdateAuthorization updates the authorization.
+      /// Update Role Assignments
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -493,11 +493,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_UpdateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Update Authorization
-      ///
-      /// UpdateAuthorization updates the authorization.
+      /// Update Role Assignments
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -515,11 +515,11 @@ namespace Zitadel.Authorization.V2 {
         return UpdateAuthorizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Update Authorization
-      ///
-      /// UpdateAuthorization updates the authorization.
+      /// Update Role Assignments
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// UpdateAuthorization updates the authorization.
       ///
       /// Note that any role keys previously granted to the user and not present in the request will be revoked.
       ///
@@ -535,11 +535,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_UpdateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Delete Authorization
-      ///
-      /// DeleteAuthorization deletes the authorization.
+      /// Delete Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -559,11 +559,11 @@ namespace Zitadel.Authorization.V2 {
         return DeleteAuthorization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Authorization
-      ///
-      /// DeleteAuthorization deletes the authorization.
+      /// Delete Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -581,11 +581,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_DeleteAuthorization, null, options, request);
       }
       /// <summary>
-      /// Delete Authorization
-      ///
-      /// DeleteAuthorization deletes the authorization.
+      /// Delete Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -605,11 +605,11 @@ namespace Zitadel.Authorization.V2 {
         return DeleteAuthorizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Delete Authorization
-      ///
-      /// DeleteAuthorization deletes the authorization.
+      /// Delete Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// DeleteAuthorization deletes the authorization.
       ///
       /// In case the authorization is not found, the request will return a successful response as
       /// the desired state is already achieved.
@@ -627,11 +627,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_DeleteAuthorization, null, options, request);
       }
       /// <summary>
-      /// Activate Authorization
-      ///
-      /// ActivateAuthorization activates an existing but inactive authorization.
+      /// Activate Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -651,11 +651,11 @@ namespace Zitadel.Authorization.V2 {
         return ActivateAuthorization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Activate Authorization
-      ///
-      /// ActivateAuthorization activates an existing but inactive authorization.
+      /// Activate Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -673,11 +673,11 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_ActivateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Activate Authorization
-      ///
-      /// ActivateAuthorization activates an existing but inactive authorization.
+      /// Activate Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -697,11 +697,11 @@ namespace Zitadel.Authorization.V2 {
         return ActivateAuthorizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Activate Authorization
-      ///
-      /// ActivateAuthorization activates an existing but inactive authorization.
+      /// Activate Role Assignment
       ///
       /// Note: Authorization in this context refers to role assignments, not to OAuth authorization.
+      ///
+      /// ActivateAuthorization activates an existing but inactive authorization.
       ///
       /// In case the authorization is already active, the request will return a successful response as
       /// the desired state is already achieved.
@@ -719,7 +719,7 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.AsyncUnaryCall(__Method_ActivateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Deactivate Authorization
+      /// Deactivate Role Assignment
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -743,7 +743,7 @@ namespace Zitadel.Authorization.V2 {
         return DeactivateAuthorization(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deactivate Authorization
+      /// Deactivate Role Assignment
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -765,7 +765,7 @@ namespace Zitadel.Authorization.V2 {
         return CallInvoker.BlockingUnaryCall(__Method_DeactivateAuthorization, null, options, request);
       }
       /// <summary>
-      /// Deactivate Authorization
+      /// Deactivate Role Assignment
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
@@ -789,7 +789,7 @@ namespace Zitadel.Authorization.V2 {
         return DeactivateAuthorizationAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
       /// <summary>
-      /// Deactivate Authorization
+      /// Deactivate Role Assignment
       ///
       /// DeactivateAuthorization deactivates an existing and active authorization.
       ///
