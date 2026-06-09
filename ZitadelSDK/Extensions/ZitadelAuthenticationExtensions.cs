@@ -112,28 +112,29 @@ public static class ZitadelAuthenticationExtensions
                 {
                     try
                     {
+                        // ZITADEL role structure: {"role-key": {"org-id": "org-name"}}
                         var parsed = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(roleClaim.Value);
                         if (parsed is null)
                         {
                             continue;
                         }
 
-                        foreach (var (orgId, roles) in parsed)
+                        foreach (var (role, orgs) in parsed)
                         {
-                            foreach (var role in roles.Keys)
+                            foreach (var orgId in orgs.Keys)
                             {
                                 claims.Add(new Claim(
                                     ZitadelClaimTypes.OrganizationRole(orgId),
                                     role,
                                     ClaimValueTypes.String,
                                     context.Options.ClaimsIssuer));
-
-                                claims.Add(new Claim(
-                                    ClaimTypes.Role,
-                                    role,
-                                    ClaimValueTypes.String,
-                                    context.Options.ClaimsIssuer));
                             }
+
+                            claims.Add(new Claim(
+                                ClaimTypes.Role,
+                                role,
+                                ClaimValueTypes.String,
+                                context.Options.ClaimsIssuer));
                         }
                     }
                     catch (JsonException ex)
@@ -240,28 +241,28 @@ public static class ZitadelAuthenticationExtensions
                         {
                             try
                             {
-                                // Parse ZITADEL role structure: {"org-id": {"role-key": "role-name"}}
+                                // Parse ZITADEL role structure: {"role-key": {"org-id": "org-name"}}
                                 var roleDict = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(roleClaim.Value);
                                 if (roleDict != null)
                                 {
-                                    foreach (var org in roleDict)
+                                    foreach (var (role, orgs) in roleDict)
                                     {
-                                        foreach (var role in org.Value)
+                                        foreach (var orgId in orgs.Keys)
                                         {
                                             // Add organization-specific role
                                             newClaims.Add(new Claim(
-                                                ZitadelClaimTypes.OrganizationRole(org.Key),
-                                                role.Key,
-                                                ClaimValueTypes.String,
-                                                context.Options.ClaimsIssuer));
-
-                                            // Add standard role claim
-                                            newClaims.Add(new Claim(
-                                                ClaimTypes.Role,
-                                                role.Key,
+                                                ZitadelClaimTypes.OrganizationRole(orgId),
+                                                role,
                                                 ClaimValueTypes.String,
                                                 context.Options.ClaimsIssuer));
                                         }
+
+                                        // Add standard role claim
+                                        newClaims.Add(new Claim(
+                                            ClaimTypes.Role,
+                                            role,
+                                            ClaimValueTypes.String,
+                                            context.Options.ClaimsIssuer));
                                     }
                                 }
                             }
