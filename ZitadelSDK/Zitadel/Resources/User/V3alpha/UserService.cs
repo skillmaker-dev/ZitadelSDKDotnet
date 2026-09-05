@@ -462,7 +462,7 @@ namespace Zitadel.Resources.User.V3alpha {
             "dGlvbogBARJRCg1pZHBfaW50ZW50X2lkGAMgASgJQi2SQRxKFCIxNjM4NDA3",
             "NzY4MzU0MzI3MDUieMgBgAEB4kEBAvpCB3IFEAEYyAFSC2lkcEludGVudElk",
             "EmcKEGlkcF9pbnRlbnRfdG9rZW4YBCABKAlCPZJBLEokIlNKS0wzaW9JRHBv",
-            "MzQyaW9xdzk4ZmpwM3NkZjMyd2FoYj0ieMgBgAEB4kEBAvpCB3IFEAEYyAFS",
+            "MzQyaW9xdzk4ZmpwM3NkZjMyd2FoYj0iePQDgAEB4kEBAvpCB3IFEAEY9ANS",
             "DmlkcEludGVudFRva2VuQgsKCV9pbnN0YW5jZUIPCg1fb3JnYW5pemF0aW9u",
             "IvgBCiFHZXRJZGVudGl0eVByb3ZpZGVySW50ZW50UmVzcG9uc2USQwoHZGV0",
             "YWlscxgBIAEoCzIpLnppdGFkZWwucmVzb3VyY2VzLm9iamVjdC52M2FscGhh",

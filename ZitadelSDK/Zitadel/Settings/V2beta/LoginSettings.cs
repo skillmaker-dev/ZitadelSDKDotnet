@@ -107,7 +107,7 @@ namespace Zitadel.Settings.V2beta {
             "EAQqYQoPTXVsdGlGYWN0b3JUeXBlEiEKHU1VTFRJX0ZBQ1RPUl9UWVBFX1VO",
             "U1BFQ0lGSUVEEAASKwonTVVMVElfRkFDVE9SX1RZUEVfVTJGX1dJVEhfVkVS",
             "SUZJQ0FUSU9OEAEqSAoMUGFzc2tleXNUeXBlEh0KGVBBU1NLRVlTX1RZUEVf",
-            "Tk9UX0FMTE9XRUQQABIZChVQQVNTS0VZU19UWVBFX0FMTE9XRUQQASrGAwoU",
+            "Tk9UX0FMTE9XRUQQABIZChVQQVNTS0VZU19UWVBFX0FMTE9XRUQQASqMBAoU",
             "SWRlbnRpdHlQcm92aWRlclR5cGUSJgoiSURFTlRJVFlfUFJPVklERVJfVFlQ",
             "RV9VTlNQRUNJRklFRBAAEh8KG0lERU5USVRZX1BST1ZJREVSX1RZUEVfT0lE",
             "QxABEh4KGklERU5USVRZX1BST1ZJREVSX1RZUEVfSldUEAISHwobSURFTlRJ",
@@ -118,12 +118,14 @@ namespace Zitadel.Settings.V2beta {
             "UFJPVklERVJfVFlQRV9HSVRMQUIQCBItCilJREVOVElUWV9QUk9WSURFUl9U",
             "WVBFX0dJVExBQl9TRUxGX0hPU1RFRBAJEiEKHUlERU5USVRZX1BST1ZJREVS",
             "X1RZUEVfR09PR0xFEAoSHwobSURFTlRJVFlfUFJPVklERVJfVFlQRV9TQU1M",
-            "EAtC7QEKG2NvbS56aXRhZGVsLnNldHRpbmdzLnYyYmV0YUISTG9naW5TZXR0",
-            "aW5nc1Byb3RvUAFaPGdpdGh1Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9n",
-            "cnBjL3NldHRpbmdzL3YyYmV0YTtzZXR0aW5nc6ICA1pTWKoCF1ppdGFkZWwu",
-            "U2V0dGluZ3MuVjJiZXRhygIXWml0YWRlbFxTZXR0aW5nc1xWMmJldGHiAiNa",
-            "aXRhZGVsXFNldHRpbmdzXFYyYmV0YVxHUEJNZXRhZGF0YeoCGVppdGFkZWw6",
-            "OlNldHRpbmdzOjpWMmJldGFiBnByb3RvMw=="));
+            "EAsSIAocSURFTlRJVFlfUFJPVklERVJfVFlQRV9BUFBMRRAMEiIKHklERU5U",
+            "SVRZX1BST1ZJREVSX1RZUEVfWklUQURFTBANQu0BChtjb20ueml0YWRlbC5z",
+            "ZXR0aW5ncy52MmJldGFCEkxvZ2luU2V0dGluZ3NQcm90b1ABWjxnaXRodWIu",
+            "Y29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92MmJldGE7",
+            "c2V0dGluZ3OiAgNaU1iqAhdaaXRhZGVsLlNldHRpbmdzLlYyYmV0YcoCF1pp",
+            "dGFkZWxcU2V0dGluZ3NcVjJiZXRh4gIjWml0YWRlbFxTZXR0aW5nc1xWMmJl",
+            "dGFcR1BCTWV0YWRhdGHqAhlaaXRhZGVsOjpTZXR0aW5nczo6VjJiZXRhYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2beta.SettingsReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Settings.V2beta.SecondFactorType), typeof(global::Zitadel.Settings.V2beta.MultiFactorType), typeof(global::Zitadel.Settings.V2beta.PasskeysType), typeof(global::Zitadel.Settings.V2beta.IdentityProviderType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -169,6 +171,8 @@ namespace Zitadel.Settings.V2beta {
     [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_GITLAB_SELF_HOSTED")] GitlabSelfHosted = 9,
     [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_GOOGLE")] Google = 10,
     [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_SAML")] Saml = 11,
+    [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_APPLE")] Apple = 12,
+    [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_ZITADEL")] Zitadel = 13,
   }
 
   #endregion

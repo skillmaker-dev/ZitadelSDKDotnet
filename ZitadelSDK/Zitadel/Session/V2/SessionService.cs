@@ -110,7 +110,7 @@ namespace Zitadel.Session.V2 {
             "X2lkGAEgASgJQj+SQS5KJiJkNjU0ZTZiYS03MGEzLTQ4ZWYtYTk1ZC0zN2M4",
             "ZDhhNzkwMWEieMgBgAEB4kEBAvpCB3IFEAEYyAFSC2lkcEludGVudElkEmcK",
             "EGlkcF9pbnRlbnRfdG9rZW4YAiABKAlCPZJBLEokIlNKS0wzaW9JRHBvMzQy",
-            "aW9xdzk4ZmpwM3NkZjMyd2FoYj0ieMgBgAEB4kEBAvpCB3IFEAEYyAFSDmlk",
+            "aW9xdzk4ZmpwM3NkZjMyd2FoYj0iePQDgAEB4kEBAvpCB3IFEAEY9ANSDmlk",
             "cEludGVudFRva2VuIkAKCUNoZWNrVE9UUBIzCgRjb2RlGAEgASgJQh+SQQ9K",
             "CCIzMjM3NjQieAaAAQbiQQEC+kIGcgQQBhgGUgRjb2RlIjwKCENoZWNrT1RQ",
             "EjAKBGNvZGUYASABKAlCHJJBDkoJIjMyMzc2NDIigAEB4kEBAvpCBHICEAFS",

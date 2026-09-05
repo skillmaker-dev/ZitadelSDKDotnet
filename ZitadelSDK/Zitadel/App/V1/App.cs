@@ -43,7 +43,7 @@ namespace Zitadel.App.V1 {
             "ZRgBIAEoCUIUkkEJSgciQ29uc28i+kIFcgMYyAFSBG5hbWUSbAoGbWV0aG9k",
             "GAIgASgOMhsueml0YWRlbC52MS5UZXh0UXVlcnlNZXRob2RCN5JBLDIqZGVm",
             "aW5lcyB3aGljaCB0ZXh0IGVxdWFsaXR5IG1ldGhvZCBpcyB1c2Vk+kIFggEC",
-            "EAFSBm1ldGhvZCLhGQoKT0lEQ0NvbmZpZxKsAQoNcmVkaXJlY3RfdXJpcxgB",
+            "EAFSBm1ldGhvZCLqHgoKT0lEQ0NvbmZpZxKsAQoNcmVkaXJlY3RfdXJpcxgB",
             "IAMoCUKGAZJBggEyUkNhbGxiYWNrIFVSSSBvZiB0aGUgYXV0aG9yaXphdGlv",
             "biByZXF1ZXN0IHdoZXJlIHRoZSBjb2RlIG9yIHRva2VucyB3aWxsIGJlIHNl",
             "bnQgdG9KLFsiaHR0cHM6Ly9jb25zb2xlLnppdGFkZWwuY2gvYXV0aC9jYWxs",
@@ -116,54 +116,98 @@ namespace Zitadel.App.V1 {
             "ZXJyZWQgbG9naW4gVUksIHdoZXJlIHRoZSB1c2VyIGlzIHJlZGlyZWN0ZWQg",
             "dG8gZm9yIGF1dGhlbnRpY2F0aW9uLiBJZiB1bnNldCwgdGhlIGxvZ2luIFVJ",
             "IGlzIGNob3NlbiBieSB0aGUgaW5zdGFuY2UgZGVmYXVsdC5SDGxvZ2luVmVy",
-            "c2lvbkoECAYQB1INY2xpZW50X3NlY3JldCK9AgoKU0FNTENvbmZpZxIjCgxt",
-            "ZXRhZGF0YV94bWwYASABKAxIAFILbWV0YWRhdGFYbWwSIwoMbWV0YWRhdGFf",
-            "dXJsGAIgASgJSABSC21ldGFkYXRhVXJsEtgBCg1sb2dpbl92ZXJzaW9uGAMg",
-            "ASgLMhwueml0YWRlbC5hcHAudjEuTG9naW5WZXJzaW9uQpQBkkGQATKNAVNw",
-            "ZWNpZnkgdGhlIHByZWZlcnJlZCBsb2dpbiBVSSwgd2hlcmUgdGhlIHVzZXIg",
-            "aXMgcmVkaXJlY3RlZCB0byBmb3IgYXV0aGVudGljYXRpb24uIElmIHVuc2V0",
-            "LCB0aGUgbG9naW4gVUkgaXMgY2hvc2VuIGJ5IHRoZSBpbnN0YW5jZSBkZWZh",
-            "dWx0LlIMbG9naW5WZXJzaW9uQgoKCG1ldGFkYXRhIoUCCglBUElDb25maWcS",
-            "XgoJY2xpZW50X2lkGAEgASgJQkGSQT4yH2dlbmVyYXRlZCBvYXV0aDIvb2lk",
-            "YyBjbGllbnRfaWRKGyI2OTYyOTAyMzkwNjQ4ODMzNEBaSVRBREVMIlIIY2xp",
-            "ZW50SWQSggEKEGF1dGhfbWV0aG9kX3R5cGUYAyABKA4yIS56aXRhZGVsLmFw",
-            "cC52MS5BUElBdXRoTWV0aG9kVHlwZUI1kkEyMjBkZWZpbmVzIGhvdyB0aGUg",
-            "QVBJIHBhc3NlcyB0aGUgbG9naW4gY3JlZGVudGlhbHNSDmF1dGhNZXRob2RU",
-            "eXBlSgQIAhADUg1jbGllbnRfc2VjcmV0IoUBCgxMb2dpblZlcnNpb24SNAoI",
-            "bG9naW5fdjEYASABKAsyFy56aXRhZGVsLmFwcC52MS5Mb2dpblYxSABSB2xv",
-            "Z2luVjESNAoIbG9naW5fdjIYAiABKAsyFy56aXRhZGVsLmFwcC52MS5Mb2dp",
-            "blYySABSB2xvZ2luVjJCCQoHdmVyc2lvbiIJCgdMb2dpblYxIjYKB0xvZ2lu",
-            "VjISHgoIYmFzZV91cmkYASABKAlIAFIHYmFzZVVyaYgBAUILCglfYmFzZV91",
-            "cmkqUwoIQXBwU3RhdGUSGQoVQVBQX1NUQVRFX1VOU1BFQ0lGSUVEEAASFAoQ",
-            "QVBQX1NUQVRFX0FDVElWRRABEhYKEkFQUF9TVEFURV9JTkFDVElWRRACKncK",
-            "EE9JRENSZXNwb25zZVR5cGUSGwoXT0lEQ19SRVNQT05TRV9UWVBFX0NPREUQ",
-            "ABIfChtPSURDX1JFU1BPTlNFX1RZUEVfSURfVE9LRU4QARIlCiFPSURDX1JF",
-            "U1BPTlNFX1RZUEVfSURfVE9LRU5fVE9LRU4QAiq9AQoNT0lEQ0dyYW50VHlw",
-            "ZRImCiJPSURDX0dSQU5UX1RZUEVfQVVUSE9SSVpBVElPTl9DT0RFEAASHAoY",
-            "T0lEQ19HUkFOVF9UWVBFX0lNUExJQ0lUEAESIQodT0lEQ19HUkFOVF9UWVBF",
-            "X1JFRlJFU0hfVE9LRU4QAhIfChtPSURDX0dSQU5UX1RZUEVfREVWSUNFX0NP",
-            "REUQAxIiCh5PSURDX0dSQU5UX1RZUEVfVE9LRU5fRVhDSEFOR0UQBCpcCgtP",
-            "SURDQXBwVHlwZRIVChFPSURDX0FQUF9UWVBFX1dFQhAAEhwKGE9JRENfQVBQ",
-            "X1RZUEVfVVNFUl9BR0VOVBABEhgKFE9JRENfQVBQX1RZUEVfTkFUSVZFEAIq",
-            "oAEKEk9JRENBdXRoTWV0aG9kVHlwZRIfChtPSURDX0FVVEhfTUVUSE9EX1RZ",
-            "UEVfQkFTSUMQABIeChpPSURDX0FVVEhfTUVUSE9EX1RZUEVfUE9TVBABEh4K",
-            "Gk9JRENfQVVUSF9NRVRIT0RfVFlQRV9OT05FEAISKQolT0lEQ19BVVRIX01F",
-            "VEhPRF9UWVBFX1BSSVZBVEVfS0VZX0pXVBADKiMKC09JRENWZXJzaW9uEhQK",
-            "EE9JRENfVkVSU0lPTl8xXzAQACpECg1PSURDVG9rZW5UeXBlEhoKFk9JRENf",
-            "VE9LRU5fVFlQRV9CRUFSRVIQABIXChNPSURDX1RPS0VOX1RZUEVfSldUEAEq",
-            "XQoRQVBJQXV0aE1ldGhvZFR5cGUSHgoaQVBJX0FVVEhfTUVUSE9EX1RZUEVf",
-            "QkFTSUMQABIoCiRBUElfQVVUSF9NRVRIT0RfVFlQRV9QUklWQVRFX0tFWV9K",
-            "V1QQAUKhAQoSY29tLnppdGFkZWwuYXBwLnYxQghBcHBQcm90b1ABWidnaXRo",
-            "dWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9hcHCiAgNaQViqAg5a",
-            "aXRhZGVsLkFwcC5WMcoCDlppdGFkZWxcQXBwXFYx4gIaWml0YWRlbFxBcHBc",
-            "VjFcR1BCTWV0YWRhdGHqAhBaaXRhZGVsOjpBcHA6OlYxYgZwcm90bzM="));
+            "c2lvbhK1AgoDaW9zGBcgASgLMiAueml0YWRlbC5hcHAudjEuSU9TQXBwTGlu",
+            "a0NvbmZpZ0KAApJB/AEy+QFpT1MgQXNzb2NpYXRlZCBEb21haW5zIC8gcGFz",
+            "c2tleSB0cnVzdCBjb25maWcuIFNlcnZlZCBpbiAvLndlbGwta25vd24vYXBw",
+            "bGUtYXBwLXNpdGUtYXNzb2NpYXRpb24gYXMgd2ViY3JlZGVudGlhbHMuYXBw",
+            "cyBlbnRyeSAie3RlYW1faWR9LntidW5kbGVfaWR9IiAoQXBwbGUncyBmdWxs",
+            "IEFwcCBJRCkuIFBsYXRmb3JtIHZlcmlmaWVycyBtYXkgY2FjaGUgdGhlIGZp",
+            "bGU7IGNoYW5nZXMgY2FuIHRha2UgdGltZSB0byB0YWtlIGVmZmVjdC5SA2lv",
+            "cxLOAgoHYW5kcm9pZBgYIAEoCzIkLnppdGFkZWwuYXBwLnYxLkFuZHJvaWRB",
+            "cHBMaW5rQ29uZmlnQo0CkkGJAjKGAkFuZHJvaWQgRGlnaXRhbCBBc3NldCBM",
+            "aW5rcyAvIHBhc3NrZXkgdHJ1c3QgY29uZmlnLiBTZXJ2ZWQgaW4gLy53ZWxs",
+            "LWtub3duL2Fzc2V0bGlua3MuanNvbiBmb3IgZGVsZWdhdGVfcGVybWlzc2lv",
+            "bi9jb21tb24uaGFuZGxlX2FsbF91cmxzIGFuZCBkZWxlZ2F0ZV9wZXJtaXNz",
+            "aW9uL2NvbW1vbi5nZXRfbG9naW5fY3JlZHMuIFBsYXRmb3JtIHZlcmlmaWVy",
+            "cyBtYXkgY2FjaGUgdGhlIGZpbGU7IGNoYW5nZXMgY2FuIHRha2UgdGltZSB0",
+            "byB0YWtlIGVmZmVjdC5SB2FuZHJvaWRKBAgGEAdSDWNsaWVudF9zZWNyZXQi",
+            "uQQKEElPU0FwcExpbmtDb25maWcSqQIKB3RlYW1faWQYASABKAlCjwKSQfMB",
+            "MuIBQXBwbGUgVGVhbSBJRCAoQXBwIElEIHByZWZpeCksIGV4YWN0bHkgMTAg",
+            "YWxwaGFudW1lcmljIGNoYXJhY3RlcnMsIGUuZy4gQUJDREUxMjM0NS4gQ29t",
+            "YmluZWQgd2l0aCBidW5kbGVfaWQgYXMgVEVBTUlELkJVTkRMRUlEIGluIEFB",
+            "U0Egd2ViY3JlZGVudGlhbHMuYXBwcy4gTm90IHRoZSBmdWxsIEFwcGxlIEFw",
+            "cCBJRCBieSBpdHNlbGYuIEVtcHR5IGNsZWFycyB0aGUgdmFsdWUgb24gdXBk",
+            "YXRlLkoMIkFCQ0RFMTIzNDUi+kIVchMyC15bQS1aMC05XSskmAEK0AEBUgZ0",
+            "ZWFtSWQS+AEKCWJ1bmRsZV9pZBgCIAEoCULaAZJByQEyswFpT1MgQnVuZGxl",
+            "IElEIChDRkJ1bmRsZUlkZW50aWZpZXIpLCBlLmcuIGNvbS5leGFtcGxlLmFw",
+            "cC4gQ29tYmluZWQgd2l0aCB0ZWFtX2lkIGZvciBBQVNBIHdlYmNyZWRlbnRp",
+            "YWxzLmFwcHMuIERvIG5vdCBwYXN0ZSBURUFNSUQuYnVuZGxlLmlkIGhlcmUu",
+            "IEVtcHR5IGNsZWFycyB0aGUgdmFsdWUgb24gdXBkYXRlLkoRImNvbS5leGFt",
+            "cGxlLmFwcCL6QgpyCBABGMgB0AEBUghidW5kbGVJZCKMBQoUQW5kcm9pZEFw",
+            "cExpbmtDb25maWcSvgEKDHBhY2thZ2VfbmFtZRgBIAEoCUKaAZJBiQEydEFu",
+            "ZHJvaWQgcGFja2FnZSBuYW1lIChhcHBsaWNhdGlvbklkKS4gVXNlZCBpbiBh",
+            "c3NldGxpbmtzLmpzb24gdGFyZ2V0LnBhY2thZ2VfbmFtZS4gRW1wdHkgY2xl",
+            "YXJzIHRoZSB2YWx1ZSBvbiB1cGRhdGUuShEiY29tLmV4YW1wbGUuYXBwIvpC",
+            "CnIIEAEYyAHQAQFSC3BhY2thZ2VOYW1lErIDChhzaGEyNTZfY2VydF9maW5n",
+            "ZXJwcmludHMYAiADKAlC9wKSQa4CMsYBU0hBLTI1NiBzaWduaW5nIGNlcnRp",
+            "ZmljYXRlIGZpbmdlcnByaW50cyBmb3IgRGlnaXRhbCBBc3NldCBMaW5rcyAo",
+            "cGFzc2tleSAvIGdldF9sb2dpbl9jcmVkcykuIDY0IGhleCBjaGFycywgb3B0",
+            "aW9uYWxseSBjb2xvbi1zZXBhcmF0ZWQgcGFpcnMuIEF0IG1vc3QgMjAgZW50",
+            "cmllcy4gSW5jbHVkZSBkZWJ1ZyBhbmQgcmVsZWFzZSBhcyBuZWVkZWQuSmNb",
+            "IkFBOkJCOkNDOkREOkVFOkZGOjAwOjExOjIyOjMzOjQ0OjU1OjY2Ojc3Ojg4",
+            "Ojk5OkFBOkJCOkNDOkREOkVFOkZGOjAwOjExOjIyOjMzOjQ0OjU1OjY2Ojc3",
+            "Ojg4Ojk5Il36QkKSAT8QFCI7cjkyN14oWzAtOUEtRmEtZl17Mn0oOlswLTlB",
+            "LUZhLWZdezJ9KXszMX18WzAtOUEtRmEtZl17NjR9KSRSFnNoYTI1NkNlcnRG",
+            "aW5nZXJwcmludHMivQIKClNBTUxDb25maWcSIwoMbWV0YWRhdGFfeG1sGAEg",
+            "ASgMSABSC21ldGFkYXRhWG1sEiMKDG1ldGFkYXRhX3VybBgCIAEoCUgAUgtt",
+            "ZXRhZGF0YVVybBLYAQoNbG9naW5fdmVyc2lvbhgDIAEoCzIcLnppdGFkZWwu",
+            "YXBwLnYxLkxvZ2luVmVyc2lvbkKUAZJBkAEyjQFTcGVjaWZ5IHRoZSBwcmVm",
+            "ZXJyZWQgbG9naW4gVUksIHdoZXJlIHRoZSB1c2VyIGlzIHJlZGlyZWN0ZWQg",
+            "dG8gZm9yIGF1dGhlbnRpY2F0aW9uLiBJZiB1bnNldCwgdGhlIGxvZ2luIFVJ",
+            "IGlzIGNob3NlbiBieSB0aGUgaW5zdGFuY2UgZGVmYXVsdC5SDGxvZ2luVmVy",
+            "c2lvbkIKCghtZXRhZGF0YSKFAgoJQVBJQ29uZmlnEl4KCWNsaWVudF9pZBgB",
+            "IAEoCUJBkkE+Mh9nZW5lcmF0ZWQgb2F1dGgyL29pZGMgY2xpZW50X2lkShsi",
+            "Njk2MjkwMjM5MDY0ODgzMzRAWklUQURFTCJSCGNsaWVudElkEoIBChBhdXRo",
+            "X21ldGhvZF90eXBlGAMgASgOMiEueml0YWRlbC5hcHAudjEuQVBJQXV0aE1l",
+            "dGhvZFR5cGVCNZJBMjIwZGVmaW5lcyBob3cgdGhlIEFQSSBwYXNzZXMgdGhl",
+            "IGxvZ2luIGNyZWRlbnRpYWxzUg5hdXRoTWV0aG9kVHlwZUoECAIQA1INY2xp",
+            "ZW50X3NlY3JldCKFAQoMTG9naW5WZXJzaW9uEjQKCGxvZ2luX3YxGAEgASgL",
+            "Mhcueml0YWRlbC5hcHAudjEuTG9naW5WMUgAUgdsb2dpblYxEjQKCGxvZ2lu",
+            "X3YyGAIgASgLMhcueml0YWRlbC5hcHAudjEuTG9naW5WMkgAUgdsb2dpblYy",
+            "QgkKB3ZlcnNpb24iCQoHTG9naW5WMSI2CgdMb2dpblYyEh4KCGJhc2VfdXJp",
+            "GAEgASgJSABSB2Jhc2VVcmmIAQFCCwoJX2Jhc2VfdXJpKlMKCEFwcFN0YXRl",
+            "EhkKFUFQUF9TVEFURV9VTlNQRUNJRklFRBAAEhQKEEFQUF9TVEFURV9BQ1RJ",
+            "VkUQARIWChJBUFBfU1RBVEVfSU5BQ1RJVkUQAip3ChBPSURDUmVzcG9uc2VU",
+            "eXBlEhsKF09JRENfUkVTUE9OU0VfVFlQRV9DT0RFEAASHwobT0lEQ19SRVNQ",
+            "T05TRV9UWVBFX0lEX1RPS0VOEAESJQohT0lEQ19SRVNQT05TRV9UWVBFX0lE",
+            "X1RPS0VOX1RPS0VOEAIqvQEKDU9JRENHcmFudFR5cGUSJgoiT0lEQ19HUkFO",
+            "VF9UWVBFX0FVVEhPUklaQVRJT05fQ09ERRAAEhwKGE9JRENfR1JBTlRfVFlQ",
+            "RV9JTVBMSUNJVBABEiEKHU9JRENfR1JBTlRfVFlQRV9SRUZSRVNIX1RPS0VO",
+            "EAISHwobT0lEQ19HUkFOVF9UWVBFX0RFVklDRV9DT0RFEAMSIgoeT0lEQ19H",
+            "UkFOVF9UWVBFX1RPS0VOX0VYQ0hBTkdFEAQqXAoLT0lEQ0FwcFR5cGUSFQoR",
+            "T0lEQ19BUFBfVFlQRV9XRUIQABIcChhPSURDX0FQUF9UWVBFX1VTRVJfQUdF",
+            "TlQQARIYChRPSURDX0FQUF9UWVBFX05BVElWRRACKqABChJPSURDQXV0aE1l",
+            "dGhvZFR5cGUSHwobT0lEQ19BVVRIX01FVEhPRF9UWVBFX0JBU0lDEAASHgoa",
+            "T0lEQ19BVVRIX01FVEhPRF9UWVBFX1BPU1QQARIeChpPSURDX0FVVEhfTUVU",
+            "SE9EX1RZUEVfTk9ORRACEikKJU9JRENfQVVUSF9NRVRIT0RfVFlQRV9QUklW",
+            "QVRFX0tFWV9KV1QQAyojCgtPSURDVmVyc2lvbhIUChBPSURDX1ZFUlNJT05f",
+            "MV8wEAAqRAoNT0lEQ1Rva2VuVHlwZRIaChZPSURDX1RPS0VOX1RZUEVfQkVB",
+            "UkVSEAASFwoTT0lEQ19UT0tFTl9UWVBFX0pXVBABKl0KEUFQSUF1dGhNZXRo",
+            "b2RUeXBlEh4KGkFQSV9BVVRIX01FVEhPRF9UWVBFX0JBU0lDEAASKAokQVBJ",
+            "X0FVVEhfTUVUSE9EX1RZUEVfUFJJVkFURV9LRVlfSldUEAFCoQEKEmNvbS56",
+            "aXRhZGVsLmFwcC52MUIIQXBwUHJvdG9QAVonZ2l0aHViLmNvbS96aXRhZGVs",
+            "L3ppdGFkZWwvcGtnL2dycGMvYXBwogIDWkFYqgIOWml0YWRlbC5BcHAuVjHK",
+            "Ag5aaXRhZGVsXEFwcFxWMeICGlppdGFkZWxcQXBwXFYxXEdQQk1ldGFkYXRh",
+            "6gIQWml0YWRlbDo6QXBwOjpWMWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Zitadel.V1.ObjectReflection.Descriptor, global::Zitadel.V1.MessageReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.App.V1.AppState), typeof(global::Zitadel.App.V1.OIDCResponseType), typeof(global::Zitadel.App.V1.OIDCGrantType), typeof(global::Zitadel.App.V1.OIDCAppType), typeof(global::Zitadel.App.V1.OIDCAuthMethodType), typeof(global::Zitadel.App.V1.OIDCVersion), typeof(global::Zitadel.App.V1.OIDCTokenType), typeof(global::Zitadel.App.V1.APIAuthMethodType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.App), global::Zitadel.App.V1.App.Parser, new[]{ "Id", "Details", "State", "Name", "OidcConfig", "ApiConfig", "SamlConfig" }, new[]{ "Config" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.AppQuery), global::Zitadel.App.V1.AppQuery.Parser, new[]{ "NameQuery" }, new[]{ "Query" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.AppNameQuery), global::Zitadel.App.V1.AppNameQuery.Parser, new[]{ "Name", "Method" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.OIDCConfig), global::Zitadel.App.V1.OIDCConfig.Parser, new[]{ "RedirectUris", "ResponseTypes", "GrantTypes", "AppType", "ClientId", "AuthMethodType", "PostLogoutRedirectUris", "Version", "NoneCompliant", "ComplianceProblems", "DevMode", "AccessTokenType", "AccessTokenRoleAssertion", "IdTokenRoleAssertion", "IdTokenUserinfoAssertion", "ClockSkew", "AdditionalOrigins", "AllowedOrigins", "SkipNativeAppSuccessPage", "BackChannelLogoutUri", "LoginVersion" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.OIDCConfig), global::Zitadel.App.V1.OIDCConfig.Parser, new[]{ "RedirectUris", "ResponseTypes", "GrantTypes", "AppType", "ClientId", "AuthMethodType", "PostLogoutRedirectUris", "Version", "NoneCompliant", "ComplianceProblems", "DevMode", "AccessTokenType", "AccessTokenRoleAssertion", "IdTokenRoleAssertion", "IdTokenUserinfoAssertion", "ClockSkew", "AdditionalOrigins", "AllowedOrigins", "SkipNativeAppSuccessPage", "BackChannelLogoutUri", "LoginVersion", "Ios", "Android" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.IOSAppLinkConfig), global::Zitadel.App.V1.IOSAppLinkConfig.Parser, new[]{ "TeamId", "BundleId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.AndroidAppLinkConfig), global::Zitadel.App.V1.AndroidAppLinkConfig.Parser, new[]{ "PackageName", "Sha256CertFingerprints" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.SAMLConfig), global::Zitadel.App.V1.SAMLConfig.Parser, new[]{ "MetadataXml", "MetadataUrl", "LoginVersion" }, new[]{ "Metadata" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.APIConfig), global::Zitadel.App.V1.APIConfig.Parser, new[]{ "ClientId", "AuthMethodType" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.App.V1.LoginVersion), global::Zitadel.App.V1.LoginVersion.Parser, new[]{ "LoginV1", "LoginV2" }, new[]{ "Version" }, null, null, null),
@@ -1261,6 +1305,8 @@ namespace Zitadel.App.V1 {
       skipNativeAppSuccessPage_ = other.skipNativeAppSuccessPage_;
       backChannelLogoutUri_ = other.backChannelLogoutUri_;
       loginVersion_ = other.loginVersion_ != null ? other.loginVersion_.Clone() : null;
+      ios_ = other.ios_ != null ? other.ios_.Clone() : null;
+      android_ = other.android_ != null ? other.android_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1515,6 +1561,30 @@ namespace Zitadel.App.V1 {
       }
     }
 
+    /// <summary>Field number for the "ios" field.</summary>
+    public const int IosFieldNumber = 23;
+    private global::Zitadel.App.V1.IOSAppLinkConfig ios_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.App.V1.IOSAppLinkConfig Ios {
+      get { return ios_; }
+      set {
+        ios_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "android" field.</summary>
+    public const int AndroidFieldNumber = 24;
+    private global::Zitadel.App.V1.AndroidAppLinkConfig android_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.App.V1.AndroidAppLinkConfig Android {
+      get { return android_; }
+      set {
+        android_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1551,6 +1621,8 @@ namespace Zitadel.App.V1 {
       if (SkipNativeAppSuccessPage != other.SkipNativeAppSuccessPage) return false;
       if (BackChannelLogoutUri != other.BackChannelLogoutUri) return false;
       if (!object.Equals(LoginVersion, other.LoginVersion)) return false;
+      if (!object.Equals(Ios, other.Ios)) return false;
+      if (!object.Equals(Android, other.Android)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1579,6 +1651,8 @@ namespace Zitadel.App.V1 {
       if (SkipNativeAppSuccessPage != false) hash ^= SkipNativeAppSuccessPage.GetHashCode();
       if (BackChannelLogoutUri.Length != 0) hash ^= BackChannelLogoutUri.GetHashCode();
       if (loginVersion_ != null) hash ^= LoginVersion.GetHashCode();
+      if (ios_ != null) hash ^= Ios.GetHashCode();
+      if (android_ != null) hash ^= Android.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1660,6 +1734,14 @@ namespace Zitadel.App.V1 {
         output.WriteRawTag(178, 1);
         output.WriteMessage(LoginVersion);
       }
+      if (ios_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(Ios);
+      }
+      if (android_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(Android);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1733,6 +1815,14 @@ namespace Zitadel.App.V1 {
         output.WriteRawTag(178, 1);
         output.WriteMessage(LoginVersion);
       }
+      if (ios_ != null) {
+        output.WriteRawTag(186, 1);
+        output.WriteMessage(Ios);
+      }
+      if (android_ != null) {
+        output.WriteRawTag(194, 1);
+        output.WriteMessage(Android);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1791,6 +1881,12 @@ namespace Zitadel.App.V1 {
       }
       if (loginVersion_ != null) {
         size += 2 + pb::CodedOutputStream.ComputeMessageSize(LoginVersion);
+      }
+      if (ios_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Ios);
+      }
+      if (android_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(Android);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1858,6 +1954,18 @@ namespace Zitadel.App.V1 {
           LoginVersion = new global::Zitadel.App.V1.LoginVersion();
         }
         LoginVersion.MergeFrom(other.LoginVersion);
+      }
+      if (other.ios_ != null) {
+        if (ios_ == null) {
+          Ios = new global::Zitadel.App.V1.IOSAppLinkConfig();
+        }
+        Ios.MergeFrom(other.Ios);
+      }
+      if (other.android_ != null) {
+        if (android_ == null) {
+          Android = new global::Zitadel.App.V1.AndroidAppLinkConfig();
+        }
+        Android.MergeFrom(other.Android);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1968,6 +2076,20 @@ namespace Zitadel.App.V1 {
               LoginVersion = new global::Zitadel.App.V1.LoginVersion();
             }
             input.ReadMessage(LoginVersion);
+            break;
+          }
+          case 186: {
+            if (ios_ == null) {
+              Ios = new global::Zitadel.App.V1.IOSAppLinkConfig();
+            }
+            input.ReadMessage(Ios);
+            break;
+          }
+          case 194: {
+            if (android_ == null) {
+              Android = new global::Zitadel.App.V1.AndroidAppLinkConfig();
+            }
+            input.ReadMessage(Android);
             break;
           }
         }
@@ -2081,6 +2203,479 @@ namespace Zitadel.App.V1 {
             input.ReadMessage(LoginVersion);
             break;
           }
+          case 186: {
+            if (ios_ == null) {
+              Ios = new global::Zitadel.App.V1.IOSAppLinkConfig();
+            }
+            input.ReadMessage(Ios);
+            break;
+          }
+          case 194: {
+            if (android_ == null) {
+              Android = new global::Zitadel.App.V1.AndroidAppLinkConfig();
+            }
+            input.ReadMessage(Android);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class IOSAppLinkConfig : pb::IMessage<IOSAppLinkConfig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<IOSAppLinkConfig> _parser = new pb::MessageParser<IOSAppLinkConfig>(() => new IOSAppLinkConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<IOSAppLinkConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IOSAppLinkConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IOSAppLinkConfig(IOSAppLinkConfig other) : this() {
+      teamId_ = other.teamId_;
+      bundleId_ = other.bundleId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public IOSAppLinkConfig Clone() {
+      return new IOSAppLinkConfig(this);
+    }
+
+    /// <summary>Field number for the "team_id" field.</summary>
+    public const int TeamIdFieldNumber = 1;
+    private string teamId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string TeamId {
+      get { return teamId_; }
+      set {
+        teamId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "bundle_id" field.</summary>
+    public const int BundleIdFieldNumber = 2;
+    private string bundleId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string BundleId {
+      get { return bundleId_; }
+      set {
+        bundleId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as IOSAppLinkConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(IOSAppLinkConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (TeamId != other.TeamId) return false;
+      if (BundleId != other.BundleId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (TeamId.Length != 0) hash ^= TeamId.GetHashCode();
+      if (BundleId.Length != 0) hash ^= BundleId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (TeamId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TeamId);
+      }
+      if (BundleId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(BundleId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (TeamId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(TeamId);
+      }
+      if (BundleId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(BundleId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (TeamId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(TeamId);
+      }
+      if (BundleId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(BundleId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(IOSAppLinkConfig other) {
+      if (other == null) {
+        return;
+      }
+      if (other.TeamId.Length != 0) {
+        TeamId = other.TeamId;
+      }
+      if (other.BundleId.Length != 0) {
+        BundleId = other.BundleId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            TeamId = input.ReadString();
+            break;
+          }
+          case 18: {
+            BundleId = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            TeamId = input.ReadString();
+            break;
+          }
+          case 18: {
+            BundleId = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class AndroidAppLinkConfig : pb::IMessage<AndroidAppLinkConfig>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AndroidAppLinkConfig> _parser = new pb::MessageParser<AndroidAppLinkConfig>(() => new AndroidAppLinkConfig());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AndroidAppLinkConfig> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AndroidAppLinkConfig() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AndroidAppLinkConfig(AndroidAppLinkConfig other) : this() {
+      packageName_ = other.packageName_;
+      sha256CertFingerprints_ = other.sha256CertFingerprints_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AndroidAppLinkConfig Clone() {
+      return new AndroidAppLinkConfig(this);
+    }
+
+    /// <summary>Field number for the "package_name" field.</summary>
+    public const int PackageNameFieldNumber = 1;
+    private string packageName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PackageName {
+      get { return packageName_; }
+      set {
+        packageName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "sha256_cert_fingerprints" field.</summary>
+    public const int Sha256CertFingerprintsFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_sha256CertFingerprints_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> sha256CertFingerprints_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<string> Sha256CertFingerprints {
+      get { return sha256CertFingerprints_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AndroidAppLinkConfig);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AndroidAppLinkConfig other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PackageName != other.PackageName) return false;
+      if(!sha256CertFingerprints_.Equals(other.sha256CertFingerprints_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PackageName.Length != 0) hash ^= PackageName.GetHashCode();
+      hash ^= sha256CertFingerprints_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (PackageName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PackageName);
+      }
+      sha256CertFingerprints_.WriteTo(output, _repeated_sha256CertFingerprints_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (PackageName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PackageName);
+      }
+      sha256CertFingerprints_.WriteTo(ref output, _repeated_sha256CertFingerprints_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (PackageName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PackageName);
+      }
+      size += sha256CertFingerprints_.CalculateSize(_repeated_sha256CertFingerprints_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AndroidAppLinkConfig other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PackageName.Length != 0) {
+        PackageName = other.PackageName;
+      }
+      sha256CertFingerprints_.Add(other.sha256CertFingerprints_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PackageName = input.ReadString();
+            break;
+          }
+          case 18: {
+            sha256CertFingerprints_.AddEntriesFrom(input, _repeated_sha256CertFingerprints_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            PackageName = input.ReadString();
+            break;
+          }
+          case 18: {
+            sha256CertFingerprints_.AddEntriesFrom(ref input, _repeated_sha256CertFingerprints_codec);
+            break;
+          }
         }
       }
     }
@@ -2103,7 +2698,7 @@ namespace Zitadel.App.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2445,7 +3040,7 @@ namespace Zitadel.App.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2680,7 +3275,7 @@ namespace Zitadel.App.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2974,7 +3569,7 @@ namespace Zitadel.App.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3135,7 +3730,7 @@ namespace Zitadel.App.V1 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Zitadel.App.V1.AppReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

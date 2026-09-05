@@ -26,22 +26,28 @@ namespace Zitadel.Settings.V2 {
           string.Concat(
             "Cit6aXRhZGVsL3NldHRpbmdzL3YyL3NlY3VyaXR5X3NldHRpbmdzLnByb3Rv",
             "EhN6aXRhZGVsLnNldHRpbmdzLnYyGi5wcm90b2MtZ2VuLW9wZW5hcGl2Mi9v",
-            "cHRpb25zL2Fubm90YXRpb25zLnByb3RvIpsBChBTZWN1cml0eVNldHRpbmdz",
+            "cHRpb25zL2Fubm90YXRpb25zLnByb3RvIpMCChBTZWN1cml0eVNldHRpbmdz",
             "ElQKD2VtYmVkZGVkX2lmcmFtZRgBIAEoCzIrLnppdGFkZWwuc2V0dGluZ3Mu",
             "djIuRW1iZWRkZWRJZnJhbWVTZXR0aW5nc1IOZW1iZWRkZWRJZnJhbWUSMQoU",
             "ZW5hYmxlX2ltcGVyc29uYXRpb24YAiABKAhSE2VuYWJsZUltcGVyc29uYXRp",
-            "b24iWwoWRW1iZWRkZWRJZnJhbWVTZXR0aW5ncxIYCgdlbmFibGVkGAEgASgI",
-            "UgdlbmFibGVkEicKD2FsbG93ZWRfb3JpZ2lucxgCIAMoCVIOYWxsb3dlZE9y",
-            "aWdpbnNC2AEKF2NvbS56aXRhZGVsLnNldHRpbmdzLnYyQhVTZWN1cml0eVNl",
-            "dHRpbmdzUHJvdG9QAVo4Z2l0aHViLmNvbS96aXRhZGVsL3ppdGFkZWwvcGtn",
-            "L2dycGMvc2V0dGluZ3MvdjI7c2V0dGluZ3OiAgNaU1iqAhNaaXRhZGVsLlNl",
-            "dHRpbmdzLlYyygITWml0YWRlbFxTZXR0aW5nc1xWMuICH1ppdGFkZWxcU2V0",
-            "dGluZ3NcVjJcR1BCTWV0YWRhdGHqAhVaaXRhZGVsOjpTZXR0aW5nczo6VjJi",
-            "BnByb3RvMw=="));
+            "b24SdgobZHluYW1pY19jbGllbnRfcmVnaXN0cmF0aW9uGAMgASgLMjYueml0",
+            "YWRlbC5zZXR0aW5ncy52Mi5EeW5hbWljQ2xpZW50UmVnaXN0cmF0aW9uU2V0",
+            "dGluZ3NSGWR5bmFtaWNDbGllbnRSZWdpc3RyYXRpb24icgohRHluYW1pY0Ns",
+            "aWVudFJlZ2lzdHJhdGlvblNldHRpbmdzEhgKB2VuYWJsZWQYASABKAhSB2Vu",
+            "YWJsZWQSMwoVYWxsb3dfdW5hdXRoZW50aWNhdGVkGAIgASgIUhRhbGxvd1Vu",
+            "YXV0aGVudGljYXRlZCJbChZFbWJlZGRlZElmcmFtZVNldHRpbmdzEhgKB2Vu",
+            "YWJsZWQYASABKAhSB2VuYWJsZWQSJwoPYWxsb3dlZF9vcmlnaW5zGAIgAygJ",
+            "Ug5hbGxvd2VkT3JpZ2luc0LYAQoXY29tLnppdGFkZWwuc2V0dGluZ3MudjJC",
+            "FVNlY3VyaXR5U2V0dGluZ3NQcm90b1ABWjhnaXRodWIuY29tL3ppdGFkZWwv",
+            "eml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92MjtzZXR0aW5nc6ICA1pTWKoC",
+            "E1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRhZGVsXFNldHRpbmdzXFYy4gIf",
+            "Wml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRhZGF0YeoCFVppdGFkZWw6OlNl",
+            "dHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.SecuritySettings), global::Zitadel.Settings.V2.SecuritySettings.Parser, new[]{ "EmbeddedIframe", "EnableImpersonation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.SecuritySettings), global::Zitadel.Settings.V2.SecuritySettings.Parser, new[]{ "EmbeddedIframe", "EnableImpersonation", "DynamicClientRegistration" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.DynamicClientRegistrationSettings), global::Zitadel.Settings.V2.DynamicClientRegistrationSettings.Parser, new[]{ "Enabled", "AllowUnauthenticated" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Zitadel.Settings.V2.EmbeddedIframeSettings), global::Zitadel.Settings.V2.EmbeddedIframeSettings.Parser, new[]{ "Enabled", "AllowedOrigins" }, null, null, null, null)
           }));
     }
@@ -86,6 +92,7 @@ namespace Zitadel.Settings.V2 {
     public SecuritySettings(SecuritySettings other) : this() {
       embeddedIframe_ = other.embeddedIframe_ != null ? other.embeddedIframe_.Clone() : null;
       enableImpersonation_ = other.enableImpersonation_;
+      dynamicClientRegistration_ = other.dynamicClientRegistration_ != null ? other.dynamicClientRegistration_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -127,6 +134,22 @@ namespace Zitadel.Settings.V2 {
       }
     }
 
+    /// <summary>Field number for the "dynamic_client_registration" field.</summary>
+    public const int DynamicClientRegistrationFieldNumber = 3;
+    private global::Zitadel.Settings.V2.DynamicClientRegistrationSettings dynamicClientRegistration_;
+    /// <summary>
+    /// DynamicClientRegistrationSettings defines if OAuth 2.0 clients may register
+    /// themselves at runtime (RFC 7591) and whether they may do so without a token.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Zitadel.Settings.V2.DynamicClientRegistrationSettings DynamicClientRegistration {
+      get { return dynamicClientRegistration_; }
+      set {
+        dynamicClientRegistration_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -144,6 +167,7 @@ namespace Zitadel.Settings.V2 {
       }
       if (!object.Equals(EmbeddedIframe, other.EmbeddedIframe)) return false;
       if (EnableImpersonation != other.EnableImpersonation) return false;
+      if (!object.Equals(DynamicClientRegistration, other.DynamicClientRegistration)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -153,6 +177,7 @@ namespace Zitadel.Settings.V2 {
       int hash = 1;
       if (embeddedIframe_ != null) hash ^= EmbeddedIframe.GetHashCode();
       if (EnableImpersonation != false) hash ^= EnableImpersonation.GetHashCode();
+      if (dynamicClientRegistration_ != null) hash ^= DynamicClientRegistration.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -179,6 +204,10 @@ namespace Zitadel.Settings.V2 {
         output.WriteRawTag(16);
         output.WriteBool(EnableImpersonation);
       }
+      if (dynamicClientRegistration_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DynamicClientRegistration);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -197,6 +226,10 @@ namespace Zitadel.Settings.V2 {
         output.WriteRawTag(16);
         output.WriteBool(EnableImpersonation);
       }
+      if (dynamicClientRegistration_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(DynamicClientRegistration);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -212,6 +245,9 @@ namespace Zitadel.Settings.V2 {
       }
       if (EnableImpersonation != false) {
         size += 1 + 1;
+      }
+      if (dynamicClientRegistration_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(DynamicClientRegistration);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -233,6 +269,12 @@ namespace Zitadel.Settings.V2 {
       }
       if (other.EnableImpersonation != false) {
         EnableImpersonation = other.EnableImpersonation;
+      }
+      if (other.dynamicClientRegistration_ != null) {
+        if (dynamicClientRegistration_ == null) {
+          DynamicClientRegistration = new global::Zitadel.Settings.V2.DynamicClientRegistrationSettings();
+        }
+        DynamicClientRegistration.MergeFrom(other.DynamicClientRegistration);
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -262,6 +304,13 @@ namespace Zitadel.Settings.V2 {
           }
           case 16: {
             EnableImpersonation = input.ReadBool();
+            break;
+          }
+          case 26: {
+            if (dynamicClientRegistration_ == null) {
+              DynamicClientRegistration = new global::Zitadel.Settings.V2.DynamicClientRegistrationSettings();
+            }
+            input.ReadMessage(DynamicClientRegistration);
             break;
           }
         }
@@ -294,6 +343,262 @@ namespace Zitadel.Settings.V2 {
             EnableImpersonation = input.ReadBool();
             break;
           }
+          case 26: {
+            if (dynamicClientRegistration_ == null) {
+              DynamicClientRegistration = new global::Zitadel.Settings.V2.DynamicClientRegistrationSettings();
+            }
+            input.ReadMessage(DynamicClientRegistration);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class DynamicClientRegistrationSettings : pb::IMessage<DynamicClientRegistrationSettings>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<DynamicClientRegistrationSettings> _parser = new pb::MessageParser<DynamicClientRegistrationSettings>(() => new DynamicClientRegistrationSettings());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<DynamicClientRegistrationSettings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Zitadel.Settings.V2.SecuritySettingsReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DynamicClientRegistrationSettings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DynamicClientRegistrationSettings(DynamicClientRegistrationSettings other) : this() {
+      enabled_ = other.enabled_;
+      allowUnauthenticated_ = other.allowUnauthenticated_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public DynamicClientRegistrationSettings Clone() {
+      return new DynamicClientRegistrationSettings(this);
+    }
+
+    /// <summary>Field number for the "enabled" field.</summary>
+    public const int EnabledFieldNumber = 1;
+    private bool enabled_;
+    /// <summary>
+    /// Enabled states if the OAuth 2.0 Dynamic Client Registration endpoint (RFC 7591) is
+    /// served and advertised as `registration_endpoint` in the discovery document.
+    /// When disabled, the endpoint responds with 404 and is absent from discovery.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Enabled {
+      get { return enabled_; }
+      set {
+        enabled_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "allow_unauthenticated" field.</summary>
+    public const int AllowUnauthenticatedFieldNumber = 2;
+    private bool allowUnauthenticated_;
+    /// <summary>
+    /// AllowUnauthenticated states if clients may register without a bearer token, as
+    /// required by the Model Context Protocol (MCP) flow. Such clients are homed in the
+    /// instance's default organization. It only has an effect if enabled is true.
+    ///
+    /// When false, registration requires an access token whose user holds the
+    /// `project.app.register_dynamic` permission in the token's organization, and the
+    /// client is homed in that organization.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowUnauthenticated {
+      get { return allowUnauthenticated_; }
+      set {
+        allowUnauthenticated_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as DynamicClientRegistrationSettings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(DynamicClientRegistrationSettings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Enabled != other.Enabled) return false;
+      if (AllowUnauthenticated != other.AllowUnauthenticated) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Enabled != false) hash ^= Enabled.GetHashCode();
+      if (AllowUnauthenticated != false) hash ^= AllowUnauthenticated.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Enabled != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Enabled);
+      }
+      if (AllowUnauthenticated != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(AllowUnauthenticated);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Enabled != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Enabled);
+      }
+      if (AllowUnauthenticated != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(AllowUnauthenticated);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (Enabled != false) {
+        size += 1 + 1;
+      }
+      if (AllowUnauthenticated != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(DynamicClientRegistrationSettings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Enabled != false) {
+        Enabled = other.Enabled;
+      }
+      if (other.AllowUnauthenticated != false) {
+        AllowUnauthenticated = other.AllowUnauthenticated;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Enabled = input.ReadBool();
+            break;
+          }
+          case 16: {
+            AllowUnauthenticated = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Enabled = input.ReadBool();
+            break;
+          }
+          case 16: {
+            AllowUnauthenticated = input.ReadBool();
+            break;
+          }
         }
       }
     }
@@ -316,7 +621,7 @@ namespace Zitadel.Settings.V2 {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Zitadel.Settings.V2.SecuritySettingsReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Zitadel.Settings.V2.SecuritySettingsReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
