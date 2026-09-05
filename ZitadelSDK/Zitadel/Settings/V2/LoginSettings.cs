@@ -75,7 +75,7 @@ namespace Zitadel.Settings.V2 {
             "RV9VTlNQRUNJRklFRBAAEisKJ01VTFRJX0ZBQ1RPUl9UWVBFX1UyRl9XSVRI",
             "X1ZFUklGSUNBVElPThABKkgKDFBhc3NrZXlzVHlwZRIdChlQQVNTS0VZU19U",
             "WVBFX05PVF9BTExPV0VEEAASGQoVUEFTU0tFWVNfVFlQRV9BTExPV0VEEAEq",
-            "6AMKFElkZW50aXR5UHJvdmlkZXJUeXBlEiYKIklERU5USVRZX1BST1ZJREVS",
+            "jAQKFElkZW50aXR5UHJvdmlkZXJUeXBlEiYKIklERU5USVRZX1BST1ZJREVS",
             "X1RZUEVfVU5TUEVDSUZJRUQQABIfChtJREVOVElUWV9QUk9WSURFUl9UWVBF",
             "X09JREMQARIeChpJREVOVElUWV9QUk9WSURFUl9UWVBFX0pXVBACEh8KG0lE",
             "RU5USVRZX1BST1ZJREVSX1RZUEVfTERBUBADEiAKHElERU5USVRZX1BST1ZJ",
@@ -85,12 +85,13 @@ namespace Zitadel.Settings.V2 {
             "SVRZX1BST1ZJREVSX1RZUEVfR0lUTEFCEAgSLQopSURFTlRJVFlfUFJPVklE",
             "RVJfVFlQRV9HSVRMQUJfU0VMRl9IT1NURUQQCRIhCh1JREVOVElUWV9QUk9W",
             "SURFUl9UWVBFX0dPT0dMRRAKEh8KG0lERU5USVRZX1BST1ZJREVSX1RZUEVf",
-            "U0FNTBALEiAKHElERU5USVRZX1BST1ZJREVSX1RZUEVfQVBQTEUQDELVAQoX",
-            "Y29tLnppdGFkZWwuc2V0dGluZ3MudjJCEkxvZ2luU2V0dGluZ3NQcm90b1AB",
-            "WjhnaXRodWIuY29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5n",
-            "cy92MjtzZXR0aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNa",
-            "aXRhZGVsXFNldHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJN",
-            "ZXRhZGF0YeoCFVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
+            "U0FNTBALEiAKHElERU5USVRZX1BST1ZJREVSX1RZUEVfQVBQTEUQDBIiCh5J",
+            "REVOVElUWV9QUk9WSURFUl9UWVBFX1pJVEFERUwQDULVAQoXY29tLnppdGFk",
+            "ZWwuc2V0dGluZ3MudjJCEkxvZ2luU2V0dGluZ3NQcm90b1ABWjhnaXRodWIu",
+            "Y29tL3ppdGFkZWwveml0YWRlbC9wa2cvZ3JwYy9zZXR0aW5ncy92MjtzZXR0",
+            "aW5nc6ICA1pTWKoCE1ppdGFkZWwuU2V0dGluZ3MuVjLKAhNaaXRhZGVsXFNl",
+            "dHRpbmdzXFYy4gIfWml0YWRlbFxTZXR0aW5nc1xWMlxHUEJNZXRhZGF0YeoC",
+            "FVppdGFkZWw6OlNldHRpbmdzOjpWMmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, global::Zitadel.Settings.V2.SettingsReflection.Descriptor, global::Zitadel.Idp.V2.IdpReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Settings.V2.SecondFactorType), typeof(global::Zitadel.Settings.V2.MultiFactorType), typeof(global::Zitadel.Settings.V2.PasskeysType), typeof(global::Zitadel.Settings.V2.IdentityProviderType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -139,6 +140,7 @@ namespace Zitadel.Settings.V2 {
     [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_GOOGLE")] Google = 10,
     [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_SAML")] Saml = 11,
     [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_APPLE")] Apple = 12,
+    [pbr::OriginalName("IDENTITY_PROVIDER_TYPE_ZITADEL")] Zitadel = 13,
   }
 
   #endregion

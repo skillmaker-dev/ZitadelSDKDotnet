@@ -114,7 +114,7 @@ namespace Zitadel.Settings.V1 {
             "MQoUZW5hYmxlX2ltcGVyc29uYXRpb24YBCABKAhSE2VuYWJsZUltcGVyc29u",
             "YXRpb24qZgoPU01UUENvbmZpZ1N0YXRlEiEKHVNNVFBfQ09ORklHX1NUQVRF",
             "X1VOU1BFQ0lGSUVEEAASFgoSU01UUF9DT05GSUdfQUNUSVZFEAESGAoUU01U",
-            "UF9DT05GSUdfSU5BQ1RJVkUQAiqKAwoTU2VjcmV0R2VuZXJhdG9yVHlwZRIl",
+            "UF9DT05GSUdfSU5BQ1RJVkUQAiqxAwoTU2VjcmV0R2VuZXJhdG9yVHlwZRIl",
             "CiFTRUNSRVRfR0VORVJBVE9SX1RZUEVfVU5TUEVDSUZJRUQQABIjCh9TRUNS",
             "RVRfR0VORVJBVE9SX1RZUEVfSU5JVF9DT0RFEAESKwonU0VDUkVUX0dFTkVS",
             "QVRPUl9UWVBFX1ZFUklGWV9FTUFJTF9DT0RFEAISKwonU0VDUkVUX0dFTkVS",
@@ -123,17 +123,18 @@ namespace Zitadel.Settings.V1 {
             "RVJBVE9SX1RZUEVfUEFTU1dPUkRMRVNTX0lOSVRfQ09ERRAFEiQKIFNFQ1JF",
             "VF9HRU5FUkFUT1JfVFlQRV9BUFBfU0VDUkVUEAYSIQodU0VDUkVUX0dFTkVS",
             "QVRPUl9UWVBFX09UUF9TTVMQBxIjCh9TRUNSRVRfR0VORVJBVE9SX1RZUEVf",
-            "T1RQX0VNQUlMEAgqcgoSRW1haWxQcm92aWRlclN0YXRlEiQKIEVNQUlMX1BS",
-            "T1ZJREVSX1NUQVRFX1VOU1BFQ0lGSUVEEAASGQoVRU1BSUxfUFJPVklERVJf",
-            "QUNUSVZFEAESGwoXRU1BSUxfUFJPVklERVJfSU5BQ1RJVkUQAiqFAQoWU01T",
-            "UHJvdmlkZXJDb25maWdTdGF0ZRIpCiVTTVNfUFJPVklERVJfQ09ORklHX1NU",
-            "QVRFX1VOU1BFQ0lGSUVEEAASHgoaU01TX1BST1ZJREVSX0NPTkZJR19BQ1RJ",
-            "VkUQARIgChxTTVNfUFJPVklERVJfQ09ORklHX0lOQUNUSVZFEAJCxAEKF2Nv",
-            "bS56aXRhZGVsLnNldHRpbmdzLnYxQg1TZXR0aW5nc1Byb3RvUAFaLGdpdGh1",
-            "Yi5jb20veml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3NldHRpbmdzogIDWlNY",
-            "qgITWml0YWRlbC5TZXR0aW5ncy5WMcoCE1ppdGFkZWxcU2V0dGluZ3NcVjHi",
-            "Ah9aaXRhZGVsXFNldHRpbmdzXFYxXEdQQk1ldGFkYXRh6gIVWml0YWRlbDo6",
-            "U2V0dGluZ3M6OlYxYgZwcm90bzM="));
+            "T1RQX0VNQUlMEAgSJQohU0VDUkVUX0dFTkVSQVRPUl9UWVBFX0lOVklURV9D",
+            "T0RFEAkqcgoSRW1haWxQcm92aWRlclN0YXRlEiQKIEVNQUlMX1BST1ZJREVS",
+            "X1NUQVRFX1VOU1BFQ0lGSUVEEAASGQoVRU1BSUxfUFJPVklERVJfQUNUSVZF",
+            "EAESGwoXRU1BSUxfUFJPVklERVJfSU5BQ1RJVkUQAiqFAQoWU01TUHJvdmlk",
+            "ZXJDb25maWdTdGF0ZRIpCiVTTVNfUFJPVklERVJfQ09ORklHX1NUQVRFX1VO",
+            "U1BFQ0lGSUVEEAASHgoaU01TX1BST1ZJREVSX0NPTkZJR19BQ1RJVkUQARIg",
+            "ChxTTVNfUFJPVklERVJfQ09ORklHX0lOQUNUSVZFEAJCxAEKF2NvbS56aXRh",
+            "ZGVsLnNldHRpbmdzLnYxQg1TZXR0aW5nc1Byb3RvUAFaLGdpdGh1Yi5jb20v",
+            "eml0YWRlbC96aXRhZGVsL3BrZy9ncnBjL3NldHRpbmdzogIDWlNYqgITWml0",
+            "YWRlbC5TZXR0aW5ncy5WMcoCE1ppdGFkZWxcU2V0dGluZ3NcVjHiAh9aaXRh",
+            "ZGVsXFNldHRpbmdzXFYxXEdQQk1ldGFkYXRh6gIVWml0YWRlbDo6U2V0dGlu",
+            "Z3M6OlYxYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Zitadel.V1.ObjectReflection.Descriptor, global::Validate.ValidateReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.DurationReflection.Descriptor, global::Grpc.Gateway.ProtocGenOpenapiv2.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Zitadel.Settings.V1.SMTPConfigState), typeof(global::Zitadel.Settings.V1.SecretGeneratorType), typeof(global::Zitadel.Settings.V1.EmailProviderState), typeof(global::Zitadel.Settings.V1.SMSProviderConfigState), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -175,6 +176,7 @@ namespace Zitadel.Settings.V1 {
     [pbr::OriginalName("SECRET_GENERATOR_TYPE_APP_SECRET")] AppSecret = 6,
     [pbr::OriginalName("SECRET_GENERATOR_TYPE_OTP_SMS")] OtpSms = 7,
     [pbr::OriginalName("SECRET_GENERATOR_TYPE_OTP_EMAIL")] OtpEmail = 8,
+    [pbr::OriginalName("SECRET_GENERATOR_TYPE_INVITE_CODE")] InviteCode = 9,
   }
 
   public enum EmailProviderState {

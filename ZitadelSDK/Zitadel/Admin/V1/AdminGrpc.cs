@@ -442,6 +442,14 @@ namespace Zitadel.Admin.V1 {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Admin.V1.RegenerateSAMLProviderCertificateResponse> __Marshaller_zitadel_admin_v1_RegenerateSAMLProviderCertificateResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.RegenerateSAMLProviderCertificateResponse.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Admin.V1.AddZitadelProviderRequest> __Marshaller_zitadel_admin_v1_AddZitadelProviderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.AddZitadelProviderRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Admin.V1.AddZitadelProviderResponse> __Marshaller_zitadel_admin_v1_AddZitadelProviderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.AddZitadelProviderResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Admin.V1.UpdateZitadelProviderRequest> __Marshaller_zitadel_admin_v1_UpdateZitadelProviderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.UpdateZitadelProviderRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Zitadel.Admin.V1.UpdateZitadelProviderResponse> __Marshaller_zitadel_admin_v1_UpdateZitadelProviderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.UpdateZitadelProviderResponse.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Admin.V1.DeleteProviderRequest> __Marshaller_zitadel_admin_v1_DeleteProviderRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.DeleteProviderRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Zitadel.Admin.V1.DeleteProviderResponse> __Marshaller_zitadel_admin_v1_DeleteProviderResponse = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Zitadel.Admin.V1.DeleteProviderResponse.Parser));
@@ -1653,6 +1661,22 @@ namespace Zitadel.Admin.V1 {
         "RegenerateSAMLProviderCertificate",
         __Marshaller_zitadel_admin_v1_RegenerateSAMLProviderCertificateRequest,
         __Marshaller_zitadel_admin_v1_RegenerateSAMLProviderCertificateResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Admin.V1.AddZitadelProviderRequest, global::Zitadel.Admin.V1.AddZitadelProviderResponse> __Method_AddZitadelProvider = new grpc::Method<global::Zitadel.Admin.V1.AddZitadelProviderRequest, global::Zitadel.Admin.V1.AddZitadelProviderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "AddZitadelProvider",
+        __Marshaller_zitadel_admin_v1_AddZitadelProviderRequest,
+        __Marshaller_zitadel_admin_v1_AddZitadelProviderResponse);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Zitadel.Admin.V1.UpdateZitadelProviderRequest, global::Zitadel.Admin.V1.UpdateZitadelProviderResponse> __Method_UpdateZitadelProvider = new grpc::Method<global::Zitadel.Admin.V1.UpdateZitadelProviderRequest, global::Zitadel.Admin.V1.UpdateZitadelProviderResponse>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "UpdateZitadelProvider",
+        __Marshaller_zitadel_admin_v1_UpdateZitadelProviderRequest,
+        __Marshaller_zitadel_admin_v1_UpdateZitadelProviderResponse);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Zitadel.Admin.V1.DeleteProviderRequest, global::Zitadel.Admin.V1.DeleteProviderResponse> __Method_DeleteProvider = new grpc::Method<global::Zitadel.Admin.V1.DeleteProviderRequest, global::Zitadel.Admin.V1.DeleteProviderResponse>(
@@ -3483,6 +3507,30 @@ namespace Zitadel.Admin.V1 {
       /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Zitadel.Admin.V1.RegenerateSAMLProviderCertificateResponse> RegenerateSAMLProviderCertificate(global::Zitadel.Admin.V1.RegenerateSAMLProviderCertificateRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Add a new Zitadel identity provider in the instance
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Admin.V1.AddZitadelProviderResponse> AddZitadelProvider(global::Zitadel.Admin.V1.AddZitadelProviderRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      /// Change an existing Zitadel identity provider on the instance
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Zitadel.Admin.V1.UpdateZitadelProviderResponse> UpdateZitadelProvider(global::Zitadel.Admin.V1.UpdateZitadelProviderRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -7956,6 +8004,102 @@ namespace Zitadel.Admin.V1 {
         return CallInvoker.AsyncUnaryCall(__Method_RegenerateSAMLProviderCertificate, null, options, request);
       }
       /// <summary>
+      /// Add a new Zitadel identity provider in the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Admin.V1.AddZitadelProviderResponse AddZitadelProvider(global::Zitadel.Admin.V1.AddZitadelProviderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddZitadelProvider(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a new Zitadel identity provider in the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Admin.V1.AddZitadelProviderResponse AddZitadelProvider(global::Zitadel.Admin.V1.AddZitadelProviderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_AddZitadelProvider, null, options, request);
+      }
+      /// <summary>
+      /// Add a new Zitadel identity provider in the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Admin.V1.AddZitadelProviderResponse> AddZitadelProviderAsync(global::Zitadel.Admin.V1.AddZitadelProviderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return AddZitadelProviderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Add a new Zitadel identity provider in the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Admin.V1.AddZitadelProviderResponse> AddZitadelProviderAsync(global::Zitadel.Admin.V1.AddZitadelProviderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_AddZitadelProvider, null, options, request);
+      }
+      /// <summary>
+      /// Change an existing Zitadel identity provider on the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Admin.V1.UpdateZitadelProviderResponse UpdateZitadelProvider(global::Zitadel.Admin.V1.UpdateZitadelProviderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateZitadelProvider(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Change an existing Zitadel identity provider on the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Zitadel.Admin.V1.UpdateZitadelProviderResponse UpdateZitadelProvider(global::Zitadel.Admin.V1.UpdateZitadelProviderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_UpdateZitadelProvider, null, options, request);
+      }
+      /// <summary>
+      /// Change an existing Zitadel identity provider on the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Admin.V1.UpdateZitadelProviderResponse> UpdateZitadelProviderAsync(global::Zitadel.Admin.V1.UpdateZitadelProviderRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return UpdateZitadelProviderAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      /// Change an existing Zitadel identity provider on the instance
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Zitadel.Admin.V1.UpdateZitadelProviderResponse> UpdateZitadelProviderAsync(global::Zitadel.Admin.V1.UpdateZitadelProviderRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_UpdateZitadelProvider, null, options, request);
+      }
+      /// <summary>
       /// Remove an identity provider
       /// Will remove all linked providers of this configuration on the users
       /// </summary>
@@ -10496,6 +10640,8 @@ namespace Zitadel.Admin.V1 {
           .AddMethod(__Method_AddSAMLProvider, serviceImpl.AddSAMLProvider)
           .AddMethod(__Method_UpdateSAMLProvider, serviceImpl.UpdateSAMLProvider)
           .AddMethod(__Method_RegenerateSAMLProviderCertificate, serviceImpl.RegenerateSAMLProviderCertificate)
+          .AddMethod(__Method_AddZitadelProvider, serviceImpl.AddZitadelProvider)
+          .AddMethod(__Method_UpdateZitadelProvider, serviceImpl.UpdateZitadelProvider)
           .AddMethod(__Method_DeleteProvider, serviceImpl.DeleteProvider)
           .AddMethod(__Method_GetOrgIAMPolicy, serviceImpl.GetOrgIAMPolicy)
           .AddMethod(__Method_UpdateOrgIAMPolicy, serviceImpl.UpdateOrgIAMPolicy)
@@ -10709,6 +10855,8 @@ namespace Zitadel.Admin.V1 {
       serviceBinder.AddMethod(__Method_AddSAMLProvider, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.AddSAMLProviderRequest, global::Zitadel.Admin.V1.AddSAMLProviderResponse>(serviceImpl.AddSAMLProvider));
       serviceBinder.AddMethod(__Method_UpdateSAMLProvider, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.UpdateSAMLProviderRequest, global::Zitadel.Admin.V1.UpdateSAMLProviderResponse>(serviceImpl.UpdateSAMLProvider));
       serviceBinder.AddMethod(__Method_RegenerateSAMLProviderCertificate, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.RegenerateSAMLProviderCertificateRequest, global::Zitadel.Admin.V1.RegenerateSAMLProviderCertificateResponse>(serviceImpl.RegenerateSAMLProviderCertificate));
+      serviceBinder.AddMethod(__Method_AddZitadelProvider, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.AddZitadelProviderRequest, global::Zitadel.Admin.V1.AddZitadelProviderResponse>(serviceImpl.AddZitadelProvider));
+      serviceBinder.AddMethod(__Method_UpdateZitadelProvider, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.UpdateZitadelProviderRequest, global::Zitadel.Admin.V1.UpdateZitadelProviderResponse>(serviceImpl.UpdateZitadelProvider));
       serviceBinder.AddMethod(__Method_DeleteProvider, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.DeleteProviderRequest, global::Zitadel.Admin.V1.DeleteProviderResponse>(serviceImpl.DeleteProvider));
       serviceBinder.AddMethod(__Method_GetOrgIAMPolicy, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.GetOrgIAMPolicyRequest, global::Zitadel.Admin.V1.GetOrgIAMPolicyResponse>(serviceImpl.GetOrgIAMPolicy));
       serviceBinder.AddMethod(__Method_UpdateOrgIAMPolicy, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Zitadel.Admin.V1.UpdateOrgIAMPolicyRequest, global::Zitadel.Admin.V1.UpdateOrgIAMPolicyResponse>(serviceImpl.UpdateOrgIAMPolicy));

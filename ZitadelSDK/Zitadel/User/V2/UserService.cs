@@ -519,7 +519,7 @@ namespace Zitadel.User.V2 {
             "lAGSQYYBMlh0b2tlbiBvZiB0aGUgaWRwIGludGVudCwgcHJldmlvdXNseSBy",
             "ZXR1cm5lZCBvbiB0aGUgc3VjY2VzcyByZXNwb25zZSBvZiB0aGUgSURQIGNh",
             "bGxiYWNrSiQiU0pLTDNpb0lEcG8zNDJpb3F3OThmanAzc2RmMzJ3YWhiPSJ4",
-            "yAGAAQH6QgdyBRABGMgBUg5pZHBJbnRlbnRUb2tlbiK0CAomUmV0cmlldmVJ",
+            "9AOAAQH6QgdyBRABGPQDUg5pZHBJbnRlbnRUb2tlbiK0CAomUmV0cmlldmVJ",
             "ZGVudGl0eVByb3ZpZGVySW50ZW50UmVzcG9uc2USNAoHZGV0YWlscxgBIAEo",
             "CzIaLnppdGFkZWwub2JqZWN0LnYyLkRldGFpbHNSB2RldGFpbHMSlAEKD2lk",
             "cF9pbmZvcm1hdGlvbhgCIAEoCzIfLnppdGFkZWwudXNlci52Mi5JRFBJbmZv",
